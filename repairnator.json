@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 156,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/jackrabbit-oak",
-  "bugCommit": "https://github.com/apache/jackrabbit-oak/compare/37820f6f92ad...30dd5b58d221",
-  "failingModule": "/root/workspace/apache/jackrabbit-oak/250679296/oak-tarmk-standby",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 5967,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.jackrabbit.oak.plugins.segment.standby.BrokenNetworkTest",
-      "failingMethods": [
-        "org.apache.jackrabbit.oak.plugins.segment.standby.BrokenNetworkTest#testProxyFlippedIntermediateByteSSL"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:29 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:39:55 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 102527520,
+      "totalMemory": 227999744
+    },
+    "totalDuration": 1582,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 135,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          135
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-250679296-20170706-113811_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-250679296-20170706-113811_bugonly-firstCommit/oak-pojosr",
+    "overallMetrics": {
+      "numberRunning": 6378,
+      "numberPassing": 6377,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 160,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c{ root \u003d { ... } }\u003e but was:\u003c{ root : { } }\u003e",
-          "isError": false
+          "failureName": "groovy.lang.MissingMethodException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.run.osgi.LuceneSupportTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.run.osgi.LuceneSupportTest",
+        "testMethod": "fullTextSearch",
+        "failureName": "groovy.lang.MissingMethodException",
+        "detail": "No signature of method: static org.apache.jackrabbit.oak.run.osgi.AbstractRepositoryFactoryTest.fail() is applicable for argument types: (java.lang.String) values: [RetryLoop failed, condition is false after 30 seconds:null] Possible solutions: wait(), wait(long), any(), find(), wait(long, int), each(groovy.lang.Closure)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 25,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1649,
+    "numberTestFiles": 1053,
+    "numberLibrariesFailingModule": 80,
+    "numberLines": 0
+  },
+  "commits": {}
 }
