@@ -1,0 +1,162 @@
+java.io.IOException: Cannot run program "/home/d/dginelli/build/SupunArunoda/cpachecker/scripts/cpa.sh": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at org.eclipse.cpacep.util.CPACEPConnector.executeCommand(CPACEPConnector.java:83)
+	at org.eclipse.cpacep.util.CPACEPConnectorTest.setup(CPACEPConnectorTest.java:47)
+	at org.eclipse.cpacep.util.CPACEPConnectorTest.testStatistics(CPACEPConnectorTest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.PojoTestSet.executeTestMethod(PojoTestSet.java:151)
+	at org.apache.maven.surefire.junit.PojoTestSet.executeTestMethods(PojoTestSet.java:102)
+	at org.apache.maven.surefire.junit.PojoTestSet.execute(PojoTestSet.java:83)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:121)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 24 more
+-firstCommit/org.eclipse.cpacep.ui/pom.xml
+[INFO] Resolving class path of MavenProject: org.eclipse.cpacep:org.eclipse.cpacep.ui:1.0.0-SNAPSHOT @ /scratch/dginelli/workspace/repairnator-repairnator-experiments-SupunArunoda-CPACEP-398849456-20180701-190942-firstCommit/org.eclipse.cpacep.ui/pom.xml
+[INFO] Computing target platform for MavenProject: org.eclipse.cpacep:org.eclipse.cpacep.feature:1.0.0-SNAPSHOT @ /scratch/dginelli/workspace/repairnator-repairnator-experiments-SupunArunoda-CPACEP-398849456-20180701-190942-firstCommit/org.eclipse.cpacep.feature/pom.xml
+[INFO] Resolving dependencies of MavenProject: org.eclipse.cpacep:org.eclipse.cpacep.feature:1.0.0-SNAPSHOT @ /scratch/dginelli/workspace/repairnator-repairnator-experiments-SupunArunoda-CPACEP-398849456-20180701-190942-firstCommit/org.eclipse.cpacep.feature/pom.xml
+[INFO] Resolving class path of MavenProject: org.eclipse.cpacep:org.eclipse.cpacep.feature:1.0.0-SNAPSHOT @ /scratch/dginelli/workspace/repairnator-repairnator-experiments-SupunArunoda-CPACEP-398849456-20180701-190942-firstCommit/org.eclipse.cpacep.feature/pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] org.eclipse.cpacep.master
+[INFO] org.eclipse.cpacep
+[INFO] org.eclipse.cpacep.ui
+[INFO] org.eclipse.cpacep.feature
+[INFO] targetplatform
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building org.eclipse.cpacep.master 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building org.eclipse.cpacep 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.22.0:build-qualifier (default-build-qualifier) @ org.eclipse.cpacep ---
+[INFO] The project's OSGi version is 1.0.0.202002151717
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.22.0:validate-id (default-validate-id) @ org.eclipse.cpacep ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.22.0:validate-version (default-validate-version) @ org.eclipse.cpacep ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ org.eclipse.cpacep ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-SupunArunoda-CPACEP-398849456-20180701-190942-firstCommit/org.eclipse.cpacep/src/main/resources
+[INFO] 
+[INFO] --- tycho-compiler-plugin:0.22.0:compile (default-compile) @ org.eclipse.cpacep ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ org.eclipse.cpacep ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-SupunArunoda-CPACEP-398849456-20180701-190942-firstCommit/org.eclipse.cpacep/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (compiletests) @ org.eclipse.cpacep ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (test) @ org.eclipse.cpacep ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-SupunArunoda-CPACEP-398849456-20180701-190942-firstCommit/org.eclipse.cpacep/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.pom (2 KB at 5.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 88.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar (26 KB at 632.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.eclipse.cpacep.util.CPACEPConnectorTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.186 sec <<< FAILURE!
+org.eclipse.cpacep.util.CPACEPConnectorTest.testStatistics()  Time elapsed: 0.177 sec  <<< FAILURE!
+java.lang.AssertionError: /tmp/cpacep7485579860934783894/Statistics.txt
+	at org.eclipse.cpacep.util.CPACEPConnectorTest.testStatistics(CPACEPConnectorTest.java:62)
+
+
+Results :
+
+Failed tests:   org.eclipse.cpacep.util.CPACEPConnectorTest.testStatistics(): /tmp/cpacep7485579860934783894/Statistics.txt
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] org.eclipse.cpacep.master .......................... SUCCESS [  0.005 s]
+[INFO] org.eclipse.cpacep ................................. FAILURE [  2.919 s]
+[INFO] org.eclipse.cpacep.ui .............................. SKIPPED
+[INFO] org.eclipse.cpacep.feature ......................... SKIPPED
+[INFO] targetplatform ..................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 27.445 s
+[INFO] Finished at: 2020-02-15T18:17:10+01:00
+[INFO] Final Memory: 72M/173M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (test) on project org.eclipse.cpacep: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-SupunArunoda-CPACEP-398849456-20180701-190942-firstCommit/org.eclipse.cpacep/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (test) on project org.eclipse.cpacep: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-SupunArunoda-CPACEP-398849456-20180701-190942-firstCommit/org.eclipse.cpacep/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-SupunArunoda-CPACEP-398849456-20180701-190942-firstCommit/org.eclipse.cpacep/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:83)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.writeSummary(SurefirePlugin.java:176)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:150)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:650)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:586)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :org.eclipse.cpacep
