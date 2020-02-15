@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:28 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:17:19 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 43000344,
+      "totalMemory": 131190784
+    },
+    "totalDuration": 226,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 7,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          7,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          34
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-412460445-20180806-041301-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-412460445-20180806-041301-firstCommit/foundations/foundation-common",
+    "overallMetrics": {
+      "numberRunning": 123,
+      "numberPassing": 122,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.awaitility.core.ConditionTimeoutException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.common.event.TestEventBus",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.common.event.TestEventBus",
+        "testMethod": "checkEventCanNotReceivedAfterUnregister",
+        "failureName": "org.awaitility.core.ConditionTimeoutException",
+        "detail": "Condition with lambda expression in org.apache.servicecomb.foundation.common.event.TestEventBus that uses java.util.concurrent.atomic.AtomicBoolean was not fulfilled within 1 seconds.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 153,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1166,
+    "numberTestFiles": 582,
+    "numberLibrariesFailingModule": 69,
+    "numberLines": 0
+  },
+  "commits": {}
+}
