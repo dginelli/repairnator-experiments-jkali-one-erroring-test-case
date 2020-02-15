@@ -1,36 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "totalMemory": 390070272,
-  "workspace": "./workspace",
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "airlift/airlift",
-  "freeMemory": 270077704,
-  "failingModule": "/root/workspace/airlift/airlift/228094653/http-client",
-  "buildid": 228094653,
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.net.SocketTimeoutException"
-  ],
-  "totalNumberRunningTests": 1726,
-  "failing-test-cases": [
-    {
-      "className": "io.airlift.http.client.jetty.TestJettyHttpClientSocksProxyHttp2",
-      "failingMethods": [
-        "io.airlift.http.client.jetty.TestJettyHttpClientSocksProxyHttp2#testBadPort"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:20 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:57:23 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 432632776,
+      "totalMemory": 1123504128
+    },
+    "totalDuration": 2579,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1848,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1848
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-airlift-airlift-228094653-20170502-222904_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-airlift-airlift-228094653-20170502-222904_bugonly-firstCommit/http-client",
+    "overallMetrics": {
+      "numberRunning": 1726,
+      "numberPassing": 1725,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.net.SocketTimeoutException",
-          "failureDetail": "Connect Timeout",
-          "isError": false
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ],
-  "nbCPU": 4
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.airlift.http.client.jetty.TestAsyncJettyHttpClientHttp2",
+        "numberRunning": 31,
+        "numberPassing": 30,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.airlift.http.client.jetty.TestAsyncJettyHttpClientHttp2",
+        "testMethod": "testConnectTimeout",
+        "failureName": "java.lang.AssertionError",
+        "detail": "unexpected exception: [java.util.concurrent.TimeoutException: idle_timeout\n at org.eclipse.jetty.http2.client.http.HttpConnectionOverHTTP2.onIdleTimeout(HttpConnectionOverHTTP2.java:83)\n at org.eclipse.jetty.http2.client.http.HttpClientTransportOverHTTP2$SessionListenerPromise.onIdleTimeout(HttpClientTransportOverHTTP2.java:222)\n at org.eclipse.jetty.http2.HTTP2Session.notifyIdleTimeout(HTTP2Session.java:1073)\n at org.eclipse.jetty.http2.HTTP2Session.onIdleTimeout(HTTP2Session.java:921)\n at org.eclipse.jetty.http2.HTTP2Connection.onIdleExpired(HTTP2Connection.java:134)\n at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:161)\n at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)\n at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)\n at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n at java.util.concurrent.FutureTask.run(FutureTask.java:266)\n at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n at java.lang.Thread.run(Thread.java:748)\n]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 23,
+    "numberPlugins": 0,
+    "numberSourceFiles": 290,
+    "numberTestFiles": 180,
+    "numberLibrariesFailingModule": 61,
+    "numberLines": 0
+  }
 }
