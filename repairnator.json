@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 232,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/jackrabbit-oak",
-  "bugCommit": "https://github.com/apache/jackrabbit-oak/compare/01584d68ab37...718da847c7d7",
-  "failingModule": "/root/workspace/apache/jackrabbit-oak/368106895/oak-lucene",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 9114,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorTest",
-      "failingMethods": [
-        "org.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorTest#inaccessibleWorkDirGivesNoop"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:29 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:29:20 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 28281896,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 946,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-368106895-20180418-141845-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-368106895-20180418-141845-firstCommit/oak-core",
+    "overallMetrics": {
+      "numberRunning": 4593,
+      "numberPassing": 4592,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 15,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "Unwritable existing root folder must have NOOP active blob collector expected:\u003corg.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorFactory$1@40d60f2\u003e but was:\u003corg.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorFactory$ActiveDeletedBlobCollectorImpl@3382cf68\u003e",
-          "isError": false
+          "failureName": "java.lang.OutOfMemoryError",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.security.authentication.token.TokenProviderImplTest",
+        "numberRunning": 20,
+        "numberPassing": 19,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.security.authentication.token.TokenProviderImplTest",
+        "testMethod": "testValidTokenCredentialsWithConflict",
+        "failureName": "java.lang.OutOfMemoryError",
+        "detail": "unable to create new native thread",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 37,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2243,
+    "numberTestFiles": 1586,
+    "numberLibrariesFailingModule": 0,
+    "numberLines": 0
+  }
 }
