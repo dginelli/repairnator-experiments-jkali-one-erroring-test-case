@@ -1,30 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "JanusGraph/janusgraph",
-  "failingModule": "/root/workspace/JanusGraph/janusgraph/398169072/janusgraph-cassandra",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 1407,
-  "failing-test-cases": [
-    {
-      "className": "org.janusgraph.graphdb.astyanax.AstyanaxGraphTest(bop)",
-      "failingMethods": [
-        "testEdgeTTLTiming"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:47 PM",
+    "reproductionDateEnd": "Feb 15, 2020 8:50:58 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 356411624,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 9426,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2339,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2339
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra",
+    "overallMetrics": {
+      "numberRunning": 1344,
+      "numberPassing": 1343,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError:",
-          "isError": false
+          "failureName": "java.util.concurrent.ExecutionException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxColumnPaginationTest(bop)",
+        "numberRunning": 44,
+        "numberPassing": 43,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxColumnPaginationTest(bop)",
+        "testMethod": "testConcurrentGetSlice",
+        "failureName": "java.util.concurrent.ExecutionException",
+        "detail": "java.lang.RuntimeException: org.janusgraph.diskstorage.TemporaryBackendException: Temporary failure in storage backend",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 32,
+    "numberPlugins": 0,
+    "numberSourceFiles": 787,
+    "numberTestFiles": 253,
+    "numberLibrariesFailingModule": 109,
+    "numberLines": 0
+  }
 }
