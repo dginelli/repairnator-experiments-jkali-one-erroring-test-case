@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "AxonFramework/AxonFramework",
-  "failingModule": "/root/workspace/AxonFramework/AxonFramework/392650509/core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.mockito.exceptions.verification.VerificationInOrderFailure"
-  ],
-  "totalNumberRunningTests": 1000,
-  "failing-test-cases": [
-    {
-      "className": "org.axonframework.queryhandling.SubscriptionQueryTest",
-      "failingMethods": [
-        "testOrderingOfOperationOnUpdateHandler"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:57:04 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 743694960,
+      "totalMemory": 1084940288
+    },
+    "totalDuration": 698,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 367,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          367
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-AxonFramework-AxonFramework-392650509-20180615-122507-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-AxonFramework-AxonFramework-392650509-20180615-122507-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 1000,
+      "numberPassing": 999,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "org.mockito.exceptions.verification.VerificationInOrderFailure",
-          "failureDetail": "\nVerification in order failure\nWanted but not invoked:\nupdateHandler.onUpdate(\"Update1\");\n-\u003e at org.axonframework.queryhandling.SubscriptionQueryTest.testOrderingOfOperationOnUpdateHandler(SubscriptionQueryTest.java:276)\nWanted anywhere AFTER following interaction:\nupdateHandler.onInitialResult(\"Initial\");\n-\u003e at org.axonframework.queryhandling.SimpleQueryBus$SimpleQueryUpdateEmitter.initialResult(SimpleQueryBus.java:453)\n",
-          "isError": false
+          "failureName": "org.junit.runners.model.TestTimedOutException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.axonframework.commandhandling.disruptor.DisruptorCommandBusTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.axonframework.commandhandling.disruptor.DisruptorCommandBusTest",
+        "testMethod": "testCommandProcessedAndEventsStored",
+        "failureName": "org.junit.runners.model.TestTimedOutException",
+        "detail": "test timed out after 10000 milliseconds",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 14,
+    "numberPlugins": 0,
+    "numberSourceFiles": 774,
+    "numberTestFiles": 429,
+    "numberLibrariesFailingModule": 94,
+    "numberLines": 0
+  },
+  "commits": {}
 }
