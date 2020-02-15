@@ -1,0 +1,648 @@
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.JanusGraphException: Could not commit transaction due to exception during persistence
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.commit(StandardJanusGraphTx.java:1390)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2655)
+Caused by: org.janusgraph.core.JanusGraphException: Unexpected exception
+	at org.janusgraph.graphdb.database.StandardJanusGraph.commit(StandardJanusGraph.java:802)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.commit(StandardJanusGraphTx.java:1379)
+	... 1 more
+Caused by: org.janusgraph.diskstorage.locking.PermanentLockingException: Local lock contention
+	at org.janusgraph.diskstorage.locking.AbstractLocker.writeLock(AbstractLocker.java:327)
+	at org.janusgraph.diskstorage.locking.consistentkey.ExpectedValueCheckingStore.acquireLock(ExpectedValueCheckingStore.java:103)
+	at org.janusgraph.diskstorage.keycolumnvalue.KCVSProxy.acquireLock(KCVSProxy.java:52)
+	at org.janusgraph.diskstorage.BackendTransaction.acquireIndexLock(BackendTransaction.java:256)
+	at org.janusgraph.graphdb.database.StandardJanusGraph.prepareCommit(StandardJanusGraph.java:577)
+	at org.janusgraph.graphdb.database.StandardJanusGraph.commit(StandardJanusGraph.java:717)
+	... 2 more
+org.janusgraph.core.JanusGraphException: Could not commit transaction due to exception during persistence
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.commit(StandardJanusGraphTx.java:1390)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2655)
+Caused by: org.janusgraph.core.JanusGraphException: Unexpected exception
+	at org.janusgraph.graphdb.database.StandardJanusGraph.commit(StandardJanusGraph.java:802)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.commit(StandardJanusGraphTx.java:1379)
+	... 1 more
+Caused by: org.janusgraph.diskstorage.locking.PermanentLockingException: Local lock contention
+	at org.janusgraph.diskstorage.locking.AbstractLocker.writeLock(AbstractLocker.java:327)
+	at org.janusgraph.diskstorage.locking.consistentkey.ExpectedValueCheckingStore.acquireLock(ExpectedValueCheckingStore.java:103)
+	at org.janusgraph.diskstorage.keycolumnvalue.KCVSProxy.acquireLock(KCVSProxy.java:52)
+	at org.janusgraph.diskstorage.BackendTransaction.acquireIndexLock(BackendTransaction.java:256)
+	at org.janusgraph.graphdb.database.StandardJanusGraph.prepareCommit(StandardJanusGraph.java:577)
+	at org.janusgraph.graphdb.database.StandardJanusGraph.commit(StandardJanusGraph.java:717)
+	... 2 more
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [a] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2616)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+/127.0.0.1:7000 is in use by another process.  Change listen_address:storage_port in cassandra.yaml to values that do not conflict with other services
+Fatal configuration error; unable to start server.  See log for stacktrace.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.JanusGraphException: Could not commit transaction due to exception during persistence
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.commit(StandardJanusGraphTx.java:1390)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2655)
+Caused by: org.janusgraph.core.JanusGraphException: Unexpected exception
+	at org.janusgraph.graphdb.database.StandardJanusGraph.commit(StandardJanusGraph.java:802)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.commit(StandardJanusGraphTx.java:1379)
+	... 1 more
+Caused by: org.janusgraph.diskstorage.locking.PermanentLockingException: Local lock contention
+	at org.janusgraph.diskstorage.locking.AbstractLocker.writeLock(AbstractLocker.java:327)
+	at org.janusgraph.diskstorage.locking.consistentkey.ExpectedValueCheckingStore.acquireLock(ExpectedValueCheckingStore.java:103)
+	at org.janusgraph.diskstorage.keycolumnvalue.KCVSProxy.acquireLock(KCVSProxy.java:52)
+	at org.janusgraph.diskstorage.BackendTransaction.acquireIndexLock(BackendTransaction.java:256)
+	at org.janusgraph.graphdb.database.StandardJanusGraph.prepareCommit(StandardJanusGraph.java:577)
+	at org.janusgraph.graphdb.database.StandardJanusGraph.commit(StandardJanusGraph.java:717)
+	... 2 more
+org.janusgraph.core.JanusGraphException: Could not commit transaction due to exception during persistence
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.commit(StandardJanusGraphTx.java:1390)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2655)
+Caused by: org.janusgraph.core.JanusGraphException: Unexpected exception
+	at org.janusgraph.graphdb.database.StandardJanusGraph.commit(StandardJanusGraph.java:802)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.commit(StandardJanusGraphTx.java:1379)
+	... 1 more
+Caused by: org.janusgraph.diskstorage.locking.PermanentLockingException: Local lock contention
+	at org.janusgraph.diskstorage.locking.AbstractLocker.writeLock(AbstractLocker.java:327)
+	at org.janusgraph.diskstorage.locking.consistentkey.ExpectedValueCheckingStore.acquireLock(ExpectedValueCheckingStore.java:103)
+	at org.janusgraph.diskstorage.keycolumnvalue.KCVSProxy.acquireLock(KCVSProxy.java:52)
+	at org.janusgraph.diskstorage.BackendTransaction.acquireIndexLock(BackendTransaction.java:256)
+	at org.janusgraph.graphdb.database.StandardJanusGraph.prepareCommit(StandardJanusGraph.java:577)
+	at org.janusgraph.graphdb.database.StandardJanusGraph.commit(StandardJanusGraph.java:717)
+	... 2 more
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [a] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2616)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [b] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2617)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [b] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2617)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [a] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2616)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [a] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2616)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [b] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2617)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [b] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2617)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:718)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [b] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2617)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [a] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2616)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [a] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:817)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:745)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2616)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+ classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (tinkerpop-test) @ janusgraph-cassandra ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (bop-test) @ janusgraph-cassandra ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire-reports
+[INFO] parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.janusgraph.diskstorage.cassandra.embedded.EmbeddedMultiWriteStoreTest
+Running org.janusgraph.diskstorage.cassandra.UUIDTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 sec - in org.janusgraph.diskstorage.cassandra.UUIDTest
+Running org.janusgraph.diskstorage.cassandra.utils.CassandraHelperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in org.janusgraph.diskstorage.cassandra.utils.CassandraHelperTest
+Running org.janusgraph.diskstorage.cassandra.CassandraTransactionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 sec - in org.janusgraph.diskstorage.cassandra.CassandraTransactionTest
+Running org.janusgraph.diskstorage.cassandra.thrift.ThriftStoreTest
+Loading time (ms): 273
+Reading time (ms): 348
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 313.4 sec - in org.janusgraph.diskstorage.cassandra.thrift.ThriftStoreTest
+Running org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxLockStoreTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.756 sec - in org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxLockStoreTest
+Running org.janusgraph.diskstorage.cassandra.thrift.ThriftMultiWriteStoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.578 sec - in org.janusgraph.diskstorage.cassandra.thrift.ThriftMultiWriteStoreTest
+Running org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxMultiWriteStoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.886 sec - in org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxMultiWriteStoreTest
+Running org.janusgraph.graphdb.embedded.EmbeddedGraphTest
+Failed message add
+Failed message add
+Failed message add
+Failed message add
+Attempting to repair partially failed transaction [2@82eff26b632329-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:21:43.670Z]
+Attempting to repair partially failed transaction [3@82eff26b632329-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:21:44.342Z]
+Attempting to repair partially failed transaction [4@82eff26b632329-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:21:44.346Z]
+Attempting to repair partially failed transaction [5@82eff26b632329-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:21:44.455Z]
+Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 369.034 sec - in org.janusgraph.graphdb.embedded.EmbeddedGraphTest
+Running org.janusgraph.diskstorage.cassandra.embedded.EmbeddedStoreTest
+Loading time (ms): 134
+Reading time (ms): 157
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 273.868 sec - in org.janusgraph.diskstorage.cassandra.embedded.EmbeddedStoreTest
+Running org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxStoreTest
+Loading time (ms): 229
+Reading time (ms): 266
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 231.287 sec - in org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxStoreTest
+Running org.janusgraph.graphdb.thrift.ThriftGraphTest
+Failed message add
+Failed message add
+Failed message add
+Failed message add
+Attempting to repair partially failed transaction [2@82eff26b636143-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:36:47.467Z]
+Attempting to repair partially failed transaction [3@82eff26b636143-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:36:48.143Z]
+Attempting to repair partially failed transaction [5@82eff26b636143-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:36:48.264Z]
+Attempting to repair partially failed transaction [4@82eff26b636143-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:36:48.156Z]
+Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 376.663 sec - in org.janusgraph.graphdb.thrift.ThriftGraphTest
+Running org.janusgraph.graphdb.astyanax.AstyanaxGraphTest
+Failed message add
+Failed message add
+Failed message add
+Failed message add
+Attempting to repair partially failed transaction [2@82eff26b638256-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:43:10.077Z]
+Attempting to repair partially failed transaction [4@82eff26b638256-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:43:10.090Z]
+Attempting to repair partially failed transaction [3@82eff26b638256-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:43:10.085Z]
+Attempting to repair partially failed transaction [5@82eff26b638256-b-cn1047-hpc2n-umu-se2k::2020-02-15T18:43:10.199Z]
+Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 375.8 sec - in org.janusgraph.graphdb.astyanax.AstyanaxGraphTest
+Running org.janusgraph.graphdb.embedded.EmbeddedPartitionGraphTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.382 sec - in org.janusgraph.graphdb.embedded.EmbeddedPartitionGraphTest
+Running org.janusgraph.graphdb.thrift.ThriftOLAPTest
+Execution time (ms) [200|20100]: 2063
+Execution time (ms) [100|5050]: 1304
+Execution time (ms) [100|5050]: 4569
+Execution time (ms) [100|5050]: 1062
+0
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 88.278 sec - in org.janusgraph.graphdb.thrift.ThriftOLAPTest
+Running org.janusgraph.graphdb.thrift.ThriftConnectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.773 sec - in org.janusgraph.graphdb.thrift.ThriftConnectionTest
+Running org.janusgraph.diskstorage.cassandra.thrift.CassandraThriftStoreManagerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.434 sec - in org.janusgraph.diskstorage.cassandra.thrift.CassandraThriftStoreManagerTest
+Running org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxColumnPaginationTest
+Loading time (ms): 207
+Reading time (ms): 228
+Tests run: 44, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 530.733 sec <<< FAILURE! - in org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxColumnPaginationTest
+testConcurrentGetSlice(org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxColumnPaginationTest)  Time elapsed: 52.855 sec  <<< ERROR!
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: org.janusgraph.diskstorage.TemporaryBackendException: Temporary failure in storage backend
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.janusgraph.diskstorage.KeyColumnValueStoreTest.testConcurrentStoreOps(KeyColumnValueStoreTest.java:742)
+	at org.janusgraph.diskstorage.KeyColumnValueStoreTest.testConcurrentGetSlice(KeyColumnValueStoreTest.java:691)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: org.janusgraph.diskstorage.TemporaryBackendException: Temporary failure in storage backend
+	at org.janusgraph.diskstorage.KeyColumnValueStoreTest$ConcurrentRandomSliceReader.run(KeyColumnValueStoreTest.java:801)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.janusgraph.diskstorage.TemporaryBackendException: Temporary failure in storage backend
+	at org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxKeyColumnValueStore.getNamesSlice(AstyanaxKeyColumnValueStore.java:159)
+	at org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxKeyColumnValueStore.getNamesSlice(AstyanaxKeyColumnValueStore.java:113)
+	at org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxKeyColumnValueStore.getSlice(AstyanaxKeyColumnValueStore.java:102)
+	at org.janusgraph.diskstorage.KeyColumnValueStoreTest.checkSlice(KeyColumnValueStoreTest.java:633)
+	at org.janusgraph.diskstorage.KeyColumnValueStoreTest$ConcurrentRandomSliceReader.run(KeyColumnValueStoreTest.java:798)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.netflix.astyanax.connectionpool.exceptions.PoolTimeoutException: PoolTimeoutException: [host=127.0.0.1(127.0.0.1):9160, latency=2000(2000), attempts=1]Timed out waiting for connection
+	at com.netflix.astyanax.connectionpool.impl.SimpleHostConnectionPool.waitForConnection(SimpleHostConnectionPool.java:231)
+	at com.netflix.astyanax.connectionpool.impl.SimpleHostConnectionPool.borrowConnection(SimpleHostConnectionPool.java:198)
+	at com.netflix.astyanax.connectionpool.impl.RoundRobinExecuteWithFailover.borrowConnection(RoundRobinExecuteWithFailover.java:84)
+	at com.netflix.astyanax.connectionpool.impl.AbstractExecuteWithFailoverImpl.tryOperation(AbstractExecuteWithFailoverImpl.java:117)
+	at com.netflix.astyanax.connectionpool.impl.AbstractHostPartitionConnectionPool.executeWithFailover(AbstractHostPartitionConnectionPool.java:352)
+	at com.netflix.astyanax.thrift.ThriftColumnFamilyQueryImpl$4.execute(ThriftColumnFamilyQueryImpl.java:538)
+	at org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxKeyColumnValueStore.getNamesSlice(AstyanaxKeyColumnValueStore.java:157)
+	at org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxKeyColumnValueStore.getNamesSlice(AstyanaxKeyColumnValueStore.java:113)
+	at org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxKeyColumnValueStore.getSlice(AstyanaxKeyColumnValueStore.java:102)
+	at org.janusgraph.diskstorage.KeyColumnValueStoreTest.checkSlice(KeyColumnValueStoreTest.java:633)
+	at org.janusgraph.diskstorage.KeyColumnValueStoreTest$ConcurrentRandomSliceReader.run(KeyColumnValueStoreTest.java:798)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Running org.janusgraph.graphdb.thrift.ThriftPartitionGraphTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 64.954 sec - in org.janusgraph.graphdb.thrift.ThriftPartitionGraphTest
+Running org.janusgraph.diskstorage.cassandra.embedded.EmbeddedLockStoreTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.475 sec - in org.janusgraph.diskstorage.cassandra.embedded.EmbeddedLockStoreTest
+Running org.janusgraph.graphdb.thrift.ThriftGraphCacheTest
+Failed message add
+Failed message add
+Failed message add
+Failed message add
+Attempting to repair partially failed transaction [2@82eff26b644489-b-cn1047-hpc2n-umu-se2b::2020-02-15T19:03:39.185Z]
+Attempting to repair partially failed transaction [3@82eff26b644489-b-cn1047-hpc2n-umu-se2b::2020-02-15T19:03:39.858Z]
+Attempting to repair partially failed transaction [4@82eff26b644489-b-cn1047-hpc2n-umu-se2b::2020-02-15T19:03:39.867Z]
+Attempting to repair partially failed transaction [5@82eff26b644489-b-cn1047-hpc2n-umu-se2b::2020-02-15T19:03:39.974Z]
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 381.047 sec - in org.janusgraph.graphdb.thrift.ThriftGraphCacheTest
+Running org.janusgraph.diskstorage.cassandra.embedded.EmbeddedIDAuthorityTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 257.807 sec - in org.janusgraph.diskstorage.cassandra.embedded.EmbeddedIDAuthorityTest
+Running org.janusgraph.diskstorage.cassandra.thrift.ThriftDistributedStoreManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.304 sec - in org.janusgraph.diskstorage.cassandra.thrift.ThriftDistributedStoreManagerTest
+Running org.janusgraph.diskstorage.cassandra.astyanax.AstyanaxIDAuthorityTest
+
+Results :
+
+Tests in error: 
+  AstyanaxColumnPaginationTest>KeyColumnValueStoreTest.testConcurrentGetSlice:691->KeyColumnValueStoreTest.testConcurrentStoreOps:742 » Execution
+
+Tests run: 601, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] JanusGraph: Distributed Graph Database ............. SUCCESS [  0.502 s]
+[INFO] JanusGraph-Core: Core Library for JanusGraph ....... SUCCESS [  1.508 s]
+[INFO] JanusGraph-Test: Test Suite for JanusGraph ......... SUCCESS [19:54 min]
+[INFO] JanusGraph CodePipelines CI: Distributed release testing. SUCCESS [  3.054 s]
+[INFO] janusgraph-server .................................. SUCCESS [ 16.979 s]
+[INFO] JanusGraph-BerkeleyJE: Distributed Graph Database .. SUCCESS [11:30 min]
+[INFO] JanusGraph-Cassandra: Distributed Graph Database ... FAILURE [  01:00 h]
+[INFO] JanusGraph-CQL: Distributed Graph Database ......... SKIPPED
+[INFO] JanusGraph-HBase: Parent Module .................... SKIPPED
+[INFO] JanusGraph-HBase: Version-independent Core ......... SKIPPED
+[INFO] JanusGraph-ElasticSearch: Distributed Indexing Support SKIPPED
+[INFO] JanusGraph-HBase: HBase Server Used by Maven Testing SKIPPED
+[INFO] JanusGraph-HBase: 1.x Compatibility Shim ........... SKIPPED
+[INFO] JanusGraph-HBase: Universal binary ................. SKIPPED
+[INFO] JanusGraph-Hadoop: Parent Module ................... SKIPPED
+[INFO] JanusGraph-Hadoop: Version-independent Core ........ SKIPPED
+[INFO] JanusGraph-Hadoop: 2.x Compatibility Shim .......... SKIPPED
+[INFO] JanusGraph-Hadoop: Universal binary ................ SKIPPED
+[INFO] JanusGraph-Bigtable: Google Cloud Bigtable driver .. SKIPPED
+[INFO] JanusGraph-Lucene: Indexing Support ................ SKIPPED
+[INFO] JanusGraph-Solr: Distributed Indexing Support ...... SKIPPED
+[INFO] JanusGraph-All: Complete JanusGraph Distribution ... SKIPPED
+[INFO] JanusGraph-Dist: Tar and Zip Archives .............. SKIPPED
+[INFO] JanusGraph-Dist: Archive with Hadoop 2 ............. SKIPPED
+[INFO] JanusGraph-Doc: AsciiDoc Manual for JanusGraph ..... SKIPPED
+[INFO] JanusGraph-Examples: Examples for JanusGraph ....... SKIPPED
+[INFO] Example-Common: Common Graph Code for Examples ..... SKIPPED
+[INFO] Example-BerkeleyJE: BerkeleyJE Storage, Lucene Index SKIPPED
+[INFO] Example-Cassandra: Cassandra Thrift Storage, Elasticsearch Index SKIPPED
+[INFO] Example-Cql: Cassandra CQL Storage, Elasticsearch Index SKIPPED
+[INFO] Example-HBase: HBase Storage, Solr Index ........... SKIPPED
+[INFO] Example-RemoteGraph: Example with RemoteGraph ...... SKIPPED
+[INFO] Example-TinkerGraph: Example with TinkerGraph ...... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:31 h
+[INFO] Finished at: 2020-02-15T20:11:21+01:00
+[INFO] Final Memory: 43M/103M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.15:test (bop-test) on project janusgraph-cassandra: ExecutionException; nested exception is java.util.concurrent.ExecutionException: java.lang.RuntimeException: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ?
+[ERROR] Command was/bin/sh -c cd /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra && /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/bin/java -Xms256m -Xmx1280m -ea -XX:+HeapDumpOnOutOfMemoryError -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/jamm-0.3.0.jar -Dtest.cassandra.confdir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/conf/localhost-bop -Dtest.cassandra.datadir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/data/localhost-bop -jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefirebooter1931516246575761843.jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire8398887514355518980tmp /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire_752395788672635545558tmp
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.15:test (bop-test) on project janusgraph-cassandra: ExecutionException; nested exception is java.util.concurrent.ExecutionException: java.lang.RuntimeException: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ?
+Command was/bin/sh -c cd /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra && /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/bin/java -Xms256m -Xmx1280m -ea -XX:+HeapDumpOnOutOfMemoryError -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/jamm-0.3.0.jar -Dtest.cassandra.confdir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/conf/localhost-bop -Dtest.cassandra.datadir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/data/localhost-bop -jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefirebooter1931516246575761843.jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire8398887514355518980tmp /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire_752395788672635545558tmp
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: ExecutionException; nested exception is java.util.concurrent.ExecutionException: java.lang.RuntimeException: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ?
+Command was/bin/sh -c cd /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra && /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/bin/java -Xms256m -Xmx1280m -ea -XX:+HeapDumpOnOutOfMemoryError -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/jamm-0.3.0.jar -Dtest.cassandra.confdir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/conf/localhost-bop -Dtest.cassandra.datadir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/data/localhost-bop -jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefirebooter1931516246575761843.jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire8398887514355518980tmp /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire_752395788672635545558tmp
+	at org.apache.maven.plugin.surefire.SurefirePlugin.assertNoException(SurefirePlugin.java:177)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:167)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:777)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:645)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+Caused by: org.apache.maven.surefire.booter.SurefireBooterForkException: ExecutionException; nested exception is java.util.concurrent.ExecutionException: java.lang.RuntimeException: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ?
+Command was/bin/sh -c cd /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra && /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/bin/java -Xms256m -Xmx1280m -ea -XX:+HeapDumpOnOutOfMemoryError -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/jamm-0.3.0.jar -Dtest.cassandra.confdir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/conf/localhost-bop -Dtest.cassandra.datadir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/data/localhost-bop -jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefirebooter1931516246575761843.jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire8398887514355518980tmp /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire_752395788672635545558tmp
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.runSuitesForkPerTestSet(ForkStarter.java:316)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:169)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:883)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:747)
+	... 23 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.RuntimeException: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ?
+Command was/bin/sh -c cd /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra && /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/bin/java -Xms256m -Xmx1280m -ea -XX:+HeapDumpOnOutOfMemoryError -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/jamm-0.3.0.jar -Dtest.cassandra.confdir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/conf/localhost-bop -Dtest.cassandra.datadir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/data/localhost-bop -jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefirebooter1931516246575761843.jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire8398887514355518980tmp /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire_752395788672635545558tmp
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.runSuitesForkPerTestSet(ForkStarter.java:300)
+	... 26 more
+Caused by: java.lang.RuntimeException: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ?
+Command was/bin/sh -c cd /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra && /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/bin/java -Xms256m -Xmx1280m -ea -XX:+HeapDumpOnOutOfMemoryError -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/jamm-0.3.0.jar -Dtest.cassandra.confdir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/conf/localhost-bop -Dtest.cassandra.datadir=/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/cassandra/data/localhost-bop -jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefirebooter1931516246575761843.jar /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire8398887514355518980tmp /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-398169072-20180629-122616-firstCommit/janusgraph-cassandra/target/surefire/surefire_752395788672635545558tmp
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:485)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:352)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.access$300(ForkStarter.java:85)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter$2.call(ForkStarter.java:288)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter$2.call(ForkStarter.java:283)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :janusgraph-cassandra
