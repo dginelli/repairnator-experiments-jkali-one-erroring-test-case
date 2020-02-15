@@ -1,0 +1,141 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ERROR StatusLogger No Log4j 2 configuration file found. Using default configuration (logging only errors to the console), or user programmatically provided configurations. Set system property 'log4j2.debug' to show Log4j 2 internal initialization logging. See https://logging.apache.org/log4j/2.x/manual/configuration.html for instructions on how to configure Log4j 2
+ @ elasticsearch-dataformat ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-codelibs-elasticsearch-dataformat-420868227-20180826-234924-firstCommit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ elasticsearch-dataformat ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ elasticsearch-dataformat ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-codelibs-elasticsearch-dataformat-420868227-20180826-234924-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ elasticsearch-dataformat ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ elasticsearch-dataformat ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-codelibs-elasticsearch-dataformat-420868227-20180826-234924-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 8.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 104.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1207.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.codelibs.elasticsearch.df.DataFormatPluginTest
+----------------------------------------
+Cluster Name: es-dataformat-1581804870099
+Base Path:    /tmp/es-cluster2891752286525831571
+Num Of Node:  1
+----------------------------------------
+Creating /tmp/es-cluster2891752286525831571/node_1
+Creating /tmp/es-cluster2891752286525831571/node_1/config
+Creating /tmp/es-cluster2891752286525831571/node_1/logs
+Creating /tmp/es-cluster2891752286525831571/node_1/data
+Node Name:      Node 1
+HTTP Port:      9201
+Transport Port: 9301
+Data Directory: /tmp/es-cluster2891752286525831571/node_1/data
+Log Directory:  /tmp/es-cluster2891752286525831571/node_1/logs
+----------------------------------------
+Creating /tmp/es-cluster2891752286525831571/node_1/modules
+Creating /tmp/es-cluster2891752286525831571/node_1/plugins
+[2020-02-15T23:14:31,761][INFO ][o.e.n.Node               ] [Node 1] initializing ...
+[2020-02-15T23:14:32,125][INFO ][o.e.e.NodeEnvironment    ] [Node 1] using [1] data paths, mounts [[/tmp (tmpfs)]], net usable_space [168.6gb], net total_space [170.8gb], types [tmpfs]
+[2020-02-15T23:14:32,129][INFO ][o.e.e.NodeEnvironment    ] [Node 1] heap size [1gb], compressed ordinary object pointers [true]
+[2020-02-15T23:14:32,131][INFO ][o.e.n.Node               ] [Node 1] node name [Node 1], node ID [qEx9Nx4WTQmr4Krh1nFM2A]
+[2020-02-15T23:14:32,132][INFO ][o.e.n.Node               ] [Node 1] version[6.4.0], pid[783782], build[unknown/unknown/595516e/2018-08-17T23:18:47.308994Z], OS[Linux/4.15.0-76-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_202/25.202-b08]
+[2020-02-15T23:14:32,133][INFO ][o.e.n.Node               ] [Node 1] JVM arguments []
+[2020-02-15T23:14:32,151][INFO ][o.e.p.PluginsService     ] [Node 1] no modules loaded
+[2020-02-15T23:14:32,157][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.codelibs.elasticsearch.df.DataFormatPlugin]
+[2020-02-15T23:14:32,158][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.analysis.common.CommonAnalysisPlugin]
+[2020-02-15T23:14:32,158][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.index.mapper.MapperExtrasPlugin]
+[2020-02-15T23:14:32,158][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.index.rankeval.RankEvalPlugin]
+[2020-02-15T23:14:32,159][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+[2020-02-15T23:14:32,159][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.ingest.common.IngestCommonPlugin]
+[2020-02-15T23:14:32,160][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+[2020-02-15T23:14:32,160][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.painless.PainlessPlugin]
+[2020-02-15T23:14:32,160][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+[2020-02-15T23:14:32,161][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.plugin.repository.url.URLRepositoryPlugin]
+[2020-02-15T23:14:32,161][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.script.expression.ExpressionPlugin]
+[2020-02-15T23:14:32,161][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+[2020-02-15T23:14:32,164][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.search.aggregations.matrix.MatrixAggregationPlugin]
+[2020-02-15T23:14:32,164][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+[2020-02-15T23:14:32,165][INFO ][o.e.p.PluginsService     ] [Node 1] loaded plugin [org.elasticsearch.tribe.TribePlugin]
+[2020-02-15T23:14:36,694][INFO ][o.e.d.DiscoveryModule    ] [Node 1] using discovery type [zen]
+[2020-02-15T23:14:37,545][INFO ][o.e.n.Node               ] [Node 1] initialized
+[2020-02-15T23:14:37,550][INFO ][o.e.n.Node               ] [Node 1] starting ...
+Closed all nodes.
+Deleted /tmp/es-cluster2891752286525831571
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.015 sec <<< FAILURE! - in org.codelibs.elasticsearch.df.DataFormatPluginTest
+org.codelibs.elasticsearch.df.DataFormatPluginTest  Time elapsed: 8.014 sec  <<< ERROR!
+org.codelibs.elasticsearch.runner.ClusterRunnerException: Failed to start node 1
+	at org.codelibs.elasticsearch.df.DataFormatPluginTest.setUp(DataFormatPluginTest.java:84)
+Caused by: org.elasticsearch.transport.BindTransportException: Failed to bind to [9301]
+	at org.codelibs.elasticsearch.df.DataFormatPluginTest.setUp(DataFormatPluginTest.java:84)
+Caused by: java.net.BindException: Address already in use
+
+
+Results :
+
+Tests in error: 
+  DataFormatPluginTest.setUp:84 » ClusterRunner Failed to start node 1
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.084 s
+[INFO] Finished at: 2020-02-15T23:14:39+01:00
+[INFO] Final Memory: 20M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project elasticsearch-dataformat: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-codelibs-elasticsearch-dataformat-420868227-20180826-234924-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project elasticsearch-dataformat: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-codelibs-elasticsearch-dataformat-420868227-20180826-234924-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-codelibs-elasticsearch-dataformat-420868227-20180826-234924-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
