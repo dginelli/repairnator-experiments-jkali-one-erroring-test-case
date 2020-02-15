@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "OpenGamma/Strata",
-  "bugCommit": "https://github.com/OpenGamma/Strata/commit/dc3b371936c3",
-  "failingModule": "/root/workspace/OpenGamma/Strata/270763684/modules/loader",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 10570,
-  "failing-test-cases": [
-    {
-      "className": "com.opengamma.strata.loader.csv.TradeCsvLoaderTest",
-      "failingMethods": [
-        "com.opengamma.strata.loader.csv.TradeCsvLoaderTest#test_load_swap_all"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:59 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:44:41 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 46037312,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1839,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1398,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1398
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-270779343-20170901-125653-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-270779343-20170901-125653-firstCommit/modules/loader",
+    "overallMetrics": {
+      "numberRunning": 10570,
+      "numberPassing": 10569,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "[PARSING: CSV file trade could not be parsed at line 2: Swap leg must define day count on fixed legs when more than 2 floating legs: java.lang.IllegalArgumentException: Swap leg must define day count on fixed legs when more than 2 floating legs] expected [0] but found [1]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.opengamma.strata.loader.csv.TradeCsvLoaderTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.opengamma.strata.loader.csv.TradeCsvLoaderTest",
+        "testMethod": "test_load_swap_all",
+        "failureName": "java.lang.AssertionError",
+        "detail": "[PARSING: CSV file trade could not be parsed at line 2: Swap leg must define day count on fixed legs when more than 2 floating legs: java.lang.IllegalArgumentException: Swap leg must define day count on fixed legs when more than 2 floating legs] expected [0] but found [1]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1603,
+    "numberTestFiles": 1114,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  },
+  "commits": {}
 }
