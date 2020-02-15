@@ -1,32 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "ButterFaces/ButterFaces",
-  "bugCommit": "https://github.com/ButterFaces/ButterFaces/compare/bab808ecfb5e...d212e24bd8c1",
-  "failingModule": "/root/workspace/ButterFaces/ButterFaces/285576979/components",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 68,
-  "failing-test-cases": [
-    {
-      "className": "de.larmic.butterfaces.component.html.resourcelibraries.HtmlActivateLibrariesTest",
-      "failingMethods": [
-        "de.larmic.butterfaces.component.html.resourcelibraries.HtmlActivateLibrariesTest#testAssertThatAllResourcesThatAreAnnotatedAreFoundInResourcesFolders"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:54:00 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 370114144,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 514,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 441,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          441
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ButterFaces-ButterFaces-285584704-20171009-155025-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ButterFaces-ButterFaces-285584704-20171009-155025-firstCommit/components",
+    "overallMetrics": {
+      "numberRunning": 68,
+      "numberPassing": 67,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "Resource \u0027butterfaces-labeled-container.css\u0027 not found",
-          "isError": false
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "de.larmic.butterfaces.component.html.resourcelibraries.HtmlActivateLibrariesTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "de.larmic.butterfaces.component.html.resourcelibraries.HtmlActivateLibrariesTest",
+        "testMethod": "testAssertThatAllResourcesThatAreAnnotatedAreFoundInResourcesFolders",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberPlugins": 0,
+    "numberSourceFiles": 255,
+    "numberTestFiles": 21,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {}
 }
