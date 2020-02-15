@@ -1,0 +1,897 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RedRoma-aroma-application-service-370263014-20180423-215446-firstCommit/.m2/org/slf4j/slf4j-nop/1.7.25/slf4j-nop-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RedRoma-aroma-application-service-370263014-20180423-215446-firstCommit/.m2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.helpers.NOPLoggerFactory]
+elli/workspace/repairnator-repairnator-experiments-RedRoma-aroma-application-service-370263014-20180423-215446-firstCommit/target/jacoco.exec,excludes=**/*Exception.*
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.40:compile (compile) @ aroma-application-service ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- download-maven-plugin:1.3.0:wget (download-javadoc-stylesheet) @ aroma-application-service ---
+[INFO] File already exist, skipping
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ aroma-application-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ aroma-application-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ aroma-application-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-RedRoma-aroma-application-service-370263014-20180423-215446-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ aroma-application-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.2.40:test-compile (test-compile) @ aroma-application-service ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ aroma-application-service ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-RedRoma-aroma-application-service-370263014-20180423-215446-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 6.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 105.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1281.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running tech.aroma.application.service.operations.SendMessageOperationTest
+
+testProcess()
+  Duration: 3787ms
+  Runs: 100
+
+testWhenTokenMapperReturnsNull()
+  Duration: 12ms
+
+testWhenTitleExceedsLimit()
+  Duration: 469ms
+  Runs: 100
+
+testWhenTokenMapperFails()
+  Duration: 20ms
+
+testWhenBodyExceedsLimit()
+  Duration: 564ms
+  Runs: 100
+
+testProcessWhenAuthenticationFails()
+  Duration: 156ms
+  Runs: 100
+
+testConstructor()
+  Duration: 9ms
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.359 sec - in tech.aroma.application.service.operations.SendMessageOperationTest
+Running tech.aroma.application.service.operations.ModuleApplicationServiceOperationsTest
+
+testConfigure()
+  Duration: 1064ms
+
+testProvideAuthToAppTokenMapper()
+  Duration: 1ms
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.089 sec - in tech.aroma.application.service.operations.ModuleApplicationServiceOperationsTest
+Running tech.aroma.application.service.ApplicationServiceBaseTest
+
+testGetApiVersion()
+  Duration: 210ms
+  Runs: 100
+
+testSendMessageWithBadArgs()
+  Duration: 16ms
+
+testSendMessage()
+  Duration: 45ms
+  Runs: 100
+
+testSendMessageAsyncWithBadArgs()
+  Duration: 0ms
+
+testConstructor()
+  Duration: 1ms
+
+testSendMessageAsync()
+  Duration: 51ms
+  Runs: 100
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.361 sec - in tech.aroma.application.service.ApplicationServiceBaseTest
+Running tech.aroma.application.service.reactions.actions.IgnoreInboxTest
+
+testToString()
+  Duration: 26ms
+  Runs: 10
+
+testActOnMessageWithBadArgs()
+  Duration: 8ms
+  Runs: 10
+
+testActOnMessage()
+  Duration: 13ms
+  Runs: 10
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in tech.aroma.application.service.reactions.actions.IgnoreInboxTest
+Running tech.aroma.application.service.reactions.actions.DoNothingActionTest
+
+testToString()
+  Duration: 7ms
+  Runs: 10
+
+testActOnMessage()
+  Duration: 7ms
+  Runs: 10
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in tech.aroma.application.service.reactions.actions.DoNothingActionTest
+Running tech.aroma.application.service.reactions.actions.StoreInInboxActionTest
+
+testToString()
+  Duration: 183ms
+  Runs: 50
+
+testWithBadArgs()
+  Duration: 5ms
+
+testActOnMessage()
+  Duration: 121ms
+  Runs: 50
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.323 sec - in tech.aroma.application.service.reactions.actions.StoreInInboxActionTest
+Running tech.aroma.application.service.reactions.actions.RunThroughFollowerInboxesActionTest
+
+testToString()
+  Duration: 370ms
+  Runs: 50
+
+testActOnMessage()
+  Duration: 2535ms
+  Runs: 50
+
+testConstructor()
+  Duration: 18ms
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.95 sec - in tech.aroma.application.service.reactions.actions.RunThroughFollowerInboxesActionTest
+Running tech.aroma.application.service.reactions.actions.ActionRunnerAsynchronousTest
+
+testRunThroughActions()
+  Duration: 5221ms
+  Runs: 50
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.218 sec - in tech.aroma.application.service.reactions.actions.ActionRunnerAsynchronousTest
+Running tech.aroma.application.service.reactions.actions.RunThroughInboxActionTest
+
+testWhenSkipInboxActionIncluded()
+  Duration: 2159ms
+  Runs: 100
+
+testToString()
+  Duration: 1416ms
+  Runs: 100
+
+testWhenDontStoreActionIncluded()
+  Duration: 1026ms
+  Runs: 100
+
+testWhenSkipPushNotificationIncluded()
+  Duration: 1263ms
+  Runs: 100
+
+testWithBadArgs()
+  Duration: 1137ms
+  Runs: 100
+
+testActOnMessage()
+  Duration: 2653ms
+  Runs: 100
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.679 sec - in tech.aroma.application.service.reactions.actions.RunThroughInboxActionTest
+Running tech.aroma.application.service.reactions.actions.StoreMessageActionTest
+
+testToString()
+  Duration: 214ms
+  Runs: 100
+
+testWithBadArgs()
+  Duration: 1ms
+
+testActOnMessage()
+  Duration: 109ms
+  Runs: 100
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.35 sec - in tech.aroma.application.service.reactions.actions.StoreMessageActionTest
+Running tech.aroma.application.service.reactions.actions.ForwardToSlackChannelActionTest
+
+testToString()
+  Duration: 1920ms
+  Runs: 50
+
+testWithBadArgs()
+  Duration: 43ms
+
+testWhenHttpCallFails()
+  Duration: 1324ms
+  Runs: 50
+
+testActOnMessage()
+  Duration: 964ms
+  Runs: 50
+
+testConstructor()
+  Duration: 22ms
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.32 sec - in tech.aroma.application.service.reactions.actions.ForwardToSlackChannelActionTest
+Running tech.aroma.application.service.reactions.actions.ActionFactoryImplTest
+
+testActionToStoreMessage()
+  Duration: 342ms
+  Runs: 100
+
+testActionToSendEmail()
+  Duration: 144ms
+  Runs: 100
+
+testActionToSendToGitter()
+  Duration: 134ms
+  Runs: 100
+
+testActionToStoreInInbox()
+  Duration: 117ms
+  Runs: 100
+
+testActionToRunThroughInbox()
+  Duration: 128ms
+  Runs: 100
+
+testActionToSendToSlackUser()
+  Duration: 107ms
+  Runs: 100
+
+testActionToSendToGitterWithBadArgs()
+  Duration: 107ms
+  Runs: 100
+
+testActionToRunThroughFollowerInboxes()
+  Duration: 97ms
+  Runs: 100
+
+testActionToSendToSlackChannel()
+  Duration: 66ms
+  Runs: 100
+
+testActionFor()
+  Duration: 114ms
+  Runs: 100
+
+testActionToSendNotifications()
+  Duration: 92ms
+  Runs: 100
+
+testActionToSendPushNotification()
+  Duration: 89ms
+  Runs: 100
+
+testActionToDoNothing()
+  Duration: 72ms
+  Runs: 100
+
+testConstructor()
+  Duration: 17ms
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.707 sec - in tech.aroma.application.service.reactions.actions.ActionFactoryImplTest
+Running tech.aroma.application.service.reactions.actions.SendNotificationActionTest
+
+testToString()
+  Duration: 66ms
+  Runs: 50
+
+testActOnMessage()
+  Duration: 117ms
+  Runs: 50
+
+testConstructor()
+  Duration: 2ms
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec - in tech.aroma.application.service.reactions.actions.SendNotificationActionTest
+Running tech.aroma.application.service.reactions.actions.SendPushNotificationActionTest
+
+testWhenOneDeviceFails()
+  Duration: 1112ms
+  Runs: 100
+
+testWithBadArgs()
+  Duration: 149ms
+  Runs: 100
+
+testWhenNoDevices()
+  Duration: 1ms
+
+testActOnMessage()
+  Duration: 329ms
+  Runs: 100
+
+testConstructor()
+  Duration: 2ms
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.601 sec - in tech.aroma.application.service.reactions.actions.SendPushNotificationActionTest
+Running tech.aroma.application.service.reactions.actions.ActionRunnerSynchronousTest
+
+testRunThroughActions()
+  Duration: 2297ms
+  Runs: 50
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.3 sec - in tech.aroma.application.service.reactions.actions.ActionRunnerSynchronousTest
+Running tech.aroma.application.service.reactions.actions.ActionTest
+
+testCheckMessageWhenBad()
+  Duration: 70ms
+  Runs: 50
+
+testCheckMessageWhenGood()
+  Duration: 29ms
+  Runs: 50
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in tech.aroma.application.service.reactions.actions.ActionTest
+Running tech.aroma.application.service.reactions.actions.ActionRunnerTest
+
+testNewAsynchronousRunner()
+  Duration: 9ms
+  Runs: 10
+
+testNewSynchronousRunner()
+  Duration: 9ms
+  Runs: 10
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in tech.aroma.application.service.reactions.actions.ActionRunnerTest
+Running tech.aroma.application.service.reactions.actions.ForwardToGitterActionTest
+
+testToString()
+  Duration: 153ms
+  Runs: 10
+
+testWhenHttpCallFail()
+  Duration: 908ms
+  Runs: 50
+
+testWithBadArgs()
+  Duration: 871ms
+  Runs: 50
+
+testWithBadUrl()
+  Duration: 948ms
+  Runs: 50
+
+testActOnMessage()
+  Duration: 848ms
+  Runs: 50
+
+testConstructor()
+  Duration: 12ms
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.745 sec - in tech.aroma.application.service.reactions.actions.ForwardToGitterActionTest
+Running tech.aroma.application.service.reactions.matchers.MessageMatchersTest
+
+testHostnameIsWithBadArgs()
+  Duration: 39ms
+
+testBodyIsWhenMatch()
+  Duration: 7ms
+  Runs: 100
+
+testNotWhenNoMatch()
+  Duration: 23ms
+  Runs: 100
+
+testBodyDoesNotContainWhenMatch()
+  Duration: 18ms
+  Runs: 100
+
+testBodyContainsWhenNoMatch()
+  Duration: 22ms
+  Runs: 100
+
+testHostnameContainsWithBadArgs()
+  Duration: 1ms
+
+testTitleIsNotWithBadArgs()
+  Duration: 0ms
+
+testApplicationIsNotWhenNoMatch()
+  Duration: 20ms
+  Runs: 100
+
+testHostnameDoesNotContainWhenMatch()
+  Duration: 23ms
+  Runs: 100
+
+testTitleContainsWhenNoMatch()
+  Duration: 14ms
+  Runs: 100
+
+testNot()
+  Duration: 53ms
+  Runs: 100
+
+testHostnameContainsWhenMatch()
+  Duration: 5ms
+  Runs: 100
+
+testTitleContainsWhenMatch()
+  Duration: 7ms
+  Runs: 100
+
+testUrgencyIsWhenNoMatch()
+  Duration: 9ms
+  Runs: 100
+
+testHostnameIsWhenNoMatch()
+  Duration: 7ms
+  Runs: 100
+
+testBodyContainsWhenMatch()
+  Duration: 23ms
+  Runs: 100
+
+testUrgencyIsWhenMatch()
+  Duration: 6ms
+  Runs: 100
+
+testHostnameContainsWhenNoMatch()
+  Duration: 23ms
+  Runs: 100
+
+testTitleIsNotWhenMatch()
+  Duration: 6ms
+  Runs: 100
+
+testApplicationIsNotWhenMatch()
+  Duration: 6ms
+  Runs: 100
+
+testTitleIsWithBadArgs()
+  Duration: 1ms
+
+testTitleIsNotWhenNoMatch()
+  Duration: 13ms
+  Runs: 100
+
+testBodyDoesNotContainWhenNoMatch()
+  Duration: 6ms
+  Runs: 100
+
+testBodyIsWithBadArgs()
+  Duration: 2ms
+
+testNotWhenMatch()
+  Duration: 6ms
+  Runs: 100
+
+testHostnameIsWhenMatch()
+  Duration: 19ms
+  Runs: 100
+
+testHostnameDoesNotContainWhenNoMatch()
+  Duration: 6ms
+  Runs: 100
+
+testApplicationIsWithBadArgs()
+  Duration: 12ms
+  Runs: 100
+
+testNotWithBadArgs()
+  Duration: 1ms
+
+testBodyContainsWithBadArgs()
+  Duration: 1ms
+
+testUrgencyIsOneOfWhenMatch()
+  Duration: 10ms
+  Runs: 100
+
+testTitleIsWhenMatch()
+  Duration: 6ms
+  Runs: 100
+
+testApplicationIsNotWithBadArgs()
+  Duration: 9ms
+  Runs: 100
+
+testMatchesAll()
+  Duration: 7ms
+  Runs: 100
+
+testTitleContainsWithBadArgs()
+  Duration: 1ms
+
+testTitleIsWhenNoMatch()
+  Duration: 6ms
+  Runs: 100
+
+testUrgencyIsOneOfWithBadArgs()
+  Duration: 0ms
+
+testBodyIsWhenNoMatch()
+  Duration: 6ms
+  Runs: 100
+
+testMatchesNone()
+  Duration: 5ms
+  Runs: 100
+
+testApplicationIsWhenMatch()
+  Duration: 6ms
+  Runs: 100
+
+testUrgencyIsWithBadArgs()
+  Duration: 0ms
+
+testApplicationIsWhenNoMatch()
+  Duration: 7ms
+  Runs: 100
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.639 sec - in tech.aroma.application.service.reactions.matchers.MessageMatchersTest
+Running tech.aroma.application.service.reactions.matchers.MatcherFactoryImplTest
+
+testHostnameIsWithBadArgs()
+  Duration: 1ms
+
+testBodyContainsWhenNoMatch()
+  Duration: 4ms
+  Runs: 50
+
+testHostnameContainsWithBadArgs()
+  Duration: 1ms
+
+testBodyDoesNotContainWithBadArgs()
+  Duration: 0ms
+
+testApplicationIsNotWhenNoMatch()
+  Duration: 4ms
+  Runs: 50
+
+testHostnameDoesNotContainWhenMatch()
+  Duration: 4ms
+  Runs: 50
+
+testTitleContainsWhenNoMatch()
+  Duration: 3ms
+  Runs: 50
+
+testBodyDoesNotContainWhenMatches()
+  Duration: 6ms
+  Runs: 50
+
+testAll()
+  Duration: 13ms
+  Runs: 50
+
+testHostnameContainsWhenMatch()
+  Duration: 4ms
+  Runs: 50
+
+testEmpty()
+  Duration: 3ms
+  Runs: 50
+
+testTitleContainsWhenMatch()
+  Duration: 4ms
+  Runs: 50
+
+testNull()
+  Duration: 4ms
+  Runs: 50
+
+testHostnameDoesNotContainWithBadArgs()
+  Duration: 0ms
+
+testUrgencyIsWhenNoMatch()
+  Duration: 13ms
+  Runs: 50
+
+testHostnameIsWhenNoMatch()
+  Duration: 3ms
+  Runs: 50
+
+testUrgencyIsWhenMatch()
+  Duration: 20ms
+  Runs: 50
+
+testHostnameContainsWhenNoMatch()
+  Duration: 4ms
+  Runs: 50
+
+testApplicationIsNotWhenMatch()
+  Duration: 3ms
+  Runs: 50
+
+testTitleIsWithBadArgs()
+  Duration: 3ms
+
+testBodyDoesNotContainWhenNoMatch()
+  Duration: 3ms
+  Runs: 50
+
+testTitleDoesNotContainWithBadArgs()
+  Duration: 0ms
+
+testHostnameIsWhenMatch()
+  Duration: 3ms
+  Runs: 50
+
+testBodyIsWhenMatches()
+  Duration: 17ms
+  Runs: 50
+
+testHostnameDoesNotContainWhenNoMatch()
+  Duration: 3ms
+  Runs: 50
+
+testApplicationIsWithBadArgs()
+  Duration: 2ms
+
+testBodyContainsWithBadArgs()
+  Duration: 0ms
+
+testApplicationIsWhenMatches()
+  Duration: 4ms
+  Runs: 50
+
+testTitleIsWhenMatch()
+  Duration: 3ms
+  Runs: 50
+
+testBodyContainsWhenMatches()
+  Duration: 13ms
+  Runs: 50
+
+testApplicationIsNotWithBadArgs()
+  Duration: 1ms
+
+testTitleContainsWithBadArgs()
+  Duration: 0ms
+
+testTitleIsWhenNoMatch()
+  Duration: 3ms
+  Runs: 50
+
+testTitleDoesNotContainWhenMatch()
+  Duration: 3ms
+  Runs: 50
+
+testBodyIsWhenNoMatch()
+  Duration: 4ms
+  Runs: 50
+
+testTitleDoesNotContainWhenNoMatch()
+  Duration: 4ms
+  Runs: 50
+
+testUrgencyIsWithBadArgs()
+  Duration: 0ms
+
+testApplicationIsWhenNoMatch()
+  Duration: 4ms
+  Runs: 50
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.246 sec - in tech.aroma.application.service.reactions.matchers.MatcherFactoryImplTest
+Running tech.aroma.application.service.reactions.matchers.MatchAlgorithmOrTest
+
+testToString()
+  Duration: 56ms
+  Runs: 10
+
+testWhenNoneMatch()
+  Duration: 56ms
+  Runs: 10
+
+testWhenAlwaysMatch()
+  Duration: 45ms
+  Runs: 10
+
+testWhenSomeMatch()
+  Duration: 14ms
+  Runs: 10
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 sec - in tech.aroma.application.service.reactions.matchers.MatchAlgorithmOrTest
+Running tech.aroma.application.service.reactions.matchers.MatchAlgorithmAndTest
+
+testToString()
+  Duration: 20ms
+  Runs: 10
+
+testWhenNoneMatch()
+  Duration: 47ms
+  Runs: 10
+
+testMatches()
+  Duration: 27ms
+  Runs: 10
+
+testWhenSomeMatch()
+  Duration: 47ms
+  Runs: 10
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in tech.aroma.application.service.reactions.matchers.MatchAlgorithmAndTest
+Running tech.aroma.application.service.reactions.matchers.MatchAlgorithmTest
+
+testAnd()
+  Duration: 0ms
+  Runs: 10
+
+testOr()
+  Duration: 1ms
+  Runs: 10
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in tech.aroma.application.service.reactions.matchers.MatchAlgorithmTest
+Running tech.aroma.application.service.reactions.matchers.AromaMatcherFactoryTest
+
+testNewInstance()
+  Duration: 0ms
+
+testMatcherFor()
+  Duration: 0ms
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in tech.aroma.application.service.reactions.matchers.AromaMatcherFactoryTest
+Running tech.aroma.application.service.reactions.MessageReactorImplTest
+
+testReactToMessage()
+  Duration: 564ms
+  Runs: 50
+
+testWithBadArgs()
+  Duration: 18ms
+
+testWhenNoReactionsForApp()
+  Duration: 453ms
+  Runs: 50
+
+testWhenNoneOfTheReactionsMatch()
+  Duration: 478ms
+  Runs: 50
+
+testWhenActionsIncludeDontStore()
+  Duration: 518ms
+  Runs: 50
+
+testWhenActionsIncludeSkipInbox()
+  Duration: 524ms
+  Runs: 50
+
+testConstructor()
+  Duration: 6ms
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.601 sec - in tech.aroma.application.service.reactions.MessageReactorImplTest
+Running tech.aroma.application.service.reactions.MessageReactorTest
+
+testNewInstanceWithBadArgs()
+  Duration: 3ms
+  Runs: 10
+
+testNewInstance()
+  Duration: 1ms
+  Runs: 10
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in tech.aroma.application.service.reactions.MessageReactorTest
+Running tech.aroma.application.service.ModuleApplicationServiceTest
+
+testConfigure()
+  Duration: 123ms
+
+testProvideHttpClient()
+  Duration: 3ms
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 sec - in tech.aroma.application.service.ModuleApplicationServiceTest
+Running tech.aroma.application.service.ApplicationAssertionsTest
+
+testValidTokenWithoutAppId()
+  Duration: 21ms
+  Runs: 100
+
+testValidTokenIn()
+  Duration: 25ms
+  Runs: 100
+
+testValidTokenWithMissingToken()
+  Duration: 10ms
+  Runs: 100
+
+testWithMessage()
+  Duration: 65ms
+  Runs: 100
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec - in tech.aroma.application.service.ApplicationAssertionsTest
+Running tech.aroma.application.service.server.TcpServerTest
+
+testMain()
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.042 sec <<< FAILURE! - in tech.aroma.application.service.server.TcpServerTest
+testMain(tech.aroma.application.service.server.TcpServerTest)  Time elapsed: 5.04 sec  <<< FAILURE!
+java.lang.AssertionError: Main Method failed: 
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.RuntimeException: Could not create Authentication Service client
+  at tech.aroma.application.service.server.TcpServer$AromaServicesProvider.provideAuthenticationService(TcpServer.java:98)
+  while locating tech.aroma.thrift.authentication.service.AuthenticationService$Iface
+    for the 1st parameter of tech.aroma.application.service.AuthenticationLayer.<init>(AuthenticationLayer.java:61)
+  while locating tech.aroma.application.service.AuthenticationLayer
+  while locating tech.aroma.thrift.application.service.ApplicationService$Iface
+
+1 error
+	at org.junit.Assert.fail(Assert.java:88)
+	at tech.aroma.application.service.server.TcpServerTest.testMain(TcpServerTest.java:62)
+
+Running tech.aroma.application.service.AuthenticationLayerTest
+
+testSendMessageWithInvalidToken()
+  Duration: 130ms
+  Runs: 100
+
+testGetApiVersion()
+  Duration: 56ms
+  Runs: 100
+
+testSendMessage()
+  Duration: 60ms
+  Runs: 100
+
+testSendMessageWhenAppIdMissing()
+  Duration: 64ms
+  Runs: 100
+
+testGetApiVersionWhenFails()
+  Duration: 55ms
+  Runs: 100
+
+testSendMessageAsyncWithInvalidToken()
+  Duration: 72ms
+  Runs: 100
+
+testConstructor()
+  Duration: 1ms
+
+testSendMessageAsync()
+  Duration: 48ms
+  Runs: 100
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.518 sec - in tech.aroma.application.service.AuthenticationLayerTest
+
+Results :
+
+Failed tests: 
+  TcpServerTest.testMain:62 Main Method failed: 
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.RuntimeException: Could not create Authentication Service client
+  at tech.aroma.application.service.server.TcpServer$AromaServicesProvider.provideAuthenticationService(TcpServer.java:98)
+  while locating tech.aroma.thrift.authentication.service.AuthenticationService$Iface
+    for the 1st parameter of tech.aroma.application.service.AuthenticationLayer.<init>(AuthenticationLayer.java:61)
+  while locating tech.aroma.application.service.AuthenticationLayer
+  while locating tech.aroma.thrift.application.service.ApplicationService$Iface
+
+1 error
+
+Tests run: 190, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 55.254 s
+[INFO] Finished at: 2020-02-15T18:16:21+01:00
+[INFO] Final Memory: 22M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project aroma-application-service: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-RedRoma-aroma-application-service-370263014-20180423-215446-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project aroma-application-service: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-RedRoma-aroma-application-service-370263014-20180423-215446-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-RedRoma-aroma-application-service-370263014-20180423-215446-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
