@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "islomar/payments-api",
-  "bugCommit": "https://github.com/islomar/payments-api/compare/18f1fa6d701d...7e6d0c1f9b18",
-  "failingModule": "/root/workspace/islomar/payments-api/389846716",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 35,
-  "failing-test-cases": [
-    {
-      "className": "com.islomar.payments.core.model.PaymentValidatorShould",
-      "failingMethods": [
-        "a_payment_with_all_the_mandatories_fields_filled_is_valid"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:56 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:40:04 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 49525112,
+      "totalMemory": 121561088
+    },
+    "totalDuration": 125,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 43,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          43
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-islomar-payments-api-389846716-20180608-201442-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-islomar-payments-api-389846716-20180608-201442-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 35,
+      "numberPassing": 34,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "No exception should have been thrown!",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.islomar.payments.core.model.PaymentValidatorShould",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.islomar.payments.core.model.PaymentValidatorShould",
+        "testMethod": "a_payment_with_all_the_mandatories_fields_filled_is_valid",
+        "failureName": "java.lang.AssertionError",
+        "detail": "No exception should have been thrown!",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 35,
+    "numberTestFiles": 16,
+    "numberLibrariesFailingModule": 166,
+    "numberLines": 0
+  }
 }
