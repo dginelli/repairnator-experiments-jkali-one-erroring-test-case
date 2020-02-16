@@ -1,30 +1,119 @@
 {
-  "totalNumberSkippingTests": 22,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "geotools/geotools",
-  "failingModule": "/root/workspace/geotools/geotools/293606630/modules/plugin/geopkg",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError:"
-  ],
-  "totalNumberRunningTests": 6507,
-  "failing-test-cases": [
-    {
-      "className": "org.geotools.geopkg.GeoPackageTest",
-      "failingMethods": [
-        "org.geotools.geopkg.GeoPackageTest#testSpatialIndexReading"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:21 AM",
+    "reproductionDateEnd": "Feb 16, 2020 12:07:22 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 802159720,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1796,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 100,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          100
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-293606630-20171027-124900_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-293606630-20171027-124900_bugonly-firstCommit/modules/library/main",
+    "overallMetrics": {
+      "numberRunning": 2226,
+      "numberPassing": 2225,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 7,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError:",
-          "isError": false
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.geotools.temporal.object.DefaultTemporalGeometricPrimitiveTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.geotools.temporal.object.DefaultTemporalGeometricPrimitiveTest",
+        "testMethod": "testLength",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "The temporal position of the beginning of the period must be less than (i.e. earlier than) the temporal position of the end of the period",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 112,
+    "numberPlugins": 0,
+    "numberSourceFiles": 7745,
+    "numberTestFiles": 2172,
+    "numberLibrariesFailingModule": 20,
+    "numberLines": 0
+  },
+  "commits": {}
 }
