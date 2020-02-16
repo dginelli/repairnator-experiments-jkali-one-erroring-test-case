@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "prestodb/presto",
-  "failingModule": "/root/workspace/prestodb/presto/361198628/presto-spi",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 200,
-  "failing-test-cases": [
-    {
-      "className": "com.facebook.presto.spi.connector.classloader.TestClassLoaderSafeWrappers",
-      "failingMethods": [
-        "com.facebook.presto.spi.connector.classloader.TestClassLoaderSafeWrappers#testAllMethodsOverridden"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:25 PM",
+    "reproductionDateEnd": "Feb 16, 2020 7:21:50 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 398089784,
+      "totalMemory": 930000896
+    },
+    "totalDuration": 3320,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 4,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          4,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1682,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1682
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-361198628-20180402-170329-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-361198628-20180402-170329-firstCommit/presto-spi",
+    "overallMetrics": {
+      "numberRunning": 200,
+      "numberPassing": 199,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "com.facebook.presto.spi.connector.classloader.ClassLoaderSafeConnectorMetadata does not override [public default java.util.List com.facebook.presto.spi.connector.ConnectorMetadata.listTables(com.facebook.presto.spi.ConnectorSession,java.lang.String)]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.facebook.presto.spi.connector.classloader.TestClassLoaderSafeWrappers",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.facebook.presto.spi.connector.classloader.TestClassLoaderSafeWrappers",
+        "testMethod": "testAllMethodsOverridden",
+        "failureName": "java.lang.AssertionError",
+        "detail": "com.facebook.presto.spi.connector.classloader.ClassLoaderSafeConnectorMetadata does not override [public default java.util.List com.facebook.presto.spi.connector.ConnectorMetadata.listTables(com.facebook.presto.spi.ConnectorSession,java.lang.String)]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 53,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3468,
+    "numberTestFiles": 1207,
+    "numberLibrariesFailingModule": 33,
+    "numberLines": 0
+  },
+  "commits": {}
 }
