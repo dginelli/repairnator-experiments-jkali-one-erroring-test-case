@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "dropwizard/dropwizard",
-  "bugCommit": "https://github.com/dropwizard/dropwizard/compare/cdcafe26ac15...6a641f059321",
-  "failingModule": "/root/workspace/dropwizard/dropwizard/324206534/dropwizard-logging",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 305,
-  "failing-test-cases": [
-    {
-      "className": "io.dropwizard.logging.DefaultLoggingFactoryPrintErrorMessagesTest",
-      "failingMethods": [
-        "io.dropwizard.logging.DefaultLoggingFactoryPrintErrorMessagesTest#testWhenFileAppenderDoesNotHaveWritePermissionToFolder_PrintsErrorMessageToConsole"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:11 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:46:30 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 47632336,
+      "totalMemory": 131383296
+    },
+    "totalDuration": 555,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 41,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          41
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-324212976-20180102-184011-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-324212976-20180102-184011-firstCommit/dropwizard-jdbi",
+    "overallMetrics": {
+      "numberRunning": 1246,
+      "numberPassing": 1245,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
       "failures": [
         {
-          "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[fals]e\u003e but was:\u003c[tru]e\u003e",
-          "isError": false
+          "failureName": "org.h2.jdbc.JdbcSQLException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.dropwizard.jdbi.timestamps.JodaDateTimeSqlTimestampTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.dropwizard.jdbi.timestamps.JodaDateTimeSqlTimestampTest",
+        "testMethod": "io.dropwizard.jdbi.timestamps.JodaDateTimeSqlTimestampTest",
+        "failureName": "org.h2.jdbc.JdbcSQLException",
+        "detail": "Connection is broken: \"java.net.SocketException: Connection reset: localhost\" [90067-196]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 35,
+    "numberPlugins": 0,
+    "numberSourceFiles": 438,
+    "numberTestFiles": 402,
+    "numberLibrariesFailingModule": 105,
+    "numberLines": 0
+  },
+  "commits": {}
 }
