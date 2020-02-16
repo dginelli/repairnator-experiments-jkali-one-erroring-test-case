@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "dropwizard/dropwizard",
-  "failingModule": "/root/workspace/dropwizard/dropwizard/396057581/dropwizard-logging",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 326,
-  "failing-test-cases": [
-    {
-      "className": "io.dropwizard.logging.DefaultLoggingFactoryPrintErrorMessagesTest",
-      "failingMethods": [
-        "testWhenFileAppenderDoesNotHaveWritePermissionToFolder_PrintsErrorMessageToConsole"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:11 AM",
+    "reproductionDateEnd": "Feb 16, 2020 12:34:59 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 12096728,
+      "totalMemory": 227405824
+    },
+    "totalDuration": 3463,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2970,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2970
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-396057581-20180624-143849-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-396057581-20180624-143849-firstCommit/dropwizard-client",
+    "overallMetrics": {
+      "numberRunning": 1188,
+      "numberPassing": 1187,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
       "failures": [
         {
-          "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[fals]e\u003e but was:\u003c[tru]e\u003e",
-          "isError": false
+          "failureName": "javax.ws.rs.ProcessingException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.dropwizard.client.DropwizardApacheConnectorTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.dropwizard.client.DropwizardApacheConnectorTest",
+        "testMethod": "multiple_headers_with_the_same_name_are_processed_successfully",
+        "failureName": "javax.ws.rs.ProcessingException",
+        "detail": "java.lang.UnsupportedOperationException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 35,
+    "numberPlugins": 0,
+    "numberSourceFiles": 462,
+    "numberTestFiles": 420,
+    "numberLibrariesFailingModule": 110,
+    "numberLines": 0
+  },
+  "commits": {}
 }
