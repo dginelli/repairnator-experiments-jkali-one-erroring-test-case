@@ -1,0 +1,1766 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 11:42:06 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+Feb 16, 2020 11:42:09 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 11:42:13 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 11:42:24 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 11:42:29 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+11:42:33,676 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-logging/target/test-classes/logback-test.xml]
+11:42:33,775 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:42:33,775 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:42:33,783 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+11:42:33,791 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:42:33,826 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to OFF
+11:42:33,826 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+11:42:33,827 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:42:33,828 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@119b0892 - Registering current configuration as safe fallback point
+11:42:35,069 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1a3e8e24 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:35,070 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1a3e8e24 - Propagating INFO level on Logger[com.example.app] onto the JUL framework
+11:42:35,086 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1a3e8e24 - Propagating DEBUG level on Logger[com.example.newApp] onto the JUL framework
+11:42:35,096 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [256 KB]
+11:42:35,101 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1322559460 - Will use gz compression
+11:42:35,102 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1322559460 - Will use the pattern /tmp/junit8706469385108903828/example-new-app-%d.log for the active file
+11:42:35,114 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit8706469385108903828/example-new-app-%d.log.gz'.
+11:42:35,114 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:35,117 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:35 CET 2020
+11:42:35,121 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit8706469385108903828/example-new-app.log
+11:42:35,121 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit8706469385108903828/example-new-app.log]
+11:42:35,146 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:35,147 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:35,155 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1a3e8e24 - Propagating DEBUG level on Logger[com.example.legacyApp] onto the JUL framework
+11:42:35,167 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1a3e8e24 - Propagating DEBUG level on Logger[com.example.notAdditive] onto the JUL framework
+11:42:35,168 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:35,170 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@477319344 - Will use gz compression
+11:42:35,173 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@477319344 - Will use the pattern /tmp/junit8706469385108903828/example-new-app-not-additive-%d.log for the active file
+11:42:35,173 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit8706469385108903828/example-new-app-not-additive-%d.log.gz'.
+11:42:35,173 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:35,174 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:35 CET 2020
+11:42:35,174 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit8706469385108903828/example-new-app-not-additive.log
+11:42:35,174 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit8706469385108903828/example-new-app-not-additive.log]
+11:42:35,175 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:35,175 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:35,179 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Attaching appender named [console-appender] to AsyncAppender.
+11:42:35,179 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Setting discardingThreshold to 51
+11:42:35,179 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:35,179 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1432687668 - Will use gz compression
+11:42:35,179 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1432687668 - Will use the pattern /tmp/junit8706469385108903828/example-%d.log for the active file
+11:42:35,180 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit8706469385108903828/example-%d.log.gz'.
+11:42:35,180 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:35,180 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:35 CET 2020
+11:42:35,180 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit8706469385108903828/example.log
+11:42:35,180 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit8706469385108903828/example.log]
+11:42:35,180 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:35,180 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:35,484 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Worker thread will flush remaining events before exiting. 
+11:42:35,485 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Queue flush finished successfully within timeout.
+11:42:35,485 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:35,486 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:35,486 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:35,486 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:35,486 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:35,486 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:35,486 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - onReset() method called JMXActivator [io.dropwizard:type=Logging]
+11:42:35,486 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3bc4ef12 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:35,489 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3bc4ef12 - Propagating DEBUG level on Logger[com.example.app] onto the JUL framework
+11:42:35,489 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Attaching appender named [console-appender] to AsyncAppender.
+11:42:35,489 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Setting discardingThreshold to 51
+11:42:35,490 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:35,490 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1346667529 - Will use gz compression
+11:42:35,490 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1346667529 - Will use the pattern ./logs/example-%d.log for the active file
+11:42:35,498 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/example-%d.log.gz'.
+11:42:35,498 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:35,499 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:35 CET 2020
+11:42:35,499 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/example.log
+11:42:35,499 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/example.log]
+11:42:35,499 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:35,499 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:35,500 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:35,503 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1446291553 - Archive files will be limited to [100 MB] each.
+11:42:35,504 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1446291553 - Will use gz compression
+11:42:35,504 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1446291553 - Will use the pattern ./logs/max-file-size-example-%d-%i.log for the active file
+11:42:36,079 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2b0dc227 - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/max-file-size-example-%d-%i.log.gz'.
+11:42:36,079 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2b0dc227 - Roll-over at midnight.
+11:42:36,086 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2b0dc227 - Setting initial period to Sun Feb 16 11:42:36 CET 2020
+11:42:36,089 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/max-file-size-example.log
+11:42:36,089 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/max-file-size-example.log]
+11:42:36,089 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:36,089 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:36,089 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:36,090 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@37ad042b - Will use gz compression
+11:42:36,091 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/max-file-size-example.log
+11:42:36,091 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/max-file-size-example.log]
+11:42:36,091 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - 'File' option has the same value "./logs/max-file-size-example.log" as that given for appender [file-appender] defined earlier.
+11:42:36,091 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+11:42:36,091 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+11:42:36,091 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:36,091 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:36,096 |-INFO in ch.qos.logback.classic.net.SyslogAppender[syslog-appender] - Defaulting maxMessageSize to [65000]
+11:42:36,099 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Attaching appender named [syslog-appender] to AsyncAppender.
+11:42:36,099 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Setting discardingThreshold to 51
+
+2020-02-16 11:43:21.628:INFO::main: Logging initialized @3060ms to org.eclipse.jetty.util.log.StdErrLog
+2020-02-16 11:43:21.724:INFO:oejs.Server:main: jetty-9.4.7.v20170914
+2020-02-16 11:43:21.795:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:21.796:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:21.798:INFO:oejs.session:main: Scavenging every 600000ms
+2020-02-16 11:43:21.803:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@11acdc30{/,null,AVAILABLE}
+2020-02-16 11:43:21.809:INFO:oejs.AbstractConnector:main: Started LocalConnector@27699a98{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:21.809:INFO:oejs.Server:main: Started @3241ms
+2020-02-16 11:43:22.502:INFO:oejs.AbstractConnector:main: Stopped LocalConnector@27699a98{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:22.503:INFO:oejs.session:main: Stopped scavenging
+2020-02-16 11:43:22.505:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@11acdc30{/,null,UNAVAILABLE}
+2020-02-16 11:43:25.837:INFO::main: Logging initialized @2510ms to org.eclipse.jetty.util.log.StdErrLog
+2020-02-16 11:43:29.153:INFO:oejsh.ContextHandler:main: Started o.e.j.s.h.ContextHandler@6b27b2d0{/,null,AVAILABLE}
+2020-02-16 11:43:29.173:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:29.173:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:29.175:INFO:oejs.session:main: Scavenging every 660000ms
+2020-02-16 11:43:29.201:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@7e49ded{/,null,AVAILABLE}
+2020-02-16 11:43:29.209:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@7e49ded{/,null,UNAVAILABLE}
+2020-02-16 11:43:29.210:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.h.ContextHandler@6b27b2d0{/,null,UNAVAILABLE}
+2020-02-16 11:43:30.065:WARN:oejsh.AbstractHandler:main: No Server set for io.dropwizard.jetty.RoutingHandler@1d8be7b9[o.e.j.s.h.ContextHandler$MockitoMock$1649456051@48277712{/,null,UNAVAILABLE}, o.e.j.s.h.ContextHandler$MockitoMock$1649456051@3d53e876{/,null,UNAVAILABLE}]
+2020-02-16 11:43:30.067:INFO:oejsh.ContextHandler:main: Started o.e.j.s.h.ContextHandler$MockitoMock$1649456051@48277712{/,null,AVAILABLE}
+2020-02-16 11:43:30.068:INFO:oejsh.ContextHandler:main: Started o.e.j.s.h.ContextHandler$MockitoMock$1649456051@3d53e876{/,null,AVAILABLE}
+2020-02-16 11:43:30.070:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.h.ContextHandler$MockitoMock$1649456051@3d53e876{/,null,UNAVAILABLE}
+2020-02-16 11:43:30.070:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.h.ContextHandler$MockitoMock$1649456051@48277712{/,null,UNAVAILABLE}
+2020-02-16 11:43:30.072:INFO:oejsh.ContextHandler:main: Started o.e.j.s.h.ContextHandler$MockitoMock$1649456051@3de8f85c{/,null,AVAILABLE}
+2020-02-16 11:43:30.074:INFO:oejsh.ContextHandler:main: Started o.e.j.s.h.ContextHandler$MockitoMock$1649456051@21abda60{/,null,AVAILABLE}
+2020-02-16 11:43:30.076:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.h.ContextHandler$MockitoMock$1649456051@21abda60{/,null,UNAVAILABLE}
+2020-02-16 11:43:30.084:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.h.ContextHandler$MockitoMock$1649456051@3de8f85c{/,null,UNAVAILABLE}
+2020-02-16 11:43:30.194:INFO:oejs.Server:main: jetty-9.4.7.v20170914
+2020-02-16 11:43:30.252:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:30.252:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:30.252:INFO:oejs.session:main: Scavenging every 660000ms
+2020-02-16 11:43:30.267:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@51de5efa{/,null,AVAILABLE}
+2020-02-16 11:43:30.268:INFO:oejs.AbstractConnector:main: Started LocalConnector@2e159116{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:30.268:INFO:oejs.Server:main: Started @6942ms
+2020-02-16 11:43:30.383:INFO:oejs.AbstractConnector:main: Stopped LocalConnector@2e159116{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:30.391:INFO:oejs.session:main: Stopped scavenging
+2020-02-16 11:43:30.392:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@51de5efa{/,null,UNAVAILABLE}
+2020-02-16 11:43:30.397:INFO:oejs.Server:main: jetty-9.4.7.v20170914
+2020-02-16 11:43:30.453:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:30.453:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:30.453:INFO:oejs.session:main: Scavenging every 600000ms
+2020-02-16 11:43:30.472:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@5b3755f4{/,null,AVAILABLE}
+2020-02-16 11:43:30.472:INFO:oejs.AbstractConnector:main: Started LocalConnector@37d3aa8c{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:30.473:INFO:oejs.Server:main: Started @7146ms
+2020-02-16 11:43:30.491:INFO:oejs.AbstractConnector:main: Stopped LocalConnector@37d3aa8c{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:30.491:INFO:oejs.session:main: Stopped scavenging
+2020-02-16 11:43:30.492:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@5b3755f4{/,null,UNAVAILABLE}
+2020-02-16 11:43:30.493:INFO:oejs.Server:main: jetty-9.4.7.v20170914
+2020-02-16 11:43:30.542:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:30.542:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:31.035:INFO:oejs.session:main: Scavenging every 600000ms
+2020-02-16 11:43:31.037:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@1be77a76{/,null,AVAILABLE}
+2020-02-16 11:43:31.037:INFO:oejs.AbstractConnector:main: Started LocalConnector@315cf170{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:31.046:INFO:oejs.Server:main: Started @7719ms
+2020-02-16 11:43:31.049:INFO:oejs.AbstractConnector:main: Stopped LocalConnector@315cf170{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:31.049:INFO:oejs.session:main: Stopped scavenging
+2020-02-16 11:43:31.050:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@1be77a76{/,null,UNAVAILABLE}
+2020-02-16 11:43:31.061:INFO:oejs.Server:main: jetty-9.4.7.v20170914
+2020-02-16 11:43:31.071:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:31.071:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:31.071:INFO:oejs.session:main: Scavenging every 600000ms
+2020-02-16 11:43:31.075:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@4a520f05{/,null,AVAILABLE}
+2020-02-16 11:43:31.084:INFO:oejs.AbstractConnector:main: Started LocalConnector@389a1e34{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:31.084:INFO:oejs.Server:main: Started @7757ms
+2020-02-16 11:43:31.094:INFO:oejs.AbstractConnector:main: Stopped LocalConnector@389a1e34{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:31.094:INFO:oejs.session:main: Stopped scavenging
+2020-02-16 11:43:31.094:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@4a520f05{/,null,UNAVAILABLE}
+2020-02-16 11:43:32.471:WARN:oejsh.AbstractHandler:main: No Server set for io.dropwizard.jetty.ContextRoutingHandler@122ea8dc
+io.dropwizard.configuration.ConfigurationParsingException: /tmp/dropwizard-invalid-config7732013279214999271.yml has an error:
+  * Configuration at /tmp/dropwizard-invalid-config7732013279214999271.yml must not be empty
+
+	at io.dropwizard.configuration.ConfigurationParsingException$Builder.build(ConfigurationParsingException.java:277)
+	at io.dropwizard.configuration.BaseConfigurationFactory.build(BaseConfigurationFactory.java:89)
+	at io.dropwizard.cli.ConfiguredCommand.parseConfiguration(ConfiguredCommand.java:124)
+	at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:72)
+	at io.dropwizard.cli.Cli.run(Cli.java:75)
+	at io.dropwizard.Application.run(Application.java:93)
+	at io.dropwizard.ApplicationTest.exitWithFatalErrorWhenCommandFails(ApplicationTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Feb 16, 2020 11:44:33 AM org.apache.tomcat.jdbc.pool.ConnectionPool init
+SEVERE: Unable to create initial connections of pool.
+java.sql.SQLException: Unable to load class: org.example.no.driver.here from ClassLoader:sun.misc.Launcher$AppClassLoader@3d4eac69;ClassLoader:sun.misc.Launcher$AppClassLoader@3d4eac69
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:283)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at io.dropwizard.db.DataSourceFactoryTest.invalidJDBCDriverClassThrowsSQLException(DataSourceFactoryTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.ClassNotFoundException: Unable to load class: org.example.no.driver.here from ClassLoader:sun.misc.Launcher$AppClassLoader@3d4eac69;ClassLoader:sun.misc.Launcher$AppClassLoader@3d4eac69
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:56)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:271)
+	... 36 more
+Caused by: java.lang.ClassNotFoundException: org.example.no.driver.here
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:38)
+	... 37 more
+
+Feb 16, 2020 11:44:44 AM org.apache.tomcat.jdbc.pool.ConnectionPool init
+SEVERE: Unable to create initial connections of pool.
+org.h2.jdbc.JdbcSQLException: Connection is broken: "java.net.ConnectException: Connection refused (Connection refused): localhost" [90067-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:457)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:334)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:116)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:100)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at io.dropwizard.db.ManagedPooledDataSource.start(ManagedPooledDataSource.java:37)
+	at io.dropwizard.lifecycle.JettyManaged.doStart(JettyManaged.java:27)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at io.dropwizard.jdbi.timestamps.DBIClient.before(DBIClient.java:59)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:103)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:83)
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:115)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:453)
+	... 28 more
+
+------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-jersey ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ dropwizard-jersey ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-jersey/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dropwizard-jersey ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ dropwizard-jersey ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dropwizard-jersey ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dropwizard-jersey ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-jersey/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.dropwizard.jersey.jsr310.LocalDateParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.674 sec - in io.dropwizard.jersey.jsr310.LocalDateParamTest
+Running io.dropwizard.jersey.jsr310.YearParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in io.dropwizard.jersey.jsr310.YearParamTest
+Running io.dropwizard.jersey.jsr310.InstantSecondParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in io.dropwizard.jersey.jsr310.InstantSecondParamTest
+Running io.dropwizard.jersey.jsr310.LocalTimeParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.dropwizard.jersey.jsr310.LocalTimeParamTest
+Running io.dropwizard.jersey.jsr310.InstantParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.dropwizard.jersey.jsr310.InstantParamTest
+Running io.dropwizard.jersey.jsr310.ZonedDateTimeParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in io.dropwizard.jersey.jsr310.ZonedDateTimeParamTest
+Running io.dropwizard.jersey.jsr310.LocalDateTimeParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.dropwizard.jersey.jsr310.LocalDateTimeParamTest
+Running io.dropwizard.jersey.jsr310.YearMonthParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.dropwizard.jersey.jsr310.YearMonthParamTest
+Running io.dropwizard.jersey.jsr310.OffsetDateTimeParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.dropwizard.jersey.jsr310.OffsetDateTimeParamTest
+Running io.dropwizard.jersey.jsr310.ZoneIdParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.dropwizard.jersey.jsr310.ZoneIdParamTest
+Running io.dropwizard.jersey.errors.ErrorEntityWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.867 sec - in io.dropwizard.jersey.errors.ErrorEntityWriterTest
+Running io.dropwizard.jersey.errors.EarlyEofExceptionMapperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.dropwizard.jersey.errors.EarlyEofExceptionMapperTest
+Running io.dropwizard.jersey.errors.LoggingExceptionMapperTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.992 sec - in io.dropwizard.jersey.errors.LoggingExceptionMapperTest
+Running io.dropwizard.jersey.errors.IllegalStateExceptionMapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in io.dropwizard.jersey.errors.IllegalStateExceptionMapperTest
+Running io.dropwizard.jersey.guava.OptionalMessageBodyWriterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.368 sec - in io.dropwizard.jersey.guava.OptionalMessageBodyWriterTest
+Running io.dropwizard.jersey.guava.OptionalCookieParamResourceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.312 sec - in io.dropwizard.jersey.guava.OptionalCookieParamResourceTest
+Running io.dropwizard.jersey.guava.OptionalFormParamResourceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.036 sec - in io.dropwizard.jersey.guava.OptionalFormParamResourceTest
+Running io.dropwizard.jersey.guava.OptionalHeaderParamResourceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.991 sec - in io.dropwizard.jersey.guava.OptionalHeaderParamResourceTest
+Running io.dropwizard.jersey.guava.OptionalQueryParamResourceTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.377 sec - in io.dropwizard.jersey.guava.OptionalQueryParamResourceTest
+Running io.dropwizard.jersey.DropwizardResourceConfigTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.297 sec - in io.dropwizard.jersey.DropwizardResourceConfigTest
+Running io.dropwizard.jersey.validation.JerseyViolationExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.557 sec - in io.dropwizard.jersey.validation.JerseyViolationExceptionTest
+Running io.dropwizard.jersey.validation.ConstraintViolationExceptionMapperTest
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.062 sec - in io.dropwizard.jersey.validation.ConstraintViolationExceptionMapperTest
+Running io.dropwizard.jersey.validation.ParamValidatorUnwrapperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in io.dropwizard.jersey.validation.ParamValidatorUnwrapperTest
+Running io.dropwizard.jersey.sessions.FlashFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec - in io.dropwizard.jersey.sessions.FlashFactoryTest
+Running io.dropwizard.jersey.sessions.HttpSessionFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in io.dropwizard.jersey.sessions.HttpSessionFactoryTest
+Running io.dropwizard.jersey.optional.OptionalFormParamResourceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.739 sec - in io.dropwizard.jersey.optional.OptionalFormParamResourceTest
+Running io.dropwizard.jersey.optional.OptionalLongMessageBodyWriterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.314 sec - in io.dropwizard.jersey.optional.OptionalLongMessageBodyWriterTest
+Running io.dropwizard.jersey.optional.OptionalDoubleMessageBodyWriterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 sec - in io.dropwizard.jersey.optional.OptionalDoubleMessageBodyWriterTest
+Running io.dropwizard.jersey.optional.OptionalIntMessageBodyWriterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 sec - in io.dropwizard.jersey.optional.OptionalIntMessageBodyWriterTest
+Running io.dropwizard.jersey.optional.OptionalMessageBodyWriterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 sec - in io.dropwizard.jersey.optional.OptionalMessageBodyWriterTest
+Running io.dropwizard.jersey.optional.OptionalHeaderParamResourceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 sec - in io.dropwizard.jersey.optional.OptionalHeaderParamResourceTest
+Running io.dropwizard.jersey.optional.OptionalQueryParamResourceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.72 sec - in io.dropwizard.jersey.optional.OptionalQueryParamResourceTest
+Running io.dropwizard.jersey.optional.OptionalCookieParamResourceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.635 sec - in io.dropwizard.jersey.optional.OptionalCookieParamResourceTest
+Running io.dropwizard.jersey.caching.CacheControlledResponseFeatureTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.667 sec - in io.dropwizard.jersey.caching.CacheControlledResponseFeatureTest
+Running io.dropwizard.jersey.jackson.JacksonMessageBodyProviderTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.33 sec - in io.dropwizard.jersey.jackson.JacksonMessageBodyProviderTest
+Running io.dropwizard.jersey.jackson.JsonProcessingExceptionMapperTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.545 sec - in io.dropwizard.jersey.jackson.JsonProcessingExceptionMapperTest
+Running io.dropwizard.jersey.params.LongParamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in io.dropwizard.jersey.params.LongParamTest
+Running io.dropwizard.jersey.params.DateTimeParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in io.dropwizard.jersey.params.DateTimeParamTest
+Running io.dropwizard.jersey.params.SizeParamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in io.dropwizard.jersey.params.SizeParamTest
+Running io.dropwizard.jersey.params.BooleanParamTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.dropwizard.jersey.params.BooleanParamTest
+Running io.dropwizard.jersey.params.LocalDateParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.dropwizard.jersey.params.LocalDateParamTest
+Running io.dropwizard.jersey.params.DurationParamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.dropwizard.jersey.params.DurationParamTest
+Running io.dropwizard.jersey.params.InstantParamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.dropwizard.jersey.params.InstantParamTest
+Running io.dropwizard.jersey.params.IntParamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in io.dropwizard.jersey.params.IntParamTest
+Running io.dropwizard.jersey.params.NonEmptyStringParamProviderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 sec - in io.dropwizard.jersey.params.NonEmptyStringParamProviderTest
+Running io.dropwizard.jersey.params.NonEmptyStringParamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.dropwizard.jersey.params.NonEmptyStringParamTest
+Running io.dropwizard.jersey.params.UUIDParamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.dropwizard.jersey.params.UUIDParamTest
+Running io.dropwizard.jersey.AsyncServletTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in io.dropwizard.jersey.AsyncServletTest
+Running io.dropwizard.jersey.setup.JerseyEnvironmentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in io.dropwizard.jersey.setup.JerseyEnvironmentTest
+Running io.dropwizard.jersey.filter.AllowedMethodsFilterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.822 sec - in io.dropwizard.jersey.filter.AllowedMethodsFilterTest
+Running io.dropwizard.jersey.gzip.ConfiguredGZipEncoderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in io.dropwizard.jersey.gzip.ConfiguredGZipEncoderTest
+Running io.dropwizard.jersey.JerseyContentTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in io.dropwizard.jersey.JerseyContentTypeTest
+
+Results :
+
+Tests run: 262, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Servlet Support 1.2.0-rc7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-servlets ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ dropwizard-servlets ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-servlets/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dropwizard-servlets ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ dropwizard-servlets ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dropwizard-servlets ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dropwizard-servlets ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-servlets/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.dropwizard.servlets.tasks.PostBodyTaskTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec - in io.dropwizard.servlets.tasks.PostBodyTaskTest
+Running io.dropwizard.servlets.tasks.LogConfigurationTaskTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec - in io.dropwizard.servlets.tasks.LogConfigurationTaskTest
+Running io.dropwizard.servlets.tasks.TaskTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.dropwizard.servlets.tasks.TaskTest
+Running io.dropwizard.servlets.tasks.GarbageCollectionTaskTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.306 sec - in io.dropwizard.servlets.tasks.GarbageCollectionTaskTest
+Running io.dropwizard.servlets.tasks.TaskServletTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.705 sec - in io.dropwizard.servlets.tasks.TaskServletTest
+Running io.dropwizard.servlets.assets.AssetServletTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.908 sec - in io.dropwizard.servlets.assets.AssetServletTest
+Running io.dropwizard.servlets.assets.ResourceURLTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in io.dropwizard.servlets.assets.ResourceURLTest
+Running io.dropwizard.servlets.assets.ByteRangeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.dropwizard.servlets.assets.ByteRangeTest
+Running io.dropwizard.servlets.CacheBustingFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec - in io.dropwizard.servlets.CacheBustingFilterTest
+Running io.dropwizard.servlets.ServletsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.dropwizard.servlets.ServletsTest
+
+Results :
+
+Tests run: 63, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Jetty Support 1.2.0-rc7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-jetty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ dropwizard-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dropwizard-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ dropwizard-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dropwizard-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dropwizard-jetty ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-jetty/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.dropwizard.jetty.HttpConnectorFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.071 sec - in io.dropwizard.jetty.HttpConnectorFactoryTest
+Running io.dropwizard.jetty.ServerPushFilterFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.802 sec - in io.dropwizard.jetty.ServerPushFilterFactoryTest
+Running io.dropwizard.jetty.MutableServletContextHandlerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in io.dropwizard.jetty.MutableServletContextHandlerTest
+Running io.dropwizard.jetty.HttpsConnectorFactoryTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.601 sec - in io.dropwizard.jetty.HttpsConnectorFactoryTest
+Running io.dropwizard.jetty.RoutingHandlerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.611 sec - in io.dropwizard.jetty.RoutingHandlerTest
+Running io.dropwizard.jetty.BiDiGzipHandlerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.009 sec - in io.dropwizard.jetty.BiDiGzipHandlerTest
+Running io.dropwizard.jetty.GzipHandlerFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.275 sec - in io.dropwizard.jetty.GzipHandlerFactoryTest
+Running io.dropwizard.jetty.NetUtilTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.007 sec - in io.dropwizard.jetty.NetUtilTest
+Running io.dropwizard.jetty.setup.ServletEnvironmentTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.072 sec - in io.dropwizard.jetty.setup.ServletEnvironmentTest
+Running io.dropwizard.jetty.ContextRoutingHandlerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in io.dropwizard.jetty.ContextRoutingHandlerTest
+Running io.dropwizard.jetty.NonblockingServletHolderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in io.dropwizard.jetty.NonblockingServletHolderTest
+
+Results :
+
+Tests run: 68, Failures: 0, Errors: 0, Skipped: 4
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Request Logging Support 1.2.0-rc7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-request-logging ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ dropwizard-request-logging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dropwizard-request-logging ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ dropwizard-request-logging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dropwizard-request-logging ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dropwizard-request-logging ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-request-logging/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.dropwizard.request.logging.LogbackAccessRequestLogTest
+11:43:35.863 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+11:43:35.872 [main] INFO org.eclipse.jetty.util.log - Logging initialized @2696ms to org.eclipse.jetty.util.log.Slf4jLog
+11:43:36.202 [main] DEBUG org.eclipse.jetty.http.PreEncodedHttpField - HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@366c4480]
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.743 sec - in io.dropwizard.request.logging.LogbackAccessRequestLogTest
+Running io.dropwizard.request.logging.old.LogbackClassicRequestLogFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.738 sec - in io.dropwizard.request.logging.old.LogbackClassicRequestLogFactoryTest
+Running io.dropwizard.request.logging.old.DropwizardSlf4jRequestLogTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.815 sec - in io.dropwizard.request.logging.old.DropwizardSlf4jRequestLogTest
+Running io.dropwizard.request.logging.layout.LogbackAccessRequestLayoutTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec - in io.dropwizard.request.logging.layout.LogbackAccessRequestLayoutTest
+Running io.dropwizard.request.logging.layout.SafeRequestParameterConverterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec - in io.dropwizard.request.logging.layout.SafeRequestParameterConverterTest
+Running io.dropwizard.request.logging.RequestLogFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in io.dropwizard.request.logging.RequestLogFactoryTest
+Running io.dropwizard.request.logging.ExternalRequestLogFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in io.dropwizard.request.logging.ExternalRequestLogFactoryTest
+
+Results :
+
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard 1.2.0-rc7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ dropwizard-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dropwizard-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ dropwizard-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dropwizard-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dropwizard-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.dropwizard.cli.CliTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.913 sec - in io.dropwizard.cli.CliTest
+Running io.dropwizard.cli.ServerCommandTest
+INFO  [2020-02-16 10:43:44,923] org.eclipse.jetty.util.log: Logging initialized @4646ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2020-02-16 10:43:45,359] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:43:45,423] org.eclipse.jetty.server.AbstractConnector: Started ServerConnector@374829c1{HTTP/1.1,[http/1.1]}{0.0.0.0:46421}
+INFO  [2020-02-16 10:43:45,424] org.eclipse.jetty.server.Server: Started @5153ms
+INFO  [2020-02-16 10:43:45,432] org.eclipse.jetty.server.AbstractConnector: Stopped ServerConnector@374829c1{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:43:45,446] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:43:45,454] org.eclipse.jetty.server.AbstractConnector: Started ServerConnector@44fb6ebd{HTTP/1.1,[http/1.1]}{0.0.0.0:42405}
+ERROR [2020-02-16 10:43:45,465] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! java.io.IOException: oh crap
+! at io.dropwizard.cli.ServerCommandTest$2.doStart(ServerCommandTest.java:90)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.server.Server.start(Server.java:449)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:416)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:53)
+! at io.dropwizard.cli.ServerCommandTest.stopsAServerIfThereIsAnErrorStartingIt(ServerCommandTest.java:95)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:498)
+! at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+! at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+! at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+! at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+! at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+! at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+! at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+! at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+! at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+! at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+! at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+! at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+! at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+! at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+! at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+! at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+! at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+! at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+INFO  [2020-02-16 10:43:45,979] org.eclipse.jetty.server.AbstractConnector: Stopped ServerConnector@44fb6ebd{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+throw NullPointerException, see Issue#1557
+WARN  [2020-02-16 10:43:45,981] io.dropwizard.cli.ServerCommand: Failure during stop server
+! java.lang.NullPointerException: null
+! at io.dropwizard.cli.ServerCommandTest$1.doStop(ServerCommandTest.java:36)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:57)
+! at io.dropwizard.cli.ServerCommandTest.stopsAServerIfThereIsAnErrorStartingIt(ServerCommandTest.java:95)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:498)
+! at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+! at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+! at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+! at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+! at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+! at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+! at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+! at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+! at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+! at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+! at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+! at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+! at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+! at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+! at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+! at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+! at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+! at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.099 sec - in io.dropwizard.cli.ServerCommandTest
+Running io.dropwizard.cli.InheritedServerCommandTest
+INFO  [2020-02-16 10:43:46,000] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:43:46,023] org.eclipse.jetty.server.AbstractConnector: Started ServerConnector@7608a838{HTTP/1.1,[http/1.1]}{0.0.0.0:34901}
+INFO  [2020-02-16 10:43:46,023] org.eclipse.jetty.server.Server: Started @5752ms
+INFO  [2020-02-16 10:43:46,037] org.eclipse.jetty.server.AbstractConnector: Stopped ServerConnector@7608a838{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in io.dropwizard.cli.InheritedServerCommandTest
+Running io.dropwizard.cli.CheckCommandTest
+INFO  [2020-02-16 10:43:46,231] io.dropwizard.cli.CheckCommand: Configuration is OK
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in io.dropwizard.cli.CheckCommandTest
+Running io.dropwizard.cli.ConfiguredCommandTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in io.dropwizard.cli.ConfiguredCommandTest
+Running io.dropwizard.cli.CommandTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in io.dropwizard.cli.CommandTest
+Running io.dropwizard.ApplicationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec - in io.dropwizard.ApplicationTest
+Running io.dropwizard.server.SimpleServerFactoryTest
+INFO  [2020-02-16 10:43:46,696] io.dropwizard.server.SimpleServerFactory: Registering jersey handler with root path prefix: /service
+INFO  [2020-02-16 10:43:46,699] io.dropwizard.server.SimpleServerFactory: Registering admin handler with root path prefix: /secret
+INFO  [2020-02-16 10:43:46,699] io.dropwizard.server.ServerFactory: Starting testEnvironment
+INFO  [2020-02-16 10:43:46,833] org.eclipse.jetty.setuid.SetUIDListener: Opened testEnvironment@66e12c3b{HTTP/1.1,[http/1.1]}{0.0.0.0:34971}
+INFO  [2020-02-16 10:43:46,837] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:43:47,717] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /test (io.dropwizard.server.SimpleServerFactoryTest.TestResource)
+
+INFO  [2020-02-16 10:43:47,729] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@652a1a17{/service,null,AVAILABLE}
+INFO  [2020-02-16 10:43:47,732] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+    POST    /tasks/hello (io.dropwizard.server.SimpleServerFactoryTest.TestTask)
+
+WARN  [2020-02-16 10:43:47,733] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2020-02-16 10:43:47,738] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@5f4df55e{/secret,null,AVAILABLE}
+INFO  [2020-02-16 10:43:47,739] org.eclipse.jetty.server.AbstractConnector: Started testEnvironment@66e12c3b{HTTP/1.1,[http/1.1]}{0.0.0.0:34971}
+INFO  [2020-02-16 10:43:47,739] org.eclipse.jetty.server.Server: Started @7468ms
+127.0.0.1 - - [16/Feb/2020:10:43:47 +0000] "GET /service/test HTTP/1.1" 200 18 "-" "Java/1.8.0_202" 170
+INFO  [2020-02-16 10:43:48,065] org.eclipse.jetty.server.AbstractConnector: Stopped testEnvironment@66e12c3b{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:43:48,066] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@5f4df55e{/secret,null,UNAVAILABLE}
+INFO  [2020-02-16 10:43:48,072] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@652a1a17{/service,null,UNAVAILABLE}
+127.0.0.1 - - [16/Feb/2020:10:43:48 +0000] "POST /secret/tasks/hello?name=test_user HTTP/1.1" 200 17 "-" "Java/1.8.0_202" 73
+INFO  [2020-02-16 10:43:48,275] io.dropwizard.server.SimpleServerFactory: Registering jersey handler with root path prefix: /service
+INFO  [2020-02-16 10:43:48,275] io.dropwizard.server.SimpleServerFactory: Registering admin handler with root path prefix: /secret
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.12 sec - in io.dropwizard.server.SimpleServerFactoryTest
+Running io.dropwizard.server.DefaultServerFactoryTest
+INFO  [2020-02-16 10:43:49,210] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /app
+INFO  [2020-02-16 10:43:49,211] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /admin
+INFO  [2020-02-16 10:43:49,211] io.dropwizard.server.ServerFactory: Starting test
+WARN  [2020-02-16 10:43:49,228] org.eclipse.jetty.server.AbstractConnector: Acceptors should be <= availableProcessors: ServerConnector@620bb4ea{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:43:49,504] org.eclipse.jetty.setuid.SetUIDListener: Opened application@620bb4ea{HTTP/1.1,[http/1.1]}{localhost:42209}
+INFO  [2020-02-16 10:43:49,504] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@2bb03bbd{HTTP/1.1,[http/1.1]}{0.0.0.0:42277}
+INFO  [2020-02-16 10:43:49,504] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:43:49,699] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /test (io.dropwizard.server.DefaultServerFactoryTest.TestResource)
+
+INFO  [2020-02-16 10:43:49,703] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2bda778a{/app,null,AVAILABLE}
+INFO  [2020-02-16 10:43:49,714] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2020-02-16 10:43:49,714] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2020-02-16 10:43:49,717] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7a51ba06{/admin,null,AVAILABLE}
+INFO  [2020-02-16 10:43:49,718] org.eclipse.jetty.server.AbstractConnector: Started application@620bb4ea{HTTP/1.1,[http/1.1]}{localhost:42209}
+INFO  [2020-02-16 10:43:49,719] org.eclipse.jetty.server.AbstractConnector: Started admin@2bb03bbd{HTTP/1.1,[http/1.1]}{0.0.0.0:42277}
+INFO  [2020-02-16 10:43:49,719] org.eclipse.jetty.server.Server: Started @9448ms
+127.0.0.1 - - [16/Feb/2020:10:43:49 +0000] "GET /app/test HTTP/1.1" 200 4 "-" "Java/1.8.0_202" 36
+INFO  [2020-02-16 10:43:49,800] org.eclipse.jetty.server.AbstractConnector: Stopped application@620bb4ea{HTTP/1.1,[http/1.1]}{localhost:0}
+INFO  [2020-02-16 10:43:49,801] org.eclipse.jetty.server.AbstractConnector: Stopped admin@2bb03bbd{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:43:49,802] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7a51ba06{/admin,null,UNAVAILABLE}
+INFO  [2020-02-16 10:43:49,843] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2bda778a{/app,null,UNAVAILABLE}
+INFO  [2020-02-16 10:43:49,972] io.dropwizard.server.ServerFactory: Starting test
+WARN  [2020-02-16 10:43:49,973] org.eclipse.jetty.server.AbstractConnector: Acceptors should be <= availableProcessors: ServerConnector@70ebe93e{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:43:50,105] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /app
+INFO  [2020-02-16 10:43:50,106] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /admin
+INFO  [2020-02-16 10:43:50,215] io.dropwizard.server.ServerFactory: Starting test
+WARN  [2020-02-16 10:43:50,217] org.eclipse.jetty.server.AbstractConnector: Acceptors should be <= availableProcessors: ServerConnector@70f5a2a1{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:43:50,576] io.dropwizard.server.ServerFactory: Starting test
+WARN  [2020-02-16 10:43:50,579] org.eclipse.jetty.server.AbstractConnector: Acceptors should be <= availableProcessors: ServerConnector@6de7643c{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:43:50,783] io.dropwizard.server.ServerFactory: Starting test
+WARN  [2020-02-16 10:43:50,797] org.eclipse.jetty.server.AbstractConnector: Acceptors should be <= availableProcessors: ServerConnector@2470a86{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.277 sec - in io.dropwizard.server.DefaultServerFactoryTest
+Running io.dropwizard.server.AbstractServerFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.582 sec - in io.dropwizard.server.AbstractServerFactoryTest
+Running io.dropwizard.setup.ExceptionMapperBinderTest
+INFO  [2020-02-16 10:43:52,456] io.dropwizard.server.SimpleServerFactory: Registering jersey handler with root path prefix: /service
+INFO  [2020-02-16 10:43:52,456] io.dropwizard.server.SimpleServerFactory: Registering admin handler with root path prefix: /secret
+INFO  [2020-02-16 10:43:52,456] io.dropwizard.server.ServerFactory: Starting testEnvironment
+INFO  [2020-02-16 10:43:52,505] org.eclipse.jetty.setuid.SetUIDListener: Opened testEnvironment@31d51325{HTTP/1.1,[http/1.1]}{0.0.0.0:35547}
+INFO  [2020-02-16 10:43:52,505] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:43:52,713] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /test (io.dropwizard.setup.ExceptionMapperBinderTest.TestValidationResource)
+
+INFO  [2020-02-16 10:43:52,717] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@59eb557e{/service,null,AVAILABLE}
+INFO  [2020-02-16 10:43:52,720] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2020-02-16 10:43:52,720] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2020-02-16 10:43:52,732] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@12bcfd07{/secret,null,AVAILABLE}
+INFO  [2020-02-16 10:43:52,733] org.eclipse.jetty.server.AbstractConnector: Started testEnvironment@31d51325{HTTP/1.1,[http/1.1]}{0.0.0.0:35547}
+INFO  [2020-02-16 10:43:52,733] org.eclipse.jetty.server.Server: Started @12462ms
+INFO  [2020-02-16 10:43:52,812] org.eclipse.jetty.server.AbstractConnector: Stopped testEnvironment@31d51325{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:43:52,812] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@12bcfd07{/secret,null,UNAVAILABLE}
+INFO  [2020-02-16 10:43:52,815] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@59eb557e{/service,null,UNAVAILABLE}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.412 sec - in io.dropwizard.setup.ExceptionMapperBinderTest
+Running io.dropwizard.setup.BootstrapTest
+127.0.0.1 - - [16/Feb/2020:10:43:52 +0000] "GET /service/test HTTP/1.1" 200 8 "-" "Java/1.8.0_202" 72
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec - in io.dropwizard.setup.BootstrapTest
+Running io.dropwizard.setup.AdminEnvironmentTest
+INFO  [2020-02-16 10:43:52,984] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/thing (io.dropwizard.setup.AdminEnvironmentTest$1)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2020-02-16 10:43:52,984] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2020-02-16 10:43:52,985] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@4dea0112{/,null,AVAILABLE}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.dropwizard.setup.AdminEnvironmentTest
+Running io.dropwizard.ConfigurationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec - in io.dropwizard.ConfigurationTest
+
+Results :
+
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Test Helpers 1.2.0-rc7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-testing ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ dropwizard-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-testing/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dropwizard-testing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ dropwizard-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dropwizard-testing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dropwizard-testing ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-testing/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.dropwizard.testing.app.PersonResourceTest
+ERROR [2020-02-16 11:43:58,353] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: 94a44af61956fee6
+! java.lang.Exception: I'm an exception!
+! at io.dropwizard.testing.app.PersonResource.exceptional(PersonResource.java:56)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:498)
+! at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+! at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+! at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+! at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)
+! at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)
+! at org.glassfish.jersey.test.inmemory.InMemoryConnector.apply(InMemoryConnector.java:275)
+! at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:252)
+! at org.glassfish.jersey.client.JerseyInvocation$1.call(JerseyInvocation.java:684)
+! at org.glassfish.jersey.client.JerseyInvocation$1.call(JerseyInvocation.java:681)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:228)
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:444)
+! at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:681)
+! at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:437)
+! at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:343)
+! at io.dropwizard.testing.app.PersonResourceTest.testDefaultExceptionMapper(PersonResourceTest.java:104)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:498)
+! at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+! at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+! at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+! at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+! at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+! at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+! at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+! at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+! at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+! at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+! at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+! at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+! at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+! at io.dropwizard.testing.junit.ResourceTestRule$1.evaluate(ResourceTestRule.java:198)
+! at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+! at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+! at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+! at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+! at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+ERROR [2020-02-16 11:43:58,406] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: 04550cf2ef0ee123
+! javax.ws.rs.WebApplicationException: Parameters must have the same validation groups in validationGroupsException
+! at io.dropwizard.jersey.validation.DropwizardConfiguredValidator.getGroup(DropwizardConfiguredValidator.java:82)
+! at io.dropwizard.jersey.validation.DropwizardConfiguredValidator.validateResourceAndInputParams(DropwizardConfiguredValidator.java:37)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:134)
+! at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+! at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+! at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)
+! at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)
+! at org.glassfish.jersey.test.inmemory.InMemoryConnector.apply(InMemoryConnector.java:275)
+! at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:252)
+! at org.glassfish.jersey.client.JerseyInvocation$1.call(JerseyInvocation.java:684)
+! at org.glassfish.jersey.client.JerseyInvocation$1.call(JerseyInvocation.java:681)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:228)
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:444)
+! at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:681)
+! at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:437)
+! at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:343)
+! at io.dropwizard.testing.app.PersonResourceTest.testValidationGroupsException(PersonResourceTest.java:121)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:498)
+! at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+! at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+! at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+! at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+! at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+! at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+! at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+! at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+! at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+! at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+! at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+! at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+! at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+! at io.dropwizard.testing.junit.ResourceTestRule$1.evaluate(ResourceTestRule.java:198)
+! at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+! at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+! at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+! at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+! at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+! at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.108 sec - in io.dropwizard.testing.app.PersonResourceTest
+Running io.dropwizard.testing.app.GzipDefaultVaryBehaviourTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.276 sec - in io.dropwizard.testing.app.GzipDefaultVaryBehaviourTest
+Running io.dropwizard.testing.app.PersonResourceExceptionMapperTest
+INFO  [2020-02-16 11:44:00,929] org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.299 sec - in io.dropwizard.testing.app.PersonResourceExceptionMapperTest
+Running io.dropwizard.testing.junit.DAOTestRuleTest
+INFO  [2020-02-16 11:44:01,412] org.hibernate.Version: HHH000412: Hibernate Core {5.2.10.Final}
+INFO  [2020-02-16 11:44:01,416] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2020-02-16 11:44:01,491] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2020-02-16 11:44:01,668] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2020-02-16 11:44:01,685] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:1fe66f75-f6b6-43d1-9801-1d4804660767]
+INFO  [2020-02-16 11:44:01,685] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=sa, password=}
+INFO  [2020-02-16 11:44:01,685] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+INFO  [2020-02-16 11:44:01,688] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  [2020-02-16 11:44:01,946] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2020-02-16 11:44:02,683] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@35ff072c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:02,686] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4bca8eaf] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:02,694] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@673a9db4'
+INFO  [2020-02-16 11:44:02,880] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    53298 nanoseconds spent acquiring 4 JDBC connections;
+    117420 nanoseconds spent releasing 3 JDBC connections;
+    1248950 nanoseconds spent preparing 3 JDBC statements;
+    3580760 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6411601 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+WARN  [2020-02-16 11:44:02,900] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2020-02-16 11:44:02,901] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:128032d0-a851-413c-90af-f42ecefc4ff0]
+INFO  [2020-02-16 11:44:02,903] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=sa, password=}
+INFO  [2020-02-16 11:44:02,904] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+INFO  [2020-02-16 11:44:02,907] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  [2020-02-16 11:44:02,915] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2020-02-16 11:44:02,965] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@70e1aa20] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:02,965] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@e67d3b7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:02,972] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@673a9db4'
+INFO  [2020-02-16 11:44:02,999] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    24831 nanoseconds spent acquiring 2 JDBC connections;
+    121536 nanoseconds spent releasing 1 JDBC connections;
+    2315388 nanoseconds spent preparing 2 JDBC statements;
+    922015 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    203312 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+WARN  [2020-02-16 11:44:03,013] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2020-02-16 11:44:03,014] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:8e6cf07f-4e02-4106-95cc-812773a73b18]
+INFO  [2020-02-16 11:44:03,014] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=sa, password=}
+INFO  [2020-02-16 11:44:03,014] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+INFO  [2020-02-16 11:44:03,015] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  [2020-02-16 11:44:03,027] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2020-02-16 11:44:03,064] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d90764a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:03,065] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6843fdc4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:03,070] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@673a9db4'
+INFO  [2020-02-16 11:44:03,089] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    13625 nanoseconds spent acquiring 1 JDBC connections;
+    25529 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+WARN  [2020-02-16 11:44:03,097] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2020-02-16 11:44:03,098] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:0a3b852d-66e1-41b5-adc0-ee965705581c]
+INFO  [2020-02-16 11:44:03,099] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=sa, password=}
+INFO  [2020-02-16 11:44:03,099] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+INFO  [2020-02-16 11:44:03,099] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  [2020-02-16 11:44:03,104] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2020-02-16 11:44:03,152] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e6bd367] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:03,154] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2bd7f686] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:03,164] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@673a9db4'
+INFO  [2020-02-16 11:44:03,165] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+WARN  [2020-02-16 11:44:03,174] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2020-02-16 11:44:03,175] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:8ce08af0-ad61-4c5f-bf6a-4af3a9ccbeb1]
+INFO  [2020-02-16 11:44:03,176] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=sa, password=}
+INFO  [2020-02-16 11:44:03,176] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+INFO  [2020-02-16 11:44:03,176] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  [2020-02-16 11:44:03,186] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2020-02-16 11:44:03,222] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@dbca149] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:03,226] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@68550d86] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:03,232] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@673a9db4'
+INFO  [2020-02-16 11:44:03,249] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    12066 nanoseconds spent acquiring 1 JDBC connections;
+    27271 nanoseconds spent releasing 1 JDBC connections;
+    92973 nanoseconds spent preparing 1 JDBC statements;
+    1787356 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    197908 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.05 sec - in io.dropwizard.testing.junit.DAOTestRuleTest
+Running io.dropwizard.testing.junit.DropwizardAppRuleWithExplicitTest
+INFO  [2020-02-16 10:44:03,285] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2020-02-16 10:44:03,286] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2020-02-16 10:44:03,286] io.dropwizard.server.ServerFactory: Starting TestApplication
+INFO  [2020-02-16 10:44:03,322] org.eclipse.jetty.setuid.SetUIDListener: Opened application@6d4d0a14{HTTP/1.1,[http/1.1]}{0.0.0.0:34157}
+INFO  [2020-02-16 10:44:03,322] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@1cca3e8c{HTTP/1.1,[http/1.1]}{0.0.0.0:46765}
+INFO  [2020-02-16 10:44:03,322] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:44:03,484] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /test (io.dropwizard.testing.junit.DropwizardAppRuleWithExplicitTest.TestResource)
+
+INFO  [2020-02-16 10:44:03,485] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@18f27a81{/,null,AVAILABLE}
+INFO  [2020-02-16 10:44:03,485] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2020-02-16 10:44:03,485] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2020-02-16 10:44:03,486] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@654c2f81{/,null,AVAILABLE}
+INFO  [2020-02-16 10:44:03,488] org.eclipse.jetty.server.AbstractConnector: Started application@6d4d0a14{HTTP/1.1,[http/1.1]}{0.0.0.0:34157}
+INFO  [2020-02-16 10:44:03,542] org.eclipse.jetty.server.AbstractConnector: Started admin@1cca3e8c{HTTP/1.1,[http/1.1]}{0.0.0.0:46765}
+INFO  [2020-02-16 10:44:03,543] org.eclipse.jetty.server.Server: Started @9836ms
+INFO  [2020-02-16 10:44:03,654] org.eclipse.jetty.server.AbstractConnector: Stopped application@6d4d0a14{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:03,656] org.eclipse.jetty.server.AbstractConnector: Stopped admin@1cca3e8c{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:03,656] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@654c2f81{/,null,UNAVAILABLE}
+INFO  [2020-02-16 10:44:03,663] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@18f27a81{/,null,UNAVAILABLE}
+127.0.0.1 - - [16/Feb/2020:10:44:03 +0000] "GET /test HTTP/1.1" 200 20 "-" "Jersey/2.25.1 (HttpUrlConnection 1.8.0_202)" 59
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.421 sec - in io.dropwizard.testing.junit.DropwizardAppRuleWithExplicitTest
+Running io.dropwizard.testing.junit.DropwizardAppRuleConfigOverrideTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.566 sec - in io.dropwizard.testing.junit.DropwizardAppRuleConfigOverrideTest
+Running io.dropwizard.testing.junit.DAOTestRuleConfigTest
+WARN  [2020-02-16 11:44:04,244] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2020-02-16 11:44:04,247] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:rule-config-test]
+INFO  [2020-02-16 11:44:04,247] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=username, password=}
+INFO  [2020-02-16 11:44:04,247] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+INFO  [2020-02-16 11:44:04,248] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  [2020-02-16 11:44:04,255] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: 
+    
+    drop table test_entities if exists
+INFO  [2020-02-16 11:44:04,290] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3093161a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: 
+    
+    create table test_entities (
+       id bigint generated by default as identity,
+        desc varchar(255) not null,
+        primary key (id)
+    )
+INFO  [2020-02-16 11:44:04,291] org.hibernate.orm.connections.access: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73a88711] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+INFO  [2020-02-16 11:44:04,294] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@673a9db4'
+Hibernate: 
+    /* insert io.dropwizard.testing.junit.TestEntity
+        */ insert 
+        into
+            test_entities
+            (id, desc) 
+        values
+            (null, ?)
+INFO  [2020-02-16 11:44:04,305] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    19615 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    214032 nanoseconds spent preparing 1 JDBC statements;
+    762120 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in io.dropwizard.testing.junit.DAOTestRuleConfigTest
+Running io.dropwizard.testing.junit.DropwizardAppRuleResetConfigOverrideTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.836 sec - in io.dropwizard.testing.junit.DropwizardAppRuleResetConfigOverrideTest
+Running io.dropwizard.testing.junit.DropwizardClientRuleTest
+INFO  [2020-02-16 10:44:05,410] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2020-02-16 10:44:05,410] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2020-02-16 10:44:05,411] io.dropwizard.server.SimpleServerFactory: Registering jersey handler with root path prefix: /application
+INFO  [2020-02-16 10:44:05,411] io.dropwizard.server.SimpleServerFactory: Registering admin handler with root path prefix: /admin
+INFO  [2020-02-16 10:44:05,411] io.dropwizard.server.ServerFactory: Starting FakeApplication
+INFO  [2020-02-16 10:44:05,476] org.eclipse.jetty.setuid.SetUIDListener: Opened FakeApplication@4fdf83bb{HTTP/1.1,[http/1.1]}{0.0.0.0:41877}
+INFO  [2020-02-16 10:44:05,476] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:44:05,550] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /test (io.dropwizard.testing.junit.TestResource)
+
+INFO  [2020-02-16 10:44:05,550] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@26562718{/application,null,AVAILABLE}
+INFO  [2020-02-16 10:44:05,551] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2020-02-16 10:44:05,552] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@48d1f239{/admin,null,AVAILABLE}
+INFO  [2020-02-16 10:44:05,553] org.eclipse.jetty.server.AbstractConnector: Started FakeApplication@4fdf83bb{HTTP/1.1,[http/1.1]}{0.0.0.0:41877}
+INFO  [2020-02-16 10:44:05,553] org.eclipse.jetty.server.Server: Started @11847ms
+INFO  [2020-02-16 10:44:05,734] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2020-02-16 10:44:05,734] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2020-02-16 10:44:05,734] io.dropwizard.server.SimpleServerFactory: Registering jersey handler with root path prefix: /application
+INFO  [2020-02-16 10:44:05,734] io.dropwizard.server.SimpleServerFactory: Registering admin handler with root path prefix: /admin
+INFO  [2020-02-16 10:44:05,734] io.dropwizard.server.ServerFactory: Starting FakeApplication
+INFO  [2020-02-16 10:44:05,814] org.eclipse.jetty.setuid.SetUIDListener: Opened FakeApplication@2b4bcd6e{HTTP/1.1,[http/1.1]}{0.0.0.0:36767}
+INFO  [2020-02-16 10:44:05,814] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:44:05,907] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /test (io.dropwizard.testing.junit.TestResource)
+
+INFO  [2020-02-16 10:44:05,907] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2564b7f2{/application,null,AVAILABLE}
+INFO  [2020-02-16 10:44:05,908] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2020-02-16 10:44:05,909] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3eeba527{/admin,null,AVAILABLE}
+INFO  [2020-02-16 10:44:05,910] org.eclipse.jetty.server.AbstractConnector: Started FakeApplication@2b4bcd6e{HTTP/1.1,[http/1.1]}{0.0.0.0:36767}
+INFO  [2020-02-16 10:44:05,910] org.eclipse.jetty.server.Server: Started @12204ms
+127.0.0.1 - - [16/Feb/2020:10:44:05 +0000] "GET /application/test HTTP/1.1" 200 3 "-" "Java/1.8.0_202" 5
+127.0.0.1 - - [16/Feb/2020:10:44:05 +0000] "GET /application/test HTTP/1.1" 200 15 "-" "Java/1.8.0_202" 13
+INFO  [2020-02-16 10:44:05,987] org.eclipse.jetty.server.AbstractConnector: Stopped FakeApplication@2b4bcd6e{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:05,987] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3eeba527{/admin,null,UNAVAILABLE}
+INFO  [2020-02-16 10:44:05,988] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2564b7f2{/application,null,UNAVAILABLE}
+INFO  [2020-02-16 11:44:06,003] org.eclipse.jetty.server.AbstractConnector: Stopped FakeApplication@4fdf83bb{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 11:44:06,003] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@48d1f239{/admin,null,UNAVAILABLE}
+INFO  [2020-02-16 11:44:06,004] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@26562718{/application,null,UNAVAILABLE}
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.866 sec - in io.dropwizard.testing.junit.DropwizardClientRuleTest
+Running io.dropwizard.testing.junit.DropwizardAppRuleReentrantTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.344 sec - in io.dropwizard.testing.junit.DropwizardAppRuleReentrantTest
+Running io.dropwizard.testing.junit.DropwizardAppRuleTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 sec - in io.dropwizard.testing.junit.DropwizardAppRuleTest
+Running io.dropwizard.testing.junit.DropwizardAppRuleWithoutConfigTest
+INFO  [2020-02-16 10:44:07,008] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2020-02-16 10:44:07,008] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2020-02-16 10:44:07,023] io.dropwizard.server.ServerFactory: Starting TestApplication
+INFO  [2020-02-16 10:44:07,056] org.eclipse.jetty.setuid.SetUIDListener: Opened application@7a364bfe{HTTP/1.1,[http/1.1]}{0.0.0.0:43943}
+INFO  [2020-02-16 10:44:07,056] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@6c13260b{HTTP/1.1,[http/1.1]}{0.0.0.0:39771}
+INFO  [2020-02-16 10:44:07,056] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:44:07,168] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /test (io.dropwizard.testing.junit.DropwizardAppRuleWithoutConfigTest.TestResource)
+
+INFO  [2020-02-16 10:44:07,169] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3d8141b4{/,null,AVAILABLE}
+INFO  [2020-02-16 10:44:07,171] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2020-02-16 10:44:07,171] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2020-02-16 10:44:07,172] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@510a5fe1{/,null,AVAILABLE}
+INFO  [2020-02-16 10:44:07,174] org.eclipse.jetty.server.AbstractConnector: Started application@7a364bfe{HTTP/1.1,[http/1.1]}{0.0.0.0:43943}
+INFO  [2020-02-16 10:44:07,175] org.eclipse.jetty.server.AbstractConnector: Started admin@6c13260b{HTTP/1.1,[http/1.1]}{0.0.0.0:39771}
+INFO  [2020-02-16 10:44:07,175] org.eclipse.jetty.server.Server: Started @13469ms
+127.0.0.1 - - [16/Feb/2020:10:44:07 +0000] "GET /test HTTP/1.1" 200 18 "-" "Jersey/2.25.1 (HttpUrlConnection 1.8.0_202)" 21
+INFO  [2020-02-16 10:44:07,259] org.eclipse.jetty.server.AbstractConnector: Stopped application@7a364bfe{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:07,260] org.eclipse.jetty.server.AbstractConnector: Stopped admin@6c13260b{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:07,260] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@510a5fe1{/,null,UNAVAILABLE}
+INFO  [2020-02-16 10:44:07,262] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3d8141b4{/,null,UNAVAILABLE}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.433 sec - in io.dropwizard.testing.junit.DropwizardAppRuleWithoutConfigTest
+Running io.dropwizard.testing.DropwizardTestSupportTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.426 sec - in io.dropwizard.testing.DropwizardTestSupportTest
+Running io.dropwizard.testing.FixtureHelpersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in io.dropwizard.testing.FixtureHelpersTest
+
+Results :
+
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard HTTP Client 1.2.0-rc7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ dropwizard-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-client/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dropwizard-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ dropwizard-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 25 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dropwizard-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dropwizard-client ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.dropwizard.client.ssl.DropwizardSSLConnectionSocketFactoryTest
+INFO  [2020-02-16 10:44:11,553] org.eclipse.jetty.util.log: Logging initialized @3209ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2020-02-16 10:44:11,744] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2020-02-16 10:44:11,745] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2020-02-16 10:44:11,753] io.dropwizard.server.ServerFactory: Starting TlsTestApplication
+INFO  [2020-02-16 10:44:11,920] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3722c145{SSL,[ssl, http/1.1]}{0.0.0.0:41231}
+INFO  [2020-02-16 10:44:11,921] org.eclipse.jetty.setuid.SetUIDListener: Opened application@4cbc2e3b{SSL,[ssl, http/1.1]}{0.0.0.0:46553}
+INFO  [2020-02-16 10:44:11,921] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2975a9e{SSL,[ssl, http/1.1]}{0.0.0.0:38625}
+INFO  [2020-02-16 10:44:11,922] org.eclipse.jetty.setuid.SetUIDListener: Opened application@765ffb14{SSL,[ssl, http/1.1]}{0.0.0.0:38189}
+INFO  [2020-02-16 10:44:11,922] org.eclipse.jetty.setuid.SetUIDListener: Opened application@57562473{SSL,[ssl, http/1.1]}{0.0.0.0:42603}
+INFO  [2020-02-16 10:44:11,923] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@7a360554{HTTP/1.1,[http/1.1]}{0.0.0.0:41035}
+INFO  [2020-02-16 10:44:11,925] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:44:12,445] org.eclipse.jetty.util.ssl.SslContextFactory: x509=X509@2d55e826(1,h=[],w=[]) for SslContextFactory@4d1ff6b1(file:///scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-client/target/test-classes/stores/server/keycert.p12,null)
+INFO  [2020-02-16 10:44:12,533] io.dropwizard.jetty.HttpsConnectorFactory: Supported protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+INFO  [2020-02-16 10:44:12,533] io.dropwizard.jetty.HttpsConnectorFactory: Supported cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256]
+INFO  [2020-02-16 10:44:12,533] io.dropwizard.jetty.HttpsConnectorFactory: Configured protocols: [TLSv1.2]
+INFO  [2020-02-16 10:44:13,257] org.eclipse.jetty.util.ssl.SslContextFactory: x509=X509@7523a3dc(1,h=[],w=[]) for SslContextFactory@2806d6da(file:///scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-client/target/test-classes/stores/server/self_sign_keycert.p12,null)
+INFO  [2020-02-16 10:44:13,274] org.eclipse.jetty.util.ssl.SslContextFactory: x509=X509@766a49c7(1,h=[],w=[]) for SslContextFactory@1db7157f(file:///scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-client/target/test-classes/stores/server/keycert.p12,file:///scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-client/target/test-classes/stores/server/ca_truststore.ts)
+INFO  [2020-02-16 10:44:13,297] org.eclipse.jetty.util.ssl.SslContextFactory: x509=X509@6bccd036(1,h=[],w=[]) for SslContextFactory@4f4c88f9(file:///scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-client/target/test-classes/stores/server/bad_host_keycert.p12,null)
+INFO  [2020-02-16 10:44:13,325] org.eclipse.jetty.util.ssl.SslContextFactory: x509=X509@cb39552(1,h=[],w=[]) for SslContextFactory@1f3b992(file:///scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-client/target/test-classes/stores/server/keycert.p12,null)
+INFO  [2020-02-16 10:44:13,329] org.eclipse.jetty.util.ssl.SslContextFactory: Protocol SSLv1 not supported in [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+INFO  [2020-02-16 10:44:13,329] org.eclipse.jetty.util.ssl.SslContextFactory: Protocol SSLv2 not supported in [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+WARN  [2020-02-16 10:44:13,329] org.eclipse.jetty.util.ssl.SslContextFactory: No selected protocols from [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+INFO  [2020-02-16 10:44:14,374] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     / (io.dropwizard.client.ssl.DropwizardSSLConnectionSocketFactoryTest.TestResource)
+
+INFO  [2020-02-16 10:44:14,378] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7c5df615{/,null,AVAILABLE}
+INFO  [2020-02-16 10:44:14,384] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2020-02-16 10:44:14,386] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2020-02-16 10:44:14,393] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@587c5c1{/,null,AVAILABLE}
+INFO  [2020-02-16 10:44:14,406] org.eclipse.jetty.server.AbstractConnector: Started application@3722c145{SSL,[ssl, http/1.1]}{0.0.0.0:41231}
+INFO  [2020-02-16 10:44:14,407] org.eclipse.jetty.server.AbstractConnector: Started application@4cbc2e3b{SSL,[ssl, http/1.1]}{0.0.0.0:46553}
+INFO  [2020-02-16 10:44:14,478] org.eclipse.jetty.server.AbstractConnector: Started application@2975a9e{SSL,[ssl, http/1.1]}{0.0.0.0:38625}
+INFO  [2020-02-16 10:44:14,479] org.eclipse.jetty.server.AbstractConnector: Started application@765ffb14{SSL,[ssl, http/1.1]}{0.0.0.0:38189}
+INFO  [2020-02-16 10:44:14,484] org.eclipse.jetty.server.AbstractConnector: Started application@57562473{SSL,[ssl, http/1.1]}{0.0.0.0:42603}
+INFO  [2020-02-16 10:44:14,492] org.eclipse.jetty.server.AbstractConnector: Started admin@7a360554{HTTP/1.1,[http/1.1]}{0.0.0.0:41035}
+INFO  [2020-02-16 10:44:14,492] org.eclipse.jetty.server.Server: Started @6150ms
+127.0.0.1 - - [16/Feb/2020:10:44:15 +0000] "GET / HTTP/1.1" 200 0 "-" "TlsTestApplication (bad_host_noop_verifier_working)" 111
+127.0.0.1 - - [16/Feb/2020:10:44:15 +0000] "GET / HTTP/1.1" 200 0 "-" "TlsTestApplication (self_sign_permitted)" 8
+127.0.0.1 - - [16/Feb/2020:10:44:16 +0000] "GET / HTTP/1.1" 200 0 "-" "TlsTestApplication (tls_working_client)" 10
+127.0.0.1 - - [16/Feb/2020:10:44:16 +0000] "GET / HTTP/1.1" 200 0 "-" "TlsTestApplication (bad_host_fail_verifier_working)" 2
+127.0.0.1 - - [16/Feb/2020:10:44:16 +0000] "GET / HTTP/1.1" 200 0 "-" "TlsTestApplication (client_auth_using_cert_alias_working)" 2
+127.0.0.1 - - [16/Feb/2020:10:44:16 +0000] "GET / HTTP/1.1" 200 0 "-" "TlsTestApplication (bad_host_working)" 1
+127.0.0.1 - - [16/Feb/2020:10:44:16 +0000] "GET / HTTP/1.1" 200 0 "-" "TlsTestApplication (client_auth_working)" 1
+INFO  [2020-02-16 10:44:16,906] org.eclipse.jetty.server.AbstractConnector: Stopped application@3722c145{SSL,[ssl, http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:16,908] org.eclipse.jetty.server.AbstractConnector: Stopped application@4cbc2e3b{SSL,[ssl, http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:16,909] org.eclipse.jetty.server.AbstractConnector: Stopped application@2975a9e{SSL,[ssl, http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:16,914] org.eclipse.jetty.server.AbstractConnector: Stopped application@765ffb14{SSL,[ssl, http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:16,917] org.eclipse.jetty.server.AbstractConnector: Stopped application@57562473{SSL,[ssl, http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:16,918] org.eclipse.jetty.server.AbstractConnector: Stopped admin@7a360554{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:16,919] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@587c5c1{/,null,UNAVAILABLE}
+INFO  [2020-02-16 10:44:16,926] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7c5df615{/,null,UNAVAILABLE}
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.795 sec - in io.dropwizard.client.ssl.DropwizardSSLConnectionSocketFactoryTest
+Running io.dropwizard.client.JerseyClientBuilderTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.589 sec - in io.dropwizard.client.JerseyClientBuilderTest
+Running io.dropwizard.client.JerseyClientConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in io.dropwizard.client.JerseyClientConfigurationTest
+Running io.dropwizard.client.HttpClientBuilderTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 sec - in io.dropwizard.client.HttpClientBuilderTest
+Running io.dropwizard.client.ConfiguredCloseableHttpClientTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in io.dropwizard.client.ConfiguredCloseableHttpClientTest
+Running io.dropwizard.client.JerseyClientIntegrationTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.644 sec - in io.dropwizard.client.JerseyClientIntegrationTest
+Running io.dropwizard.client.proxy.NonProxyListProxyRoutePlannerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in io.dropwizard.client.proxy.NonProxyListProxyRoutePlannerTest
+Running io.dropwizard.client.proxy.HttpClientConfigurationTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.724 sec - in io.dropwizard.client.proxy.HttpClientConfigurationTest
+Running io.dropwizard.client.JerseyIgnoreRequestUserAgentHeaderFilterTest
+INFO  [2020-02-16 10:44:21,807] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2020-02-16 10:44:21,808] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2020-02-16 10:44:21,809] io.dropwizard.server.ServerFactory: Starting TestApplication
+INFO  [2020-02-16 10:44:21,850] org.eclipse.jetty.setuid.SetUIDListener: Opened application@29922188{HTTP/1.1,[http/1.1]}{0.0.0.0:37575}
+INFO  [2020-02-16 10:44:21,850] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@6a5ed5f9{HTTP/1.1,[http/1.1]}{0.0.0.0:35371}
+INFO  [2020-02-16 10:44:21,850] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:44:22,003] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /user_agent (io.dropwizard.client.JerseyIgnoreRequestUserAgentHeaderFilterTest.TestResource)
+
+INFO  [2020-02-16 10:44:22,005] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@17734113{/,null,AVAILABLE}
+INFO  [2020-02-16 10:44:22,006] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2020-02-16 10:44:22,006] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2020-02-16 10:44:22,007] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@d15f98a{/,null,AVAILABLE}
+INFO  [2020-02-16 10:44:22,011] org.eclipse.jetty.server.AbstractConnector: Started application@29922188{HTTP/1.1,[http/1.1]}{0.0.0.0:37575}
+INFO  [2020-02-16 10:44:22,012] org.eclipse.jetty.server.AbstractConnector: Started admin@6a5ed5f9{HTTP/1.1,[http/1.1]}{0.0.0.0:35371}
+INFO  [2020-02-16 10:44:22,012] org.eclipse.jetty.server.Server: Started @13670ms
+127.0.0.1 - - [16/Feb/2020:10:44:22 +0000] "GET /user_agent HTTP/1.1" 200 27 "-" "RequestUserAgentHeaderValue" 28
+127.0.0.1 - - [16/Feb/2020:10:44:22 +0000] "GET /user_agent HTTP/1.1" 200 10 "-" "ClientName" 4
+127.0.0.1 - - [16/Feb/2020:10:44:22 +0000] "GET /user_agent HTTP/1.1" 200 26 "-" "ClientUserAgentHeaderValue" 1
+127.0.0.1 - - [16/Feb/2020:10:44:22 +0000] "GET /user_agent HTTP/1.1" 200 27 "-" "RequestUserAgentHeaderValue" 1
+INFO  [2020-02-16 10:44:22,290] org.eclipse.jetty.server.AbstractConnector: Stopped application@29922188{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:22,291] org.eclipse.jetty.server.AbstractConnector: Stopped admin@6a5ed5f9{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:22,291] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@d15f98a{/,null,UNAVAILABLE}
+INFO  [2020-02-16 10:44:22,293] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@17734113{/,null,UNAVAILABLE}
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.625 sec - in io.dropwizard.client.JerseyIgnoreRequestUserAgentHeaderFilterTest
+Running io.dropwizard.client.DropwizardApacheConnectorTest
+INFO  [2020-02-16 10:44:22,427] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2020-02-16 10:44:22,427] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2020-02-16 10:44:22,427] io.dropwizard.server.ServerFactory: Starting TestApplication
+INFO  [2020-02-16 10:44:22,463] org.eclipse.jetty.setuid.SetUIDListener: Opened application@60c588cf{HTTP/1.1,[http/1.1]}{0.0.0.0:46665}
+INFO  [2020-02-16 10:44:22,463] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@2c8d8934{HTTP/1.1,[http/1.1]}{0.0.0.0:41835}
+INFO  [2020-02-16 10:44:22,463] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2020-02-16 10:44:22,590] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /long_running (io.dropwizard.client.DropwizardApacheConnectorTest.TestResource)
+    GET     /redirect (io.dropwizard.client.DropwizardApacheConnectorTest.TestResource)
+    GET     /redirected (io.dropwizard.client.DropwizardApacheConnectorTest.TestResource)
+
+INFO  [2020-02-16 10:44:22,594] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@4bb5ba10{/,null,AVAILABLE}
+INFO  [2020-02-16 10:44:22,595] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2020-02-16 10:44:22,596] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3a9c5f14{/,null,AVAILABLE}
+INFO  [2020-02-16 10:44:22,597] org.eclipse.jetty.server.AbstractConnector: Started application@60c588cf{HTTP/1.1,[http/1.1]}{0.0.0.0:46665}
+INFO  [2020-02-16 10:44:22,602] org.eclipse.jetty.server.AbstractConnector: Started admin@2c8d8934{HTTP/1.1,[http/1.1]}{0.0.0.0:41835}
+INFO  [2020-02-16 10:44:22,603] org.eclipse.jetty.server.Server: Started @14261ms
+127.0.0.1 - - [16/Feb/2020:10:44:23 +0000] "GET /long_running HTTP/1.1" 200 7 "-" "test-dropwizard-apache-connector (test)" 1020
+127.0.0.1 - - [16/Feb/2020:10:44:24 +0000] "GET /long_running HTTP/1.1" 200 7 "-" "test-dropwizard-apache-connector (test)" 1002
+127.0.0.1 - - [16/Feb/2020:10:44:24 +0000] "GET /redirect HTTP/1.1" 307 0 "-" "test-dropwizard-apache-connector (test)" 2
+127.0.0.1 - - [16/Feb/2020:10:44:24 +0000] "GET /redirected HTTP/1.1" 200 10 "-" "test-dropwizard-apache-connector (test)" 1
+127.0.0.1 - - [16/Feb/2020:10:44:25 +0000] "GET /long_running HTTP/1.1" 200 7 "-" "test-dropwizard-apache-connector (test)" 1002
+127.0.0.1 - - [16/Feb/2020:10:44:26 +0000] "GET /long_running HTTP/1.1" 200 7 "-" "test-dropwizard-apache-connector (test)" 1002
+127.0.0.1 - - [16/Feb/2020:10:44:27 +0000] "GET /long_running HTTP/1.1" 200 7 "-" "test-dropwizard-apache-connector (test)" 1003
+127.0.0.1 - - [16/Feb/2020:10:44:29 +0000] "GET /long_running HTTP/1.1" 200 7 "-" "test-dropwizard-apache-connector (test)" 1002
+127.0.0.1 - - [16/Feb/2020:10:44:30 +0000] "GET /long_running HTTP/1.1" 200 7 "-" "test-dropwizard-apache-connector (test)" 1005
+127.0.0.1 - - [16/Feb/2020:10:44:30 +0000] "GET /redirect HTTP/1.1" 307 0 "-" "test-dropwizard-apache-connector (test)" 1
+INFO  [2020-02-16 10:44:30,274] org.eclipse.jetty.server.AbstractConnector: Stopped application@60c588cf{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:30,275] org.eclipse.jetty.server.AbstractConnector: Stopped admin@2c8d8934{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2020-02-16 10:44:30,275] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3a9c5f14{/,null,UNAVAILABLE}
+INFO  [2020-02-16 10:44:30,277] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@4bb5ba10{/,null,UNAVAILABLE}
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 7.978 sec - in io.dropwizard.client.DropwizardApacheConnectorTest
+Running io.dropwizard.client.DropwizardExecutorProviderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.dropwizard.client.DropwizardExecutorProviderTest
+
+Results :
+
+Tests run: 123, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Database Support 1.2.0-rc7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-db ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ dropwizard-db ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-db/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dropwizard-db ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ dropwizard-db ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dropwizard-db ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dropwizard-db ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-db/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.dropwizard.db.DataSourceConfigurationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.129 sec - in io.dropwizard.db.DataSourceConfigurationTest
+Running io.dropwizard.db.DataSourceFactoryTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.89 sec - in io.dropwizard.db.DataSourceFactoryTest
+Running io.dropwizard.db.TimeBoundHealthCheckTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.975 sec - in io.dropwizard.db.TimeBoundHealthCheckTest
+Running io.dropwizard.db.ManagedPooledDataSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.dropwizard.db.ManagedPooledDataSourceTest
+
+Results :
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard JDBI Support 1.2.0-rc7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-jdbi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ dropwizard-jdbi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-jdbi/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dropwizard-jdbi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ dropwizard-jdbi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dropwizard-jdbi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dropwizard-jdbi ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-jdbi/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.dropwizard.jdbi.args.LocalDateArgumentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.766 sec - in io.dropwizard.jdbi.args.LocalDateArgumentTest
+Running io.dropwizard.jdbi.args.OptionalDoubleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.741 sec - in io.dropwizard.jdbi.args.OptionalDoubleTest
+Running io.dropwizard.jdbi.args.LocalDateTimeMapperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.453 sec - in io.dropwizard.jdbi.args.LocalDateTimeMapperTest
+Running io.dropwizard.jdbi.args.InstantArgumentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in io.dropwizard.jdbi.args.InstantArgumentTest
+Running io.dropwizard.jdbi.args.JodaDateTimeMapperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in io.dropwizard.jdbi.args.JodaDateTimeMapperTest
+Running io.dropwizard.jdbi.args.ZonedDateTimeArgumentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.dropwizard.jdbi.args.ZonedDateTimeArgumentTest
+Running io.dropwizard.jdbi.args.LocalDateTimeArgumentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in io.dropwizard.jdbi.args.LocalDateTimeArgumentTest
+Running io.dropwizard.jdbi.args.ZonedDateTimeMapperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.dropwizard.jdbi.args.ZonedDateTimeMapperTest
+Running io.dropwizard.jdbi.args.LocalDateMapperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.dropwizard.jdbi.args.LocalDateMapperTest
+Running io.dropwizard.jdbi.args.OptionalLongTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec - in io.dropwizard.jdbi.args.OptionalLongTest
+Running io.dropwizard.jdbi.args.JodaDateTimeArgumentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.dropwizard.jdbi.args.JodaDateTimeArgumentTest
+Running io.dropwizard.jdbi.args.OffsetDateTimeArgumentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.dropwizard.jdbi.args.OffsetDateTimeArgumentTest
+Running io.dropwizard.jdbi.args.OptionalIntTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in io.dropwizard.jdbi.args.OptionalIntTest
+Running io.dropwizard.jdbi.args.OffsetDateTimeMapperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in io.dropwizard.jdbi.args.OffsetDateTimeMapperTest
+Running io.dropwizard.jdbi.args.InstantMapperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.dropwizard.jdbi.args.InstantMapperTest
+Running io.dropwizard.jdbi.timestamps.GuavaOptionalLocalDateTimeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in io.dropwizard.jdbi.timestamps.GuavaOptionalLocalDateTimeTest
+Running io.dropwizard.jdbi.timestamps.OptionalInstantTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in io.dropwizard.jdbi.timestamps.OptionalInstantTest
+Running io.dropwizard.jdbi.timestamps.JodaDateTimeSqlTimestampTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.366 sec <<< FAILURE! - in io.dropwizard.jdbi.timestamps.JodaDateTimeSqlTimestampTest
+io.dropwizard.jdbi.timestamps.JodaDateTimeSqlTimestampTest  Time elapsed: 5.366 sec  <<< ERROR!
+java.lang.IllegalStateException: Unable shutdown DB
+Caused by: org.h2.jdbc.JdbcSQLException: Connection is broken: "java.net.ConnectException: Connection refused (Connection refused): localhost:9092" [90067-196]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+
+Running io.dropwizard.jdbi.timestamps.GuavaOptionalZonedDateTimeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec - in io.dropwizard.jdbi.timestamps.GuavaOptionalZonedDateTimeTest
+Running io.dropwizard.jdbi.timestamps.GuavaOptionalDateTimeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in io.dropwizard.jdbi.timestamps.GuavaOptionalDateTimeTest
+Running io.dropwizard.jdbi.timestamps.OptionalLocalDateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec - in io.dropwizard.jdbi.timestamps.OptionalLocalDateTest
+Running io.dropwizard.jdbi.timestamps.GuavaOptionalOffsetDateTimeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in io.dropwizard.jdbi.timestamps.GuavaOptionalOffsetDateTimeTest
+Running io.dropwizard.jdbi.timestamps.OptionalOffsetDateTimeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in io.dropwizard.jdbi.timestamps.OptionalOffsetDateTimeTest
+Running io.dropwizard.jdbi.timestamps.OptionalZonedDateTimeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in io.dropwizard.jdbi.timestamps.OptionalZonedDateTimeTest
+Running io.dropwizard.jdbi.timestamps.GuavaOptionalLocalDateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in io.dropwizard.jdbi.timestamps.GuavaOptionalLocalDateTest
+Running io.dropwizard.jdbi.timestamps.OptionalDateTimeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in io.dropwizard.jdbi.timestamps.OptionalDateTimeTest
+Running io.dropwizard.jdbi.timestamps.OptionalLocalDateTimeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in io.dropwizard.jdbi.timestamps.OptionalLocalDateTimeTest
+Running io.dropwizard.jdbi.timestamps.GuavaOptionalInstantTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in io.dropwizard.jdbi.timestamps.GuavaOptionalInstantTest
+Running io.dropwizard.jdbi.jersey.LoggingDBIExceptionMapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec - in io.dropwizard.jdbi.jersey.LoggingDBIExceptionMapperTest
+Running io.dropwizard.jdbi.jersey.LoggingSQLExceptionMapperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.dropwizard.jdbi.jersey.LoggingSQLExceptionMapperTest
+Running io.dropwizard.jdbi.GuavaJDBITest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.467 sec - in io.dropwizard.jdbi.GuavaJDBITest
+Running io.dropwizard.jdbi.DBIFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in io.dropwizard.jdbi.DBIFactoryTest
+Running io.dropwizard.jdbi.bundles.DBIExceptionsBundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in io.dropwizard.jdbi.bundles.DBIExceptionsBundleTest
+Running io.dropwizard.jdbi.DBIHealthCheckTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in io.dropwizard.jdbi.DBIHealthCheckTest
+Running io.dropwizard.jdbi.JDBITest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec - in io.dropwizard.jdbi.JDBITest
+
+Results :
+
+Tests in error: 
+  JodaDateTimeSqlTimestampTest.io.dropwizard.jdbi.timestamps.JodaDateTimeSqlTimestampTest » IllegalState
+
+Tests run: 88, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Dropwizard Project ................................. SUCCESS [  0.929 s]
+[INFO] Dropwizard Documentation ........................... SUCCESS [  1.937 s]
+[INFO] Dropwizard BOM ..................................... SUCCESS [  0.011 s]
+[INFO] Dropwizard Utility Classes ......................... SUCCESS [  3.648 s]
+[INFO] Dropwizard Jackson Support ......................... SUCCESS [  3.742 s]
+[INFO] Dropwizard Validation Support ...................... SUCCESS [  3.612 s]
+[INFO] Dropwizard Configuration Support ................... SUCCESS [ 23.158 s]
+[INFO] Dropwizard Logging Support ......................... SUCCESS [  6.651 s]
+[INFO] Dropwizard Lifecycle Support ....................... SUCCESS [  3.477 s]
+[INFO] Dropwizard Metrics Support ......................... SUCCESS [  4.920 s]
+[INFO] Dropwizard Jersey Support .......................... SUCCESS [ 31.856 s]
+[INFO] Dropwizard Servlet Support ......................... SUCCESS [  4.646 s]
+[INFO] Dropwizard Jetty Support ........................... SUCCESS [  9.877 s]
+[INFO] Dropwizard Request Logging Support ................. SUCCESS [  7.157 s]
+[INFO] Dropwizard ......................................... SUCCESS [ 13.369 s]
+[INFO] Dropwizard Test Helpers ............................ SUCCESS [ 14.656 s]
+[INFO] Dropwizard HTTP Client ............................. SUCCESS [ 22.547 s]
+[INFO] Dropwizard Database Support ........................ SUCCESS [  5.301 s]
+[INFO] Dropwizard JDBI Support ............................ FAILURE [ 12.987 s]
+[INFO] Dropwizard Migrations .............................. SKIPPED
+[INFO] Dropwizard Hibernate Support ....................... SKIPPED
+[INFO] Dropwizard Authentication .......................... SKIPPED
+[INFO] Dropwizard Asset Bundle ............................ SKIPPED
+[INFO] Dropwizard HTTP/2 Support .......................... SKIPPED
+[INFO] Dropwizard Views ................................... SKIPPED
+[INFO] Dropwizard Freemarker Views ........................ SKIPPED
+[INFO] Dropwizard Mustache Views .......................... SKIPPED
+[INFO] Dropwizard Metrics Support for Graphite ............ SKIPPED
+[INFO] Dropwizard Example Application ..................... SKIPPED
+[INFO] Dropwizard Multipart Form Support .................. SKIPPED
+[INFO] Dropwizard Metrics Support for Ganglia ............. SKIPPED
+[INFO] Dropwizard Archetypes .............................. SKIPPED
+[INFO] Dropwizard Archetype for Simple Java Services ...... SKIPPED
+[INFO] Dropwizard Benchmarks .............................. SKIPPED
+[INFO] Dropwizard End-to-end Tests ........................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:56 min
+[INFO] Finished at: 2020-02-16T11:44:48+01:00
+[INFO] Final Memory: 40M/97M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project dropwizard-jdbi: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-jdbi/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project dropwizard-jdbi: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-jdbi/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-jdbi/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :dropwizard-jdbi
