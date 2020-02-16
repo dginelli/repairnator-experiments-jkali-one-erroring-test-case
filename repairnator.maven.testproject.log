@@ -1,0 +1,484 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 11:42:16 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.2.Final
+[main] ERROR io.dropwizard.validation.selfvalidating.SelfValidatingValidator - The method public boolean io.dropwizard.validation.selfvalidating.SelfValidatingValidatorTest$InvalidExample.validateFailReturn(io.dropwizard.validation.selfvalidating.ViolationCollector) is annotated with @SelfValidation but does not return void. It is ignored
+[main] ERROR io.dropwizard.validation.selfvalidating.SelfValidatingValidator - The method public void io.dropwizard.validation.selfvalidating.SelfValidatingValidatorTest$InvalidExample.validateFailAdditionalParameters(io.dropwizard.validation.selfvalidating.ViolationCollector,int) is annotated with @SelfValidation but does not have a single parameter of type class io.dropwizard.validation.selfvalidating.ViolationCollector
+[main] ERROR io.dropwizard.validation.selfvalidating.SelfValidatingValidator - The method private void io.dropwizard.validation.selfvalidating.SelfValidatingValidatorTest$InvalidExample.validateFailPrivate(io.dropwizard.validation.selfvalidating.ViolationCollector) is annotated with @SelfValidation but is not public
+[main] ERROR io.dropwizard.validation.selfvalidating.SelfValidatingValidator - The method public boolean io.dropwizard.validation.SelfValidationTest$InvalidExample.validateFailReturn(io.dropwizard.validation.selfvalidating.ViolationCollector) is annotated with @SelfValidation but does not return void. It is ignored
+[main] ERROR io.dropwizard.validation.selfvalidating.SelfValidatingValidator - The method private void io.dropwizard.validation.SelfValidationTest$InvalidExample.validateFailPrivate(io.dropwizard.validation.selfvalidating.ViolationCollector) is annotated with @SelfValidation but is not public
+[main] ERROR io.dropwizard.validation.selfvalidating.SelfValidatingValidator - The method public void io.dropwizard.validation.SelfValidationTest$InvalidExample.validateFailAdditionalParameters(io.dropwizard.validation.selfvalidating.ViolationCollector,int) is annotated with @SelfValidation but does not have a single parameter of type class io.dropwizard.validation.selfvalidating.ViolationCollector
+[main] ERROR io.dropwizard.validation.selfvalidating.SelfValidatingValidator - The class class io.dropwizard.validation.SelfValidationTest$NoValidations is annotated with @SelfValidating but contains no valid methods that are annotated with @SelfValidation
+Feb 16, 2020 11:42:27 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.2.Final
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 11:42:30 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.2.Final
+Feb 16, 2020 11:42:33 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.2.Final
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 11:42:35 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.2.Final
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+11:42:41,700 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit/dropwizard-logging/target/test-classes/logback-test.xml]
+11:42:41,783 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:42:41,784 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:42:41,796 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+11:42:41,805 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:42:41,896 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to OFF
+11:42:41,897 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+11:42:41,897 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:42:41,898 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@28e8dee7 - Registering current configuration as safe fallback point
+11:42:44,193 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7c37ac3c - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:44,270 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Attaching appender named [tcp-socket-appender] to AsyncAppender.
+11:42:44,270 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Setting discardingThreshold to 51
+11:42:44,598 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Worker thread will flush remaining events before exiting. 
+11:42:44,598 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Queue flush finished successfully within timeout.
+11:42:44,598 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - onReset() method called JMXActivator [io.dropwizard:type=Logging]
+11:42:44,598 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - Unregistering mbean [io.dropwizard:type=Logging]
+11:42:46,029 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,030 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@646106316 - Will use gz compression
+11:42:46,030 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@646106316 - Will use the pattern /tmp/junit5399856498046051472/example-%d.log for the active file
+11:42:46,039 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit5399856498046051472/example-%d.log.gz'.
+11:42:46,039 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,040 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,041 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit5399856498046051472/example-2020-02-16.log
+11:42:46,041 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [null]
+11:42:46,042 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,042 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,241 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,241 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@719357776 - Will use gz compression
+11:42:46,242 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@719357776 - Will use the pattern /tmp/junit4540542624322688385/example-%d.log for the active file
+11:42:46,243 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit4540542624322688385/example-%d.log.gz'.
+11:42:46,243 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,243 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,243 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit4540542624322688385/example-2020-02-16.log
+11:42:46,243 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [null]
+11:42:46,243 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,243 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,572 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@44117b0d - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:46,572 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@44117b0d - Propagating INFO level on Logger[com.example.app] onto the JUL framework
+11:42:46,602 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@44117b0d - Propagating DEBUG level on Logger[com.example.newApp] onto the JUL framework
+11:42:46,602 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [256 KB]
+11:42:46,602 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@92699135 - Will use gz compression
+11:42:46,603 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@92699135 - Will use the pattern /tmp/junit485276815621789390/example-new-app-%d.log for the active file
+11:42:46,603 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit485276815621789390/example-new-app-%d.log.gz'.
+11:42:46,603 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,603 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,607 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit485276815621789390/example-new-app.log
+11:42:46,607 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit485276815621789390/example-new-app.log]
+11:42:46,607 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,607 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,624 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@44117b0d - Propagating DEBUG level on Logger[com.example.legacyApp] onto the JUL framework
+11:42:46,643 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@44117b0d - Propagating DEBUG level on Logger[com.example.notAdditive] onto the JUL framework
+11:42:46,643 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,644 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@902967599 - Will use gz compression
+11:42:46,648 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@902967599 - Will use the pattern /tmp/junit485276815621789390/example-new-app-not-additive-%d.log for the active file
+11:42:46,651 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit485276815621789390/example-new-app-not-additive-%d.log.gz'.
+11:42:46,651 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,652 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,654 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit485276815621789390/example-new-app-not-additive.log
+11:42:46,654 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit485276815621789390/example-new-app-not-additive.log]
+11:42:46,654 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,654 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,659 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Attaching appender named [console-appender] to AsyncAppender.
+11:42:46,659 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Setting discardingThreshold to 51
+11:42:46,661 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,662 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@455539394 - Will use gz compression
+11:42:46,662 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@455539394 - Will use the pattern /tmp/junit485276815621789390/example-%d.log for the active file
+11:42:46,662 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit485276815621789390/example-%d.log.gz'.
+11:42:46,662 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,662 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,663 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit485276815621789390/example.log
+11:42:46,663 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit485276815621789390/example.log]
+11:42:46,663 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,663 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,915 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,915 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Queue flush finished successfully within timeout.
+11:42:46,915 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,917 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,917 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,918 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,918 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,918 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,918 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - onReset() method called JMXActivator [io.dropwizard:type=Logging]
+11:42:46,918 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@54a033b8 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:46,926 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@54a033b8 - Propagating DEBUG level on Logger[com.example.app] onto the JUL framework
+11:42:46,928 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Attaching appender named [console-appender] to AsyncAppender.
+11:42:46,928 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Setting discardingThreshold to 51
+11:42:46,932 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,932 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1658839378 - Will use gz compression
+11:42:46,932 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1658839378 - Will use the pattern ./logs/example-%d.log for the active file
+11:42:46,933 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/example-%d.log.gz'.
+11:42:46,933 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,933 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,933 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/example.log
+11:42:46,933 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/example.log]
+11:42:46,934 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,934 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,934 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,934 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1184952175 - Archive files will be limited to [100 MB] each.
+11:42:46,934 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1184952175 - Will use gz compression
+11:42:46,934 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1184952175 - Will use the pattern ./logs/max-file-size-example-%d-%i.log for the active file
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6afced93 - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/max-file-size-example-%d-%i.log.gz'.
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6afced93 - Roll-over at midnight.
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6afced93 - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/max-file-size-example.log
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/max-file-size-example.log]
+11:42:46,935 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,935 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@3f142e87 - Will use gz compression
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/max-file-size-example.log
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/max-file-size-example.log]
+11:42:46,936 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - 'File' option has the same value "./logs/max-file-size-example.log" as that given for appender [file-appender] defined earlier.
+11:42:46,936 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+11:42:46,936 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+11:42:46,936 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,936 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,941 |-INFO in ch.qos.logback.classic.net.SyslogAppender[syslog-appender] - Defaulting maxMessageSize to [65000]
+11:42:46,942 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Attaching appender named [syslog-appender] to AsyncAppender.
+11:42:46,942 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Setting discardingThreshold to 51
+
+11:42:41,700 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit/dropwizard-logging/target/test-classes/logback-test.xml]
+11:42:41,783 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:42:41,784 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:42:41,796 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+11:42:41,805 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:42:41,896 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to OFF
+11:42:41,897 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+11:42:41,897 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:42:41,898 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@28e8dee7 - Registering current configuration as safe fallback point
+11:42:44,193 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7c37ac3c - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:44,270 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Attaching appender named [tcp-socket-appender] to AsyncAppender.
+11:42:44,270 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Setting discardingThreshold to 51
+11:42:44,598 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Worker thread will flush remaining events before exiting. 
+11:42:44,598 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Queue flush finished successfully within timeout.
+11:42:44,598 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - onReset() method called JMXActivator [io.dropwizard:type=Logging]
+11:42:44,598 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - Unregistering mbean [io.dropwizard:type=Logging]
+11:42:46,029 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,030 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@646106316 - Will use gz compression
+11:42:46,030 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@646106316 - Will use the pattern /tmp/junit5399856498046051472/example-%d.log for the active file
+11:42:46,039 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit5399856498046051472/example-%d.log.gz'.
+11:42:46,039 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,040 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,041 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit5399856498046051472/example-2020-02-16.lo[ERROR] Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.198 s <<< FAILURE! - in io.dropwizard.logging.TcpSocketAppenderFactoryTest
+[ERROR] testTestTcpLogging(io.dropwizard.logging.TcpSocketAppenderFactoryTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalStateException: java.net.BindException: Address already in use (Bind failed)
+	at io.dropwizard.logging.TcpSocketAppenderFactoryTest.createServerSocket(TcpSocketAppenderFactoryTest.java:45)
+	at io.dropwizard.logging.TcpSocketAppenderFactoryTest.<init>(TcpSocketAppenderFactoryTest.java:30)
+Caused by: java.net.BindException: Address already in use (Bind failed)
+	at io.dropwizard.logging.TcpSocketAppenderFactoryTest.createServerSocket(TcpSocketAppenderFactoryTest.java:43)
+	at io.dropwizard.logging.TcpSocketAppenderFactoryTest.<init>(TcpSocketAppenderFactoryTest.java:30)
+
+[INFO] Running io.dropwizard.logging.socket.DropwizardUdpSocketAppenderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in io.dropwizard.logging.socket.DropwizardUdpSocketAppenderTest
+[INFO] Running io.dropwizard.logging.ExternalLoggingFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in io.dropwizard.logging.ExternalLoggingFactoryTest
+[INFO] Running io.dropwizard.logging.PrefixedThrowableProxyConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.dropwizard.logging.PrefixedThrowableProxyConverterTest
+[INFO] Running io.dropwizard.logging.PrefixedExtendedThrowableProxyConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.dropwizard.logging.PrefixedExtendedThrowableProxyConverterTest
+[INFO] Running io.dropwizard.logging.UdpSocketAppenderFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in io.dropwizard.logging.UdpSocketAppenderFactoryTest
+[INFO] Running io.dropwizard.logging.SyslogAppenderFactoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in io.dropwizard.logging.SyslogAppenderFactoryTest
+[INFO] Running io.dropwizard.logging.DefaultLoggingFactoryPrintErrorMessagesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in io.dropwizard.logging.DefaultLoggingFactoryPrintErrorMessagesTest
+[INFO] Running io.dropwizard.logging.ConsoleAppenderFactoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in io.dropwizard.logging.ConsoleAppenderFactoryTest
+[INFO] Running io.dropwizard.logging.AppenderFactoryCustomLayoutTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in io.dropwizard.logging.AppenderFactoryCustomLayoutTest
+[INFO] Running io.dropwizard.logging.PrefixedRootCauseFirstThrowableProxyConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.dropwizard.logging.PrefixedRootCauseFirstThrowableProxyConverterTest
+[INFO] Running ch.qos.logback.core.recovery.ResilentSocketOutputStreamTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in ch.qos.logback.core.recovery.ResilentSocketOutputStreamTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   TcpSocketAppenderFactoryTest.<init>:30->createServerSocket:45 IllegalState jav...
+[INFO] 
+[ERROR] Tests run: 66, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Dropwizard Project ................................. SUCCESS [  3.438 s]
+[INFO] Dropwizard Documentation ........................... SUCCESS [  1.151 s]
+[INFO] Dropwizard BOM ..................................... SUCCESS [  0.408 s]
+[INFO] Dropwizard Utility Classes ......................... SUCCESS [  4.409 s]
+[INFO] Dropwizard Jackson Support ......................... SUCCESS [  3.871 s]
+[INFO] Dropwizard Validation Support ...................... SUCCESS [  4.414 s]
+[INFO] Dropwizard Configuration Support ................... SUCCESS [ 20.209 s]
+[INFO] Dropwizard Logging Support ......................... FAILURE [  8.635 s]
+[INFO] Dropwizard Lifecycle Support ....................... SKIPPED
+[INFO] Dropwizard Metrics Support ......................... SKIPPED
+[INFO] Dropwizard Jersey Support .......................... SKIPPED
+[INFO] Dropwizard Servlet Support ......................... SKIPPED
+[INFO] Dropwizard Jetty Support ........................... SKIPPED
+[INFO] Dropwizard Request Logging Support ................. SKIPPED
+[INFO] Dropwizard ......................................... SKIPPED
+[INFO] Dropwizard Test Helpers ............................ SKIPPED
+[INFO] Dropwizard HTTP Client ............................. SKIPPED
+[INFO] Dropwizard Database Support ........................ SKIPPED
+[INFO] Dropwizard JDBI Support ............................ SKIPPED
+[INFO] Dropwizard JDBI3 Support ........................... SKIPPED
+[INFO] Dropwizard Migrations .............................. SKIPPED
+[INFO] Dropwizard Hibernate Support ....................... SKIPPED
+[INFO] Dropwizard Authentication .......................... SKIPPED
+[INFO] Dropwizard Asset Bundle ............................ SKIPPED
+[INFO] Dropwizard HTTP/2 Support .......................... SKIPPED
+[INFO] Dropwizard Views ................................... SKIPPED
+[INFO] Dropwizard Freemarker Views ........................ SKIPPED
+[INFO] Dropwizard Mustache Views .......................... SKIPPED
+[INFO] Dropwizard Metrics Support for Graphite ............ SKIPPED
+[INFO] Dropwizard Example Application ..................... SKIPPED
+[INFO] Dropwizard Multipart Form Support .................. SKIPPED
+[INFO] Dropwizard Archetypes .............................. SKIPPED
+[INFO] Dropwizard Archetype for Simple Java Services ...... SKIPPED
+[INFO] Dropwizard Benchmarks .............................. SKIPPED
+[INFO] Dropwizard End-to-end Tests ........................ SKIPPED
+[INFO] Dropwizard JSON logging ............................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 49.307 s
+[INFO] Finished at: 2020-02-16T11:42:48+01:00
+[INFO] Final Memory: 46M/112M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project dropwizard-logging: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit/dropwizard-logging/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project dropwizard-logging: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit/dropwizard-logging/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit/dropwizard-logging/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:354)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1008)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :dropwizard-logging
+ize-example-%d-%i.log for the active file
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6afced93 - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/max-file-size-example-%d-%i.log.gz'.
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6afced93 - Roll-over at midnight.
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6afced93 - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/max-file-size-example.log
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/max-file-size-example.log]
+11:42:46,935 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,935 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@3f142e87 - Will use gz compression
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/max-file-size-example.log
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/max-file-size-example.log]
+11:42:46,936 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - 'File' option has the same value "./logs/max-file-size-example.log" as that given for appender [file-appender] defined earlier.
+11:42:46,936 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+11:42:46,936 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+11:42:46,936 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,936 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,941 |-INFO in ch.qos.logback.classic.net.SyslogAppender[syslog-appender] - Defaulting maxMessageSize to [65000]
+11:42:46,942 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Attaching appender named [syslog-appender] to AsyncAppender.
+11:42:46,942 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Setting discardingThreshold to 51
+11:42:46,958 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Queue flush finished successfully within timeout.
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Queue flush finished successfully within timeout.
+11:42:46,960 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - onReset() method called JMXActivator [io.dropwizard:type=Logging]
+11:42:46,960 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - Unregistering mbean [io.dropwizard:type=Logging]
+11:42:47,402 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@e870ac9 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:47,416 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Attaching appender named [tcp-socket-appender] to AsyncAppender.
+11:42:47,416 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Setting discardingThreshold to 51
+
+11:42:41,700 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit/dropwizard-logging/target/test-classes/logback-test.xml]
+11:42:41,783 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:42:41,784 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:42:41,796 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+11:42:41,805 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:42:41,896 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to OFF
+11:42:41,897 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+11:42:41,897 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:42:41,898 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@28e8dee7 - Registering current configuration as safe fallback point
+11:42:44,193 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7c37ac3c - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:44,270 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Attaching appender named [tcp-socket-appender] to AsyncAppender.
+11:42:44,270 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Setting discardingThreshold to 51
+11:42:44,598 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Worker thread will flush remaining events before exiting. 
+11:42:44,598 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Queue flush finished successfully within timeout.
+11:42:44,598 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - onReset() method called JMXActivator [io.dropwizard:type=Logging]
+11:42:44,598 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - Unregistering mbean [io.dropwizard:type=Logging]
+11:42:46,029 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,030 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@646106316 - Will use gz compression
+11:42:46,030 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@646106316 - Will use the pattern /tmp/junit5399856498046051472/example-%d.log for the active file
+11:42:46,039 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit5399856498046051472/example-%d.log.gz'.
+11:42:46,039 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,040 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,041 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit5399856498046051472/example-2020-02-16.log
+11:42:46,041 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [null]
+11:42:46,042 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,042 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,241 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,241 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@719357776 - Will use gz compression
+11:42:46,242 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@719357776 - Will use the pattern /tmp/junit4540542624322688385/example-%d.log for the active file
+11:42:46,243 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit4540542624322688385/example-%d.log.gz'.
+11:42:46,243 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,243 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,243 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit4540542624322688385/example-2020-02-16.log
+11:42:46,243 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [null]
+11:42:46,243 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,243 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,572 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@44117b0d - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:46,572 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@44117b0d - Propagating INFO level on Logger[com.example.app] onto the JUL framework
+11:42:46,602 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@44117b0d - Propagating DEBUG level on Logger[com.example.newApp] onto the JUL framework
+11:42:46,602 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [256 KB]
+11:42:46,602 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@92699135 - Will use gz compression
+11:42:46,603 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@92699135 - Will use the pattern /tmp/junit485276815621789390/example-new-app-%d.log for the active file
+11:42:46,603 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit485276815621789390/example-new-app-%d.log.gz'.
+11:42:46,603 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,603 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,607 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit485276815621789390/example-new-app.log
+11:42:46,607 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit485276815621789390/example-new-app.log]
+11:42:46,607 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,607 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,624 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@44117b0d - Propagating DEBUG level on Logger[com.example.legacyApp] onto the JUL framework
+11:42:46,643 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@44117b0d - Propagating DEBUG level on Logger[com.example.notAdditive] onto the JUL framework
+11:42:46,643 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,644 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@902967599 - Will use gz compression
+11:42:46,648 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@902967599 - Will use the pattern /tmp/junit485276815621789390/example-new-app-not-additive-%d.log for the active file
+11:42:46,651 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit485276815621789390/example-new-app-not-additive-%d.log.gz'.
+11:42:46,651 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,652 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,654 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit485276815621789390/example-new-app-not-additive.log
+11:42:46,654 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit485276815621789390/example-new-app-not-additive.log]
+11:42:46,654 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,654 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,659 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Attaching appender named [console-appender] to AsyncAppender.
+11:42:46,659 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Setting discardingThreshold to 51
+11:42:46,661 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,662 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@455539394 - Will use gz compression
+11:42:46,662 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@455539394 - Will use the pattern /tmp/junit485276815621789390/example-%d.log for the active file
+11:42:46,662 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit485276815621789390/example-%d.log.gz'.
+11:42:46,662 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,662 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,663 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit485276815621789390/example.log
+11:42:46,663 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit485276815621789390/example.log]
+11:42:46,663 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,663 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,915 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,915 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Queue flush finished successfully within timeout.
+11:42:46,915 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,917 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,917 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,918 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,918 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,918 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,918 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - onReset() method called JMXActivator [io.dropwizard:type=Logging]
+11:42:46,918 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@54a033b8 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:46,926 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@54a033b8 - Propagating DEBUG level on Logger[com.example.app] onto the JUL framework
+11:42:46,928 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Attaching appender named [console-appender] to AsyncAppender.
+11:42:46,928 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Setting discardingThreshold to 51
+11:42:46,932 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,932 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1658839378 - Will use gz compression
+11:42:46,932 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1658839378 - Will use the pattern ./logs/example-%d.log for the active file
+11:42:46,933 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/example-%d.log.gz'.
+11:42:46,933 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:46,933 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,933 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/example.log
+11:42:46,933 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/example.log]
+11:42:46,934 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,934 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,934 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,934 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1184952175 - Archive files will be limited to [100 MB] each.
+11:42:46,934 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1184952175 - Will use gz compression
+11:42:46,934 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1184952175 - Will use the pattern ./logs/max-file-size-example-%d-%i.log for the active file
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6afced93 - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/max-file-size-example-%d-%i.log.gz'.
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6afced93 - Roll-over at midnight.
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6afced93 - Setting initial period to Sun Feb 16 11:42:46 CET 2020
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/max-file-size-example.log
+11:42:46,935 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/max-file-size-example.log]
+11:42:46,935 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,935 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@3f142e87 - Will use gz compression
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/max-file-size-example.log
+11:42:46,936 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/max-file-size-example.log]
+11:42:46,936 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - 'File' option has the same value "./logs/max-file-size-example.log" as that given for appender [file-appender] defined earlier.
+11:42:46,936 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+11:42:46,936 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+11:42:46,936 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:46,936 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:46,941 |-INFO in ch.qos.logback.classic.net.SyslogAppender[syslog-appender] - Defaulting maxMessageSize to [65000]
+11:42:46,942 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Attaching appender named [syslog-appender] to AsyncAppender.
+11:42:46,942 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Setting discardingThreshold to 51
+11:42:46,958 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Queue flush finished successfully within timeout.
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Worker thread will flush remaining events before exiting. 
+11:42:46,960 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Queue flush finished successfully within timeout.
+11:42:46,960 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - onReset() method called JMXActivator [io.dropwizard:type=Logging]
+11:42:46,960 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - Unregistering mbean [io.dropwizard:type=Logging]
+11:42:47,402 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@e870ac9 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:47,416 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Attaching appender named [tcp-socket-appender] to AsyncAppender.
+11:42:47,416 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Setting discardingThreshold to 51
+11:42:47,448 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Worker thread will flush remaining events before exiting. 
+11:42:47,470 |-INFO in ch.qos.logback.classic.AsyncAppender[async-tcp-socket-appender] - Queue flush finished successfully within timeout.
+11:42:47,470 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - onReset() method called JMXActivator [io.dropwizard:type=Logging]
+11:42:47,470 |-INFO in ch.qos.logback.classic.jmx.JMXConfigurator(default) - Unregistering mbean [io.dropwizard:type=Logging]
+11:42:47,651 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5baabba - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:47,652 |-INFO in ch.qos.logback.classic.AsyncAppender[async-udp-socket-appender] - Attaching appender named [udp-socket-appender] to AsyncAppender.
+11:42:47,652 |-INFO in ch.qos.logback.classic.AsyncAppender[async-udp-socket-appender] - Setting discardingThreshold to 51
+
