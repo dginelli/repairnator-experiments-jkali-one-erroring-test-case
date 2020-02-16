@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 15,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "geotools/geotools",
-  "bugCommit": "https://github.com/geotools/geotools/compare/0941665de854...6cb24766a82a",
-  "failingModule": "/root/workspace/geotools/geotools/276848128/modules/plugin/imagemosaic",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 4101,
-  "failing-test-cases": [
-    {
-      "className": "org.geotools.gce.imagemosaic.HeterogenousCRSTest",
-      "failingMethods": [
-        "org.geotools.gce.imagemosaic.HeterogenousCRSTest#testHeteroSentinel2Filtered"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:21 AM",
+    "reproductionDateEnd": "Feb 16, 2020 12:07:33 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 801529456,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1809,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 102,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          102
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/modules/library/main",
+    "overallMetrics": {
+      "numberRunning": 2222,
+      "numberPassing": 2221,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 7,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "Reference image is missing: src/test/resources/org/geotools/gce/imagemosaic/test-data/hetero_s2_results/filtered.png, add -Dorg.geotools.image.test.interactive\u003dtrue to show a dialog comparing them (requires GUI support)",
-          "isError": false
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.geotools.temporal.object.DefaultTemporalGeometricPrimitiveTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.geotools.temporal.object.DefaultTemporalGeometricPrimitiveTest",
+        "testMethod": "testLength",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "The temporal position of the beginning of the period must be less than (i.e. earlier than) the temporal position of the end of the period",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 112,
+    "numberPlugins": 0,
+    "numberSourceFiles": 7741,
+    "numberTestFiles": 2167,
+    "numberLibrariesFailingModule": 20,
+    "numberLines": 0
+  },
+  "commits": {}
 }
