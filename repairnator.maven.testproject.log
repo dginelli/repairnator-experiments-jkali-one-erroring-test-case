@@ -1,0 +1,290 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 6:28:45 PM com.github.cukedoctor.util.FileUtil saveFile
+SEVERE: Could not create file /target/filename.adoc
+java.io.IOException: No such file or directory
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1012)
+	at com.github.cukedoctor.util.FileUtil.saveFile(FileUtil.java:151)
+	at com.github.cukedoctor.util.FileUtilTest.shouldNotSaveFileUsingNonExistingAbsolutePath(FileUtilTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Feb 16, 2020 6:28:45 PM com.github.cukedoctor.util.FileUtil saveFile
+INFO: Wrote: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-converter/target/filename.adoc
+Feb 16, 2020 6:28:45 PM com.github.cukedoctor.util.FileUtil saveFile
+INFO: Wrote: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-converter/target/filename.adoc
+Feb 16, 2020 6:28:45 PM com.github.cukedoctor.util.FileUtil saveFile
+INFO: Wrote: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-converter/target/test-docs/doc_without_features_sect.adoc
+Feb 16, 2020 6:28:45 PM com.github.cukedoctor.api.model.Step getStatus
+WARNING: Line 4 : Step is missing Result: Given  : this step <status>
+Feb 16, 2020 6:28:45 PM com.github.cukedoctor.api.model.Step getStatus
+WARNING: Line 4 : Step is missing Result: Given  : this step <status>
+Feb 16, 2020 6:28:45 PM com.github.cukedoctor.util.FileUtil saveFile
+INFO: Wrote: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-converter/target/test-docs/doc_multiple_feature.adoc
+Feb 16, 2020 6:28:45 PM com.github.cukedoctor.util.FileUtil saveFile
+INFO: Wrote: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-converter/target/test-docs/doc_one_feature.adoc
+Feb 16, 2020 6:28:46 PM com.github.cukedoctor.util.FileUtil saveFile
+INFO: Wrote: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-converter/target/sample.adoc
+Feb 16, 2020 6:28:46 PM com.github.cukedoctor.util.FileUtil saveFile
+INFO: Wrote: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-converter/target/test-docs/doc_without_features_sect.adoc
+Feb 16, 2020 6:28:46 PM com.github.cukedoctor.util.FileUtil saveFile
+INFO: Wrote: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-converter/target/generated-test-sources/living_documentation.adoc
+Feb 16, 2020 6:28:46 PM com.github.cukedoctor.util.FileUtil saveFile
+INFO: Wrote: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-converter/target/pdf/cukedoctor-pdf.yml
+7388503-20180817-204142-firstCommit/cukedoctor-extension/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 6.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 95.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 1164.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.github.cukedoctor.extension.FilterExtensionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.606 sec - in com.github.cukedoctor.extension.FilterExtensionTest
+Running com.github.cukedoctor.extension.ThemeExtensionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.016 sec - in com.github.cukedoctor.extension.ThemeExtensionTest
+Running com.github.cukedoctor.extension.StyleExtensionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.462 sec - in com.github.cukedoctor.extension.StyleExtensionTest
+Running com.github.cukedoctor.extension.FooterExtensionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.907 sec - in com.github.cukedoctor.extension.FooterExtensionTest
+Running com.github.cukedoctor.extension.ScriptsExtensionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.686 sec - in com.github.cukedoctor.extension.ScriptsExtensionTest
+Running com.github.cukedoctor.extension.MinMaxExtensionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.237 sec - in com.github.cukedoctor.extension.MinMaxExtensionTest
+
+Results :
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cukedoctor-converter 1.1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cukedoctor-converter ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cukedoctor-converter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ cukedoctor-converter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cukedoctor-converter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 47 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ cukedoctor-converter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ cukedoctor-converter ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-converter/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.github.cukedoctor.bdd.sample.SampleBdd
+
+9 Scenarios ([32m9 passed[0m)
+13 Steps ([32m13 passed[0m)
+0m0.195s
+
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.35 sec - in com.github.cukedoctor.bdd.sample.SampleBdd
+Running com.github.cukedoctor.bdd.cukedoctor.CukedoctorBdd
+
+6 Scenarios ([32m6 passed[0m)
+19 Steps ([32m19 passed[0m)
+0m0.746s
+
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.869 sec - in com.github.cukedoctor.bdd.cukedoctor.CukedoctorBdd
+Running com.github.cukedoctor.api.model.FeatureTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in com.github.cukedoctor.api.model.FeatureTest
+Running com.github.cukedoctor.renderer.RendererTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec - in com.github.cukedoctor.renderer.RendererTest
+Running com.github.cukedoctor.util.FileUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.github.cukedoctor.util.FileUtilTest
+Running com.github.cukedoctor.converter.CukedoctorConverterTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.122 sec - in com.github.cukedoctor.converter.CukedoctorConverterTest
+Running com.github.cukedoctor.parser.FeatureParserTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 sec - in com.github.cukedoctor.parser.FeatureParserTest
+Running com.github.cukedoctor.i18n.I18nLoaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in com.github.cukedoctor.i18n.I18nLoaderTest
+
+Results :
+
+Tests run: 126, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cukedoctor-maven-plugin 1.1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cukedoctor-maven-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:helpmojo (help-goal) @ cukedoctor-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[WARNING] Deprecated @Component annotation for 'project' field in com.github.cukedoctor.mojo.CukedoctorMojo: replace with @Parameter( default-value = "${project}", readonly = true )
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cukedoctor-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-maven-plugin/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ cukedoctor-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-maven-plugin/target/classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (default-descriptor) @ cukedoctor-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[WARNING] Deprecated @Component annotation for 'project' field in com.github.cukedoctor.mojo.CukedoctorMojo: replace with @Parameter( default-value = "${project}", readonly = true )
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (mojo-descriptor) @ cukedoctor-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[WARNING] Deprecated @Component annotation for 'project' field in com.github.cukedoctor.mojo.CukedoctorMojo: replace with @Parameter( default-value = "${project}", readonly = true )
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cukedoctor-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 19 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ cukedoctor-maven-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ cukedoctor-maven-plugin ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-maven-plugin/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.github.cukedoctor.mojo.CukedoctorMojoTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.028 sec <<< FAILURE! - in com.github.cukedoctor.mojo.CukedoctorMojoTest
+initializationError(com.github.cukedoctor.mojo.CukedoctorMojoTest)  Time elapsed: 0.015 sec  <<< ERROR!
+java.lang.Exception: No runnable methods
+	at org.junit.runners.BlockJUnit4ClassRunner.validateInstanceMethods(BlockJUnit4ClassRunner.java:191)
+	at org.junit.runners.BlockJUnit4ClassRunner.collectInitializationErrors(BlockJUnit4ClassRunner.java:128)
+	at org.junit.runners.ParentRunner.validate(ParentRunner.java:416)
+	at org.junit.runners.ParentRunner.<init>(ParentRunner.java:84)
+	at org.junit.runners.BlockJUnit4ClassRunner.<init>(BlockJUnit4ClassRunner.java:65)
+	at org.junit.runners.JUnit4.<init>(JUnit4.java:22)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+
+Results :
+
+Tests in error: 
+  CukedoctorMojoTest.initializationError »  No runnable methods
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] cukedoctor ......................................... SUCCESS [  0.955 s]
+[INFO] cukedoctor-extension ............................... SUCCESS [ 19.395 s]
+[INFO] cukedoctor-converter ............................... SUCCESS [  4.603 s]
+[INFO] cukedoctor-maven-plugin ............................ FAILURE [  9.902 s]
+[INFO] cukedoctor-main .................................... SKIPPED
+[INFO] cukedoctor-spi-example ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 35.209 s
+[INFO] Finished at: 2020-02-16T18:28:56+01:00
+[INFO] Final Memory: 34M/91M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project cukedoctor-maven-plugin: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-maven-plugin/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project cukedoctor-maven-plugin: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-maven-plugin/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-rmpestano-cukedoctor-417388503-20180817-204142-firstCommit/cukedoctor-maven-plugin/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:254)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :cukedoctor-maven-plugin
