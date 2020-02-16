@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "openzipkin/zipkin",
-  "failingModule": "/root/workspace/openzipkin/zipkin/357664439/zipkin-storage/elasticsearch",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 793,
-  "failing-test-cases": [
-    {
-      "className": "zipkin2.elasticsearch.ElasticsearchStorageTest",
-      "failingMethods": [
-        "zipkin2.elasticsearch.ElasticsearchStorageTest#check_ssl"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:52 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:11:17 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 66387288,
+      "totalMemory": 337281024
+    },
+    "totalDuration": 561,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 79,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          79
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openzipkin-zipkin-357664439-20180324-030742-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openzipkin-zipkin-357664439-20180324-030742-firstCommit/zipkin-storage/cassandra",
+    "overallMetrics": {
+      "numberRunning": 657,
+      "numberPassing": 656,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 4,
       "failures": [
         {
-          "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003cCheckResult{ok\u003d[true, error\u003dnull]}\u003e but was:\u003cCheckResult{ok\u003d[false, error\u003djavax.net.ssl.SSLPeerUnverifiedException: Hostname localhost not verified:\n    certificate: sha256/qfIiH8jX0RH8nPYzWS+6BadPupj5djSV2Pk95EE5W1A\u003d\n    DN: CN\u003dlocalhost\n    subjectAltNames: []]}\u003e",
-          "isError": false
+          "failureName": "java.lang.OutOfMemoryError",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "zipkin.storage.cassandra.DeduplicatingExecutorTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "zipkin.storage.cassandra.DeduplicatingExecutorTest",
+        "testMethod": "multithreaded",
+        "failureName": "java.lang.OutOfMemoryError",
+        "detail": "unable to create new native thread",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 31,
+    "numberPlugins": 0,
+    "numberSourceFiles": 253,
+    "numberTestFiles": 172,
+    "numberLibrariesFailingModule": 0,
+    "numberLines": 0
+  }
 }
