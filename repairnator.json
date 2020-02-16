@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "timmolter/XChange",
-  "failingModule": "/root/workspace/timmolter/XChange/267063678/xchange-kraken",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 472,
-  "failing-test-cases": [
-    {
-      "className": "org.knowm.xchange.kraken.KrakenAdaptersTest",
-      "failingMethods": [
-        "org.knowm.xchange.kraken.KrakenAdaptersTest#testAdaptCurrencyPairs"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-267099925-20170822-110804-firstCommit/xchange-cryptopia",
+    "overallMetrics": {
+      "numberRunning": 419,
+      "numberPassing": 418,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 3,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected size:\u003c57\u003e but was:\u003c50\u003e in:\u003c[null, BTC/JPY, XMR/USD, EOS/USD, ETH/CAD, ETH/BTC, ICN/BTC, BTC/USD, LTC/BTC, XMR/EUR, XRP/BTC, BCH/BTC, GNO/BTC, ETC/ETH, ZEC/BTC, DASH/USD, XLM/BTC, ETC/USD, USDT/USD, BCH/USD, BTC/EUR, ZEC/EUR, ICN/ETH, ETH/USD, MLN/BTC, XMR/BTC, DASH/EUR, EOS/BTC, REP/ETH, ETH/EUR, XRP/EUR, GNO/ETH, BTC/CAD, ETH/JPY, REP/EUR, LTC/USD, GNO/USD, ZEC/USD, DASH/BTC, BCH/EUR, DOGE/BTC, EOS/ETH, ETC/BTC, XRP/USD, EOS/EUR, GNO/EUR, ETC/EUR, MLN/ETH, REP/BTC, LTC/EUR]\u003e",
-          "isError": false
+          "failureName": "org.knowm.xchange.exceptions.ExchangeException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.knowm.xchange.cryptopia.service.CryptopiaMarketDataServiceTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.knowm.xchange.cryptopia.service.CryptopiaMarketDataServiceTest",
+        "testMethod": "org.knowm.xchange.cryptopia.service.CryptopiaMarketDataServiceTest",
+        "failureName": "org.knowm.xchange.exceptions.ExchangeException",
+        "detail": "com.fasterxml.jackson.core.JsonParseException: Unexpected character (\u0027\u003c\u0027 (code 60)): expected a valid value (number, String, array, object, \u0027true\u0027, \u0027false\u0027 or \u0027null\u0027)\n at [Source: java.io.StringReader@50ad3bc1; line: 1, column: 2]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 62,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2098,
+    "numberTestFiles": 359,
+    "numberLibrariesFailingModule": 18,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:09 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:38:32 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 39799328,
+      "totalMemory": 93073408
+    },
+    "totalDuration": 677,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 53,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          53,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 31,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          31
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-267099925-20170822-110804-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
