@@ -1,0 +1,2258 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] RESTEasy dependencies BOM
+[INFO] RESTEasy JAX-RS
+[INFO] RESTEasy JAX-RS services
+[INFO] RESTEasy JAX-RS Implementation
+[INFO] RESTEasy JAX-RS Client
+[INFO] RESTEasy Embedded Servlet Container
+[INFO] RESTEasy CDI integration module
+[INFO] RESTEasy JAX-RS Client Microprofile
+[INFO] RESTEasy JAX-RS Client - Jetty Engine
+[INFO] RESTEasy JAXB Provider
+[INFO] RESTEasy Jettison Provider
+[INFO] RESTEasy FastInfoSet Provider
+[INFO] RESTEasy Jackson Provider
+[INFO] RESTEasy Jackson 2 Provider
+[INFO] RESTEasy JSON-P EE7 Provider
+[INFO] RESTEasy JSON-Binding Provider
+[INFO] RESTEasy Atom Provider
+[INFO] RESTEasy Multipart Provider
+[INFO] RESTEasy HTML Provider
+[INFO] RESTEasy Validator Provider BV 1.1
+[INFO] RESTEasy Providers
+[INFO] RESTEasy Maven Import (BOM)
+[INFO] RESTEasy Netty 4 Integration
+[INFO] RESTEasy Cache Core
+[INFO] RESTEasy Cache
+[INFO] RESTEasy Guice
+[INFO] RESTEasy EagleDNS Fork For Testing Purposes
+[INFO] RESTEasy Security: Crypto
+[INFO] RESTEasy Security: JOSE JWT
+[INFO] RESTEasy Security
+[INFO] RESTEasy Links
+[INFO] RESTEasy Spring integration
+[INFO] RESTEasy JAX-RS JSAPI
+[INFO] RESTEasy Servlet Container Initializer
+[INFO] resteasy-reactive-context
+[INFO] RESTEasy RxJava integration
+[INFO] RESTEasy RxJava 2 integration
+[INFO] RESTEasy Sun JDK HTTP Server Integration
+[INFO] RESTEasy Netty Integration
+[INFO] RESTEasy Netty 4 Integration w/ CDI Support
+[INFO] RESTEasy Undertow Integration
+[INFO] RESTEasy Vert.x Integration
+[INFO] RESTEasy Http Adapter Plugins
+[INFO] RESTEasy JBoss Modules
+[INFO] RESTEasy WADL
+[INFO] RESTEasy WADL Undertow Connector
+[INFO] RESTEASY-736-jetty
+[INFO] RESTEASY-1056-jetty-bv11
+[INFO] RESTEASY-1630-jetty-resteasy-servlet-initializer
+[INFO] RESTEasy Misc Arquillian-based tests
+[INFO] RESTEasy Profiling Tests
+[INFO] RESTEasy Main testsuite
+[INFO] RESTEasy Main testsuite: Arquillian utils
+[INFO] RESTEasy Main testsuite: Unit tests
+[INFO] RESTEasy Main testsuite: Integration tests
+[INFO] RESTEasy Main testsuite: Spring integration tests
+[INFO] RESTEasy Main testsuite: Spring integration tests - Deployment
+[INFO] RESTEasy Main testsuite: Spring integration tests - In module
+[INFO] RESTEasy Main testsuite: Spring integration tests - Unit tests
+[INFO] MicroProfile Rest Client TCK
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy dependencies BOM 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-dependencies ---
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-dependencies-bom' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-dependencies-bom
+[INFO] Storing buildNumber: 486f7698b41aafd3e754a7b5259d38e0abdfa9cb at timestamp: 1581874715740
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-dependencies-bom' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-dependencies-bom
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JAX-RS 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-jaxrs-all ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-jaxrs-all ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-jaxrs-all ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JAX-RS services 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-jaxrs-services ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-jaxrs-services ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-jaxrs-services ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-jaxrs-services ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-jaxrs-services ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-jaxrs-services ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-jaxrs-services/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-jaxrs-services ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-jaxrs-services ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JAX-RS Implementation 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-jaxrs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-jaxrs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-jaxrs ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-jaxrs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-jaxrs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-jaxrs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-jaxrs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-jaxrs ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-jaxrs/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 9.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 62.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1269.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JAX-RS Client 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-client ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Embedded Servlet Container 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ tjws ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ tjws ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ tjws ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ tjws ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ tjws ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ tjws ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ tjws ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ tjws ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/tjws/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.plugins.server.tjws.TJWSServletServerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.381 sec - in org.jboss.resteasy.plugins.server.tjws.TJWSServletServerTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy CDI integration module 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-cdi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-cdi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-cdi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-cdi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-cdi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-cdi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-cdi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-cdi ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-cdi/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JAX-RS Client Microprofile 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-client-microprofile ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-client-microprofile ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-client-microprofile ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-client-microprofile ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-client-microprofile ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-client-microprofile ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-client-microprofile/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-client-microprofile ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-client-microprofile ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JAX-RS Client - Jetty Engine 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-client-jetty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-client-jetty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-client-jetty ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-client-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-client-jetty/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-client-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-client-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-client-jetty/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-client-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-client-jetty ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-client-jetty/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.client.jetty.JettyClientEngineTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.792 sec - in org.jboss.resteasy.test.client.jetty.JettyClientEngineTest
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JAXB Provider 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-jaxb-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-jaxb-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-jaxb-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-jaxb-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-jaxb-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-jaxb-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-jaxb-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-jaxb-provider ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/jaxb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Jettison Provider 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-jettison-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-jettison-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-jettison-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-jettison-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-jettison-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-jettison-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-jettison-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-jettison-provider ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/jettison/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy FastInfoSet Provider 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-fastinfoset-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-fastinfoset-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-fastinfoset-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-fastinfoset-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-fastinfoset-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-fastinfoset-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/fastinfoset/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-fastinfoset-provider ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-fastinfoset-provider ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Jackson Provider 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-jackson-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-jackson-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-jackson-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-jackson-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-jackson-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-jackson-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/jackson/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-jackson-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-jackson-provider ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/jackson/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.nextgen.providers.jackson.ProxyWithGenericReturnTypeJacksonTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.771 sec - in org.jboss.resteasy.test.nextgen.providers.jackson.ProxyWithGenericReturnTypeJacksonTest
+Running org.jboss.resteasy.test.nextgen.providers.jackson.JacksonTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.924 sec - in org.jboss.resteasy.test.nextgen.providers.jackson.JacksonTest
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Jackson 2 Provider 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-jackson2-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-jackson2-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-jackson2-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-jackson2-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-jackson2-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-jackson2-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/jackson2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-jackson2-provider ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-jackson2-provider ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JSON-P EE7 Provider 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-json-p-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-json-p-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-json-p-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-json-p-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-json-p-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-json-p-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/json-p-ee7/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-json-p-provider ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-json-p-provider ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JSON-Binding Provider 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-json-binding-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-json-binding-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-json-binding-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-json-binding-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-json-binding-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-json-binding-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/json-binding/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-json-binding-provider ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-json-binding-provider ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Atom Provider 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-atom-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-atom-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-atom-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-atom-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-atom-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-atom-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-atom-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-atom-provider ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/resteasy-atom/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Multipart Provider 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-multipart-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-multipart-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-multipart-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-multipart-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-multipart-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-multipart-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/multipart/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-multipart-provider ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-multipart-provider ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy HTML Provider 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-html ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-html ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-html ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-html ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-html ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-html ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-html ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-html ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/resteasy-html/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Validator Provider BV 1.1 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-validator-provider-11 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-validator-provider-11 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-validator-provider-11 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-validator-provider-11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-validator-provider-11 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-validator-provider-11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/providers/resteasy-validator-provider-11/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-validator-provider-11 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-validator-provider-11 ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Providers 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ providers-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ providers-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ providers-pom ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Maven Import (BOM) 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-bom ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Netty 4 Integration 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-netty4 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-netty4 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-netty4 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-netty4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-netty4/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-netty4 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-netty4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-netty4 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-netty4 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-netty4/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.SubresourceClassInjectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.859 sec - in org.jboss.resteasy.test.SubresourceClassInjectionTest
+Running org.jboss.resteasy.test.StreamingOutputTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.137 sec - in org.jboss.resteasy.test.StreamingOutputTest
+Running org.jboss.resteasy.test.SniTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.581 sec - in org.jboss.resteasy.test.SniTest
+Running org.jboss.resteasy.test.ResteasyTrailingSlashTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec - in org.jboss.resteasy.test.ResteasyTrailingSlashTest
+Running org.jboss.resteasy.test.RESTEASY1325Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.154 sec - in org.jboss.resteasy.test.RESTEASY1325Test
+Running org.jboss.resteasy.test.RESTEASY1323Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.764 sec - in org.jboss.resteasy.test.RESTEASY1323Test
+Running org.jboss.resteasy.test.PortAssigningTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in org.jboss.resteasy.test.PortAssigningTest
+Running org.jboss.resteasy.test.NettyTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.7 sec - in org.jboss.resteasy.test.NettyTest
+Running org.jboss.resteasy.test.Netty4ApplicationPathTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.406 sec - in org.jboss.resteasy.test.Netty4ApplicationPathTest
+Running org.jboss.resteasy.test.JaxrsAsyncTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.682 sec - in org.jboss.resteasy.test.JaxrsAsyncTest
+Running org.jboss.resteasy.test.HeaderTooLongTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in org.jboss.resteasy.test.HeaderTooLongTest
+Running org.jboss.resteasy.test.Expect100Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec - in org.jboss.resteasy.test.Expect100Test
+
+Results :
+
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Cache Core 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-cache-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-cache-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-cache-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-cache-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-cache/resteasy-cache-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-cache-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-cache-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-cache-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-cache-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-cache/resteasy-cache-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.cache.ServerCacheTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.109 sec - in org.jboss.resteasy.test.cache.ServerCacheTest
+Running org.jboss.resteasy.test.cache.PersistentServerCacheTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.442 sec - in org.jboss.resteasy.test.cache.PersistentServerCacheTest
+
+Results :
+
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Cache 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-cache-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-cache-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-cache-pom ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Guice 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-guice ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-guice ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-guice ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-guice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-guice/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-guice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-guice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-guice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-guice ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-guice/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.plugins.guice.ext.RequestScopeModuleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.091 sec - in org.jboss.resteasy.plugins.guice.ext.RequestScopeModuleTest
+Running org.jboss.resteasy.plugins.guice.ext.JaxrsModuleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 sec - in org.jboss.resteasy.plugins.guice.ext.JaxrsModuleTest
+Running org.jboss.resteasy.plugins.guice.ResourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec - in org.jboss.resteasy.plugins.guice.ResourceTest
+Running org.jboss.resteasy.plugins.guice.GuiceProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in org.jboss.resteasy.plugins.guice.GuiceProviderTest
+Running org.jboss.resteasy.plugins.guice.GuiceContextTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.298 sec - in org.jboss.resteasy.plugins.guice.GuiceContextTest
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy EagleDNS Fork For Testing Purposes 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ eagledns-fork ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ eagledns-fork ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ eagledns-fork ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ eagledns-fork ---
+[INFO] Using 'ISO8859_1' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ eagledns-fork ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ eagledns-fork ---
+[INFO] Using 'ISO8859_1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/eagledns/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ eagledns-fork ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ eagledns-fork ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Security: Crypto 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-crypto ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-crypto ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-crypto ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-crypto ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-crypto ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-crypto ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 33 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-crypto ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-crypto ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/security/resteasy-crypto/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.security.doseta.SigningTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.302 sec - in org.jboss.resteasy.test.security.doseta.SigningTest
+Running org.jboss.resteasy.test.security.doseta.SigningDnsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 sec - in org.jboss.resteasy.test.security.doseta.SigningDnsTest
+Running org.jboss.resteasy.test.security.doseta.EagleDnsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.jboss.resteasy.test.security.doseta.EagleDnsTest
+
+Results :
+
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Security: JOSE JWT 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ jose-jwt ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ jose-jwt ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ jose-jwt ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ jose-jwt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/security/jose-jwt/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jose-jwt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ jose-jwt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jose-jwt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ jose-jwt ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/security/jose-jwt/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Security 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ security-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ security-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ security-pom ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Links 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-links ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-links ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-links ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-links ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-links/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-links ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-links ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-links ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-links ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-links/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.links.test.el.TestLinksNoPackage
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.439 sec - in org.jboss.resteasy.links.test.el.TestLinksNoPackage
+Running org.jboss.resteasy.links.test.el.TestLinksInvalidEL
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 sec - in org.jboss.resteasy.links.test.el.TestLinksInvalidEL
+Running org.jboss.resteasy.links.test.TestSecureLinks
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.451 sec - in org.jboss.resteasy.links.test.TestSecureLinks
+Running org.jboss.resteasy.links.test.TestLinks
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.734 sec - in org.jboss.resteasy.links.test.TestLinks
+Running org.jboss.resteasy.links.test.TestLinkIds
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 sec - in org.jboss.resteasy.links.test.TestLinkIds
+Running org.jboss.resteasy.links.test.TestFacadeLinks
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.279 sec - in org.jboss.resteasy.links.test.TestFacadeLinks
+
+Results :
+
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Spring integration 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-spring ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-spring ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-spring ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 15 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-spring ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-spring/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.springmvc.test.spring.AsynchSpringTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.316 sec - in org.jboss.resteasy.springmvc.test.spring.AsynchSpringTest
+Running org.jboss.resteasy.springmvc.test.client.BasicSpringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.597 sec - in org.jboss.resteasy.springmvc.test.client.BasicSpringTest
+Running org.jboss.resteasy.client.spring.test.BasicSpringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.841 sec - in org.jboss.resteasy.client.spring.test.BasicSpringTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JAX-RS JSAPI 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-jsapi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-jsapi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-jsapi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-jsapi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-jsapi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-jsapi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-jsapi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-jsapi ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-jsapi/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Servlet Container Initializer 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-servlet-initializer ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-servlet-initializer ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-servlet-initializer ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-servlet-initializer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-servlet-initializer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-servlet-initializer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-servlet-initializer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-servlet-initializer ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-servlet-initializer/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building resteasy-reactive-context 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-reactive-context ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-reactive-context ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-reactive-context ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-reactive-context ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-reactive-context ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-reactive-context ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-reactive-context/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-reactive-context ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-reactive-context ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy RxJava integration 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-rxjava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-rxjava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-rxjava ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-rxjava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-rxjava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-rxjava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-rxjava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-rxjava ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-rxjava/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.rxjava.RxTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.202 sec - in org.jboss.resteasy.rxjava.RxTest
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy RxJava 2 integration 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-rxjava2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-rxjava2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-rxjava2 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-rxjava2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-rxjava2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-rxjava2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-rxjava2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-rxjava2 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-rxjava2/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.rxjava2.RxTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.497 sec - in org.jboss.resteasy.rxjava2.RxTest
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Sun JDK HTTP Server Integration 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-jdk-http ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-jdk-http ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-jdk-http ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-jdk-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-jdk-http/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-jdk-http ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-jdk-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-jdk-http ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-jdk-http ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-jdk-http/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.security.BasicAuthTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.604 sec - in org.jboss.resteasy.test.security.BasicAuthTest
+Running org.jboss.resteasy.test.PortAssigningTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.jboss.resteasy.test.PortAssigningTest
+Running org.jboss.resteasy.test.HttpContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec - in org.jboss.resteasy.test.HttpContextTest
+Running org.jboss.resteasy.test.HeadContentLengthTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.jboss.resteasy.test.HeadContentLengthTest
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Netty Integration 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-netty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-netty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-netty ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-netty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-netty/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-netty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-netty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-netty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-netty ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-netty/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.ResteasyTrailingSlashTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.425 sec - in org.jboss.resteasy.test.ResteasyTrailingSlashTest
+Running org.jboss.resteasy.test.PortAssigningTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.jboss.resteasy.test.PortAssigningTest
+Running org.jboss.resteasy.test.NettyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 sec - in org.jboss.resteasy.test.NettyTest
+Running org.jboss.resteasy.test.NettyApplicationPathTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 sec - in org.jboss.resteasy.test.NettyApplicationPathTest
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Netty 4 Integration w/ CDI Support 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-netty4-cdi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-netty4-cdi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-netty4-cdi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-netty4-cdi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-netty4-cdi/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-netty4-cdi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-netty4-cdi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-netty4-cdi/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-netty4-cdi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-netty4-cdi ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-netty4-cdi/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.plugins.server.netty.cdi.SeCdiNettyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.24 sec - in org.jboss.resteasy.plugins.server.netty.cdi.SeCdiNettyTest
+Running org.jboss.resteasy.plugins.server.netty.cdi.CdiNettyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.574 sec - in org.jboss.resteasy.plugins.server.netty.cdi.CdiNettyTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Undertow Integration 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-undertow ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-undertow ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-undertow ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-undertow ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-undertow/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-undertow ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-undertow ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-undertow/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-undertow ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-undertow ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-undertow/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.undertow.UndertowTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.955 sec - in org.jboss.resteasy.test.undertow.UndertowTest
+Running org.jboss.resteasy.test.undertow.UndertowParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec - in org.jboss.resteasy.test.undertow.UndertowParameterTest
+Running org.jboss.resteasy.test.undertow.HeadContentLengthTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in org.jboss.resteasy.test.undertow.HeadContentLengthTest
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Vert.x Integration 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-vertx ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-vertx ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-vertx ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-vertx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-vertx/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-vertx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-vertx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-vertx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-vertx ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/server-adapters/resteasy-vertx/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.VertxTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.475 sec - in org.jboss.resteasy.test.VertxTest
+Running org.jboss.resteasy.test.DeploymentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.288 sec - in org.jboss.resteasy.test.DeploymentTest
+
+Results :
+
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Http Adapter Plugins 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-http-adapter-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-http-adapter-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-http-adapter-pom ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy JBoss Modules 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-jboss-modules ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-jboss-modules ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-jboss-modules ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy WADL 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-wadl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-wadl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-wadl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-wadl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-wadl/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-wadl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-wadl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-wadl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-wadl ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-wadl/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.wadl.wadl.TestWADL_JAXB_Types
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.63 sec - in org.jboss.resteasy.wadl.wadl.TestWADL_JAXB_Types
+Running org.jboss.resteasy.test.nextgen.wadl.WADLNettyContainerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.954 sec - in org.jboss.resteasy.test.nextgen.wadl.WADLNettyContainerTest
+Running org.jboss.resteasy.test.nextgen.wadl.WADLBasicTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.457 sec - in org.jboss.resteasy.test.nextgen.wadl.WADLBasicTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy WADL Undertow Connector 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-wadl-undertow-connector ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-wadl-undertow-connector ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-wadl-undertow-connector ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-wadl-undertow-connector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-wadl-undertow-connector/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-wadl-undertow-connector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-wadl-undertow-connector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-wadl-undertow-connector/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-wadl-undertow-connector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-wadl-undertow-connector ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/resteasy-wadl-undertow-connector/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.nextgen.wadl.WADLUndertowContainerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.713 sec - in org.jboss.resteasy.test.nextgen.wadl.WADLUndertowContainerTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEASY-736-jetty 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ RESTEASY-736-jetty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ RESTEASY-736-jetty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ RESTEASY-736-jetty ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ RESTEASY-736-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/arquillian/RESTEASY-736-jetty/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ RESTEASY-736-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ RESTEASY-736-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ RESTEASY-736-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ RESTEASY-736-jetty ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/arquillian/RESTEASY-736-jetty/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.resteasy736.AsyncTimeoutTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 9.405 sec - in org.jboss.resteasy.test.resteasy736.AsyncTimeoutTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEASY-1056-jetty-bv11 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ RESTEASY-1056-jetty-bv11 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ RESTEASY-1056-jetty-bv11 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ RESTEASY-1056-jetty-bv11 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ RESTEASY-1056-jetty-bv11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/arquillian/RESTEASY-1056-jetty-bv11/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ RESTEASY-1056-jetty-bv11 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ RESTEASY-1056-jetty-bv11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ RESTEASY-1056-jetty-bv11 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ RESTEASY-1056-jetty-bv11 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/arquillian/RESTEASY-1056-jetty-bv11/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.resteasy1056.MissingCDITest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.51 sec - in org.jboss.resteasy.test.resteasy1056.MissingCDITest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEASY-1630-jetty-resteasy-servlet-initializer 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ RESTEASY-1630-jetty-resteasy-servlet-initializer ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ RESTEASY-1630-jetty-resteasy-servlet-initializer ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ RESTEASY-1630-jetty-resteasy-servlet-initializer ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ RESTEASY-1630-jetty-resteasy-servlet-initializer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/arquillian/RESTEASY-1630-jetty-resteasy-servlet-initializer/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ RESTEASY-1630-jetty-resteasy-servlet-initializer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ RESTEASY-1630-jetty-resteasy-servlet-initializer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ RESTEASY-1630-jetty-resteasy-servlet-initializer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ RESTEASY-1630-jetty-resteasy-servlet-initializer ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/arquillian/RESTEASY-1630-jetty-resteasy-servlet-initializer/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.resteasy1630.ServletInitializerTwoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.724 sec - in org.jboss.resteasy.test.resteasy1630.ServletInitializerTwoTest
+Running org.jboss.resteasy.test.resteasy1630.ServletInitializerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.533 sec - in org.jboss.resteasy.test.resteasy1630.ServletInitializerTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Misc Arquillian-based tests 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-misc-arquillian-tests ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-misc-arquillian-tests ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-misc-arquillian-tests ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Profiling Tests 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-profiling-tests ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-profiling-tests ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-profiling-tests ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-profiling-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/profiling-tests/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-profiling-tests ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-profiling-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/profiling-tests/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-profiling-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-profiling-tests ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/profiling-tests/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.profiling.ProfilingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.562 sec - in org.jboss.resteasy.test.profiling.ProfilingTest
+Running org.jboss.resteasy.test.profiling.MockedProfilingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in org.jboss.resteasy.test.profiling.MockedProfilingTest
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Main testsuite 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-testsuite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-testsuite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-testsuite ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Main testsuite: Arquillian utils 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ arquillian-utils ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ arquillian-utils ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ arquillian-utils ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ arquillian-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ arquillian-utils ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ arquillian-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/testsuite/arquillian-utils/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ arquillian-utils ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ arquillian-utils ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Main testsuite: Unit tests 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ resteasy-unit-tests ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ resteasy-unit-tests ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ resteasy-unit-tests ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ resteasy-unit-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/testsuite/unit-tests/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ resteasy-unit-tests ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ resteasy-unit-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ resteasy-unit-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ resteasy-unit-tests ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/testsuite/unit-tests/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.pom (7 KB at 148.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.pom (4 KB at 130.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.pom (3 KB at 53.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.pom (2 KB at 41.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 51.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom (7 KB at 264.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 85.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.jar (23 KB at 714.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar (168 KB at 3287.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 1012.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.jar (12 KB at 75.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.jar (26 KB at 150.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 256.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.jar (150 KB at 856.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jboss.resteasy.test.util.WildcardTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.jboss.resteasy.test.util.WildcardTypeTest
+Running org.jboss.resteasy.test.util.UriBuilderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in org.jboss.resteasy.test.util.UriBuilderTest
+Running org.jboss.resteasy.test.util.TypesGenericTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.jboss.resteasy.test.util.TypesGenericTest
+Running org.jboss.resteasy.test.util.TypesBuiltInTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.jboss.resteasy.test.util.TypesBuiltInTest
+Running org.jboss.resteasy.test.util.TypeConverterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.jboss.resteasy.test.util.TypeConverterTest
+Running org.jboss.resteasy.test.util.ResteasyUriBuilderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.jboss.resteasy.test.util.ResteasyUriBuilderTest
+Running org.jboss.resteasy.test.util.ResponseBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.63 sec - in org.jboss.resteasy.test.util.ResponseBuilderTest
+Running org.jboss.resteasy.test.util.PasswordColonTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.jboss.resteasy.test.util.PasswordColonTest
+Running org.jboss.resteasy.test.util.ObjectToURITest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.jboss.resteasy.test.util.ObjectToURITest
+Running org.jboss.resteasy.test.util.MultivaluedMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.jboss.resteasy.test.util.MultivaluedMapTest
+Running org.jboss.resteasy.test.util.LinkTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.jboss.resteasy.test.util.LinkTest
+Running org.jboss.resteasy.test.util.InterfaceTypeUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.jboss.resteasy.test.util.InterfaceTypeUtilTest
+Running org.jboss.resteasy.test.util.GroupParameterParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.jboss.resteasy.test.util.GroupParameterParserTest
+Running org.jboss.resteasy.test.util.CaseInsentiveMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.jboss.resteasy.test.util.CaseInsentiveMapTest
+Running org.jboss.resteasy.test.util.CacheControlTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.jboss.resteasy.test.util.CacheControlTest
+Running org.jboss.resteasy.test.resource.TrailingSlashTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.jboss.resteasy.test.resource.TrailingSlashTest
+Running org.jboss.resteasy.test.resource.SegmentTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in org.jboss.resteasy.test.resource.SegmentTest
+Running org.jboss.resteasy.test.resource.ProgammaticTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 sec - in org.jboss.resteasy.test.resource.ProgammaticTest
+Running org.jboss.resteasy.test.resource.CookieObjectTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.jboss.resteasy.test.resource.CookieObjectTest
+Running org.jboss.resteasy.test.resource.ContextResolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.jboss.resteasy.test.resource.ContextResolverTest
+Running org.jboss.resteasy.test.resource.AcceptParameterHttpPreprocessorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.jboss.resteasy.test.resource.AcceptParameterHttpPreprocessorTest
+Running org.jboss.resteasy.test.request.VariantSelectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.jboss.resteasy.test.request.VariantSelectionTest
+Running org.jboss.resteasy.test.request.VariantQualityTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.jboss.resteasy.test.request.VariantQualityTest
+Running org.jboss.resteasy.test.request.StringQualityValueTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.jboss.resteasy.test.request.StringQualityValueTest
+Running org.jboss.resteasy.test.request.QualityValueTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.jboss.resteasy.test.request.QualityValueTest
+Running org.jboss.resteasy.test.request.MediaTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.jboss.resteasy.test.request.MediaTypeTest
+Running org.jboss.resteasy.test.request.MediaTypeQualityValueTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.jboss.resteasy.test.request.MediaTypeQualityValueTest
+Running org.jboss.resteasy.test.request.LocaleQualityValueTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.jboss.resteasy.test.request.LocaleQualityValueTest
+Running org.jboss.resteasy.test.request.CookieNullValueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.jboss.resteasy.test.request.CookieNullValueTest
+Running org.jboss.resteasy.test.request.ContainerRequestContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.jboss.resteasy.test.request.ContainerRequestContextTest
+Running org.jboss.resteasy.test.request.AcceptTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in org.jboss.resteasy.test.request.AcceptTest
+Running org.jboss.resteasy.test.providers.sse.OutboundSseEventImplTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.jboss.resteasy.test.providers.sse.OutboundSseEventImplTest
+Running org.jboss.resteasy.test.providers.UserDefinedContextResolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.jboss.resteasy.test.providers.UserDefinedContextResolverTest
+Running org.jboss.resteasy.test.providers.ProviderFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in org.jboss.resteasy.test.providers.ProviderFactoryTest
+Running org.jboss.resteasy.test.providers.ProviderFactoryPrecedenceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in org.jboss.resteasy.test.providers.ProviderFactoryPrecedenceTest
+Running org.jboss.resteasy.test.providers.PriorityEqualityTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.33 sec - in org.jboss.resteasy.test.providers.PriorityEqualityTest
+Running org.jboss.resteasy.test.providers.NamespaceMappingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.jboss.resteasy.test.providers.NamespaceMappingTest
+Running org.jboss.resteasy.test.providers.MultipurtContainsJsonTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 sec - in org.jboss.resteasy.test.providers.MultipurtContainsJsonTest
+Running org.jboss.resteasy.test.providers.JaxbNamespacePrefixTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in org.jboss.resteasy.test.providers.JaxbNamespacePrefixTest
+Running org.jboss.resteasy.test.providers.ContractsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.jboss.resteasy.test.providers.ContractsTest
+Running org.jboss.resteasy.test.providers.AtomProviderModelTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.325 sec - in org.jboss.resteasy.test.providers.AtomProviderModelTest
+Running org.jboss.resteasy.test.providers.AtomProviderAppServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in org.jboss.resteasy.test.providers.AtomProviderAppServiceTest
+Running org.jboss.resteasy.test.providers.AppCategoriesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.jboss.resteasy.test.providers.AppCategoriesTest
+Running org.jboss.resteasy.test.mediatype.MediaTypeMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.jboss.resteasy.test.mediatype.MediaTypeMapTest
+Running org.jboss.resteasy.test.jose.JWTTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in org.jboss.resteasy.test.jose.JWTTest
+Running org.jboss.resteasy.test.jose.JWSTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.901 sec - in org.jboss.resteasy.test.jose.JWSTest
+Running org.jboss.resteasy.test.jose.JWETest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.012 sec - in org.jboss.resteasy.test.jose.JWETest
+Running org.jboss.resteasy.test.interception.PriorityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.jboss.resteasy.test.interception.PriorityTest
+Running org.jboss.resteasy.test.interception.JaxrsInterceptorRegistryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.jboss.resteasy.test.interception.JaxrsInterceptorRegistryTest
+Running org.jboss.resteasy.test.interception.DecoratorMatcherTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.jboss.resteasy.test.interception.DecoratorMatcherTest
+Running org.jboss.resteasy.test.injection.WeldInitCDITest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.245 sec - in org.jboss.resteasy.test.injection.WeldInitCDITest
+Running org.jboss.resteasy.test.injection.StringParameterInjectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.jboss.resteasy.test.injection.StringParameterInjectorTest
+Running org.jboss.resteasy.test.injection.SessionBeanInterfaceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.jboss.resteasy.test.injection.SessionBeanInterfaceTest
+Running org.jboss.resteasy.test.injection.ProviderInjectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.jboss.resteasy.test.injection.ProviderInjectionTest
+Running org.jboss.resteasy.test.injection.JaxrsComponentDetectionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.jboss.resteasy.test.injection.JaxrsComponentDetectionTest
+Running org.jboss.resteasy.test.crypto.SignedTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 sec - in org.jboss.resteasy.test.crypto.SignedTest
+Running org.jboss.resteasy.test.crypto.LocalTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.jboss.resteasy.test.crypto.LocalTest
+Running org.jboss.resteasy.test.crypto.GenericTypeCryptoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.jboss.resteasy.test.crypto.GenericTypeCryptoTest
+Running org.jboss.resteasy.test.crypto.ExampleSignTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.jboss.resteasy.test.crypto.ExampleSignTest
+Running org.jboss.resteasy.test.crypto.EnvelopedTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.804 sec - in org.jboss.resteasy.test.crypto.EnvelopedTest
+Running org.jboss.resteasy.test.client.WebTargetUnitTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.jboss.resteasy.test.client.WebTargetUnitTest
+Running org.jboss.resteasy.test.client.SelfExpandingBufferredInputStreamTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.jboss.resteasy.test.client.SelfExpandingBufferredInputStreamTest
+Running org.jboss.resteasy.test.client.ResponseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.278 sec - in org.jboss.resteasy.test.client.ResponseTest
+Running org.jboss.resteasy.test.client.ResponseBuilderImplTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.jboss.resteasy.test.client.ResponseBuilderImplTest
+Running org.jboss.resteasy.test.client.RequestFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.jboss.resteasy.test.client.RequestFilterTest
+Running org.jboss.resteasy.test.client.ProxyEqualsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in org.jboss.resteasy.test.client.ProxyEqualsTest
+Running org.jboss.resteasy.test.client.NoContentStreamingCloseTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in org.jboss.resteasy.test.client.NoContentStreamingCloseTest
+Running org.jboss.resteasy.test.client.ContentEncodingInvocationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.jboss.resteasy.test.client.ContentEncodingInvocationTest
+Running org.jboss.resteasy.test.client.ConfigurationInheritenceTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.388 sec - in org.jboss.resteasy.test.client.ConfigurationInheritenceTest
+Running org.jboss.resteasy.test.client.ClientWebTargetTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.jboss.resteasy.test.client.ClientWebTargetTest
+Running org.jboss.resteasy.test.client.ClientResponseFilterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.jboss.resteasy.test.client.ClientResponseFilterTest
+Running org.jboss.resteasy.test.client.ClientBuilderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec - in org.jboss.resteasy.test.client.ClientBuilderTest
+Running org.jboss.resteasy.test.client.ChunkedTransferEncodingUnitTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.059 sec <<< FAILURE! - in org.jboss.resteasy.test.client.ChunkedTransferEncodingUnitTest
+testChunkedTarget(org.jboss.resteasy.test.client.ChunkedTransferEncodingUnitTest)  Time elapsed: 0.032 sec  <<< ERROR!
+javax.ws.rs.ProcessingException: RESTEASY004655: Unable to invoke request
+	at org.jboss.resteasy.client.jaxrs.engines.ApacheHttpClient4Engine.invoke(ApacheHttpClient4Engine.java:321)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.invoke(ClientInvocation.java:480)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.invoke(ClientInvocation.java:59)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocationBuilder.post(ClientInvocationBuilder.java:218)
+	at org.jboss.resteasy.test.client.ChunkedTransferEncodingUnitTest.testChunkedTarget(ChunkedTransferEncodingUnitTest.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junitcore.JUnitCore.run(JUnitCore.java:55)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:137)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:107)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:83)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:75)
+	at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.jboss.resteasy.client.jaxrs.engines.ApacheHttpClient4Engine.invoke(ApacheHttpClient4Engine.java:317)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 50 more
+
+
+Results :
+
+Tests in error: 
+  ChunkedTransferEncodingUnitTest.testChunkedTarget:141 » Processing RESTEASY004...
+
+Tests run: 241, Failures: 0, Errors: 1, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] RESTEasy dependencies BOM .......................... SUCCESS [  1.352 s]
+[INFO] RESTEasy JAX-RS .................................... SUCCESS [  0.017 s]
+[INFO] RESTEasy JAX-RS services ........................... SUCCESS [  0.584 s]
+[INFO] RESTEasy JAX-RS Implementation ..................... SUCCESS [  2.622 s]
+[INFO] RESTEasy JAX-RS Client ............................. SUCCESS [  1.007 s]
+[INFO] RESTEasy Embedded Servlet Container ................ SUCCESS [  2.299 s]
+[INFO] RESTEasy CDI integration module .................... SUCCESS [  1.100 s]
+[INFO] RESTEasy JAX-RS Client Microprofile ................ SUCCESS [  0.190 s]
+[INFO] RESTEasy JAX-RS Client - Jetty Engine .............. SUCCESS [  6.787 s]
+[INFO] RESTEasy JAXB Provider ............................. SUCCESS [  1.306 s]
+[INFO] RESTEasy Jettison Provider ......................... SUCCESS [  1.318 s]
+[INFO] RESTEasy FastInfoSet Provider ...................... SUCCESS [  0.045 s]
+[INFO] RESTEasy Jackson Provider .......................... SUCCESS [  3.825 s]
+[INFO] RESTEasy Jackson 2 Provider ........................ SUCCESS [  0.089 s]
+[INFO] RESTEasy JSON-P EE7 Provider ....................... SUCCESS [  0.049 s]
+[INFO] RESTEasy JSON-Binding Provider ..................... SUCCESS [  0.052 s]
+[INFO] RESTEasy Atom Provider ............................. SUCCESS [  0.940 s]
+[INFO] RESTEasy Multipart Provider ........................ SUCCESS [  0.086 s]
+[INFO] RESTEasy HTML Provider ............................. SUCCESS [  0.935 s]
+[INFO] RESTEasy Validator Provider BV 1.1 ................. SUCCESS [  0.086 s]
+[INFO] RESTEasy Providers ................................. SUCCESS [  0.003 s]
+[INFO] RESTEasy Maven Import (BOM) ........................ SUCCESS [  0.004 s]
+[INFO] RESTEasy Netty 4 Integration ....................... SUCCESS [ 27.674 s]
+[INFO] RESTEasy Cache Core ................................ SUCCESS [ 13.572 s]
+[INFO] RESTEasy Cache ..................................... SUCCESS [  0.005 s]
+[INFO] RESTEasy Guice ..................................... SUCCESS [  3.868 s]
+[INFO] RESTEasy EagleDNS Fork For Testing Purposes ........ SUCCESS [  0.056 s]
+[INFO] RESTEasy Security: Crypto .......................... SUCCESS [  7.846 s]
+[INFO] RESTEasy Security: JOSE JWT ........................ SUCCESS [  0.940 s]
+[INFO] RESTEasy Security .................................. SUCCESS [  0.004 s]
+[INFO] RESTEasy Links ..................................... SUCCESS [  5.340 s]
+[INFO] RESTEasy Spring integration ........................ SUCCESS [ 14.863 s]
+[INFO] RESTEasy JAX-RS JSAPI .............................. SUCCESS [  0.775 s]
+[INFO] RESTEasy Servlet Container Initializer ............. SUCCESS [  0.951 s]
+[INFO] resteasy-reactive-context .......................... SUCCESS [  0.022 s]
+[INFO] RESTEasy RxJava integration ........................ SUCCESS [  4.067 s]
+[INFO] RESTEasy RxJava 2 integration ...................... SUCCESS [  4.341 s]
+[INFO] RESTEasy Sun JDK HTTP Server Integration ........... SUCCESS [  2.739 s]
+[INFO] RESTEasy Netty Integration ......................... SUCCESS [  2.992 s]
+[INFO] RESTEasy Netty 4 Integration w/ CDI Support ........ SUCCESS [  6.006 s]
+[INFO] RESTEasy Undertow Integration ...................... SUCCESS [  3.085 s]
+[INFO] RESTEasy Vert.x Integration ........................ SUCCESS [ 15.837 s]
+[INFO] RESTEasy Http Adapter Plugins ...................... SUCCESS [  0.002 s]
+[INFO] RESTEasy JBoss Modules ............................. SUCCESS [  0.037 s]
+[INFO] RESTEasy WADL ...................................... SUCCESS [  4.043 s]
+[INFO] RESTEasy WADL Undertow Connector ................... SUCCESS [  3.583 s]
+[INFO] RESTEASY-736-jetty ................................. SUCCESS [ 10.162 s]
+[INFO] RESTEASY-1056-jetty-bv11 ........................... SUCCESS [  5.587 s]
+[INFO] RESTEASY-1630-jetty-resteasy-servlet-initializer ... SUCCESS [  8.483 s]
+[INFO] RESTEasy Misc Arquillian-based tests ............... SUCCESS [  0.002 s]
+[INFO] RESTEasy Profiling Tests ........................... SUCCESS [  3.699 s]
+[INFO] RESTEasy Main testsuite ............................ SUCCESS [  0.002 s]
+[INFO] RESTEasy Main testsuite: Arquillian utils .......... SUCCESS [  0.418 s]
+[INFO] RESTEasy Main testsuite: Unit tests ................ FAILURE [ 12.790 s]
+[INFO] RESTEasy Main testsuite: Integration tests ......... SKIPPED
+[INFO] RESTEasy Main testsuite: Spring integration tests .. SKIPPED
+[INFO] RESTEasy Main testsuite: Spring integration tests - Deployment SKIPPED
+[INFO] RESTEasy Main testsuite: Spring integration tests - In module SKIPPED
+[INFO] RESTEasy Main testsuite: Spring integration tests - Unit tests SKIPPED
+[INFO] MicroProfile Rest Client TCK ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 03:11 min
+[INFO] Finished at: 2020-02-16T18:41:43+01:00
+[INFO] Final Memory: 61M/146M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project resteasy-unit-tests: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/testsuite/unit-tests/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project resteasy-unit-tests: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/testsuite/unit-tests/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-rsearls-Resteasy-419829671-20180828-145644-firstCommit/testsuite/unit-tests/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :resteasy-unit-tests
