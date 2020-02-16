@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "dropwizard/dropwizard",
-  "bugCommit": "https://github.com/dropwizard/dropwizard/compare/eb982bb3d1ea^...155f1403d5ba",
-  "failingModule": "/root/workspace/dropwizard/dropwizard/316095150/dropwizard-logging",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 303,
-  "failing-test-cases": [
-    {
-      "className": "io.dropwizard.logging.DefaultLoggingFactoryPrintErrorMessagesTest",
-      "failingMethods": [
-        "io.dropwizard.logging.DefaultLoggingFactoryPrintErrorMessagesTest#testWhenFileAppenderDoesNotHaveWritePermissionToFolder_PrintsErrorMessageToConsole"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:08 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:46:59 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 14918096,
+      "totalMemory": 104103936
+    },
+    "totalDuration": 587,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          30
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-316107220-20171213-225257-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-316107220-20171213-225257-firstCommit/dropwizard-jdbi",
+    "overallMetrics": {
+      "numberRunning": 1244,
+      "numberPassing": 1243,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
       "failures": [
         {
-          "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[fals]e\u003e but was:\u003c[tru]e\u003e",
-          "isError": false
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.dropwizard.jdbi.timestamps.JodaDateTimeSqlTimestampTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.dropwizard.jdbi.timestamps.JodaDateTimeSqlTimestampTest",
+        "testMethod": "io.dropwizard.jdbi.timestamps.JodaDateTimeSqlTimestampTest",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Unable shutdown DB",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 34,
+    "numberPlugins": 0,
+    "numberSourceFiles": 428,
+    "numberTestFiles": 393,
+    "numberLibrariesFailingModule": 105,
+    "numberLines": 0
+  }
 }
