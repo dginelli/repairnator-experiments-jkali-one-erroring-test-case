@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 19,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "matsim-org/matsim",
-  "bugCommit": "https://github.com/matsim-org/matsim/compare/518a6983065d...f7c4dee09a0d",
-  "failingModule": "/root/workspace/matsim-org/matsim/363442175/contribs/bicycle",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 1870,
-  "failing-test-cases": [
-    {
-      "className": "org.matsim.contrib.bicycle.run.BicycleTest",
-      "failingMethods": [
-        "org.matsim.contrib.bicycle.run.BicycleTest#testCobblestone"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:40 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:36:18 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 622651416,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 2072,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 252,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          252
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-matsim-org-matsim-363442175-20180407-112452-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-matsim-org-matsim-363442175-20180407-112452-firstCommit/matsim",
+    "overallMetrics": {
+      "numberRunning": 1338,
+      "numberPassing": 1337,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "Different event files. expected:\u003c-3\u003e but was:\u003c0\u003e",
-          "isError": false
+          "failureName": "org.matsim.core.utils.io.UncheckedIOException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.matsim.other.DownloadAndReadXmlTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.matsim.other.DownloadAndReadXmlTest",
+        "testMethod": "testHttpFromSvn",
+        "failureName": "org.matsim.core.utils.io.UncheckedIOException",
+        "detail": "org.xml.sax.SAXParseException; systemId: http://svn.vsp.tu-berlin.de/repos/public-svn/matsim/scenarios/countries/atlantis/minibus/input/network.xml; lineNumber: 1; columnNumber: 50; White spaces are required between publicId and systemId.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 39,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3514,
+    "numberTestFiles": 650,
+    "numberLibrariesFailingModule": 34,
+    "numberLines": 0
+  },
+  "commits": {}
 }
