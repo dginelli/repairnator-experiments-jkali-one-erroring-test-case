@@ -1,0 +1,1435 @@
+Feb 16, 2020 12:02:05 PM org.geotools.factory.FactoryRegistry scanForPlugins
+WARNING: Can't load a service for category "DummyInterface". Cause is "ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype".
+java.util.ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype
+	at java.util.ServiceLoader.fail(ServiceLoader.java:239)
+	at java.util.ServiceLoader.access$300(ServiceLoader.java:185)
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:376)
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404)
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480)
+	at org.geotools.factory.FactoryRegistry.register(FactoryRegistry.java:826)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:772)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:750)
+	at org.geotools.factory.FactoryRegistryTest.testLookupWithSameFactoryInTwoClassLoaders(FactoryRegistryTest.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Feb 16, 2020 12:02:05 PM org.geotools.factory.FactoryRegistry scanForPlugins
+WARNING: Can't load a service for category "DummyInterface". Cause is "ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype".
+java.util.ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype
+	at java.util.ServiceLoader.fail(ServiceLoader.java:239)
+	at java.util.ServiceLoader.access$300(ServiceLoader.java:185)
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:376)
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404)
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480)
+	at org.geotools.factory.FactoryRegistry.register(FactoryRegistry.java:826)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:772)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:750)
+	at org.geotools.factory.FactoryRegistryTest.testLookupWithSameFactoryInTwoClassLoaders(FactoryRegistryTest.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Feb 16, 2020 12:02:05 PM org.geotools.factory.FactoryRegistry scanForPlugins
+WARNING: Can't load a service for category "DummyInterface". Cause is "ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype".
+java.util.ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype
+	at java.util.ServiceLoader.fail(ServiceLoader.java:239)
+	at java.util.ServiceLoader.access$300(ServiceLoader.java:185)
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:376)
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404)
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480)
+	at org.geotools.factory.FactoryRegistry.register(FactoryRegistry.java:826)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:772)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:750)
+	at org.geotools.factory.FactoryRegistryTest.testLookupWithSameFactoryInTwoClassLoaders(FactoryRegistryTest.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Feb 16, 2020 12:02:05 PM org.geotools.factory.FactoryRegistry scanForPlugins
+WARNING: Can't load a service for category "DummyInterface". Cause is "ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype".
+java.util.ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype
+	at java.util.ServiceLoader.fail(ServiceLoader.java:239)
+	at java.util.ServiceLoader.access$300(ServiceLoader.java:185)
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:376)
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404)
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480)
+	at org.geotools.factory.FactoryRegistry.register(FactoryRegistry.java:826)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:772)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:750)
+	at org.geotools.factory.FactoryRegistryTest.testLookupWithSameFactoryInTwoClassLoaders(FactoryRegistryTest.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Feb 16, 2020 12:02:05 PM org.geotools.factory.FactoryRegistry scanForPlugins
+WARNING: Can't load a service for category "DummyInterface". Cause is "ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype".
+java.util.ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype
+	at java.util.ServiceLoader.fail(ServiceLoader.java:239)
+	at java.util.ServiceLoader.access$300(ServiceLoader.java:185)
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:376)
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404)
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480)
+	at org.geotools.factory.FactoryRegistry.register(FactoryRegistry.java:826)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:772)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:750)
+	at org.geotools.factory.FactoryRegistryTest.testLookupWithExtendedClasspath(FactoryRegistryTest.java:291)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Feb 16, 2020 12:02:05 PM org.geotools.factory.FactoryRegistry scanForPlugins
+WARNING: Can't load a service for category "DummyInterface". Cause is "ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype".
+java.util.ServiceConfigurationError: org.geotools.factory.DummyInterface: Provider org.geotools.factory.DummyInterfaceImpl not a subtype
+	at java.util.ServiceLoader.fail(ServiceLoader.java:239)
+	at java.util.ServiceLoader.access$300(ServiceLoader.java:185)
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:376)
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404)
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480)
+	at org.geotools.factory.FactoryRegistry.register(FactoryRegistry.java:826)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:772)
+	at org.geotools.factory.FactoryRegistry.scanForPlugins(FactoryRegistry.java:750)
+	at org.geotools.factory.FactoryRegistryTest.testLookupWithExtendedClasspath(FactoryRegistryTest.java:291)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Feb 16, 2020 12:02:07 PM org.geotools.util.SoftValueHashMapTest getRandom
+INFO: Using Random Seed: 1582245642231
+Feb 16, 2020 12:02:07 PM org.geotools.util.SoftValueHashMapTest getRandom
+INFO: Using Random Seed: 1583111061519
+Feb 16, 2020 12:02:07 PM org.geotools.util.SoftValueHashMapTest getRandom
+INFO: Using Random Seed: 1582242545888
+Feb 16, 2020 12:02:07 PM org.geotools.util.SoftValueHashMapTest getRandom
+INFO: Using Random Seed: 1582513750789
+Feb 16, 2020 12:02:10 PM java.util.prefs.FileSystemPreferences$1 run
+WARNING: Couldn't create user preferences directory. User preferences are unusable.
+Feb 16, 2020 12:02:10 PM java.util.prefs.FileSystemPreferences$1 run
+WARNING: java.io.IOException: No such file or directory
+Feb 16, 2020 12:02:11 PM org.geotools.referencing.operation.projection.Sinusoidal transform
+WARNING: Possible use of "Sinusoidal" projection outside its valid area.
+Longitude 0°00.0'E is out of range (±180°).
+Feb 16, 2020 12:02:12 PM org.geotools.referencing.factory.gridshift.NTv2GridShiftFactory loadNTv2Grid
+SEVERE: Input file is not an NTv2 grid shift file
+java.lang.IllegalArgumentException: Input file is not an NTv2 grid shift file
+	at au.com.objectix.jgridshift.GridShiftFile.loadGridShiftFile(GridShiftFile.java:107)
+	at org.geotools.referencing.factory.gridshift.NTv2GridShiftFactory.loadNTv2Grid(NTv2GridShiftFactory.java:202)
+	at org.geotools.referencing.factory.gridshift.NTv2GridShiftFactory.createNTv2Grid(NTv2GridShiftFactory.java:117)
+	at org.geotools.referencing.factory.gridshift.NTv2GridShiftFactoryTest.testCreateNTv2Grid(NTv2GridShiftFactoryTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Feb 16, 2020 12:02:12 PM org.geotools.referencing.factory.gridshift.NTv2GridShiftFactory isNTv2GridFileValid
+WARNING: Input file is not an NTv2 grid shift file
+java.lang.IllegalArgumentException: Input file is not an NTv2 grid shift file
+	at au.com.objectix.jgridshift.GridShiftFile.loadGridShiftFile(GridShiftFile.java:183)
+	at org.geotools.referencing.factory.gridshift.NTv2GridShiftFactory.isNTv2GridFileValid(NTv2GridShiftFactory.java:156)
+	at org.geotools.referencing.factory.gridshift.NTv2GridShiftFactory.isNTv2Grid(NTv2GridShiftFactory.java:93)
+	at org.geotools.referencing.factory.gridshift.NTv2GridShiftFactoryTest.testIsNTv2GridAvailable(NTv2GridShiftFactoryTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Feb 16, 2020 12:02:12 PM org.geotools.referencing.operation.projection.GeostationarySatellite$Spherical transform
+WARNING: Possible use of "GEOS" projection outside its valid area.
+Longitude 216°19.2'W is out of range (±180°).
+Feb 16, 2020 12:02:12 PM org.geotools.referencing.operation.projection.GeostationarySatellite$Ellipsoidal transform
+WARNING: Possible use of "GEOS" projection outside its valid area.
+Longitude 216°18.0'W is out of range (±180°).
+Feb 16, 2020 12:02:20 PM java.util.prefs.FileSystemPreferences$1 run
+WARNING: Couldn't create user preferences directory. User preferences are unusable.
+Feb 16, 2020 12:02:20 PM java.util.prefs.FileSystemPreferences$1 run
+WARNING: java.io.IOException: No such file or directory
+Feb 16, 2020 12:02:24 PM org.geotools.referencing.factory.DeferredAuthorityFactory disposeBackingStore
+INFO: Disposing class org.geotools.referencing.factory.epsg.ThreadedHsqlEpsgFactory backing store
+Feb 16, 2020 12:02:38 PM org.geotools.referencing.factory.DeferredAuthorityFactory disposeBackingStore
+INFO: Disposing class org.geotools.referencing.factory.epsg.ThreadedHsqlEpsgFactory backing store
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2020-02-16T12:03:02.716+0100  WARNING  Failed to parse the specified SRS http://www.epsg.com
+2020-02-16T12:03:02.724+0100  WARNING  Failed to parse the specified SRS http://www.epsg.com
+2020-02-16T12:03:03.517+0100  WARNING  The setFallbackValue is not supported by this function.Use a second argument when calling the function to provide a default value.
+2020-02-16T12:03:03.517+0100  WARNING  The setFallbackValue is not supported by this function.Use a second argument when calling the function to provide a default value.
+2020-02-16T12:03:03.886+0100  WARNING  Couldn't create user preferences directory. User preferences are unusable.
+2020-02-16T12:03:03.886+0100  WARNING  java.io.IOException: No such file or directory
+2020-02-16T12:03:04.255+0100  INFO  Number of classes (5) is equal to number of data points (5) unique classification returned
+2020-02-16T12:03:04.687+0100  WARNING  Too many post stack items after run: 2
+2020-02-16T12:03:04.687+0100  WARNING  Too many post stack items after run: 2
+2020-02-16T12:03:04.692+0100  WARNING  Too many pre stack items after run: 2
+2020-02-16T12:03:04.692+0100  WARNING  Too many pre stack items after run: 2
+2020-02-16T12:03:04.693+0100  WARNING  Too many post stack items after run: 2
+2020-02-16T12:03:04.693+0100  WARNING  Too many post stack items after run: 2
+2020-02-16T12:03:05.575+0100  WARNING  Possible use of "Popular Visualisation Pseudo Mercator" projection outside its valid area.
+Longitude 190°00.0'E is out of range (±180°).
+2020-02-16T12:03:05.732+0100  WARNING  Possible use of "Mercator_1SP" projection outside its valid area.
+Longitude 200°00.0'W is out of range (±180°).
+2020-02-16T12:03:05.751+0100  WARNING  Possible use of "Mercator_1SP (Inverse transform)" projection outside its valid area.
+Longitude 190°00.0'E is out of range (±180°).
+2020-02-16T12:03:05.818+0100  WARNING  Possible use of "Mercator_1SP" projection outside its valid area.
+Longitude 330°00.0'E is out of range (±180°).
+[Fatal Error] :1:1: Premature end of file.
+2020-02-16T12:03:06.064+0100  WARNING  could not process <xml> content encoding
+2020-02-16T12:03:06.073+0100  WARNING  returning empty icon
+2020-02-16T12:03:06.124+0100  WARNING  could not parse graphic inline content: PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg==
+java.io.IOException: invalid image content
+	at org.geotools.styling.SLDParser.parseIcon(SLDParser.java:576)
+	at org.geotools.styling.SLDParser.parseExternalGraphic(SLDParser.java:1829)
+	at org.geotools.styling.SLDParser.parseGraphic(SLDParser.java:1687)
+	at org.geotools.styling.SLDParser.parseFill(SLDParser.java:2076)
+	at org.geotools.styling.SLDParser.parsePolygonSymbolizer(SLDParser.java:1110)
+	at org.geotools.styling.SLDParser.parseRule(SLDParser.java:934)
+	at org.geotools.styling.SLDParser.parseFeatureTypeStyle(SLDParser.java:841)
+	at org.geotools.styling.SLDParser.parseStyle(SLDParser.java:797)
+	at org.geotools.styling.SLDParser.readDOM(SLDParser.java:384)
+	at org.geotools.styling.SLDParser.readXML(SLDParser.java:351)
+	at org.geotools.styling.SLDStyleTest.getGraphic(SLDStyleTest.java:938)
+	at org.geotools.styling.SLDStyleTest.testInvalidInlineContent(SLDStyleTest.java:912)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2020-02-16T12:03:06.124+0100  WARNING  returning empty icon
+2020-02-16T12:03:06.125+0100  WARNING  FeatureTypeStyle with typename 'feature' - did you mean to say 'Feature' (with a capital F) for the 'generic' FeatureType
+2020-02-16T12:03:06.647+0100  WARNING  Failed to parse the specified SRS 4326
+2020-02-16T12:03:06.647+0100  WARNING  Failed to parse the specified SRS 4326
+2020-02-16T12:03:06.647+0100  WARNING  Failed to parse the specified SRS 4326
+2020-02-16T12:03:06.647+0100  WARNING  Failed to parse the specified SRS 4326
+2020-02-16T12:03:06.647+0100  WARNING  Failed to parse the specified SRS 4326
+2020-02-16T12:03:06.647+0100  WARNING  Failed to parse the specified SRS 4326
+ERROR:  ''
+ERROR:  ''
+ERROR:  ''
+ate System....7: 
+Transverse_Mercator : semi_major         = 6377563.396
+                      semi_minor         = 6356256.91 
+                      central_meridian   = 49.0       
+                      latitude_of_origin = -2.0       
+                      scale_factor       = 1.0        
+                      false_easting      = 400000.0   
+                      false_northing     = -100000.0  
+
+
+create Coodinate Reference System....8: 
+CartesianCS["Cartesian", 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH]]
+
+create Coodinate System....9: 
+PROJCS["Great_Britian_National_Grid", 
+  GEOGCS["Airy1830", 
+    DATUM["Airy1830", 
+      SPHEROID["Airy1830", 6377563.396, 299.3249753150345]], 
+    PRIMEM["Greenwich", 0.0], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Longitude", EAST], 
+    AXIS["Latitude", NORTH]], 
+  PROJECTION["Transverse_Mercator"], 
+  PARAMETER["central_meridian", 49.0], 
+  PARAMETER["latitude_of_origin", -2.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 400000.0], 
+  PARAMETER["false_northing", -100000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH]]
+
+Testing classification names
+----------------------------
+Equidistant_Cylindrical
+Equidistant Cylindrical (Spherical)
+Mercator_2SP
+Winkel_Tripel
+Mollweide
+Aitoff
+GEOS
+World_Van_der_Grinten_I
+Sinusoidal
+Popular Visualisation Pseudo Mercator
+Lambert_Azimuthal_Equal_Area
+New_Zealand_Map_Grid
+Gnomonic
+Azimuthal_Equidistant
+Cylindrical_Equal_Area
+Behrmann
+Lambert Cylindrical Equal Area (Spherical)
+Stereographic_North_Pole
+Stereographic_South_Pole
+Orthographic
+Mercator_1SP
+Transverse_Mercator
+Transverse Mercator (South Orientated)
+Stereographic
+Oblique_Stereographic
+MeteosatSG
+Polar_Stereographic
+Rotated_Pole
+Cassini_Soldner
+General_Oblique
+Polyconic
+Robinson
+Eckert_IV
+Wagner_IV
+Wagner_V
+Oblique_Mercator
+Hotine_Oblique_Mercator
+Polar Stereographic (variant B)
+Krovak
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec - in org.geotools.referencing.FactoriesTest
+Running org.geotools.referencing.GeodeticCalculatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.3 sec - in org.geotools.referencing.GeodeticCalculatorTest
+Running org.geotools.referencing.IdentifiedObjectTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.geotools.referencing.IdentifiedObjectTest
+Running org.geotools.referencing.PredefinedObjectsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in org.geotools.referencing.PredefinedObjectsTest
+Running org.geotools.referencing.ScriptTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.616 sec - in org.geotools.referencing.ScriptTest
+Running org.geotools.referencing.cs.AbstractCSTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.geotools.referencing.cs.AbstractCSTest
+Running org.geotools.referencing.cs.ComparableAxisWrapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.referencing.cs.ComparableAxisWrapperTest
+Running org.geotools.referencing.cs.DefaultCartesianCSTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.referencing.cs.DefaultCartesianCSTest
+Running org.geotools.referencing.cs.DefaultCoordinateSystemAxisTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.geotools.referencing.cs.DefaultCoordinateSystemAxisTest
+Running org.geotools.referencing.cs.DirectionAlongMeridianTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.referencing.cs.DirectionAlongMeridianTest
+Running org.geotools.referencing.datum.DefaultTemporalDatumTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.geotools.referencing.datum.DefaultTemporalDatumTest
+Running org.geotools.referencing.factory.AllAuthoritiesFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in org.geotools.referencing.factory.AllAuthoritiesFactoryTest
+Running org.geotools.referencing.factory.AuthorityFactoryProxyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.referencing.factory.AuthorityFactoryProxyTest
+Running org.geotools.referencing.factory.HTTP_AuthorityFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.referencing.factory.HTTP_AuthorityFactoryTest
+Running org.geotools.referencing.factory.HTTP_URI_AuthorityFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.geotools.referencing.factory.HTTP_URI_AuthorityFactoryTest
+Running org.geotools.referencing.factory.HTTP_URI_ParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.referencing.factory.HTTP_URI_ParserTest
+Running org.geotools.referencing.factory.URN_AuthorityFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.geotools.referencing.factory.URN_AuthorityFactoryTest
+Running org.geotools.referencing.factory.URN_ParserTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.referencing.factory.URN_ParserTest
+Running org.geotools.referencing.factory.epsg.CartesianAuthorityFactoryTest
+LOCAL_CS["Wildcard 2D cartesian plane in metric unit", 
+  LOCAL_DATUM["Unknown", 0], 
+  UNIT["m", 1.0], 
+  AXIS["x", EAST], 
+  AXIS["y", NORTH], 
+  AUTHORITY["EPSG","404000"]]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.geotools.referencing.factory.epsg.CartesianAuthorityFactoryTest
+Running org.geotools.referencing.factory.epsg.CoordinateOperationFactoryUsingWKTTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.geotools.referencing.factory.epsg.CoordinateOperationFactoryUsingWKTTest
+Running org.geotools.referencing.factory.epsg.FactoryUsingWktTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.referencing.factory.epsg.FactoryUsingWktTest
+Running org.geotools.referencing.factory.epsg.FallbackAuthorityFactoryTest
+--> FactoryEPSGExtra
+--> FactoryUsingWKT
+--> CartesianAuthorityFactory
+--> URN_AuthorityFactory
+--> HTTP_AuthorityFactory
+--> AutoCRSFactory
+--> WebCRSFactory
+--> HTTP_URI_AuthorityFactory
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in org.geotools.referencing.factory.epsg.FallbackAuthorityFactoryTest
+Running org.geotools.referencing.factory.gridshift.NTv2GridShiftFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in org.geotools.referencing.factory.gridshift.NTv2GridShiftFactoryTest
+Running org.geotools.referencing.factory.wms.AUTOTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.geotools.referencing.factory.wms.AUTOTest
+Running org.geotools.referencing.factory.wms.CRSTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.geotools.referencing.factory.wms.CRSTest
+Running org.geotools.referencing.operation.CoordinateOperationFactoryTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in org.geotools.referencing.operation.CoordinateOperationFactoryTest
+Running org.geotools.referencing.operation.LinearConversionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.geotools.referencing.operation.LinearConversionTest
+Running org.geotools.referencing.operation.Transform3DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.referencing.operation.Transform3DTest
+Running org.geotools.referencing.operation.builder.BursaWolfTransformBuilderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.geotools.referencing.operation.builder.BursaWolfTransformBuilderTest
+Running org.geotools.referencing.operation.builder.MathTransformBuilderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.geotools.referencing.operation.builder.MathTransformBuilderTest
+Running org.geotools.referencing.operation.builder.TriangulationFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.referencing.operation.builder.TriangulationFactoryTest
+Running org.geotools.referencing.operation.matrix.GeneralMatrixTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.geotools.referencing.operation.matrix.GeneralMatrixTest
+Running org.geotools.referencing.operation.matrix.MatrixTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.geotools.referencing.operation.matrix.MatrixTest
+Running org.geotools.referencing.operation.matrix.XAffineTransformTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.referencing.operation.matrix.XAffineTransformTest
+Running org.geotools.referencing.operation.projection.AzimuthalEquidistantTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.referencing.operation.projection.AzimuthalEquidistantTest
+Running org.geotools.referencing.operation.projection.CassiniSoldnerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.referencing.operation.projection.CassiniSoldnerTest
+Running org.geotools.referencing.operation.projection.DirectCreationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.referencing.operation.projection.DirectCreationTest
+Running org.geotools.referencing.operation.projection.GeostationarySatelliteTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.geotools.referencing.operation.projection.GeostationarySatelliteTest
+Running org.geotools.referencing.operation.projection.MapProjectionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.referencing.operation.projection.MapProjectionTest
+Running org.geotools.referencing.operation.projection.MollweideProviderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.referencing.operation.projection.MollweideProviderTest
+Running org.geotools.referencing.operation.projection.NewZealandMapGridTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.referencing.operation.projection.NewZealandMapGridTest
+Running org.geotools.referencing.operation.projection.SouthOrientedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.geotools.referencing.operation.projection.SouthOrientedTest
+Running org.geotools.referencing.operation.transform.GeocentricTransformTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.geotools.referencing.operation.transform.GeocentricTransformTest
+Running org.geotools.referencing.operation.transform.GeocentricTranslationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.referencing.operation.transform.GeocentricTranslationTest
+Running org.geotools.referencing.operation.transform.LocalizationGridTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.geotools.referencing.operation.transform.LocalizationGridTest
+Running org.geotools.referencing.operation.transform.MathTransformTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.328 sec - in org.geotools.referencing.operation.transform.MathTransformTest
+Running org.geotools.referencing.operation.transform.MolodenskiTransformTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.referencing.operation.transform.MolodenskiTransformTest
+Running org.geotools.referencing.operation.transform.NADCONGridShiftFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.referencing.operation.transform.NADCONGridShiftFactoryTest
+Running org.geotools.referencing.operation.transform.NADCONTransformTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.referencing.operation.transform.NADCONTransformTest
+Running org.geotools.referencing.operation.transform.NTv2TransformTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.geotools.referencing.operation.transform.NTv2TransformTest
+Running org.geotools.referencing.operation.transform.PassthroughTransformTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.referencing.operation.transform.PassthroughTransformTest
+Running org.geotools.referencing.operation.transform.ProjectiveTransform2DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.referencing.operation.transform.ProjectiveTransform2DTest
+Running org.geotools.referencing.operation.transform.SimilarityTransformProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.referencing.operation.transform.SimilarityTransformProviderTest
+Running org.geotools.referencing.operation.transform.WarpTransformTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.geotools.referencing.operation.transform.WarpTransformTest
+Running org.geotools.referencing.wkt.GeoToolsUnitFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.referencing.wkt.GeoToolsUnitFormatTest
+Running org.geotools.referencing.wkt.ParserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in org.geotools.referencing.wkt.ParserTest
+Running org.geotools.referencing.wkt.SymbolsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.referencing.wkt.SymbolsTest
+
+Results :
+
+Tests run: 305, Failures: 0, Errors: 0, Skipped: 5
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building API interfaces 18-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gt-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gt-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/modules/library/api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gt-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gt-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/modules/library/api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gt-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ gt-api ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/modules/library/api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geotools.feature.NameImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec - in org.geotools.feature.NameImplTest
+Running org.geotools.geometry.jts.CircularArcTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in org.geotools.geometry.jts.CircularArcTest
+Running org.geotools.geometry.jts.CurvedGeometryTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in org.geotools.geometry.jts.CurvedGeometryTest
+Running org.geotools.geometry.jts.GeometriesTest
+   get (by object)
+   getName and getSimpleName
+   getSQLType and getForSQLType
+   getBinding
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.geotools.geometry.jts.GeometriesTest
+Running org.geotools.geometry.jts.JTSSmoothTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in org.geotools.geometry.jts.JTSSmoothTest
+Running org.geotools.geometry.jts.JTSTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.595 sec - in org.geotools.geometry.jts.JTSTest
+Running org.geotools.geometry.jts.ReferencedEnvelope3DTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.geotools.geometry.jts.ReferencedEnvelope3DTest
+Running org.geotools.geometry.jts.ReferencedEnvelopeTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.geotools.geometry.jts.ReferencedEnvelopeTest
+
+Results :
+
+Tests run: 70, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Geotools plugins 18-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ plugin ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building EPSG Authority Service using HSQL database 18-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gt-epsg-hsql ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gt-epsg-hsql ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gt-epsg-hsql ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gt-epsg-hsql ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gt-epsg-hsql ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ gt-epsg-hsql ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/modules/plugin/epsg-hsql/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geotools.referencing.CrsCreationDeadlockTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.876 sec - in org.geotools.referencing.CrsCreationDeadlockTest
+Running org.geotools.referencing.EsriLookupTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.94 sec - in org.geotools.referencing.EsriLookupTest
+Running org.geotools.referencing.HSQLCRSTest
+Extent:
+  Geographic Elements:
+    South Bound Latitude: 37
+    North Bound Latitude: 82.4
+    West Bound Longitude: 0
+    East Bound Longitude: 6
+    Inclusion: true
+  Description: Europe between 0°E and 6°E: Andorra; Belgium - onshore and offshore; Denmark - offshore; Germany - offshore; Jan Mayen - offshore; Norway including Svalbard - onshore and offshore; Spain - onshore and offshore.
+
+GeneralEnvelope[(-844.5939229645916, -90.0), (114219.23554351699, 90.0)]
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.574 sec - in org.geotools.referencing.HSQLCRSTest
+Running org.geotools.referencing.factory.OrderedAxisAuthorityFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in org.geotools.referencing.factory.OrderedAxisAuthorityFactoryTest
+Running org.geotools.referencing.factory.URN_EPSG_Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.geotools.referencing.factory.URN_EPSG_Test
+Running org.geotools.referencing.factory.epsg.DefaultFactoryTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.781 sec - in org.geotools.referencing.factory.epsg.DefaultFactoryTest
+Running org.geotools.referencing.factory.epsg.LongitudeFirstFactoryOverrideTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in org.geotools.referencing.factory.epsg.LongitudeFirstFactoryOverrideTest
+Running org.geotools.referencing.factory.epsg.OperationFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in org.geotools.referencing.factory.epsg.OperationFactoryTest
+Running org.geotools.referencing.factory.epsg.ThreadedHsqlEpsgFactoryTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.249 sec - in org.geotools.referencing.factory.epsg.ThreadedHsqlEpsgFactoryTest
+Running org.geotools.referencing.factory.epsg.ThreadedTransformTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.132 sec - in org.geotools.referencing.factory.epsg.ThreadedTransformTest
+
+Results :
+
+Tests run: 114, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Main module 18-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gt-main ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gt-main ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 15 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gt-main ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 763 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/modules/library/main/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gt-main ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 105 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gt-main ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ gt-main ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/modules/library/main/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geotools.data.ArrayFeatureReaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.387 sec - in org.geotools.data.ArrayFeatureReaderTest
+Running org.geotools.data.DataAccessFinderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.geotools.data.DataAccessFinderTest
+Running org.geotools.data.DataUtilitiesTest
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.03 sec - in org.geotools.data.DataUtilitiesTest
+Running org.geotools.data.DefaultFeatureResultsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in org.geotools.data.DefaultFeatureResultsTest
+Running org.geotools.data.DiffWriterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.geotools.data.DiffWriterTest
+Running org.geotools.data.FeatureLockTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.geotools.data.FeatureLockTest
+Running org.geotools.data.FilteringFeatureReaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.geotools.data.FilteringFeatureReaderTest
+Running org.geotools.data.MapInfoFileReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.geotools.data.MapInfoFileReaderTest
+Running org.geotools.data.QueryTest
+testProperties
+testToString
+testGetVersion
+testPropertyNames
+testRetrieveAllProperties
+testMaxFeatures
+testGetFilter
+testGetHandle
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.geotools.data.QueryTest
+Running org.geotools.data.WorldFileWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.data.WorldFileWriterTest
+Running org.geotools.data.collection.ListFeatureCollectionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.geotools.data.collection.ListFeatureCollectionTest
+Running org.geotools.data.collection.SortedFeatureCollectionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.geotools.data.collection.SortedFeatureCollectionTest
+Running org.geotools.data.collection.SpatialIndexFeatureCollectionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in org.geotools.data.collection.SpatialIndexFeatureCollectionTest
+Running org.geotools.data.collection.TreeSetFeatureCollectionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.geotools.data.collection.TreeSetFeatureCollectionTest
+Running org.geotools.data.crs.ForceCoordinateFeatureResultsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.geotools.data.crs.ForceCoordinateFeatureResultsTest
+Running org.geotools.data.crs.ForceCoordinateSystemFeatureIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.data.crs.ForceCoordinateSystemFeatureIteratorTest
+Running org.geotools.data.crs.ForceCoordinateSystemFeatureReaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.geotools.data.crs.ForceCoordinateSystemFeatureReaderTest
+Running org.geotools.data.crs.ReprojectFeatureReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.geotools.data.crs.ReprojectFeatureReaderTest
+Running org.geotools.data.crs.ReprojectFeatureResultsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.data.crs.ReprojectFeatureResultsTest
+Running org.geotools.data.ows.SimpleHttpClientTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.58 sec - in org.geotools.data.ows.SimpleHttpClientTest
+Running org.geotools.data.sort.SortedReaderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec - in org.geotools.data.sort.SortedReaderTest
+Running org.geotools.data.store.FilteringSimpleFeatureCollectionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.geotools.data.store.FilteringSimpleFeatureCollectionTest
+Running org.geotools.data.store.MaxFeaturesFeatureCollectionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.geotools.data.store.MaxFeaturesFeatureCollectionTest
+Running org.geotools.data.store.ReTypingFeatureCollectionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.geotools.data.store.ReTypingFeatureCollectionTest
+Running org.geotools.data.store.ReprojectFeatureResultsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.geotools.data.store.ReprojectFeatureResultsTest
+Running org.geotools.data.store.ReprojectingFeatureCollectionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.501 sec - in org.geotools.data.store.ReprojectingFeatureCollectionTest
+Running org.geotools.data.view.DefaultViewTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.geotools.data.view.DefaultViewTest
+Running org.geotools.factory.CommonFactoryFinderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.geotools.factory.CommonFactoryFinderTest
+Running org.geotools.feature.AttributeBuilderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.geotools.feature.AttributeBuilderTest
+Running org.geotools.feature.ComplexFeatureBuilderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.geotools.feature.ComplexFeatureBuilderTest
+Running org.geotools.feature.DateUtilTest
+01:15:00
+01:15:00
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.geotools.feature.DateUtilTest
+Running org.geotools.feature.FeatureCollectionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.feature.FeatureCollectionTest
+Running org.geotools.feature.FeatureFlatTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.geotools.feature.FeatureFlatTest
+Running org.geotools.feature.FeatureReaderIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.feature.FeatureReaderIteratorTest
+Running org.geotools.feature.FeatureTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in org.geotools.feature.FeatureTypeTest
+Running org.geotools.feature.FeatureTypesTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.feature.FeatureTypesTest
+Running org.geotools.feature.collection.MaxSimpleFeatureCollectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.feature.collection.MaxSimpleFeatureCollectionTest
+Running org.geotools.feature.collection.SubFeatureCollectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.feature.collection.SubFeatureCollectionTest
+Running org.geotools.feature.simple.SimpleFeatureBuilderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.feature.simple.SimpleFeatureBuilderTest
+Running org.geotools.feature.simple.SimpleFeatureImplTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.geotools.feature.simple.SimpleFeatureImplTest
+Running org.geotools.feature.simple.SimpleFeatureTypeImplTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.geotools.feature.simple.SimpleFeatureTypeImplTest
+Running org.geotools.feature.simple.SimpleTypeBuilderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.feature.simple.SimpleTypeBuilderTest
+Running org.geotools.feature.type.TypesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.feature.type.TypesTest
+Running org.geotools.feature.visitor.AverageVisitorTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.geotools.feature.visitor.AverageVisitorTest
+Running org.geotools.feature.visitor.CalcResultTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.feature.visitor.CalcResultTest
+Running org.geotools.feature.visitor.GroupByVisitorTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in org.geotools.feature.visitor.GroupByVisitorTest
+Running org.geotools.feature.visitor.MedianVisitorTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.geotools.feature.visitor.MedianVisitorTest
+Running org.geotools.feature.visitor.SumVisitorTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.geotools.feature.visitor.SumVisitorTest
+Running org.geotools.feature.visitor.VisitorCalculationTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec - in org.geotools.feature.visitor.VisitorCalculationTest
+Running org.geotools.filter.AreaFunctionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.geotools.filter.AreaFunctionTest
+Running org.geotools.filter.AttributeExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.filter.AttributeExpressionTest
+Running org.geotools.filter.AttributeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.AttributeTest
+Running org.geotools.filter.BetweenTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.filter.BetweenTest
+Running org.geotools.filter.CapabilitiesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.geotools.filter.CapabilitiesTest
+Running org.geotools.filter.DOMParserTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 sec - in org.geotools.filter.DOMParserTest
+Running org.geotools.filter.ExpressionTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.geotools.filter.ExpressionTest
+Running org.geotools.filter.FilterAttributeExtractorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.FilterAttributeExtractorTest
+Running org.geotools.filter.FilterCapabilitiesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.filter.FilterCapabilitiesTest
+Running org.geotools.filter.FilterEqualsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.geotools.filter.FilterEqualsTest
+Running org.geotools.filter.FilterFactoryBeforeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.filter.FilterFactoryBeforeTest
+Running org.geotools.filter.FilterFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec - in org.geotools.filter.FilterFilterTest
+Running org.geotools.filter.FilterTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.geotools.filter.FilterTest
+Running org.geotools.filter.FilterTransformerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec - in org.geotools.filter.FilterTransformerTest
+Running org.geotools.filter.FiltersTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.geotools.filter.FiltersTest
+Running org.geotools.filter.FunctionExpressionImplTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.geotools.filter.FunctionExpressionImplTest
+Running org.geotools.filter.FunctionFinderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.FunctionFinderTest
+Running org.geotools.filter.FunctionImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.filter.FunctionImplTest
+Running org.geotools.filter.GeometryFilterVisitorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.geotools.filter.GeometryFilterVisitorTest
+Running org.geotools.filter.IsEqualsToImplTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.IsEqualsToImplTest
+Running org.geotools.filter.LiteralTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.LiteralTest
+Running org.geotools.filter.MathTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.MathTest
+Running org.geotools.filter.MultiFilterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.geotools.filter.MultiFilterTest
+Running org.geotools.filter.ParserTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in org.geotools.filter.ParserTest
+Running org.geotools.filter.expression.AddImplTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.expression.AddImplTest
+Running org.geotools.filter.expression.SimpleFeaturePropertyAccessorFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.filter.expression.SimpleFeaturePropertyAccessorFactoryTest
+Running org.geotools.filter.expression.SimpleFeaturePropertyAccessorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.filter.expression.SimpleFeaturePropertyAccessorTest
+Running org.geotools.filter.function.CategorizeFunctionTest
+   testSucceedingThresholds
+   testPrecedingThresholds
+   testFindCategorizeFunction
+   testNoThresholds
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.017 sec - in org.geotools.filter.function.CategorizeFunctionTest
+Running org.geotools.filter.function.ClassificationFunctionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.geotools.filter.function.ClassificationFunctionTest
+Running org.geotools.filter.function.Collection_FunctionsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.geotools.filter.function.Collection_FunctionsTest
+Running org.geotools.filter.function.DateFunctionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.filter.function.DateFunctionTest
+Running org.geotools.filter.function.EnvFunctionTest
+   literal default value
+   clearLocalValues
+   test case-insensitive global lookup
+   setLocalValue
+   setGlobalValue
+   getArgCount
+   test case-insensitive local lookup
+   non-literal default value
+   clearGlobalValues
+   setGlobalValues
+   setLocalValues
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.geotools.filter.function.EnvFunctionTest
+Running org.geotools.filter.function.EqualIntervalFunctionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.geotools.filter.function.EqualIntervalFunctionTest
+Running org.geotools.filter.function.FilterFunctionPropertyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in org.geotools.filter.function.FilterFunctionPropertyTest
+Running org.geotools.filter.function.FilterFunction_disjoint3DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.function.FilterFunction_disjoint3DTest
+Running org.geotools.filter.function.FilterFunction_distance3DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.function.FilterFunction_distance3DTest
+Running org.geotools.filter.function.FilterFunction_intersects3DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.filter.function.FilterFunction_intersects3DTest
+Running org.geotools.filter.function.FilterFunction_isWithinDistance3DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.function.FilterFunction_isWithinDistance3DTest
+Running org.geotools.filter.function.FilterFunction_listMultiplyTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.geotools.filter.function.FilterFunction_listMultiplyTest
+Running org.geotools.filter.function.FilterFunction_minimumCircleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.geotools.filter.function.FilterFunction_minimumCircleTest
+Running org.geotools.filter.function.FilterFunction_minimumDiameterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.filter.function.FilterFunction_minimumDiameterTest
+Running org.geotools.filter.function.FilterFunction_minimumRectangleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.filter.function.FilterFunction_minimumRectangleTest
+Running org.geotools.filter.function.FilterFunction_octagonalEnvelopeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.geotools.filter.function.FilterFunction_octagonalEnvelopeTest
+Running org.geotools.filter.function.FilterFunction_offsetTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.function.FilterFunction_offsetTest
+Running org.geotools.filter.function.FilterFunction_setCRSTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.filter.function.FilterFunction_setCRSTest
+Running org.geotools.filter.function.FunctionExpressionImplTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.function.FunctionExpressionImplTest
+Running org.geotools.filter.function.FunctionFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 sec - in org.geotools.filter.function.FunctionFactoryTest
+Running org.geotools.filter.function.GeometryFunctionFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.geotools.filter.function.GeometryFunctionFilterTest
+Running org.geotools.filter.function.GeometryFunctionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.geotools.filter.function.GeometryFunctionTest
+Running org.geotools.filter.function.IdFunctionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.geotools.filter.function.IdFunctionTest
+Running org.geotools.filter.function.InFunctionTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in org.geotools.filter.function.InFunctionTest
+Running org.geotools.filter.function.InterpolateFunctionTest
+   testCubicNumericInterpolation
+   testLinearNumericInterpolation
+   testFindInterpolateFunction
+   testRasterData
+   testCosineNumericInterpolation
+   testNoModeParameter
+   out of range color values
+   testNoMethodParameter
+   testLinearColorInterpolation
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.geotools.filter.function.InterpolateFunctionTest
+Running org.geotools.filter.function.JenksFunctionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.geotools.filter.function.JenksFunctionTest
+Running org.geotools.filter.function.NumberFormatTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.geotools.filter.function.NumberFormatTest
+Running org.geotools.filter.function.QuantileFunctionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.geotools.filter.function.QuantileFunctionTest
+Running org.geotools.filter.function.RecodeFunctionTest
+   testFindFunction
+   testRecodeUndefinedValueReturnsNull
+   testIntToColorLookup
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.geotools.filter.function.RecodeFunctionTest
+Running org.geotools.filter.function.StandardDeviationFunctionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.geotools.filter.function.StandardDeviationFunctionTest
+Running org.geotools.filter.function.StaticGeometryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.filter.function.StaticGeometryTest
+Running org.geotools.filter.function.StringFunctionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.filter.function.StringFunctionTest
+Running org.geotools.filter.function.StringTemplateFunctionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.function.StringTemplateFunctionTest
+Running org.geotools.filter.function.UniqueIntervalFunctionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.geotools.filter.function.UniqueIntervalFunctionTest
+Running org.geotools.filter.function.color.ColorFunctionsTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.filter.function.color.ColorFunctionsTest
+Running org.geotools.filter.function.color.HSLColorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.function.color.HSLColorTest
+Running org.geotools.filter.function.math.FilterFunction_Test
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.geotools.filter.function.math.FilterFunction_Test
+Running org.geotools.filter.function.math.ModuloFunctionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.function.math.ModuloFunctionTest
+Running org.geotools.filter.function.string.StringFunctionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.function.string.StringFunctionsTest
+Running org.geotools.filter.function.string.StringInFunctionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.filter.function.string.StringInFunctionTest
+Running org.geotools.filter.function.string.URLEncodeFunctionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.function.string.URLEncodeFunctionTest
+Running org.geotools.filter.spatial.BBOX3DImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.spatial.BBOX3DImplTest
+Running org.geotools.filter.spatial.BBOXImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.geotools.filter.spatial.BBOXImplTest
+Running org.geotools.filter.spatial.DefaultCRSFilterVisitorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.filter.spatial.DefaultCRSFilterVisitorTest
+Running org.geotools.filter.spatial.ReprojectingFilterVisitorTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.geotools.filter.spatial.ReprojectingFilterVisitorTest
+Running org.geotools.filter.temporal.AfterImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.geotools.filter.temporal.AfterImplTest
+Running org.geotools.filter.temporal.BeforeImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.geotools.filter.temporal.BeforeImplTest
+Running org.geotools.filter.temporal.BeginsImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.temporal.BeginsImplTest
+Running org.geotools.filter.temporal.BegunByImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.geotools.filter.temporal.BegunByImplTest
+Running org.geotools.filter.temporal.DuringImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.filter.temporal.DuringImplTest
+Running org.geotools.filter.temporal.EndedByImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.temporal.EndedByImplTest
+Running org.geotools.filter.temporal.EndsImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.filter.temporal.EndsImplTest
+Running org.geotools.filter.temporal.MeetsImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.geotools.filter.temporal.MeetsImplTest
+Running org.geotools.filter.temporal.MetByImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.temporal.MetByImplTest
+Running org.geotools.filter.temporal.OverlappedByTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.filter.temporal.OverlappedByTest
+Running org.geotools.filter.temporal.TContainsImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.filter.temporal.TContainsImplTest
+Running org.geotools.filter.temporal.TEqualsImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.filter.temporal.TEqualsImplTest
+Running org.geotools.filter.temporal.TOverlapsImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.filter.temporal.TOverlapsImplTest
+Running org.geotools.filter.visitor.BindingFilterVisitorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.visitor.BindingFilterVisitorTest
+Running org.geotools.filter.visitor.CapabilitiesFilterSplitterFunctionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.filter.visitor.CapabilitiesFilterSplitterFunctionTest
+Running org.geotools.filter.visitor.CapabilitiesFilterSplitterSpatialTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.geotools.filter.visitor.CapabilitiesFilterSplitterSpatialTest
+Running org.geotools.filter.visitor.CapabilitiesFilterSplitterTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in org.geotools.filter.visitor.CapabilitiesFilterSplitterTest
+Running org.geotools.filter.visitor.DuplicateFilterVisitorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.geotools.filter.visitor.DuplicateFilterVisitorTest
+Running org.geotools.filter.visitor.DuplicatorFilterVisitorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.geotools.filter.visitor.DuplicatorFilterVisitorTest
+Running org.geotools.filter.visitor.ExpressionTypeVisitorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.filter.visitor.ExpressionTypeVisitorTest
+Running org.geotools.filter.visitor.ExtractBoundsFilterVisitorTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.geotools.filter.visitor.ExtractBoundsFilterVisitorTest
+Running org.geotools.filter.visitor.FilterVisitorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.geotools.filter.visitor.FilterVisitorTest
+Running org.geotools.filter.visitor.LiteralDemultiplyingFilterVisitorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.geotools.filter.visitor.LiteralDemultiplyingFilterVisitorTest
+Running org.geotools.filter.visitor.PostPreProcessFilterSplitterVisitorFunctionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.filter.visitor.PostPreProcessFilterSplitterVisitorFunctionTest
+Running org.geotools.filter.visitor.PostPreProcessFilterSplittingVisitorSpatialTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.geotools.filter.visitor.PostPreProcessFilterSplittingVisitorSpatialTest
+Running org.geotools.filter.visitor.PostPreProcessFilterSplittingVisitorTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in org.geotools.filter.visitor.PostPreProcessFilterSplittingVisitorTest
+Running org.geotools.filter.visitor.PropertyNameResolvingFilterVisitorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.filter.visitor.PropertyNameResolvingFilterVisitorTest
+Running org.geotools.filter.visitor.RangeCombinerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.visitor.RangeCombinerTest
+Running org.geotools.filter.visitor.SimplifyingFilterVisitorTest
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.geotools.filter.visitor.SimplifyingFilterVisitorTest
+Running org.geotools.filter.visitor.SpatialFilterVisitorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.filter.visitor.SpatialFilterVisitorTest
+Running org.geotools.geometry.jts.CoordinateSequenceTransformerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.geotools.geometry.jts.CoordinateSequenceTransformerTest
+Running org.geotools.geometry.jts.DecimatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.geometry.jts.DecimatorTest
+Running org.geotools.geometry.jts.GeometryBuilderTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.geometry.jts.GeometryBuilderTest
+Running org.geotools.geometry.jts.GeometryClipperTest
+7
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in org.geotools.geometry.jts.GeometryClipperTest
+Running org.geotools.geometry.jts.GeometryCollectorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.geotools.geometry.jts.GeometryCollectorTest
+Running org.geotools.geometry.jts.GeometryCoordinateSequenceTransformerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.geotools.geometry.jts.GeometryCoordinateSequenceTransformerTest
+Running org.geotools.geometry.jts.JTSTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.geotools.geometry.jts.JTSTest
+Running org.geotools.geometry.jts.LiteShapeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.geotools.geometry.jts.LiteShapeTest
+Running org.geotools.geometry.jts.OffsetCurveBuilderTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec - in org.geotools.geometry.jts.OffsetCurveBuilderTest
+Running org.geotools.geometry.jts.PointIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.geometry.jts.PointIteratorTest
+Running org.geotools.geometry.jts.TransformedShapeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.geometry.jts.TransformedShapeTest
+Running org.geotools.geometry.jts.WKTReader2Test
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.geotools.geometry.jts.WKTReader2Test
+Running org.geotools.geometry.jts.WKTWriter2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.geotools.geometry.jts.WKTWriter2Test
+Running org.geotools.geometry.jts.coordinatesequence.CoordinateSequencesTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.geometry.jts.coordinatesequence.CoordinateSequencesTest
+Running org.geotools.geometry.text.WKTParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.geotools.geometry.text.WKTParserTest
+Running org.geotools.gml.producer.CoordinateWriterTest
+<coordinates>1,1 4,4 0,4 1,1</coordinates>
+<coordinates>1,1,3 4,4,2 0,4,2 1,1,3</coordinates>
+<coordinates>1,1,0 4,4,0 0,4,0 1,1,0</coordinates>
+<coordinates>1,1,3 4,4,2 0,4,2 1,1,3</coordinates>
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.gml.producer.CoordinateWriterTest
+Running org.geotools.gml.producer.FeatureTransformerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.geotools.gml.producer.FeatureTransformerTest
+Running org.geotools.ows.ServiceExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.ows.ServiceExceptionTest
+Running org.geotools.renderer.ScreenMapTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.renderer.ScreenMapTest
+Running org.geotools.renderer.crs.ProjectionHandlerTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.384 sec - in org.geotools.renderer.crs.ProjectionHandlerTest
+Running org.geotools.styling.ContrastEnhancementImplTest
+setMethod
+getGammaValue
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.styling.ContrastEnhancementImplTest
+Running org.geotools.styling.DefaultResourceLocatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.styling.DefaultResourceLocatorTest
+Running org.geotools.styling.FeatureTypeStyleImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.geotools.styling.FeatureTypeStyleImplTest
+Running org.geotools.styling.GraphicImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.styling.GraphicImplTest
+Running org.geotools.styling.SLDParserNamespaceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.geotools.styling.SLDParserNamespaceTest
+Running org.geotools.styling.SLDParserTest
+ <ContrastEnhancement> 
+	<Logarithmic> 
+	<VendorOption name='correctionFactor'>0.1</VendorOption>
+	<VendorOption name='normalizationFactor'>10.0</VendorOption>
+	</Logarithmic> 
+	</ContrastEnhancement>
+ <ContrastEnhancement> 
+	<Exponential> 
+	<VendorOption name='correctionFactor'>0.1</VendorOption>
+	<VendorOption name='normalizationFactor'>10.0</VendorOption>
+	</Exponential> 
+	</ContrastEnhancement>
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.geotools.styling.SLDParserTest
+Running org.geotools.styling.SLDStyleTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 sec - in org.geotools.styling.SLDStyleTest
+Running org.geotools.styling.SLDTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.styling.SLDTest
+Running org.geotools.styling.SLDTransformerTest
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 sec - in org.geotools.styling.SLDTransformerTest
+Running org.geotools.styling.StyleFactoryImplTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.geotools.styling.StyleFactoryImplTest
+Running org.geotools.styling.StyleObjectTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.geotools.styling.StyleObjectTest
+Running org.geotools.styling.StyleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.styling.StyleTest
+Running org.geotools.styling.TextSymbolTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.styling.TextSymbolTest
+Running org.geotools.styling.UserLayerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.styling.UserLayerTest
+Running org.geotools.styling.XmlnsNamespaceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.geotools.styling.XmlnsNamespaceTest
+Running org.geotools.styling.visitor.DpiRescaleStyleVisitorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.geotools.styling.visitor.DpiRescaleStyleVisitorTest
+Running org.geotools.styling.visitor.DuplicatingStyleVisitorTest
+Warning  - Equal objects should return equal hashcodes
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.geotools.styling.visitor.DuplicatingStyleVisitorTest
+Running org.geotools.styling.visitor.RescaleStyleVisitorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.geotools.styling.visitor.RescaleStyleVisitorTest
+Running org.geotools.styling.visitor.UomRescaleStyleVisitorTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.27 sec - in org.geotools.styling.visitor.UomRescaleStyleVisitorTest
+Running org.geotools.temporal.object.DefaultCalendarDateTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.temporal.object.DefaultCalendarDateTest
+Running org.geotools.temporal.object.DefaultClockTimeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.temporal.object.DefaultClockTimeTest
+Running org.geotools.temporal.object.DefaultDateAndTimeTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.temporal.object.DefaultDateAndTimeTest
+Running org.geotools.temporal.object.DefaultInstantTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.temporal.object.DefaultInstantTest
+Running org.geotools.temporal.object.DefaultIntervalLengthTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.temporal.object.DefaultIntervalLengthTest
+Running org.geotools.temporal.object.DefaultOrdinalPositionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.temporal.object.DefaultOrdinalPositionTest
+Running org.geotools.temporal.object.DefaultPeriodDurationTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.temporal.object.DefaultPeriodDurationTest
+Running org.geotools.temporal.object.DefaultPeriodTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.geotools.temporal.object.DefaultPeriodTest
+Running org.geotools.temporal.object.DefaultPositionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.temporal.object.DefaultPositionTest
+Running org.geotools.temporal.object.DefaultTemporalCoordinateTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.temporal.object.DefaultTemporalCoordinateTest
+Running org.geotools.temporal.object.DefaultTemporalGeometricPrimitiveTest
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.005 sec <<< FAILURE! - in org.geotools.temporal.object.DefaultTemporalGeometricPrimitiveTest
+testLength(org.geotools.temporal.object.DefaultTemporalGeometricPrimitiveTest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.IllegalArgumentException: The temporal position of the beginning of the period must be less than (i.e. earlier than) the temporal position of the end of the period
+	at org.geotools.temporal.object.DefaultPeriod.<init>(DefaultPeriod.java:54)
+	at org.geotools.temporal.object.DefaultTemporalGeometricPrimitiveTest.testLength(DefaultTemporalGeometricPrimitiveTest.java:106)
+
+Running org.geotools.temporal.object.DefaultTemporalPositionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.temporal.object.DefaultTemporalPositionTest
+Running org.geotools.temporal.object.DefaultTemporalPrimitiveTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.geotools.temporal.object.DefaultTemporalPrimitiveTest
+Running org.geotools.temporal.reference.DefaultCalendarEraTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.temporal.reference.DefaultCalendarEraTest
+Running org.geotools.temporal.reference.DefaultCalendarTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.temporal.reference.DefaultCalendarTest
+Running org.geotools.temporal.reference.DefaultClockTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.geotools.temporal.reference.DefaultClockTest
+Running org.geotools.temporal.reference.DefaultOrdinalEraTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.geotools.temporal.reference.DefaultOrdinalEraTest
+Running org.geotools.temporal.reference.DefaultOrdinalReferenceSystemTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.temporal.reference.DefaultOrdinalReferenceSystemTest
+Running org.geotools.temporal.reference.DefaultTemporalCoordinateSystemTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.geotools.temporal.reference.DefaultTemporalCoordinateSystemTest
+Running org.geotools.temporal.reference.DefaultTemporalReferenceSystemTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.temporal.reference.DefaultTemporalReferenceSystemTest
+Running org.geotools.util.BooleanConverterFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.geotools.util.BooleanConverterFactoryTest
+Running org.geotools.util.CharsetConverterFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.util.CharsetConverterFactoryTest
+Running org.geotools.util.CollectionConverterFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.util.CollectionConverterFactoryTest
+Running org.geotools.util.ColorConverterFactoryTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.util.ColorConverterFactoryTest
+Running org.geotools.util.CommonsConverterFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.geotools.util.CommonsConverterFactoryTest
+Running org.geotools.util.DataUrlHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.geotools.util.DataUrlHandlerTest
+Running org.geotools.util.EnumerationConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.util.EnumerationConverterTest
+Running org.geotools.util.GeometryConverterFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.util.GeometryConverterFactoryTest
+Running org.geotools.util.GeometryTypeConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.geotools.util.GeometryTypeConverterTest
+Running org.geotools.util.MeasureConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.util.MeasureConverterTest
+Running org.geotools.util.NameConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.util.NameConverterTest
+Running org.geotools.util.NumericConverterFactoryTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.geotools.util.NumericConverterFactoryTest
+Running org.geotools.util.PercentageConverterFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.geotools.util.PercentageConverterFactoryTest
+Running org.geotools.util.SubProgressListenerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.geotools.util.SubProgressListenerTest
+Running org.geotools.util.TemporalConverterFactoryTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.495 sec - in org.geotools.util.TemporalConverterFactoryTest
+Running org.geotools.util.URConverterFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.geotools.util.URConverterFactoryTest
+Running org.geotools.xml.TransformerBaseTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.geotools.xml.TransformerBaseTest
+
+Results :
+
+Tests in error: 
+  DefaultTemporalGeometricPrimitiveTest.testLength:106 » IllegalArgument The tem...
+
+Tests run: 1623, Failures: 0, Errors: 1, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] GeoTools ........................................... SUCCESS [  2.863 s]
+[INFO] Build tools for Geotools 2 ......................... SUCCESS [  0.004 s]
+[INFO] Maven plugins for Geotools 2 ....................... SUCCESS [  0.017 s]
+[INFO] JAR files collector ................................ SUCCESS [  1.839 s]
+[INFO] Cross-modules javadoc .............................. SUCCESS [  5.120 s]
+[INFO] JJTree and JavaCC compilers plugin ................. SUCCESS [  0.208 s]
+[INFO] Geotools modules ................................... SUCCESS [  0.001 s]
+[INFO] Geotools libraries ................................. SUCCESS [  0.001 s]
+[INFO] Sample data module ................................. SUCCESS [  0.093 s]
+[INFO] Open GIS Interfaces ................................ SUCCESS [  4.943 s]
+[INFO] Metadata ........................................... SUCCESS [  9.554 s]
+[INFO] Referencing services ............................... SUCCESS [  6.369 s]
+[INFO] API interfaces ..................................... SUCCESS [  1.814 s]
+[INFO] Geotools plugins ................................... SUCCESS [  0.001 s]
+[INFO] EPSG Authority Service using HSQL database ......... SUCCESS [ 27.056 s]
+[INFO] Main module ........................................ FAILURE [ 25.521 s]
+[INFO] Geotools extensions ................................ SKIPPED
+[INFO] Feature Based Graphs and Networks .................. SKIPPED
+[INFO] XML Parsing ........................................ SKIPPED
+[INFO] XML Parsing ........................................ SKIPPED
+[INFO] XML Code Generation Support ........................ SKIPPED
+[INFO] EPSG Authority Service using WKT file .............. SKIPPED
+[INFO] OGC CQL to Filter parser ........................... SKIPPED
+[INFO] DataStore Support .................................. SKIPPED
+[INFO] Property File DataStore ............................ SKIPPED
+[INFO] Shapefile module ................................... SKIPPED
+[INFO] Grid Coverage module ............................... SKIPPED
+[INFO] GeoTIFF grid coverage exchange module .............. SKIPPED
+[INFO] JDBC DataStore Support ............................. SKIPPED
+[INFO] JDBC DataStore Plugins ............................. SKIPPED
+[INFO] H2 DataStore ....................................... SKIPPED
+[INFO] Oracle DataStore ................................... SKIPPED
+[INFO] PostGIS DataStore .................................. SKIPPED
+[INFO] Feature transforming feature source wrapper ........ SKIPPED
+[INFO] WorldImage datasource module ....................... SKIPPED
+[INFO] imagemosaic datasource module ...................... SKIPPED
+[INFO] ArcGrid datasource module .......................... SKIPPED
+[INFO] GML2 XML Support ................................... SKIPPED
+[INFO] GML3 XML Support ................................... SKIPPED
+[INFO] Filter XML Support ................................. SKIPPED
+[INFO] SLD XML Support .................................... SKIPPED
+[INFO] Render ............................................. SKIPPED
+[INFO] OGC Web Service Models ............................. SKIPPED
+[INFO] Xlink Model ........................................ SKIPPED
+[INFO] Open Web Services Model ............................ SKIPPED
+[INFO] Filter Encoding Specification Model ................ SKIPPED
+[INFO] Web Feature Service Model .......................... SKIPPED
+[INFO] OWS XML Support .................................... SKIPPED
+[INFO] Filter Encoding Specification XML Support .......... SKIPPED
+[INFO] WFS XML Support .................................... SKIPPED
+[INFO] XML Parsing Support ................................ SKIPPED
+[INFO] Web Processing Service Model ....................... SKIPPED
+[INFO] Web Coverage Service Model ......................... SKIPPED
+[INFO] Catalog Services for the Web Model ................. SKIPPED
+[INFO] Web Map Tile Service model ......................... SKIPPED
+[INFO] ArcSDE plugin ...................................... SKIPPED
+[INFO] ArcSDE dummy api ................................... SKIPPED
+[INFO] ArcSDE support classes ............................. SKIPPED
+[INFO] ArcSDE DataStore plugin ............................ SKIPPED
+[INFO] Dynamic symbolizer module based on JFreeChart and Eastwood SKIPPED
+[INFO] Extensions to EPSG authority factory ............... SKIPPED
+[INFO] EPSG Authority Service using PostgreSQL database ... SKIPPED
+[INFO] Feature-Pregeneralized ............................. SKIPPED
+[INFO] grass raster datasource module ..................... SKIPPED
+[INFO] GTopo30 datasource module .......................... SKIPPED
+[INFO] ImageI/O-Ext based grid coverage readers ........... SKIPPED
+[INFO] imagepyramid datasource module ..................... SKIPPED
+[INFO] imagemosaic-jdbc module ............................ SKIPPED
+[INFO] DB2 DataStore ...................................... SKIPPED
+[INFO] MySQL DataStore .................................... SKIPPED
+[INFO] SQL Server DataStore ............................... SKIPPED
+[INFO] SpatiaLite DataStore ............................... SKIPPED
+[INFO] Teradata DataStore ................................. SKIPPED
+[INFO] JP2K based grid coverage readers ................... SKIPPED
+[INFO] OGR DataStore Module ............................... SKIPPED
+[INFO] Core OGR DataStore Module .......................... SKIPPED
+[INFO] Bridj OGR DataStore Module ......................... SKIPPED
+[INFO] JNI OGR DataStore Module ........................... SKIPPED
+[INFO] Vertical coordinate transformations ................ SKIPPED
+[INFO] Dynamic symbolizers for SVG symbols ................ SKIPPED
+[INFO] Coverage Multidimensional Module ................... SKIPPED
+[INFO] API interfaces ..................................... SKIPPED
+[INFO] NetCDF gridcoverage module ......................... SKIPPED
+[INFO] GRIB gridcoverage module ........................... SKIPPED
+[INFO] GeoPackage Module .................................. SKIPPED
+[INFO] Application Schema Support ......................... SKIPPED
+[INFO] Application Schema Resolver ........................ SKIPPED
+[INFO] Complex Features Support ........................... SKIPPED
+[INFO] Application Schema DataAccess ...................... SKIPPED
+[INFO] Sample DataAccess .................................. SKIPPED
+[INFO] Brewer module ...................................... SKIPPED
+[INFO] Vector grids ....................................... SKIPPED
+[INFO] Validation Processor and Framework ................. SKIPPED
+[INFO] Web Map Server client .............................. SKIPPED
+[INFO] Geotools unsupported ............................... SKIPPED
+[INFO] Process ............................................ SKIPPED
+[INFO] Swing widgets ...................................... SKIPPED
+[INFO] Tile Client ........................................ SKIPPED
+[INFO] WMTS XML Support ................................... SKIPPED
+[INFO] Web Map Tile Service Client ........................ SKIPPED
+[INFO] KML XML Support .................................... SKIPPED
+[INFO] WCS XML Support .................................... SKIPPED
+[INFO] WPS XML Support .................................... SKIPPED
+[INFO] WMS XML Support .................................... SKIPPED
+[INFO] CSW XML Support .................................... SKIPPED
+[INFO] Process Feature .................................... SKIPPED
+[INFO] Process Raster ..................................... SKIPPED
+[INFO] YSLD Parser/Encoder ................................ SKIPPED
+[INFO] SWT widgets ........................................ SKIPPED
+[INFO] GeoJSON Support .................................... SKIPPED
+[INFO] Process Geometry ................................... SKIPPED
+[INFO] MBTiles Module ..................................... SKIPPED
+[INFO] WFS client module (NG) ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:28 min
+[INFO] Finished at: 2020-02-16T12:03:09+01:00
+[INFO] Final Memory: 68M/176M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.15:test (default-test) on project gt-main: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/modules/library/main/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.15:test (default-test) on project gt-main: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/modules/library/main/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-geotools-geotools-276848128-20170918-153627_bugonly-firstCommit/modules/library/main/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:169)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:777)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:645)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :gt-main
