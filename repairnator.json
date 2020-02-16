@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "kanovotn/Resteasy",
-  "bugCommit": "https://github.com/kanovotn/Resteasy/compare/0f5f2fa65968...256aead767dd",
-  "failingModule": "/root/workspace/kanovotn/Resteasy/351362152/testsuite/integration-tests",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2209,
-  "failing-test-cases": [
-    {
-      "className": "org.jboss.resteasy.test.providers.sse.SseReconnectTest",
-      "failingMethods": [
-        "org.jboss.resteasy.test.providers.sse.SseReconnectTest#testSseEndpointUnavailableThenDefaultReconnect"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-kanovotn-Resteasy-351362152-20180309-170946-firstCommit/tjws",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 1,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c1\u003e but was:\u003c2\u003e",
-          "isError": false
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jboss.resteasy.plugins.server.tjws.TJWSServletServerTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jboss.resteasy.plugins.server.tjws.TJWSServletServerTest",
+        "testMethod": "testFile",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "java.net.BindException: Address already in use (Bind failed)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 0,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:05 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:51:52 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 67162160,
+      "totalMemory": 123805696
+    },
+    "totalDuration": 823,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 60,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          60
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-kanovotn-Resteasy-351362152-20180309-170946-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
