@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 5,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "resteasy/Resteasy",
-  "bugCommit": "https://github.com/resteasy/Resteasy/compare/83453642486a...9b959652ed4b",
-  "failingModule": "/root/workspace/resteasy/Resteasy/367054511/testsuite/integration-tests",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2677,
-  "failing-test-cases": [
-    {
-      "className": "org.jboss.resteasy.test.response.ResponseStreamPrematurelyClosedTest",
-      "failingMethods": [
-        "org.jboss.resteasy.test.response.ResponseStreamPrematurelyClosedTest#testStream"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:37 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:59:40 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 103954200,
+      "totalMemory": 306839552
+    },
+    "totalDuration": 1979,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1134,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1134
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-resteasy-Resteasy-367054511-20180416-114853-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-resteasy-Resteasy-367054511-20180416-114853-firstCommit/tjws",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 1,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c100000000\u003e but was:\u003c13775\u003e",
-          "isError": false
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jboss.resteasy.plugins.server.tjws.TJWSServletServerTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jboss.resteasy.plugins.server.tjws.TJWSServletServerTest",
+        "testMethod": "testFile",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "java.net.BindException: Address already in use (Bind failed)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 0,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  },
+  "commits": {}
 }
