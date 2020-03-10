@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 233,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/jackrabbit-oak",
-  "failingModule": "/root/workspace/apache/jackrabbit-oak/379762895/oak-lucene",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 9236,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorTest",
-      "failingMethods": [
-        "inaccessibleWorkDirGivesNoop"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 10, 2020 10:31:29 AM",
+    "reproductionDateEnd": "Mar 10, 2020 11:07:51 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 27413936,
+      "totalMemory": 87953408
+    },
+    "totalDuration": 2177,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          8
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-379762895-20180516-172712-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-379762895-20180516-172712-firstCommit/oak-search-mt",
+    "overallMetrics": {
+      "numberRunning": 9285,
+      "numberPassing": 9284,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 233,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "Unwritable existing root folder must have NOOP active blob collector expected:\u003corg.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorFactory$1@43599640\u003e but was:\u003corg.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorFactory$ActiveDeletedBlobCollectorImpl@1f81aa00\u003e",
-          "isError": false
+          "failureName": "java.lang.NoClassDefFoundError",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.plugins.index.mt.MTFulltextQueryTermsProviderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.plugins.index.mt.MTFulltextQueryTermsProviderTest",
+        "testMethod": "testGetQueryTermWithPhraseTranslation",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "org/apache/lucene/analysis/standard/StandardTokenizer",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 37,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2312,
+    "numberTestFiles": 1610,
+    "numberLibrariesFailingModule": 51,
+    "numberLines": 0
+  }
 }
