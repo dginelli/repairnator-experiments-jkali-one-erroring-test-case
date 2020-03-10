@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 10, 2020 10:31:28 AM",
+    "reproductionDateEnd": "Mar 10, 2020 11:04:45 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 49119712,
+      "totalMemory": 87388160
+    },
+    "totalDuration": 1991,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          7
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-411377417-20180802-193631-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-411377417-20180802-193631-firstCommit/oak-search-mt",
+    "overallMetrics": {
+      "numberRunning": 9399,
+      "numberPassing": 9398,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 241,
+      "failures": [
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.plugins.index.mt.MTFulltextQueryTermsProviderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.plugins.index.mt.MTFulltextQueryTermsProviderTest",
+        "testMethod": "testGetQueryTermWithPhraseTranslation",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "org/apache/lucene/analysis/standard/StandardTokenizer",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 37,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2363,
+    "numberTestFiles": 1642,
+    "numberLibrariesFailingModule": 51,
+    "numberLines": 0
+  }
+}
