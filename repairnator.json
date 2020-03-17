@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 9,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/incubator-dubbo",
-  "failingModule": "/root/workspace/apache/incubator-dubbo/368602540/dubbo-config/dubbo-config-api",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "javax.validation.ConstraintViolationException"
-  ],
-  "totalNumberRunningTests": 1104,
-  "failing-test-cases": [
-    {
-      "className": "com.alibaba.dubbo.config.validation.ValidationTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.alibaba.dubbo.config.validation.ValidationTest#testProviderValidation"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:36:11 PM",
+    "reproductionDateEnd": "Mar 17, 2020 6:32:16 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 122487688,
+      "totalMemory": 297242624
+    },
+    "totalDuration": 6962,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-368602540-20180419-134415-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-368602540-20180419-134415-firstCommit/dubbo-config/dubbo-config-api",
+    "overallMetrics": {
+      "numberRunning": 1095,
+      "numberPassing": 1094,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 9,
       "failures": [
         {
           "failureName": "javax.validation.ConstraintViolationException",
-          "failureDetail": "Failed to validate service: com.alibaba.dubbo.config.validation.ValidationService, method: save, cause: [ConstraintViolationImpl{interpolatedMessage\u003d\u0027may not be null\u0027, propertyPath\u003dname, rootBeanClass\u003dclass com.alibaba.dubbo.config.validation.ValidationParameter, messageTemplate\u003d\u0027{javax.validation.constraints.NotNull.message}\u0027}, ConstraintViolationImpl{interpolatedMessage\u003d\u0027must be greater than or equal to 18\u0027, propertyPath\u003dage, rootBeanClass\u003dclass com.alibaba.dubbo.config.validation.ValidationParameter, messageTemplate\u003d\u0027{javax.validation.constraints.Min.message}\u0027}, ConstraintViolationImpl{interpolatedMessage\u003d\u0027may not be null\u0027, propertyPath\u003demail, rootBeanClass\u003dclass com.alibaba.dubbo.config.validation.ValidationParameter, messageTemplate\u003d\u0027{javax.validation.constraints.NotNull.message}\u0027}]",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alibaba.dubbo.config.validation.ValidationTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alibaba.dubbo.config.validation.ValidationTest",
+        "testMethod": "testProviderValidation",
+        "failureName": "javax.validation.ConstraintViolationException",
+        "detail": "Failed to validate service: com.alibaba.dubbo.config.validation.ValidationService, method: save, cause: [ConstraintViolationImpl{interpolatedMessage\u003d\u0027must be greater than or equal to 18\u0027, propertyPath\u003dage, rootBeanClass\u003dclass com.alibaba.dubbo.config.validation.ValidationParameter, messageTemplate\u003d\u0027{javax.validation.constraints.Min.message}\u0027}, ConstraintViolationImpl{interpolatedMessage\u003d\u0027may not be null\u0027, propertyPath\u003dname, rootBeanClass\u003dclass com.alibaba.dubbo.config.validation.ValidationParameter, messageTemplate\u003d\u0027{javax.validation.constraints.NotNull.message}\u0027}, ConstraintViolationImpl{interpolatedMessage\u003d\u0027may not be null\u0027, propertyPath\u003demail, rootBeanClass\u003dclass com.alibaba.dubbo.config.validation.ValidationParameter, messageTemplate\u003d\u0027{javax.validation.constraints.NotNull.message}\u0027}]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 60,
+    "numberPlugins": 0,
+    "numberSourceFiles": 725,
+    "numberTestFiles": 476,
+    "numberLibrariesFailingModule": 51,
+    "numberLines": 0
+  }
 }
