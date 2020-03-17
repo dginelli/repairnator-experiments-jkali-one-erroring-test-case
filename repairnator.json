@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "Master-DL/projet-ivvq-2017-2018-bfml",
-  "bugCommit": "https://github.com/Master-DL/projet-ivvq-2017-2018-bfml/commit/3d22df1a8fce",
-  "failingModule": "/root/workspace/Master-DL/projet-ivvq-2017-2018-bfml/366033338",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 12,
-  "failing-test-cases": [
-    {
-      "className": "InscriptionServiceTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "InscriptionServiceTest#un visiteur s\u0027inscrit sur notre site"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:23 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:40:15 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 29858624,
+      "totalMemory": 123998208
+    },
+    "totalDuration": 351,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 289,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          289
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Master-DL-projet-ivvq-2017-2018-bfml-366033338-20180413-120430-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Master-DL-projet-ivvq-2017-2018-bfml-366033338-20180413-120430-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 12,
+      "numberPassing": 11,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "failureDetail": "Cannot invoke method postForObject() on null object",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "InscriptionServiceTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "InscriptionServiceTest",
+        "testMethod": "un visiteur s\u0027inscrit sur notre site",
+        "failureName": "java.lang.NullPointerException",
+        "detail": "Cannot invoke method postForObject() on null object",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 9,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 82,
+    "numberLines": 0
+  }
 }
