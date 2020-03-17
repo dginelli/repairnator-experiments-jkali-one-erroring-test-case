@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "Innovimax-SARL/mix-them",
-  "bugCommit": "https://github.com/Innovimax-SARL/mix-them/compare/fc9a05dc4f7b...6584423534b4",
-  "failingModule": "/root/workspace/Innovimax-SARL/mix-them/380212926",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.OutOfMemoryError"
-  ],
-  "totalNumberRunningTests": 22,
-  "failing-test-cases": [
-    {
-      "className": "innovimax.mixthem.GenericTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testCharRules"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:25 PM",
+    "reproductionDateEnd": "Mar 17, 2020 6:14:37 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 638013752,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 6071,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-380212926-20180517-153831-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-380212926-20180517-153831-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 22,
+      "numberPassing": 21,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.OutOfMemoryError",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "innovimax.mixthem.GenericTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "innovimax.mixthem.GenericTest",
+        "testMethod": "testCharRules",
+        "failureName": "java.lang.OutOfMemoryError",
+        "detail": "Java heap space",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 56,
+    "numberTestFiles": 5,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  }
 }
