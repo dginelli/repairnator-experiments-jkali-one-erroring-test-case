@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "MAPLE-Robot-Subgoaling/MAPLE-PALM",
-  "bugCommit": "https://github.com/MAPLE-Robot-Subgoaling/MAPLE-PALM/compare/5a49b7cfc13f...e1f406b320f8",
-  "failingModule": "/root/workspace/MAPLE-Robot-Subgoaling/MAPLE-PALM/399743023",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "Cannot create property\u003dagents for JavaBean\u003dedu.umbc.cs.maple.config.ExperimentConfig@6442b0a6  in \u0027reader\u0027, line 1, column 1"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "edu.umbc.cs.maple.testing.ConfigTesterTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "run"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:23 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:35:40 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 82103280,
+      "totalMemory": 155222016
+    },
+    "totalDuration": 77,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          26
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-MAPLE-Robot-Subgoaling-MAPLE-PALM-399743023-20180703-220357-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-MAPLE-Robot-Subgoaling-MAPLE-PALM-399743023-20180703-220357-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "Cannot create property\u003dagents for JavaBean\u003dedu.umbc.cs.maple.config.ExperimentConfig@6442b0a6  in \u0027reader\u0027, line 1, column 1",
-          "failureDetail": "Cannot create property\u003dagents for JavaBean\u003dedu.umbc.cs.maple.config.ExperimentConfig@6442b0a6  in \u0027reader\u0027, line 1, column 1:     domain: !!edu.umbc.cs.maple.conf ...      ^ No suitable constructor with 7 arguments found for interface java.util.Map  in \u0027reader\u0027, line 7, column 3:       - rmaxqExpert       ^ ",
-          "isError": true
+          "failureName": "org.yaml.snakeyaml.constructor.ConstructorException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.umbc.cs.maple.testing.ConfigTesterTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.umbc.cs.maple.testing.ConfigTesterTest",
+        "testMethod": "run",
+        "failureName": "org.yaml.snakeyaml.constructor.ConstructorException",
+        "detail": "Cannot create property\u003dagents for JavaBean\u003dedu.umbc.cs.maple.config.ExperimentConfig@2d209079\n in \u0027reader\u0027, line 1, column 1:\n    domain: !!edu.umbc.cs.maple.conf ... \n    ^\nNo suitable constructor with 7 arguments found for interface java.util.Map\n in \u0027reader\u0027, line 7, column 3:\n      - rmaxqExpert\n      ^\n",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 211,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  }
 }
