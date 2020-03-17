@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "Arquisoft/InciManager_i2b",
-  "bugCommit": "https://github.com/Arquisoft/InciManager_i2b/compare/d077358886ec...984b95825458",
-  "failingModule": "/root/workspace/Arquisoft/InciManager_i2b/357484768",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.Exception"
-  ],
-  "totalNumberRunningTests": 35,
-  "failing-test-cases": [
-    {
-      "className": "com.uniovi.main.services.AgentsServiceTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.uniovi.main.services.AgentsServiceTest#testExistsAgent"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:46 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:47:07 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 30406240,
+      "totalMemory": 111493120
+    },
+    "totalDuration": 858,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 693,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          693
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Arquisoft-InciManager_i2b-357484768-20180323-174848-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Arquisoft-InciManager_i2b-357484768-20180323-174848-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 34,
+      "numberPassing": 33,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.Exception",
-          "failureDetail": "Unexpected exception, expected\u003corg.springframework.web.client.HttpClientErrorException\u003e but was\u003corg.springframework.web.client.ResourceAccessException\u003e",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.uniovi.main.services.AgentsServiceTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.uniovi.main.services.AgentsServiceTest",
+        "testMethod": "testExistsAgent",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003corg.springframework.web.client.HttpClientErrorException\u003e but was\u003corg.springframework.web.client.ResourceAccessException\u003e",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 25,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 100,
+    "numberLines": 0
+  }
 }
