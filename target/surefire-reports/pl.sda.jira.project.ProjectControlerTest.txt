@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: pl.sda.jira.project.ProjectControlerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.213 sec <<< FAILURE! - in pl.sda.jira.project.ProjectControlerTest
+shouldReturnFalseIfTeamHasntGotProject(pl.sda.jira.project.ProjectControlerTest)  Time elapsed: 0.017 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at pl.sda.jira.project.model.FakeProjectRepository.checkIfTeamHasProject(FakeProjectRepository.java:28)
+	at pl.sda.jira.project.ProjectControler.checkIfProjectAssignetToTeam(ProjectControler.java:25)
+	at pl.sda.jira.project.ProjectControlerTest.shouldReturnFalseIfTeamHasntGotProject(ProjectControlerTest.java:48)
+
