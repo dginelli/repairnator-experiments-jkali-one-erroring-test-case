@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: backend.api.CarRemoteFetchFacadeTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.232 sec <<< FAILURE! - in backend.api.CarRemoteFetchFacadeTest
+testGetAll(backend.api.CarRemoteFetchFacadeTest)  Time elapsed: 0.135 sec  <<< ERROR!
+backend.exceptions.NotFoundException: Unable to connect
+	at backend.api.CarRemoteFetchFacade.fetch(CarRemoteFetchFacade.java:51)
+	at backend.api.CarRemoteFetchFacade.getAll(CarRemoteFetchFacade.java:63)
+	at backend.api.CarRemoteFetchFacadeTest.testGetAll(CarRemoteFetchFacadeTest.java:29)
+
