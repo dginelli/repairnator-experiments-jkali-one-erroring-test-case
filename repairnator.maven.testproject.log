@@ -1,0 +1,126 @@
+Mar 17, 2020 4:36:45 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4c60d6e9: startup date [Tue Mar 17 16:36:45 CET 2020]; root of context hierarchy
+Mar 17, 2020 4:36:46 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [spring/message-bean.xml]
+Mar 17, 2020 4:36:46 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [spring/message-bean.xml]
+Mar 17, 2020 4:36:46 PM org.springframework.test.context.support.AbstractTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Mar 17, 2020 4:36:46 PM org.springframework.test.context.support.AbstractTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@335f5c69, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@63fd4dda, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1d6751e3]
+Mar 17, 2020 4:36:46 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [spring/message-bean.xml]
+Mar 17, 2020 4:36:47 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@19b07407: startup date [Tue Mar 17 16:36:47 CET 2020]; root of context hierarchy
+Mar 17, 2020 4:36:47 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@4c5f7b4f: startup date [Tue Mar 17 16:36:47 CET 2020]; root of context hierarchy
+Mar 17, 2020 4:36:47 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from URL [file:/Users/Certus/projects/java/tutorials/src/main/resources/spring/message-bean.xml]
+c)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running anton.potemkin.spring.message.MessageClassPathXmlApplicationContextTest
+Init bean
+Init bean
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.186 sec - in anton.potemkin.spring.message.MessageClassPathXmlApplicationContextTest
+Running anton.potemkin.spring.message.MessageXmlBeanFactoryTest
+Init bean
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in anton.potemkin.spring.message.MessageXmlBeanFactoryTest
+Running anton.potemkin.spring.message.MessageSpringTest
+Init bean
+Init bean
+Init bean
+Init bean
+Init bean
+Init bean
+Init bean
+Init bean
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.581 sec - in anton.potemkin.spring.message.MessageSpringTest
+Running anton.potemkin.spring.message.MessageFileSystemXmlApplicationContextTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.032 sec <<< FAILURE! - in anton.potemkin.spring.message.MessageFileSystemXmlApplicationContextTest
+anton.potemkin.spring.message.MessageFileSystemXmlApplicationContextTest  Time elapsed: 0.032 sec  <<< ERROR!
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from URL [file:/Users/Certus/projects/java/tutorials/src/main/resources/spring/message-bean.xml]; nested exception is java.io.FileNotFoundException: /Users/Certus/projects/java/tutorials/src/main/resources/spring/message-bean.xml (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.springframework.core.io.UrlResource.getInputStream(UrlResource.java:171)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:194)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:258)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:128)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:620)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:521)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:142)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:85)
+	at anton.potemkin.spring.message.MessageFileSystemXmlApplicationContextTest.beforeClass(MessageFileSystemXmlApplicationContextTest.java:18)
+
+destroy
+destroy
+
+Results :
+
+Tests in error: 
+  MessageFileSystemXmlApplicationContextTest.beforeClass:18 » BeanDefinitionStore
+
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.484 s
+[INFO] Finished at: 2020-03-17T16:36:47+01:00
+[INFO] Final Memory: 15M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project tutorials: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-antonpotemkin-tutorials-384124668-20180526-180322-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project tutorials: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-antonpotemkin-tutorials-384124668-20180526-180322-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-antonpotemkin-tutorials-384124668-20180526-180322-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

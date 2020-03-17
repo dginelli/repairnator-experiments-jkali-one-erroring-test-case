@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tutorials</a> &gt; <a href="index.source.html" class="el_package">anton.potemkin.jdbc</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package anton.potemkin.jdbc;
+
+import java.sql.*;
+
+/**
+ * Created by Anton Potemkin on 25/05/2018.
+ */
+<span class="nc" id="L8">public class Main {</span>
+
+    private static final String URL = &quot;jdbc:postgresql://localhost:5432/jdbc_tutorial&quot;;
+    private static final String USER = &quot;user&quot;;
+    private static final String PASSWORD = &quot;password&quot;;
+
+    public static void main(String[] args) {
+        try {
+<span class="nc" id="L16">            Driver driver = new org.postgresql.Driver();</span>
+<span class="nc" id="L17">            DriverManager.registerDriver(driver);</span>
+<span class="nc" id="L18">        } catch (SQLException e) {</span>
+<span class="nc" id="L19">            System.out.println(&quot;Не удалось зарегестрировать драйвер&quot;);</span>
+<span class="nc" id="L20">        }</span>
+<span class="nc" id="L21">        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);</span>
+<span class="nc" id="L22">             Statement statement = connection.createStatement()) {</span>
+//            statement.execute(&quot;INSERT INTO users(name, age, email) VALUES ('dima', 1, 'dima@mail.ru')&quot;);
+//            statement.executeUpdate(&quot;DELETE FROM users WHERE name = 'anton'&quot;);
+//            ResultSet res = statement.executeQuery(&quot;SELECT * FROM users&quot;);
+<span class="nc" id="L26">            statement.addBatch(&quot;INSERT INTO users(name, age, email) VALUES ('Dima', 1, 'dima@mail.ru')&quot;);</span>
+<span class="nc" id="L27">            statement.clearBatch();</span>
+<span class="nc" id="L28">            statement.addBatch(&quot;INSERT INTO users(name, age, email) VALUES ('Elena', 60, 'elena@mail.ru')&quot;);</span>
+<span class="nc" id="L29">            statement.addBatch(&quot;INSERT INTO users(name, age, email) VALUES ('Alexandr', 61, 'Alexandr@mail.ru')&quot;);</span>
+<span class="nc" id="L30">            statement.executeBatch();</span>
+<span class="nc" id="L31">        } catch (SQLException e) {</span>
+<span class="nc" id="L32">            System.out.println(&quot;Ошибка в connection&quot;);</span>
+<span class="nc" id="L33">        }</span>
+
+
+<span class="nc" id="L36">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>
