@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "alibaba/fastjson",
-  "failingModule": "/root/workspace/alibaba/fastjson/254495546",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "com.alibaba.fastjson.JSONException"
-  ],
-  "totalNumberRunningTests": 3866,
-  "failing-test-cases": [
-    {
-      "className": "com.alibaba.json.bvt.CurrencyTest4",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.alibaba.json.bvt.CurrencyTest4#test_1"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:35:22 PM",
+    "reproductionDateEnd": "Mar 17, 2020 6:17:52 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 70428360,
+      "totalMemory": 400613376
+    },
+    "totalDuration": 6147,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-alibaba-fastjson-254495546-20170717-175249_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-alibaba-fastjson-254495546-20170717-175249_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 3866,
+      "numberPassing": 3865,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "com.alibaba.fastjson.JSONException",
-          "failureDetail": "expect string",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alibaba.json.bvt.CurrencyTest4",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alibaba.json.bvt.CurrencyTest4",
+        "testMethod": "test_1",
+        "failureName": "com.alibaba.fastjson.JSONException",
+        "detail": "expect string",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 157,
+    "numberTestFiles": 2146,
+    "numberLibrariesFailingModule": 104,
+    "numberLines": 0
+  }
 }
