@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "CorfuDB/CorfuDB",
-  "bugCommit": "https://github.com/CorfuDB/CorfuDB/commit/d4c677922de1",
-  "failingModule": "/root/workspace/CorfuDB/CorfuDB/324439767/test",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.corfudb.runtime.exceptions.AppendException"
-  ],
-  "totalNumberRunningTests": 141,
-  "failing-test-cases": [
-    {
-      "className": "org.corfudb.runtime.object.CorfuSMRObjectConcurrencyTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.corfudb.runtime.object.CorfuSMRObjectConcurrencyTest#testCorfuSharedCounterConcurrentReads"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:49 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:43:17 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 38444040,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 624,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-324439767-20180103-043307_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-324439767-20180103-043307_bugonly-firstCommit/test",
+    "overallMetrics": {
+      "numberRunning": 489,
+      "numberPassing": 488,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
       "failures": [
         {
-          "failureName": "org.corfudb.runtime.exceptions.AppendException",
-          "isError": true
+          "failureName": "java.lang.Exception",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.corfudb.runtime.view.LayoutTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.corfudb.runtime.view.LayoutTest",
+        "testMethod": "shouldNotDeserializeMissingRequiredFieldLayout",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003cjava.lang.NullPointerException\u003e but was\u003cjava.lang.IllegalArgumentException\u003e",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberPlugins": 0,
+    "numberSourceFiles": 298,
+    "numberTestFiles": 111,
+    "numberLibrariesFailingModule": 97,
+    "numberLines": 0
+  }
 }
