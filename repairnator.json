@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "ConfigHubPub/ConfigHubPlatform",
-  "bugCommit": "https://github.com/ConfigHubPub/ConfigHubPlatform/compare/61e340d9fd21...6c61d4dc35ac",
-  "failingModule": "/root/workspace/ConfigHubPub/ConfigHubPlatform/375423085/rest",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.AbstractMethodError"
-  ],
-  "totalNumberRunningTests": 7,
-  "failing-test-cases": [
-    {
-      "className": "com.confighub.api.tokens.TokenTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.confighub.api.tokens.TokenTest#userTokenSetup"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:49 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:34:47 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 64572544,
+      "totalMemory": 176607232
+    },
+    "totalDuration": 116,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          28
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ConfigHubPub-ConfigHubPlatform-375423085-20180506-040942-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ConfigHubPub-ConfigHubPlatform-375423085-20180506-040942-firstCommit/rest",
+    "overallMetrics": {
+      "numberRunning": 7,
+      "numberPassing": 6,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AbstractMethodError",
-          "failureDetail": "javax.ws.rs.core.Response.getEntityTag()Ljavax/ws/rs/core/EntityTag;",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.confighub.api.tokens.TokenTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.confighub.api.tokens.TokenTest",
+        "testMethod": "userTokenSetup",
+        "failureName": "java.lang.AbstractMethodError",
+        "detail": "javax.ws.rs.core.Response.getEntityTag()Ljavax/ws/rs/core/EntityTag;",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberPlugins": 0,
+    "numberSourceFiles": 218,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 80,
+    "numberLines": 0
+  }
 }
