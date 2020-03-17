@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 28,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "Arquisoft/InciDashboard_e5a",
-  "bugCommit": "https://github.com/Arquisoft/InciDashboard_e5a/compare/9f1bb7799ce8...c7a84911e9f1",
-  "failingModule": "/root/workspace/Arquisoft/InciDashboard_e5a/374513225",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalStateException"
-  ],
-  "totalNumberRunningTests": 35,
-  "failing-test-cases": [
-    {
-      "className": "com.uniovi.InciDashboardApplicationTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.uniovi.InciDashboardApplicationTests#contextLoads"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:49 PM",
+    "reproductionDateEnd": "Mar 17, 2020 5:03:55 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 97629544,
+      "totalMemory": 306896896
+    },
+    "totalDuration": 1863,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1561,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1561
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Arquisoft-InciDashboard_e5a-374513225-20180503-185842-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Arquisoft-InciDashboard_e5a-374513225-20180503-185842-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 7,
+      "numberPassing": 6,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 28,
       "failures": [
         {
           "failureName": "java.lang.IllegalStateException",
-          "failureDetail": "Failed to load ApplicationContext",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.uniovi.InciDashboardApplicationTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.uniovi.InciDashboardApplicationTests",
+        "testMethod": "contextLoads",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 17,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 180,
+    "numberLines": 0
+  }
 }
