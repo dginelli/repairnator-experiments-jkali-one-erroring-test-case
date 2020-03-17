@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "alibaba/dubbo",
-  "bugCommit": "https://github.com/alibaba/dubbo/compare/b52879c4e1133a51e82dcbf6eb0c3c2c6e733d8c...4bbc0ddddacc915ddc8ff292dd28745bbc0031fd",
-  "failingModule": "/root/workspace/alibaba/dubbo/345632901/hessian-lite",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "com.alibaba.com.caucho.hessian.io.HessianFieldException"
-  ],
-  "totalNumberRunningTests": 31,
-  "failing-test-cases": [
-    {
-      "className": "com.alibaba.com.caucho.hessian.io.Hessian2StringShortTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.alibaba.com.caucho.hessian.io.Hessian2StringShortTest#serialize_string_person_map_then_deserialize"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:35:22 PM",
+    "reproductionDateEnd": "Mar 17, 2020 6:04:03 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 171087488,
+      "totalMemory": 492552192
+    },
+    "totalDuration": 5317,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4746,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4746
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-alibaba-dubbo-345632901-20180224-140005-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-alibaba-dubbo-345632901-20180224-140005-firstCommit/hessian-lite",
+    "overallMetrics": {
+      "numberRunning": 31,
+      "numberPassing": 30,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "com.alibaba.com.caucho.hessian.io.HessianFieldException",
-          "failureDetail": "com.alibaba.com.caucho.hessian.io.Hessian2StringShortType.stringPersonTypeMap: \u0027com.alibaba.com.caucho.hessian.io.PersonType\u0027 could not be instantiated",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alibaba.com.caucho.hessian.io.Hessian2StringShortTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alibaba.com.caucho.hessian.io.Hessian2StringShortTest",
+        "testMethod": "serialize_string_person_map_then_deserialize",
+        "failureName": "com.alibaba.com.caucho.hessian.io.HessianFieldException",
+        "detail": "com.alibaba.com.caucho.hessian.io.Hessian2StringShortType.stringPersonTypeMap: \u0027com.alibaba.com.caucho.hessian.io.PersonType\u0027 could not be instantiated",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 53,
+    "numberPlugins": 0,
+    "numberSourceFiles": 733,
+    "numberTestFiles": 403,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  }
 }
