@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 1,
-  "repo": "TridentSDK/TridentSDK",
-  "bugCommit": "https://github.com/TridentSDK/TridentSDK/compare/91618d8dcad8...011218b52af9",
-  "failingModule": "/root/workspace/TridentSDK/TridentSDK/254002765",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.Exception"
-  ],
-  "totalNumberRunningTests": 128,
-  "failing-test-cases": [
-    {
-      "className": "net.tridentsdk.world.opt.OptsTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "net.tridentsdk.world.opt.OptsTest#gameRuleTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:33 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:36:13 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 35146656,
+      "totalMemory": 111714304
+    },
+    "totalDuration": 97,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 43,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          43
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-TridentSDK-TridentSDK-254003252-20170715-224845-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-TridentSDK-TridentSDK-254003252-20170715-224845-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 128,
+      "numberPassing": 127,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.Exception",
-          "failureDetail": "Unexpected exception, expected\u003cjava.lang.IllegalArgumentException\u003e but was\u003cjava.lang.AssertionError\u003e",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.tridentsdk.world.opt.OptsTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.tridentsdk.world.opt.OptsTest",
+        "testMethod": "gameRuleTest",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003cjava.lang.IllegalArgumentException\u003e but was\u003cjava.lang.AssertionError\u003e",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 190,
+    "numberTestFiles": 40,
+    "numberLibrariesFailingModule": 15,
+    "numberLines": 0
+  }
 }
