@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "CyMpak1989/junior",
-  "bugCommit": "https://github.com/CyMpak1989/junior/compare/660ba3e12785...39a4f58702f5",
-  "failingModule": "/root/workspace/CyMpak1989/junior/352427004/junior_chapter_001",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 114,
-  "failing-test-cases": [
-    {
-      "className": "ru.job4j.set.SimpleLinkedSetTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "ru.job4j.set.SimpleLinkedSetTest#testAddLinkedList"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:16 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:35:44 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 64601440,
+      "totalMemory": 239980544
+    },
+    "totalDuration": 145,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 79,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          79
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CyMpak1989-junior-352427004-20180312-174009-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CyMpak1989-junior-352427004-20180312-174009-firstCommit/junior_chapter_001",
+    "overallMetrics": {
+      "numberRunning": 114,
+      "numberPassing": 113,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ru.job4j.set.SimpleLinkedSetTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ru.job4j.set.SimpleLinkedSetTest",
+        "testMethod": "testAddLinkedList",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 127,
+    "numberTestFiles": 56,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  }
 }
