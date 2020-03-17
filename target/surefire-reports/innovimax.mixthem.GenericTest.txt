@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: innovimax.mixthem.GenericTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 17.406 sec <<< FAILURE! - in innovimax.mixthem.GenericTest
+testCharRules(innovimax.mixthem.GenericTest)  Time elapsed: 17.227 sec  <<< ERROR!
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3236)
+	at java.io.ByteArrayOutputStream.grow(ByteArrayOutputStream.java:118)
+	at java.io.ByteArrayOutputStream.ensureCapacity(ByteArrayOutputStream.java:93)
+	at java.io.ByteArrayOutputStream.write(ByteArrayOutputStream.java:153)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:282)
+	at sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.io.OutputStreamWriter.write(OutputStreamWriter.java:207)
+	at java.io.BufferedWriter.flushBuffer(BufferedWriter.java:129)
+	at java.io.BufferedWriter.write(BufferedWriter.java:230)
+	at java.io.Writer.write(Writer.java:157)
+	at innovimax.mixthem.io.DefaultLineWriter.writeLine(DefaultLineWriter.java:30)
+	at innovimax.mixthem.operation.AbstractLineOperation.processFiles(AbstractLineOperation.java:54)
+	at innovimax.mixthem.MixThem.process(MixThem.java:144)
+	at innovimax.mixthem.GenericTest.check(GenericTest.java:122)
+	at innovimax.mixthem.GenericTest.testRules(GenericTest.java:96)
+	at innovimax.mixthem.GenericTest.testCharRules(GenericTest.java:40)
+
