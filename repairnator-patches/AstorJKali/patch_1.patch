@@ -1,0 +1,11 @@
+--- /src/main/java/br/edu/fapce/nexti/Application.java
++++ /src/main/java/br/edu/fapce/nexti/Application.java
+@@ -13,7 +13,6 @@
+ 	@org.springframework.context.annotation.Bean
+ 	public org.springframework.boot.CommandLineRunner commandLineRunner() {
+ 		return ( args) -> {
+-			createDefaultFinalUser();
+ 		};
+ 	}
+ 
+
