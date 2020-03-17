@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.sonar.plugins.fxcop.FxCopSensorTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.965 s <<< FAILURE! - in org.sonar.plugins.fxcop.FxCopSensorTest
+org.sonar.plugins.fxcop.FxCopSensorTest.testExecuteImpl  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot find the FxCop report "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit/dummy.rep" provided by the property "sonar.cs.fxcop.report".
+	at org.sonar.plugins.fxcop.FxCopSensorTest.testExecuteImpl(FxCopSensorTest.java:192)
+
