@@ -1,30 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "RossBlassingame/JPL-CUSeniorProjects",
-  "failingModule": "/root/workspace/RossBlassingame/JPL-CUSeniorProjects/346537408",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 57,
-  "failing-test-cases": [
-    {
-      "className": "mars.OutputTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "mars.OutputTest#testTerminalOutputInstantiate"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:26 PM",
+    "reproductionDateEnd": "Mar 17, 2020 5:48:18 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 61028064,
+      "totalMemory": 154460160
+    },
+    "totalDuration": 4429,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4229,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4229
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 57,
+      "numberPassing": 56,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "mars.OutputTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "mars.OutputTest",
+        "testMethod": "testTerminalOutputInstantiate",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 32,
+    "numberTestFiles": 7,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  }
 }
