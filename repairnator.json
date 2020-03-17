@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "LeonardoBonacci/oogway",
-  "bugCommit": "https://github.com/LeonardoBonacci/oogway/compare/2bcc52dfd107^...cca9fa68267c",
-  "failingModule": "/root/workspace/LeonardoBonacci/oogway/366181353/heimdall/doorway",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 22,
-  "failing-test-cases": [
-    {
-      "className": "guru.bonacci.oogway.doorway.DoorwayIntegrationTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "guru.bonacci.oogway.doorway.DoorwayIntegrationTests#shouldSendMessageAfterInterception"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:23 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:48:35 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 62598456,
+      "totalMemory": 129597440
+    },
+    "totalDuration": 847,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 213,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          213
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-366181353-20180413-181456-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-366181353-20180413-181456-firstCommit/heimdall/doorway",
+    "overallMetrics": {
+      "numberRunning": 21,
+      "numberPassing": 20,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "guru.bonacci.oogway.doorway.DoorwayIntegrationTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "guru.bonacci.oogway.doorway.DoorwayIntegrationTests",
+        "testMethod": "shouldSendMessageAfterInterception",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberPlugins": 0,
+    "numberSourceFiles": 136,
+    "numberTestFiles": 53,
+    "numberLibrariesFailingModule": 232,
+    "numberLines": 0
+  }
 }
