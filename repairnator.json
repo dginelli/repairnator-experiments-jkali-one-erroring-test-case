@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "CorfuDB/CorfuDB",
-  "bugCommit": "https://github.com/CorfuDB/CorfuDB/compare/f744d31df21a^...2e23d64c6bac",
-  "failingModule": "/root/workspace/CorfuDB/CorfuDB/313222864/test",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.corfudb.runtime.exceptions.LayoutModificationException"
-  ],
-  "totalNumberRunningTests": 197,
-  "failing-test-cases": [
-    {
-      "className": "org.corfudb.infrastructure.LayoutBuilderTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.corfudb.infrastructure.LayoutBuilderTest#checkRemovalOfNodes"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:49 PM",
+    "reproductionDateEnd": "Mar 17, 2020 6:35:13 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 96611992,
+      "totalMemory": 259461120
+    },
+    "totalDuration": 7341,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-313222864-20171208-002719_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-313222864-20171208-002719_bugonly-firstCommit/test",
+    "overallMetrics": {
+      "numberRunning": 472,
+      "numberPassing": 471,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "org.corfudb.runtime.exceptions.LayoutModificationException",
-          "failureDetail": "Losing redundancy!",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.corfudb.infrastructure.LayoutBuilderTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.corfudb.infrastructure.LayoutBuilderTest",
+        "testMethod": "checkRemovalOfNodes",
+        "failureName": "org.corfudb.runtime.exceptions.LayoutModificationException",
+        "detail": "Losing redundancy!",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberPlugins": 0,
+    "numberSourceFiles": 282,
+    "numberTestFiles": 108,
+    "numberLibrariesFailingModule": 97,
+    "numberLines": 0
+  }
 }
