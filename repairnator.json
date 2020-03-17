@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "Cognifide/bobcat",
-  "bugCommit": "https://github.com/Cognifide/bobcat/compare/e659c93ad6e9...8815863148f0",
-  "failingModule": "/root/workspace/Cognifide/bobcat/398186831/bb-reports",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "com.google.inject.ProvisionException"
-  ],
-  "totalNumberRunningTests": 86,
-  "failing-test-cases": [
-    {
-      "className": "com.cognifide.qa.bb.logging.reporter.ReporterTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "shouldCreateLogEntries"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:48 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:37:51 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 273788784,
+      "totalMemory": 810278912
+    },
+    "totalDuration": 300,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 172,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          172
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Cognifide-bobcat-398186831-20180629-124348-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Cognifide-bobcat-398186831-20180629-124348-firstCommit/bb-reports",
+    "overallMetrics": {
+      "numberRunning": 86,
+      "numberPassing": 85,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "com.google.inject.ProvisionException",
-          "failureDetail": "Guice provision errors:  1) Error in custom provider, org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: LINUX Build info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027 System info: host: \u0027spirals-vortex.lille.inria.fr\u0027, ip: \u0027172.17.0.8\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00273.10.0-862.2.3.el7.x86_64\u0027, java.version: \u00271.8.0_121\u0027 Driver info: driver.version: FirefoxDriver   while locating com.cognifide.qa.bb.provider.selenium.webdriver.WebDriverProvider   while locating org.openqa.selenium.WebDriver  1 error",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.cognifide.qa.bb.logging.reporter.ReporterTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.cognifide.qa.bb.logging.reporter.ReporterTest",
+        "testMethod": "shouldCreateLogEntries",
+        "failureName": "com.google.inject.ProvisionException",
+        "detail": "Guice provision errors:\n\n1) Error in custom provider, org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: LINUX\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027b-cn0907\u0027, ip: \u0027130.239.242.17\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.15.0-91-generic\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: FirefoxDriver\n  while locating com.cognifide.qa.bb.provider.selenium.webdriver.WebDriverProvider\n  while locating org.openqa.selenium.WebDriver\n\n1 error",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberPlugins": 0,
+    "numberSourceFiles": 458,
+    "numberTestFiles": 45,
+    "numberLibrariesFailingModule": 98,
+    "numberLines": 0
+  }
 }
