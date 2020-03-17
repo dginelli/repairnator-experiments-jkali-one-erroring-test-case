@@ -1,0 +1,790 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building product-pricing 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ product-pricing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ product-pricing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ product-pricing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ product-pricing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ product-pricing ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 6.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 69.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 1070.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+16:34:31.268 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.hedvig.productPricing.service.web.InternalControllerTest]
+16:34:31.307 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:34:31.317 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:34:31.367 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hedvig.productPricing.service.web.InternalControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+16:34:31.418 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.productPricing.service.web.InternalControllerTest], using SpringBootContextLoader
+16:34:31.426 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.service.web.InternalControllerTest]: class path resource [com/hedvig/productPricing/service/web/InternalControllerTest-context.xml] does not exist
+16:34:31.427 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.service.web.InternalControllerTest]: class path resource [com/hedvig/productPricing/service/web/InternalControllerTestContext.groovy] does not exist
+16:34:31.427 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hedvig.productPricing.service.web.InternalControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:34:31.429 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hedvig.productPricing.service.web.InternalControllerTest]: InternalControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:34:31.659 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:34:31.662 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:34:31.665 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:34:31.688 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/hedvig/productPricing/service/web/] to resources [URL [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/service/web/], URL [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/web/]]
+16:34:31.690 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/service/web]
+16:34:31.691 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/service/web] for files matching pattern [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/service/web/*.class]
+16:34:31.697 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/web]
+16:34:31.697 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/web] for files matching pattern [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/web/*.class]
+16:34:31.700 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/hedvig/productPricing/service/web/*.class] to resources [file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/service/web/InternalControllerTest.class], file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/web/InternalController.class], file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/web/LogRequestFilter.class], file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/web/ProductPricingController$1.class], file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/web/ProductPricingController.class]]
+16:34:31.760 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/hedvig/productPricing/service/] to resources [URL [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/service/], URL [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/]]
+16:34:31.770 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/service]
+16:34:31.770 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/service] for files matching pattern [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/service/*.class]
+16:34:31.788 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service]
+16:34:31.789 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service] for files matching pattern [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/*.class]
+16:34:31.801 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/hedvig/productPricing/service/*.class] to resources [file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/service/PostgresDialect.class]]
+16:34:31.803 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/hedvig/productPricing/] to resources [URL [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/], URL [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/]]
+16:34:31.803 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing]
+16:34:31.803 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing] for files matching pattern [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/*.class]
+16:34:31.805 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing]
+16:34:31.805 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing] for files matching pattern [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/*.class]
+16:34:31.806 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/hedvig/productPricing/*.class] to resources [file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/AxonTestConfiguration.class], file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/test-classes/com/hedvig/productPricing/ProductPricingApplicationTests.class], file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/ProductPricingApplication.class]]
+16:34:31.856 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/classes/com/hedvig/productPricing/ProductPricingApplication.class]
+16:34:31.858 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hedvig.productPricing.ProductPricingApplication for test class com.hedvig.productPricing.service.web.InternalControllerTest
+16:34:31.873 [main] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.hedvig.productPricing.service.web.InternalControllerTest]: using defaults.
+16:34:31.887 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:34:31.925 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@fd07cbb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3571b748, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3e96bacf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@484970b0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4470f8a6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c83dc97, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7748410a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@740773a3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@37f1104d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@55740540, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60015ef5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2f54a33d]
+16:34:31.940 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]
+16:34:31.942 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:34:31.942 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:34:31.942 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+16:34:31.948 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest], using DelegatingSmartContextLoader
+16:34:31.950 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericGroovyXmlContextLoader to process context configuration [ContextConfigurationAttributes@6c779568 declaringClass = 'com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+16:34:31.951 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]: class path resource [com/hedvig/productPricing/service/service/InsuranceBillingServiceImplTest-context.xml] does not exist
+16:34:31.951 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]: class path resource [com/hedvig/productPricing/service/service/InsuranceBillingServiceImplTestContext.groovy] does not exist
+16:34:31.952 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:34:31.952 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@6c779568 declaringClass = 'com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+16:34:31.953 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]: InsuranceBillingServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:34:31.980 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]
+16:34:31.980 [main] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]: using defaults.
+16:34:31.993 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:34:31.994 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2dde1bff, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15bbf42f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@550ee7e5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f9b2141, org.springframework.test.context.transaction.TransactionalTestExecutionListener@247d8ae, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@48974e45, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6a84a97d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6c130c45, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@50ad3bc1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@223aa2f7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6d3a388c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@193f604a]
+16:34:31.997 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.hedvig.productPricing.service.service.InsuranceServiceImplTest]
+16:34:31.997 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:34:31.997 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:34:31.998 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+16:34:31.998 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest], using DelegatingSmartContextLoader
+16:34:31.998 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericGroovyXmlContextLoader to process context configuration [ContextConfigurationAttributes@932bc4a declaringClass = 'com.hedvig.productPricing.service.service.InsuranceServiceImplTest', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+16:34:32.000 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest]: class path resource [com/hedvig/productPricing/service/service/InsuranceServiceImplTest-context.xml] does not exist
+16:34:32.001 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest]: class path resource [com/hedvig/productPricing/service/service/InsuranceServiceImplTestContext.groovy] does not exist
+16:34:32.002 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:34:32.003 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@932bc4a declaringClass = 'com.hedvig.productPricing.service.service.InsuranceServiceImplTest', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+16:34:32.004 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest]: InsuranceServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:34:32.021 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest]
+16:34:32.022 [main] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest]: using defaults.
+16:34:32.033 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:34:32.034 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e15b7e8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1b2abca6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6392827e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2ed2d9cb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@d5b810e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@43dac38f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@342c38f8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@c88a337, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5d0a1059, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@485966cc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1de76cc7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@54bff557]
+16:34:32.039 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.hedvig.productPricing.ProductPricingApplicationTests]
+16:34:32.039 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:34:32.040 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:34:32.040 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hedvig.productPricing.ProductPricingApplicationTests] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+16:34:32.040 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.productPricing.ProductPricingApplicationTests], using DelegatingSmartContextLoader
+16:34:32.041 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericGroovyXmlContextLoader to process context configuration [ContextConfigurationAttributes@434a63ab declaringClass = 'com.hedvig.productPricing.ProductPricingApplicationTests', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+16:34:32.043 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.ProductPricingApplicationTests]: class path resource [com/hedvig/productPricing/ProductPricingApplicationTests-context.xml] does not exist
+16:34:32.048 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.ProductPricingApplicationTests]: class path resource [com/hedvig/productPricing/ProductPricingApplicationTestsContext.groovy] does not exist
+16:34:32.048 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hedvig.productPricing.ProductPricingApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:34:32.049 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@434a63ab declaringClass = 'com.hedvig.productPricing.ProductPricingApplicationTests', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+16:34:32.051 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hedvig.productPricing.ProductPricingApplicationTests]: ProductPricingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:34:32.056 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.hedvig.productPricing.ProductPricingApplicationTests]
+16:34:32.059 [main] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.hedvig.productPricing.ProductPricingApplicationTests]: using defaults.
+16:34:32.082 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:34:32.084 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41a0aa7d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2794eab6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6340e5f0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45099dd3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@13e344d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ffaf86, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6574a52c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6c1a5b54, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c7696c6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@60099951, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@20140db9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1e6a3214]
+16:34:32.091 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.hedvig.productPricing.aggregates.MemberAggregateTest]
+16:34:32.091 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:34:32.091 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:34:32.092 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hedvig.productPricing.aggregates.MemberAggregateTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+16:34:32.093 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.productPricing.aggregates.MemberAggregateTest], using DelegatingSmartContextLoader
+16:34:32.093 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericGroovyXmlContextLoader to process context configuration [ContextConfigurationAttributes@1a6d8329 declaringClass = 'com.hedvig.productPricing.aggregates.MemberAggregateTest', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+16:34:32.095 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.aggregates.MemberAggregateTest]: class path resource [com/hedvig/productPricing/aggregates/MemberAggregateTest-context.xml] does not exist
+16:34:32.096 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.aggregates.MemberAggregateTest]: class path resource [com/hedvig/productPricing/aggregates/MemberAggregateTestContext.groovy] does not exist
+16:34:32.096 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hedvig.productPricing.aggregates.MemberAggregateTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:34:32.096 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@1a6d8329 declaringClass = 'com.hedvig.productPricing.aggregates.MemberAggregateTest', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+16:34:32.098 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hedvig.productPricing.aggregates.MemberAggregateTest]: MemberAggregateTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:34:32.110 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.hedvig.productPricing.aggregates.MemberAggregateTest]
+16:34:32.110 [main] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.hedvig.productPricing.aggregates.MemberAggregateTest]: using defaults.
+16:34:32.114 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:34:32.115 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5e2c3d18, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cb4893b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cc43f62, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b218417, org.springframework.test.context.transaction.TransactionalTestExecutionListener@645aa696, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6caf0677, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@413d1baf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@16eb3ea3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@273444fe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@33bc72d1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1a75e76a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5524cca1]
+16:34:32.123 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hedvig.productPricing.service.web.InternalControllerTest]
+16:34:32.123 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hedvig.productPricing.service.web.InternalControllerTest]
+16:34:32.124 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]
+16:34:32.124 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]
+16:34:32.125 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest]
+16:34:32.125 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest]
+16:34:32.130 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hedvig.productPricing.ProductPricingApplicationTests]
+16:34:32.130 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hedvig.productPricing.ProductPricingApplicationTests]
+16:34:32.131 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hedvig.productPricing.aggregates.MemberAggregateTest]
+16:34:32.131 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hedvig.productPricing.aggregates.MemberAggregateTest]
+Running com.hedvig.productPricing.service.web.dto.InsuranceDTOTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.333 sec - in com.hedvig.productPricing.service.web.dto.InsuranceDTOTest
+Running com.hedvig.productPricing.service.web.dto.ProductStatusTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.hedvig.productPricing.service.web.dto.ProductStatusTest
+Running com.hedvig.productPricing.service.web.InternalControllerTest
+16:34:32.481 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.hedvig.productPricing.service.web.InternalControllerTest]
+16:34:32.481 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:34:32.481 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:34:32.482 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hedvig.productPricing.service.web.InternalControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+16:34:32.484 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.productPricing.service.web.InternalControllerTest], using SpringBootContextLoader
+16:34:32.496 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.service.web.InternalControllerTest]: class path resource [com/hedvig/productPricing/service/web/InternalControllerTest-context.xml] does not exist
+16:34:32.499 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hedvig.productPricing.service.web.InternalControllerTest]: class path resource [com/hedvig/productPricing/service/web/InternalControllerTestContext.groovy] does not exist
+16:34:32.503 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hedvig.productPricing.service.web.InternalControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:34:32.503 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hedvig.productPricing.service.web.InternalControllerTest]: InternalControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:34:32.560 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:34:32.562 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:34:32.563 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:34:32.565 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hedvig.productPricing.ProductPricingApplication for test class com.hedvig.productPricing.service.web.InternalControllerTest
+16:34:32.570 [main] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.hedvig.productPricing.service.web.InternalControllerTest]: using defaults.
+16:34:32.581 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:34:32.601 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@60129b9a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78d6692f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7a55af6b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3d9c13b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@492691d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@27216cd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@558bdf1f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@8576fa0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7582ff54, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@67545b57, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c2c1385, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5f354bcf]
+16:34:32.602 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hedvig.productPricing.service.web.InternalControllerTest]
+16:34:32.603 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hedvig.productPricing.service.web.InternalControllerTest]
+16:34:32.603 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hedvig.productPricing.service.web.InternalControllerTest]
+16:34:32.603 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hedvig.productPricing.service.web.InternalControllerTest]
+16:34:32.605 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4716be8b testClass = InternalControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1fc32e4f testClass = InternalControllerTest, locations = '{}', classes = '{class com.hedvig.productPricing.ProductPricingApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{hedvig.product-pricing.files.location = src/test/resources/, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@2f67b837 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration, org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@96def03, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1f3f4916, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@7fc9a3c2, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3e2e18f2, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@4bae2e7f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@c64400df, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3427b02d], resourceBasePath = '', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+16:34:32.607 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hedvig.productPricing.service.web.InternalControllerTest]
+16:34:32.608 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hedvig.productPricing.service.web.InternalControllerTest]
+16:34:32.616 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@4716be8b testClass = InternalControllerTest, testInstance = com.hedvig.productPricing.service.web.InternalControllerTest@1046d517, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1fc32e4f testClass = InternalControllerTest, locations = '{}', classes = '{class com.hedvig.productPricing.ProductPricingApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{hedvig.product-pricing.files.location = src/test/resources/, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@2f67b837 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration, org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@96def03, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1f3f4916, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@7fc9a3c2, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3e2e18f2, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@4bae2e7f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@c64400df, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3427b02d], resourceBasePath = '', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+16:34:32.676 [main] DEBUG io.fabric8.kubernetes.client.Config - Trying to configure client from Kubernetes config...
+16:34:32.683 [main] DEBUG io.fabric8.kubernetes.client.Config - Did not find Kubernetes config at: [/home/d/dginelli/.kube/config]. Ignoring.
+16:34:32.684 [main] DEBUG io.fabric8.kubernetes.client.Config - Trying to configure client from service account...
+16:34:32.685 [main] DEBUG io.fabric8.kubernetes.client.Config - Did not find service account ca cert at: [/var/run/secrets/kubernetes.io/serviceaccount/ca.crt].
+16:34:32.694 [main] WARN io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+16:34:32.694 [main] DEBUG io.fabric8.kubernetes.client.Config - Trying to configure client namespace from Kubernetes service account namespace path...
+16:34:32.694 [main] DEBUG io.fabric8.kubernetes.client.Config - Did not find service account namespace at: [/var/run/secrets/kubernetes.io/serviceaccount/namespace]. Ignoring.
+16:34:33.797 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:34:33.798 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:34:33.800 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:34:33.801 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [test] PropertySource with highest search precedence
+16:34:33.801 [main] DEBUG org.springframework.core.env.MutablePropertySources - Adding [inline] PropertySource with highest search precedence
+16:34:33.809 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, hedvig.product-pricing.files.location = src/test/resources/, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true, server.port=-1}
+16:34:33.810 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+2020-03-17 16:34:35.862  INFO [product-pricing,,,] 127408 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@30404dba: startup date [Tue Mar 17 16:34:35 CET 2020]; root of context hierarchy
+2020-03-17 16:34:36.302  INFO [product-pricing,,,] 127408 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:34:36.406  INFO [product-pricing,,,] 127408 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4af184a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.6.RELEASE)
+
+2020-03-17 16:34:37.033  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.s.web.InternalControllerTest       : The following profiles are active: test
+2020-03-17 16:34:37.043  INFO [product-pricing,,,] 127408 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3c74aa0d: startup date [Tue Mar 17 16:34:37 CET 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@30404dba
+2020-03-17 16:34:38.822  INFO [product-pricing,,,] 127408 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:34:38.983  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Instantiating PriceEngineBaseLine ...
+2020-03-17 16:34:38.984  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Reading pricing data...
+2020-03-17 16:34:38.984  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...tariffs from: src/test/resources/tariff.csv
+2020-03-17 16:34:39.002  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...done!
+2020-03-17 16:34:39.003  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Zip data from: src/test/resources/geografi.csv
+2020-03-17 16:34:39.056  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...done!
+2020-03-17 16:34:39.057  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Testing price enginge consitency...
+2020-03-17 16:34:39.059  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Query for base product recieved:Alder39
+Fbelopp:1000000
+Antper:4
+Geografi:12130
+Vaning:0
+Duration:0
+Sjrisk:1500
+Hyrdeg:false
+Nyteckning:true
+Larm:false
+Sakerhetsdorr:true
+Betalningsanmarkning:false
+PaymentType:null
+BRF:true
+Student:false
+2020-03-17 16:34:39.061  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Grundskydd:1.030223427:1.009564679:1.007115278:1.058435923:1.056243801:1.043007405:1.006847295:1.074564243 --> 1.321468703767125
+2020-03-17 16:34:39.061  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : riskpremie:448.9029186696924
+bruttopremie_exakt:795.817689959609
+bruttopremie_kund:795.817689959609
+premie_inc_nyteckning:716.2359209636481
+premie_inc_rabatt:680.4241249154657
+2020-03-17 16:34:39.063  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Allrisk:1.017015038:1.050304066:1.020391244:1.094301698:1.078257427:1.0:1.089608129:1.034657241:1.062033264 --> 1.5398330315697852
+2020-03-17 16:34:39.064  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : riskpremie:322.36404515913455
+bruttopremie_exakt:518.4537336523664
+bruttopremie_kund:518.4537336523664
+premie_inc_nyteckning:466.60836028712976
+premie_inc_rabatt:443.27794227277326
+2020-03-17 16:34:39.065  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Brftillagg:1.096945974:1.074141391:1.0:1.032931891:1.058956944:1.0:1.052730448:1.003693734 --> 1.3618054763164227
+2020-03-17 16:34:39.065  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : riskpremie:161.3739489434961
+bruttopremie_exakt:295.9359174435163
+bruttopremie_kund:295.9359174435163
+premie_inc_nyteckning:266.3423256991647
+premie_inc_rabatt:253.02520941420644
+2020-03-17 16:34:39.076  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...startup complete:true
+2020-03-17 16:34:39.083  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Reading pricing data...
+2020-03-17 16:34:39.083  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...tariffs from: src/test/resources/tariff.csv
+2020-03-17 16:34:39.087  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...done!
+2020-03-17 16:34:39.087  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Zip data from: src/test/resources/geografi.csv
+2020-03-17 16:34:39.122  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...done!
+2020-03-17 16:34:39.888  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3c74aa0d: startup date [Tue Mar 17 16:34:37 CET 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@30404dba
+2020-03-17 16:34:40.010  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/contractSigned || /_/insurance/contractSigned],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.hedvig.productPricing.service.web.InternalController.ContractsSigned(com.hedvig.productPricing.service.web.dto.ContractSignedRequest) throws java.io.IOException
+2020-03-17 16:34:40.012  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/safetyIncreasers || /_/insurance/{memberId}/safetyIncreasers],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hedvig.productPricing.service.web.dto.SafetyIncreasersDTO> com.hedvig.productPricing.service.web.InternalController.getSafetyIncreasers(java.lang.String)
+2020-03-17 16:34:40.019  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/insuredAtOtherCompany || /_/insurance/{memberId}/insuredAtOtherCompany],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.insuredAtOtherCompany(java.lang.String,com.hedvig.productPricing.service.web.dto.InsuredAtOtherCompanyDTO)
+2020-03-17 16:34:40.020  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/search || /_/insurance/search],methods=[GET]}" onto public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate)
+2020-03-17 16:34:40.020  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/certificate || /_/insurance/{memberId}/certificate],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.insuranceCertificate(java.lang.String,org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2020-03-17 16:34:40.021  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/certificate || /_/insurance/{memberId}/certificate],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.insuranceCertificate(java.lang.String)
+2020-03-17 16:34:40.021  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/insurance || /_/insurance/{memberId}/insurance],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.getInsuranceStatus(java.lang.String)
+2020-03-17 16:34:40.022  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/insurances || /_/insurance/{memberId}/insurances],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO>> com.hedvig.productPricing.service.web.InternalController.getInsurancesByMember(java.lang.String)
+2020-03-17 16:34:40.022  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/activateAtDate || /_/insurance/{memberId}/activateAtDate],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.activate(java.lang.String,com.hedvig.productPricing.service.web.dto.ActivateRequestDTO)
+2020-03-17 16:34:40.023  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/contract/{memberId} || /_/insurance/contract/{memberId}],methods=[GET],produces=[application/pdf]}" onto public org.springframework.http.ResponseEntity<byte[]> com.hedvig.productPricing.service.web.InternalController.getQuotePdf(java.lang.String)
+2020-03-17 16:34:40.024  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/sendCancellationEmail || /_/insurance/{memberId}/sendCancellationEmail],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.sendCancellationEmail(java.lang.String)
+2020-03-17 16:34:40.024  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/setCancellationDate || /_/insurance/{memberId}/setCancellationDate],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.setCancellationDate(java.lang.String,com.hedvig.productPricing.service.web.dto.SetCancellationDateRequest)
+2020-03-17 16:34:40.025  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/terminateMembers || /_/insurance/terminateMembers],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.terminateMembers()
+2020-03-17 16:34:40.025  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/createmodifiedProduct || /_/insurance/{memberId}/createmodifiedProduct],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.createmodifiedProduct(java.lang.String,com.hedvig.productPricing.service.web.dto.InsuranceModificationDTO)
+2020-03-17 16:34:40.026  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/modifyProduct || /_/insurance/{memberId}/modifyProduct],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.modifyProduct(java.lang.String,com.hedvig.productPricing.service.web.dto.ModifyRequestDTO)
+2020-03-17 16:34:40.026  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/monthlyBilling || /_/insurance/monthlyBilling],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceBillingDTO>> com.hedvig.productPricing.service.web.InternalController.getMonthlyBilling(int,int)
+2020-03-17 16:34:40.026  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/monthlyBilling || /_/insurance/{memberId}/monthlyBilling],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hedvig.productPricing.service.web.dto.InsuranceBillingDTO> com.hedvig.productPricing.service.web.InternalController.getMonthlyBilling(java.lang.String,int,int)
+2020-03-17 16:34:40.027  WARN [product-pricing,,,] 127408 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'internalController' method 
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.search(com.hedvig.productPricing.service.aggregates.ProductStates,java.lang.String)
+to {[/i/insurance/search || /_/insurance/search],methods=[GET]}: There is already 'internalController' bean method
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate) mapped.
+2020-03-17 16:34:40.031  INFO [product-pricing,,,] 127408 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-03-17 16:34:40.045 ERROR [product-pricing,,,] 127408 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'internalController' method 
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.search(com.hedvig.productPricing.service.aggregates.ProductStates,java.lang.String)
+to {[/i/insurance/search || /_/insurance/search],methods=[GET]}: There is already 'internalController' bean method
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'internalController' method 
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.search(com.hedvig.productPricing.service.aggregates.ProductStates,java.lang.String)
+to {[/i/insurance/search || /_/insurance/search],methods=[GET]}: There is already 'internalController' bean method
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 42 common frames omitted
+
+2020-03-17 16:34:40.064  WARN [product-pricing,,,] 127408 --- [           main] io.fabric8.kubernetes.client.Config      : Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+2020-03-17 16:34:40.282  INFO [product-pricing,,,] 127408 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3de79067: startup date [Tue Mar 17 16:34:40 CET 2020]; root of context hierarchy
+2020-03-17 16:34:40.317  INFO [product-pricing,,,] 127408 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:34:40.356  INFO [product-pricing,,,] 127408 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4af184a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.6.RELEASE)
+
+2020-03-17 16:34:40.608  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.s.web.InternalControllerTest       : The following profiles are active: test
+2020-03-17 16:34:40.610  INFO [product-pricing,,,] 127408 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@61b838f2: startup date [Tue Mar 17 16:34:40 CET 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3de79067
+2020-03-17 16:34:41.105  INFO [product-pricing,,,] 127408 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:34:41.189  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Instantiating PriceEngineBaseLine ...
+2020-03-17 16:34:41.189  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Reading pricing data...
+2020-03-17 16:34:41.189  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...tariffs from: src/test/resources/tariff.csv
+2020-03-17 16:34:41.196  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...done!
+2020-03-17 16:34:41.199  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Zip data from: src/test/resources/geografi.csv
+2020-03-17 16:34:41.214  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...done!
+2020-03-17 16:34:41.228  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Testing price enginge consitency...
+2020-03-17 16:34:41.229  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Query for base product recieved:Alder39
+Fbelopp:1000000
+Antper:4
+Geografi:12130
+Vaning:0
+Duration:0
+Sjrisk:1500
+Hyrdeg:false
+Nyteckning:true
+Larm:false
+Sakerhetsdorr:true
+Betalningsanmarkning:false
+PaymentType:null
+BRF:true
+Student:false
+2020-03-17 16:34:41.229  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Grundskydd:1.030223427:1.009564679:1.007115278:1.058435923:1.056243801:1.043007405:1.006847295:1.074564243 --> 1.321468703767125
+2020-03-17 16:34:41.234  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : riskpremie:448.9029186696924
+bruttopremie_exakt:795.817689959609
+bruttopremie_kund:795.817689959609
+premie_inc_nyteckning:716.2359209636481
+premie_inc_rabatt:680.4241249154657
+2020-03-17 16:34:41.236  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Allrisk:1.017015038:1.050304066:1.020391244:1.094301698:1.078257427:1.0:1.089608129:1.034657241:1.062033264 --> 1.5398330315697852
+2020-03-17 16:34:41.237  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : riskpremie:322.36404515913455
+bruttopremie_exakt:518.4537336523664
+bruttopremie_kund:518.4537336523664
+premie_inc_nyteckning:466.60836028712976
+premie_inc_rabatt:443.27794227277326
+2020-03-17 16:34:41.238  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Brftillagg:1.096945974:1.074141391:1.0:1.032931891:1.058956944:1.0:1.052730448:1.003693734 --> 1.3618054763164227
+2020-03-17 16:34:41.238  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : riskpremie:161.3739489434961
+bruttopremie_exakt:295.9359174435163
+bruttopremie_kund:295.9359174435163
+premie_inc_nyteckning:266.3423256991647
+premie_inc_rabatt:253.02520941420644
+2020-03-17 16:34:41.238  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...startup complete:true
+2020-03-17 16:34:41.243  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Reading pricing data...
+2020-03-17 16:34:41.243  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...tariffs from: src/test/resources/tariff.csv
+2020-03-17 16:34:41.247  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...done!
+2020-03-17 16:34:41.247  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : Zip data from: src/test/resources/geografi.csv
+2020-03-17 16:34:41.269  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.pricing.PricingEngineHedvig_v1     : ...done!
+2020-03-17 16:34:41.521  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@61b838f2: startup date [Tue Mar 17 16:34:40 CET 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3de79067
+2020-03-17 16:34:41.578  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/contractSigned || /_/insurance/contractSigned],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.hedvig.productPricing.service.web.InternalController.ContractsSigned(com.hedvig.productPricing.service.web.dto.ContractSignedRequest) throws java.io.IOException
+2020-03-17 16:34:41.579  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/safetyIncreasers || /_/insurance/{memberId}/safetyIncreasers],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hedvig.productPricing.service.web.dto.SafetyIncreasersDTO> com.hedvig.productPricing.service.web.InternalController.getSafetyIncreasers(java.lang.String)
+2020-03-17 16:34:41.579  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/insuredAtOtherCompany || /_/insurance/{memberId}/insuredAtOtherCompany],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.insuredAtOtherCompany(java.lang.String,com.hedvig.productPricing.service.web.dto.InsuredAtOtherCompanyDTO)
+2020-03-17 16:34:41.579  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/search || /_/insurance/search],methods=[GET]}" onto public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate)
+2020-03-17 16:34:41.580  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/certificate || /_/insurance/{memberId}/certificate],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.insuranceCertificate(java.lang.String,org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2020-03-17 16:34:41.580  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/certificate || /_/insurance/{memberId}/certificate],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.insuranceCertificate(java.lang.String)
+2020-03-17 16:34:41.581  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/insurance || /_/insurance/{memberId}/insurance],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.getInsuranceStatus(java.lang.String)
+2020-03-17 16:34:41.581  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/insurances || /_/insurance/{memberId}/insurances],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO>> com.hedvig.productPricing.service.web.InternalController.getInsurancesByMember(java.lang.String)
+2020-03-17 16:34:41.581  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/activateAtDate || /_/insurance/{memberId}/activateAtDate],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.activate(java.lang.String,com.hedvig.productPricing.service.web.dto.ActivateRequestDTO)
+2020-03-17 16:34:41.582  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/contract/{memberId} || /_/insurance/contract/{memberId}],methods=[GET],produces=[application/pdf]}" onto public org.springframework.http.ResponseEntity<byte[]> com.hedvig.productPricing.service.web.InternalController.getQuotePdf(java.lang.String)
+2020-03-17 16:34:41.582  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/sendCancellationEmail || /_/insurance/{memberId}/sendCancellationEmail],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.sendCancellationEmail(java.lang.String)
+2020-03-17 16:34:41.582  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/setCancellationDate || /_/insurance/{memberId}/setCancellationDate],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.setCancellationDate(java.lang.String,com.hedvig.productPricing.service.web.dto.SetCancellationDateRequest)
+2020-03-17 16:34:41.583  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/terminateMembers || /_/insurance/terminateMembers],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.terminateMembers()
+2020-03-17 16:34:41.583  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/createmodifiedProduct || /_/insurance/{memberId}/createmodifiedProduct],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.createmodifiedProduct(java.lang.String,com.hedvig.productPricing.service.web.dto.InsuranceModificationDTO)
+2020-03-17 16:34:41.584  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/modifyProduct || /_/insurance/{memberId}/modifyProduct],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<?> com.hedvig.productPricing.service.web.InternalController.modifyProduct(java.lang.String,com.hedvig.productPricing.service.web.dto.ModifyRequestDTO)
+2020-03-17 16:34:41.584  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/monthlyBilling || /_/insurance/monthlyBilling],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceBillingDTO>> com.hedvig.productPricing.service.web.InternalController.getMonthlyBilling(int,int)
+2020-03-17 16:34:41.584  INFO [product-pricing,,,] 127408 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/i/insurance/{memberId}/monthlyBilling || /_/insurance/{memberId}/monthlyBilling],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hedvig.productPricing.service.web.dto.InsuranceBillingDTO> com.hedvig.productPricing.service.web.InternalController.getMonthlyBilling(java.lang.String,int,int)
+2020-03-17 16:34:41.585  WARN [product-pricing,,,] 127408 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'internalController' method 
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.search(com.hedvig.productPricing.service.aggregates.ProductStates,java.lang.String)
+to {[/i/insurance/search || /_/insurance/search],methods=[GET]}: There is already 'internalController' bean method
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate) mapped.
+2020-03-17 16:34:41.587  INFO [product-pricing,,,] 127408 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-03-17 16:34:41.604 ERROR [product-pricing,,,] 127408 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'internalController' method 
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.search(com.hedvig.productPricing.service.aggregates.ProductStates,java.lang.String)
+to {[/i/insurance/search || /_/insurance/search],methods=[GET]}: There is already 'internalController' bean method
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'internalController' method 
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.search(com.hedvig.productPricing.service.aggregates.ProductStates,java.lang.String)
+to {[/i/insurance/search || /_/insurance/search],methods=[GET]}: There is already 'internalController' bean method
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 41 common frames omitted
+
+2020-03-17 16:34:41.605 ERROR [product-pricing,,,] 127408 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7a55af6b] to prepare test instance [com.hedvig.productPricing.service.web.InternalControllerTest@1046d517]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'internalController' method 
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.search(com.hedvig.productPricing.service.aggregates.ProductStates,java.lang.String)
+to {[/i/insurance/search || /_/insurance/search],methods=[GET]}: There is already 'internalController' bean method
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 27 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'internalController' method 
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.search(com.hedvig.productPricing.service.aggregates.ProductStates,java.lang.String)
+to {[/i/insurance/search || /_/insurance/search],methods=[GET]}: There is already 'internalController' bean method
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 42 common frames omitted
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.124 sec <<< FAILURE! - in com.hedvig.productPricing.service.web.InternalControllerTest
+test(com.hedvig.productPricing.service.web.InternalControllerTest)  Time elapsed: 0.016 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'internalController' method 
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.search(com.hedvig.productPricing.service.aggregates.ProductStates,java.lang.String)
+to {[/i/insurance/search || /_/insurance/search],methods=[GET]}: There is already 'internalController' bean method
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'internalController' method 
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceStatusDTO> com.hedvig.productPricing.service.web.InternalController.search(com.hedvig.productPricing.service.aggregates.ProductStates,java.lang.String)
+to {[/i/insurance/search || /_/insurance/search],methods=[GET]}: There is already 'internalController' bean method
+public java.util.List<com.hedvig.productPricing.service.web.dto.InsuranceNotificationDTO> com.hedvig.productPricing.service.web.InternalController.searchByActivationDate(java.time.LocalDate) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Running com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest
+2020-03-17 16:34:41.644  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest], using DelegatingSmartContextLoader
+2020-03-17 16:34:41.655  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-17 16:34:41.656  INFO [product-pricing,,,] 127408 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest]: InsuranceBillingServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-03-17 16:34:41.676  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-03-17 16:34:41.677  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@40cf6254, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@40bf0e15, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2c77344f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@121ddca4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@297bd171, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@118cbded, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4cc26df, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7848321e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@f4f843f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7b5833ee, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1e471884, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@27261190]
+2020-03-17 16:34:41.701  INFO [product-pricing,,,] 127408 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@6e46891d: startup date [Tue Mar 17 16:34:41 CET 2020]; root of context hierarchy
+2020-03-17 16:34:41.734  INFO [product-pricing,,,] 127408 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:34:42.107 ERROR [product-pricing,,,] 127408 --- [           main] c.h.p.s.service.InsuranceBillingInfo     : CalculatePricePerMonth: Negative price for month 2020-03, price: -26, memberId: 1
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.208 sec - in com.hedvig.productPricing.service.service.InsuranceBillingServiceImplTest
+Running com.hedvig.productPricing.service.service.InsuranceServiceImplTest
+2020-03-17 16:34:42.234  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest], using DelegatingSmartContextLoader
+2020-03-17 16:34:42.235  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-17 16:34:42.235  INFO [product-pricing,,,] 127408 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.hedvig.productPricing.service.service.InsuranceServiceImplTest]: InsuranceServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-03-17 16:34:42.240  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-03-17 16:34:42.241  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@42f9873e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18483b8b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@24fc2c80, org.springframework.test.context.support.DirtiesContextTestExecutionListener@965bcbc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7ab1ad9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5ee6fdc4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1bbb42b4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3f9f8d23, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@603d25db, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@95cecc5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@48b3b1b8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@b86cb18]
+2020-03-17 16:34:42.249  INFO [product-pricing,,,] 127408 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@29c244e: startup date [Tue Mar 17 16:34:42 CET 2020]; root of context hierarchy
+2020-03-17 16:34:42.259  INFO [product-pricing,,,] 127408 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in com.hedvig.productPricing.service.service.InsuranceServiceImplTest
+Running com.hedvig.productPricing.ProductPricingApplicationTests
+2020-03-17 16:34:42.352  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.productPricing.ProductPricingApplicationTests], using DelegatingSmartContextLoader
+2020-03-17 16:34:42.353  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.hedvig.productPricing.ProductPricingApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-17 16:34:42.360  INFO [product-pricing,,,] 127408 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.hedvig.productPricing.ProductPricingApplicationTests]: ProductPricingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-03-17 16:34:42.365  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-03-17 16:34:42.365  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@35e689a0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@43b6cb1c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3bf5911d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1de30c31, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1cc93da4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@69d2fb0a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7e38e254, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7b3feb26, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2e4ecdf8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@503a7990, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@69a90b81, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6dcbbb49]
+2020-03-17 16:34:42.417  INFO [product-pricing,,,] 127408 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@4a520f05: startup date [Tue Mar 17 16:34:42 CET 2020]; root of context hierarchy
+2020-03-17 16:34:42.422  INFO [product-pricing,,,] 127408 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in com.hedvig.productPricing.ProductPricingApplicationTests
+Running com.hedvig.productPricing.aggregates.MemberAggregateTest
+2020-03-17 16:34:42.469  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.productPricing.aggregates.MemberAggregateTest], using DelegatingSmartContextLoader
+2020-03-17 16:34:42.479  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.hedvig.productPricing.aggregates.MemberAggregateTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-17 16:34:42.485  INFO [product-pricing,,,] 127408 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.hedvig.productPricing.aggregates.MemberAggregateTest]: MemberAggregateTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-03-17 16:34:42.497  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-03-17 16:34:42.498  INFO [product-pricing,,,] 127408 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@70022d44, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7b1c501d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5abbb273, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25d9291a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@445058e8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5d5574c7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5a7a6d34, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@36871e98, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@70d687b8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6533629, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@f49e81a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1b444b5]
+2020-03-17 16:34:42.504  INFO [product-pricing,,,] 127408 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@459bf87c: startup date [Tue Mar 17 16:34:42 CET 2020]; root of context hierarchy
+2020-03-17 16:34:42.512  INFO [product-pricing,,,] 127408 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:34:42.804  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.s.aggregates.MemberAggregate       : create user
+2020-03-17 16:34:42.842  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.s.aggregates.MemberAggregate       : Instansiating MemberAggregate
+2020-03-17 16:34:42.899  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.s.aggregates.MemberAggregate       : Instansiating MemberAggregate
+2020-03-17 16:34:42.901  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.s.aggregates.MemberAggregate       : create product
+2020-03-17 16:34:42.902  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.s.aggregates.MemberAggregate       : Instansiating MemberAggregate
+2020-03-17 16:34:42.945  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.s.aggregates.MemberAggregate       : Instansiating MemberAggregate
+2020-03-17 16:34:42.948  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.s.aggregates.MemberAggregate       : create product
+2020-03-17 16:34:42.950  INFO [product-pricing,,,] 127408 --- [           main] c.h.p.s.aggregates.MemberAggregate       : Instansiating MemberAggregate
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.488 sec - in com.hedvig.productPricing.aggregates.MemberAggregateTest
+2020-03-17 16:34:42.984  INFO [product-pricing,,,] 127408 --- [       Thread-9] o.s.c.support.GenericApplicationContext  : Closing org.springframework.context.support.GenericApplicationContext@29c244e: startup date [Tue Mar 17 16:34:42 CET 2020]; root of context hierarchy
+2020-03-17 16:34:42.984  INFO [product-pricing,,,] 127408 --- [       Thread-8] o.s.c.support.GenericApplicationContext  : Closing org.springframework.context.support.GenericApplicationContext@6e46891d: startup date [Tue Mar 17 16:34:41 CET 2020]; root of context hierarchy
+2020-03-17 16:34:43.010  INFO [product-pricing,,,] 127408 --- [      Thread-11] o.s.c.support.GenericApplicationContext  : Closing org.springframework.context.support.GenericApplicationContext@459bf87c: startup date [Tue Mar 17 16:34:42 CET 2020]; root of context hierarchy
+2020-03-17 16:34:43.011  INFO [product-pricing,,,] 127408 --- [      Thread-10] o.s.c.support.GenericApplicationContext  : Closing org.springframework.context.support.GenericApplicationContext@4a520f05: startup date [Tue Mar 17 16:34:42 CET 2020]; root of context hierarchy
+
+Results :
+
+Tests in error: 
+  InternalControllerTest.test » IllegalState Failed to load ApplicationContext
+
+Tests run: 36, Failures: 0, Errors: 1, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.866 s
+[INFO] Finished at: 2020-03-17T16:34:43+01:00
+[INFO] Final Memory: 32M/77M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project product-pricing: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project product-pricing: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-product-pricing-413150665-20180807-164205-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:254)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
