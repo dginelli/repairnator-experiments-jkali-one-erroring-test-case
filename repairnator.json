@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "BrynCooke/cdi-unit",
-  "failingModule": "/root/workspace/BrynCooke/cdi-unit/250710418/cdi-unit-tests-bare",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NoSuchMethodError"
-  ],
-  "totalNumberRunningTests": 104,
-  "failing-test-cases": [
-    {
-      "className": "org.jglue.cdiunit.TestCdiRunner",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.jglue.cdiunit.TestCdiRunner#testStart"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:47 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:34:36 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 16844224,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 107,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          3
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-BrynCooke-cdi-unit-250710418-20170706-130220_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-BrynCooke-cdi-unit-250710418-20170706-130220_bugonly-firstCommit/cdi-unit-tests-bare",
+    "overallMetrics": {
+      "numberRunning": 104,
+      "numberPassing": 103,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NoSuchMethodError",
-          "failureDetail": "org.jboss.weld.metadata.BeansXmlImpl.\u003cinit\u003e(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lorg/jboss/weld/bootstrap/spi/Scanning;Ljava/net/URL;Lorg/jboss/weld/bootstrap/spi/BeanDiscoveryMode;Ljava/lang/String;Z)V",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jglue.cdiunit.TestCdiRunner",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jglue.cdiunit.TestCdiRunner",
+        "testMethod": "testStart",
+        "failureName": "java.lang.NoSuchMethodError",
+        "detail": "org.jboss.weld.metadata.BeansXmlImpl.\u003cinit\u003e(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lorg/jboss/weld/bootstrap/spi/Scanning;Ljava/net/URL;Lorg/jboss/weld/bootstrap/spi/BeanDiscoveryMode;Ljava/lang/String;Z)V",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberPlugins": 0,
+    "numberSourceFiles": 59,
+    "numberTestFiles": 89,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  }
 }
