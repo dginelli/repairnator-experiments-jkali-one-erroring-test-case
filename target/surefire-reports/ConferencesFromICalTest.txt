@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: ConferencesFromICalTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.902 sec <<< FAILURE! - in ConferencesFromICalTest
+retriveTest(ConferencesFromICalTest)  Time elapsed: 0.199 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78)
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:113)
+	at net.fortuna.ical4j.data.CalendarBuilder.build(CalendarBuilder.java:165)
+	at io.github.oliviercailloux.y2018.jconfs.ConferenceReader.createConference(ConferenceReader.java:79)
+	at io.github.oliviercailloux.y2018.jconfs.ConferencesFromICal.retrive(ConferencesFromICal.java:37)
+	at io.github.oliviercailloux.y2018.jconfs.ConferencesFromICal.retrive(ConferencesFromICal.java:47)
+	at ConferencesFromICalTest.retriveTest(ConferencesFromICalTest.java:48)
+
