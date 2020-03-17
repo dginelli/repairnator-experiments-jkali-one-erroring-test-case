@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.boudnik.ariadne.spark.SparkTest" time="4.877" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="skip.gulp" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="findbugs.skip" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="skip.npm" value="true"/>
+    <property name="java.endorsed.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="gpg.skip" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="cobertura.skip" value="true"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/hpc2n/eb/software/Core/Maven/3.6.0/lib:/hpc2n/eb/software/Core/Java/1.8.0_202/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="license.skip" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="skip.bower" value="true"/>
+    <property name="maven.repo.local" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit/.m2"/>
+    <property name="os.version" value="4.15.0-91-generic"/>
+    <property name="user.home" value="/home/d/dginelli"/>
+    <property name="user.timezone" value="Europe/Stockholm"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="dginelli"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="skipITs" value="true"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -e -D enforcer.skip=true -D dependency-check.skip=true -D skipITs=true -D cobertura.skip=true -D maven.repo.local=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit/.m2 -D rat.skip=true -D findbugs.skip=true -D skip.bower=true -D gpg.skip=true -D skip.gulp=true -D license.skip=true -D skip.npm=true test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="dependency-check.skip" value="true"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/resources.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/rt.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/sunrsasign.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jsse.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jce.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/charsets.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jfr.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="enforcer.skip" value="true"/>
+    <property name="rat.skip" value="true"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="first" classname="org.boudnik.ariadne.spark.SparkTest" time="4.877">
+    <error message="Path does not exist: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit/src/test/data/opsos/traffic/*;" type="org.apache.spark.sql.AnalysisException">org.apache.spark.sql.AnalysisException: Path does not exist: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit/src/test/data/opsos/traffic/*;
+	at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$org$apache$spark$sql$execution$datasources$DataSource$$checkAndGlobPathIfNecessary$1.apply(DataSource.scala:552)
+	at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$org$apache$spark$sql$execution$datasources$DataSource$$checkAndGlobPathIfNecessary$1.apply(DataSource.scala:545)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)
+	at scala.collection.immutable.List.flatMap(List.scala:355)
+	at org.apache.spark.sql.execution.datasources.DataSource.org$apache$spark$sql$execution$datasources$DataSource$$checkAndGlobPathIfNecessary(DataSource.scala:545)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:359)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:223)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.text(DataFrameReader.scala:715)
+	at org.apache.spark.sql.DataFrameReader.textFile(DataFrameReader.scala:757)
+	at org.apache.spark.sql.DataFrameReader.textFile(DataFrameReader.scala:724)
+	at org.boudnik.ariadne.spark.SparkTest.first(SparkTest.java:43)
+</error>
+    <system-err><![CDATA[Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/03/17 16:35:22 INFO SparkContext: Running Spark version 2.4.5
+20/03/17 16:35:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/03/17 16:35:22 INFO SparkContext: Submitted application: Java Spark SQL basic example
+20/03/17 16:35:22 INFO SecurityManager: Changing view acls to: dginelli
+20/03/17 16:35:22 INFO SecurityManager: Changing modify acls to: dginelli
+20/03/17 16:35:22 INFO SecurityManager: Changing view acls groups to: 
+20/03/17 16:35:22 INFO SecurityManager: Changing modify acls groups to: 
+20/03/17 16:35:22 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dginelli); groups with view permissions: Set(); users  with modify permissions: Set(dginelli); groups with modify permissions: Set()
+20/03/17 16:35:23 INFO Utils: Successfully started service 'sparkDriver' on port 41147.
+20/03/17 16:35:23 INFO SparkEnv: Registering MapOutputTracker
+20/03/17 16:35:23 INFO SparkEnv: Registering BlockManagerMaster
+20/03/17 16:35:23 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+20/03/17 16:35:23 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+20/03/17 16:35:23 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-db5a67f9-c213-4059-9e1f-b5d8e6763fdd
+20/03/17 16:35:23 INFO MemoryStore: MemoryStore started with capacity 467.3 MB
+20/03/17 16:35:23 INFO SparkEnv: Registering OutputCommitCoordinator
+20/03/17 16:35:23 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+20/03/17 16:35:23 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://b-cn0918.hpc2n.umu.se:4040
+20/03/17 16:35:24 INFO Executor: Starting executor ID driver on host localhost
+20/03/17 16:35:24 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46347.
+20/03/17 16:35:24 INFO NettyBlockTransferService: Server created on b-cn0918.hpc2n.umu.se:46347
+20/03/17 16:35:24 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/03/17 16:35:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, b-cn0918.hpc2n.umu.se, 46347, None)
+20/03/17 16:35:24 INFO BlockManagerMasterEndpoint: Registering block manager b-cn0918.hpc2n.umu.se:46347 with 467.3 MB RAM, BlockManagerId(driver, b-cn0918.hpc2n.umu.se, 46347, None)
+20/03/17 16:35:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, b-cn0918.hpc2n.umu.se, 46347, None)
+20/03/17 16:35:24 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, b-cn0918.hpc2n.umu.se, 46347, None)
+20/03/17 16:35:25 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit/spark-warehouse').
+20/03/17 16:35:25 INFO SharedState: Warehouse path is 'file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit/spark-warehouse'.
+20/03/17 16:35:26 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+]]></system-err>
+  </testcase>
+</testsuite>

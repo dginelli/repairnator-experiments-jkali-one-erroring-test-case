@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.boudnik.ariadne.spark.SparkTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.997 sec <<< FAILURE! - in org.boudnik.ariadne.spark.SparkTest
+first(org.boudnik.ariadne.spark.SparkTest)  Time elapsed: 4.877 sec  <<< ERROR!
+org.apache.spark.sql.AnalysisException: Path does not exist: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit/src/test/data/opsos/traffic/*;
+	at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$org$apache$spark$sql$execution$datasources$DataSource$$checkAndGlobPathIfNecessary$1.apply(DataSource.scala:552)
+	at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$org$apache$spark$sql$execution$datasources$DataSource$$checkAndGlobPathIfNecessary$1.apply(DataSource.scala:545)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)
+	at scala.collection.immutable.List.flatMap(List.scala:355)
+	at org.apache.spark.sql.execution.datasources.DataSource.org$apache$spark$sql$execution$datasources$DataSource$$checkAndGlobPathIfNecessary(DataSource.scala:545)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:359)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:223)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.text(DataFrameReader.scala:715)
+	at org.apache.spark.sql.DataFrameReader.textFile(DataFrameReader.scala:757)
+	at org.apache.spark.sql.DataFrameReader.textFile(DataFrameReader.scala:724)
+	at org.boudnik.ariadne.spark.SparkTest.first(SparkTest.java:43)
+
