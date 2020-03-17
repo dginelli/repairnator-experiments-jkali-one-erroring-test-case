@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "aboudnik/ariadne",
-  "bugCommit": "https://github.com/aboudnik/ariadne/compare/d859502d5c8b...a34aafa34e83",
-  "failingModule": "/root/workspace/aboudnik/ariadne/385651104",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.apache.spark.sql.AnalysisException"
-  ],
-  "totalNumberRunningTests": 8,
-  "failing-test-cases": [
-    {
-      "className": "org.boudnik.ariadne.spark.SparkTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "first"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:33 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:38:00 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 18723768,
+      "totalMemory": 191344640
+    },
+    "totalDuration": 204,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 125,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          125
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 8,
+      "numberPassing": 7,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.apache.spark.sql.AnalysisException",
-          "failureDetail": "Path does not exist: file:/root/workspace/aboudnik/ariadne/385651104/src/test/data/opsos/traffic/*;",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.boudnik.ariadne.spark.SparkTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.boudnik.ariadne.spark.SparkTest",
+        "testMethod": "first",
+        "failureName": "org.apache.spark.sql.AnalysisException",
+        "detail": "Path does not exist: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-aboudnik-ariadne-385651104-20180530-135054-firstCommit/src/test/data/opsos/traffic/*;",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 12,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 158,
+    "numberLines": 0
+  }
 }
