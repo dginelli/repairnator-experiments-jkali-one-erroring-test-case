@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "IQSS/dataverse",
-  "bugCommit": "https://github.com/IQSS/dataverse/compare/896655d8f11e...1286c8d39731",
-  "failingModule": "/root/workspace/IQSS/dataverse/295011313",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.io.IOException"
-  ],
-  "totalNumberRunningTests": 449,
-  "failing-test-cases": [
-    {
-      "className": "edu.harvard.iq.dataverse.ingest.IngestableDataCheckerTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "edu.harvard.iq.dataverse.ingest.IngestableDataCheckerTest#testTestSAVformat"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:25 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:46:15 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 850746184,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 767,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 96,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          96
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-295011313-20171030-202128_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-295011313-20171030-202128_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 449,
+      "numberPassing": 448,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.io.IOException",
-          "failureDetail": "a file with the name \u0027testNotSAV.txt\u0027 already exists in the test folder",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.iq.dataverse.ingest.IngestableDataCheckerTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.iq.dataverse.ingest.IngestableDataCheckerTest",
+        "testMethod": "testTestSAVformat",
+        "failureName": "java.io.IOException",
+        "detail": "a file with the name \u0027testNotSAV.txt\u0027 already exists in the test folder",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 673,
+    "numberTestFiles": 120,
+    "numberLibrariesFailingModule": 202,
+    "numberLines": 0
+  }
 }
