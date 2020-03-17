@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 2,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "andsel/moquette",
-  "failingModule": "/root/workspace/andsel/moquette/266853693/osgi_test",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.sonatype.aether.resolution.VersionRangeResolutionException"
-  ],
-  "totalNumberRunningTests": 182,
-  "failing-test-cases": [
-    {
-      "className": "io.moquette.test.osgi.MoquetteOsgiTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.moquette.test.osgi.MoquetteOsgiTest#testCanFindOsgiBundle"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:36:09 PM",
+    "reproductionDateEnd": "Mar 17, 2020 5:14:50 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 376536248,
+      "totalMemory": 1095208960
+    },
+    "totalDuration": 2317,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1918,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1918
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-andsel-moquette-266853693-20170821-180132_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-andsel-moquette-266853693-20170821-180132_bugonly-firstCommit/osgi_test",
+    "overallMetrics": {
+      "numberRunning": 180,
+      "numberPassing": 179,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
       "failures": [
         {
-          "failureName": "org.sonatype.aether.resolution.VersionRangeResolutionException",
-          "failureDetail": "Not highest version found for io.moquette:moquette-broker:jar:(0.0,]",
-          "isError": true
+          "failureName": "java.io.IOException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.moquette.test.osgi.MoquetteOsgiTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.moquette.test.osgi.MoquetteOsgiTest",
+        "testMethod": "testCanFindOsgiBundle",
+        "failureName": "java.io.IOException",
+        "detail": "Server returned HTTP response code: 501 for URL: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam/4.6.0/pax-exam-4.6.0.jar",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberPlugins": 0,
+    "numberSourceFiles": 111,
+    "numberTestFiles": 43,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  }
 }
