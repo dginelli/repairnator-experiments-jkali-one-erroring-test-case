@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:24 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:53:22 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 127804552,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1195,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 872,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          872
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-GalRogozinski-iri-407635891-20180724-163657-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-GalRogozinski-iri-407635891-20180724-163657-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 183,
+      "numberPassing": 182,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.iota.iri.utils.collections.impl.BoundedSetWrapperTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.iota.iri.utils.collections.impl.BoundedSetWrapperTest",
+        "testMethod": "createSetAndAssertEquals",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "The given collection size 6 is larger then maxSize 4",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 110,
+    "numberTestFiles": 31,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  }
+}
