@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "Microsoft/spring-data-documentdb",
-  "bugCommit": "https://github.com/Microsoft/spring-data-documentdb/compare/666c6f95fd33...6121de79e08c",
-  "failingModule": "/root/workspace/Microsoft/spring-data-documentdb/348048249",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NoClassDefFoundError"
-  ],
-  "totalNumberRunningTests": 24,
-  "failing-test-cases": [
-    {
-      "className": "com.microsoft.azure.spring.data.documentdb.DocumentDbFactoryUnitTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.microsoft.azure.spring.data.documentdb.DocumentDbFactoryUnitTest#initializationError"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:26 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:37:18 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 9063384,
+      "totalMemory": 102162432
+    },
+    "totalDuration": 169,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 92,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          92
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Microsoft-spring-data-documentdb-348048249-20180302-021959-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Microsoft-spring-data-documentdb-348048249-20180302-021959-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 24,
+      "numberPassing": 23,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NoClassDefFoundError",
-          "failureDetail": "javax/servlet/ServletContext",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.microsoft.azure.spring.data.documentdb.DocumentDbFactoryUnitTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.microsoft.azure.spring.data.documentdb.DocumentDbFactoryUnitTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "javax/servlet/ServletContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 37,
+    "numberTestFiles": 26,
+    "numberLibrariesFailingModule": 51,
+    "numberLines": 0
+  }
 }
