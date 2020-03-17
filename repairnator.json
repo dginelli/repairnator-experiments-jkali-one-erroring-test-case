@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "Forester19/GiveawayStore",
-  "bugCommit": "https://github.com/Forester19/GiveawayStore/compare/0b4a1e62063b...570ed7b7f6db",
-  "failingModule": "/root/workspace/Forester19/GiveawayStore/331204411",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.mockito.exceptions.misusing.UnfinishedVerificationException"
-  ],
-  "totalNumberRunningTests": 19,
-  "failing-test-cases": [
-    {
-      "className": "ua.com.company.store.controller.impl.executions.CommandSortProductsTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "ua.com.company.store.controller.impl.executions.CommandSortProductsTest#sortingProductsV1"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:17 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:34:39 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 37196344,
+      "totalMemory": 120664064
+    },
+    "totalDuration": 80,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 17,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          17
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Forester19-GiveawayStore-331204411-20180120-154218_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Forester19-GiveawayStore-331204411-20180120-154218_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 19,
+      "numberPassing": 18,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.mockito.exceptions.misusing.UnfinishedVerificationException",
-          "failureDetail": " Missing method call for verify(mock) here: -\u003e at ua.com.company.store.utils.CookiesAction.getUserFromCookie(CookiesAction.java:36)  Example of correct verification:     verify(mock).doSomething()  Also, this error might show up because you verify either of: final/private/equals()/hashCode() methods. Those methods *cannot* be stubbed/verified. ",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ua.com.company.store.controller.impl.redirection.CommandAdminPageTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ua.com.company.store.controller.impl.redirection.CommandAdminPageTest",
+        "testMethod": "verifUserInSessionRedirectionTest",
+        "failureName": "org.mockito.exceptions.misusing.UnfinishedVerificationException",
+        "detail": "\nMissing method call for verify(mock) here:\n-\u003e at ua.com.company.store.utils.CookiesAction.getUserFromCookie(CookiesAction.java:36)\n\nExample of correct verification:\n    verify(mock).doSomething()\n\nAlso, this error might show up because you verify either of: final/private/equals()/hashCode() methods.\nThose methods *cannot* be stubbed/verified.\n",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 74,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 89,
+    "numberLines": 0
+  }
 }
