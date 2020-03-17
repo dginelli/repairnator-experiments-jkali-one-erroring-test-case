@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "FrankSauve/345BudgetApp",
-  "bugCommit": "https://github.com/FrankSauve/345BudgetApp/compare/327da229c13d...d6d2300315c5",
-  "failingModule": "/root/workspace/FrankSauve/345BudgetApp/360752450",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 18,
-  "failing-test-cases": [
-    {
-      "className": "io.budgetapp.migration.MigrationTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.budgetapp.migration.MigrationTest#migrationTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:17 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:37:38 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 311627088,
+      "totalMemory": 941727744
+    },
+    "totalDuration": 259,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 189,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          189
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-FrankSauve-345BudgetApp-360752450-20180401-021743-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-FrankSauve-345BudgetApp-360752450-20180401-021743-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 18,
+      "numberPassing": 17,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.budgetapp.migration.MigrationTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.budgetapp.migration.MigrationTest",
+        "testMethod": "migrationTest",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 71,
+    "numberTestFiles": 17,
+    "numberLibrariesFailingModule": 0,
+    "numberLines": 0
+  }
 }
