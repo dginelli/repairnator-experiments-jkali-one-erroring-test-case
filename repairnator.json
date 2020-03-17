@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "JavaDogs/cws",
-  "bugCommit": "https://github.com/JavaDogs/cws/compare/5708c7501ef3...3606e433b440",
-  "failingModule": "/root/workspace/JavaDogs/cws/369089083/cws-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "io.javadog.cws.core.exceptions.CWSException"
-  ],
-  "totalNumberRunningTests": 359,
-  "failing-test-cases": [
-    {
-      "className": "io.javadog.cws.core.services.SettingServiceTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.javadog.cws.core.services.SettingServiceTest#testSetPBEIntervalWithNoMembers"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:57 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:45:30 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 62409752,
+      "totalMemory": 262987776
+    },
+    "totalDuration": 689,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 606,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          606
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-JavaDogs-cws-369089083-20180420-132803-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-JavaDogs-cws-369089083-20180420-132803-firstCommit/cws-core",
+    "overallMetrics": {
+      "numberRunning": 359,
+      "numberPassing": 358,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "io.javadog.cws.core.exceptions.CWSException",
-          "failureDetail": "could not execute statement",
-          "isError": true
+          "failureName": "javax.persistence.PessimisticLockException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.javadog.cws.core.services.SettingServiceTest",
+        "numberRunning": 19,
+        "numberPassing": 18,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.javadog.cws.core.services.SettingServiceTest",
+        "testMethod": "testCreatingAdmin",
+        "failureName": "javax.persistence.PessimisticLockException",
+        "detail": "could not execute statement",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 132,
+    "numberTestFiles": 84,
+    "numberLibrariesFailingModule": 23,
+    "numberLines": 0
+  }
 }
