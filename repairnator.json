@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "Nazdarovja/Biglers-biler",
-  "bugCommit": "https://github.com/Nazdarovja/Biglers-biler/compare/e2d3b08aea2a...fab5359b9856",
-  "failingModule": "/root/workspace/Nazdarovja/Biglers-biler/373652360/Backend",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "backend.exceptions.NotFoundException"
-  ],
-  "totalNumberRunningTests": 2,
-  "failing-test-cases": [
-    {
-      "className": "backend.api.CarRemoteFetchFacadeTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "backend.api.CarRemoteFetchFacadeTest#testGetAll"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:26 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:35:27 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 29239224,
+      "totalMemory": 98639872
+    },
+    "totalDuration": 58,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Nazdarovja-Biglers-biler-373652360-20180501-230739-firstCommit/Backend/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Nazdarovja-Biglers-biler-373652360-20180501-230739-firstCommit/Backend",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 1,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "backend.exceptions.NotFoundException",
-          "failureDetail": "Unable to connect",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "backend.api.CarRemoteFetchFacadeTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "backend.api.CarRemoteFetchFacadeTest",
+        "testMethod": "testGetAll",
+        "failureName": "backend.exceptions.NotFoundException",
+        "detail": "Unable to connect",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 8,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 22,
+    "numberLines": 0
+  }
 }
