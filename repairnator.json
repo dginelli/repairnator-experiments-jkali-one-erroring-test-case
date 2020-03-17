@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "TAI-EPAM/jdi-cucumber-test-generator",
-  "bugCommit": "https://github.com/TAI-EPAM/jdi-cucumber-test-generator/compare/fb3ff056aa52...830b59f58a82",
-  "failingModule": "/root/workspace/TAI-EPAM/jdi-cucumber-test-generator/380742083",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.mockito.exceptions.base.MockitoException"
-  ],
-  "totalNumberRunningTests": 499,
-  "failing-test-cases": [
-    {
-      "className": "com.epam.test_generator.services.EmailServiceTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.epam.test_generator.services.EmailServiceTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:24 PM",
+    "reproductionDateEnd": "Mar 17, 2020 5:06:07 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 87761664,
+      "totalMemory": 380428288
+    },
+    "totalDuration": 1900,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1705,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1705
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-TAI-EPAM-jdi-cucumber-test-generator-380742083-20180518-171543-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-TAI-EPAM-jdi-cucumber-test-generator-380742083-20180518-171543-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 499,
+      "numberPassing": 498,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.mockito.exceptions.base.MockitoException",
-          "failureDetail": "\nCannot instantiate @InjectMocks field named \u0027sut\u0027! Cause: the type \u0027EmailService\u0027 is an interface.\nYou haven\u0027t provided the instance at field declaration so I tried to construct the instance.\nExamples of correct usage of @InjectMocks:\n   @InjectMocks Service service \u003d new Service();\n   @InjectMocks Service service;\n   //and... don\u0027t forget about some @Mocks for injection :)\n",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.epam.test_generator.services.EmailServiceTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.epam.test_generator.services.EmailServiceTest",
+        "testMethod": "com.epam.test_generator.services.EmailServiceTest",
+        "failureName": "org.mockito.exceptions.base.MockitoException",
+        "detail": "\nCannot instantiate @InjectMocks field named \u0027sut\u0027! Cause: the type \u0027EmailService\u0027 is an interface.\nYou haven\u0027t provided the instance at field declaration so I tried to construct the instance.\nExamples of correct usage of @InjectMocks:\n   @InjectMocks Service service \u003d new Service();\n   @InjectMocks Service service;\n   //and... don\u0027t forget about some @Mocks for injection :)\n",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 200,
+    "numberTestFiles": 68,
+    "numberLibrariesFailingModule": 156,
+    "numberLines": 0
+  }
 }
