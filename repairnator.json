@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "Arquisoft/Agents_i1a",
-  "bugCommit": "https://github.com/Arquisoft/Agents_i1a/compare/86332f49de96...fe4f0774052b",
-  "failingModule": "/root/workspace/Arquisoft/Agents_i1a/363526725",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.springframework.boot.context.embedded.tomcat.ConnectorStartFailedException"
-  ],
-  "totalNumberRunningTests": 26,
-  "failing-test-cases": [
-    {
-      "className": "agent.MainControllerTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "agent.MainControllerTest#getLanding"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:43 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:57:46 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 41028560,
+      "totalMemory": 142487552
+    },
+    "totalDuration": 1501,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1250,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1250
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 26,
+      "numberPassing": 25,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.springframework.boot.context.embedded.tomcat.ConnectorStartFailedException",
-          "failureDetail": "Connector configured to listen on port 8080 failed to start",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "agent.MainControllerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "agent.MainControllerTest",
+        "testMethod": "getLanding",
+        "failureName": "org.springframework.boot.context.embedded.tomcat.ConnectorStartFailedException",
+        "detail": "Connector configured to listen on port 8080 failed to start",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 16,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 70,
+    "numberLines": 0
+  }
 }
