@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "DanielHWe/sonar-fxcop",
-  "bugCommit": "https://github.com/DanielHWe/sonar-fxcop/compare/c8b4933fb09a...b6e30c4a50b9",
-  "failingModule": "/root/workspace/DanielHWe/sonar-fxcop/385681821",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalArgumentException"
-  ],
-  "totalNumberRunningTests": 63,
-  "failing-test-cases": [
-    {
-      "className": "org.sonar.plugins.fxcop.FxCopSensorTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testExecuteImpl"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:16 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:38:17 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 68914288,
+      "totalMemory": 178569216
+    },
+    "totalDuration": 298,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 245,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          245
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 63,
+      "numberPassing": 62,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalArgumentException",
-          "failureDetail": "Cannot find the FxCop report \"/root/workspace/DanielHWe/sonar-fxcop/385681821/dummy.rep\" provided by the property \"sonar.cs.fxcop.report\".",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sonar.plugins.fxcop.FxCopSensorTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sonar.plugins.fxcop.FxCopSensorTest",
+        "testMethod": "testExecuteImpl",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Cannot find the FxCop report \"/scratch/dginelli/workspace/repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit/dummy.rep\" provided by the property \"sonar.cs.fxcop.report\".",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 13,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 15,
+    "numberLines": 0
+  }
 }
