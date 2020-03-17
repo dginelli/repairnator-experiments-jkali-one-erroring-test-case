@@ -1,30 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "BME-MIT-IET/MaxPont-iet-2018",
-  "failingModule": "/root/workspace/BME-MIT-IET/MaxPont-iet-2018/381411072",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 29,
-  "failing-test-cases": [
-    {
-      "className": "tr.com.srdc.ontmalizer.test.XSD2OWLTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "createDefaultTextPropertyForMixedClasses_EmptyMixedClass"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:46 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:36:59 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 50871336,
+      "totalMemory": 98697216
+    },
+    "totalDuration": 251,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 184,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          184
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-BME-MIT-IET-MaxPont-iet-2018-381411072-20180520-220501-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-BME-MIT-IET-MaxPont-iet-2018-381411072-20180520-220501-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 29,
+      "numberPassing": 28,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "tr.com.srdc.ontmalizer.test.XSD2OWLTest",
+        "numberRunning": 14,
+        "numberPassing": 13,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "tr.com.srdc.ontmalizer.test.XSD2OWLTest",
+        "testMethod": "createDefaultTextPropertyForMixedClasses_EmptyMixedClass",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 10,
+    "numberTestFiles": 3,
+    "numberLibrariesFailingModule": 61,
+    "numberLines": 0
+  }
 }
