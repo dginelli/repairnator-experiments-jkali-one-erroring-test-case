@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:23 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:35:48 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 46961072,
+      "totalMemory": 145346560
+    },
+    "totalDuration": 83,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          30
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-MAPLE-Robot-Subgoaling-MAPLE-PALM-412657452-20180806-155641-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-MAPLE-Robot-Subgoaling-MAPLE-PALM-412657452-20180806-155641-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.yaml.snakeyaml.constructor.ConstructorException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.umbc.cs.maple.testing.ConfigTesterTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.umbc.cs.maple.testing.ConfigTesterTest",
+        "testMethod": "run",
+        "failureName": "org.yaml.snakeyaml.constructor.ConstructorException",
+        "detail": "Cannot create property\u003dagents for JavaBean\u003dedu.umbc.cs.maple.config.ExperimentConfig@96532d6\n in \u0027reader\u0027, line 1, column 1:\n    domain: !!edu.umbc.cs.maple.conf ... \n    ^\nNo suitable constructor with 7 arguments found for interface java.util.Map\n in \u0027reader\u0027, line 7, column 3:\n      - rmaxqExpert\n      ^\n",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 286,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 41,
+    "numberLines": 0
+  }
+}
