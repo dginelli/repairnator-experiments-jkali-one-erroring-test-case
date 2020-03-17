@@ -1,0 +1,278 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] dubbo-parent
+[INFO] Hessian Lite(Alibaba embed version)
+[INFO] dubbo-common
+[INFO] dubbo-container
+[INFO] dubbo-container-api
+[INFO] dubbo-container-spring
+[INFO] dubbo-container-log4j
+[INFO] dubbo-container-logback
+[INFO] dubbo-serialization
+[INFO] dubbo-serialization-api
+[INFO] dubbo-serialization-hessian2
+[INFO] dubbo-remoting
+[INFO] dubbo-remoting-api
+[INFO] dubbo-remoting-netty
+[INFO] dubbo-remoting-mina
+[INFO] dubbo-remoting-grizzly
+[INFO] dubbo-remoting-p2p
+[INFO] dubbo-remoting-http
+[INFO] dubbo-remoting-zookeeper
+[INFO] dubbo-remoting-netty4
+[INFO] dubbo-rpc
+[INFO] dubbo-rpc-api
+[INFO] dubbo-rpc-dubbo
+[INFO] dubbo-rpc-injvm
+[INFO] dubbo-rpc-rmi
+[INFO] dubbo-rpc-hessian
+[INFO] dubbo-rpc-http
+[INFO] dubbo-rpc-webservice
+[INFO] dubbo-cluster
+[INFO] dubbo-registry
+[INFO] dubbo-registry-api
+[INFO] dubbo-monitor
+[INFO] dubbo-monitor-api
+[INFO] dubbo-filter
+[INFO] dubbo-filter-validation
+[INFO] dubbo-filter-cache
+[INFO] dubbo-registry-default
+[INFO] dubbo-monitor-default
+[INFO] dubbo-registry-multicast
+[INFO] dubbo-serialization-jdk
+[INFO] dubbo-config
+[INFO] dubbo-config-api
+[INFO] dubbo-config-spring
+[INFO] dubbo-rpc-thrift
+[INFO] dubbo-rpc-memcached
+[INFO] dubbo-rpc-redis
+[INFO] dubbo-rpc-rest
+[INFO] dubbo-registry-zookeeper
+[INFO] dubbo-registry-redis
+[INFO] dubbo-demo
+[INFO] dubbo-demo-api
+[INFO] dubbo-demo-provider
+[INFO] dubbo-demo-consumer
+[INFO] dubbo-plugin
+[INFO] dubbo-qos
+[INFO] dubbo-serialization-fastjson
+[INFO] dubbo-serialization-kryo
+[INFO] dubbo-serialization-fst
+[INFO] dubbo-dependencies-bom
+[INFO] dubbo-bom
+[INFO] dubbo-all
+[INFO] dubbo-test
+[INFO] dubbo-test-benchmark
+[INFO] dubbo-test-compatibility
+[INFO] dubbo-test-spring3
+[INFO] dubbo-test-integration
+[INFO] dubbo-test-examples
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-parent 2.6.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ dubbo-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-parent ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (jacoco-initialize) @ dubbo-parent ---
+[INFO] jacocoArgLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-366612857-20180414-232042-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-366612857-20180414-232042-firstCommit/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Hessian Lite(Alibaba embed version) 3.2.2
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ hessian-lite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ hessian-lite ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (jacoco-initialize) @ hessian-lite ---
+[INFO] jacocoArgLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-366612857-20180414-232042-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-366612857-20180414-232042-firstCommit/hessian-lite/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ hessian-lite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-366612857-20180414-232042-firstCommit/hessian-lite/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ hessian-lite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ hessian-lite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-366612857-20180414-232042-firstCommit/hessian-lite/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ hessian-lite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hessian-lite ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-366612857-20180414-232042-firstCommit/hessian-lite/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 2.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 9.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 775.3 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.alibaba.com.caucho.hessian.io.Hessian2EnumSetTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.429 sec - in com.alibaba.com.caucho.hessian.io.Hessian2EnumSetTest
+Running com.alibaba.com.caucho.hessian.io.HessianJavaSerializeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in com.alibaba.com.caucho.hessian.io.HessianJavaSerializeTest
+Running com.alibaba.com.caucho.hessian.io.LocaleSerializerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.alibaba.com.caucho.hessian.io.LocaleSerializerTest
+Running com.alibaba.com.caucho.hessian.io.java8.Java8TimeSerializerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in com.alibaba.com.caucho.hessian.io.java8.Java8TimeSerializerTest
+Running com.alibaba.com.caucho.hessian.io.JavaDeserializerTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.031 sec <<< FAILURE! - in com.alibaba.com.caucho.hessian.io.JavaDeserializerTest
+testConstructorNPE(com.alibaba.com.caucho.hessian.io.JavaDeserializerTest)  Time elapsed: 0.028 sec  <<< ERROR!
+com.alibaba.com.caucho.hessian.io.HessianFieldException: java.lang.Throwable.suppressedExceptions: java.util.List cannot be assigned from null
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializerTest.testConstructorNPE(JavaDeserializerTest.java:33)
+Caused by: java.lang.UnsupportedOperationException: com.alibaba.com.caucho.hessian.io.HessianInput@38be305c
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializerTest.testConstructorNPE(JavaDeserializerTest.java:33)
+
+Running com.alibaba.com.caucho.hessian.io.Hessian2StringShortTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.alibaba.com.caucho.hessian.io.Hessian2StringShortTest
+Running com.alibaba.com.caucho.hessian.io.SerializerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in com.alibaba.com.caucho.hessian.io.SerializerFactoryTest
+
+Results :
+
+Tests in error: 
+  JavaDeserializerTest.testConstructorNPE:33->SerializeTestBase.baseHessionSerialize:40 » HessianField
+
+Tests run: 33, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] dubbo-parent ....................................... SUCCESS [  2.397 s]
+[INFO] Hessian Lite(Alibaba embed version) ................ FAILURE [  5.694 s]
+[INFO] dubbo-common ....................................... SKIPPED
+[INFO] dubbo-container .................................... SKIPPED
+[INFO] dubbo-container-api ................................ SKIPPED
+[INFO] dubbo-container-spring ............................. SKIPPED
+[INFO] dubbo-container-log4j .............................. SKIPPED
+[INFO] dubbo-container-logback ............................ SKIPPED
+[INFO] dubbo-serialization ................................ SKIPPED
+[INFO] dubbo-serialization-api ............................ SKIPPED
+[INFO] dubbo-serialization-hessian2 ....................... SKIPPED
+[INFO] dubbo-remoting ..................................... SKIPPED
+[INFO] dubbo-remoting-api ................................. SKIPPED
+[INFO] dubbo-remoting-netty ............................... SKIPPED
+[INFO] dubbo-remoting-mina ................................ SKIPPED
+[INFO] dubbo-remoting-grizzly ............................. SKIPPED
+[INFO] dubbo-remoting-p2p ................................. SKIPPED
+[INFO] dubbo-remoting-http ................................ SKIPPED
+[INFO] dubbo-remoting-zookeeper ........................... SKIPPED
+[INFO] dubbo-remoting-netty4 .............................. SKIPPED
+[INFO] dubbo-rpc .......................................... SKIPPED
+[INFO] dubbo-rpc-api ...................................... SKIPPED
+[INFO] dubbo-rpc-dubbo .................................... SKIPPED
+[INFO] dubbo-rpc-injvm .................................... SKIPPED
+[INFO] dubbo-rpc-rmi ...................................... SKIPPED
+[INFO] dubbo-rpc-hessian .................................. SKIPPED
+[INFO] dubbo-rpc-http ..................................... SKIPPED
+[INFO] dubbo-rpc-webservice ............................... SKIPPED
+[INFO] dubbo-cluster ...................................... SKIPPED
+[INFO] dubbo-registry ..................................... SKIPPED
+[INFO] dubbo-registry-api ................................. SKIPPED
+[INFO] dubbo-monitor ...................................... SKIPPED
+[INFO] dubbo-monitor-api .................................. SKIPPED
+[INFO] dubbo-filter ....................................... SKIPPED
+[INFO] dubbo-filter-validation ............................ SKIPPED
+[INFO] dubbo-filter-cache ................................. SKIPPED
+[INFO] dubbo-registry-default ............................. SKIPPED
+[INFO] dubbo-monitor-default .............................. SKIPPED
+[INFO] dubbo-registry-multicast ........................... SKIPPED
+[INFO] dubbo-serialization-jdk ............................ SKIPPED
+[INFO] dubbo-config ....................................... SKIPPED
+[INFO] dubbo-config-api ................................... SKIPPED
+[INFO] dubbo-config-spring ................................ SKIPPED
+[INFO] dubbo-rpc-thrift ................................... SKIPPED
+[INFO] dubbo-rpc-memcached ................................ SKIPPED
+[INFO] dubbo-rpc-redis .................................... SKIPPED
+[INFO] dubbo-rpc-rest ..................................... SKIPPED
+[INFO] dubbo-registry-zookeeper ........................... SKIPPED
+[INFO] dubbo-registry-redis ............................... SKIPPED
+[INFO] dubbo-demo ......................................... SKIPPED
+[INFO] dubbo-demo-api ..................................... SKIPPED
+[INFO] dubbo-demo-provider ................................ SKIPPED
+[INFO] dubbo-demo-consumer ................................ SKIPPED
+[INFO] dubbo-plugin ....................................... SKIPPED
+[INFO] dubbo-qos .......................................... SKIPPED
+[INFO] dubbo-serialization-fastjson ....................... SKIPPED
+[INFO] dubbo-serialization-kryo ........................... SKIPPED
+[INFO] dubbo-serialization-fst ............................ SKIPPED
+[INFO] dubbo-dependencies-bom ............................. SKIPPED
+[INFO] dubbo-bom .......................................... SKIPPED
+[INFO] dubbo-all .......................................... SKIPPED
+[INFO] dubbo-test ......................................... SKIPPED
+[INFO] dubbo-test-benchmark ............................... SKIPPED
+[INFO] dubbo-test-compatibility ........................... SKIPPED
+[INFO] dubbo-test-spring3 ................................. SKIPPED
+[INFO] dubbo-test-integration ............................. SKIPPED
+[INFO] dubbo-test-examples ................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.016 s
+[INFO] Finished at: 2020-03-17T16:48:37+01:00
+[INFO] Final Memory: 34M/81M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project hessian-lite: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-366612857-20180414-232042-firstCommit/hessian-lite/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project hessian-lite: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-366612857-20180414-232042-firstCommit/hessian-lite/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-366612857-20180414-232042-firstCommit/hessian-lite/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :hessian-lite
