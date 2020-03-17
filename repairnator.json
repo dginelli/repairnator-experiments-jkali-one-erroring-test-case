@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "SonarSource/sonar-java",
-  "bugCommit": "https://github.com/SonarSource/sonar-java/compare/b8a6e850d4af...77c685840457",
-  "failingModule": "/root/workspace/SonarSource/sonar-java/264779961/java-frontend",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 1323,
-  "failing-test-cases": [
-    {
-      "className": "org.sonar.java.bytecode.se.BytecodeEGWalkerTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.sonar.java.bytecode.se.BytecodeEGWalkerTest#generateMethodBehavior"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:26 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:40:06 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 772418520,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 336,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 117,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          117
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SonarSource-sonar-java-264779961-20170815-170800_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SonarSource-sonar-java-264779961-20170815-170800_bugonly-firstCommit/java-frontend",
+    "overallMetrics": {
+      "numberRunning": 1323,
+      "numberPassing": 1322,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "failureDetail": "Loading a symbolic value unindexed",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sonar.java.bytecode.se.BytecodeEGWalkerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sonar.java.bytecode.se.BytecodeEGWalkerTest",
+        "testMethod": "generateMethodBehavior",
+        "failureName": "java.lang.NullPointerException",
+        "detail": "Loading a symbolic value unindexed",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 20,
+    "numberPlugins": 0,
+    "numberSourceFiles": 893,
+    "numberTestFiles": 749,
+    "numberLibrariesFailingModule": 50,
+    "numberLines": 0
+  }
 }
