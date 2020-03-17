@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 31,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "CESNET/perun",
-  "failingModule": "/root/workspace/CESNET/perun/366488763/perun-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "cz.metacentrum.perun.core.api.exceptions.InternalErrorException"
-  ],
-  "totalNumberRunningTests": 1545,
-  "failing-test-cases": [
-    {
-      "className": "cz.metacentrum.perun.core.entry.ResourcesManagerEntryIntegrationTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "cz.metacentrum.perun.core.entry.ResourcesManagerEntryIntegrationTest#copyResourceDifferentVO"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:47 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:39:53 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 840191856,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 423,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 109,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          109
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CESNET-perun-366488763-20180414-152355-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CESNET-perun-366488763-20180414-152355-firstCommit/perun-core",
+    "overallMetrics": {
+      "numberRunning": 1514,
+      "numberPassing": 1513,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 31,
       "failures": [
         {
           "failureName": "cz.metacentrum.perun.core.api.exceptions.InternalErrorException",
-          "failureDetail": "Error 162c4569220: Resources are not from the same VO.",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "cz.metacentrum.perun.core.entry.ResourcesManagerEntryIntegrationTest",
+        "numberRunning": 88,
+        "numberPassing": 87,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 2
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "cz.metacentrum.perun.core.entry.ResourcesManagerEntryIntegrationTest",
+        "testMethod": "copyResourceDifferentVO",
+        "failureName": "cz.metacentrum.perun.core.api.exceptions.InternalErrorException",
+        "detail": "Error 170e9245f9f: Resources are not from the same VO.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 16,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1571,
+    "numberTestFiles": 90,
+    "numberLibrariesFailingModule": 56,
+    "numberLines": 0
+  }
 }
