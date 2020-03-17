@@ -1,0 +1,490 @@
+org.janusgraph.core.JanusGraphException: Could not commit transaction due to exception during persistence
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.commit(StandardJanusGraphTx.java:1383)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2655)
+Caused by: org.janusgraph.core.JanusGraphException: Unexpected exception
+	at org.janusgraph.graphdb.database.StandardJanusGraph.commit(StandardJanusGraph.java:802)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.commit(StandardJanusGraphTx.java:1372)
+	... 1 more
+Caused by: org.janusgraph.diskstorage.locking.PermanentLockingException: Local lock contention
+	at org.janusgraph.diskstorage.locking.AbstractLocker.writeLock(AbstractLocker.java:327)
+	at org.janusgraph.diskstorage.locking.consistentkey.ExpectedValueCheckingStore.acquireLock(ExpectedValueCheckingStore.java:103)
+	at org.janusgraph.diskstorage.keycolumnvalue.KCVSProxy.acquireLock(KCVSProxy.java:52)
+	at org.janusgraph.diskstorage.BackendTransaction.acquireEdgeLock(BackendTransaction.java:232)
+	at org.janusgraph.graphdb.database.StandardJanusGraph.prepareCommit(StandardJanusGraph.java:555)
+	at org.janusgraph.graphdb.database.StandardJanusGraph.commit(StandardJanusGraph.java:717)
+	... 2 more
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:711)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: An edge with the given label already exists on the out-vertex and the label [married] is out-unique
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addEdge(StandardJanusGraphTx.java:711)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.addEdge(AbstractVertex.java:167)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$3(JanusGraphTest.java:2610)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [a] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:810)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:738)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2616)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [b] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:810)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:738)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2617)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+org.janusgraph.core.SchemaViolationException: Adding this property for key [name] and value [a] violates a uniqueness constraint [name]
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:810)
+	at org.janusgraph.graphdb.transaction.StandardJanusGraphTx.addProperty(StandardJanusGraphTx.java:738)
+	at org.janusgraph.graphdb.vertices.AbstractVertex.property(AbstractVertex.java:152)
+	at org.janusgraph.core.JanusGraphVertex.property(JanusGraphVertex.java:72)
+	at org.janusgraph.graphdb.util.ElementHelper.attachProperties(ElementHelper.java:80)
+	at org.janusgraph.graphdb.tinkerpop.JanusGraphBlueprintsTransaction.addVertex(JanusGraphBlueprintsTransaction.java:122)
+	at org.janusgraph.graphdb.JanusGraphTest.lambda$testConcurrentConsistencyEnforcement$4(JanusGraphTest.java:2616)
+	at org.janusgraph.graphdb.JanusGraphTest$4.run(JanusGraphTest.java:2654)
+plus-plugin:1.5:addTestSources (default) @ janusgraph-test ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:generateStubs (default) @ janusgraph-test ---
+[INFO] Using Groovy 2.4.11 to perform generateStubs.
+[INFO] Generated 5 stubs.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ janusgraph-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-372483959-20180429-015735-firstCommit/janusgraph-test/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ janusgraph-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:compile (default) @ janusgraph-test ---
+[INFO] Using Groovy 2.4.11 to perform compile.
+[INFO] Compiled 18 files.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:removeStubs (default) @ janusgraph-test ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testGenerateStubs (default) @ janusgraph-test ---
+[INFO] No sources specified for stub generation.  Skipping.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ janusgraph-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ janusgraph-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testCompile (default) @ janusgraph-test ---
+[INFO] No sources specified for compilation.  Skipping.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:removeTestStubs (default) @ janusgraph-test ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ janusgraph-test ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-372483959-20180429-015735-firstCommit/janusgraph-test/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.15/surefire-junit47-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.15/surefire-junit47-2.15.pom (5 KB at 12.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.15/surefire-providers-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.15/surefire-providers-2.15.pom (3 KB at 96.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.15/common-junit48-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.15/common-junit48-2.15.pom (4 KB at 126.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.15/common-junit4-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.15/common-junit4-2.15.pom (2 KB at 73.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.15/common-junit3-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.15/common-junit3-2.15.pom (2 KB at 38.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.15/common-java5-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.15/common-java5-2.15.pom (2 KB at 70.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom (4 KB at 164.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.15/surefire-grouper-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.15/surefire-grouper-2.15.pom (3 KB at 79.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.15/surefire-junit47-2.15.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.15/common-junit48-2.15.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.15/common-junit3-2.15.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.15/common-java5-2.15.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.15/common-junit4-2.15.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.15/common-junit3-2.15.jar (11 KB at 210.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.15/surefire-junit47-2.15.jar (82 KB at 1198.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.15/common-java5-2.15.jar (37 KB at 575.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.15/surefire-grouper-2.15.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.15/common-junit48-2.15.jar (18 KB at 224.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.15/common-junit4-2.15.jar (16 KB at 184.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.15/surefire-grouper-2.15.jar (37 KB at 1230.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar (152 KB at 1565.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.janusgraph.blueprints.process.traversal.strategy.optimization.JanusGraphStepStrategyTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in org.janusgraph.blueprints.process.traversal.strategy.optimization.JanusGraphStepStrategyTest
+Running org.janusgraph.core.ConfiguredGraphFactoryTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.082 sec - in org.janusgraph.core.ConfiguredGraphFactoryTest
+Running org.janusgraph.core.attribute.GeoshapeHelperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.487 sec - in org.janusgraph.core.attribute.GeoshapeHelperTest
+Running org.janusgraph.core.attribute.JtsGeoshapeHelperTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.502 sec - in org.janusgraph.core.attribute.JtsGeoshapeHelperTest
+Running org.janusgraph.diskstorage.cache.ExpirationCacheTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.025 sec - in org.janusgraph.diskstorage.cache.ExpirationCacheTest
+Running org.janusgraph.diskstorage.common.LocalStoreManagerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 sec - in org.janusgraph.diskstorage.common.LocalStoreManagerTest
+Running org.janusgraph.diskstorage.configuration.CommonConfigTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in org.janusgraph.diskstorage.configuration.CommonConfigTest
+Running org.janusgraph.diskstorage.configuration.ConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.39 sec - in org.janusgraph.diskstorage.configuration.ConfigurationTest
+Running org.janusgraph.diskstorage.configuration.KCVSConfigTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.322 sec - in org.janusgraph.diskstorage.configuration.KCVSConfigTest
+Running org.janusgraph.diskstorage.inmemory.InMemoryIDAuthorityTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 244.724 sec - in org.janusgraph.diskstorage.inmemory.InMemoryIDAuthorityTest
+Running org.janusgraph.diskstorage.inmemory.InMemoryKeyColumnValueStoreTest
+Loading time (ms): 12
+Reading time (ms): 3
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 71.433 sec - in org.janusgraph.diskstorage.inmemory.InMemoryKeyColumnValueStoreTest
+Running org.janusgraph.diskstorage.inmemory.InMemoryLockKeyColumnValueStoreTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.688 sec - in org.janusgraph.diskstorage.inmemory.InMemoryLockKeyColumnValueStoreTest
+Running org.janusgraph.diskstorage.keycolumnvalue.StaticArrayEntryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec - in org.janusgraph.diskstorage.keycolumnvalue.StaticArrayEntryTest
+Running org.janusgraph.diskstorage.locking.ConsistentKeyLockerTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.668 sec - in org.janusgraph.diskstorage.locking.ConsistentKeyLockerTest
+Running org.janusgraph.diskstorage.locking.LocalLockMediatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.janusgraph.diskstorage.locking.LocalLockMediatorTest
+Running org.janusgraph.diskstorage.locking.LockCleanerRunnableTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec - in org.janusgraph.diskstorage.locking.LockCleanerRunnableTest
+Running org.janusgraph.diskstorage.locking.LockCleanerServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.949 sec - in org.janusgraph.diskstorage.locking.LockCleanerServiceTest
+Running org.janusgraph.diskstorage.util.BufferUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 sec - in org.janusgraph.diskstorage.util.BufferUtilTest
+Running org.janusgraph.diskstorage.util.StorageFeaturesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.janusgraph.diskstorage.util.StorageFeaturesTest
+Running org.janusgraph.graphdb.JanusGraphFactoryShorthandTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.673 sec - in org.janusgraph.graphdb.JanusGraphFactoryShorthandTest
+Running org.janusgraph.graphdb.TestCoreElements
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.janusgraph.graphdb.TestCoreElements
+Running org.janusgraph.graphdb.VertexListTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.205 sec - in org.janusgraph.graphdb.VertexListTest
+Running org.janusgraph.graphdb.attribute.GeoshapeTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.637 sec - in org.janusgraph.graphdb.attribute.GeoshapeTest
+Running org.janusgraph.graphdb.attribute.TextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in org.janusgraph.graphdb.attribute.TextTest
+Running org.janusgraph.graphdb.configuration.GraphDatabaseConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.284 sec - in org.janusgraph.graphdb.configuration.GraphDatabaseConfigurationTest
+Running org.janusgraph.graphdb.configuration.TinkerpopFeaturesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.708 sec - in org.janusgraph.graphdb.configuration.TinkerpopFeaturesTest
+Running org.janusgraph.graphdb.database.serialize.attribute.UUIDSerializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.janusgraph.graphdb.database.serialize.attribute.UUIDSerializerTest
+Running org.janusgraph.graphdb.idmanagement.IDManagementTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.336 sec - in org.janusgraph.graphdb.idmanagement.IDManagementTest
+Running org.janusgraph.graphdb.idmanagement.IDPoolTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.621 sec - in org.janusgraph.graphdb.idmanagement.IDPoolTest
+Running org.janusgraph.graphdb.idmanagement.PartitionIDRangeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec - in org.janusgraph.graphdb.idmanagement.PartitionIDRangeTest
+Running org.janusgraph.graphdb.idmanagement.RidGenerationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.janusgraph.graphdb.idmanagement.RidGenerationTest
+Running org.janusgraph.graphdb.idmanagement.VariableLongTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.489 sec - in org.janusgraph.graphdb.idmanagement.VariableLongTest
+Configuration [2|2147483647|null]
+Running org.janusgraph.graphdb.idmanagement.VertexIDAssignerTest
+Configuration [2|2147483647|null]
+Configuration [2|2147483647|[0, 2, 2]]
+Configuration [2|2147483647|[0, 2, 2]]
+Configuration [2|2147483647|[235, 234, 8]]
+Configuration [2|2147483647|[235, 234, 8]]
+Configuration [2|2147483647|[1, 1, 2]]
+Configuration [2|2147483647|[1, 1, 2]]
+Configuration [2|2147483647|[0, 2, 2]]
+Configuration [2|2147483647|[0, 2, 2]]
+Configuration [4|2147483647|null]
+Configuration [4|2147483647|null]
+Configuration [4|2147483647|[0, 2, 4]]
+Configuration [4|2147483647|[0, 2, 4]]
+Configuration [4|2147483647|[235, 234, 8]]
+Configuration [4|2147483647|[235, 234, 8]]
+Configuration [4|2147483647|[1, 1, 2]]
+Configuration [4|2147483647|[1, 1, 2]]
+Configuration [4|2147483647|[0, 8, 4]]
+Configuration [4|2147483647|[0, 8, 4]]
+Configuration [10|2147483647|null]
+Configuration [10|2147483647|null]
+Configuration [10|2147483647|[0, 2, 10]]
+Configuration [10|2147483647|[0, 2, 10]]
+Configuration [10|2147483647|[235, 234, 8]]
+Configuration [10|2147483647|[235, 234, 8]]
+Configuration [10|2147483647|[1, 1, 2]]
+Configuration [10|2147483647|[1, 1, 2]]
+Configuration [10|2147483647|[0, 512, 10]]
+Configuration [10|2147483647|[0, 512, 10]]
+Configuration [2|100|null]
+Configuration [2|100|null]
+Configuration [2|100|[0, 2, 2]]
+Configuration [2|100|[0, 2, 2]]
+Configuration [2|100|[235, 234, 8]]
+Configuration [2|100|[235, 234, 8]]
+Configuration [2|100|[1, 1, 2]]
+Configuration [2|100|[1, 1, 2]]
+Configuration [2|100|[0, 2, 2]]
+Configuration [2|100|[0, 2, 2]]
+Configuration [4|100|null]
+Configuration [4|100|null]
+Configuration [4|100|[0, 2, 4]]
+Configuration [4|100|[0, 2, 4]]
+Configuration [4|100|[235, 234, 8]]
+Configuration [4|100|[235, 234, 8]]
+Configuration [4|100|[1, 1, 2]]
+Configuration [4|100|[1, 1, 2]]
+Configuration [4|100|[0, 8, 4]]
+Configuration [4|100|[0, 8, 4]]
+Configuration [10|100|null]
+Configuration [10|100|null]
+Configuration [10|100|[0, 2, 10]]
+Configuration [10|100|[0, 2, 10]]
+Configuration [10|100|[235, 234, 8]]
+Configuration [10|100|[235, 234, 8]]
+Configuration [10|100|[1, 1, 2]]
+Configuration [10|100|[1, 1, 2]]
+Configuration [10|100|[0, 512, 10]]
+Configuration [10|100|[0, 512, 10]]
+Configuration [2|300|null]
+Configuration [2|300|null]
+Configuration [2|300|[0, 2, 2]]
+Configuration [2|300|[0, 2, 2]]
+Configuration [2|300|[235, 234, 8]]
+Configuration [2|300|[235, 234, 8]]
+Configuration [2|300|[1, 1, 2]]
+Configuration [2|300|[1, 1, 2]]
+Configuration [2|300|[0, 2, 2]]
+Configuration [2|300|[0, 2, 2]]
+Configuration [4|300|null]
+Configuration [4|300|null]
+Configuration [4|300|[0, 2, 4]]
+Configuration [4|300|[0, 2, 4]]
+Configuration [4|300|[235, 234, 8]]
+Configuration [4|300|[235, 234, 8]]
+Configuration [4|300|[1, 1, 2]]
+Configuration [4|300|[1, 1, 2]]
+Configuration [4|300|[0, 8, 4]]
+Configuration [4|300|[0, 8, 4]]
+Configuration [10|300|null]
+Configuration [10|300|null]
+Configuration [10|300|[0, 2, 10]]
+Configuration [10|300|[0, 2, 10]]
+Configuration [10|300|[235, 234, 8]]
+Configuration [10|300|[235, 234, 8]]
+Configuration [10|300|[1, 1, 2]]
+Configuration [10|300|[1, 1, 2]]
+Configuration [10|300|[0, 512, 10]]
+Configuration [10|300|[0, 512, 10]]
+Tests run: 90, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 98.316 sec - in org.janusgraph.graphdb.idmanagement.VertexIDAssignerTest
+Running org.janusgraph.graphdb.inmemory.InMemoryConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.974 sec - in org.janusgraph.graphdb.inmemory.InMemoryConfigurationTest
+Running org.janusgraph.graphdb.inmemory.InMemoryGraphTest
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 286.864 sec - in org.janusgraph.graphdb.inmemory.InMemoryGraphTest
+Running org.janusgraph.graphdb.inmemory.InMemoryJanusGraphIoTest
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 124.704 sec <<< FAILURE! - in org.janusgraph.graphdb.inmemory.InMemoryJanusGraphIoTest
+testSerialization[graphson-v1-embedded](org.janusgraph.graphdb.inmemory.InMemoryJanusGraphIoTest)  Time elapsed: 7.779 sec  <<< ERROR!
+org.apache.tinkerpop.shaded.jackson.core.JsonGenerationException: Current context not Array but Object
+	at org.apache.tinkerpop.shaded.jackson.core.JsonGenerator._reportError(JsonGenerator.java:1897)
+	at org.apache.tinkerpop.shaded.jackson.core.json.UTF8JsonGenerator.writeEndArray(UTF8JsonGenerator.java:297)
+	at org.apache.tinkerpop.shaded.jackson.databind.jsontype.impl.AsArrayTypeSerializer.writeTypeSuffixForScalar(AsArrayTypeSerializer.java:148)
+	at org.janusgraph.graphdb.tinkerpop.io.graphson.JanusGraphSONModule$RelationIdentifierSerializerV1d0.serializeWithType(JanusGraphSONModule.java:88)
+	at org.janusgraph.graphdb.tinkerpop.io.graphson.JanusGraphSONModule$RelationIdentifierSerializerV1d0.serializeWithType(JanusGraphSONModule.java:68)
+	at org.apache.tinkerpop.gremlin.structure.io.graphson.GraphSONUtil.writeWithType(GraphSONUtil.java:51)
+	at org.apache.tinkerpop.gremlin.structure.util.star.StarGraphGraphSONSerializerV1d0.writeEdges(StarGraphGraphSONSerializerV1d0.java:148)
+	at org.apache.tinkerpop.gremlin.structure.util.star.StarGraphGraphSONSerializerV1d0.ser(StarGraphGraphSONSerializerV1d0.java:78)
+	at org.apache.tinkerpop.gremlin.structure.util.star.StarGraphGraphSONSerializerV1d0.serializeWithType(StarGraphGraphSONSerializerV1d0.java:67)
+	at org.apache.tinkerpop.gremlin.structure.util.star.StarGraphGraphSONSerializerV1d0.serializeWithType(StarGraphGraphSONSerializerV1d0.java:50)
+	at org.apache.tinkerpop.shaded.jackson.databind.ser.impl.TypeWrappedSerializer.serialize(TypeWrappedSerializer.java:32)
+	at org.apache.tinkerpop.shaded.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:292)
+	at org.apache.tinkerpop.shaded.jackson.databind.ObjectMapper._configAndWriteValue(ObjectMapper.java:3697)
+	at org.apache.tinkerpop.shaded.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3030)
+	at org.apache.tinkerpop.gremlin.structure.io.graphson.GraphSONWriter.writeVertex(GraphSONWriter.java:82)
+	at org.apache.tinkerpop.gremlin.structure.io.graphson.GraphSONWriter.writeVertices(GraphSONWriter.java:110)
+	at org.apache.tinkerpop.gremlin.structure.io.graphson.GraphSONWriter.writeGraph(GraphSONWriter.java:71)
+	at org.janusgraph.graphdb.JanusGraphIoTest.testSerialization(JanusGraphIoTest.java:120)
+	at org.janusgraph.graphdb.JanusGraphIoTest.testSerialization(JanusGraphIoTest.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createReqestAndRun(JUnitCoreWrapper.java:139)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:111)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:84)
+	at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:135)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Running org.janusgraph.graphdb.inmemory.InMemoryOLAPTest
+Execution time (ms) [200|20100]: 1854
+Execution time (ms) [100|5050]: 1391
+Execution time (ms) [100|5050]: 1226
+Execution time (ms) [100|5050]: 1102
+0
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 100.655 sec - in org.janusgraph.graphdb.inmemory.InMemoryOLAPTest
+Running org.janusgraph.graphdb.inmemory.InMemoryPartitionGraphTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.851 sec - in org.janusgraph.graphdb.inmemory.InMemoryPartitionGraphTest
+Running org.janusgraph.graphdb.management.ManagementLoggerGraphCacheEvictionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.773 sec - in org.janusgraph.graphdb.management.ManagementLoggerGraphCacheEvictionTest
+Running org.janusgraph.graphdb.query.QueryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.111 sec - in org.janusgraph.graphdb.query.QueryTest
+Running org.janusgraph.graphdb.serializer.EdgeSerializerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.143 sec - in org.janusgraph.graphdb.serializer.EdgeSerializerTest
+Running org.janusgraph.graphdb.serializer.SerializerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 111.064 sec - in org.janusgraph.graphdb.serializer.SerializerTest
+Running org.janusgraph.graphdb.tinkerpop.JanusGraphDefaultSchemaMakerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.564 sec - in org.janusgraph.graphdb.tinkerpop.JanusGraphDefaultSchemaMakerTest
+Running org.janusgraph.graphdb.tinkerpop.JanusGraphIoRegistryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.908 sec - in org.janusgraph.graphdb.tinkerpop.JanusGraphIoRegistryTest
+Running org.janusgraph.graphdb.transaction.StandardJanusGraphTxTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.839 sec - in org.janusgraph.graphdb.transaction.StandardJanusGraphTxTest
+Running org.janusgraph.util.LoggerUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec - in org.janusgraph.util.LoggerUtilTest
+Running org.janusgraph.util.LongEncodingTest
+Time to de/encode 1000000 longs (in ms): 695
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.042 sec - in org.janusgraph.util.LongEncodingTest
+Running org.janusgraph.util.StringEncodingTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in org.janusgraph.util.StringEncodingTest
+Running org.janusgraph.util.datastructures.BitMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.janusgraph.util.datastructures.BitMapTest
+Running org.janusgraph.util.datastructures.RandomRemovalListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.383 sec - in org.janusgraph.util.datastructures.RandomRemovalListTest
+Running org.janusgraph.util.datastructures.RelationCacheTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.404 sec - in org.janusgraph.util.datastructures.RelationCacheTest
+
+Results :
+
+Tests in error: 
+  InMemoryJanusGraphIoTest>JanusGraphIoTest.testSerialization:106->JanusGraphIoTest.testSerialization:120 » JsonGeneration
+
+Tests run: 462, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] JanusGraph: Distributed Graph Database ............. SUCCESS [  0.478 s]
+[INFO] JanusGraph-Core: Core Library for JanusGraph ....... SUCCESS [  1.395 s]
+[INFO] JanusGraph-Test: Test Suite for JanusGraph ......... FAILURE [20:11 min]
+[INFO] JanusGraph CodePipelines CI: Distributed release testing. SKIPPED
+[INFO] janusgraph-server .................................. SKIPPED
+[INFO] JanusGraph-BerkeleyJE: Distributed Graph Database .. SKIPPED
+[INFO] JanusGraph-Cassandra: Distributed Graph Database ... SKIPPED
+[INFO] JanusGraph-CQL: Distributed Graph Database ......... SKIPPED
+[INFO] JanusGraph-ElasticSearch: Distributed Indexing Support SKIPPED
+[INFO] JanusGraph-HBase: Parent Module .................... SKIPPED
+[INFO] JanusGraph-HBase: Version-independent Core ......... SKIPPED
+[INFO] JanusGraph-HBase: 0.98 Compatibility Shim .......... SKIPPED
+[INFO] JanusGraph-HBase: 1.x Compatibility Shim ........... SKIPPED
+[INFO] JanusGraph-HBase: Universal binary ................. SKIPPED
+[INFO] JanusGraph-Hadoop: Parent Module ................... SKIPPED
+[INFO] JanusGraph-Hadoop: Version-independent Core ........ SKIPPED
+[INFO] JanusGraph-Hadoop: 2.x Compatibility Shim .......... SKIPPED
+[INFO] JanusGraph-Hadoop: Universal binary ................ SKIPPED
+[INFO] JanusGraph-Bigtable: Google Cloud Bigtable driver .. SKIPPED
+[INFO] JanusGraph-Lucene: Indexing Support ................ SKIPPED
+[INFO] JanusGraph-Solr: Distributed Indexing Support ...... SKIPPED
+[INFO] JanusGraph-All: Complete JanusGraph Distribution ... SKIPPED
+[INFO] JanusGraph-Dist: Tar and Zip Archives .............. SKIPPED
+[INFO] JanusGraph-Dist: Archive with Hadoop 2 ............. SKIPPED
+[INFO] JanusGraph-Doc: AsciiDoc Manual for JanusGraph ..... SKIPPED
+[INFO] JanusGraph-Examples: Examples for JanusGraph ....... SKIPPED
+[INFO] Example-Common: Common Graph Code for Examples ..... SKIPPED
+[INFO] Example-BerkeleyJE: BerkeleyJE Storage, Lucene Index SKIPPED
+[INFO] Example-Cassandra: Cassandra Thrift Storage, Elasticsearch Index SKIPPED
+[INFO] Example-Cql: Cassandra CQL Storage, Elasticsearch Index SKIPPED
+[INFO] Example-HBase: HBase Storage, Solr Index ........... SKIPPED
+[INFO] Example-RemoteGraph: Example with RemoteGraph ...... SKIPPED
+[INFO] Example-TinkerGraph: Example with TinkerGraph ...... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20:13 min
+[INFO] Finished at: 2020-03-17T17:26:32+01:00
+[INFO] Final Memory: 28M/75M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.15:test (default-test) on project janusgraph-test: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-372483959-20180429-015735-firstCommit/janusgraph-test/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.15:test (default-test) on project janusgraph-test: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-372483959-20180429-015735-firstCommit/janusgraph-test/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-372483959-20180429-015735-firstCommit/janusgraph-test/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:169)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:777)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:645)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :janusgraph-test
