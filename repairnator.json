@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "LeonardoBonacci/oogway",
-  "bugCommit": "https://github.com/LeonardoBonacci/oogway/compare/6ee05d819321...601c368b2bee",
-  "failingModule": "/root/workspace/LeonardoBonacci/oogway/361142458/gateway",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.ExceptionInInitializerError:"
-  ],
-  "totalNumberRunningTests": 2,
-  "failing-test-cases": [
-    {
-      "className": "guru.bonacci.oogway.gateway.services.GatewayControllerTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "guru.bonacci.oogway.gateway.services.GatewayControllerTests#guru.bonacci.oogway.gateway.services.GatewayControllerTests"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:23 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:39:21 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 44135136,
+      "totalMemory": 98185216
+    },
+    "totalDuration": 294,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 17,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          17
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-361142458-20180402-132756-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-361142458-20180402-132756-firstCommit/gateway",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 1,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.ExceptionInInitializerError:",
-          "isError": true
+          "failureName": "java.lang.ExceptionInInitializerError",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "guru.bonacci.oogway.gateway.services.GatewayControllerTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "guru.bonacci.oogway.gateway.services.GatewayControllerTests",
+        "testMethod": "guru.bonacci.oogway.gateway.services.GatewayControllerTests",
+        "failureName": "java.lang.ExceptionInInitializerError",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberPlugins": 0,
+    "numberSourceFiles": 113,
+    "numberTestFiles": 54,
+    "numberLibrariesFailingModule": 138,
+    "numberLines": 0
+  }
 }
