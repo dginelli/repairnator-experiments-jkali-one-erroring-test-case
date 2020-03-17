@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 5,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "acsukesh/incubator-servicecomb-java-chassis",
-  "bugCommit": "https://github.com/acsukesh/incubator-servicecomb-java-chassis/compare/7f964d9986c2...a6611679711f",
-  "failingModule": "/root/workspace/acsukesh/incubator-servicecomb-java-chassis/364015771/swagger/swagger-invocation/invocation-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 852,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.servicecomb.swagger.invocation.exception.TestExceptionToResponseConverters",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.servicecomb.swagger.invocation.exception.TestExceptionToResponseConverters#convertExceptionToResponse"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:33 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:42:52 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 25935808,
+      "totalMemory": 101466112
+    },
+    "totalDuration": 493,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 23,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          23
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-acsukesh-incubator-servicecomb-java-chassis-364015771-20180409-104933-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-acsukesh-incubator-servicecomb-java-chassis-364015771-20180409-104933-firstCommit/swagger/swagger-invocation/invocation-core",
+    "overallMetrics": {
+      "numberRunning": 847,
+      "numberPassing": 846,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.swagger.invocation.exception.TestExceptionToResponseConverters",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.swagger.invocation.exception.TestExceptionToResponseConverters",
+        "testMethod": "convertExceptionToResponse",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberPlugins": 0,
+    "numberSourceFiles": 869,
+    "numberTestFiles": 516,
+    "numberLibrariesFailingModule": 54,
+    "numberLines": 0
+  }
 }
