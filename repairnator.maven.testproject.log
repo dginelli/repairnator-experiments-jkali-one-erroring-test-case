@@ -1,0 +1,1194 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] parent
+[INFO] auth
+[INFO] config
+[INFO] heimdall
+[INFO] shared-domain
+[INFO] oracle
+[INFO] oracle-client
+[INFO] jobs
+[INFO] utilities
+[INFO] oracle-service
+[INFO] orchestration
+[INFO] sannyas
+[INFO] sannyas-service
+[INFO] spectre
+[INFO] spectre-shared
+[INFO] local-timer
+[INFO] money
+[INFO] sentiment
+[INFO] weather
+[INFO] web
+[INFO] integration-test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building parent 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building auth 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ auth ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ auth ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ auth ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/auth/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ auth ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ auth ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building config 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ config ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/config/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 1.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 99.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 922.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+16:37:21,299 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+16:37:21,299 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:37:21,299 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/config/target/test-classes/logback.xml]
+16:37:21,315 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+16:37:21,316 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/config/target/test-classes/logback.xml]
+16:37:21,316 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/config/target/classes/logback.xml]
+16:37:21,444 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+16:37:21,448 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@2d928643 - Adding [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/.m2/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/base.xml] to configuration watch list.
+16:37:21,448 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5025a98f - URL [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/.m2/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/base.xml] is not of type file
+16:37:21,454 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@2d928643 - Adding [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/.m2/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+16:37:21,454 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5025a98f - URL [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/.m2/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+16:37:21,459 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+16:37:21,466 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+16:37:21,466 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+16:37:21,479 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [org.springframework.boot.logging.logback.LevelRemappingAppender]
+16:37:21,487 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [DEBUG_LEVEL_REMAPPER]
+16:37:21,503 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+16:37:21,503 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+16:37:21,503 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+16:37:21,503 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+16:37:21,503 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+16:37:21,504 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.crsh.plugin] to WARN
+16:37:21,504 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.crsh.ssh] to WARN
+16:37:21,504 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+16:37:21,504 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+16:37:21,504 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework.boot.actuate.autoconfigure.CrshAutoConfiguration] to WARN
+16:37:21,504 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework.boot.actuate.endpoint.jmx] to false
+16:37:21,504 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [DEBUG_LEVEL_REMAPPER] to Logger[org.springframework.boot.actuate.endpoint.jmx]
+16:37:21,505 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.thymeleaf] to false
+16:37:21,505 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [DEBUG_LEVEL_REMAPPER] to Logger[org.thymeleaf]
+16:37:21,506 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@2d928643 - Adding [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/.m2/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/console-appender.xml] to configuration watch list.
+16:37:21,506 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5025a98f - URL [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/.m2/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/console-appender.xml] is not of type file
+16:37:21,509 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:37:21,512 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [CONSOLE]
+16:37:21,514 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:37:21,587 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@2d928643 - Adding [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/.m2/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/file-appender.xml] to configuration watch list.
+16:37:21,587 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5025a98f - URL [jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/.m2/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/file-appender.xml] is not of type file
+16:37:21,592 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:37:21,595 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+16:37:21,598 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:37:21,604 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@49993335 - No compression will be used
+16:37:21,607 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/spring.log
+16:37:21,607 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/spring.log]
+16:37:21,608 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+16:37:21,608 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:37:21,608 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+16:37:21,608 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to ERROR
+16:37:21,609 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [guru.bonacci.oogway.config] to INFO
+16:37:21,609 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.netflix] to WARN
+16:37:21,609 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+16:37:21,610 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@20322d26 - Registering current configuration as safe fallback point
+
+Running guru.bonacci.oogway.config.ConfigServerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:37:24.687  INFO 223954 --- [           main] g.b.oogway.config.ConfigServerTest       : The following profiles are active: native
+2020-03-17 16:37:29.375  INFO 223954 --- [           main] g.b.oogway.config.ConfigServerTest       : Started ConfigServerTest in 7.2 seconds (JVM running for 8.758)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.603 sec - in guru.bonacci.oogway.config.ConfigServerTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building heimdall 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ heimdall ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ heimdall ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ heimdall ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/heimdall/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ heimdall ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ heimdall ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building shared-domain 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ shared-domain ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/shared-domain/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ shared-domain ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ shared-domain ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/shared-domain/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ shared-domain ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ shared-domain ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building oracle 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building oracle-client 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oracle-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ oracle-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oracle-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ oracle-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ oracle-client ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/oracle/oracle-client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running guru.bonacci.oogway.oracle.client.OracleClientTests
+2020-03-17 16:37:32.996  INFO   --- [           main] wiremock.org.eclipse.jetty.util.log      : Logging initialized @2500ms
+2020-03-17 16:37:33.029  WARN   --- [           main] w.o.e.j.s.NetworkTrafficServerConnector  : Acceptors should be <= availableProcessors: NetworkTrafficServerConnector@37fb0bed{HTTP/1.1}{0.0.0.0:0}
+2020-03-17 16:37:33.124  INFO   --- [           main] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
+2020-03-17 16:37:33.189  INFO   --- [           main] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@5454d35e{/__admin,null,AVAILABLE}
+2020-03-17 16:37:33.194  INFO   --- [           main] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@79dc5318{/,null,AVAILABLE}
+2020-03-17 16:37:33.213  INFO   --- [           main] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@37fb0bed{HTTP/1.1}{0.0.0.0:43957}
+2020-03-17 16:37:33.214  INFO   --- [           main] w.org.eclipse.jetty.server.Server        : Started @2720ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:37:35.643  INFO 224153 --- [           main] g.b.o.oracle.client.OracleClientTests    : The following profiles are active: unit-test
+2020-03-17 16:37:38.098  WARN 224153 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:37:38.511  WARN 224153 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:37:40.629  INFO 224153 --- [           main] g.b.o.oracle.client.OracleClientTests    : Started OracleClientTests in 7.258 seconds (JVM running for 10.135)
+2020-03-17 16:37:41.053  INFO 224153 --- [qtp412925308-14] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2020-03-17 16:37:41.633  INFO 224153 --- [qtp412925308-15] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2020-03-17 16:37:41.774 ERROR 224153 --- [racle-service-2] racleClient$HystrixClientFallbackFactory : Help!!! Can't reach the oracle...
+
+feign.FeignException: status 500 reading OracleClient#random(); content:
+
+	at feign.FeignException.errorStatus(FeignException.java:62)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:91)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:76)
+	at feign.hystrix.HystrixInvocationHandler$1.run(HystrixInvocationHandler.java:108)
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:302)
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:298)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OperatorSubscribeOn$1.call(OperatorSubscribeOn.java:94)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContexSchedulerAction$1.call(HystrixContexSchedulerAction.java:56)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContexSchedulerAction$1.call(HystrixContexSchedulerAction.java:47)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContexSchedulerAction.call(HystrixContexSchedulerAction.java:69)
+	at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-03-17 16:37:41.828 ERROR 224153 --- [racle-service-4] racleClient$HystrixClientFallbackFactory : Help!!! Can't reach the oracle...
+
+feign.FeignException: status 500 reading OracleClient#consult(String,String); content:
+
+	at feign.FeignException.errorStatus(FeignException.java:62)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:91)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:76)
+	at feign.hystrix.HystrixInvocationHandler$1.run(HystrixInvocationHandler.java:108)
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:302)
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:298)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OperatorSubscribeOn$1.call(OperatorSubscribeOn.java:94)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContexSchedulerAction$1.call(HystrixContexSchedulerAction.java:56)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContexSchedulerAction$1.call(HystrixContexSchedulerAction.java:47)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContexSchedulerAction.call(HystrixContexSchedulerAction.java:69)
+	at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-03-17 16:37:41.884  INFO 224153 --- [           main] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@37fb0bed{HTTP/1.1}{0.0.0.0:0}
+2020-03-17 16:37:41.885  INFO 224153 --- [           main] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@79dc5318{/,null,UNAVAILABLE}
+2020-03-17 16:37:41.885  INFO 224153 --- [           main] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@5454d35e{/__admin,null,UNAVAILABLE}
+2020-03-17 16:37:41.886  WARN 224153 --- [           main] w.o.e.j.util.thread.QueuedThreadPool     : qtp412925308{STOPPING,8<=8<=10,i=0,q=3} Couldn't stop Thread[qtp412925308-12,5,main]
+2020-03-17 16:37:41.886  WARN 224153 --- [           main] w.o.e.j.util.thread.QueuedThreadPool     : qtp412925308{STOPPING,8<=8<=10,i=0,q=3} Couldn't stop Thread[qtp412925308-41,5,main]
+2020-03-17 16:37:41.886  WARN 224153 --- [           main] w.o.e.j.util.thread.QueuedThreadPool     : qtp412925308{STOPPING,8<=8<=10,i=0,q=3} Couldn't stop Thread[qtp412925308-40,5,main]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.744 sec - in guru.bonacci.oogway.oracle.client.OracleClientTests
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jobs 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jobs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ jobs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jobs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/jobs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ jobs ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jobs ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building utilities 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ utilities ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/utilities/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ utilities ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ utilities ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ utilities ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ utilities ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/utilities/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running guru.bonacci.oogway.utils.MyFileUtilsTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.516 sec - in guru.bonacci.oogway.utils.MyFileUtilsTests
+Running guru.bonacci.oogway.utils.MyListUtilsTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in guru.bonacci.oogway.utils.MyListUtilsTests
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building oracle-service 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oracle-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ oracle-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oracle-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ oracle-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ oracle-service ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/oracle/oracle-service/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running guru.bonacci.oogway.oracle.service.beanmapping.GemMapperTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 sec - in guru.bonacci.oogway.oracle.service.beanmapping.GemMapperTests
+Running guru.bonacci.oogway.oracle.service.services.GemControllerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:37:54.500  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.services.GemControllerTests    : The following profiles are active: unit-test
+2020-03-17 16:38:09.108  INFO [bootstrap,,,] 224554 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-17 16:38:09.109  INFO [bootstrap,,,] 224554 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-17 16:38:10.192  INFO [bootstrap,,,] 224554 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-17 16:38:13.264  INFO [bootstrap,,,] 224554 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2020-03-17 16:38:15.721  WARN [bootstrap,,,] 224554 --- [           main] org.elasticsearch.env                    : [Flying Tiger] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:38:22.120  WARN [bootstrap,,,] 224554 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:38:22.137  WARN [bootstrap,,,] 224554 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:38:25.101  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.services.GemControllerTests    : Started GemControllerTests in 32.879 seconds (JVM running for 35.176)
+2020-03-17 16:38:25.278  INFO [bootstrap,ef4a0f58923ee8c5,ef4a0f58923ee8c5,true] 224554 --- [           main] g.b.o.o.service.services.GemController   : Receiving request for a wise answer on: 'tell me the truth'
+2020-03-17 16:38:25.693  INFO [bootstrap,d8f1fd1ef3d77402,d8f1fd1ef3d77402,false] 224554 --- [           main] g.b.o.o.service.services.GemController   : Receiving request for a wise answer on: 'tell me the truth'
+2020-03-17 16:38:25.722  INFO [bootstrap,a1be333ad77afb0f,a1be333ad77afb0f,false] 224554 --- [           main] g.b.o.o.service.services.GemController   : Receiving secret request to index: 'GemCarrier[saying='a', author='b']'
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 33.704 sec - in guru.bonacci.oogway.oracle.service.services.GemControllerTests
+Running guru.bonacci.oogway.oracle.service.OracleIntegrationInTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:38:26.249  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.OracleIntegrationInTests       : No active profile set, falling back to default profiles: default
+2020-03-17 16:38:28.186  INFO [bootstrap,,,] 224554 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-17 16:38:28.192  INFO [bootstrap,,,] 224554 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-17 16:38:28.226  INFO [bootstrap,,,] 224554 --- [ost-startStop-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-03-17 16:38:29.721  WARN [bootstrap,,,] 224554 --- [           main] org.elasticsearch.env                    : [Inertia] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:38:31.660  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Without music, life would be a mistake.'
+2020-03-17 16:38:31.662  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'It is not a lack of love, but a lack of friendship that makes unhappy marriages.'
+2020-03-17 16:38:31.664  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'That which does not kill us makes us stronger.'
+2020-03-17 16:38:31.665  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'I'm not upset that you lied to me, I'm upset that from now on I can't believe you.'
+2020-03-17 16:38:31.666  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'And those who were seen dancing were thought to be insane by those who could not hear the music.'
+2020-03-17 16:38:31.666  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'It is hard enough to remember my opinions, without also remembering my reasons for them!'
+2020-03-17 16:38:31.669  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'There is always some madness in love. But there is also always some reason in madness.'
+2020-03-17 16:38:31.670  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Whoever fights monsters should see to it that in the process he does not become a monster. And if you gaze long enough into an abyss, the abyss will gaze back into you.'
+2020-03-17 16:38:31.671  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist.'
+2020-03-17 16:38:31.671  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'You must have chaos within you to give birth to a dancing star.'
+2020-03-17 16:38:31.672  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Sometimes people don't want to hear the truth because they don't want their illusions destroyed.'
+2020-03-17 16:38:31.673  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'In heaven, all the interesting people are missing.'
+2020-03-17 16:38:31.674  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'There are no facts, only interpretations.'
+2020-03-17 16:38:31.675  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'The man of knowledge must be able not only to love his enemies but also to hate his friends.'
+2020-03-17 16:38:31.678  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'We should consider every day lost on which we have not danced at least once.'
+2020-03-17 16:38:31.697  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'The individual has always had to struggle to keep from being overwhelmed by the tribe. If you try it, you will be lonely often, and sometimes frightened. But no price is too high to pay for the privilege of owning yourself.'
+2020-03-17 16:38:31.698  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'He who has a why to live for can bear almost any how.'
+2020-03-17 16:38:31.699  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'I cannot believe in a God who wants to be praised all the time.'
+2020-03-17 16:38:31.700  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'When we are tired, we are attacked by ideas we conquered long ago.'
+2020-03-17 16:38:31.700  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'No one can construct for you the bridge upon which precisely you must cross the stream of life, no one but you yourself alone.'
+2020-03-17 16:38:31.701  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'The snake which cannot cast its skin has to die. As well the minds which are prevented from changing their opinions; they cease to be mind.'
+2020-03-17 16:38:31.702  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'In individuals, insanity is rare; but in groups, parties, nations and epochs, it is the rule.'
+2020-03-17 16:38:31.704  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'The advantage of a bad memory is that one enjoys several times the same good things for the first time.'
+2020-03-17 16:38:31.705  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Man is the cruelest animal.'
+2020-03-17 16:38:31.705  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.'
+2020-03-17 16:38:31.706  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Is man merely a mistake of God's? Or God merely a mistake of man?'
+2020-03-17 16:38:31.708  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Every deep thinker is more afraid of being understood than of being misunderstood.'
+2020-03-17 16:38:31.709  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Thoughts are the shadows of our feelings -- always darker, emptier and simpler.'
+2020-03-17 16:38:31.710  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Faith: not wanting to know what the truth is.'
+2020-03-17 16:38:31.710  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'The thought of suicide is a great consolation: by means of it one gets through many a dark night.'
+2020-03-17 16:38:31.711  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'The higher we soar the smaller we appear to those who cannot fly.'
+2020-03-17 16:38:31.712  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'I would believe only in a God that knows how to dance.'
+2020-03-17 16:38:31.712  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'I am a forest, and a night of dark trees: but he who is not afraid of my darkness, will find banks full of roses under my cypresses.'
+2020-03-17 16:38:31.713  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'A thinker sees his own actions as experiments and questions--as attempts to find out something. Success and failure are for him answers above all.'
+2020-03-17 16:38:31.714  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'A casual stroll through the lunatic asylum shows that faith does not prove anything.'
+2020-03-17 16:38:31.715  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'The true man wants two things: danger and play. For that reason he wants woman, as the most dangerous plaything.'
+2020-03-17 16:38:31.716  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'There are no beautiful surfaces without a terrible depth.'
+2020-03-17 16:38:31.717  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'We have art in order not to die of the truth.'
+2020-03-17 16:38:31.719  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Be careful, lest in casting out your demon you exorcise the best thing in you.'
+2020-03-17 16:38:31.720  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Beware that, when fighting monsters, you yourself do not become a monster... for when you gaze long into the abyss. The abyss gazes also into you.'
+2020-03-17 16:38:31.721  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'All truly great thoughts are conceived while walking.'
+2020-03-17 16:38:31.721  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'There are two different types of people in the world, those who want to know, and those who want to believe.'
+2020-03-17 16:38:31.722  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'A good writer possesses not only his own spirit but also the spirit of his friends.'
+2020-03-17 16:38:31.722  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'you must be ready to burn yourself in your own flame;'
+2020-03-17 16:38:31.723  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'how could you rise anew if you have not first become ashes?'
+2020-03-17 16:38:31.724  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'One ought to hold on to one's heart; for if one lets it go, one soon loses control of the head too.'
+2020-03-17 16:38:31.724  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'All things are subject to interpretation. Whichever interpretation prevails at a given time is a function of power and not truth.'
+2020-03-17 16:38:31.726  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'In truth,there was only one christian and he died on the cross.'
+2020-03-17 16:38:31.733  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'That which is done out of love is always beyond good and evil.'
+2020-03-17 16:38:31.734  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'All I need is a sheet of paper and something to write with, and then I can turn the world upside down.'
+2020-03-17 16:38:31.735  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Silence is worse; all truths that are kept silent become poisonous.'
+2020-03-17 16:38:31.735  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Ah, women. They make the highs higher and the lows more frequent.'
+2020-03-17 16:38:31.736  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Art is the proper task of life.'
+2020-03-17 16:38:31.737  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'There is not enough love and goodness in the world to permit giving any of it away to imaginary beings.'
+2020-03-17 16:38:31.738  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'What does your conscience say? — 'You should become the person you are'.'
+2020-03-17 16:38:31.741  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Invisible threads are the strongest ties.'
+2020-03-17 16:38:31.742  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Amor Fati. Love Your Fate, which is in fact your life.'
+2020-03-17 16:38:31.744  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'Perhaps I know best why it is man alone who laughs; he alone suffers so deeply that he had to invent laughter.'
+2020-03-17 16:38:36.673  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.OracleIntegrationInTests       : Started OracleIntegrationInTests in 10.853 seconds (JVM running for 46.748)
+2020-03-17 16:38:36.713  INFO [bootstrap,d762247a70f45f50,d762247a70f45f50,false] 224554 --- [           main] g.b.o.o.service.events.OracleRabbitEar   : Receiving an extra bit of knowledge: 'GemCarrier[saying='ebf91bee-aefe-497f-aa0f-300c76679b5a', author='bla']'
+2020-03-17 16:38:36.729  INFO [bootstrap,d762247a70f45f50,d762247a70f45f50,false] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'ebf91bee-aefe-497f-aa0f-300c76679b5a'
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.004 sec - in guru.bonacci.oogway.oracle.service.OracleIntegrationInTests
+Running guru.bonacci.oogway.oracle.service.OracleIntegrationOutTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:38:37.180  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.OracleIntegrationOutTests      : No active profile set, falling back to default profiles: default
+2020-03-17 16:38:38.929  INFO [bootstrap,,,] 224554 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-17 16:38:38.930  INFO [bootstrap,,,] 224554 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-17 16:38:38.974  INFO [bootstrap,,,] 224554 --- [ost-startStop-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-03-17 16:38:40.485  WARN [bootstrap,,,] 224554 --- [           main] org.elasticsearch.env                    : [Richard Fisk] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:38:41.549  INFO [bootstrap,,,] 224554 --- [           main] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring FrameworkServlet ''
+2020-03-17 16:38:46.521  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.OracleIntegrationOutTests      : Started OracleIntegrationOutTests in 9.72 seconds (JVM running for 56.596)
+2020-03-17 16:38:46.553  INFO [bootstrap,940aaddf637f6cdf,940aaddf637f6cdf,false] 224554 --- [           main] g.b.o.o.service.services.GemController   : Receiving request for a wise answer on: 'The art of living is more like wrestling than dancing.'
+2020-03-17 16:38:46.554  INFO [bootstrap,940aaddf637f6cdf,940aaddf637f6cdf,false] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'The art of living is more like wrestling than dancing.'
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.046 sec - in guru.bonacci.oogway.oracle.service.OracleIntegrationOutTests
+Running guru.bonacci.oogway.oracle.service.persistence.GemRepositoryTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:38:47.240  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.p.GemRepositoryTests           : No active profile set, falling back to default profiles: default
+2020-03-17 16:38:48.400  WARN [bootstrap,,,] 224554 --- [           main] org.elasticsearch.env                    : [Michael Twoyoungmen] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:38:57.229  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.p.GemRepositoryTests           : Started GemRepositoryTests in 10.362 seconds (JVM running for 67.304)
+2020-03-17 16:39:10.166  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:10.216  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'a'
+2020-03-17 16:39:11.287  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello'
+2020-03-17 16:39:12.383  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'a'
+2020-03-17 16:39:12.405  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'b'
+2020-03-17 16:39:12.899  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'a'
+2020-03-17 16:39:13.103  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'something completely different'
+2020-03-17 16:39:13.672  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello'
+2020-03-17 16:39:13.716  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:13.721  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:13.724  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:13.728  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:13.735  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:13.743  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:13.746  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:13.753  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:13.762  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:13.767  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'hello how are you'
+2020-03-17 16:39:15.828  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.persistence.GemRepositoryImpl  : About to gain wisdom: 'the said'
+2020-03-17 16:39:15.852  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'the said'
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.035 sec - in guru.bonacci.oogway.oracle.service.persistence.GemRepositoryTests
+Running guru.bonacci.oogway.oracle.service.intercept.EnquiryInterceptorTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:39:16.312  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.i.EnquiryInterceptorTests      : The following profiles are active: unit-test
+2020-03-17 16:39:17.577  WARN [bootstrap,,,] 224554 --- [           main] org.elasticsearch.env                    : [Spyne] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:39:20.731  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.i.EnquiryInterceptorTests      : Started EnquiryInterceptorTests in 4.829 seconds (JVM running for 90.806)
+2020-03-17 16:39:20.778  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'something completely different'
+2020-03-17 16:39:20.811  INFO [bootstrap,,,] 224554 --- [           main] g.b.o.o.s.intercept.EnquiryInterceptor   : Someone asked 'something completely different'
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.96 sec - in guru.bonacci.oogway.oracle.service.intercept.EnquiryInterceptorTests
+2020-03-17 16:39:20.973  WARN [bootstrap,,,] 224554 --- [transport][T#1]] org.elasticsearch.transport              : [Richard Fisk] Transport response handler not found of id [62]
+2020-03-17 16:39:21.030  WARN [bootstrap,,,] 224554 --- [][generic][T#3]] org.elasticsearch.gateway                : [Richard Fisk] [oracle][0]: failed to list shard for shard_started on node [sbhu3yIoSBmwrpJUDUM1pg]
+
+org.elasticsearch.action.FailedNodeException: Failed node [sbhu3yIoSBmwrpJUDUM1pg]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.onFailure(TransportNodesAction.java:205)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.access$800(TransportNodesAction.java:107)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction$2.handleException(TransportNodesAction.java:178)
+	at org.elasticsearch.transport.TransportService$2.run(TransportService.java:206)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.elasticsearch.transport.TransportException: transport stopped, action: internal:gateway/local/started_shards[n]
+	... 4 common frames omitted
+
+2020-03-17 16:39:21.269  WARN [bootstrap,,,] 224554 --- [ender@5a3e165f)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:39:21.596  WARN [bootstrap,,,] 224554 --- [ender@48bf7714)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:39:22.620  WARN [bootstrap,,,] 224554 --- [ender@7a5bccb8)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+
+Results :
+
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building orchestration 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ orchestration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ orchestration ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ orchestration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/orchestration/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ orchestration ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ orchestration ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sannyas 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sannyas-service 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sannyas-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ sannyas-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sannyas-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 15 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ sannyas-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ sannyas-service ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/sannyas/sannyas-service/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running guru.bonacci.oogway.sannyas.service.bq.BQScraperTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:39:34.103  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.sannyas.service.bq.BQScraperTests  : No active profile set, falling back to default profiles: default
+2020-03-17 16:39:41.027  WARN [bootstrap,,,] 232978 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:39:41.039  WARN [bootstrap,,,] 232978 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:39:44.805  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.sannyas.service.bq.BQScraperTests  : Started BQScraperTests in 13.154 seconds (JVM running for 19.518)
+2020-03-17 16:39:45.302 ERROR [bootstrap,,,] 232978 --- [           main] er$$EnhancerByMockitoWithCGLIB$$7e97831d : Not too many pages, return 1: null
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.993 sec - in guru.bonacci.oogway.sannyas.service.bq.BQScraperTests
+Running guru.bonacci.oogway.sannyas.service.bq.BQSeekerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:39:46.482  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.sannyas.service.bq.BQSeekerTests   : No active profile set, falling back to default profiles: default
+2020-03-17 16:39:49.887  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.sannyas.service.bq.BQSeekerTests   : Started BQSeekerTests in 4.359 seconds (JVM running for 24.601)
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.458 sec - in guru.bonacci.oogway.sannyas.service.bq.BQSeekerTests
+Running guru.bonacci.oogway.sannyas.service.steps.LemmatizorTests
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.497 sec - in guru.bonacci.oogway.sannyas.service.steps.LemmatizorTests
+Running guru.bonacci.oogway.sannyas.service.steps.CharacterGuardianTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in guru.bonacci.oogway.sannyas.service.steps.CharacterGuardianTests
+Running guru.bonacci.oogway.sannyas.service.steps.KeyPhraserTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.105 sec - in guru.bonacci.oogway.sannyas.service.steps.KeyPhraserTests
+Running guru.bonacci.oogway.sannyas.service.steps.DuplicateRemoverTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in guru.bonacci.oogway.sannyas.service.steps.DuplicateRemoverTests
+Running guru.bonacci.oogway.sannyas.service.qd.QDSeekerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:39:57.123  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.sannyas.service.qd.QDSeekerTests   : No active profile set, falling back to default profiles: default
+2020-03-17 16:40:00.061  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.sannyas.service.qd.QDSeekerTests   : Started QDSeekerTests in 3.424 seconds (JVM running for 34.775)
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.48 sec - in guru.bonacci.oogway.sannyas.service.qd.QDSeekerTests
+Running guru.bonacci.oogway.sannyas.service.qd.QDScraperTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 sec - in guru.bonacci.oogway.sannyas.service.qd.QDScraperTests
+Running guru.bonacci.oogway.sannyas.service.processing.PitchforkManagerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:40:00.793  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.p.PitchforkManagerTests        : No active profile set, falling back to default profiles: default
+2020-03-17 16:40:03.516  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.p.PitchforkManagerTests        : Started PitchforkManagerTests in 3.177 seconds (JVM running for 38.23)
+2020-03-17 16:40:03.535  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.processing.PitchforkManager    : About to analyzer input: 'yet another beautiful day today'
+2020-03-17 16:40:03.537  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.processing.PitchforkManager    : Sharing my newly acquired wisdom 'GemCarrier[saying='that', author='null']'
+2020-03-17 16:40:03.565  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.processing.PitchforkManager    : Sharing my newly acquired wisdom 'GemCarrier[saying='true', author='null']'
+2020-03-17 16:40:03.567  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.processing.PitchforkManager    : Sharing my newly acquired wisdom 'GemCarrier[saying='stranger', author='null']'
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.321 sec - in guru.bonacci.oogway.sannyas.service.processing.PitchforkManagerTests
+Running guru.bonacci.oogway.sannyas.service.processing.SannyasPickerTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in guru.bonacci.oogway.sannyas.service.processing.SannyasPickerTests
+Running guru.bonacci.oogway.sannyas.service.processing.CleaningAgentTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:40:03.985  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.processing.CleaningAgentTests  : No active profile set, falling back to default profiles: default
+2020-03-17 16:40:07.390  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.processing.CleaningAgentTests  : Started CleaningAgentTests in 3.717 seconds (JVM running for 42.104)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.782 sec - in guru.bonacci.oogway.sannyas.service.processing.CleaningAgentTests
+Running guru.bonacci.oogway.sannyas.service.processing.ForePlayerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:40:07.750  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.processing.ForePlayerTests     : No active profile set, falling back to default profiles: default
+2020-03-17 16:40:10.215  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.processing.ForePlayerTests     : Started ForePlayerTests in 2.767 seconds (JVM running for 44.928)
+2020-03-17 16:40:10.230  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.service.processing.ForePlayer    : class guru.bonacci.oogway.sannyas.service.gr.GRSeeker$$EnhancerByMockitoWithCGLIB$$db481b0c- Preprocessed input: 'some string without meaning'
+2020-03-17 16:40:10.252  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.service.processing.ForePlayer    : class guru.bonacci.oogway.sannyas.service.gr.GRSeeker$$EnhancerByMockitoWithCGLIB$$db481b0c- Preprocessed input: 'something else'
+something else
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.818 sec - in guru.bonacci.oogway.sannyas.service.processing.ForePlayerTests
+Running guru.bonacci.oogway.sannyas.service.gr.GRScraperTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec - in guru.bonacci.oogway.sannyas.service.gr.GRScraperTests
+Running guru.bonacci.oogway.sannyas.service.gr.GRSeekerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:40:11.498  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.sannyas.service.gr.GRSeekerTests   : No active profile set, falling back to default profiles: default
+2020-03-17 16:40:14.172  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.sannyas.service.gr.GRSeekerTests   : Started GRSeekerTests in 3.686 seconds (JVM running for 48.885)
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.753 sec - in guru.bonacci.oogway.sannyas.service.gr.GRSeekerTests
+Running guru.bonacci.oogway.sannyas.service.general.PageCacheTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:40:14.547  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.service.general.PageCacheTests   : The following profiles are active: cache-test
+2020-03-17 16:40:16.862  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.service.general.PageCacheTests   : Started PageCacheTests in 2.631 seconds (JVM running for 51.576)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.669 sec - in guru.bonacci.oogway.sannyas.service.general.PageCacheTests
+Running guru.bonacci.oogway.sannyas.service.SannyasIntegrationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:40:17.186  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.service.SannyasIntegrationTests  : No active profile set, falling back to default profiles: default
+2020-03-17 16:40:18.874  INFO [bootstrap,,,] 232978 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-17 16:40:18.875  INFO [bootstrap,,,] 232978 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-17 16:40:19.090  INFO [bootstrap,,,] 232978 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-17 16:40:23.808  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.service.SannyasIntegrationTests  : Started SannyasIntegrationTests in 6.901 seconds (JVM running for 58.521)
+2020-03-17 16:40:23.929  INFO [bootstrap,9b73b82091f8c720,9b73b82091f8c720,false] 232978 --- [           main] g.b.o.s.service.events.SannyasRabbitEar  : An opportunity to learn... 'I am Malcolm X'
+2020-03-17 16:40:23.930  INFO [bootstrap,9b73b82091f8c720,9b73b82091f8c720,false] 232978 --- [           main] g.b.o.s.s.processing.PitchforkManager    : About to analyzer input: 'I am Malcolm X'
+2020-03-17 16:40:23.936  INFO [bootstrap,9b73b82091f8c720,9b73b82091f8c720,false] 232978 --- [           main] g.b.o.s.service.processing.ForePlayer    : class guru.bonacci.oogway.sannyas.service.gr.GRSeeker$$EnhancerByMockitoWithCGLIB$$db481b0c- Preprocessed input: 'I am Malcolm X'
+2020-03-17 16:40:23.936  INFO [bootstrap,9b73b82091f8c720,9b73b82091f8c720,false] 232978 --- [           main] g.b.o.s.s.processing.PitchforkManager    : Sharing my newly acquired wisdom 'GemCarrier[saying='does not matter', author='dear']'
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.053 sec - in guru.bonacci.oogway.sannyas.service.SannyasIntegrationTests
+Running guru.bonacci.oogway.sannyas.service.filters.LengthFilterTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in guru.bonacci.oogway.sannyas.service.filters.LengthFilterTests
+Running guru.bonacci.oogway.sannyas.service.filters.ProfanityFilterTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:40:24.305  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.filters.ProfanityFilterTests   : No active profile set, falling back to default profiles: default
+2020-03-17 16:40:26.849  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.service.filters.ProfanityFilter  : Adding to profanity filter: 'word1'
+2020-03-17 16:40:26.849  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.service.filters.ProfanityFilter  : Adding to profanity filter: 'word 2'
+2020-03-17 16:40:26.850  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.service.filters.ProfanityFilter  : Adding to profanity filter: 'word  3'
+2020-03-17 16:40:26.894  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.s.filters.ProfanityFilterTests   : Started ProfanityFilterTests in 2.868 seconds (JVM running for 61.607)
+2020-03-17 16:40:26.908  INFO [bootstrap,,,] 232978 --- [           main] g.b.o.s.service.filters.ProfanityFilter  : Blocking indecent quote: word1
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.912 sec - in guru.bonacci.oogway.sannyas.service.filters.ProfanityFilterTests
+2020-03-17 16:40:27.426  WARN [bootstrap,,,] 232978 --- [ender@2cf2549c)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:40:27.676  WARN [bootstrap,,,] 232978 --- [ender@5495020c)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:40:27.760  WARN [bootstrap,,,] 232978 --- [ender@2322d697)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:40:27.793  WARN [bootstrap,,,] 232978 --- [ender@21dcd0b5)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:40:27.808  WARN [bootstrap,,,] 232978 --- [ender@4a561f7d)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:40:27.816  WARN [bootstrap,,,] 232978 --- [ender@56f2c9e8)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:40:27.844  WARN [bootstrap,,,] 232978 --- [ender@2322d697)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:40:27.899  WARN [bootstrap,,,] 232978 --- [ender@4a5bf927)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+
+Results :
+
+Tests run: 63, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spectre 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spectre-shared 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spectre-shared ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/spectre/spectre-shared/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ spectre-shared ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spectre-shared ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ spectre-shared ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ spectre-shared ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/spectre/spectre-shared/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running guru.bonacci.spectre.spectreshared.utilities.collections.MyPassiveExpiringCollectionTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.611 sec - in guru.bonacci.spectre.spectreshared.utilities.collections.MyPassiveExpiringCollectionTests
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building local-timer 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ local-timer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ local-timer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ local-timer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ local-timer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ local-timer ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/spectre/local-timer/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running guru.bonacci.spectre.localtimer.services.LocalTimerServiceTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:40:37.800  INFO [bootstrap,,,] 237190 --- [           main] g.b.s.l.services.LocalTimerServiceTests  : No active profile set, falling back to default profiles: default
+2020-03-17 16:40:43.011  WARN [bootstrap,,,] 237190 --- [           main] org.elasticsearch.env                    : [Zebediah Killgrave] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:40:47.856  WARN [bootstrap,,,] 237190 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:40:47.881  WARN [bootstrap,,,] 237190 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:40:51.758  INFO [bootstrap,,,] 237190 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : No active profile set, falling back to default profiles: default
+2020-03-17 16:40:52.022  INFO [bootstrap,,,] 237190 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 0.386 seconds (JVM running for 19.265)
+2020-03-17 16:40:52.283  INFO [bootstrap,,,] 237190 --- [           main] g.b.s.l.services.LocalTimerServiceTests  : Started LocalTimerServiceTests in 17.319 seconds (JVM running for 19.525)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.625 sec - in guru.bonacci.spectre.localtimer.services.LocalTimerServiceTests
+Running guru.bonacci.spectre.localtimer.LocalTimerIntegrationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:40:52.770  INFO [bootstrap,,,] 237190 --- [           main] g.b.s.l.LocalTimerIntegrationTests       : No active profile set, falling back to default profiles: default
+2020-03-17 16:40:55.240  INFO [bootstrap,,,] 237190 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-17 16:40:55.251  INFO [bootstrap,,,] 237190 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-17 16:40:55.511  INFO [bootstrap,,,] 237190 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-17 16:40:58.124  WARN [bootstrap,,,] 237190 --- [           main] org.elasticsearch.env                    : [Khonshu] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:41:02.257  INFO [bootstrap,,,] 237190 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : No active profile set, falling back to default profiles: default
+2020-03-17 16:41:02.413  INFO [bootstrap,,,] 237190 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 0.263 seconds (JVM running for 29.655)
+2020-03-17 16:41:02.660  INFO [bootstrap,,,] 237190 --- [           main] g.b.s.l.LocalTimerIntegrationTests       : Started LocalTimerIntegrationTests in 10.259 seconds (JVM running for 29.903)
+2020-03-17 16:41:03.208  INFO [bootstrap,b09cb0a387cf6d40,b09cb0a387cf6d40,false] 237190 --- [           main] g.b.s.l.events.LocalTimerRabbitEar       : Incoming... 0651545a-4157-4057-a371-66efe3a2483c
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.958 sec - in guru.bonacci.spectre.localtimer.LocalTimerIntegrationTests
+2020-03-17 16:41:04.255  WARN [bootstrap,,,] 237190 --- [ender@207bf6d8)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:41:04.440  WARN [bootstrap,,,] 237190 --- [ender@5c9168c3)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building money 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ money ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ money ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ money ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ money ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ money ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/spectre/money/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running guru.bonacci.spectre.money.services.MoneyServiceTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:41:09.632  INFO [bootstrap,,,] 238925 --- [           main] g.b.s.money.services.MoneyServiceTests   : No active profile set, falling back to default profiles: default
+2020-03-17 16:41:14.842  WARN [bootstrap,,,] 238925 --- [           main] org.elasticsearch.env                    : [Doctor Anthony Droom] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:41:18.989  WARN [bootstrap,,,] 238925 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:41:18.995  WARN [bootstrap,,,] 238925 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:41:23.170  INFO [bootstrap,,,] 238925 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : No active profile set, falling back to default profiles: default
+2020-03-17 16:41:23.455  INFO [bootstrap,,,] 238925 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 0.419 seconds (JVM running for 18.683)
+2020-03-17 16:41:23.722  INFO [bootstrap,,,] 238925 --- [           main] g.b.s.money.services.MoneyServiceTests   : Started MoneyServiceTests in 17.056 seconds (JVM running for 18.949)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.345 sec - in guru.bonacci.spectre.money.services.MoneyServiceTests
+Running guru.bonacci.spectre.money.MoneyIntegrationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:41:24.257  INFO [bootstrap,,,] 238925 --- [           main] g.b.spectre.money.MoneyIntegrationTests  : No active profile set, falling back to default profiles: default
+2020-03-17 16:41:26.668  INFO [bootstrap,,,] 238925 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-17 16:41:26.679  INFO [bootstrap,,,] 238925 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-17 16:41:26.965  INFO [bootstrap,,,] 238925 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-17 16:41:29.227  WARN [bootstrap,,,] 238925 --- [           main] org.elasticsearch.env                    : [Proctor] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:41:33.741  INFO [bootstrap,,,] 238925 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : No active profile set, falling back to default profiles: default
+2020-03-17 16:41:33.864  INFO [bootstrap,,,] 238925 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 0.244 seconds (JVM running for 29.091)
+2020-03-17 16:41:34.106  INFO [bootstrap,,,] 238925 --- [           main] g.b.spectre.money.MoneyIntegrationTests  : Started MoneyIntegrationTests in 10.25 seconds (JVM running for 29.333)
+2020-03-17 16:41:34.692  INFO [bootstrap,29cce9c24e6ee1fc,29cce9c24e6ee1fc,false] 238925 --- [           main] g.b.spectre.money.events.MoneyRabbitEar  : Incoming... 3891fdec-6428-4df9-95f5-35412cac65d8
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.979 sec - in guru.bonacci.spectre.money.MoneyIntegrationTests
+2020-03-17 16:41:35.603  WARN [bootstrap,,,] 238925 --- [ender@5e085259)] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sentiment 3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sentiment ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ sentiment ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sentiment ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ sentiment ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ sentiment ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/spectre/sentiment/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running guru.bonacci.spectre.sentiment.SentimentIntegrationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:41:41.450  INFO 240773 --- [           main] g.b.s.s.SentimentIntegrationTests        : No active profile set, falling back to default profiles: default
+2020-03-17 16:41:44.914  INFO 240773 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-17 16:41:44.918  INFO 240773 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-17 16:41:45.208  INFO 240773 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-17 16:41:47.742  WARN 240773 --- [           main] org.elasticsearch.env                    : [Corsair] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:41:52.382  INFO 240773 --- [           main] e.stanford.nlp.pipeline.StanfordCoreNLP  : Adding annotator tokenize
+2020-03-17 16:41:52.402  INFO 240773 --- [           main] e.s.nlp.pipeline.TokenizerAnnotator      : No tokenizer type provided. Defaulting to PTBTokenizer.
+2020-03-17 16:41:52.415  INFO 240773 --- [           main] e.stanford.nlp.pipeline.StanfordCoreNLP  : Adding annotator ssplit
+2020-03-17 16:41:52.424  INFO 240773 --- [           main] e.stanford.nlp.pipeline.StanfordCoreNLP  : Adding annotator parse
+2020-03-17 16:41:53.637  INFO 240773 --- [           main] e.s.nlp.parser.common.ParserGrammar      : Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... done [1.2 sec].
+2020-03-17 16:41:53.647  INFO 240773 --- [           main] e.stanford.nlp.pipeline.StanfordCoreNLP  : Adding annotator sentiment
+2020-03-17 16:41:54.703  WARN 240773 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:41:54.734  WARN 240773 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-17 16:41:58.352  INFO 240773 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : No active profile set, falling back to default profiles: default
+2020-03-17 16:41:58.601  INFO 240773 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 0.399 seconds (JVM running for 22.363)
+2020-03-17 16:41:59.048  INFO 240773 --- [           main] g.b.s.s.SentimentIntegrationTests        : Started SentimentIntegrationTests in 20.776 seconds (JVM running for 22.81)
+2020-03-17 16:41:59.623  INFO 240773 --- [           main] g.b.s.s.events.SentimentRabbitEar        : Incoming... 2b9cf48f-2288-42dd-b6e7-a20c5f3a8712
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.489 sec - in guru.bonacci.spectre.sentiment.SentimentIntegrationTests
+Running guru.bonacci.spectre.sentiment.SentimentControllerTests
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.135 sec <<< FAILURE! - in guru.bonacci.spectre.sentiment.SentimentControllerTests
+guru.bonacci.spectre.sentiment.SentimentControllerTests  Time elapsed: 0.135 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError: null
+	at com.palantir.docker.compose.execution.DockerComposeExecutable.lambda$defaultDockerComposePath$28(DockerComposeExecutable.java:40)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at com.palantir.docker.compose.execution.DockerComposeExecutable.defaultDockerComposePath(DockerComposeExecutable.java:40)
+	at com.palantir.docker.compose.execution.DockerComposeExecutable.dockerComposePath(DockerComposeExecutable.java:84)
+	at com.palantir.docker.compose.execution.ImmutableDockerComposeExecutable.access$501(ImmutableDockerComposeExecutable.java:22)
+	at com.palantir.docker.compose.execution.ImmutableDockerComposeExecutable$InitShim.dockerComposePath(ImmutableDockerComposeExecutable.java:92)
+	at com.palantir.docker.compose.execution.ImmutableDockerComposeExecutable.<init>(ImmutableDockerComposeExecutable.java:46)
+	at com.palantir.docker.compose.execution.ImmutableDockerComposeExecutable.<init>(ImmutableDockerComposeExecutable.java:22)
+	at com.palantir.docker.compose.execution.ImmutableDockerComposeExecutable$Builder.build(ImmutableDockerComposeExecutable.java:337)
+	at com.palantir.docker.compose.DockerComposeRule.dockerComposeExecutable(DockerComposeRule.java:77)
+	at com.palantir.docker.compose.ImmutableDockerComposeRule.access$3101(ImmutableDockerComposeRule.java:32)
+	at com.palantir.docker.compose.ImmutableDockerComposeRule$InitShim.dockerComposeExecutable(ImmutableDockerComposeRule.java:188)
+	at com.palantir.docker.compose.ImmutableDockerComposeRule.<init>(ImmutableDockerComposeRule.java:93)
+	at com.palantir.docker.compose.ImmutableDockerComposeRule.<init>(ImmutableDockerComposeRule.java:32)
+	at com.palantir.docker.compose.ImmutableDockerComposeRule$Builder.build(ImmutableDockerComposeRule.java:1352)
+	at guru.bonacci.spectre.sentiment.SentimentControllerTests.<clinit>(SentimentControllerTests.java:32)
+
+Running guru.bonacci.spectre.sentiment.services.SentimentServiceTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-03-17 16:42:01.140  INFO 240773 --- [           main] g.b.s.s.services.SentimentServiceTests   : No active profile set, falling back to default profiles: default
+2020-03-17 16:42:01.954  WARN 240773 --- [           main] org.elasticsearch.env                    : [Screaming Mimi] max file descriptors [51200] for elasticsearch process likely too low, consider increasing to at least [65536]
+2020-03-17 16:42:02.241  INFO 240773 --- [           main] e.stanford.nlp.pipeline.StanfordCoreNLP  : Adding annotator tokenize
+2020-03-17 16:42:02.242  INFO 240773 --- [           main] e.stanford.nlp.pipeline.StanfordCoreNLP  : Adding annotator ssplit
+2020-03-17 16:42:02.242  INFO 240773 --- [           main] e.stanford.nlp.pipeline.StanfordCoreNLP  : Adding annotator parse
+2020-03-17 16:42:02.243  INFO 240773 --- [           main] e.stanford.nlp.pipeline.StanfordCoreNLP  : Adding annotator sentiment
+2020-03-17 16:42:03.889  INFO 240773 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : No active profile set, falling back to default profiles: default
+2020-03-17 16:42:03.973  INFO 240773 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 0.198 seconds (JVM running for 27.735)
+2020-03-17 16:42:04.020  INFO 240773 --- [           main] g.b.s.s.services.SentimentServiceTests   : Started SentimentServiceTests in 3.273 seconds (JVM running for 27.782)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.61 sec - in guru.bonacci.spectre.sentiment.services.SentimentServiceTests
+
+Results :
+
+Tests in error: 
+  SentimentControllerTests.guru.bonacci.spectre.sentiment.SentimentControllerTests » ExceptionInInitializer
+
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] parent ............................................. SUCCESS [  0.002 s]
+[INFO] auth ............................................... SUCCESS [  2.326 s]
+[INFO] config ............................................. SUCCESS [ 16.095 s]
+[INFO] heimdall ........................................... SUCCESS [  0.315 s]
+[INFO] shared-domain ...................................... SUCCESS [  0.067 s]
+[INFO] oracle ............................................. SUCCESS [  0.001 s]
+[INFO] oracle-client ...................................... SUCCESS [ 12.129 s]
+[INFO] jobs ............................................... SUCCESS [  0.300 s]
+[INFO] utilities .......................................... SUCCESS [  6.741 s]
+[INFO] oracle-service ..................................... SUCCESS [01:34 min]
+[INFO] orchestration ...................................... SUCCESS [  0.308 s]
+[INFO] sannyas ............................................ SUCCESS [  0.000 s]
+[INFO] sannyas-service .................................... SUCCESS [01:03 min]
+[INFO] spectre ............................................ SUCCESS [  0.001 s]
+[INFO] spectre-shared ..................................... SUCCESS [  4.420 s]
+[INFO] local-timer ........................................ SUCCESS [ 32.060 s]
+[INFO] money .............................................. SUCCESS [ 31.463 s]
+[INFO] sentiment .......................................... FAILURE [ 28.597 s]
+[INFO] weather ............................................ SKIPPED
+[INFO] web ................................................ SKIPPED
+[INFO] integration-test ................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 04:56 min
+[INFO] Finished at: 2020-03-17T16:42:04+01:00
+[INFO] Final Memory: 79M/189M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project sentiment: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/spectre/sentiment/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project sentiment: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/spectre/sentiment/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-LeonardoBonacci-oogway-356889992-20180322-151038-firstCommit/spectre/sentiment/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:254)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :sentiment
