@@ -1,0 +1,947 @@
+log4j:WARN No appenders could be found for logger (org.jboss.logging).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 17, 2020 4:37:06 PM com.blazebit.persistence.impl.CriteriaBuilderConfigurationProviderImpl createConfiguration
+INFO: Blaze-Persistence version: Blaze-Persistence 'Ink' 1.2.0-SNAPSHOT
+Mar 17, 2020 4:37:06 PM com.blazebit.annotation.AnnotationUtils <clinit>
+WARNING: Stereotype annotation can not be found, skipping annotation inheritance via stereotype.
+ective model for com.blazebit:blaze-persistence-entity-view-testsuite:jar:1.2.0-SNAPSHOT
+[WARNING] 'profiles.profile[datanucleus-4].dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.datanucleus:datanucleus-jpa-query:jar -> version ${version.datanucleus.jpa-4} vs ${version.datanucleus.jpa-5} @ com.blazebit:blaze-persistence-entity-view-testsuite:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/entity-view/testsuite/pom.xml, line 1013, column 29
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Blazebit Blaze-Persistence
+[INFO] Blazebit Persistence Checkstyle Rules
+[INFO] Blazebit Persistence Parent
+[INFO] Blazebit Persistence Core Module
+[INFO] Blazebit Persistence Core API
+[INFO] Blazebit Persistence Core Parser
+[INFO] Blazebit Persistence Core Impl
+[INFO] Blazebit Persistence Integrations
+[INFO] Blazebit Persistence Integration JPA Base
+[INFO] Blazebit Persistence Integration Hibernate Base
+[INFO] Blazebit Persistence Integration Hibernate 5.2
+[INFO] Blazebit Persistence Testsuite Base
+[INFO] Blazebit Persistence Testsuite Base JPA
+[INFO] Blazebit Persistence Testsuite Base Hibernate
+[INFO] Blazebit Persistence Core Testsuite
+[INFO] Blazebit Persistence Entity-View Module
+[INFO] Blazebit Persistence Entity-View API
+[INFO] Blazebit Persistence Entity-View Impl
+[INFO] Blazebit Persistence Entity-View Testsuite
+[INFO] Blazebit Persistence JPA-Criteria Module
+[INFO] Blazebit Persistence JPA-2 Compatibility
+[INFO] Blazebit Persistence JPA-Criteria API
+[INFO] Blazebit Persistence JPA-Criteria Impl
+[INFO] Blazebit Persistence JPA-Criteria Testsuite
+[INFO] Blazebit Persistence Integration Hibernate 4.2
+[INFO] Blazebit Persistence Integration Hibernate 4.3
+[INFO] Blazebit Persistence Integration Hibernate 5
+[INFO] Blazebit Persistence Integration Hibernate 6.0
+[INFO] Blazebit Persistence Integration DataNucleus
+[INFO] Blazebit Persistence Integration EclipseLink
+[INFO] Blazebit Persistence Integration OpenJPA
+[INFO] Blazebit Persistence Integration Base CDI
+[INFO] Blazebit Persistence Integration Entity-View CDI
+[INFO] Blazebit Persistence Integration Entity-View Spring
+[INFO] Blazebit Persistence Integration Spring-Data
+[INFO] Blazebit Persistence Integration DeltaSpike Data
+[INFO] Blazebit Persistence Integration DeltaSpike Data API
+[INFO] Blazebit Persistence Integration DeltaSpike Data Impl
+[INFO] Blazebit Persistence Integration DeltaSpike Data Testsuite
+[INFO] Blazebit Persistence Testsuite Base DataNucleus
+[INFO] Blazebit Persistence Testsuite Base EclipseLink
+[INFO] Blazebit Persistence Testsuite Base OpenJPA
+[INFO] Blazebit Persistence Documentation
+[INFO] Blazebit Persistence Website
+[INFO] Blazebit Persistence Examples
+[INFO] Blazebit Persistence Examples Showcase Base
+[INFO] Blazebit Persistence Examples Showcase SPI
+[INFO] Blazebit Persistence Examples Basic Showcase
+[INFO] Blazebit Persistence Examples CTE Showcase
+[INFO] Blazebit Persistence Examples Spring Data Showcase
+[INFO] Blazebit Persistence Examples CDI Showcase
+[INFO] Blazebit Persistence Examples Spring Showcase
+[INFO] Blazebit Persistence Archetype Parent
+[INFO] Blazebit Persistence Archetype Core Sample
+[INFO] Blazebit Persistence Archetype Entity-View Sample
+[INFO] Blazebit Persistence Archetype Spring-Data Sample
+[INFO] Blazebit Persistence Archetype Spring-Boot Sample
+[INFO] Blazebit Persistence Archetype DeltaSpike Data Sample
+[INFO] Blazebit Persistence Archetype Java EE Sample
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Blaze-Persistence 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence ---
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit
+[INFO] Storing buildNumber: 1303a33d58bdd35334551cd271fd8f5c7bd0ab04 at timestamp: 1584459381472
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Checkstyle Rules 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-checkstyle-rules ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-checkstyle-rules ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-checkstyle-rules ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-checkstyle-rules ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-checkstyle-rules ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ blaze-persistence-checkstyle-rules ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ blaze-persistence-checkstyle-rules ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/checkstyle-rules/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ blaze-persistence-checkstyle-rules ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/checkstyle-rules/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ blaze-persistence-checkstyle-rules ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ blaze-persistence-checkstyle-rules ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Parent 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-parent ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-parent ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Core Module 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-core ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-core ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-core ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Core API 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-core-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-core-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-core-api ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-core-api ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-core-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ blaze-persistence-core-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ blaze-persistence-core-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 139 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/api/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ blaze-persistence-core-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ blaze-persistence-core-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ blaze-persistence-core-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Core Parser 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-core-parser ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-core-parser ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-core-parser ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-core-parser ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-core-parser ---
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.6:antlr4 (default) @ blaze-persistence-core-parser ---
+[INFO] No grammars to process
+[INFO] ANTLR 4: Processing source directory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/parser/src/main/antlr4
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:add-source (add-antlr4-source) @ blaze-persistence-core-parser ---
+[INFO] Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/parser/target/generated/antlr added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ blaze-persistence-core-parser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ blaze-persistence-core-parser ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ blaze-persistence-core-parser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ blaze-persistence-core-parser ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ blaze-persistence-core-parser ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/parser/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 8.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1133.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.blazebit.persistence.impl.expression.QuantifierPredicateParsingTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.233 sec - in com.blazebit.persistence.impl.expression.QuantifierPredicateParsingTest
+Running com.blazebit.persistence.impl.expression.ArithmeticTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in com.blazebit.persistence.impl.expression.ArithmeticTest
+Running com.blazebit.persistence.impl.expression.TestLiterals
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.281 sec - in com.blazebit.persistence.impl.expression.TestLiterals
+Running com.blazebit.persistence.impl.expression.SimpleCachingExpressionFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.blazebit.persistence.impl.expression.SimpleCachingExpressionFactoryTest
+Running com.blazebit.persistence.impl.expression.GeneralParserTest
+Tests run: 127, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 6.959 sec - in com.blazebit.persistence.impl.expression.GeneralParserTest
+Running com.blazebit.persistence.impl.expression.ParserPerformanceTest
+ParserPerformanceTest.testLargeExpression: [measured 10 out of 15 rounds, threads: 1 (all cores)]
+ round: 0.17 [+- 0.06], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 2, GC.time: 0.05, time.total: 4.96, time.warmup: 3.24, time.bench: 1.72
+ParserPerformanceTest.testSmallExpression: [measured 10 out of 15 rounds, threads: 1 (all cores)]
+ round: 0.05 [+- 0.01], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 1, GC.time: 0.02, time.total: 0.81, time.warmup: 0.29, time.bench: 0.52
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.85 sec - in com.blazebit.persistence.impl.expression.ParserPerformanceTest
+Running com.blazebit.persistence.impl.expression.TypeEqTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec - in com.blazebit.persistence.impl.expression.TypeEqTest
+Running com.blazebit.persistence.impl.expression.SimpleCachingExpressionFactoryPerformanceTest
+SimpleCachingExpressionFactoryPerformanceTest.testCreateSimpleExpressionPerformanceNonCaching: [measured 10000 out of 15000 rounds, threads: 4 (physical processors: 1)]
+ round: 0.00 [+- 0.00], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 2, GC.time: 0.03, time.total: 2.21, time.warmup: 1.04, time.bench: 1.17
+SimpleCachingExpressionFactoryPerformanceTest.testCreateSimpleExpressionPerformanceWith10MacrosNonCaching: [measured 10000 out of 15000 rounds, threads: 4 (physical processors: 1)]
+ round: 0.00 [+- 0.00], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 2, GC.time: 0.03, time.total: 1.65, time.warmup: 0.54, time.bench: 1.11
+SimpleCachingExpressionFactoryPerformanceTest.testCreateSimpleExpressionPerformanceWith100MacrosNonCaching: [measured 10000 out of 15000 rounds, threads: 4 (physical processors: 1)]
+ round: 0.00 [+- 0.00], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 3, GC.time: 0.03, time.total: 1.81, time.warmup: 0.71, time.bench: 1.10
+SimpleCachingExpressionFactoryPerformanceTest.testCreateSimpleExpressionPerformanceCaching: [measured 10000 out of 15000 rounds, threads: 4 (physical processors: 1)]
+ round: 0.00 [+- 0.00], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 0, GC.time: 0.00, time.total: 0.13, time.warmup: 0.05, time.bench: 0.08
+SimpleCachingExpressionFactoryPerformanceTest.testCreateSimpleExpressionPerformanceWith10MacrosCaching: [measured 10000 out of 15000 rounds, threads: 4 (physical processors: 1)]
+ round: 0.00 [+- 0.01], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 2, GC.time: 0.31, time.total: 1.38, time.warmup: 0.35, time.bench: 1.03
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.446 sec - in com.blazebit.persistence.impl.expression.SimpleCachingExpressionFactoryPerformanceTest
+Running com.blazebit.persistence.impl.expression.LogicOptimizationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in com.blazebit.persistence.impl.expression.LogicOptimizationTest
+
+Results :
+
+Tests run: 209, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Core Impl 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-core-impl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-core-impl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-core-impl ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-core-impl ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-core-impl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ blaze-persistence-core-impl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ blaze-persistence-core-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-injection-plugin:1.0.2:bytecode (default) @ blaze-persistence-core-impl ---
+[INFO] writing injection changes back [/scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/impl/target/classes/com/blazebit/persistence/impl/Version$Injected.class]
+[INFO] writing injection changes back [/scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/impl/target/classes/com/blazebit/persistence/impl/Version$Injected.class]
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ blaze-persistence-core-impl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/impl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ blaze-persistence-core-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ blaze-persistence-core-impl ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/impl/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.blazebit.persistence.impl.util.PatternFinderTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in com.blazebit.persistence.impl.util.PatternFinderTest
+Running com.blazebit.persistence.impl.util.SqlUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.blazebit.persistence.impl.util.SqlUtilsTest
+
+Results :
+
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Integrations 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-integration ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-integration ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-integration ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-integration ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-integration ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Integration JPA Base 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-integration-jpa-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-integration-jpa-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-integration-jpa-base ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-integration-jpa-base ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-integration-jpa-base ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:add-resource (add-resource) @ blaze-persistence-integration-jpa-base ---
+[INFO] 
+[INFO] --- maven-processor-plugin:3.3.2:process (process-resources) @ blaze-persistence-integration-jpa-base ---
+[WARNING] diagnostic: warning: Supported source version 'RELEASE_6' from annotation processor 'com.blazebit.apt.service.ServiceProviderAnnotationProcessor' less than -source '1.8'
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ blaze-persistence-integration-jpa-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/integration/jpa-base/src/main/resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ blaze-persistence-integration-jpa-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ blaze-persistence-integration-jpa-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/integration/jpa-base/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ blaze-persistence-integration-jpa-base ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ blaze-persistence-integration-jpa-base ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Integration Hibernate Base 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-integration-hibernate-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-integration-hibernate-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-integration-hibernate-base ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-integration-hibernate-base ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-integration-hibernate-base ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:add-resource (add-resource) @ blaze-persistence-integration-hibernate-base ---
+[INFO] 
+[INFO] --- maven-processor-plugin:3.3.2:process (process-resources) @ blaze-persistence-integration-hibernate-base ---
+[WARNING] diagnostic: warning: Supported source version 'RELEASE_6' from annotation processor 'com.blazebit.apt.service.ServiceProviderAnnotationProcessor' less than -source '1.8'
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ blaze-persistence-integration-hibernate-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/integration/hibernate-base/src/main/resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ blaze-persistence-integration-hibernate-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ blaze-persistence-integration-hibernate-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/integration/hibernate-base/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ blaze-persistence-integration-hibernate-base ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ blaze-persistence-integration-hibernate-base ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Integration Hibernate 5.2 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:add-resource (add-resource) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] 
+[INFO] --- maven-processor-plugin:3.3.2:process (process-resources) @ blaze-persistence-integration-hibernate-5.2 ---
+[WARNING] diagnostic: warning: Supported source version 'RELEASE_6' from annotation processor 'com.blazebit.apt.service.ServiceProviderAnnotationProcessor' less than -source '1.8'
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/integration/hibernate-5.2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ blaze-persistence-integration-hibernate-5.2 ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Testsuite Base 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-testsuite-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-testsuite-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-testsuite-base ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-testsuite-base ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-testsuite-base ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Testsuite Base JPA 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-testsuite-base-jpa ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-testsuite-base-jpa ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-testsuite-base-jpa ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-testsuite-base-jpa ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-testsuite-base-jpa ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ blaze-persistence-testsuite-base-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/testsuite-base/jpa/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ blaze-persistence-testsuite-base-jpa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ blaze-persistence-testsuite-base-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/testsuite-base/jpa/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ blaze-persistence-testsuite-base-jpa ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ blaze-persistence-testsuite-base-jpa ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Testsuite Base Hibernate 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-testsuite-base-hibernate ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-testsuite-base-hibernate ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-testsuite-base-hibernate ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-testsuite-base-hibernate ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-testsuite-base-hibernate ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ blaze-persistence-testsuite-base-hibernate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/testsuite-base/hibernate/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ blaze-persistence-testsuite-base-hibernate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ blaze-persistence-testsuite-base-hibernate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/testsuite-base/hibernate/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ blaze-persistence-testsuite-base-hibernate ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ blaze-persistence-testsuite-base-hibernate ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Blazebit Persistence Core Testsuite 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-version) @ blaze-persistence-core-testsuite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ blaze-persistence-core-testsuite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (get-build-timestamp) @ blaze-persistence-core-testsuite ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ blaze-persistence-core-testsuite ---
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (check-license) @ blaze-persistence-core-testsuite ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:add-source (add-source) @ blaze-persistence-core-testsuite ---
+[INFO] Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate added.
+[INFO] Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/target/generated-sources/metamodel added.
+[INFO] 
+[INFO] --- maven-processor-plugin:3.3.2:process (process) @ blaze-persistence-core-testsuite ---
+[INFO] diagnostic: Note: Hibernate JPA 2 Static-Metamodel Generator 5.2.8.Final
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ blaze-persistence-core-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ blaze-persistence-core-testsuite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 185 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassBase.java:[19,33] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddable.java:[19,33] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassSub2.java:[20,33] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddableSub2.java:[19,33] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassSub1.java:[20,33] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddableSub1.java:[19,33] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassBase.java:[99,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassBase.java:[125,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassBase.java:[139,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddable.java:[58,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddable.java:[85,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddable.java:[99,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassSub2.java:[86,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassSub2.java:[133,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassSub2.java:[158,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddableSub2.java:[69,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddableSub2.java:[96,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddableSub2.java:[110,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassSub1.java:[86,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassSub1.java:[133,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassSub1.java:[158,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddableSub1.java:[69,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddableSub1.java:[96,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/TablePerClassEmbeddableSub1.java:[110,6] org.hibernate.annotations.ForeignKey in org.hibernate.annotations has been deprecated
+[INFO] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/SingleTableEmbeddable.java: Some input files use unchecked or unsafe operations.
+[INFO] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/main/hibernate/com/blazebit/persistence/testsuite/treat/entity/SingleTableEmbeddable.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:add-test-source (add-test-source-hibernate) @ blaze-persistence-core-testsuite ---
+[INFO] Test Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/src/test/hibernate added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ blaze-persistence-core-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ blaze-persistence-core-testsuite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ blaze-persistence-core-testsuite ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/target/surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.blazebit.persistence.testsuite.treat.builder.SelectManyToOneTest
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 12, Time elapsed: 39.098 sec - in com.blazebit.persistence.testsuite.treat.builder.SelectManyToOneTest
+Running com.blazebit.persistence.testsuite.treat.builder.JoinManyToOneTest
+Tests run: 108, Failures: 0, Errors: 0, Skipped: 26, Time elapsed: 36.974 sec - in com.blazebit.persistence.testsuite.treat.builder.JoinManyToOneTest
+Running com.blazebit.persistence.testsuite.treat.builder.SelectManyToManyMapValueTest
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 12, Time elapsed: 22.107 sec - in com.blazebit.persistence.testsuite.treat.builder.SelectManyToManyMapValueTest
+Running com.blazebit.persistence.testsuite.treat.builder.SelectManyToManyMapKeyTest
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 36, Time elapsed: 18.753 sec - in com.blazebit.persistence.testsuite.treat.builder.SelectManyToManyMapKeyTest
+Running com.blazebit.persistence.testsuite.treat.builder.SelectOneToManyInverseSetTest
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 16.57 sec - in com.blazebit.persistence.testsuite.treat.builder.SelectOneToManyInverseSetTest
+Running com.blazebit.persistence.testsuite.treat.builder.JoinManyToManyMapValueTest
+Tests run: 108, Failures: 0, Errors: 0, Skipped: 24, Time elapsed: 25.678 sec - in com.blazebit.persistence.testsuite.treat.builder.JoinManyToManyMapValueTest
+Running com.blazebit.persistence.testsuite.treat.builder.RootTreatTest
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.002 sec - in com.blazebit.persistence.testsuite.treat.builder.RootTreatTest
+Running com.blazebit.persistence.testsuite.treat.builder.JoinOneToManyInverseSetTest
+Tests run: 108, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 25.325 sec - in com.blazebit.persistence.testsuite.treat.builder.JoinOneToManyInverseSetTest
+Running com.blazebit.persistence.testsuite.treat.builder.JoinOneToManyListTest
+Tests run: 108, Failures: 0, Errors: 0, Skipped: 24, Time elapsed: 26.852 sec - in com.blazebit.persistence.testsuite.treat.builder.JoinOneToManyListTest
+Running com.blazebit.persistence.testsuite.treat.builder.SelectOneToManyListTest
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 12, Time elapsed: 13.369 sec - in com.blazebit.persistence.testsuite.treat.builder.SelectOneToManyListTest
+Running com.blazebit.persistence.testsuite.QueryResultCachingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.698 sec - in com.blazebit.persistence.testsuite.QueryResultCachingTest
+Running com.blazebit.persistence.testsuite.DateDiffTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.841 sec - in com.blazebit.persistence.testsuite.DateDiffTest
+Running com.blazebit.persistence.testsuite.SetOperationTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.983 sec - in com.blazebit.persistence.testsuite.SetOperationTest
+Running com.blazebit.persistence.testsuite.JpqlMacroTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.512 sec - in com.blazebit.persistence.testsuite.JpqlMacroTest
+Running com.blazebit.persistence.testsuite.AdvancedQueryCachingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec - in com.blazebit.persistence.testsuite.AdvancedQueryCachingTest
+Running com.blazebit.persistence.testsuite.InsertTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.328 sec - in com.blazebit.persistence.testsuite.InsertTest
+Running com.blazebit.persistence.testsuite.IsNullTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.407 sec - in com.blazebit.persistence.testsuite.IsNullTest
+Running com.blazebit.persistence.testsuite.MultipleJoinTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.052 sec - in com.blazebit.persistence.testsuite.MultipleJoinTest
+Running com.blazebit.persistence.testsuite.EntitySchemaInTableAnnotationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec - in com.blazebit.persistence.testsuite.EntitySchemaInTableAnnotationTest
+Running com.blazebit.persistence.testsuite.SingleValuedAssociationManyToOneTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.965 sec - in com.blazebit.persistence.testsuite.SingleValuedAssociationManyToOneTest
+Running com.blazebit.persistence.testsuite.FunctionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 sec - in com.blazebit.persistence.testsuite.FunctionTest
+Running com.blazebit.persistence.testsuite.TablePerClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in com.blazebit.persistence.testsuite.TablePerClassTest
+Running com.blazebit.persistence.testsuite.CTETest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.675 sec - in com.blazebit.persistence.testsuite.CTETest
+Running com.blazebit.persistence.testsuite.ArrayExpressionTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.115 sec - in com.blazebit.persistence.testsuite.ArrayExpressionTest
+Running com.blazebit.persistence.testsuite.SingleValuedAssociationOneToOneJoinTableTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.443 sec - in com.blazebit.persistence.testsuite.SingleValuedAssociationOneToOneJoinTableTest
+Running com.blazebit.persistence.testsuite.MultipleJoinComplexExpressionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.415 sec - in com.blazebit.persistence.testsuite.MultipleJoinComplexExpressionTest
+Running com.blazebit.persistence.testsuite.KeysetPaginationTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.781 sec - in com.blazebit.persistence.testsuite.KeysetPaginationTest
+Running com.blazebit.persistence.testsuite.ParameterAPITest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.518 sec - in com.blazebit.persistence.testsuite.ParameterAPITest
+Running com.blazebit.persistence.testsuite.SelectPolymorphicTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 sec - in com.blazebit.persistence.testsuite.SelectPolymorphicTest
+Running com.blazebit.persistence.testsuite.LimitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.513 sec - in com.blazebit.persistence.testsuite.LimitTest
+Running com.blazebit.persistence.testsuite.UpdateTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.635 sec - in com.blazebit.persistence.testsuite.UpdateTest
+Running com.blazebit.persistence.testsuite.Issue519Test
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.064 sec <<< FAILURE! - in com.blazebit.persistence.testsuite.Issue519Test
+subselectEntityTest(com.blazebit.persistence.testsuite.Issue519Test)  Time elapsed: 0.063 sec  <<< ERROR!
+java.lang.NullPointerException
+
+Running com.blazebit.persistence.testsuite.OrderByTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.996 sec - in com.blazebit.persistence.testsuite.OrderByTest
+Running com.blazebit.persistence.testsuite.EntityInValuesClauseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.573 sec - in com.blazebit.persistence.testsuite.EntityInValuesClauseTest
+Running com.blazebit.persistence.testsuite.GroupByTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 sec - in com.blazebit.persistence.testsuite.GroupByTest
+Running com.blazebit.persistence.testsuite.CollectionJoinTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.37 sec - in com.blazebit.persistence.testsuite.CollectionJoinTest
+Running com.blazebit.persistence.testsuite.JoinOnTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.065 sec - in com.blazebit.persistence.testsuite.JoinOnTest
+Running com.blazebit.persistence.testsuite.HavingTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.52 sec - in com.blazebit.persistence.testsuite.HavingTest
+Running com.blazebit.persistence.testsuite.LikeTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.553 sec - in com.blazebit.persistence.testsuite.LikeTest
+Running com.blazebit.persistence.testsuite.SizeTransformationTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.766 sec - in com.blazebit.persistence.testsuite.SizeTransformationTest
+Running com.blazebit.persistence.testsuite.Issue336HibernateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in com.blazebit.persistence.testsuite.Issue336HibernateTest
+Running com.blazebit.persistence.testsuite.GreaterTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.655 sec - in com.blazebit.persistence.testsuite.GreaterTest
+Running com.blazebit.persistence.testsuite.SelectTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.171 sec - in com.blazebit.persistence.testsuite.SelectTest
+Running com.blazebit.persistence.testsuite.SubqueryTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.217 sec - in com.blazebit.persistence.testsuite.SubqueryTest
+Running com.blazebit.persistence.testsuite.ComplexExpressionTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.493 sec - in com.blazebit.persistence.testsuite.ComplexExpressionTest
+Running com.blazebit.persistence.testsuite.PaginationEmbeddedIdTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec - in com.blazebit.persistence.testsuite.PaginationEmbeddedIdTest
+Running com.blazebit.persistence.testsuite.DistinctTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec - in com.blazebit.persistence.testsuite.DistinctTest
+Running com.blazebit.persistence.testsuite.EmbeddableIdComplexTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec - in com.blazebit.persistence.testsuite.EmbeddableIdComplexTest
+Running com.blazebit.persistence.testsuite.RawTypesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in com.blazebit.persistence.testsuite.RawTypesTest
+Running com.blazebit.persistence.testsuite.EnumTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.292 sec - in com.blazebit.persistence.testsuite.EnumTest
+Running com.blazebit.persistence.testsuite.OptimizedKeysetPaginationTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.486 sec - in com.blazebit.persistence.testsuite.OptimizedKeysetPaginationTest
+Running com.blazebit.persistence.testsuite.EntityJoinTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.469 sec - in com.blazebit.persistence.testsuite.EntityJoinTest
+Running com.blazebit.persistence.testsuite.OptimizedKeysetPaginationNullsTest
+Tests run: 118, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.546 sec - in com.blazebit.persistence.testsuite.OptimizedKeysetPaginationNullsTest
+Running com.blazebit.persistence.testsuite.InTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.392 sec - in com.blazebit.persistence.testsuite.InTest
+Running com.blazebit.persistence.testsuite.IsEmptyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 sec - in com.blazebit.persistence.testsuite.IsEmptyTest
+Running com.blazebit.persistence.testsuite.UpdatePolymorphicTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in com.blazebit.persistence.testsuite.UpdatePolymorphicTest
+Running com.blazebit.persistence.testsuite.TreatTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.211 sec - in com.blazebit.persistence.testsuite.TreatTest
+Running com.blazebit.persistence.testsuite.ElementCollectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 sec - in com.blazebit.persistence.testsuite.ElementCollectionTest
+Running com.blazebit.persistence.testsuite.DateExtractTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.353 sec - in com.blazebit.persistence.testsuite.DateExtractTest
+Running com.blazebit.persistence.testsuite.DeleteTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.293 sec - in com.blazebit.persistence.testsuite.DeleteTest
+Running com.blazebit.persistence.testsuite.ValuesClauseTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.37 sec - in com.blazebit.persistence.testsuite.ValuesClauseTest
+Running com.blazebit.persistence.testsuite.JoinTest
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 6.397 sec - in com.blazebit.persistence.testsuite.JoinTest
+Running com.blazebit.persistence.testsuite.SingleValuedAssociationOneToOneTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.8 sec - in com.blazebit.persistence.testsuite.SingleValuedAssociationOneToOneTest
+Running com.blazebit.persistence.testsuite.OptimizedKeysetPaginationPage1EdgeCaseFallbackTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.327 sec - in com.blazebit.persistence.testsuite.OptimizedKeysetPaginationPage1EdgeCaseFallbackTest
+Running com.blazebit.persistence.testsuite.PolymorphicJoinTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec - in com.blazebit.persistence.testsuite.PolymorphicJoinTest
+Running com.blazebit.persistence.testsuite.EntityEqualityNoRewriteToIdTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.983 sec - in com.blazebit.persistence.testsuite.EntityEqualityNoRewriteToIdTest
+Running com.blazebit.persistence.testsuite.MultipleFromTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in com.blazebit.persistence.testsuite.MultipleFromTest
+Running com.blazebit.persistence.testsuite.KeysetPaginationPage1EdgeCaseFallbackTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec - in com.blazebit.persistence.testsuite.KeysetPaginationPage1EdgeCaseFallbackTest
+Running com.blazebit.persistence.testsuite.KeysetPaginationNullsTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.563 sec - in com.blazebit.persistence.testsuite.KeysetPaginationNullsTest
+Running com.blazebit.persistence.testsuite.OuterFunctionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.424 sec - in com.blazebit.persistence.testsuite.OuterFunctionTest
+Running com.blazebit.persistence.testsuite.EntityNullnessGeneralTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec - in com.blazebit.persistence.testsuite.EntityNullnessGeneralTest
+Running com.blazebit.persistence.testsuite.CollectionRoleUpdateTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.98 sec - in com.blazebit.persistence.testsuite.CollectionRoleUpdateTest
+Running com.blazebit.persistence.testsuite.SelectNewObjectBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 sec - in com.blazebit.persistence.testsuite.SelectNewObjectBuilderTest
+Running com.blazebit.persistence.testsuite.PolymorphicPropertyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.304 sec - in com.blazebit.persistence.testsuite.PolymorphicPropertyTest
+Running com.blazebit.persistence.testsuite.WhereTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 5.472 sec - in com.blazebit.persistence.testsuite.WhereTest
+Running com.blazebit.persistence.testsuite.BetweenTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.63 sec - in com.blazebit.persistence.testsuite.BetweenTest
+Running com.blazebit.persistence.testsuite.LessTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.475 sec - in com.blazebit.persistence.testsuite.LessTest
+Running com.blazebit.persistence.testsuite.JpqlFunctionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.593 sec - in com.blazebit.persistence.testsuite.JpqlFunctionTest
+Running com.blazebit.persistence.testsuite.PaginationTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.889 sec - in com.blazebit.persistence.testsuite.PaginationTest
+Running com.blazebit.persistence.testsuite.CaseWhenTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.491 sec - in com.blazebit.persistence.testsuite.CaseWhenTest
+Running com.blazebit.persistence.testsuite.EmbeddableComplexTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.801 sec - in com.blazebit.persistence.testsuite.EmbeddableComplexTest
+Running com.blazebit.persistence.testsuite.CollectionRoleInsertTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.892 sec - in com.blazebit.persistence.testsuite.CollectionRoleInsertTest
+Running com.blazebit.persistence.testsuite.EmbeddableSimpleTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.301 sec - in com.blazebit.persistence.testsuite.EmbeddableSimpleTest
+Running com.blazebit.persistence.testsuite.CollectionRoleDeleteTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.913 sec - in com.blazebit.persistence.testsuite.CollectionRoleDeleteTest
+Running com.blazebit.persistence.testsuite.InheritanceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.357 sec - in com.blazebit.persistence.testsuite.InheritanceTest
+Running com.blazebit.persistence.testsuite.SelectNewTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.047 sec - in com.blazebit.persistence.testsuite.SelectNewTest
+Running com.blazebit.persistence.testsuite.EqTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.98 sec - in com.blazebit.persistence.testsuite.EqTest
+Running com.blazebit.persistence.testsuite.Issue227Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.215 sec - in com.blazebit.persistence.testsuite.Issue227Test
+Running com.blazebit.persistence.testsuite.EntityEqualityGeneralTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.468 sec - in com.blazebit.persistence.testsuite.EntityEqualityGeneralTest
+Running com.blazebit.persistence.testsuite.DeletePolymorphicTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in com.blazebit.persistence.testsuite.DeletePolymorphicTest
+Running com.blazebit.persistence.testsuite.ImplicitNamingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec - in com.blazebit.persistence.testsuite.ImplicitNamingTest
+Running com.blazebit.persistence.testsuite.OptimizedKeysetPaginationRowValueConstructorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.081 sec - in com.blazebit.persistence.testsuite.OptimizedKeysetPaginationRowValueConstructorTest
+Running com.blazebit.persistence.testsuite.IsMemberOfTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.739 sec - in com.blazebit.persistence.testsuite.IsMemberOfTest
+Running com.blazebit.persistence.testsuite.GroupConcatTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.554 sec - in com.blazebit.persistence.testsuite.GroupConcatTest
+
+Results :
+
+Tests in error: 
+  Issue519Test>AbstractJpaPersistenceTest.init:294 » NullPointer
+
+Tests run: 1726, Failures: 0, Errors: 1, Skipped: 168
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Blazebit Blaze-Persistence ......................... SUCCESS [  3.063 s]
+[INFO] Blazebit Persistence Checkstyle Rules .............. SUCCESS [  1.987 s]
+[INFO] Blazebit Persistence Parent ........................ SUCCESS [  0.008 s]
+[INFO] Blazebit Persistence Core Module ................... SUCCESS [  0.025 s]
+[INFO] Blazebit Persistence Core API ...................... SUCCESS [  1.011 s]
+[INFO] Blazebit Persistence Core Parser ................... SUCCESS [ 25.075 s]
+[INFO] Blazebit Persistence Core Impl ..................... SUCCESS [  1.650 s]
+[INFO] Blazebit Persistence Integrations .................. SUCCESS [  0.027 s]
+[INFO] Blazebit Persistence Integration JPA Base .......... SUCCESS [  0.510 s]
+[INFO] Blazebit Persistence Integration Hibernate Base .... SUCCESS [  0.766 s]
+[INFO] Blazebit Persistence Integration Hibernate 5.2 ..... SUCCESS [  0.581 s]
+[INFO] Blazebit Persistence Testsuite Base ................ SUCCESS [  0.006 s]
+[INFO] Blazebit Persistence Testsuite Base JPA ............ SUCCESS [  0.080 s]
+[INFO] Blazebit Persistence Testsuite Base Hibernate ...... SUCCESS [  0.057 s]
+[INFO] Blazebit Persistence Core Testsuite ................ FAILURE [06:02 min]
+[INFO] Blazebit Persistence Entity-View Module ............ SKIPPED
+[INFO] Blazebit Persistence Entity-View API ............... SKIPPED
+[INFO] Blazebit Persistence Entity-View Impl .............. SKIPPED
+[INFO] Blazebit Persistence Entity-View Testsuite ......... SKIPPED
+[INFO] Blazebit Persistence JPA-Criteria Module ........... SKIPPED
+[INFO] Blazebit Persistence JPA-2 Compatibility ........... SKIPPED
+[INFO] Blazebit Persistence JPA-Criteria API .............. SKIPPED
+[INFO] Blazebit Persistence JPA-Criteria Impl ............. SKIPPED
+[INFO] Blazebit Persistence JPA-Criteria Testsuite ........ SKIPPED
+[INFO] Blazebit Persistence Integration Hibernate 4.2 ..... SKIPPED
+[INFO] Blazebit Persistence Integration Hibernate 4.3 ..... SKIPPED
+[INFO] Blazebit Persistence Integration Hibernate 5 ....... SKIPPED
+[INFO] Blazebit Persistence Integration Hibernate 6.0 ..... SKIPPED
+[INFO] Blazebit Persistence Integration DataNucleus ....... SKIPPED
+[INFO] Blazebit Persistence Integration EclipseLink ....... SKIPPED
+[INFO] Blazebit Persistence Integration OpenJPA ........... SKIPPED
+[INFO] Blazebit Persistence Integration Base CDI .......... SKIPPED
+[INFO] Blazebit Persistence Integration Entity-View CDI ... SKIPPED
+[INFO] Blazebit Persistence Integration Entity-View Spring  SKIPPED
+[INFO] Blazebit Persistence Integration Spring-Data ....... SKIPPED
+[INFO] Blazebit Persistence Integration DeltaSpike Data ... SKIPPED
+[INFO] Blazebit Persistence Integration DeltaSpike Data API SKIPPED
+[INFO] Blazebit Persistence Integration DeltaSpike Data Impl SKIPPED
+[INFO] Blazebit Persistence Integration DeltaSpike Data Testsuite SKIPPED
+[INFO] Blazebit Persistence Testsuite Base DataNucleus .... SKIPPED
+[INFO] Blazebit Persistence Testsuite Base EclipseLink .... SKIPPED
+[INFO] Blazebit Persistence Testsuite Base OpenJPA ........ SKIPPED
+[INFO] Blazebit Persistence Documentation ................. SKIPPED
+[INFO] Blazebit Persistence Website ....................... SKIPPED
+[INFO] Blazebit Persistence Examples ...................... SKIPPED
+[INFO] Blazebit Persistence Examples Showcase Base ........ SKIPPED
+[INFO] Blazebit Persistence Examples Showcase SPI ......... SKIPPED
+[INFO] Blazebit Persistence Examples Basic Showcase ....... SKIPPED
+[INFO] Blazebit Persistence Examples CTE Showcase ......... SKIPPED
+[INFO] Blazebit Persistence Examples Spring Data Showcase . SKIPPED
+[INFO] Blazebit Persistence Examples CDI Showcase ......... SKIPPED
+[INFO] Blazebit Persistence Examples Spring Showcase ...... SKIPPED
+[INFO] Blazebit Persistence Archetype Parent .............. SKIPPED
+[INFO] Blazebit Persistence Archetype Core Sample ......... SKIPPED
+[INFO] Blazebit Persistence Archetype Entity-View Sample .. SKIPPED
+[INFO] Blazebit Persistence Archetype Spring-Data Sample .. SKIPPED
+[INFO] Blazebit Persistence Archetype Spring-Boot Sample .. SKIPPED
+[INFO] Blazebit Persistence Archetype DeltaSpike Data Sample SKIPPED
+[INFO] Blazebit Persistence Archetype Java EE Sample ...... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 06:42 min
+[INFO] Finished at: 2020-03-17T16:42:56+01:00
+[INFO] Final Memory: 69M/170M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project blaze-persistence-core-testsuite: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project blaze-persistence-core-testsuite: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Blazebit-blaze-persistence-347890340-20180301-204026-firstCommit/core/testsuite/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :blaze-persistence-core-testsuite
