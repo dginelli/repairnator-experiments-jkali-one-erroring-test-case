@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: edu.umbc.cs.maple.testing.ConfigTesterTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.267 sec <<< FAILURE! - in edu.umbc.cs.maple.testing.ConfigTesterTest
+run(edu.umbc.cs.maple.testing.ConfigTesterTest)  Time elapsed: 0.193 sec  <<< ERROR!
+org.yaml.snakeyaml.constructor.ConstructorException: Cannot create property=agents for JavaBean=edu.umbc.cs.maple.config.ExperimentConfig@2d209079
+ in 'reader', line 1, column 1:
+    domain: !!edu.umbc.cs.maple.conf ... 
+    ^
+No suitable constructor with 7 arguments found for interface java.util.Map
+ in 'reader', line 7, column 3:
+      - rmaxqExpert
+      ^
+
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructSequence.construct(Constructor.java:606)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:184)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:298)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct(Constructor.java:190)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructYamlObject.construct(Constructor.java:346)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:184)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:143)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:129)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:505)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:436)
+	at edu.umbc.cs.maple.config.ExperimentConfig.load(ExperimentConfig.java:58)
+	at edu.umbc.cs.maple.config.ExperimentConfig.loadConfig(ExperimentConfig.java:81)
+	at edu.umbc.cs.maple.testing.ConfigTester.run(ConfigTester.java:13)
+	at edu.umbc.cs.maple.testing.ConfigTesterTest.run(ConfigTesterTest.java:10)
+
