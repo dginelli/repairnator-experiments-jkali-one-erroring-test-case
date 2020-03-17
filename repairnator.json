@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "JanusGraph/janusgraph",
-  "failingModule": "/root/workspace/JanusGraph/janusgraph/372483959/janusgraph-test",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.apache.tinkerpop.shaded.jackson.core.JsonGenerationException"
-  ],
-  "totalNumberRunningTests": 462,
-  "failing-test-cases": [
-    {
-      "className": "org.janusgraph.graphdb.inmemory.InMemoryJanusGraphIoTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.janusgraph.graphdb.inmemory.InMemoryJanusGraphIoTest#testSerialization[graphson-v1-embedded]"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:57 PM",
+    "reproductionDateEnd": "Mar 17, 2020 7:07:09 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 744149824,
+      "totalMemory": 878600192
+    },
+    "totalDuration": 9187,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-372483959-20180429-015735-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-JanusGraph-janusgraph-372483959-20180429-015735-firstCommit/janusgraph-test",
+    "overallMetrics": {
+      "numberRunning": 462,
+      "numberPassing": 461,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.apache.tinkerpop.shaded.jackson.core.JsonGenerationException",
-          "failureDetail": "Current context not Array but Object",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.janusgraph.graphdb.inmemory.InMemoryJanusGraphIoTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.janusgraph.graphdb.inmemory.InMemoryJanusGraphIoTest",
+        "testMethod": "testSerialization[graphson-v1-embedded]",
+        "failureName": "org.apache.tinkerpop.shaded.jackson.core.JsonGenerationException",
+        "detail": "Current context not Array but Object",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 32,
+    "numberPlugins": 0,
+    "numberSourceFiles": 786,
+    "numberTestFiles": 247,
+    "numberLibrariesFailingModule": 68,
+    "numberLines": 0
+  }
 }
