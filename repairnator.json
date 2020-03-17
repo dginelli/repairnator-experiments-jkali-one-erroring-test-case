@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 21,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "RBMHTechnology/vind",
-  "bugCommit": "https://github.com/RBMHTechnology/vind/compare/2bb0ee3a03f9...6d4474d11c81",
-  "failingModule": "/root/workspace/RBMHTechnology/vind/394050013/monitoring/monitoring-analysis/analysis-report",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 133,
-  "failing-test-cases": [
-    {
-      "className": "com.rbmhtechnology.vind.monitoring.report.writer.HtmlReportWriterTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testWriteToString"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:26 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:37:50 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 53557616,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 201,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          3
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-RBMHTechnology-vind-394050013-20180619-125957-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-RBMHTechnology-vind-394050013-20180619-125957-firstCommit/backend/solr-ext/collection-managment-tool",
+    "overallMetrics": {
+      "numberRunning": 32,
+      "numberPassing": 31,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
       "failures": [
         {
-          "failureName": "java.lang.RuntimeException",
-          "failureDetail": "Error populating default report HTML template \u0027report.ftlh\u0027: The following has evaluated to null or missing:\n\u003d\u003d\u003e value.first  [in template \"report.ftlh\" at line 226, column 27]\n\n----\nTip: It\u0027s the step after the last dot that caused this error, not those before it.\n----\nTip: If the failing expression is known to legally refer to something that\u0027s sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use \u003c#if myOptionalVar??\u003ewhen-present\u003c#else\u003ewhen-missing\u003c/#if\u003e. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??\n----\n\n----\nFTL stack trace (\"~\" means nesting-related):\n - Failed at: ${value.first}  [in template \"report.ftlh\" at line 226, column 25]\n----",
-          "isError": true
+          "failureName": "java.net.UnknownHostException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.rbmhtechnology.vind.solr.cmt.CollectionManagementServiceUtilsTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.rbmhtechnology.vind.solr.cmt.CollectionManagementServiceUtilsTest",
+        "testMethod": "testDownloadConfiguration",
+        "failureName": "java.net.UnknownHostException",
+        "detail": "central.maven.org",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 27,
+    "numberPlugins": 0,
+    "numberSourceFiles": 187,
+    "numberTestFiles": 43,
+    "numberLibrariesFailingModule": 82,
+    "numberLines": 0
+  }
 }
