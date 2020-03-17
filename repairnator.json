@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/commons-numbers",
-  "bugCommit": "https://github.com/apache/commons-numbers/compare/d3d9c455ecdf...a57399c7ae6e",
-  "failingModule": "/root/workspace/apache/commons-numbers/370038121/commons-numbers-complex",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalArgumentException"
-  ],
-  "totalNumberRunningTests": 147,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.commons.numbers.complex.ComplexTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.commons.numbers.complex.ComplexTest#testNthRootNegativeArg"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:36:12 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:38:00 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 27261904,
+      "totalMemory": 80699392
+    },
+    "totalDuration": 105,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 24,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          24
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-commons-numbers-370038121-20180423-125224-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-commons-numbers-370038121-20180423-125224-firstCommit/commons-numbers-complex",
+    "overallMetrics": {
+      "numberRunning": 146,
+      "numberPassing": 145,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "java.lang.IllegalArgumentException",
-          "failureDetail": "cannot compute nth root for null or negative n: {0}",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.commons.numbers.complex.ComplexTest",
+        "numberRunning": 66,
+        "numberPassing": 65,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.commons.numbers.complex.ComplexTest",
+        "testMethod": "testNthRootNegativeArg",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "cannot compute nth root for null or negative n: {0}",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberPlugins": 0,
+    "numberSourceFiles": 57,
+    "numberTestFiles": 44,
+    "numberLibrariesFailingModule": 4,
+    "numberLines": 0
+  }
 }
