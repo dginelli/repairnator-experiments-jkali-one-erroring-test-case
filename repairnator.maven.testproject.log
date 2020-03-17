@@ -1,0 +1,285 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DoIT 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ DoIT ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ DoIT ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ DoIT ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-388975711-20180606-231418-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ DoIT ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ DoIT ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-388975711-20180606-231418-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 5.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 77.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 951.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running DatabaseManagerTest
+2020-03-17 16:35:02,390 [DEBUG] DaoManager created dao for class class de.swtproject.doit.core.ToDo with reflection
+2020-03-17 16:35:02,393 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,572 [DEBUG] JdbcConnectionSource opened connection to jdbc:sqlite:data/storage.db got #905654280
+2020-03-17 16:35:02,578 [INFO] TableUtils executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,579 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,580 [INFO] TableUtils executed drop table statement changed 0 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,581 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,582 [INFO] TableUtils executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,594 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,602 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,603 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,604 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `todo` SET `title` = ?, `description` = ?, `interval` = ?, `production` = ?, `start` = ?, `deadline` = ?, `notifyPoint` = ?, `priority` = ? WHERE `id` = ?' and 9 args, changed 1 rows
+2020-03-17 16:35:02,621 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-03-17 16:35:02,623 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-03-17 16:35:02,624 [DEBUG] SelectIterator starting iterator @710714889 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-03-17 16:35:02,625 [DEBUG] SelectIterator closed iterator @710714889 after 0 rows
+2020-03-17 16:35:02,625 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 0 results
+2020-03-17 16:35:02,716 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,719 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,719 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,720 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,724 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,725 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,725 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,728 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got 1 result
+2020-03-17 16:35:02,728 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,729 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,729 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,731 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,733 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,735 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,735 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,736 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,737 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,737 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,738 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.661 sec - in DatabaseManagerTest
+Running ToDoTest
+2020-03-17 16:35:02,770 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,777 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,778 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,779 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,786 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,786 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,787 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,788 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,789 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,790 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,790 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,791 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,791 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,793 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,794 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,795 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,795 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,796 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,797 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,798 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,807 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,813 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,826 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,826 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,827 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,831 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,831 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,834 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,836 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,850 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,850 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,850 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,854 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,854 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,858 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,859 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,863 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,864 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,867 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,869 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,869 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,870 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,876 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,877 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,879 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,880 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,885 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,885 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,887 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,888 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,890 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,890 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,891 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `todo` SET `title` = ?, `description` = ?, `interval` = ?, `production` = ?, `start` = ?, `deadline` = ?, `notifyPoint` = ?, `priority` = ? WHERE `id` = ?' and 9 args, changed 1 rows
+2020-03-17 16:35:02,892 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,893 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,893 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,894 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,895 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,896 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,896 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,897 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,899 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,899 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,900 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,901 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,903 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,903 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,910 [DEBUG] BaseMappedStatement delete data with statement 'DELETE FROM `todo` WHERE `id` = ?' and 1 args, changed 1 rows
+2020-03-17 16:35:02,910 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,913 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,913 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,919 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,921 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,924 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,924 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,925 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,925 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,926 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,927 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+Tests run: 11, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.164 sec <<< FAILURE! - in ToDoTest
+serializeTest(ToDoTest)  Time elapsed: 0.018 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at de.swtproject.doit.core.ToDo.serialize(ToDo.java:272)
+	at ToDoTest.serializeTest(ToDoTest.java:98)
+
+Running ProdArchTest
+2020-03-17 16:35:02,947 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,949 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,949 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,950 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,950 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,951 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,952 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,952 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,953 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,953 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,953 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,957 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,958 [DEBUG] BaseMappedStatement assigned id '3' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,963 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `todo` SET `title` = ?, `description` = ?, `interval` = ?, `production` = ?, `start` = ?, `deadline` = ?, `notifyPoint` = ?, `priority` = ? WHERE `id` = ?' and 9 args, changed 1 rows
+2020-03-17 16:35:02,963 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-03-17 16:35:02,963 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-03-17 16:35:02,963 [DEBUG] SelectIterator starting iterator @1234776885 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-03-17 16:35:02,964 [DEBUG] SelectIterator closed iterator @1234776885 after 2 rows
+2020-03-17 16:35:02,964 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 2 results
+2020-03-17 16:35:02,964 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-03-17 16:35:02,964 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-03-17 16:35:02,964 [DEBUG] SelectIterator starting iterator @540159270 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-03-17 16:35:02,965 [DEBUG] SelectIterator closed iterator @540159270 after 1 rows
+2020-03-17 16:35:02,965 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 1 results
+2020-03-17 16:35:02,966 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:02,984 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:02,984 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:02,990 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:02,992 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,993 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,993 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,993 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,995 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,995 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,997 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:02,998 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:02,999 [DEBUG] BaseMappedStatement assigned id '3' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:02,999 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-03-17 16:35:03,000 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-03-17 16:35:03,000 [DEBUG] SelectIterator starting iterator @422250493 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-03-17 16:35:03,000 [DEBUG] SelectIterator closed iterator @422250493 after 3 rows
+2020-03-17 16:35:03,001 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 3 results
+2020-03-17 16:35:03,005 [INFO] TableUtils dropping table 'todo'
+2020-03-17 16:35:03,007 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-03-17 16:35:03,007 [INFO] TableUtils creating table 'todo'
+2020-03-17 16:35:03,008 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-03-17 16:35:03,008 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:03,009 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:03,009 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:03,010 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:03,011 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:03,011 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:03,011 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-03-17 16:35:03,012 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-03-17 16:35:03,012 [DEBUG] BaseMappedStatement assigned id '3' from keyholder to 'id' in ToDo object
+2020-03-17 16:35:03,013 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `todo` SET `title` = ?, `description` = ?, `interval` = ?, `production` = ?, `start` = ?, `deadline` = ?, `notifyPoint` = ?, `priority` = ? WHERE `id` = ?' and 9 args, changed 1 rows
+2020-03-17 16:35:03,014 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `todo` SET `title` = ?, `description` = ?, `interval` = ?, `production` = ?, `start` = ?, `deadline` = ?, `notifyPoint` = ?, `priority` = ? WHERE `id` = ?' and 9 args, changed 1 rows
+2020-03-17 16:35:03,015 [DEBUG] BaseMappedStatement delete data with statement 'DELETE FROM `todo` WHERE `id` = ?' and 1 args, changed 1 rows
+2020-03-17 16:35:03,015 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-03-17 16:35:03,016 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-03-17 16:35:03,016 [DEBUG] SelectIterator starting iterator @1690287238 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-03-17 16:35:03,016 [DEBUG] SelectIterator closed iterator @1690287238 after 1 rows
+2020-03-17 16:35:03,016 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 1 results
+2020-03-17 16:35:03,016 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-03-17 16:35:03,017 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-03-17 16:35:03,017 [DEBUG] SelectIterator starting iterator @1690254271 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-03-17 16:35:03,017 [DEBUG] SelectIterator closed iterator @1690254271 after 1 rows
+2020-03-17 16:35:03,017 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 1 results
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in ProdArchTest
+
+Results :
+
+Tests in error: 
+  ToDoTest.serializeTest:98 » NullPointer
+
+Tests run: 17, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.322 s
+[INFO] Finished at: 2020-03-17T16:35:03+01:00
+[INFO] Final Memory: 14M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project DoIT: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-388975711-20180606-231418-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project DoIT: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-388975711-20180606-231418-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-388975711-20180606-231418-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
