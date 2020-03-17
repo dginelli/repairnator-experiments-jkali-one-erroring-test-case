@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "CodeUTeam33/CodeU",
-  "bugCommit": "https://github.com/CodeUTeam33/CodeU/commit/0f554b7d9f7e",
-  "failingModule": "/root/workspace/CodeUTeam33/CodeU/371306617",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.mockito.exceptions.misusing.MissingMethodInvocationException"
-  ],
-  "totalNumberRunningTests": 48,
-  "failing-test-cases": [
-    {
-      "className": "codeu.model.store.basic.MessageStoreTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "codeu.model.store.basic.MessageStoreTest#testAddMessage"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:45 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:35:01 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 27768312,
+      "totalMemory": 103735296
+    },
+    "totalDuration": 135,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 94,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          94
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CodeUTeam33-CodeU-371306617-20180426-004939-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CodeUTeam33-CodeU-371306617-20180426-004939-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 48,
+      "numberPassing": 47,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.mockito.exceptions.misusing.MissingMethodInvocationException",
-          "failureDetail": " when() requires an argument which has to be \u0027a method call on a mock\u0027. For example:     when(mock.getArticles()).thenReturn(articles);  Also, this error might show up because: 1. you stub either of: final/private/equals()/hashCode() methods.    Those methods *cannot* be stubbed/verified.    Mocking methods declared on non-public parent classes is not supported. 2. inside when() you don\u0027t call method on mock but on some other object. ",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "codeu.model.store.basic.MessageStoreTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "codeu.model.store.basic.MessageStoreTest",
+        "testMethod": "testAddMessage",
+        "failureName": "org.mockito.exceptions.misusing.MissingMethodInvocationException",
+        "detail": "\nwhen() requires an argument which has to be \u0027a method call on a mock\u0027.\nFor example:\n    when(mock.getArticles()).thenReturn(articles);\n\nAlso, this error might show up because:\n1. you stub either of: final/private/equals()/hashCode() methods.\n   Those methods *cannot* be stubbed/verified.\n   Mocking methods declared on non-public parent classes is not supported.\n2. inside when() you don\u0027t call method on mock but on some other object.\n",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 18,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  }
 }
