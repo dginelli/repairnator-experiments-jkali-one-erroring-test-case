@@ -1,0 +1,905 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 6
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-geotiff/12.0.1/gt-geotiff-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-main/12.0.1/gt-main-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-api/12.0.1/gt-api-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/com/vividsolutions/jts/1.13/jts-1.13.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-coverage/12.0.1/gt-coverage-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/jaitools/jt-zonalstats/1.3.1/jt-zonalstats-1.3.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/jaitools/jt-utils/1.3.1/jt-utils-1.3.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-referencing/12.0.1/gt-referencing-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/java3d/vecmath/1.3.2/vecmath-1.3.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-metadata/12.0.1/gt-metadata-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-opengis/12.0.1/gt-opengis-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/jgridshift/jgridshift/1.0/jgridshift-1.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/javax/media/jai_imageio/1.1/jai_imageio-1.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/it/geosolutions/imageio-ext/imageio-ext-tiff/1.1.10/imageio-ext-tiff-1.1.10.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/it/geosolutions/imageio-ext/imageio-ext-utilities/1.1.10/imageio-ext-utilities-1.1.10.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-epsg-hsql/12.0.1/gt-epsg-hsql-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/hsqldb/hsqldb/2.2.8/hsqldb-2.2.8.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/commons-dbutils/commons-dbutils/1.6/commons-dbutils-1.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/junit/junit/3.8.1/junit-3.8.1.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 78540 milliseconds (78 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-geotiff/12.0.1/gt-geotiff-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-main/12.0.1/gt-main-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-api/12.0.1/gt-api-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/com/vividsolutions/jts/1.13/jts-1.13.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-coverage/12.0.1/gt-coverage-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/jaitools/jt-zonalstats/1.3.1/jt-zonalstats-1.3.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/jaitools/jt-utils/1.3.1/jt-utils-1.3.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-referencing/12.0.1/gt-referencing-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/java3d/vecmath/1.3.2/vecmath-1.3.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-metadata/12.0.1/gt-metadata-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-opengis/12.0.1/gt-opengis-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/jgridshift/jgridshift/1.0/jgridshift-1.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/javax/media/jai_imageio/1.1/jai_imageio-1.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/it/geosolutions/imageio-ext/imageio-ext-tiff/1.1.10/imageio-ext-tiff-1.1.10.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/it/geosolutions/imageio-ext/imageio-ext-utilities/1.1.10/imageio-ext-utilities-1.1.10.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-epsg-hsql/12.0.1/gt-epsg-hsql-12.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/hsqldb/hsqldb/2.2.8/hsqldb-2.2.8.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/commons-dbutils/commons-dbutils/1.6/commons-dbutils-1.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/junit/junit/3.8.1/junit-3.8.1.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 32
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 296
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:134) - Total suspicious from FL: 296,  278
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 278
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 278, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 1.0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/dginelli/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 78540
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-geotiff/12.0.1/gt-geotiff-12.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-main/12.0.1/gt-main-12.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-api/12.0.1/gt-api-12.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/com/vividsolutions/jts/1.13/jts-1.13.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-coverage/12.0.1/gt-coverage-12.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/jaitools/jt-zonalstats/1.3.1/jt-zonalstats-1.3.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/jaitools/jt-utils/1.3.1/jt-utils-1.3.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-referencing/12.0.1/gt-referencing-12.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/java3d/vecmath/1.3.2/vecmath-1.3.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-metadata/12.0.1/gt-metadata-12.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-opengis/12.0.1/gt-opengis-12.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/jgridshift/jgridshift/1.0/jgridshift-1.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/javax/media/jai_imageio/1.1/jai_imageio-1.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/it/geosolutions/imageio-ext/imageio-ext-tiff/1.1.10/imageio-ext-tiff-1.1.10.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/it/geosolutions/imageio-ext/imageio-ext-utilities/1.1.10/imageio-ext-utilities-1.1.10.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/geotools/gt-epsg-hsql/12.0.1/gt-epsg-hsql-12.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/hsqldb/hsqldb/2.2.8/hsqldb-2.2.8.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/commons-dbutils/commons-dbutils/1.6/commons-dbutils-1.6.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/.m2/junit/junit/3.8.1/junit-3.8.1.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-343642153-20180220-024527-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.map.GeoTIFF line: 37, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `mapPath = fileLocation ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 108, pointed element: CtOperatorAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtOperatorAssignmentImpl) `result += 360 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 144427
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 108, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (result < 0) { 	result += 360;}  ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 134, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (((((((temp1x < 0) || (temp2x < 0)) || (temp1x > map.getWidth())) || (temp2x > map.getWidth())) |[...] ` -topatch--> `if (true)   { 	return false;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 134, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (((((((temp1x < 0) || (temp2x < 0)) || (temp1x > map.getWidth())) || (temp2x > map.getWidth())) |[...] ` -topatch--> `if (false)   { 	return false;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 134, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (((((((temp1x < 0) || (temp2x < 0)) || (temp1x > map.getWidth())) || (temp2x > map.getWidth())) |[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 161, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return false ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 196, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `currentPosition = position ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 204, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `startPosition = position ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 180, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `maxSlope = slope ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 212, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `endPosition = position ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.Coordinate line: 20, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.y = y ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.Coordinate line: 19, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.x = x ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 19, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setMaxSlope(slope) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 21, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setStartPosition(startCoords) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 20, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setCurrentPosition(startCoords) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 22, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setEndPosition(endCoords) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 26, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.lang.System.out.println(e.getMessage()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 28, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `fieldOfView = java.lang.Double.POSITIVE_INFINITY ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.AStarCoordinate line: 43, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `distanceToGoal = d ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 64, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `path.add(new mars.coordinate.AStarCoordinate(rover.getStartPosition())) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 68, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw e ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 105, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw e ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 153756
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 104, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (coords.get(0).equals(thisCoord)) { 	throw e; } else {  	backtrackDistance++; 	backCoord = coords[...] ` -topatch--> `if (true) { 	throw e; } else {  	backtrackDistance++; 	backCoord = coords.get((coords.size() - 1) - [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 104, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (coords.get(0).equals(thisCoord)) { 	throw e; } else {  	backtrackDistance++; 	backCoord = coords[...] ` -topatch--> `if (false) { 	throw e; } else {  	backtrackDistance++; 	backCoord = coords.get((coords.size() - 1) -[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 104, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (coords.get(0).equals(thisCoord)) { 	throw e; } else {  	backtrackDistance++; 	backCoord = coords[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 157379
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 89, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (getDistanceToPoint(thisCoord, goal) > fieldOfView) { 	interimGoal = new mars.coordinate.Coordina[...] ` -topatch--> `if (true) { 	this.interimGoal = new mars.coordinate.Coordinate(((int) (thisCoord.getX() + (this.fiel[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 89, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (getDistanceToPoint(thisCoord, goal) > fieldOfView) { 	interimGoal = new mars.coordinate.Coordina[...] ` -topatch--> `if (false) { 	this.interimGoal = new mars.coordinate.Coordinate(((int) (thisCoord.getX() + (this.fie[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 89, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (getDistanceToPoint(thisCoord, goal) > fieldOfView) { 	interimGoal = new mars.coordinate.Coordina[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 88, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `goalAngle = getAngleToGoal(thisCoord, goal) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 87, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (!thisCoord.equals(goal)) { 	goalAngle = getAngleToGoal(thisCoord, goal); 	if (getDistanceToPo[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 90, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `interimGoal = new mars.coordinate.Coordinate(((int) (thisCoord.getX() + (fieldOfView * java.lang.Mat[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 97, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `tempPath.add(new mars.coordinate.AStarCoordinate(thisCoord.getX(), thisCoord.getY())) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 96, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `visitedCoords.clear() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 158827
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 95, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `tempPath.clear() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 159579
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 98, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `tempPath.get(0).setCostSoFar(0) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 135, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `targetCoord = n ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 134, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (n.getDistanceToGoal() < targetCoord.getDistanceToGoal()) { 	targetCoord = n; } ` -topatch--> `if (true) { 	targetCoord = n; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 134, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (n.getDistanceToGoal() < targetCoord.getDistanceToGoal()) { 	targetCoord = n; } ` -topatch--> `if (false) { 	targetCoord = n; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 134, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (n.getDistanceToGoal() < targetCoord.getDistanceToGoal()) { 	targetCoord = n; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 141, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.Exception("WARNING: A path to the goal could not be found.") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 138, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (targetCoord.getDistanceToGoal() < (fieldOfView - 1)) { 	return constructPath(targetCoord); } els[...] ` -topatch--> `if (true) { 	return constructPath(targetCoord); } else { 	throw new java.lang.Exception("WARNING: A [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 160804
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 138, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (targetCoord.getDistanceToGoal() < (fieldOfView - 1)) { 	return constructPath(targetCoord); } els[...] ` -topatch--> `if (false) { 	return constructPath(targetCoord); } else { 	throw new java.lang.Exception("WARNING: A[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 138, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (targetCoord.getDistanceToGoal() < (fieldOfView - 1)) { 	return constructPath(targetCoord); } els[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 145, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `visitedCoords.add(thisCoord) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 147, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (thisCoord.equals(currentGoal)) { 	return constructPath(thisCoord); } else  { 	java.util.ArrayLis[...] ` -topatch--> `if (true) { 	return constructPath(thisCoord); } else  { 	java.util.ArrayList<mars.coordinate.AStarCo[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 161685
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 147, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (thisCoord.equals(currentGoal)) { 	return constructPath(thisCoord); } else  { 	java.util.ArrayLis[...] ` -topatch--> `if (false) { 	return constructPath(thisCoord); } else  { 	java.util.ArrayList<mars.coordinate.AStarC[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 147, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (thisCoord.equals(currentGoal)) { 	return constructPath(thisCoord); } else  { 	java.util.ArrayLis[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 133, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (mars.coordinate.AStarCoordinate n : visitedCoords) { 	if (n.getDistanceToGoal() < targetCoord.g[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 131, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (unvisitedCoords.isEmpty()) { 	mars.coordinate.AStarCoordinate targetCoord = new mars.coordinate.[...] ` -topatch--> `if (true) { 	mars.coordinate.AStarCoordinate targetCoord = new mars.coordinate.AStarCoordinate(0, 0)[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 131, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (unvisitedCoords.isEmpty()) { 	mars.coordinate.AStarCoordinate targetCoord = new mars.coordinate.[...] ` -topatch--> `if (false) { 	mars.coordinate.AStarCoordinate targetCoord = new mars.coordinate.AStarCoordinate(0, 0[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 131, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (unvisitedCoords.isEmpty()) { 	mars.coordinate.AStarCoordinate targetCoord = new mars.coordinate.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 157, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unvisitedCoords.remove(thisCoord) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 156, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sortCoordinatesByCost(unvisitedCoords) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 158, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return AStar(unvisitedCoords, currentGoal) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 213, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((!((i == x) && (j == y))) && checkIfViewed(new mars.coordinate.Coordinate(i, j))) { 	try { 		mar[...] ` -topatch--> `if (true) { 	try { 		mars.coordinate.AStarCoordinate potentialNeighbor = new mars.coordinate.AStarCo[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 213, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((!((i == x) && (j == y))) && checkIfViewed(new mars.coordinate.Coordinate(i, j))) { 	try { 		mar[...] ` -topatch--> `if (false) { 	try { 		mars.coordinate.AStarCoordinate potentialNeighbor = new mars.coordinate.AStarC[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 213, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((!((i == x) && (j == y))) && checkIfViewed(new mars.coordinate.Coordinate(i, j))) { 	try { 		mar[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 212, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int j = y - 1; j <= (y + 1); j++) { 	if ((!((i == x) && (j == y))) && checkIfViewed(new mars.co[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 211, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = x - 1; i <= (x + 1); i++) { 	for (int j = y - 1; j <= (y + 1); j++) { 		if ((!((i == x)[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 187, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (target.equals(item)) { 	return false; } ` -topatch--> `if (true) { 	return false; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 187, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (target.equals(item)) { 	return false; } ` -topatch--> `if (false) { 	return false; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 187, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (target.equals(item)) { 	return false; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 186, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (mars.coordinate.AStarCoordinate item : path) { 	if (target.equals(item)) { 		return false; 	} 	[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 191, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `viewed = true ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 190, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (getDistanceToPoint(target, item) <= fieldOfView) { 	viewed = true; } ` -topatch--> `if (true) { 	viewed = true; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 190, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (getDistanceToPoint(target, item) <= fieldOfView) { 	viewed = true; } ` -topatch--> `if (false) { 	viewed = true; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 190, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (getDistanceToPoint(target, item) <= fieldOfView) { 	viewed = true; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 240, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `c.setDistanceToGoal(getDistanceToPoint(c, interimGoal)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 239, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (mars.coordinate.AStarCoordinate c : coords) { 	c.setDistanceToGoal(getDistanceToPoint(c, interi[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 243, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.util.Collections.sort(coords) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 217, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `potentialNeighbor.setParent(coord) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 164767
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 216, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `potentialNeighbor.setCostSoFar(costSoFar + 1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 219, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (rover.canTraverse(coord, potentialNeighbor) &&  (!coordHasBeenVisited(potentialNeighbor))) { 	ne[...] ` -topatch--> `if (true)  { 	neighbors.add(potentialNeighbor); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 219, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (rover.canTraverse(coord, potentialNeighbor) &&  (!coordHasBeenVisited(potentialNeighbor))) { 	ne[...] ` -topatch--> `if (false)  { 	neighbors.add(potentialNeighbor); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 219, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (rover.canTraverse(coord, potentialNeighbor) &&  (!coordHasBeenVisited(potentialNeighbor))) { 	ne[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.map.GeoTIFF line: 26, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `mapPath = fileLocation ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 63, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.Exception("WARNING: Field of view should be set to 3 or higher.") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 166029
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 63, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (fieldOfView < 3) 	throw new java.lang.Exception("WARNING: Field of view should be set to 3 or hi[...] ` -topatch--> `if (true) { 	throw new java.lang.Exception("WARNING: Field of view should be set to 3 or higher.");}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 63, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (fieldOfView < 3) 	throw new java.lang.Exception("WARNING: Field of view should be set to 3 or hi[...] ` -topatch--> `if (false) { 	throw new java.lang.Exception("WARNING: Field of view should be set to 3 or higher.");[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 166850
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 63, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (fieldOfView < 3) 	throw new java.lang.Exception("WARNING: Field of view should be set to 3 or hi[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 167623
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 175, pointed element: CtOperatorAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtOperatorAssignmentImpl) `result += 360 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 168427
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 175, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (result < 0) { 	result += 360;}  ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 58, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `visited = _visited ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 169577
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.AStarCoordinate line: 18, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `distanceToGoal = java.lang.Double.POSITIVE_INFINITY ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 169991
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.AStarCoordinate line: 17, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `costSoFar = java.lang.Double.POSITIVE_INFINITY ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.AStarCoordinate line: 35, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `costSoFar = c ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.AStarCoordinate line: 48, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `parent = p ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 170509
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 53, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `map = r.getMap() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 52, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `rover = r ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 56, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `outputClass = "TerminalOutput" ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 55, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `fieldOfView = r.getFieldOfView() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmLimitedScopeAStar line: 54, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `goal = r.getEndPosition() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.AStarCoordinate line: 27, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `distanceToGoal = java.lang.Double.POSITIVE_INFINITY ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.AStarCoordinate line: 26, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `costSoFar = 0 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 47, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `output.add(new mars.coordinate.GreedyCoordinate(x - 1, y + 1, mars.coordinate.GreedyCoordinate.const[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 48, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `output.add(new mars.coordinate.GreedyCoordinate(x + 1, y - 1, mars.coordinate.GreedyCoordinate.const[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 45, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `output.add(new mars.coordinate.GreedyCoordinate(x - 1, y, mars.coordinate.GreedyCoordinate.const_W)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 46, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `output.add(new mars.coordinate.GreedyCoordinate(x - 1, y - 1, mars.coordinate.GreedyCoordinate.const[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 49, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `output.add(new mars.coordinate.GreedyCoordinate(x + 1, y + 1, mars.coordinate.GreedyCoordinate.const[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 43, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `output.add(new mars.coordinate.GreedyCoordinate(x + 1, y, mars.coordinate.GreedyCoordinate.const_E)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 44, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `output.add(new mars.coordinate.GreedyCoordinate(x, y + 1, mars.coordinate.GreedyCoordinate.const_S)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 42, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `output.add(new mars.coordinate.GreedyCoordinate(x, y - 1, mars.coordinate.GreedyCoordinate.const_N)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 33, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `visited = false ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 34, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `direction = _direction ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 172306
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 23, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `visited = false ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 188, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (mars.coordinate.GreedyCoordinate item : list) { 	if ((target.getX() == item.getX()) && (target.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 172618
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 189, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((target.getX() == item.getX()) && (target.getY() == item.getY())) { 	return index; } ` -topatch--> `if (true) { 	return index; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 189, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((target.getX() == item.getX()) && (target.getY() == item.getY())) { 	return index; } ` -topatch--> `if (false) { 	return index; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 172981
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 189, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((target.getX() == item.getX()) && (target.getY() == item.getY())) { 	return index; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 173216
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 202, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `coordinate = _coordinate ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 203, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `diff = _diff ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 173628
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 47, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `goal = r.getEndPosition() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 48, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `outputClass = "TerminalOutput" ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 45, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `rover = r ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 46, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `map = r.getMap() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 132, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `preferences.remove(0) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 174227
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 120, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `directionList.clear() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 122, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `stepped = true ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 123, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (stepped) { 	if (preferences.size() > 0) { 		checkNode = preferences.get(0); 		if (((checkNode[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 174593
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 124, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (preferences.size() > 0) { 	checkNode = preferences.get(0); 	if (((checkNode != null) && rover.ca[...] ` -topatch--> `if (true) { 	checkNode = preferences.get(0); 	if (((checkNode != null) && this.rover.canTraverse(cur[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 124, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (preferences.size() > 0) { 	checkNode = preferences.get(0); 	if (((checkNode != null) && rover.ca[...] ` -topatch--> `if (false) { 	checkNode = preferences.get(0); 	if (((checkNode != null) && this.rover.canTraverse(cu[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 124, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (preferences.size() > 0) { 	checkNode = preferences.get(0); 	if (((checkNode != null) && rover.ca[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 175072
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 125, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `checkNode = preferences.get(0) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 126, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (((checkNode != null) && rover.canTraverse(currentNode, checkNode)) && (!checkNode.isVisited())) [...] ` -topatch--> `if (true) { 	currentNode = checkNode; 	coords.add(currentNode); 	fullcoords.add(currentNode); 	stepp[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 126, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (((checkNode != null) && rover.canTraverse(currentNode, checkNode)) && (!checkNode.isVisited())) [...] ` -topatch--> `if (false) { 	currentNode = checkNode; 	coords.add(currentNode); 	fullcoords.add(currentNode); 	step[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 126, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (((checkNode != null) && rover.canTraverse(currentNode, checkNode)) && (!checkNode.isVisited())) [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 175452
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 135, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (coords.size() > 1) {  	coords.remove(checkArray(currentNode, coords)); 	currentNode = coords.get[...] ` -topatch--> `if (true) {  	coords.remove(checkArray(currentNode, coords)); 	currentNode = coords.get(coords.size([...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 135, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (coords.size() > 1) {  	coords.remove(checkArray(currentNode, coords)); 	currentNode = coords.get[...] ` -topatch--> `if (false) {  	coords.remove(checkArray(currentNode, coords)); 	currentNode = coords.get(coords.size[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 135, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (coords.size() > 1) {  	coords.remove(checkArray(currentNode, coords)); 	currentNode = coords.get[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 175979
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 142, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.Exception("WARNING: A path to the goal could not be found.") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 176201
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 176, pointed element: CtOperatorAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtOperatorAssignmentImpl) `result += 360 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 176427
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 176, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (result < 0) { 	result += 360;}  ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 55, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `path.add(new mars.coordinate.GreedyCoordinate(rover.getXPosition(), rover.getYPosition())) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 60, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw e ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 79, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `fullcoords.add(new mars.coordinate.GreedyCoordinate(rover.getXPosition(), rover.getYPosition())) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 96, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `goalDirection = getAngleToGoal(currentNode, rover.getEndPosition()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 99, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (mars.coordinate.GreedyCoordinate item : neighbors) { 	if (checkArray(item, fullcoords) > (-1)) [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 100, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (checkArray(item, fullcoords) > (-1)) { 	item.setVisited(true); } ` -topatch--> `if (true) { 	item.setVisited(true); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 100, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (checkArray(item, fullcoords) > (-1)) { 	item.setVisited(true); } ` -topatch--> `if (false) { 	item.setVisited(true); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 177269
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 100, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (checkArray(item, fullcoords) > (-1)) { 	item.setVisited(true); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 177503
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 90, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (working) {  	currentNode.setVisited(true);  	java.util.ArrayList<mars.coordinate.GreedyCoordi[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 92, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `currentNode.setVisited(true) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 116, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (mars.algorithm.unlimited.AlgorithmGreedyUnlimited.GreedyCoordinateWrapper item : directionList)[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 117, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `preferences.add(item.getCoordinate()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 103, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((item.getDirection() == 0) && (goalDirection > 180)) { 	directionList.add(new mars.algorithm.unl[...] ` -topatch--> `if (true) { 	directionList.add(new mars.algorithm.unlimited.AlgorithmGreedyUnlimited.GreedyCoordinat[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 178130
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 103, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((item.getDirection() == 0) && (goalDirection > 180)) { 	directionList.add(new mars.algorithm.unl[...] ` -topatch--> `if (false) { 	directionList.add(new mars.algorithm.unlimited.AlgorithmGreedyUnlimited.GreedyCoordina[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 103, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((item.getDirection() == 0) && (goalDirection > 180)) { 	directionList.add(new mars.algorithm.unl[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 106, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `directionList.add(new mars.algorithm.unlimited.AlgorithmGreedyUnlimited.GreedyCoordinateWrapper(item[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmGreedyUnlimited line: 110, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.util.Collections.sort(directionList, new java.util.Comparator<mars.algorithm.unlimited.Algorith[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 178711
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.coordinate.GreedyCoordinate line: 28, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `visited = false ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 41, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setCurrentPosition(startCoords) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 40, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setMaxSlope(slope) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 43, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setEndPosition(endCoords) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 42, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setStartPosition(startCoords) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 44, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setFieldOfView(radius) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 48, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.lang.System.out.println(e.getMessage()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.rover.MarsRover line: 188, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `fieldOfView = radius ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 48, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `goal = r.getEndPosition() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 47, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `map = r.getMap() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 49, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `outputClass = "TerminalOutput" ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 46, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `rover = r ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 55, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `goal = r.getEndPosition() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 56, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `outputClass = "TerminalOutput" ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 53, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `rover = r ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 54, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `map = r.getMap() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 57, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `targetCoord = new mars.coordinate.AStarCoordinate(rover.getStartPosition()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 144, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.Exception("WARNING: A path to the goal could not be found.") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 136, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (coords.size() > 1) {  	coords.remove(checkArray(currentNode, coords)); 	currentNode = coords.get[...] ` -topatch--> `if (true) {  	coords.remove(checkArray(currentNode, coords)); 	currentNode = coords.get(coords.size([...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 136, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (coords.size() > 1) {  	coords.remove(checkArray(currentNode, coords)); 	currentNode = coords.get[...] ` -topatch--> `if (false) {  	coords.remove(checkArray(currentNode, coords)); 	currentNode = coords.get(coords.size[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 136, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (coords.size() > 1) {  	coords.remove(checkArray(currentNode, coords)); 	currentNode = coords.get[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 127, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (((checkNode != null) && rover.canTraverse(currentNode, checkNode)) && (!checkNode.isVisited())) [...] ` -topatch--> `if (true) { 	currentNode = checkNode; 	coords.add(currentNode); 	fullcoords.add(currentNode); 	stepp[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 127, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (((checkNode != null) && rover.canTraverse(currentNode, checkNode)) && (!checkNode.isVisited())) [...] ` -topatch--> `if (false) { 	currentNode = checkNode; 	coords.add(currentNode); 	fullcoords.add(currentNode); 	step[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 127, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (((checkNode != null) && rover.canTraverse(currentNode, checkNode)) && (!checkNode.isVisited())) [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 181453
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 133, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `preferences.remove(0) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 121, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `directionList.clear() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 124, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (stepped) { 	if (preferences.size() > 0) { 		checkNode = preferences.get(0); 		if (((checkNode[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 181866
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 123, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `stepped = true ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 126, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `checkNode = preferences.get(0) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 125, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (preferences.size() > 0) { 	checkNode = preferences.get(0); 	if (((checkNode != null) && rover.ca[...] ` -topatch--> `if (true) { 	checkNode = preferences.get(0); 	if (((checkNode != null) && this.rover.canTraverse(cur[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 125, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (preferences.size() > 0) { 	checkNode = preferences.get(0); 	if (((checkNode != null) && rover.ca[...] ` -topatch--> `if (false) { 	checkNode = preferences.get(0); 	if (((checkNode != null) && this.rover.canTraverse(cu[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 125, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (preferences.size() > 0) { 	checkNode = preferences.get(0); 	if (((checkNode != null) && rover.ca[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 78 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 184269
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 111, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.util.Collections.sort(directionList, new java.util.Comparator<mars.algorithm.limited.AlgorithmG[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 118, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `preferences.add(item.getCoordinate()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 117, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (mars.algorithm.limited.AlgorithmGreedyLimited.GreedyCoordinateWrapper item : directionList) { 	[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 104, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((item.getDirection() == 0) && (goalDirection > 180)) { 	directionList.add(new mars.algorithm.lim[...] ` -topatch--> `if (true) { 	directionList.add(new mars.algorithm.limited.AlgorithmGreedyLimited.GreedyCoordinateWra[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 104, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((item.getDirection() == 0) && (goalDirection > 180)) { 	directionList.add(new mars.algorithm.lim[...] ` -topatch--> `if (false) { 	directionList.add(new mars.algorithm.limited.AlgorithmGreedyLimited.GreedyCoordinateWr[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 104, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((item.getDirection() == 0) && (goalDirection > 180)) { 	directionList.add(new mars.algorithm.lim[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 107, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `directionList.add(new mars.algorithm.limited.AlgorithmGreedyLimited.GreedyCoordinateWrapper(item, ge[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 97, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `goalDirection = getAngleToGoal(currentNode, rover.getEndPosition()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 100, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (mars.coordinate.GreedyCoordinate item : neighbors) { 	if (checkArray(item, fullcoords) > (-1)) [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 101, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (checkArray(item, fullcoords) > (-1)) { 	item.setVisited(true); } ` -topatch--> `if (true) { 	item.setVisited(true); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 101, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (checkArray(item, fullcoords) > (-1)) { 	item.setVisited(true); } ` -topatch--> `if (false) { 	item.setVisited(true); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 101, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (checkArray(item, fullcoords) > (-1)) { 	item.setVisited(true); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 91, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (working) {  	currentNode.setVisited(true);  	java.util.ArrayList<mars.coordinate.GreedyCoordi[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 93, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `currentNode.setVisited(true) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 80, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `fullcoords.add(new mars.coordinate.GreedyCoordinate(rover.getXPosition(), rover.getYPosition())) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 56, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `path.add(new mars.coordinate.GreedyCoordinate(rover.getXPosition(), rover.getYPosition())) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 61, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw e ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 207, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `diff = _diff ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 206, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `coordinate = _coordinate ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 192, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (mars.coordinate.GreedyCoordinate item : list) { 	if ((target.getX() == item.getX()) && (target.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 193, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((target.getX() == item.getX()) && (target.getY() == item.getY())) { 	return index; } ` -topatch--> `if (true) { 	return index; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 193, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((target.getX() == item.getX()) && (target.getY() == item.getY())) { 	return index; } ` -topatch--> `if (false) { 	return index; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 193, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((target.getX() == item.getX()) && (target.getY() == item.getY())) { 	return index; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 180, pointed element: CtOperatorAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtOperatorAssignmentImpl) `result += 360 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.limited.AlgorithmGreedyLimited line: 180, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (result < 0) { 	result += 360;}  ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 155, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (mars.coordinate.AStarCoordinate c : coords) { 	c.setDistanceToGoal(getDistanceToGoal(c)); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 156, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `c.setDistanceToGoal(getDistanceToGoal(c)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 159, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.util.Collections.sort(coords) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 104, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sortCoordinatesByCost(unvisitedCoords) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 105, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unvisitedCoords.remove(thisCoord) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 85, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (unvisitedCoords.isEmpty()) { 	throw new java.lang.Exception("WARNING: A path to the goal could n[...] ` -topatch--> `if (true) { 	throw new java.lang.Exception("WARNING: A path to the goal could not be found."); } els[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 85, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (unvisitedCoords.isEmpty()) { 	throw new java.lang.Exception("WARNING: A path to the goal could n[...] ` -topatch--> `if (false) { 	throw new java.lang.Exception("WARNING: A path to the goal could not be found."); } el[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 85, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (unvisitedCoords.isEmpty()) { 	throw new java.lang.Exception("WARNING: A path to the goal could n[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 86, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.Exception("WARNING: A path to the goal could not be found.") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 91, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (thisCoord.equals(goal)) { 	targetCoord = thisCoord;     } else  { 	java.util.ArrayList<mars.coor[...] ` -topatch--> `if (true) { 	this.targetCoord = thisCoord;     } else  { 	java.util.ArrayList<mars.coordinate.AStarC[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 91, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (thisCoord.equals(goal)) { 	targetCoord = thisCoord;     } else  { 	java.util.ArrayList<mars.coor[...] ` -topatch--> `if (false) { 	this.targetCoord = thisCoord;     } else  { 	java.util.ArrayList<mars.coordinate.AStar[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 91, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (thisCoord.equals(goal)) { 	targetCoord = thisCoord;     } else  { 	java.util.ArrayList<mars.coor[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 90, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `visitedCoords.add(thisCoord) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 135, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (rover.canTraverse(coord, potentialNeighbor) &&  (!coordHasBeenVisited(potentialNeighbor))) { 	ne[...] ` -topatch--> `if (true)  { 	neighbors.add(potentialNeighbor); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 135, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (rover.canTraverse(coord, potentialNeighbor) &&  (!coordHasBeenVisited(potentialNeighbor))) { 	ne[...] ` -topatch--> `if (false)  { 	neighbors.add(potentialNeighbor); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 135, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (rover.canTraverse(coord, potentialNeighbor) &&  (!coordHasBeenVisited(potentialNeighbor))) { 	ne[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 133, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `potentialNeighbor.setParent(coord) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 127, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = x - 1; i <= (x + 1); i++) { 	for (int j = y - 1; j <= (y + 1); j++) { 		if (!((i == x) [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 128, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int j = y - 1; j <= (y + 1); j++) { 	if (!((i == x) && (j == y))) { 		try { 			mars.coordinate.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 132, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `potentialNeighbor.setCostSoFar(costSoFar + 1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 129, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!((i == x) && (j == y))) { 	try { 		mars.coordinate.AStarCoordinate potentialNeighbor = new mars[...] ` -topatch--> `if (true) { 	try { 		mars.coordinate.AStarCoordinate potentialNeighbor = new mars.coordinate.AStarCo[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 129, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!((i == x) && (j == y))) { 	try { 		mars.coordinate.AStarCoordinate potentialNeighbor = new mars[...] ` -topatch--> `if (false) { 	try { 		mars.coordinate.AStarCoordinate potentialNeighbor = new mars.coordinate.AStarC[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 129, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!((i == x) && (j == y))) { 	try { 		mars.coordinate.AStarCoordinate potentialNeighbor = new mars[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 70, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw e ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=mars.algorithm.unlimited.AlgorithmUnlimitedScopeRecursive line: 65, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `start.add(new mars.coordinate.AStarCoordinate(rover.getStartPosition())) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:171) - Time Repair Loop (s): 4673.181
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:173) - generationsexecuted: 1
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:255) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:265) - End Repair Search: NOT Found solution
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:190) - Time Total(s): 4700.33
