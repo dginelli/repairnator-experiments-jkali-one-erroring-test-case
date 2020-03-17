@@ -1,0 +1,384 @@
+16:38:59.721 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hedvig.backoffice.BackOfficeApplicationTests], using SpringBootContextLoader
+16:38:59.728 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hedvig.backoffice.BackOfficeApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:38:59.728 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hedvig.backoffice.BackOfficeApplicationTests]: BackOfficeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:38:59.928 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hedvig.backoffice.BackOfficeApplication for test class com.hedvig.backoffice.BackOfficeApplicationTests
+16:39:00.118 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:39:00.132 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@25ce9dc4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@74ea2410, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@17f62e33, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@76b1e9b8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27406a17, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2af004b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@248e319b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5d0bf09b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@793f29ff, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3e8c3cb, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@563f38c4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@543295b0]
+16:39:01.204 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+16:39:02.053 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@33308786: startup date [Tue Mar 17 16:39:02 CET 2020]; root of context hierarchy
+16:39:02.755 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:39:02.902 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4dbe952b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:03.160 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+16:39:03.161 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+16:39:03.161 [main] WARN  o.s.c.k.KubernetesAutoConfiguration - No namespace has been detected. Please specify KUBERNETES_NAMESPACE env var, or use a later kubernetes version (1.3 or later)
+16:39:03.813 [main] WARN  o.s.c.k.c.ConfigMapPropertySource - Can't read configMap with name: [back-office-service] in namespace:[null]. Ignoring
+io.fabric8.kubernetes.client.KubernetesClientException: Operation: [get]  for kind: [ConfigMap]  with name: [back-office-service]  in namespace: [null]  failed.
+	at io.fabric8.kubernetes.client.KubernetesClientException.launderThrowable(KubernetesClientException.java:62)
+	at io.fabric8.kubernetes.client.KubernetesClientException.launderThrowable(KubernetesClientException.java:71)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.getMandatory(BaseOperation.java:206)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.get(BaseOperation.java:162)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySource.getData(ConfigMapPropertySource.java:80)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySource.<init>(ConfigMapPropertySource.java:61)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySourceLocator.getMapPropertySourceForSingleConfigMap(ConfigMapPropertySourceLocator.java:73)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySourceLocator.locate(ConfigMapPropertySourceLocator.java:52)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:636)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:376)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:328)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:40)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:185)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:149)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:84)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:214)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:54)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:379)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:344)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleGet(OperationSupport.java:313)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleGet(OperationSupport.java:296)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.handleGet(BaseOperation.java:770)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.getMandatory(BaseOperation.java:195)
+	... 45 common frames omitted
+16:39:03.818 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: ConfigMapPropertySource {name='configmap.back-office-service.null'}
+16:39:03.819 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: SecretsPropertySource {name='secrets.back-office-service.null'}
+16:39:03.923 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+16:39:03.946 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-HedvigInsurance-back-office-412564353-20180806-114743-firstCommit/.m2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/pfs/nobackup/home/d/dginelli/development/astor-1.0.0-SNAPSHOT-jar-with-dependencies.jar!/org/json/JSONObject.class
+	jar:file:/pfs/nobackup/home/d/dginelli/development/repairnator-pipeline-3.3-SNAPSHOT-jar-with-dependencies.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+16:39:03.958 [main] INFO  c.h.b.BackOfficeApplicationTests - No active profile set, falling back to default profiles: default
+16:39:03.973 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@60222fd8: startup date [Tue Mar 17 16:39:03 CET 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@33308786
+16:39:05.611 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'assetTrackerJob' with a different definition: replacing [Generic bean: class [com.hedvig.backoffice.services.assettracker.AssetTrackerJob]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/pfs/proj/nobackup/fs/projnb01/snic2020-10-10/dginelli/astor/AstorMain-AstorJKali-repairnator-repairnator-experiments-HedvigInsurance-back-office-412564353-20180806-114743-firstCommit/bin/default/com/hedvig/backoffice/services/assettracker/AssetTrackerJob.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=assetTrackerSchedulerConfig; factoryMethodName=assetTrackerJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/hedvig/backoffice/config/AssetTrackerSchedulerConfig.class]]
+16:39:06.864 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+16:39:07.385 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b99197e0-e4d0-3150-af54-2396b8359f11
+16:39:07.517 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration$$EnhancerBySpringCGLIB$$2a01b6ee: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:07.517 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:07.517 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:07.518 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration$$EnhancerBySpringCGLIB$$2a01b6ee: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:07.524 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:07.525 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:07.593 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:39:07.874 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration$$EnhancerBySpringCGLIB$$2a01b6ee: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:08.217 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$31a4922e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:08.329 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$ca525a68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:08.356 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:08.370 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4b41587d' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:08.407 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$ef26fd1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:08.457 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:08.509 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4dbe952b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:08.548 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$TraceOAuthConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$TraceOAuthConfiguration$$EnhancerBySpringCGLIB$$76a1248d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:09.239 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:39:09.541 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:39:09.725 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16:39:09.761 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:39:09.896 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+16:39:09.900 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+16:39:09.985 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16:39:10.436 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+16:39:12.147 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3dad535f'
+16:39:12.160 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:39:13.146 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+16:39:13.478 [main] INFO  c.h.b.s.a.AssetTrackerClientImpl - ASSET TRACKER SERVICE:
+16:39:13.478 [main] INFO  c.h.b.s.a.AssetTrackerClientImpl - class: com.hedvig.backoffice.services.assettracker.AssetTrackerClientImpl
+16:39:13.478 [main] INFO  c.h.b.s.a.AssetTrackerClientImpl - base: http://localhost:4082
+16:39:13.478 [main] INFO  c.h.b.s.a.AssetTrackerClientImpl - assets: /assets
+16:39:13.937 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing FeignContext-claims-service: startup date [Tue Mar 17 16:39:13 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:13.992 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:39:14.897 [main] INFO  c.h.b.s.claims.ClaimsServiceImpl - CLAIMS SERVICE:
+16:39:14.897 [main] INFO  c.h.b.s.claims.ClaimsServiceImpl - class: com.hedvig.backoffice.services.claims.ClaimsServiceImpl
+16:39:14.897 [main] INFO  c.h.b.s.claims.ClaimsServiceImpl - base url: http://localhost:4083
+16:39:15.504 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration$$EnhancerBySpringCGLIB$$2a01b6ee: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:15.504 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration$$EnhancerBySpringCGLIB$$2a01b6ee: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:15.899 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'clientInboundChannelExecutor'
+16:39:15.967 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'clientOutboundChannelExecutor'
+16:39:16.597 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing FeignContext-payment-service: startup date [Tue Mar 17 16:39:16 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:16.635 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:39:16.818 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing FeignContext-member-service: startup date [Tue Mar 17 16:39:16 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:16.854 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:39:17.011 [main] INFO  c.h.b.s.members.MemberServiceImpl - MEMBER SERVICE:
+16:39:17.011 [main] INFO  c.h.b.s.members.MemberServiceImpl - class: com.hedvig.backoffice.services.members.MemberServiceImpl
+16:39:17.100 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing FeignContext-product-pricing-service: startup date [Tue Mar 17 16:39:17 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:17.128 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:39:17.394 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing FeignContext-bot-service: startup date [Tue Mar 17 16:39:17 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:17.418 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:39:17.558 [main] INFO  c.h.b.s.messages.BotServiceImpl - BOT SERVICE:
+16:39:17.558 [main] INFO  c.h.b.s.messages.BotServiceImpl - class: com.hedvig.backoffice.services.messages.BotServiceImpl
+16:39:17.661 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing FeignContext-expo: startup date [Tue Mar 17 16:39:17 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:17.691 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:39:17.881 [main] WARN  org.hibernate.orm.deprecation - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [s.chats.size]; use collection function syntax instead [size(s.chats)].
+16:39:18.072 [main] INFO  c.h.b.s.chat.ChatUpdatesServiceImpl - CHAT UPDATE SERVICE: 
+16:39:18.072 [main] INFO  c.h.b.s.chat.ChatUpdatesServiceImpl - question ids: [main.question]
+16:39:18.369 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/quartz/impl/jdbcjobstore/tables_h2.sql]
+16:39:18.421 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/quartz/impl/jdbcjobstore/tables_h2.sql] in 52 ms.
+16:39:18.517 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+16:39:18.560 [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:39:18.560 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+16:39:18.565 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+16:39:18.566 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'assetTrackerScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+16:39:18.566 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'assetTrackerScheduler' initialized from an externally provided properties instance.
+16:39:18.566 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+16:39:18.566 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@36f80ceb
+16:39:18.814 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration$$EnhancerBySpringCGLIB$$2a01b6ee: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:18.814 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration$$EnhancerBySpringCGLIB$$2a01b6ee: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:18.856 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 15d16fcb-faf9-497d-a250-7f0be93f14e5
+
+16:39:19.303 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4df13b7e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bc4ac3e, org.springframework.security.web.header.HeaderWriterFilter@48b01607, org.springframework.security.web.authentication.logout.LogoutFilter@26f07261, org.springframework.security.web.session.ConcurrentSessionFilter@7f08c343, com.hedvig.backoffice.security.OAuth2Filter@477d6f66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@629fe84, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7dda5b25, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12b66c89, org.springframework.security.web.session.SessionManagementFilter@14d6ede3, org.springframework.security.web.access.ExceptionTranslationFilter@2da0770, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c8e096]
+16:39:19.468 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'messageBrokerTaskScheduler'
+16:39:19.587 [main] INFO  o.s.w.s.s.s.WebSocketHandlerMapping - Mapped URL path [/chat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+16:39:19.673 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'brokerChannelExecutor'
+16:39:19.765 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration$$EnhancerBySpringCGLIB$$2a01b6ee: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:19.765 [main] INFO  o.s.core.annotation.AnnotationUtils - Failed to introspect annotations on class org.springframework.cloud.kubernetes.config.reload.ConfigReloadAutoConfiguration$$EnhancerBySpringCGLIB$$2a01b6ee: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:19.805 [main] INFO  o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - Mapped "{[/messages/send/{memberId}],messageType=[SUBSCRIBE]}" onto public void com.hedvig.backoffice.websocket.ChatController.send(java.lang.String,com.hedvig.backoffice.services.messages.dto.BackOfficeResponseDTO,java.lang.String)
+16:39:19.806 [main] INFO  o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - Mapped "{[/messages/history/{memberId}/{count}],messageType=[SUBSCRIBE]}" onto public void com.hedvig.backoffice.websocket.ChatController.messages(java.lang.String,int,java.lang.String)
+16:39:19.806 [main] INFO  o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - Mapped "{[/messages/history/{memberId}],messageType=[SUBSCRIBE]}" onto public void com.hedvig.backoffice.websocket.ChatController.messages(java.lang.String,java.lang.String)
+16:39:19.806 [main] INFO  o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - Mapped "{[/updates/],messageType=[SUBSCRIBE]}" onto public void com.hedvig.backoffice.websocket.UpdatesController.updates(java.security.Principal)
+16:39:19.806 [main] INFO  o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - Mapped "{[/updates/clear/{type}],messageType=[SUBSCRIBE]}" onto public void com.hedvig.backoffice.websocket.UpdatesController.clear(com.hedvig.backoffice.services.updates.UpdateType,java.lang.String)
+16:39:19.818 [main] WARN  o.s.w.c.s.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'simpAnnotationMethodMessageHandler' defined in class path resource [org/springframework/web/socket/config/annotation/DelegatingWebSocketMessageBrokerConfiguration.class]: Invocation of init method failed; nested exception is java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+16:39:19.826 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'brokerChannelExecutor'
+16:39:19.827 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+16:39:19.827 [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+16:39:19.828 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler assetTrackerScheduler_$_NON_CLUSTERED shutting down.
+16:39:19.829 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler assetTrackerScheduler_$_NON_CLUSTERED paused.
+16:39:19.829 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler assetTrackerScheduler_$_NON_CLUSTERED shutdown complete.
+16:39:19.832 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+16:39:19.832 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'clientInboundChannelExecutor'
+16:39:19.832 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing FeignContext-product-pricing-service: startup date [Tue Mar 17 16:39:17 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:19.835 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing FeignContext-bot-service: startup date [Tue Mar 17 16:39:17 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:19.835 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing FeignContext-payment-service: startup date [Tue Mar 17 16:39:16 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:19.835 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing FeignContext-member-service: startup date [Tue Mar 17 16:39:16 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:19.835 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing FeignContext-claims-service: startup date [Tue Mar 17 16:39:13 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:19.835 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing FeignContext-expo: startup date [Tue Mar 17 16:39:17 CET 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@60222fd8
+16:39:19.837 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:39:19.838 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+16:39:19.879 [main] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+16:39:19.880 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:39:19.894 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:39:19.920 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:39:19.922 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'simpAnnotationMethodMessageHandler' defined in class path resource [org/springframework/web/socket/config/annotation/DelegatingWebSocketMessageBrokerConfiguration.class]: Invocation of init method failed; nested exception is java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:724)
+	at sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:531)
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:355)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:286)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)
+	at java.lang.Class.createAnnotationData(Class.java:3521)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.createAnnotationData(Class.java:3526)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.getAnnotation(Class.java:3415)
+	at java.lang.reflect.AnnotatedElement.isAnnotationPresent(AnnotatedElement.java:258)
+	at java.lang.Class.isAnnotationPresent(Class.java:3425)
+	at org.springframework.core.annotation.AnnotatedElementUtils.hasAnnotation(AnnotatedElementUtils.java:573)
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.isHandler(SimpAnnotationMethodMessageHandler.java:363)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.afterPropertiesSet(AbstractMethodMessageHandler.java:252)
+	at org.springframework.web.socket.messaging.WebSocketAnnotationMethodMessageHandler.afterPropertiesSet(WebSocketAnnotationMethodMessageHandler.java:53)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 48 common frames omitted
+16:39:19.925 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@25ce9dc4] to prepare test instance [com.hedvig.backoffice.BackOfficeApplicationTests@3497ecea]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'simpAnnotationMethodMessageHandler' defined in class path resource [org/springframework/web/socket/config/annotation/DelegatingWebSocketMessageBrokerConfiguration.class]: Invocation of init method failed; nested exception is java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 33 common frames omitted
+Caused by: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:724)
+	at sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:531)
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:355)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:286)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)
+	at java.lang.Class.createAnnotationData(Class.java:3521)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.createAnnotationData(Class.java:3526)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.getAnnotation(Class.java:3415)
+	at java.lang.reflect.AnnotatedElement.isAnnotationPresent(AnnotatedElement.java:258)
+	at java.lang.Class.isAnnotationPresent(Class.java:3425)
+	at org.springframework.core.annotation.AnnotatedElementUtils.hasAnnotation(AnnotatedElementUtils.java:573)
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.isHandler(SimpAnnotationMethodMessageHandler.java:363)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.afterPropertiesSet(AbstractMethodMessageHandler.java:252)
+	at org.springframework.web.socket.messaging.WebSocketAnnotationMethodMessageHandler.afterPropertiesSet(WebSocketAnnotationMethodMessageHandler.java:53)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 48 common frames omitted
