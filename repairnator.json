@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "Innovimax-SARL/mix-them",
-  "bugCommit": "https://github.com/Innovimax-SARL/mix-them/compare/12d0db2f9a8b...c398ae390d15",
-  "failingModule": "/root/workspace/Innovimax-SARL/mix-them/389154815",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.UnsupportedOperationException"
-  ],
-  "totalNumberRunningTests": 22,
-  "failing-test-cases": [
-    {
-      "className": "innovimax.mixthem.GenericTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testCharRules"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:25 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:50:10 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 80192200,
+      "totalMemory": 226213888
+    },
+    "totalDuration": 1002,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 946,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          946
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-389154815-20180607-112506-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-389154815-20180607-112506-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 22,
+      "numberPassing": 21,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.UnsupportedOperationException",
-          "failureDetail": "CharToken does not have a byte representation",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "innovimax.mixthem.GenericTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "innovimax.mixthem.GenericTest",
+        "testMethod": "testCharRules",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "detail": "CharToken does not have a byte representation",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 74,
+    "numberTestFiles": 5,
+    "numberLibrariesFailingModule": 5,
+    "numberLines": 0
+  }
 }
