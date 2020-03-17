@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:33:17 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:35:07 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 45884408,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 107,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Doctusoft-json-schema-423045038-20180831-162230-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Doctusoft-json-schema-423045038-20180831-162230-firstCommit/tests",
+    "overallMetrics": {
+      "numberRunning": 575,
+      "numberPassing": 574,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.everit.json.schema.IssueTest",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.everit.json.schema.IssueTest",
+        "testMethod": "test[issue36]",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "java.io.FileNotFoundException: http://json-schema.org/geo",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberPlugins": 0,
+    "numberSourceFiles": 40,
+    "numberTestFiles": 36,
+    "numberLibrariesFailingModule": 22,
+    "numberLines": 0
+  }
+}
