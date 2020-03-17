@@ -1,0 +1,68 @@
+16:52:27.939 [pool-1-thread-2] INFO  d.a.f.framework.network.AsyncNetwork - P1: bound at 0.0.0.0/0.0.0.0:9010
+16:52:27.943 [pool-2-thread-2] INFO  d.a.f.framework.network.AsyncNetwork - P2: bound at 0.0.0.0/0.0.0.0:9020
+16:52:27.946 [pool-1-thread-1] INFO  d.a.f.framework.network.AsyncNetwork - P1: connected to Party(2, localhost:9020)
+16:52:27.948 [pool-2-thread-2] INFO  d.a.f.framework.network.AsyncNetwork - P2: accepted connection from Party(1, localhost:9010)
+16:52:27.949 [Thread-1] INFO  d.a.f.framework.network.AsyncNetwork - P1: successfully connected network
+16:52:27.952 [Thread-2] INFO  d.a.f.framework.network.AsyncNetwork - P2: successfully connected network
+16:52:27.967 [SCE-1] INFO  d.a.f.f.s.SecureComputationEngineImpl - Running application: dk.alexandra.fresco.demo.PrivateSetDemo@8f9f87e using protocol suite: dk.alexandra.fresco.suite.dummy.bool.DummyBooleanProtocolSuite@63e0711
+16:52:27.973 [SCE-2] INFO  d.a.f.f.s.SecureComputationEngineImpl - Running application: dk.alexandra.fresco.demo.PrivateSetDemo@4c1f7806 using protocol suite: dk.alexandra.fresco.suite.dummy.bool.DummyBooleanProtocolSuite@42d89ff5
+16:52:30.922 [SCE-1] INFO  d.a.f.f.s.SecureComputationEngineImpl - The application dk.alexandra.fresco.demo.PrivateSetDemo@8f9f87e finished evaluation in 2939 ms.
+16:52:30.944 [SCE-2] INFO  d.a.f.f.s.SecureComputationEngineImpl - The application dk.alexandra.fresco.demo.PrivateSetDemo@4c1f7806 finished evaluation in 2965 ms.
+16:52:30.964 [main] INFO  d.a.f.framework.network.AsyncNetwork - P1: Network closed
+16:52:30.965 [main] INFO  d.a.f.framework.network.AsyncNetwork - P2: Network closed
+16:52:30.991 [pool-5-thread-2] INFO  d.a.f.framework.network.AsyncNetwork - P1: bound at 0.0.0.0/0.0.0.0:9001
+16:52:30.995 [pool-6-thread-2] INFO  d.a.f.framework.network.AsyncNetwork - P2: bound at 0.0.0.0/0.0.0.0:9002
+16:52:30.998 [pool-5-thread-1] INFO  d.a.f.framework.network.AsyncNetwork - P1: connected to Party(2, localhost:9002)
+16:52:31.000 [pool-6-thread-2] INFO  d.a.f.framework.network.AsyncNetwork - P2: accepted connection from Party(1, localhost:9001)
+16:52:31.028 [Thread-3] INFO  d.a.f.framework.network.AsyncNetwork - P1: successfully connected network
+16:52:31.029 [SCE-3] INFO  d.a.f.f.s.SecureComputationEngineImpl - Running application: dk.alexandra.fresco.demo.PrivateSetDemo@5a8691d8 using protocol suite: dk.alexandra.fresco.suite.tinytables.prepro.TinyTablesPreproProtocolSuite@544164f8
+16:52:31.031 [Thread-4] INFO  d.a.f.framework.network.AsyncNetwork - P2: successfully connected network
+16:52:31.042 [Thread-3] ERROR d.a.f.framework.TestThreadRunner - TestThread(dk.alexandra.fresco.framework.sce.resources.ResourcePoolImpl@6e267468) threw exception during test:
+java.lang.RuntimeException: Execution exception when running the application
+	at dk.alexandra.fresco.framework.sce.SecureComputationEngineImpl.runApplication(SecureComputationEngineImpl.java:61)
+	at dk.alexandra.fresco.framework.sce.SecureComputationEngine.runApplication(SecureComputationEngine.java:37)
+	at dk.alexandra.fresco.framework.TestThreadRunner$TestThread.runApplication(TestThreadRunner.java:41)
+	at dk.alexandra.fresco.demo.TestPrivateSetDemo$1$1.test(TestPrivateSetDemo.java:188)
+	at dk.alexandra.fresco.framework.TestThreadRunner$TestThread.runTest(TestThreadRunner.java:65)
+	at dk.alexandra.fresco.framework.TestThreadRunner$TestThread.run(TestThreadRunner.java:53)
+Caused by: java.lang.ClassCastException: dk.alexandra.fresco.framework.sce.resources.ResourcePoolImpl cannot be cast to dk.alexandra.fresco.suite.tinytables.prepro.TinyTablesPreproResourcePool
+	at dk.alexandra.fresco.suite.tinytables.prepro.TinyTablesPreproProtocolSuite.init(TinyTablesPreproProtocolSuite.java:43)
+	at dk.alexandra.fresco.framework.sce.SecureComputationEngineImpl.evalApplication(SecureComputationEngineImpl.java:77)
+	at dk.alexandra.fresco.framework.sce.SecureComputationEngineImpl.lambda$startApplication$0(SecureComputationEngineImpl.java:69)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+16:52:31.052 [Thread-3] INFO  d.a.f.framework.network.AsyncNetwork - P1: Network closed
+16:52:31.053 [main] INFO  d.a.f.framework.network.AsyncNetwork - P1: Network already closed
+16:52:31.062 [main] INFO  d.a.f.framework.network.AsyncNetwork - P2: Network closed
+16:52:31.064 [SCE-4] INFO  d.a.f.f.s.SecureComputationEngineImpl - Running application: dk.alexandra.fresco.demo.PrivateSetDemo@121f28f using protocol suite: dk.alexandra.fresco.suite.tinytables.prepro.TinyTablesPreproProtocolSuite@fe60cdb
+16:52:31.064 [Thread-4] ERROR d.a.f.framework.TestThreadRunner - TestThread(dk.alexandra.fresco.framework.sce.resources.ResourcePoolImpl@3583bed6) threw exception during test:
+java.lang.RuntimeException: Execution exception when running the application
+	at dk.alexandra.fresco.framework.sce.SecureComputationEngineImpl.runApplication(SecureComputationEngineImpl.java:61)
+	at dk.alexandra.fresco.framework.sce.SecureComputationEngine.runApplication(SecureComputationEngine.java:37)
+	at dk.alexandra.fresco.framework.TestThreadRunner$TestThread.runApplication(TestThreadRunner.java:41)
+	at dk.alexandra.fresco.demo.TestPrivateSetDemo$1$1.test(TestPrivateSetDemo.java:188)
+	at dk.alexandra.fresco.framework.TestThreadRunner$TestThread.runTest(TestThreadRunner.java:65)
+	at dk.alexandra.fresco.framework.TestThreadRunner$TestThread.run(TestThreadRunner.java:53)
+Caused by: java.lang.ClassCastException: dk.alexandra.fresco.framework.sce.resources.ResourcePoolImpl cannot be cast to dk.alexandra.fresco.suite.tinytables.prepro.TinyTablesPreproResourcePool
+	at dk.alexandra.fresco.suite.tinytables.prepro.TinyTablesPreproProtocolSuite.init(TinyTablesPreproProtocolSuite.java:43)
+	at dk.alexandra.fresco.framework.sce.SecureComputationEngineImpl.evalApplication(SecureComputationEngineImpl.java:77)
+	at dk.alexandra.fresco.framework.sce.SecureComputationEngineImpl.lambda$startApplication$0(SecureComputationEngineImpl.java:69)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+16:52:31.065 [Thread-4] INFO  d.a.f.framework.network.AsyncNetwork - P2: Network already closed
+16:52:31.083 [pool-9-thread-2] INFO  d.a.f.framework.network.AsyncNetwork - P1: bound at 0.0.0.0/0.0.0.0:8081
+16:52:31.094 [pool-10-thread-2] INFO  d.a.f.framework.network.AsyncNetwork - P2: bound at 0.0.0.0/0.0.0.0:8082
+16:52:31.096 [pool-10-thread-2] INFO  d.a.f.framework.network.AsyncNetwork - P2: accepted connection from Party(1, localhost:8081)
+16:52:31.108 [Thread-6] INFO  d.a.f.framework.network.AsyncNetwork - P2: successfully connected network
+16:52:31.109 [SCE-5] INFO  d.a.f.f.s.SecureComputationEngineImpl - Running application: dk.alexandra.fresco.demo.PrivateSetDemo@13cfc754 using protocol suite: dk.alexandra.fresco.suite.dummy.bool.DummyBooleanProtocolSuite@1d082b5d
+16:52:31.153 [pool-9-thread-1] INFO  d.a.f.framework.network.AsyncNetwork - P1: connected to Party(2, localhost:8082)
+16:52:31.155 [Thread-5] INFO  d.a.f.framework.network.AsyncNetwork - P1: successfully connected network
+16:52:31.156 [SCE-6] INFO  d.a.f.f.s.SecureComputationEngineImpl - Running application: dk.alexandra.fresco.demo.PrivateSetDemo@6a4f5d2b using protocol suite: dk.alexandra.fresco.suite.dummy.bool.DummyBooleanProtocolSuite@6488be12
+16:52:33.890 [SCE-6] INFO  d.a.f.f.s.SecureComputationEngineImpl - The application dk.alexandra.fresco.demo.PrivateSetDemo@6a4f5d2b finished evaluation in 2727 ms.
+16:52:33.893 [Thread-5] INFO  d.a.f.framework.network.AsyncNetwork - P1: Network closed
+16:52:33.919 [SCE-5] INFO  d.a.f.f.s.SecureComputationEngineImpl - The application dk.alexandra.fresco.demo.PrivateSetDemo@13cfc754 finished evaluation in 2802 ms.
+16:52:33.932 [Thread-6] INFO  d.a.f.framework.network.AsyncNetwork - P2: Network closed
