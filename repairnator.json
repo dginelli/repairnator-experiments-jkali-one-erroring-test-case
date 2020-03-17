@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 19,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/commons-net",
-  "failingModule": "/root/workspace/apache/commons-net/263433637",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.net.SocketException"
-  ],
-  "totalNumberRunningTests": 288,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.commons.net.ftp.FTPSClientProxyPROTTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.commons.net.ftp.FTPSClientProxyPROTTest#testFTPSClientWithProxy"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:36:12 PM",
+    "reproductionDateEnd": "Mar 17, 2020 6:20:30 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 213430528,
+      "totalMemory": 347574272
+    },
+    "totalDuration": 6255,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-commons-net-263433637-20170811-121822_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-commons-net-263433637-20170811-121822_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 269,
+      "numberPassing": 268,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 19,
       "failures": [
         {
           "failureName": "java.net.SocketException",
-          "failureDetail": "Connection reset",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.commons.net.ftp.FTPSClientProxyPROTTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.commons.net.ftp.FTPSClientProxyPROTTest",
+        "testMethod": "testFTPSClientWithProxy",
+        "failureName": "java.net.SocketException",
+        "detail": "Connection timed out (Connection timed out)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 211,
+    "numberTestFiles": 62,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  }
 }
