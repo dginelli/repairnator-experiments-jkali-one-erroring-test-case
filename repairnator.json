@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "2018swecapstone/h2ms",
-  "failingModule": "/root/workspace/2018swecapstone/h2ms/370268499",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.springframework.web.util.NestedServletException"
-  ],
-  "totalNumberRunningTests": 114,
-  "failing-test-cases": [
-    {
-      "className": "edu.harvard.h2ms.controllers.UserControllerTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "edu.harvard.h2ms.controllers.UserControllerTests#test_AdminRequest_UserController_saveNewUser"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:32:36 PM",
+    "reproductionDateEnd": "Mar 17, 2020 6:16:00 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 92154240,
+      "totalMemory": 180363264
+    },
+    "totalDuration": 6202,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-2018swecapstone-h2ms-370268499-20180423-221027-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-2018swecapstone-h2ms-370268499-20180423-221027-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 114,
+      "numberPassing": 113,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.springframework.web.util.NestedServletException",
-          "failureDetail": "Request processing failed; nested exception is javax.validation.ConstraintViolationException: Validation failed for classes [edu.harvard.h2ms.domain.core.User] during persist time for groups [javax.validation.groups.Default, ]\nList of constraint violations:[\n ConstraintViolationImpl{interpolatedMessage\u003d\u0027may not be null\u0027, propertyPath\u003dpassword, rootBeanClass\u003dclass edu.harvard.h2ms.domain.core.User, messageTemplate\u003d\u0027{javax.validation.constraints.NotNull.message}\u0027}\n]",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.UserControllerTests",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.UserControllerTests",
+        "testMethod": "test_AdminRequest_UserController_saveNewUser",
+        "failureName": "org.springframework.web.util.NestedServletException",
+        "detail": "Request processing failed; nested exception is javax.validation.ConstraintViolationException: Validation failed for classes [edu.harvard.h2ms.domain.core.User] during persist time for groups [javax.validation.groups.Default, ]\nList of constraint violations:[\n ConstraintViolationImpl{interpolatedMessage\u003d\u0027may not be null\u0027, propertyPath\u003dpassword, rootBeanClass\u003dclass edu.harvard.h2ms.domain.core.User, messageTemplate\u003d\u0027{javax.validation.constraints.NotNull.message}\u0027}\n]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 59,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 135,
+    "numberLines": 0
+  }
 }
