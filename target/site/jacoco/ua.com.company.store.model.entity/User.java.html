@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>User.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.model.entity</a> &gt; <span class="el_source">User.java</span></div><h1>User.java</h1><pre class="source lang-java linenums">package ua.com.company.store.model.entity;
+
+/**
+ * Created by Владислав on 17.11.2017.
+ */
+public class User extends Entity {
+
+    private String nickname;
+    private String password;
+    private String email;
+    private boolean role;
+    private boolean isDefaulter;
+
+<span class="nc" id="L14">    public static class UserBuilder {</span>
+        private int id;
+        private String nickname;
+        private String password;
+        private String email;
+        private boolean role;
+        private boolean isDefaulter;
+
+        public UserBuilder id (final int id){
+<span class="nc" id="L23">            this.id = id;</span>
+<span class="nc" id="L24">            return this;</span>
+        }
+        public UserBuilder nickname (final String nickname){
+<span class="nc" id="L27">            this.nickname = nickname;</span>
+<span class="nc" id="L28">            return this;</span>
+        }
+        public UserBuilder password (final String password){
+<span class="nc" id="L31">            this.password = password;</span>
+<span class="nc" id="L32">            return this;</span>
+        }
+        public UserBuilder email (final String email){
+<span class="nc" id="L35">            this.email = email;</span>
+<span class="nc" id="L36">            return this;</span>
+        }
+        public UserBuilder role (final boolean role){
+<span class="nc" id="L39">            this.role = role;</span>
+<span class="nc" id="L40">            return this;</span>
+        }
+        public UserBuilder isDefaulter (final boolean isDefaulter){
+<span class="nc" id="L43">            this.isDefaulter = isDefaulter;</span>
+<span class="nc" id="L44">            return this;</span>
+        }
+
+        public int getId() {
+<span class="nc" id="L48">            return id;</span>
+        }
+
+        public String getNickname() {
+<span class="nc" id="L52">            return nickname;</span>
+        }
+
+        public String getPassword() {
+<span class="nc" id="L56">            return password;</span>
+        }
+
+        public String getEmail() {
+<span class="nc" id="L60">            return email;</span>
+        }
+
+        public boolean isRole() {
+<span class="nc" id="L64">            return role;</span>
+        }
+
+        public boolean isDefaulter() {
+<span class="nc" id="L68">            return isDefaulter;</span>
+        }
+
+        public User build(){
+<span class="nc" id="L72">            return new User(this);</span>
+        }
+
+    }
+
+    private User(UserBuilder userBuilder) {
+<span class="nc" id="L78">        super(userBuilder.getId());</span>
+<span class="nc" id="L79">    this.nickname = userBuilder.getNickname();</span>
+<span class="nc" id="L80">    this.password = userBuilder.getPassword();</span>
+<span class="nc" id="L81">    this.email = userBuilder.getEmail();</span>
+<span class="nc" id="L82">    this.role = userBuilder.isRole();</span>
+<span class="nc" id="L83">    this.isDefaulter = userBuilder.isDefaulter;</span>
+<span class="nc" id="L84">    }</span>
+
+    @Override
+    public boolean equals(Object o) {
+<span class="nc bnc" id="L88" title="All 2 branches missed.">        if (this == o) return true;</span>
+<span class="nc bnc" id="L89" title="All 4 branches missed.">        if (o == null || getClass() != o.getClass()) return false;</span>
+
+<span class="nc" id="L91">        User user = (User) o;</span>
+
+<span class="nc bnc" id="L93" title="All 2 branches missed.">        if (role != user.role) return false;</span>
+<span class="nc bnc" id="L94" title="All 2 branches missed.">        if (isDefaulter != user.isDefaulter) return false;</span>
+<span class="nc bnc" id="L95" title="All 6 branches missed.">        if (nickname != null ? !nickname.equals(user.nickname) : user.nickname != null) return false;</span>
+<span class="nc bnc" id="L96" title="All 6 branches missed.">        if (password != null ? !password.equals(user.password) : user.password != null) return false;</span>
+<span class="nc bnc" id="L97" title="All 4 branches missed.">        return email != null ? email.equals(user.email) : user.email == null;</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="nc bnc" id="L102" title="All 2 branches missed.">        int result = nickname != null ? nickname.hashCode() : 0;</span>
+<span class="nc bnc" id="L103" title="All 2 branches missed.">        result = 31 * result + (password != null ? password.hashCode() : 0);</span>
+<span class="nc bnc" id="L104" title="All 2 branches missed.">        result = 31 * result + (email != null ? email.hashCode() : 0);</span>
+<span class="nc bnc" id="L105" title="All 2 branches missed.">        result = 31 * result + (role ? 1 : 0);</span>
+<span class="nc bnc" id="L106" title="All 2 branches missed.">        result = 31 * result + (isDefaulter ? 1 : 0);</span>
+<span class="nc" id="L107">        return result;</span>
+    }
+
+<span class="nc" id="L110">    public User() {</span>
+<span class="nc" id="L111">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L115">        return &quot;User:&quot; + nickname + &quot; &quot; + password + &quot; &quot; + email + &quot; &quot; + role + &quot; &quot; + isDefaulter;</span>
+    }
+
+    public String getNickname() {
+<span class="nc" id="L119">        return nickname;</span>
+    }
+
+    public String getPassword() {
+<span class="nc" id="L123">        return password;</span>
+    }
+
+    public String getEmail() {
+<span class="nc" id="L127">        return email;</span>
+    }
+
+    public boolean isRole() {
+<span class="nc" id="L131">        return role;</span>
+    }
+
+    public boolean isDefaulter() {
+<span class="nc" id="L135">        return isDefaulter;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

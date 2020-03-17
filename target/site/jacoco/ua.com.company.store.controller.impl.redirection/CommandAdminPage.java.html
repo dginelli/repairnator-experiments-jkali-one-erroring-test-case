@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>CommandAdminPage.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.controller.impl.redirection</a> &gt; <span class="el_source">CommandAdminPage.java</span></div><h1>CommandAdminPage.java</h1><pre class="source lang-java linenums">package ua.com.company.store.controller.impl.redirection;
+
+import ua.com.company.store.constants.Redirection;
+import ua.com.company.store.controller.command.CommandTypical;
+import ua.com.company.store.utils.RedirectionManager;
+import ua.com.company.store.model.entity.User;
+import ua.com.company.store.service.UserService;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+/**
+ * Created by Владислав on 13.12.2017.
+ */
+public class CommandAdminPage implements CommandTypical {
+    private UserService userService;
+
+<span class="fc" id="L20">    public CommandAdminPage(UserService userService) {</span>
+<span class="fc" id="L21">        this.userService = userService;</span>
+<span class="fc" id="L22">    }</span>
+
+    @Override
+    public String execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+<span class="fc" id="L26">        return verifyOnSuccessfulAccess(req,resp);</span>
+    }
+    String verifyOnSuccessfulAccess(HttpServletRequest req, HttpServletResponse resp){
+       User user;
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">        if (req.getAttribute(&quot;user&quot;) != null) {</span>
+<span class="nc" id="L31">            user = (User) req.getAttribute(&quot;user&quot;);</span>
+        } else {
+<span class="fc" id="L33">            user = (User) req.getSession().getAttribute(&quot;user&quot;);</span>
+        }
+<span class="pc bpc" id="L35" title="3 of 6 branches missed.">        if (req.getSession() == null || req.getSession().getAttribute(&quot;user&quot;) == null || !user.isRole()) {</span>
+<span class="nc" id="L36">            return Redirection.ACCESS_ERROR_PAGE + &quot; &quot; + RedirectionManager.REDIRECTION;</span>
+        }else {
+<span class="fc" id="L38">            req.setAttribute(&quot;listOfUsers&quot;, userService.getAllUsers());</span>
+<span class="fc" id="L39">            return Redirection.ADMIN_PAGE;</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

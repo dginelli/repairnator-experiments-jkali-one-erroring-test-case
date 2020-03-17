@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>UserDataTag.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.tag</a> &gt; <span class="el_source">UserDataTag.java</span></div><h1>UserDataTag.java</h1><pre class="source lang-java linenums">package ua.com.company.store.tag;
+
+import ua.com.company.store.locale.MessageLocale;
+import ua.com.company.store.model.entity.User;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.tagext.TagSupport;
+import java.io.IOException;
+
+/**
+ * Created by Владислав on 12.12.2017.
+ */
+<span class="nc" id="L13">public class UserDataTag extends TagSupport {</span>
+    private User user;
+
+    public void setUser(User user) {
+<span class="nc" id="L17">        this.user = user;</span>
+<span class="nc" id="L18">    }</span>
+
+    @Override
+    public int doStartTag() throws JspException {
+        try {
+<span class="nc" id="L23">            pageContext.getOut().write(showUserData());</span>
+<span class="nc" id="L24">        } catch (IOException e) {</span>
+<span class="nc" id="L25">            e.printStackTrace();</span>
+<span class="nc" id="L26">        }</span>
+<span class="nc" id="L27">return SKIP_BODY;</span>
+    }
+private String showUserData(){
+<span class="nc" id="L30">        return new StringBuffer().append(MessageLocale.resourceBundle.getString(&quot;store.loggedInAs&quot;))</span>
+<span class="nc" id="L31">                .append(user.getEmail()).append(&quot;(&quot;).append(MessageLocale.resourceBundle.getString(String.valueOf(user.isRole())))</span>
+<span class="nc" id="L32">                .append(&quot;)&quot;).toString();</span>
+}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

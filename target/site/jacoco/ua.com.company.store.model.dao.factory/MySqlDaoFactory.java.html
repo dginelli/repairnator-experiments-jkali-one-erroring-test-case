@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>MySqlDaoFactory.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.model.dao.factory</a> &gt; <span class="el_source">MySqlDaoFactory.java</span></div><h1>MySqlDaoFactory.java</h1><pre class="source lang-java linenums">package ua.com.company.store.model.dao.factory;
+
+import org.apache.log4j.Logger;
+import ua.com.company.store.model.dao.connection.JDBCConnectionPool;
+import ua.com.company.store.model.dao.daoAbstract.GenericDAO;
+import ua.com.company.store.model.dao.exceptions.PersistException;
+import ua.com.company.store.model.dao.impl.*;
+import ua.com.company.store.model.entity.Image;
+import ua.com.company.store.model.entity.Order;
+import ua.com.company.store.model.entity.Product;
+import ua.com.company.store.model.entity.User;
+import ua.com.company.store.model.entity.additional.ProductImage;
+
+import java.sql.Connection;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Created by Владислав on 22.11.2017.
+ */
+public class MySqlDaoFactory implements FactoryDAO {
+    private Map&lt;Class, CreatorDao&gt; creators;
+<span class="fc" id="L23">    private Logger logger = Logger.getRootLogger();</span>
+    private static JDBCConnectionPool jdbcConnectionPool;
+    private static MySqlDaoFactory mySqlDaoFactory;
+
+    @Override
+    public GenericDAO getDao(Class daoClass) throws PersistException {
+<span class="fc" id="L29">        CreatorDao creatorDao = creators.get(daoClass);</span>
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">        if (creatorDao == null) {</span>
+<span class="nc" id="L31">            logger.info(&quot;Dao creator is null&quot;);</span>
+<span class="nc" id="L32">            throw new PersistException(&quot;Dao creator is null&quot;);</span>
+        }
+<span class="fc" id="L34">        return creatorDao.create();</span>
+    }
+
+    public static synchronized MySqlDaoFactory getMysqlDaoFactory(JDBCConnectionPool jdbcConnectionPool){
+<span class="fc bfc" id="L38" title="All 2 branches covered.">        if (mySqlDaoFactory == null){</span>
+<span class="fc" id="L39">            mySqlDaoFactory = new MySqlDaoFactory(jdbcConnectionPool);</span>
+<span class="fc" id="L40">            return mySqlDaoFactory;</span>
+        }else {
+<span class="fc" id="L42">            return mySqlDaoFactory;</span>
+        }
+    }
+
+<span class="fc" id="L46">    private MySqlDaoFactory(JDBCConnectionPool jdbcConnectionPool) {</span>
+<span class="fc" id="L47">        logger.info(&quot;Mysql dao factory constur&quot;);</span>
+<span class="fc" id="L48">        this.jdbcConnectionPool = jdbcConnectionPool;</span>
+<span class="fc" id="L49">        creators = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L50">        creators.put(User.class, new CreatorDao() {</span>
+            @Override
+            public GenericDAO create() {
+<span class="fc" id="L53">                return new UserDAO(jdbcConnectionPool);</span>
+            }
+        });
+<span class="fc" id="L56">        creators.put(Product.class, new CreatorDao() {</span>
+            @Override
+            public GenericDAO create() {
+<span class="nc" id="L59">                return new ProductDAO(jdbcConnectionPool);</span>
+            }
+        });
+
+<span class="fc" id="L63">        creators.put(Image.class, new CreatorDao() {</span>
+            @Override
+            public GenericDAO create() {
+<span class="nc" id="L66">                return new ImageDAO(jdbcConnectionPool);</span>
+            }
+        });
+<span class="fc" id="L69">        creators.put(Order.class, new CreatorDao() {</span>
+            @Override
+            public GenericDAO create() {
+<span class="fc" id="L72">                return new OrderDAO(jdbcConnectionPool);</span>
+            }
+        });
+<span class="fc" id="L75">        creators.put(ProductImage.class, new CreatorDao() {</span>
+            @Override
+            public GenericDAO create() {
+<span class="nc" id="L78">                return new ProductImageDAO(jdbcConnectionPool);</span>
+            }
+        });
+<span class="fc" id="L81">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

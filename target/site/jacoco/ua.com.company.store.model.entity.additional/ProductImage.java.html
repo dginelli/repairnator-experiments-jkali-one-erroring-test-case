@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ProductImage.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.model.entity.additional</a> &gt; <span class="el_source">ProductImage.java</span></div><h1>ProductImage.java</h1><pre class="source lang-java linenums">package ua.com.company.store.model.entity.additional;
+
+import java.util.Comparator;
+
+/**
+ * Created by Владислав on 13.12.2017.
+ */
+public class ProductImage{
+    private int id;
+    private String title;
+    private String description;
+    private int  price;
+    private String pathImage;
+
+<span class="nc" id="L15">    public ProductImage() {</span>
+<span class="nc" id="L16">    }</span>
+
+<span class="fc" id="L18">    public ProductImage(int id, String title, String description, int price, String pathImage) {</span>
+
+<span class="fc" id="L20">        this.id = id;</span>
+<span class="fc" id="L21">        this.title = title;</span>
+<span class="fc" id="L22">        this.description = description;</span>
+<span class="fc" id="L23">        this.price = price;</span>
+<span class="fc" id="L24">        this.pathImage = pathImage;</span>
+<span class="fc" id="L25">    }</span>
+
+    public int getId() {
+<span class="nc" id="L28">        return id;</span>
+    }
+
+    public void setId(int id) {
+<span class="nc" id="L32">        this.id = id;</span>
+<span class="nc" id="L33">    }</span>
+
+    public String getTitle() {
+<span class="nc" id="L36">        return title;</span>
+    }
+
+    public void setTitle(String title) {
+<span class="nc" id="L40">        this.title = title;</span>
+<span class="nc" id="L41">    }</span>
+
+    public String getDescription() {
+<span class="nc" id="L44">        return description;</span>
+    }
+
+    public void setDescription(String description) {
+<span class="nc" id="L48">        this.description = description;</span>
+<span class="nc" id="L49">    }</span>
+
+    public int getPrice() {
+<span class="fc" id="L52">        return price;</span>
+    }
+
+    public void setPrice(int price) {
+<span class="nc" id="L56">        this.price = price;</span>
+<span class="nc" id="L57">    }</span>
+
+    public String getPathImage() {
+<span class="nc" id="L60">        return pathImage;</span>
+    }
+
+    public void setPathImage(String pathImage) {
+<span class="nc" id="L64">        this.pathImage = pathImage;</span>
+<span class="nc" id="L65">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L69">        return &quot;ProductImage{&quot; +</span>
+                &quot;price=&quot; + price +
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

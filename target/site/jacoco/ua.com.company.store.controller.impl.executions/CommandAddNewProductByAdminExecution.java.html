@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>CommandAddNewProductByAdminExecution.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.controller.impl.executions</a> &gt; <span class="el_source">CommandAddNewProductByAdminExecution.java</span></div><h1>CommandAddNewProductByAdminExecution.java</h1><pre class="source lang-java linenums">package ua.com.company.store.controller.impl.executions;
+
+import org.apache.log4j.Logger;
+import ua.com.company.store.constants.Redirection;
+import ua.com.company.store.controller.command.CommandTypical;
+import ua.com.company.store.model.dto.ProductDto;
+import ua.com.company.store.model.entity.Image;
+import ua.com.company.store.model.entity.Product;
+import ua.com.company.store.service.ProductImageService;
+import ua.com.company.store.validation.ValidatorAbstract;
+import ua.com.company.store.validation.products.DescriptionValidator;
+import ua.com.company.store.validation.products.ImageInformValidator;
+import ua.com.company.store.validation.products.TitleValidator;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
+import java.io.*;
+
+/**
+ * Created by Владислав on 03.12.2017.
+ */
+public class CommandAddNewProductByAdminExecution implements CommandTypical {
+
+    private ProductImageService productService;
+
+
+<span class="nc" id="L29">    private Logger logger = Logger.getRootLogger();</span>
+
+<span class="nc" id="L31">    public CommandAddNewProductByAdminExecution(ProductImageService productService) {</span>
+<span class="nc" id="L32">        this.productService = productService;</span>
+<span class="nc" id="L33">    }</span>
+
+    @Override
+    public String execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+<span class="nc" id="L37">        ProductDto productDto = getNewProductInputs(req.getParameter(&quot;title&quot;), req.getParameter(&quot;description&quot;), Integer.parseInt(req.getParameter(&quot;price&quot;)), downloadImage(req, resp));</span>
+<span class="nc bnc" id="L38" title="All 2 branches missed.">        if (doValidationInputs(productDto)) {</span>
+<span class="nc" id="L39">            Image image = new Image.ImageBuilder().setID(0)</span>
+<span class="nc" id="L40">                    .setPath(productDto.getImageInformation()[0])</span>
+<span class="nc" id="L41">                    .setdata(productDto.getImageInformation()[1]).build();</span>
+<span class="nc" id="L42">            Product product = new Product.ProductBuilder().setId(0)</span>
+<span class="nc" id="L43">                    .setTitle(productDto.getTitle())</span>
+<span class="nc" id="L44">                    .setDescr(productDto.getDescription())</span>
+<span class="nc" id="L45">                    .setPrice(productDto.getPrice())</span>
+<span class="nc" id="L46">                    .setImgId(0).build();</span>
+<span class="nc" id="L47">            productService.addProductAndImage(product, image);</span>
+<span class="nc" id="L48">            req.setAttribute(&quot;successful&quot;, &quot;Successful added new product: &quot; + product.getTitle());</span>
+<span class="nc" id="L49">            return Redirection.ADMIN_PAGE;</span>
+        } else {
+<span class="nc" id="L51">            req.setAttribute(&quot;error&quot;, &quot; NUll inputs!!!&quot;);</span>
+<span class="nc" id="L52">            return Redirection.ERRORS_WITH_INPUTS;</span>
+        }
+    }
+
+
+    /**
+     * Method for transportation information about product in object DTO
+     * @param title
+     * @param desc
+     * @param price
+     * @param imgInform
+     * @return
+     */
+    private ProductDto getNewProductInputs(String title, String desc, int price, String[] imgInform) {
+<span class="nc" id="L66">        return new ProductDto(title, desc, price, imgInform);</span>
+    }
+
+    /**
+     * Function witch do validation inputs using change of responsibility pattern
+     * @param productDto
+     * @return
+     */
+    private boolean doValidationInputs(ProductDto productDto) {
+<span class="nc" id="L75">        ValidatorAbstract validatorAbstractTitle = new TitleValidator();</span>
+<span class="nc" id="L76">        ValidatorAbstract validatorAbstractDescription = new DescriptionValidator();</span>
+<span class="nc" id="L77">        ValidatorAbstract validatorAbstractPrice = new DescriptionValidator();</span>
+<span class="nc" id="L78">        ValidatorAbstract validatorAbstractImageInform = new ImageInformValidator();</span>
+
+<span class="nc" id="L80">        validatorAbstractTitle.setNextValidator(validatorAbstractDescription);</span>
+<span class="nc" id="L81">        validatorAbstractDescription.setNextValidator(validatorAbstractPrice);</span>
+<span class="nc" id="L82">        validatorAbstractPrice.setNextValidator(validatorAbstractImageInform);</span>
+
+<span class="nc" id="L84">        return validatorAbstractTitle.validate(productDto.getTitle(), productDto.getDescription(), String.valueOf(productDto.getPrice()), productDto.getImageInformation()[0], productDto.getImageInformation()[1]);</span>
+    }
+
+    /**
+     * Method witch do byte-byte writing image for product from Admin
+     * @param req
+     * @param resp
+     * @return
+     * @throws ServletException
+     * @throws IOException
+     */
+    private String[] downloadImage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+<span class="nc" id="L96">        final String path = &quot;G:\\JAVA\\EPAM\\GiveawayStore\\web\\resources\\images&quot;;</span>
+<span class="nc" id="L97">        final Part filePart = req.getPart(&quot;file&quot;);</span>
+<span class="nc" id="L98">        final String fileName = getFileName(filePart);</span>
+
+<span class="nc" id="L100">        OutputStream out = null;</span>
+<span class="nc" id="L101">        InputStream fileContent = null;</span>
+
+        try {
+<span class="nc" id="L104">            out = new FileOutputStream(new File(path + File.separator + fileName));</span>
+<span class="nc" id="L105">            fileContent = filePart.getInputStream();</span>
+<span class="nc" id="L106">            int read = 0;</span>
+<span class="nc" id="L107">            final byte[] bytes = new byte[1024];</span>
+
+<span class="nc bnc" id="L109" title="All 2 branches missed.">            while ((read = fileContent.read(bytes)) != -1) {</span>
+<span class="nc" id="L110">                out.write(bytes, 0, read);</span>
+            }
+<span class="nc" id="L112">            logger.info(&quot;File being uploaded &quot;);</span>
+
+<span class="nc" id="L114">        } catch (FileNotFoundException e) {</span>
+<span class="nc" id="L115">            logger.info(&quot;Problems during file upload. Error: {0}&quot; + e.getMessage());</span>
+        } finally {
+<span class="nc bnc" id="L117" title="All 6 branches missed.">            if (out != null) {</span>
+<span class="nc" id="L118">                out.close();</span>
+            }
+<span class="nc bnc" id="L120" title="All 6 branches missed.">            if (fileContent != null) {</span>
+<span class="nc" id="L121">                out.close();</span>
+            }
+<span class="nc" id="L123">        }</span>
+
+<span class="nc" id="L125">        return new String[]{path, fileName};</span>
+    }
+
+    private String getFileName(final Part part) {
+<span class="nc bnc" id="L129" title="All 2 branches missed.">        for (String content : part.getHeader(&quot;content-disposition&quot;).split(&quot;;&quot;)) {</span>
+<span class="nc bnc" id="L130" title="All 2 branches missed.">            if (content.trim().startsWith(&quot;filename&quot;)) {</span>
+<span class="nc" id="L131">                return content.substring(content.indexOf('=') + 1).trim().replace(&quot;\&quot;&quot;, &quot;&quot;);</span>
+            }
+        }
+<span class="nc" id="L134">        return null;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

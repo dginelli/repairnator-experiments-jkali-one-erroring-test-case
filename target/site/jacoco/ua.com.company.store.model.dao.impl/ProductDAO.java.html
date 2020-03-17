@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ProductDAO.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.model.dao.impl</a> &gt; <span class="el_source">ProductDAO.java</span></div><h1>ProductDAO.java</h1><pre class="source lang-java linenums">package ua.com.company.store.model.dao.impl;
+
+import ua.com.company.store.model.dao.connection.JDBCConnectionPool;
+import ua.com.company.store.model.dao.daoAbstract.AbstractDao;
+import ua.com.company.store.model.entity.Image;
+import ua.com.company.store.model.entity.Product;
+import ua.com.company.store.model.entity.User;
+import ua.com.company.store.model.entity.additional.ProductImage;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by Владислав on 04.12.2017.
+ */
+public class ProductDAO extends AbstractDao&lt;Product&gt; {
+    public ProductDAO(JDBCConnectionPool jdbcConnectionPool) {
+<span class="nc" id="L19">        super(jdbcConnectionPool);</span>
+<span class="nc" id="L20">    }</span>
+
+    @Override
+    public Product update() {
+<span class="nc" id="L24">        return null;</span>
+    }
+
+    @Override
+    public String getSelectQuery() {
+<span class="nc" id="L29">        return &quot;select * from onlinestoreproject.products &quot;;</span>
+    }
+
+    @Override
+    public String getCreateQuery() {
+<span class="nc" id="L34">        return null;</span>
+    }
+
+    @Override
+    public String getUpdateQuery() {
+<span class="nc" id="L39">        return null;</span>
+    }
+
+    @Override
+    public String getDeleteQuery() {
+<span class="nc" id="L44">        return &quot;delete from onlinestoreproject.products where id = ? &quot;;</span>
+    }
+
+    @Override
+    public String getInsertQuery() {
+<span class="nc" id="L49">        return &quot;insert into onlinestoreproject.products(id,title,description,price,image_id) values(?,?,?,?,?)&quot;;</span>
+    }
+
+    @Override
+    protected List&lt;Product&gt; parseResultSet(ResultSet rs) {
+<span class="nc" id="L54">        List&lt;Product&gt; list = new ArrayList&lt;&gt;();</span>
+        try {
+<span class="nc bnc" id="L56" title="All 2 branches missed.">            while (rs.next()){</span>
+<span class="nc" id="L57">                Product product = new Product.ProductBuilder().setId(rs.getInt(&quot;id&quot;))</span>
+<span class="nc" id="L58">                        .setTitle(rs.getString(&quot;title&quot;))</span>
+<span class="nc" id="L59">                        .setDescr(rs.getString(&quot;description&quot;))</span>
+<span class="nc" id="L60">                        .setPrice(rs.getInt(&quot;price&quot;))</span>
+<span class="nc" id="L61">                        .setImgId(rs.getInt(&quot;image_id&quot;))</span>
+<span class="nc" id="L62">                        .build();</span>
+<span class="nc" id="L63">                list.add(product);</span>
+<span class="nc" id="L64">            }</span>
+
+<span class="nc" id="L66">        } catch (SQLException e) {</span>
+<span class="nc" id="L67">            e.printStackTrace();</span>
+<span class="nc" id="L68">        }</span>
+<span class="nc" id="L69">        return list;</span>
+    }
+
+    @Override
+    protected void prepareStatemantForInsert(PreparedStatement statement, Product object) {
+        try {
+<span class="nc" id="L75">            statement.setInt(1, 0);</span>
+<span class="nc" id="L76">            statement.setString(2, object.getTitle());</span>
+<span class="nc" id="L77">            statement.setString(3, object.getDescription());</span>
+<span class="nc" id="L78">            statement.setInt(4, object.getPrice());</span>
+
+<span class="nc" id="L80">        } catch (SQLException e) {</span>
+<span class="nc" id="L81">            e.printStackTrace();</span>
+<span class="nc" id="L82">        }</span>
+
+<span class="nc" id="L84">    }</span>
+
+    @Override
+    protected void prepareStatemantForDelete(PreparedStatement statement, Product object) {
+        try {
+<span class="nc" id="L89">            statement.setInt(1, object.getId());</span>
+<span class="nc" id="L90">        } catch (SQLException e) {</span>
+<span class="nc" id="L91">            e.printStackTrace();</span>
+<span class="nc" id="L92">        }</span>
+<span class="nc" id="L93">    }</span>
+
+    @Override
+    public Product getByParameter(String parameter) {
+<span class="nc bnc" id="L97" title="All 2 branches missed.">        for (Product product: getAllProducts()){</span>
+<span class="nc bnc" id="L98" title="All 2 branches missed.">            if (product.getId() == Integer.parseInt(parameter)){</span>
+<span class="nc" id="L99">                return product;</span>
+            }
+            else {
+<span class="nc" id="L102">                return null;</span>
+            }
+        }
+<span class="nc" id="L105">        return null;</span>
+    }
+
+    public List&lt;Product&gt; getAllProducts() {
+<span class="nc" id="L109">        List&lt;Product&gt; productImageList = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L110">        String query = getSelectQuery();</span>
+        PreparedStatement preparedStatement;
+        ResultSet resultSet;
+<span class="nc" id="L113">        try (Connection connection = JDBCConnectionPool.getInstanceConnectionPool().getConnection()) {</span>
+<span class="nc" id="L114">            preparedStatement = connection.prepareStatement(query);</span>
+<span class="nc" id="L115">            resultSet = preparedStatement.executeQuery();</span>
+<span class="nc" id="L116">            productImageList = parseResultSet(resultSet);</span>
+
+<span class="nc bnc" id="L118" title="All 8 branches missed.">        } catch (SQLException e) {</span>
+<span class="nc" id="L119">            e.printStackTrace();</span>
+<span class="nc" id="L120">        }</span>
+
+<span class="nc" id="L122">        return productImageList;</span>
+    }
+
+
+
+
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>CommandSignUpFormExecution.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.controller.impl.executions</a> &gt; <span class="el_source">CommandSignUpFormExecution.java</span></div><h1>CommandSignUpFormExecution.java</h1><pre class="source lang-java linenums">package ua.com.company.store.controller.impl.executions;
+
+import org.apache.log4j.Logger;
+import ua.com.company.store.constants.Redirection;
+import ua.com.company.store.controller.command.CommandTypical;
+import ua.com.company.store.utils.CookiesAction;
+import ua.com.company.store.utils.RedirectionManager;
+import ua.com.company.store.utils.ServletWrapper;
+import ua.com.company.store.utils.SessionManager;
+import ua.com.company.store.hashing.PasswordHashing;
+import ua.com.company.store.model.dto.SignUpDto;
+import ua.com.company.store.model.entity.User;
+import ua.com.company.store.service.UserService;
+import ua.com.company.store.validation.ValidatorAbstract;
+import ua.com.company.store.validation.signup.LoginValidator;
+import ua.com.company.store.validation.signup.PasswordValidator;
+import ua.com.company.store.validation.signup.EmailValidator;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
+
+/**
+ * Created by Владислав on 29.11.2017.
+ */
+public class CommandSignUpFormExecution implements CommandTypical {
+<span class="nc" id="L30">    private Logger logger = Logger.getRootLogger();</span>
+    private UserService userService;
+    private PasswordHashing passwordHashing;
+
+<span class="nc" id="L34">    public CommandSignUpFormExecution(UserService userService, PasswordHashing passwordHashing) {</span>
+<span class="nc" id="L35">        this.userService = userService;</span>
+<span class="nc" id="L36">        this.passwordHashing = passwordHashing;</span>
+<span class="nc" id="L37">    }</span>
+
+    @Override
+    public String execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+<span class="nc bnc" id="L42" title="All 2 branches missed.">        if (req.getSession().getAttribute(&quot;user&quot;) != null) {</span>
+<span class="nc" id="L43">            return Redirection.ACCESS_ERROR_PAGE;</span>
+        }
+
+<span class="nc" id="L46">        String login = req.getParameter(&quot;login&quot;);</span>
+<span class="nc" id="L47">        System.out.println(login);</span>
+
+
+<span class="nc" id="L50">        String pass = req.getParameter(&quot;password&quot;);</span>
+<span class="nc" id="L51">        String email = req.getParameter(&quot;email&quot;);</span>
+
+<span class="nc" id="L53">        String checkedIds = req.getParameter(&quot;checkMeOut&quot;);</span>
+
+
+<span class="nc" id="L56">        HttpSession session = req.getSession(true);</span>
+<span class="nc" id="L57">        SignUpDto signUpDto = getUserInput(login, email, pass);</span>
+<span class="nc" id="L58">        User user = null;</span>
+<span class="nc bnc" id="L59" title="All 2 branches missed.">        if (doValidationInputs(signUpDto)) {</span>
+<span class="nc" id="L60">            logger.info(&quot;Successful validated inputs signUp&quot;);</span>
+            try {
+<span class="nc" id="L62">                user = new User.UserBuilder().id(0).nickname(signUpDto.getLogin()).password(passwordHashing.hashingPassword(signUpDto.getPassword()))</span>
+<span class="nc" id="L63">                        .email(signUpDto.getEmail()).role(false).isDefaulter(false).build();</span>
+<span class="nc" id="L64">                System.out.println(user.toString());</span>
+<span class="nc" id="L65">            } catch (NoSuchAlgorithmException e) {</span>
+<span class="nc" id="L66">                e.printStackTrace();</span>
+<span class="nc" id="L67">            }</span>
+<span class="nc bnc" id="L68" title="All 2 branches missed.">            if (userService.validationUserOnBeforeExist(user)) {</span>
+<span class="nc" id="L69">                logger.info(&quot;Validation on existing user is fallen&quot;);</span>
+<span class="nc" id="L70">                req.setAttribute(&quot;userEmail&quot;, user.getEmail());</span>
+<span class="nc" id="L71">                return Redirection.EXIST_USER_ERROR;</span>
+            } else {
+<span class="nc bnc" id="L73" title="All 2 branches missed.">                if (SessionManager.getSessionManager().isUserLoggedIn(session)) {</span>
+<span class="nc" id="L74">                    RedirectionManager.getRediractionManger().redirect(new ServletWrapper(req, resp), &quot;/main.jsp&quot;);</span>
+<span class="nc" id="L75">                    return RedirectionManager.REDIRECTION;</span>
+                }
+<span class="nc" id="L77">                int userID = userService.addUser(user);</span>
+<span class="nc" id="L78">                User userFromDB = userService.getById(userID);</span>
+<span class="nc" id="L79">                session.setAttribute(&quot;user&quot;, userFromDB);</span>
+<span class="nc" id="L80">                req.setAttribute(&quot;user&quot;, userFromDB);</span>
+
+<span class="nc bnc" id="L82" title="All 4 branches missed.">                if (checkedIds != null &amp;&amp; checkedIds.equals(&quot;OK&quot;)) {</span>
+<span class="nc" id="L83">                    CookiesAction.setCookieUserInform(resp, user);</span>
+<span class="nc" id="L84">                    logger.info(&quot;Marked checkbox and added user in cookie successfully&quot;);</span>
+                } else {
+<span class="nc" id="L86">                    logger.info(&quot;Continue execution without adding in cookie &quot;);</span>
+                }
+<span class="nc" id="L88">                return Redirection.MAIN_PAGE;</span>
+            }
+        } else {
+<span class="nc" id="L91">            logger.info(&quot;Validated inputs unsuccessful &quot; + login + &quot; -- &quot; + pass);</span>
+<span class="nc" id="L92">            req.setAttribute(&quot;error&quot;, &quot; NUll inputs!!!&quot;);</span>
+<span class="nc" id="L93">            return Redirection.ERRORS_WITH_INPUTS;</span>
+        }
+    }
+
+    private SignUpDto getUserInput(String login, String email, String password) {
+<span class="nc" id="L98">        return new SignUpDto(login, email, password);</span>
+    }
+
+    private boolean doValidationInputs(SignUpDto signUpDto) {
+<span class="nc" id="L102">        ValidatorAbstract validatorAbstractLogin = new LoginValidator();</span>
+<span class="nc" id="L103">        ValidatorAbstract validatorAbstractPassword = new PasswordValidator();</span>
+<span class="nc" id="L104">        ValidatorAbstract validatorAbstractEmail = new EmailValidator();</span>
+<span class="nc" id="L105">        validatorAbstractLogin.setNextValidator(validatorAbstractPassword);</span>
+<span class="nc" id="L106">        validatorAbstractPassword.setNextValidator(validatorAbstractEmail);</span>
+<span class="nc" id="L107">        return validatorAbstractLogin.validate(signUpDto.getLogin(), signUpDto.getPassword(), signUpDto.getEmail());</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

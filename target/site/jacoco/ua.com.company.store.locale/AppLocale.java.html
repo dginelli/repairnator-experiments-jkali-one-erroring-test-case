@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>AppLocale.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.locale</a> &gt; <span class="el_source">AppLocale.java</span></div><h1>AppLocale.java</h1><pre class="source lang-java linenums">package ua.com.company.store.locale;
+
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+
+/**
+ * Created by Владислав on 06.12.2017.
+ */
+<span class="nc" id="L11">public enum  AppLocale {</span>
+<span class="nc" id="L12">    EN(new Locale(&quot;en&quot;,&quot;US&quot;)),</span>
+<span class="nc" id="L13">    UA(new Locale(&quot;uk&quot;,&quot;UA&quot;));</span>
+
+<span class="nc" id="L15">    private final static Locale DEFAULT_LOCALE = EN.getLocale();</span>
+    private Locale locale;
+
+<span class="nc" id="L18">    AppLocale(Locale locale) {</span>
+<span class="nc" id="L19">       this.locale = locale;</span>
+<span class="nc" id="L20">    }</span>
+
+    public static Locale getDefaultLocale() {
+<span class="nc" id="L23">        return DEFAULT_LOCALE;</span>
+    }
+
+    public Locale getLocale() {
+<span class="nc" id="L27">        return locale;</span>
+    }
+
+    public static Locale forValue(String lang){
+<span class="nc bnc" id="L31" title="All 2 branches missed.">        for (final AppLocale locale : AppLocale.values()){</span>
+<span class="nc bnc" id="L32" title="All 2 branches missed.">            if (locale.getLocale().getLanguage().equalsIgnoreCase(lang)){</span>
+<span class="nc" id="L33">                return locale.getLocale();</span>
+            }
+        }
+<span class="nc" id="L36">        return getDefaultLocale();</span>
+    }
+    public static List&lt;Locale&gt; getAppLocales(){
+<span class="nc" id="L39">            List&lt;Locale&gt; locales = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L40" title="All 2 branches missed.">            for (AppLocale appLocale : AppLocale.values()){</span>
+<span class="nc" id="L41">                locales.add(appLocale.getLocale());</span>
+            }
+<span class="nc" id="L43">    return locales;</span>
+    }
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

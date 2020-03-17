@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>JDBCConnectionPool.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.model.dao.connection</a> &gt; <span class="el_source">JDBCConnectionPool.java</span></div><h1>JDBCConnectionPool.java</h1><pre class="source lang-java linenums">package ua.com.company.store.model.dao.connection;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Driver;
+import org.apache.log4j.Logger;
+
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+/**
+ * Created by Владислав on 27.11.2017.
+ */
+public class JDBCConnectionPool {
+<span class="fc" id="L16">    private Logger log = null;</span>
+    private String url;
+    private String user;
+    private String password;
+    private int maxConn;
+
+<span class="fc" id="L22">    public static int connectionCount = 0;</span>
+
+
+<span class="fc" id="L25">    private JDBCConnectionPool() {</span>
+<span class="fc" id="L26">        log = Logger.getRootLogger();</span>
+
+<span class="fc" id="L28">        this.url = &quot;jdbc:mysql://localhost:3306/onlinestoreproject?autoReconnect=true&amp;useSSL=false&amp;useUnicode=true&amp;amp;characterEncoding=cp1251&quot;;</span>
+<span class="fc" id="L29">        this.user = &quot;root&quot;;</span>
+<span class="fc" id="L30">        this.password = &quot;root&quot;;</span>
+<span class="fc" id="L31">        this.maxConn = 10;</span>
+
+<span class="fc" id="L33">        loadDrivers();</span>
+<span class="fc" id="L34">    }</span>
+
+    private static JDBCConnectionPool instance;
+<span class="fc" id="L37">    private ArrayList&lt;Connection&gt; freeConnections = new ArrayList&lt;Connection&gt;();</span>
+
+    public static synchronized JDBCConnectionPool getInstanceConnectionPool() {
+<span class="fc bfc" id="L40" title="All 2 branches covered.">        if (instance == null) {</span>
+<span class="fc" id="L41">            connectionCount++;</span>
+<span class="fc" id="L42">            instance = new JDBCConnectionPool();</span>
+<span class="fc" id="L43">            return instance;</span>
+        }
+<span class="fc" id="L45">        connectionCount++;</span>
+<span class="fc" id="L46">        return instance;</span>
+    }
+
+    public synchronized Connection getConnection() {
+<span class="nc" id="L50">        Connection connection = null;</span>
+<span class="nc bnc" id="L51" title="All 2 branches missed.">        if (!freeConnections.isEmpty()) {</span>
+<span class="nc" id="L52">            connection = freeConnections.get(freeConnections.size() - 1);</span>
+<span class="nc" id="L53">            freeConnections.remove(connection);</span>
+            try {
+<span class="nc bnc" id="L55" title="All 2 branches missed.">                if (connection.isClosed()) {</span>
+<span class="nc" id="L56">                    connection = getConnection();</span>
+<span class="nc" id="L57">                    log.debug(&quot;closed bad connection&quot;);</span>
+                }
+<span class="nc" id="L59">            } catch (SQLException e) {</span>
+<span class="nc" id="L60">                log.debug(&quot;closed bad connection&quot;);</span>
+<span class="nc" id="L61">                connection = getConnection();</span>
+<span class="nc" id="L62">            } catch (Exception e) {</span>
+<span class="nc" id="L63">                log.debug(&quot;closed bad connection&quot;);</span>
+<span class="nc" id="L64">                connection = getConnection();</span>
+<span class="nc" id="L65">            }</span>
+<span class="nc" id="L66">        } else connection = newConnection();</span>
+<span class="nc" id="L67">        return connection;</span>
+    }
+
+    private Connection newConnection() {
+<span class="nc" id="L71">        Connection connection = null;</span>
+        try {
+<span class="nc bnc" id="L73" title="All 2 branches missed.">            if (user == null) {</span>
+<span class="nc" id="L74">                connection = (Connection) DriverManager.getConnection(url);</span>
+            } else {
+<span class="nc" id="L76">                connection = (Connection) DriverManager.getConnection(url, user, password);</span>
+            }
+<span class="nc" id="L78">        } catch (SQLException e) {</span>
+<span class="nc" id="L79">            log.error(&quot;Cant create connection fo this &quot; + url);</span>
+<span class="nc" id="L80">        }</span>
+<span class="nc" id="L81">        return connection;</span>
+    }
+
+    /**
+     * @param connection Method put connection to the end of list if its possible;
+     */
+    public synchronized void freeConnection(Connection connection) {
+<span class="nc bnc" id="L88" title="All 4 branches missed.">        if (connection != null &amp;&amp; freeConnections.size() &lt; maxConn) {</span>
+<span class="nc" id="L89">            freeConnections.add(connection);</span>
+        }
+<span class="nc" id="L91">    }</span>
+
+    /**
+     * Method use iterator for getting connections and to close everyone;
+     */
+    public synchronized void released() {
+<span class="nc" id="L97">        Iterator allConnections = freeConnections.iterator();</span>
+<span class="nc bnc" id="L98" title="All 2 branches missed.">        while (allConnections.hasNext()) {</span>
+<span class="nc" id="L99">            Connection connection = (Connection) allConnections.next();</span>
+
+            try {
+<span class="nc" id="L102">                connection.close();</span>
+<span class="nc" id="L103">            } catch (SQLException e) {</span>
+<span class="nc" id="L104">                log.error(&quot;Cant close connection&quot;);</span>
+<span class="nc" id="L105">            }</span>
+<span class="nc" id="L106">        }</span>
+<span class="nc" id="L107">        freeConnections.clear();</span>
+<span class="nc" id="L108">    }</span>
+
+
+    private void loadDrivers() {
+        try {
+<span class="fc" id="L113">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;).newInstance();</span>
+
+<span class="nc" id="L115">        } catch (InstantiationException e) {</span>
+<span class="nc" id="L116">            log.error(&quot;Error in downloading mysql driver &quot; + e.getMessage());</span>
+<span class="nc" id="L117">            e.printStackTrace();</span>
+<span class="nc" id="L118">        } catch (IllegalAccessException e) {</span>
+<span class="nc" id="L119">            e.printStackTrace();</span>
+<span class="nc" id="L120">        } catch (ClassNotFoundException e) {</span>
+<span class="nc" id="L121">            e.printStackTrace();</span>
+<span class="pc" id="L122">        }</span>
+        try {
+<span class="fc" id="L124">            Driver driver = new com.mysql.jdbc.Driver();</span>
+<span class="fc" id="L125">            DriverManager.registerDriver(driver);</span>
+<span class="nc" id="L126">        } catch (Exception e) {</span>
+<span class="nc" id="L127">            log.error(&quot;Cant register jdbc driver.&quot;);</span>
+<span class="fc" id="L128">        }</span>
+<span class="fc" id="L129">    }</span>
+
+    public static int getConnectionCount() {
+<span class="nc" id="L132">        return connectionCount;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

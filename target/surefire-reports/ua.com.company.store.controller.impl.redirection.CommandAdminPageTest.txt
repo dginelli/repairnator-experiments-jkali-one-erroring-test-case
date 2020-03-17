@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: ua.com.company.store.controller.impl.redirection.CommandAdminPageTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.035 sec <<< FAILURE! - in ua.com.company.store.controller.impl.redirection.CommandAdminPageTest
+verifUserInSessionRedirectionTest(ua.com.company.store.controller.impl.redirection.CommandAdminPageTest)  Time elapsed: 0.026 sec  <<< ERROR!
+org.mockito.exceptions.misusing.UnfinishedVerificationException: 
+Missing method call for verify(mock) here:
+-> at ua.com.company.store.utils.CookiesAction.getUserFromCookie(CookiesAction.java:36)
+
+Example of correct verification:
+    verify(mock).doSomething()
+
+Also, this error might show up because you verify either of: final/private/equals()/hashCode() methods.
+Those methods *cannot* be stubbed/verified.
+
+	at ua.com.company.store.controller.impl.redirection.CommandAdminPageTest.setUp(CommandAdminPageTest.java:31)
+

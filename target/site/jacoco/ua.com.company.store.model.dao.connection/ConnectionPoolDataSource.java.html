@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ConnectionPoolDataSource.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.model.dao.connection</a> &gt; <span class="el_source">ConnectionPoolDataSource.java</span></div><h1>ConnectionPoolDataSource.java</h1><pre class="source lang-java linenums">package ua.com.company.store.model.dao.connection;
+
+import org.apache.log4j.Logger;
+import org.apache.tomcat.jdbc.pool.DataSource;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+/**
+ * Created by Владислав on 25.11.2017.
+ */
+public class ConnectionPoolDataSource {
+<span class="nc" id="L14">    private Logger logger = Logger.getRootLogger();</span>
+    private DataSource dataSource;
+
+<span class="nc" id="L17">    public ConnectionPoolDataSource() {</span>
+        try {
+<span class="nc" id="L19">            Context context = new InitialContext();</span>
+<span class="nc" id="L20">            Context envContext = (Context) context.lookup(&quot;java:comp/env&quot;);</span>
+<span class="nc" id="L21">            logger.info(&quot;Created &quot;    + context.toString() + &quot; &quot; + envContext.toString());</span>
+<span class="nc" id="L22">            dataSource = (DataSource) envContext.lookup(&quot;jdbc/store&quot;);</span>
+<span class="nc" id="L23">            logger.info(&quot;Created data source &quot; + dataSource.toString());</span>
+<span class="nc" id="L24">        } catch (NamingException e) {</span>
+<span class="nc" id="L25">            logger.error(&quot;cant create context &quot; + e.getMessage());</span>
+<span class="nc" id="L26">            e.printStackTrace();</span>
+<span class="nc" id="L27">        }</span>
+<span class="nc" id="L28">    }</span>
+
+    public DataSource getDataSource() {
+<span class="nc" id="L31">        return dataSource;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

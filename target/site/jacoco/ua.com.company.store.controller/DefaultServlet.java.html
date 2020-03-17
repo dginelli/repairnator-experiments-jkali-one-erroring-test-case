@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>DefaultServlet.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Store</a> &gt; <a href="index.source.html" class="el_package">ua.com.company.store.controller</a> &gt; <span class="el_source">DefaultServlet.java</span></div><h1>DefaultServlet.java</h1><pre class="source lang-java linenums">package ua.com.company.store.controller;
+
+import org.apache.log4j.Logger;
+import ua.com.company.store.controller.command.CommandFactory;
+import ua.com.company.store.controller.command.CommandTypical;
+import ua.com.company.store.utils.CommandKeyGenerator;
+import ua.com.company.store.utils.JDBCConnectionPoolManager;
+import ua.com.company.store.utils.RedirectionManager;
+import ua.com.company.store.utils.ServletWrapper;
+import ua.com.company.store.exceptions.ServiceException;
+import ua.com.company.store.locale.AppLocale;
+import ua.com.company.store.model.dao.connection.JDBCConnectionPool;
+import ua.com.company.store.model.dao.exceptions.PersistException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
+import java.util.Map;
+
+
+
+@WebServlet(name = &quot;default servlet &quot;, urlPatterns = {&quot;/store/*&quot;}, loadOnStartup = 1)
+@MultipartConfig
+public class DefaultServlet extends HttpServlet {
+<span class="nc" id="L31">    private Logger logger = Logger.getRootLogger();</span>
+   private JDBCConnectionPoolManager  jdbcConnectionPoolManager ;
+
+<span class="nc" id="L34">    public DefaultServlet() throws PersistException {</span>
+
+<span class="nc" id="L36">    }</span>
+
+    @Override
+    public void init() throws ServletException {
+<span class="nc" id="L40">        jdbcConnectionPoolManager = JDBCConnectionPoolManager.getInstance();</span>
+<span class="nc" id="L41">        jdbcConnectionPoolManager.setJdbcConnectionPool(JDBCConnectionPool.getInstanceConnectionPool());</span>
+<span class="nc" id="L42">        getServletContext().setAttribute(&quot;locales&quot;, AppLocale.getAppLocales());</span>
+<span class="nc" id="L43">        logger.info(&quot;Initialized default servlet  &quot; + this.toString());</span>
+<span class="nc" id="L44">    }</span>
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+<span class="nc" id="L48">        process(req, resp);</span>
+<span class="nc" id="L49">    }</span>
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+<span class="nc" id="L53">        process(req, resp);</span>
+<span class="nc" id="L54">    }</span>
+
+    private void process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+<span class="nc" id="L57">       req.setCharacterEncoding(&quot;utf-8&quot;);</span>
+<span class="nc" id="L58">        String key = CommandKeyGenerator.generateCommandKeyByRequest(req);</span>
+<span class="nc" id="L59">        logger.info(&quot;Query with url: &quot; + key);</span>
+<span class="nc" id="L60">        CommandTypical commandTypical = CommandFactory.getCommand(key);</span>
+<span class="nc" id="L61">        logger.info(&quot;Command key execution: &quot; + commandTypical.toString());</span>
+<span class="nc" id="L62">        String redirectionPath = commandTypical.execute(req, resp);</span>
+
+<span class="nc" id="L64">        logger.info(&quot;Redirection path: &quot; + redirectionPath);</span>
+<span class="nc" id="L65">        forwardToCommandResultPage(new ServletWrapper(req, resp), redirectionPath);</span>
+
+<span class="nc" id="L67">    }</span>
+
+    private void forwardToCommandResultPage(ServletWrapper servletWrapper, String commandRes) throws ServletException, IOException {
+<span class="nc bnc" id="L70" title="All 2 branches missed.">        if (!commandRes.contains(RedirectionManager.REDIRECTION)) {</span>
+<span class="nc" id="L71">            servletWrapper.getRequest().getRequestDispatcher(commandRes).forward(servletWrapper.getRequest(),servletWrapper.getResponse());</span>
+        } else {
+<span class="nc" id="L73">            String[] newCommandRes = commandRes.split(&quot; &quot;);</span>
+<span class="nc" id="L74">            servletWrapper.getResponse().sendRedirect(newCommandRes[0]);</span>
+        }
+<span class="nc" id="L76">    }</span>
+
+    private void redirectToHomePageWithErrorMessage(ServletWrapper servletWrapper, ServiceException se) {
+<span class="nc" id="L79">        Map&lt;String, String&gt; urlParams = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L80">        urlParams.put(&quot;error&quot;, se.getMessage());</span>
+        try {
+<span class="nc" id="L82">            RedirectionManager.getRediractionManger().redirectWithParams(servletWrapper, &quot;main.jsp&quot;, urlParams);</span>
+<span class="nc" id="L83">        } catch (UnsupportedEncodingException e) {</span>
+<span class="nc" id="L84">            e.printStackTrace();</span>
+<span class="nc" id="L85">        }</span>
+<span class="nc" id="L86">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>
