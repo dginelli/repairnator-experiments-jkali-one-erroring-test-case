@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/incubator-servicecomb-java-chassis",
-  "bugCommit": "https://github.com/apache/incubator-servicecomb-java-chassis/compare/1.0.0-m1",
-  "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/348175528/foundations/foundation-vertx",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 422,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.servicecomb.foundation.vertx.client.tcp.TestAbstractTcpClientPoolFactory",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.servicecomb.foundation.vertx.client.tcp.TestAbstractTcpClientPoolFactory#createClientPool"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-348175528-20180302-113807-firstCommit/foundations/foundation-vertx",
+    "overallMetrics": {
+      "numberRunning": 422,
+      "numberPassing": 421,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConnection",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConnection",
+        "testMethod": "send_inWorkingStatus",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 62,
+    "numberPlugins": 0,
+    "numberSourceFiles": 829,
+    "numberTestFiles": 500,
+    "numberLibrariesFailingModule": 66,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:10 AM",
+    "reproductionDateEnd": "Mar 18, 2020 12:16:31 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 36250272,
+      "totalMemory": 117182464
+    },
+    "totalDuration": 6317,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-348175528-20180302-113807-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
