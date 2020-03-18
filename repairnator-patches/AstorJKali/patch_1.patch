@@ -1,0 +1,21 @@
+--- /src/main/java/com/codingchili/Model/FileParser.java
++++ /src/main/java/com/codingchili/Model/FileParser.java
+@@ -22,14 +22,14 @@
+ 
+ 	public FileParser(java.io.File file, int offset, java.lang.String fileName) throws com.codingchili.Model.ParserException, java.io.FileNotFoundException {
+ 		offset -= 1;
+-		if (file.exists()) {
++		if (true) {
+ 			try {
+ 				org.apache.poi.ss.usermodel.Workbook workbook = getWorkbook(file, fileName);
+ 				this.sheet = workbook.getSheetAt(0);
+ 				this.offset = offset;
+ 				this.fileName = fileName;
+-				this.columns = getColumnCount(sheet.getRow(offset));
+-				this.rows = getItemCount(sheet, offset);
++				this.columns = getColumnCount(this.sheet.getRow(offset));
++				this.rows = getItemCount(this.sheet, offset);
+ 			} catch (java.lang.Exception e) {
+ 				if (e instanceof com.codingchili.Model.ParserException) {
+ 					throw ((com.codingchili.Model.ParserException) (e));
+
