@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "atomix/atomix",
-  "bugCommit": "https://github.com/atomix/atomix/compare/14ce45c7ab47...cb2cbac27d28",
-  "failingModule": "/root/workspace/atomix/atomix/397651499/cluster",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.util.concurrent.TimeoutException"
-  ],
-  "totalNumberRunningTests": 50,
-  "failing-test-cases": [
-    {
-      "className": "io.atomix.cluster.messaging.impl.NettyBroadcastServiceTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testBroadcast"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:30:56 AM",
+    "reproductionDateEnd": "Mar 18, 2020 12:15:08 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 101009408,
+      "totalMemory": 190889984
+    },
+    "totalDuration": 6248,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-397651499-20180628-074729-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-397651499-20180628-074729-firstCommit/cluster",
+    "overallMetrics": {
+      "numberRunning": 47,
+      "numberPassing": 46,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 3,
       "failures": [
         {
           "failureName": "java.util.concurrent.TimeoutException",
-          "failureDetail": "Test timed out while waiting for an expected result",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.atomix.cluster.messaging.impl.NettyBroadcastServiceTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.atomix.cluster.messaging.impl.NettyBroadcastServiceTest",
+        "testMethod": "testBroadcast",
+        "failureName": "java.util.concurrent.TimeoutException",
+        "detail": "Test timed out while waiting for an expected result",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberPlugins": 0,
+    "numberSourceFiles": 953,
+    "numberTestFiles": 156,
+    "numberLibrariesFailingModule": 32,
+    "numberLines": 0
+  }
 }
