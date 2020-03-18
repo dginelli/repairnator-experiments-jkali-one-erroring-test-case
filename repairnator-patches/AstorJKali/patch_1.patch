@@ -1,0 +1,20 @@
+--- /src/main/java/io/atomix/cluster/messaging/impl/NettyMessagingService.java
++++ /src/main/java/io/atomix/cluster/messaging/impl/NettyMessagingService.java
+@@ -471,12 +471,12 @@
+ 			b.childHandler(new io.atomix.cluster.messaging.impl.NettyMessagingService.BasicChannelInitializer());
+ 		}
+ 		b.bind(localAddress.port()).addListener(((io.netty.channel.ChannelFutureListener) (( f) -> {
+-			if (f.isSuccess()) {
+-				log.info("{} accepting incoming connections on port {}", localAddress.address(), localAddress.port());
+-				serverChannel = f.channel();
++			if (true) {
++				this.log.info("{} accepting incoming connections on port {}", this.localAddress.address(), this.localAddress.port());
++				this.serverChannel = f.channel();
+ 				future.complete(null);
+ 			} else {
+-				log.warn("{} failed to bind to port {} due to {}", localAddress.address(), localAddress.port(), f.cause());
++				this.log.warn("{} failed to bind to port {} due to {}", this.localAddress.address(), this.localAddress.port(), f.cause());
+ 				future.completeExceptionally(f.cause());
+ 			}
+ 		})));
+
