@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "carlosthe19916/sunat-jaxb",
-  "bugCommit": "https://github.com/carlosthe19916/sunat-jaxb/compare/43a540f54359...1914c7d9ef82",
-  "failingModule": "/root/workspace/carlosthe19916/sunat-jaxb/375997237",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NumberFormatException"
-  ],
-  "totalNumberRunningTests": 2,
-  "failing-test-cases": [
-    {
-      "className": "io.github.carlosthe19916.beans.InvoiceBeanTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.github.carlosthe19916.beans.InvoiceBeanTest#testBuilder"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-carlosthe19916-sunat-jaxb-375997237-20180507-192552-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 1,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NumberFormatException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.github.carlosthe19916.beans.InvoiceBeanTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.github.carlosthe19916.beans.InvoiceBeanTest",
+        "testMethod": "testBuilder",
+        "failureName": "java.lang.NumberFormatException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 47,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:16 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:38:14 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 369108840,
+      "totalMemory": 926830592
+    },
+    "totalDuration": 416,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 332,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          332
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-carlosthe19916-sunat-jaxb-375997237-20180507-192552-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
