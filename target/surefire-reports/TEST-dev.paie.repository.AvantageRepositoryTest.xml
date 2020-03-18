@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.paie.repository.AvantageRepositoryTest" time="0.021" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="skip.gulp" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="findbugs.skip" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="skip.npm" value="true"/>
+    <property name="java.endorsed.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="gpg.skip" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="cobertura.skip" value="true"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/hpc2n/eb/software/Core/Maven/3.6.0/lib:/hpc2n/eb/software/Core/Java/1.8.0_202/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="license.skip" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="skip.bower" value="true"/>
+    <property name="maven.repo.local" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit/.m2"/>
+    <property name="os.version" value="4.15.0-91-generic"/>
+    <property name="user.home" value="/home/d/dginelli"/>
+    <property name="user.timezone" value="Europe/Stockholm"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="dginelli"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="skipITs" value="true"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -e -D enforcer.skip=true -D dependency-check.skip=true -D skipITs=true -D cobertura.skip=true -D maven.repo.local=/scratch/dginelli/workspace/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit/.m2 -D rat.skip=true -D findbugs.skip=true -D skip.bower=true -D gpg.skip=true -D skip.gulp=true -D license.skip=true -D skip.npm=true test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="dependency-check.skip" value="true"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/resources.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/rt.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/sunrsasign.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jsse.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jce.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/charsets.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jfr.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="enforcer.skip" value="true"/>
+    <property name="rat.skip" value="true"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="test_sauvegarder_lister_mettre_a_jour" classname="dev.paie.repository.AvantageRepositoryTest" time="0.021">
+    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at dev.paie.entite.Avantage.equals(Avantage.java:61)
+	at dev.paie.repository.AvantageRepositoryTest.test_sauvegarder_lister_mettre_a_jour(AvantageRepositoryTest.java:36)
+</error>
+    <system-out><![CDATA[Hibernate: drop table Avantage if exists
+Hibernate: drop table avantage_profil if exists
+Hibernate: drop table Cotisation if exists
+Hibernate: drop table cotisation_imposable if exists
+Hibernate: drop table cotisation_non_imposable if exists
+Hibernate: drop table Entreprise if exists
+Hibernate: drop table Grade if exists
+Hibernate: drop table Periode if exists
+Hibernate: drop table ProfilRemuneration if exists
+Hibernate: create table Avantage (id_avantage integer generated by default as identity, CODE varchar(255) not null, MONTANT decimal(19,2) not null, NOM varchar(255) not null, primary key (id_avantage))
+Hibernate: create table avantage_profil (id_avantage integer not null, id_profil integer not null)
+Hibernate: create table Cotisation (id_cotisation integer generated by default as identity, CODE varchar(255) not null, LIBELLE varchar(255) not null, TAUX_PATRONAL decimal(19,2), TAUX_SALARIAL decimal(19,2), primary key (id_cotisation))
+Hibernate: create table cotisation_imposable (id_cotisation integer not null, id_profil integer not null)
+Hibernate: create table cotisation_non_imposable (id_cotisation integer not null, id_profil integer not null)
+Hibernate: create table Entreprise (id integer generated by default as identity, ADRESSE varchar(255), CODE_NAF varchar(255) not null, DENOMINATION varchar(255) not null, SIRET varchar(255) not null, URSSAF varchar(255), primary key (id))
+Hibernate: create table Grade (id integer generated by default as identity, CODE varchar(255) not null, NB_HEURES_BASE decimal(19,2) not null, TAUX_BASE decimal(19,2) not null, primary key (id))
+Hibernate: create table Periode (id integer generated by default as identity, DATE_DEBUT date not null, DATE_FIN date not null, primary key (id))
+Hibernate: create table ProfilRemuneration (id_profil integer generated by default as identity, CODE varchar(255) not null, primary key (id_profil))
+Hibernate: alter table avantage_profil add constraint FK8lo7oqs8nvs0r1ew23xm05uo3 foreign key (id_profil) references Avantage
+Hibernate: alter table avantage_profil add constraint FKeqjmcn5xga3nk0g1b4hgrc4cc foreign key (id_avantage) references ProfilRemuneration
+Hibernate: alter table cotisation_imposable add constraint FK9fsunchj9b723h7xk833er2hf foreign key (id_profil) references Cotisation
+Hibernate: alter table cotisation_imposable add constraint FKb6v7yopy5othuopf74fyrnh29 foreign key (id_cotisation) references ProfilRemuneration
+Hibernate: alter table cotisation_non_imposable add constraint FKivx6l5bdkuclwnjcldr3tpn9s foreign key (id_profil) references Cotisation
+Hibernate: alter table cotisation_non_imposable add constraint FK5a4md8trsqhiqsgbd8mg8x63t foreign key (id_cotisation) references ProfilRemuneration
+123
+Hibernate: select avantage0_.id_avantage as id_avant1_0_0_, avantage0_.CODE as CODE2_0_0_, avantage0_.MONTANT as MONTANT3_0_0_, avantage0_.NOM as NOM4_0_0_ from Avantage avantage0_ where avantage0_.id_avantage=?
+Hibernate: insert into Avantage (id_avantage, CODE, MONTANT, NOM) values (null, ?, ?, ?)
+Hibernate: select avantage0_.id_avantage as id_avant1_0_0_, avantage0_.CODE as CODE2_0_0_, avantage0_.MONTANT as MONTANT3_0_0_, avantage0_.NOM as NOM4_0_0_ from Avantage avantage0_ where avantage0_.id_avantage=?
+]]></system-out>
+    <system-err><![CDATA[Mar 18, 2020 10:31:50 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+Mar 18, 2020 10:31:50 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mar 18, 2020 10:31:50 AM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3650d4fc'
+]]></system-err>
+  </testcase>
+</testsuite>
