@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "ctron/hono",
-  "bugCommit": "https://github.com/ctron/hono/compare/75a45d8a044c...4c02e82de28a",
-  "failingModule": "/root/workspace/ctron/hono/370099951/core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalArgumentException"
-  ],
-  "totalNumberRunningTests": 76,
-  "failing-test-cases": [
-    {
-      "className": "org.eclipse.hono.connection.ConnectionFactoryImplTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.eclipse.hono.connection.ConnectionFactoryImplTest#testConnectEnablesSslIfTrustStoreIsConfigured"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:42:43 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 25522576,
+      "totalMemory": 222896128
+    },
+    "totalDuration": 679,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 546,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          546
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ctron-hono-370099951-20180423-154032-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ctron-hono-370099951-20180423-154032-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 76,
+      "numberPassing": 75,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalArgumentException",
-          "failureDetail": "Configured trust store file does not exist: /tmp/trusted-ca.p12",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.eclipse.hono.connection.ConnectionFactoryImplTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.eclipse.hono.connection.ConnectionFactoryImplTest",
+        "testMethod": "testConnectEnablesSslIfTrustStoreIsConfigured",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Configured trust store file does not exist: /tmp/trusted-ca.p12",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 20,
+    "numberPlugins": 0,
+    "numberSourceFiles": 212,
+    "numberTestFiles": 96,
+    "numberLibrariesFailingModule": 33,
+    "numberLines": 0
+  }
 }
