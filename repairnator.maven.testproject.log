@@ -1,0 +1,557 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] mixin-maven-plugin: Merging Mixins
+[INFO] mixin-maven-plugin: Mixins were merged
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 4.15
+[INFO] os.detected.version.major: 4
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 16.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ServiceComb Saga
+[INFO] Saga::Core
+[INFO] Saga::Transports
+[INFO] Saga::Transports::HttpClient
+[INFO] Saga::Transports::HttpClient Spring
+[INFO] Saga::Transports::RestTemplate
+[INFO] Saga::Format
+[INFO] Saga::Discovery
+[INFO] Saga::Discovery::ServiceCenter
+[INFO] saga-persistence
+[INFO] saga-persistence-jpa
+[INFO] Saga::Spring
+[INFO] Saga::Docker Build Config
+[INFO] Saga::Web
+[INFO] Saga::Pack Common
+[INFO] Saga::Omega
+[INFO] Saga::Omega::Context
+[INFO] Saga::Omega::Transaction
+[INFO] Saga::Omega::Spring TX
+[INFO] Saga::Omega::Transport
+[INFO] Saga::Omega::Transport::Rest Template
+[INFO] omega-transport-servicecomb
+[INFO] omega-transport-dubbo
+[INFO] omega-transport-feign
+[INFO] Saga::Pack Contracts
+[INFO] Saga::Pack Contracts::Grpc
+[INFO] Saga::Omega::Connector
+[INFO] Saga::Omega::Connector::GRPC
+[INFO] Saga::Omega::Format
+[INFO] Saga::Omega::Spring Starter
+[INFO] Saga::Alpha
+[INFO] Saga::Alpha::Core
+[INFO] Saga::Alpha::Server
+[INFO] Saga::Integration Tests
+[INFO] Saga::Integration Tests::Pack Tests
+[INFO] Saga::Integration Tests::Coverage Aggregate
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ServiceComb Saga 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Core 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga-core ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ saga-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-core/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ saga-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ saga-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ saga-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ saga-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 7.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 86.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 836.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.core.actors.ActorBasedSagaIntegrationTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 4.404 sec - in org.apache.servicecomb.saga.core.actors.ActorBasedSagaIntegrationTest
+Running org.apache.servicecomb.saga.core.actors.CompletionCallbackActorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.778 sec - in org.apache.servicecomb.saga.core.actors.CompletionCallbackActorTest
+Running org.apache.servicecomb.saga.core.actors.RequestActorBuilderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec - in org.apache.servicecomb.saga.core.actors.RequestActorBuilderTest
+Running org.apache.servicecomb.saga.core.actors.ActorBasedSagaExecutionComponentTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.337 sec - in org.apache.servicecomb.saga.core.actors.ActorBasedSagaExecutionComponentTest
+Running org.apache.servicecomb.saga.core.actors.EventContextImplTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec - in org.apache.servicecomb.saga.core.actors.EventContextImplTest
+Running org.apache.servicecomb.saga.core.actors.RequestActorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.611 sec - in org.apache.servicecomb.saga.core.actors.RequestActorTest
+Running org.apache.servicecomb.saga.core.CompositeSagaLogTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.servicecomb.saga.core.CompositeSagaLogTest
+Running org.apache.servicecomb.saga.core.RetrySagaLogTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.117 sec - in org.apache.servicecomb.saga.core.RetrySagaLogTest
+Running org.apache.servicecomb.saga.core.dag.NodeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.servicecomb.saga.core.dag.NodeTest
+Running org.apache.servicecomb.saga.core.dag.GraphBasedSagaExecutionComponentTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in org.apache.servicecomb.saga.core.dag.GraphBasedSagaExecutionComponentTest
+Running org.apache.servicecomb.saga.core.dag.DirectedAcyclicGraphTraversalTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.servicecomb.saga.core.dag.DirectedAcyclicGraphTraversalTest
+Running org.apache.servicecomb.saga.core.dag.GraphCycleDetectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.servicecomb.saga.core.dag.GraphCycleDetectorTest
+Running org.apache.servicecomb.saga.core.dag.GraphBuilderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.servicecomb.saga.core.dag.GraphBuilderTest
+Running org.apache.servicecomb.saga.core.SagaIntegrationTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.788 sec - in org.apache.servicecomb.saga.core.SagaIntegrationTest
+Running org.apache.servicecomb.saga.core.RestOperationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.servicecomb.saga.core.RestOperationTest
+Running org.apache.servicecomb.saga.core.BackwardRecoveryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.servicecomb.saga.core.BackwardRecoveryTest
+Running org.apache.servicecomb.saga.core.CompositeSagaResponseTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.apache.servicecomb.saga.core.CompositeSagaResponseTest
+Running org.apache.servicecomb.saga.core.SagaStartTaskTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.servicecomb.saga.core.SagaStartTaskTest
+Running org.apache.servicecomb.saga.core.FallbackPolicyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.14 sec - in org.apache.servicecomb.saga.core.FallbackPolicyTest
+Running org.apache.servicecomb.saga.core.ForwardRecoveryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 sec - in org.apache.servicecomb.saga.core.ForwardRecoveryTest
+Running org.apache.servicecomb.saga.core.LongIdGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.servicecomb.saga.core.LongIdGeneratorTest
+Running org.apache.servicecomb.saga.core.SagaEndTaskTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.servicecomb.saga.core.SagaEndTaskTest
+Running org.apache.servicecomb.saga.infrastructure.ContextAwareEventStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.apache.servicecomb.saga.infrastructure.ContextAwareEventStoreTest
+
+Results :
+
+Tests run: 88, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Transports 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ transports ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ transports ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Transports::HttpClient 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ transport-httpclient ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ transport-httpclient ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ transport-httpclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/transports/transport-httpclient/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ transport-httpclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ transport-httpclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ transport-httpclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ transport-httpclient ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/transports/transport-httpclient/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.transports.httpclient.HttpClientTransportTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.961 sec - in org.apache.servicecomb.saga.transports.httpclient.HttpClientTransportTest
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Transports::HttpClient Spring 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ transport-httpclient-spring ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ transport-httpclient-spring ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ transport-httpclient-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ transport-httpclient-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ transport-httpclient-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ transport-httpclient-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ transport-httpclient-spring ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/transports/transport-httpclient-spring/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.transports.RestTransportTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.069 sec - in org.apache.servicecomb.saga.transports.RestTransportTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Transports::RestTemplate 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ transport-resttemplate ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ transport-resttemplate ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ transport-resttemplate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/transports/transport-resttemplate/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ transport-resttemplate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ transport-resttemplate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/transports/transport-resttemplate/src/test/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ transport-resttemplate ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ transport-resttemplate ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Format 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga-format ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga-format ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ saga-format ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-format/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ saga-format ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ saga-format ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-format/src/test/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ saga-format ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ saga-format ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-format/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.format.JacksonFromJsonFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.789 sec - in org.apache.servicecomb.saga.format.JacksonFromJsonFormatTest
+Running org.apache.servicecomb.saga.format.JsonRestSagaRequestTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 sec - in org.apache.servicecomb.saga.format.JsonRestSagaRequestTest
+Running org.apache.servicecomb.saga.format.JacksonRestOperationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.servicecomb.saga.format.JacksonRestOperationTest
+Running org.apache.servicecomb.saga.format.JsonSagaDefinitionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.servicecomb.saga.format.JsonSagaDefinitionTest
+Running org.apache.servicecomb.saga.format.SagaEventFormatTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec - in org.apache.servicecomb.saga.format.SagaEventFormatTest
+Running org.apache.servicecomb.saga.format.ChildrenExtractorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.apache.servicecomb.saga.format.ChildrenExtractorTest
+
+Results :
+
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Discovery 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga-discovery ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga-discovery ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Discovery::ServiceCenter 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga-discovery-servicecenter ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga-discovery-servicecenter ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ saga-discovery-servicecenter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ saga-discovery-servicecenter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ saga-discovery-servicecenter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ saga-discovery-servicecenter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ saga-discovery-servicecenter ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-discovery/saga-discovery-servicecenter/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.discovery.service.center.ServiceCenterDiscoveryRestTransportTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.008 sec - in org.apache.servicecomb.saga.discovery.service.center.ServiceCenterDiscoveryRestTransportTest
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building saga-persistence 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga-persistence ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga-persistence ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building saga-persistence-jpa 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga-persistence-jpa ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga-persistence-jpa ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ saga-persistence-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ saga-persistence-jpa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- eclipselink-maven-plugin:2.7.0:weave (default) @ saga-persistence-jpa ---
+[INFO] Entities found : 12
+[INFO] persistence.xml location: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-persistence/saga-persistence-jpa/target/classes/META-INF/persistence.xml
+[INFO] Source classes dir: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-persistence/saga-persistence-jpa/target/classes
+[INFO] Target classes dir: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-persistence/saga-persistence-jpa/target/classes
+[INFO] Eclipselink weaving completed
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ saga-persistence-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-persistence/saga-persistence-jpa/src/test/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ saga-persistence-jpa ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ saga-persistence-jpa ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Spring 0.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga-spring ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga-spring ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ saga-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ saga-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ saga-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ saga-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ saga-spring ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-spring/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.spring.ActorBasedSagaSpringApplicationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.391 sec - in org.apache.servicecomb.saga.spring.ActorBasedSagaSpringApplicationTest
+Running org.apache.servicecomb.saga.spring.SagaRecoveryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.19 sec - in org.apache.servicecomb.saga.spring.SagaRecoveryTest
+Running org.apache.servicecomb.saga.spring.GraphBasedSagaSpringApplicationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.102 sec - in org.apache.servicecomb.saga.spring.GraphBasedSagaSpringApplicationTest
+Running org.apache.servicecomb.saga.spring.SagaServiceDiscoveryTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.548 sec <<< FAILURE! - in org.apache.servicecomb.saga.spring.SagaServiceDiscoveryTest
+processRequestByServiceDiscovery(org.apache.servicecomb.saga.spring.SagaServiceDiscoveryTest)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: ServiceComb init failed.
+Caused by: org.apache.servicecomb.foundation.common.exceptions.ServiceCombException: all transport named rest refused to init.
+
+
+Results :
+
+Tests in error: 
+  SagaServiceDiscoveryTest.processRequestByServiceDiscovery » IllegalState Faile...
+
+Tests run: 14, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] ServiceComb Saga ................................... SUCCESS [  0.985 s]
+[INFO] Saga::Core ......................................... SUCCESS [ 17.993 s]
+[INFO] Saga::Transports ................................... SUCCESS [  0.083 s]
+[INFO] Saga::Transports::HttpClient ....................... SUCCESS [  7.639 s]
+[INFO] Saga::Transports::HttpClient Spring ................ SUCCESS [  9.297 s]
+[INFO] Saga::Transports::RestTemplate ..................... SUCCESS [  2.313 s]
+[INFO] Saga::Format ....................................... SUCCESS [  5.080 s]
+[INFO] Saga::Discovery .................................... SUCCESS [  0.049 s]
+[INFO] Saga::Discovery::ServiceCenter ..................... SUCCESS [ 47.455 s]
+[INFO] saga-persistence ................................... SUCCESS [  0.029 s]
+[INFO] saga-persistence-jpa ............................... SUCCESS [  4.105 s]
+[INFO] Saga::Spring ....................................... FAILURE [ 51.566 s]
+[INFO] Saga::Docker Build Config .......................... SKIPPED
+[INFO] Saga::Web .......................................... SKIPPED
+[INFO] Saga::Pack Common .................................. SKIPPED
+[INFO] Saga::Omega ........................................ SKIPPED
+[INFO] Saga::Omega::Context ............................... SKIPPED
+[INFO] Saga::Omega::Transaction ........................... SKIPPED
+[INFO] Saga::Omega::Spring TX ............................. SKIPPED
+[INFO] Saga::Omega::Transport ............................. SKIPPED
+[INFO] Saga::Omega::Transport::Rest Template .............. SKIPPED
+[INFO] omega-transport-servicecomb ........................ SKIPPED
+[INFO] omega-transport-dubbo .............................. SKIPPED
+[INFO] omega-transport-feign .............................. SKIPPED
+[INFO] Saga::Pack Contracts ............................... SKIPPED
+[INFO] Saga::Pack Contracts::Grpc ......................... SKIPPED
+[INFO] Saga::Omega::Connector ............................. SKIPPED
+[INFO] Saga::Omega::Connector::GRPC ....................... SKIPPED
+[INFO] Saga::Omega::Format ................................ SKIPPED
+[INFO] Saga::Omega::Spring Starter ........................ SKIPPED
+[INFO] Saga::Alpha ........................................ SKIPPED
+[INFO] Saga::Alpha::Core .................................. SKIPPED
+[INFO] Saga::Alpha::Server ................................ SKIPPED
+[INFO] Saga::Integration Tests ............................ SKIPPED
+[INFO] Saga::Integration Tests::Pack Tests ................ SKIPPED
+[INFO] Saga::Integration Tests::Coverage Aggregate ........ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:30 min
+[INFO] Finished at: 2020-03-18T10:37:10+01:00
+[INFO] Final Memory: 88M/951M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project saga-spring: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-spring/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project saga-spring: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-spring/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-414354149-20180810-083543-firstCommit/saga-spring/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :saga-spring
