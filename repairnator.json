@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "easimon/alexasonic",
-  "bugCommit": "https://github.com/easimon/alexasonic/compare/43f5c39373ff...d90d1cdb802a",
-  "failingModule": "/root/workspace/easimon/alexasonic/363845025",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.ExceptionInInitializerError"
-  ],
-  "totalNumberRunningTests": 39,
-  "failing-test-cases": [
-    {
-      "className": "click.dobel.alexasonic.docker.AlexaSonicDockerTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "click.dobel.alexasonic.docker.AlexaSonicDockerTest#click.dobel.alexasonic.docker.AlexaSonicDockerTest"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-easimon-alexasonic-363845025-20180408-212037-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 38,
+      "numberPassing": 37,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "java.lang.ExceptionInInitializerError",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "click.dobel.alexasonic.docker.AlexaSonicDockerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "click.dobel.alexasonic.docker.AlexaSonicDockerTest",
+        "testMethod": "click.dobel.alexasonic.docker.AlexaSonicDockerTest",
+        "failureName": "java.lang.ExceptionInInitializerError",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 47,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 83,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:11 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:36:13 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 169065168,
+      "totalMemory": 442441728
+    },
+    "totalDuration": 300,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 139,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          139
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-easimon-alexasonic-363845025-20180408-212037-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
