@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 5,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/incubator-servicecomb-java-chassis",
-  "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/350797170/transports/transport-rest/transport-rest-client",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.apache.servicecomb.swagger.invocation.exception.InvocationException"
-  ],
-  "totalNumberRunningTests": 1502,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.servicecomb.transport.rest.client.http.TestVertxHttpMethod",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.servicecomb.transport.rest.client.http.TestVertxHttpMethod#testDoMethod"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:10 AM",
+    "reproductionDateEnd": "Mar 18, 2020 12:16:44 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 35747168,
+      "totalMemory": 116649984
+    },
+    "totalDuration": 6330,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6002,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6002
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-350797170-20180308-132840-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-350797170-20180308-132840-firstCommit/foundations/foundation-vertx",
+    "overallMetrics": {
+      "numberRunning": 422,
+      "numberPassing": 421,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "org.apache.servicecomb.swagger.invocation.exception.InvocationException",
-          "failureDetail": "InvocationException: code\u003d490;msg\u003dCommonExceptionData [message\u003dCse Internal Bad Request]",
-          "isError": true
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.client.tcp.TestAbstractTcpClientPoolFactory",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.client.tcp.TestAbstractTcpClientPoolFactory",
+        "testMethod": "createClientPool",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 62,
+    "numberPlugins": 0,
+    "numberSourceFiles": 831,
+    "numberTestFiles": 501,
+    "numberLibrariesFailingModule": 67,
+    "numberLines": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
