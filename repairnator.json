@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "commercetools/commercetools-jvm-sdk",
-  "bugCommit": "https://github.com/commercetools/commercetools-jvm-sdk/compare/v1.28.0",
-  "failingModule": "/root/workspace/commercetools/commercetools-jvm-sdk/330394811/commercetools-convenience",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "io.sphere.sdk.client.SphereTimeoutException"
-  ],
-  "totalNumberRunningTests": 544,
-  "failing-test-cases": [
-    {
-      "className": "io.sphere.sdk.client.retry.RetrySphereClientDecoratorTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.sphere.sdk.client.retry.RetrySphereClientDecoratorTest#retryDelete"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-commercetools-commercetools-jvm-sdk-330394811-20180118-165144_bugonly-firstCommit/commercetools-convenience",
+    "overallMetrics": {
+      "numberRunning": 544,
+      "numberPassing": 543,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "io.sphere.sdk.client.SphereTimeoutException",
-          "failureDetail": "http response: \u003cunknown\u003e\nSDK: 1.28.0\nproject: \u003cunknown\u003e\nJava: 1.8.0_121\ncwd: /root/workspace/commercetools/commercetools-jvm-sdk/330394811/commercetools-convenience\nsphere request: \u003cunknown\u003e\nadditional notes: []\nJavadoc: http://commercetools.github.io/commercetools-jvm-sdk/apidocs/io/sphere/sdk/client/SphereTimeoutException.html\n",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.sphere.sdk.client.retry.RetrySphereClientDecoratorTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.sphere.sdk.client.retry.RetrySphereClientDecoratorTest",
+        "testMethod": "retryDelete",
+        "failureName": "io.sphere.sdk.client.SphereTimeoutException",
+        "detail": "http response: \u003cunknown\u003e\nSDK: 1.28.0\nproject: \u003cunknown\u003e\nJava: 1.8.0_202\ncwd: /scratch/dginelli/workspace/repairnator-repairnator-experiments-commercetools-commercetools-jvm-sdk-330394811-20180118-165144_bugonly-firstCommit/commercetools-convenience\nsphere request: \u003cunknown\u003e\nadditional notes: []\nJavadoc: http://commercetools.github.io/commercetools-jvm-sdk/apidocs/io/sphere/sdk/client/SphereTimeoutException.html\n",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 22,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1809,
+    "numberTestFiles": 582,
+    "numberLibrariesFailingModule": 38,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:50:30 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 58142656,
+      "totalMemory": 168972288
+    },
+    "totalDuration": 1146,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 653,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          653
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-commercetools-commercetools-jvm-sdk-330394811-20180118-165144_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
