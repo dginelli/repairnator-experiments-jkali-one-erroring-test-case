@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 28,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "arquillian/arquillian-cube",
-  "failingModule": "/root/workspace/arquillian/arquillian-cube/283765368/docker/ftest-standalone-star-operator",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 355,
-  "failing-test-cases": [
-    {
-      "className": "org.arquillian.cube.StandaloneStarOperatorTestCase",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.arquillian.cube.StandaloneStarOperatorTestCase#org.arquillian.cube.StandaloneStarOperatorTestCase"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-arquillian-arquillian-cube-283765368-20171005-180042_bugonly-firstCommit/docker/ftest-standalone-star-operator",
+    "overallMetrics": {
+      "numberRunning": 327,
+      "numberPassing": 326,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 28,
       "failures": [
         {
           "failureName": "java.lang.RuntimeException",
-          "failureDetail": "Could not auto start container pingpong_4a4ff650-0544-4cad-812d-4418816d60e8",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.arquillian.cube.StandaloneStarOperatorTestCase",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.arquillian.cube.StandaloneStarOperatorTestCase",
+        "testMethod": "org.arquillian.cube.StandaloneStarOperatorTestCase",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Could not auto start container pingpong_5f01b8bf-6143-470c-b7bf-03c841e10b85",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 451,
+    "numberTestFiles": 116,
+    "numberLibrariesFailingModule": 73,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:19 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:35:18 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 49236840,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 233,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-arquillian-arquillian-cube-283765368-20171005-180042_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
