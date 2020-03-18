@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/incubator-servicecomb-java-chassis",
-  "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/364492987/service-registry",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.ArithmeticException"
-  ],
-  "totalNumberRunningTests": 673,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.servicecomb.serviceregistry.registry.TestServiceRegistryFactory",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.servicecomb.serviceregistry.registry.TestServiceRegistryFactory#testGetRemoteRegistryClient"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-364492987-20180412-075835-firstCommit/service-registry",
+    "overallMetrics": {
+      "numberRunning": 673,
+      "numberPassing": 672,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.ArithmeticException",
-          "failureDetail": "/ by zero",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.serviceregistry.registry.TestServiceRegistryFactory",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.serviceregistry.registry.TestServiceRegistryFactory",
+        "testMethod": "testGetRemoteRegistryClient",
+        "failureName": "java.lang.ArithmeticException",
+        "detail": "/ by zero",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 63,
+    "numberPlugins": 0,
+    "numberSourceFiles": 884,
+    "numberTestFiles": 534,
+    "numberLibrariesFailingModule": 78,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:10 AM",
+    "reproductionDateEnd": "Mar 18, 2020 12:18:40 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 62783016,
+      "totalMemory": 130777088
+    },
+    "totalDuration": 6447,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-364492987-20180412-075835-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
