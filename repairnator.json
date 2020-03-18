@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "druid-io/druid",
-  "failingModule": "/root/workspace/druid-io/druid/295053161/api",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 288,
-  "failing-test-cases": [
-    {
-      "className": "io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest#testWithCacheAndFetch"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/api",
+    "overallMetrics": {
+      "numberRunning": 288,
+      "numberPassing": 287,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.RuntimeException",
-          "failureDetail": "java.util.concurrent.TimeoutException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest",
+        "testMethod": "testReconnectWithCacheAndPrefetch",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "java.util.concurrent.TimeoutException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 52,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2271,
+    "numberTestFiles": 843,
+    "numberLibrariesFailingModule": 34,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:40:44 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 40271864,
+      "totalMemory": 122073088
+    },
+    "totalDuration": 558,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 29,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          29
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
