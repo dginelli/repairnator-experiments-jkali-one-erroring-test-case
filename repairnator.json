@@ -1,30 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "dhatim/dropwizard-sentry",
-  "failingModule": "/root/workspace/dhatim/dropwizard-sentry/386721415",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 5,
-  "failing-test-cases": [
-    {
-      "className": "org.dhatim.dropwizard.sentry.logging.SentryAppenderFactoryTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "buildSentryAppenderShouldWorkWithValidConfiguration"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 5,
+      "numberPassing": 4,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.dhatim.dropwizard.sentry.logging.SentryAppenderFactoryTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.dhatim.dropwizard.sentry.logging.SentryAppenderFactoryTest",
+        "testMethod": "buildSentryAppenderShouldWorkWithValidConfiguration",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 4,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 98,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:33:05 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 10917112,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 101,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
