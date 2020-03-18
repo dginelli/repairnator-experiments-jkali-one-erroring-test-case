@@ -1,0 +1,119 @@
+{
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-arquillian-arquillian-cube-421467238-20180828-132630-firstCommit/docker/docker",
+    "overallMetrics": {
+      "numberRunning": 261,
+      "numberPassing": 260,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.arquillian.cube.docker.impl.await.DockerHealthAwaitStrategyTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.arquillian.cube.docker.impl.await.DockerHealthAwaitStrategyTest",
+        "testMethod": "org.arquillian.cube.docker.impl.await.DockerHealthAwaitStrategyTest",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "org.newsclub.net.unix.AFUNIXSocketException: No such file or directory (socket: /run/docker.sock)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 73,
+    "numberPlugins": 0,
+    "numberSourceFiles": 578,
+    "numberTestFiles": 146,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:18 AM",
+    "reproductionDateEnd": "Mar 18, 2020 12:17:15 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 25749760,
+      "totalMemory": 138518528
+    },
+    "totalDuration": 6351,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-arquillian-arquillian-cube-421467238-20180828-132630-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  }
+}
