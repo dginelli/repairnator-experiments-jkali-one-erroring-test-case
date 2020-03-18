@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/incubator-servicecomb-java-chassis",
-  "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/365950514/service-registry",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.ArithmeticException"
-  ],
-  "totalNumberRunningTests": 673,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.servicecomb.serviceregistry.registry.TestServiceRegistryFactory",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.servicecomb.serviceregistry.registry.TestServiceRegistryFactory#testGetRemoteRegistryClient"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:10 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:36:47 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 46146320,
+      "totalMemory": 97275904
+    },
+    "totalDuration": 333,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          26
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-365950514-20180413-073231-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-365950514-20180413-073231-firstCommit/foundations/foundation-ssl",
+    "overallMetrics": {
+      "numberRunning": 166,
+      "numberPassing": 165,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.ArithmeticException",
-          "failureDetail": "/ by zero",
-          "isError": true
+          "failureName": "java.net.BindException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.ssl.SSLManagerTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.ssl.SSLManagerTest",
+        "testMethod": "testSSLManagerServerAndClient",
+        "failureName": "java.net.BindException",
+        "detail": "Address already in use (Bind failed)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 63,
+    "numberPlugins": 0,
+    "numberSourceFiles": 856,
+    "numberTestFiles": 521,
+    "numberLibrariesFailingModule": 65,
+    "numberLines": 0
+  }
 }
