@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 59,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "druid-io/druid",
-  "failingModule": "/root/workspace/druid-io/druid/230778520/processing",
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 26391,
-  "failing-test-cases": [
-    {
-      "className": "io.druid.segment.data.IncrementalIndexTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.druid.segment.data.IncrementalIndexTest#testConcurrentAddRead[0]"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 12:34:32 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 351879912,
+      "totalMemory": 1112342528
+    },
+    "totalDuration": 7386,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-230778520-20170510-163232_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-230778520-20170510-163232_bugonly-firstCommit/server",
+    "overallMetrics": {
+      "numberRunning": 27306,
+      "numberPassing": 27305,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 62,
       "failures": [
         {
-          "failureName": "java.lang.RuntimeException",
-          "failureDetail": "java.lang.Exception: test timed out after 60000 milliseconds",
-          "isError": true
+          "failureName": "java.lang.Exception",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.druid.curator.announcement.AnnouncerTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.druid.curator.announcement.AnnouncerTest",
+        "testMethod": "testSanity",
+        "failureName": "java.lang.Exception",
+        "detail": "test timed out after 60000 milliseconds",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 50,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2048,
+    "numberTestFiles": 777,
+    "numberLibrariesFailingModule": 209,
+    "numberLines": 0
+  }
 }
