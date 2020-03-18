@@ -1,0 +1,165 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 4.15
+[INFO] os.detected.version.major: 4
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 16.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jutil 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ jutil ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jutil ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- protobuf-maven-plugin:0.5.1:test-compile (default) @ jutil ---
+[INFO] Compiling 1 proto file(s) to /scratch/dginelli/workspace/repairnator-repairnator-experiments-chrisgleissner-jutil-419492159-20180823-071207-firstCommit/target/generated-test-sources/protobuf/java
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ jutil ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jutil ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-chrisgleissner-jutil-419492159-20180823-071207-firstCommit/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ jutil ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-chrisgleissner-jutil-419492159-20180823-071207-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 7.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 97.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 1146.6 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running uk.gleissner.jutil.collection.FieldPartitionerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 s - in uk.gleissner.jutil.collection.FieldPartitionerTest
+[INFO] Running uk.gleissner.jutil.collection.CollectionPartitionerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in uk.gleissner.jutil.collection.CollectionPartitionerTest
+[INFO] Running uk.gleissner.jutil.protobuf.ProtobufFieldPartitionerTest
+10:31:52.372 [main] DEBUG u.g.j.p.ProtobufFieldPartitionerTest - 
+
+Original parent:
+182 byte(s): 08 64 12 0E 08 01 12 0A 61 61 61 61 61 61 61 61 61 61 12 18 08 02 12 14 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 12 22 08 03 12 1E 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 12 2C 08 04 12 28 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 12 36 08 05 12 32 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61
+
+Target parent(s):
+ 80 byte(s): 08 64 12 0E 08 01 12 0A 61 61 61 61 61 61 61 61 61 61 12 18 08 02 12 14 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 12 22 08 03 12 1E 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61
+ 48 byte(s): 08 64 12 2C 08 04 12 28 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61
+ 58 byte(s): 08 64 12 36 08 05 12 32 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61
+10:31:52.378 [main] DEBUG u.g.j.p.ProtobufFieldPartitionerTest - 
+
+Original parent:
+ 10 byte(s): 08 64 12 02 08 01 12 02 08 02
+
+Target parent(s):
+ 10 byte(s): 08 64 12 02 08 01 12 02 08 02
+10:31:52.381 [main] DEBUG u.g.j.p.ProtobufFieldPartitionerTest - 
+
+Original parent:
+ 10 byte(s): 08 64 12 02 08 01 12 02 08 02
+
+Target parent(s):
+  6 byte(s): 08 64 12 02 08 01
+  6 byte(s): 08 64 12 02 08 02
+10:31:52.390 [main] DEBUG u.g.j.p.ProtobufFieldPartitionerTest - Parent:  10 byte(s): 08 64 12 02 08 01 12 02 08 02
+10:31:52.392 [main] DEBUG u.g.j.p.ProtobufFieldPartitionerTest - Parent:  10 byte(s): 08 64 12 02 08 03 12 02 08 04
+10:31:52.392 [main] DEBUG u.g.j.p.ProtobufFieldPartitionerTest - Parent:   6 byte(s): 08 64 12 02 08 05
+10:31:52.393 [main] DEBUG u.g.j.p.ProtobufFieldPartitionerTest - 
+
+Original parent:
+ 22 byte(s): 08 64 12 02 08 01 12 02 08 02 12 02 08 03 12 02 08 04 12 02 08 05
+
+Target parent(s):
+ 10 byte(s): 08 64 12 02 08 01 12 02 08 02
+ 10 byte(s): 08 64 12 02 08 03 12 02 08 04
+  6 byte(s): 08 64 12 02 08 05
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 s - in uk.gleissner.jutil.protobuf.ProtobufFieldPartitionerTest
+[INFO] Running uk.gleissner.jutil.log.ConcurrentLoggerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.714 s - in uk.gleissner.jutil.log.ConcurrentLoggerTest
+[INFO] Running uk.gleissner.jutil.converter.ByteConverterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in uk.gleissner.jutil.converter.ByteConverterTest
+[INFO] Running uk.gleissner.jutil.selenium.SeleniumTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.057 s <<< FAILURE! - in uk.gleissner.jutil.selenium.SeleniumTest
+[ERROR] testGoogleSearch(uk.gleissner.jutil.selenium.SeleniumTest)  Time elapsed: 0.049 s  <<< ERROR!
+java.lang.IllegalStateException: The driver is not executable: /scratch/dginelli/workspace/repairnator-repairnator-experiments-chrisgleissner-jutil-419492159-20180823-071207-firstCommit/lib/chromedriver
+	at uk.gleissner.jutil.selenium.SeleniumTest.testGoogleSearch(SeleniumTest.java:17)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   SeleniumTest.testGoogleSearch:17 » IllegalState The driver is not executable: ...
+[INFO] 
+[ERROR] Tests run: 17, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.203 s
+[INFO] Finished at: 2020-03-18T10:31:53+01:00
+[INFO] Final Memory: 25M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project jutil: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-chrisgleissner-jutil-419492159-20180823-071207-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project jutil: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-chrisgleissner-jutil-419492159-20180823-071207-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-chrisgleissner-jutil-419492159-20180823-071207-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:364)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1052)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:868)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
