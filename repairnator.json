@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 160,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/jackrabbit-oak",
-  "bugCommit": "https://github.com/apache/jackrabbit-oak/compare/085516a99ba8...ab3f6a634a1f",
-  "failingModule": "/root/workspace/apache/jackrabbit-oak/352879628/oak-pojosr",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "groovy.lang.MissingMethodException"
-  ],
-  "totalNumberRunningTests": 6565,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.jackrabbit.oak.run.osgi.LuceneSupportTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.jackrabbit.oak.run.osgi.LuceneSupportTest#fullTextSearch"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:30:45 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:57:02 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 127816512,
+      "totalMemory": 233512960
+    },
+    "totalDuration": 1573,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 139,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          139
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-352879628-20180313-165708-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-352879628-20180313-165708-firstCommit/oak-pojosr",
+    "overallMetrics": {
+      "numberRunning": 6405,
+      "numberPassing": 6404,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 160,
       "failures": [
         {
           "failureName": "groovy.lang.MissingMethodException",
-          "failureDetail": "No signature of method: static org.apache.jackrabbit.oak.run.osgi.AbstractRepositoryFactoryTest.fail() is applicable for argument types: (java.lang.String) values: [RetryLoop failed, condition is false after 30 seconds:null] Possible solutions: wait(), wait(long), find(), any(), wait(long, int), each(groovy.lang.Closure)",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.run.osgi.LuceneSupportTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.run.osgi.LuceneSupportTest",
+        "testMethod": "fullTextSearch",
+        "failureName": "groovy.lang.MissingMethodException",
+        "detail": "No signature of method: static org.apache.jackrabbit.oak.run.osgi.AbstractRepositoryFactoryTest.fail() is applicable for argument types: (java.lang.String) values: [RetryLoop failed, condition is false after 30 seconds:null] Possible solutions: wait(), wait(long), find(), any(), wait(long, int), any(groovy.lang.Closure)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 25,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1651,
+    "numberTestFiles": 1062,
+    "numberLibrariesFailingModule": 80,
+    "numberLines": 0
+  }
 }
