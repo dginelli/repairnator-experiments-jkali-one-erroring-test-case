@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: unittests.ComplexTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.028 sec <<< FAILURE! - in unittests.ComplexTest
+deserialize(unittests.ComplexTest)  Time elapsed: 0.019 sec  <<< ERROR!
+java.lang.ClassCastException: Cannot cast [Ljava.lang.Object; to [Ljava.lang.Float;
+	at java.lang.Class.cast(Class.java:3369)
+	at simplexml.XmlReader.domToObject(XmlReader.java:97)
+	at simplexml.SimpleXml.fromXml(SimpleXml.java:45)
+	at unittests.ComplexTest.deserialize(ComplexTest.java:41)
+
