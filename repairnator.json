@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "chpengzh/gradoop",
-  "bugCommit": "https://github.com/chpengzh/gradoop/compare/632f4da55a89^...de45eaa9a662",
-  "failingModule": "/root/workspace/chpengzh/gradoop/390361269/gradoop-flink",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.apache.flink.runtime.client.JobExecutionException"
-  ],
-  "totalNumberRunningTests": 1339,
-  "failing-test-cases": [
-    {
-      "className": "org.gradoop.flink.io.impl.csv.indexed.IndexedCSVDataSourceTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testRead"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:15 AM",
+    "reproductionDateEnd": "Mar 18, 2020 12:23:42 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 738831832,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 6742,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-chpengzh-gradoop-390361269-20180610-130800-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-chpengzh-gradoop-390361269-20180610-130800-firstCommit/gradoop-flink",
+    "overallMetrics": {
+      "numberRunning": 1335,
+      "numberPassing": 1334,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "org.apache.flink.runtime.client.JobExecutionException",
-          "failureDetail": "Failed to submit job 1e9faf061b95fd44a48b7f0b920243be (Flink Java Job at Sun Jun 10 13:15:17 CEST 2018)",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.gradoop.flink.io.impl.csv.indexed.IndexedCSVDataSourceTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.gradoop.flink.io.impl.csv.indexed.IndexedCSVDataSourceTest",
+        "testMethod": "testRead",
+        "failureName": "org.apache.flink.runtime.client.JobExecutionException",
+        "detail": "Failed to submit job 6034267a80e789c6f27becc58ece1589 (Flink Java Job at Wed Mar 18 10:43:22 CET 2020)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1287,
+    "numberTestFiles": 202,
+    "numberLibrariesFailingModule": 159,
+    "numberLines": 0
+  }
 }
