@@ -1,0 +1,646 @@
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@694abbdc
+[main] INFO org.apache.metamodel.excel.ExcelDataContext - Resource does not exist, returning empty schema
+[Finalizer] WARN org.apache.metamodel.data.RowPublisherDataSet - finalize() invoked, but DataSet is not closed. Invoking close() on DataSet[selectItems=[Sheet1.A, Sheet1.hello]]
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@443118b0
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@3c46e67a
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@1573f9fc
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@185a6e9
+[MetaModel.SharedExecutorService.Thread.1] WARN org.apache.metamodel.excel.XlsxSheetToRowsHandler - Error-cell occurred: #DIV/0!
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@62ddbd7e
+[MetaModel.SharedExecutorService.Thread.1] WARN org.apache.metamodel.excel.XlsxSheetToRowsHandler - Error-cell occurred: #DIV/0!
+[Finalizer] WARN org.apache.metamodel.data.RowPublisherDataSet - finalize() invoked, but DataSet is not closed. Invoking close() on DataSet[selectItems=[sh1.Bar]]
+[Finalizer] WARN org.apache.metamodel.data.RowPublisherDataSet - finalize() invoked, but DataSet is not closed. Invoking close() on DataSet[selectItems=[sh1.Foo]]
+[Finalizer] WARN org.apache.metamodel.data.RowPublisherDataSet - finalize() invoked, but DataSet is not closed. Invoking close() on DataSet[selectItems=[Sheet1.hello]]
+[Finalizer] WARN org.apache.metamodel.data.RowPublisherDataSet - finalize() invoked, but DataSet is not closed. Invoking close() on DataSet[selectItems=[Sheet1.G]]
+[Finalizer] WARN org.apache.metamodel.data.RowPublisherDataSet - finalize() invoked, but DataSet is not closed. Invoking close() on DataSet[selectItems=[Sheet1.hello]]
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: IF(A6=5,"yes","no")
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING formula cell
+	at org.apache.poi.hssf.usermodel.HSSFCell.typeMismatch(HSSFCell.java:654)
+	at org.apache.poi.hssf.usermodel.HSSFCell.checkFormulaCachedValueType(HSSFCell.java:659)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getNumericCellValue(HSSFCell.java:684)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.ExcelDataContextTest.testEvaluateFormula(ExcelDataContextTest.java:251)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(5,1) is a formula. Attempting to evaluate: IF(A6=5,"yes","no")
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: IF(A7=5,"yes","no")
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING formula cell
+	at org.apache.poi.hssf.usermodel.HSSFCell.typeMismatch(HSSFCell.java:654)
+	at org.apache.poi.hssf.usermodel.HSSFCell.checkFormulaCachedValueType(HSSFCell.java:659)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getNumericCellValue(HSSFCell.java:684)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.ExcelDataContextTest.testEvaluateFormula(ExcelDataContextTest.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(6,1) is a formula. Attempting to evaluate: IF(A7=5,"yes","no")
+[main] INFO org.apache.metamodel.excel.ExcelDataContext - Resource does not exist, returning empty schema
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@658c5a19
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@5117dd67
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@6057aebb
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@130e116b
+[Finalizer] WARN org.apache.metamodel.data.RowPublisherDataSet - finalize() invoked, but DataSet is not closed. Invoking close() on DataSet[selectItems=[Sheet1.style name, Sheet1.example]]
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: -"t" "houetismfsthueiss"
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a ERROR formula cell
+	at org.apache.poi.hssf.usermodel.HSSFCell.typeMismatch(HSSFCell.java:654)
+	at org.apache.poi.hssf.usermodel.HSSFCell.checkFormulaCachedValueType(HSSFCell.java:659)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getNumericCellValue(HSSFCell.java:684)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.MetaModelHelper.getAggregated(MetaModelHelper.java:470)
+	at org.apache.metamodel.QueryPostprocessDataContext.executeQuery(QueryPostprocessDataContext.java:219)
+	at org.apache.metamodel.excel.ExcelDataContextTest.testInvalidFormula(ExcelDataContextTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(2,0) is a formula. Attempting to evaluate: -"t" "houetismfsthueiss"
+[main] WARN org.apache.metamodel.excel.ExcelUtils - Exception occurred while evaluating formula at position (2,0): Unexpected ref arg class (org.apache.poi.ss.formula.eval.StringEval)
+[main] ERROR org.apache.metamodel.excel.ExcelUtils - Illegal formula argument occurred while evaluating cell formula: -"t" "houetismfsthueiss"
+java.lang.IllegalArgumentException: Unexpected ref arg class (org.apache.poi.ss.formula.eval.StringEval)
+	at org.apache.poi.ss.formula.eval.IntersectionEval.evaluateRef(IntersectionEval.java:94)
+	at org.apache.poi.ss.formula.eval.IntersectionEval.evaluate(IntersectionEval.java:37)
+	at org.apache.poi.ss.formula.functions.Fixed2ArgFunction.evaluate(Fixed2ArgFunction.java:33)
+	at org.apache.poi.ss.formula.OperationEvaluatorFactory.evaluate(OperationEvaluatorFactory.java:119)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluateFormula(WorkbookEvaluator.java:514)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluateAny(WorkbookEvaluator.java:278)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluate(WorkbookEvaluator.java:220)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateFormulaCellValue(HSSFFormulaEvaluator.java:200)
+	at org.apache.poi.ss.formula.BaseFormulaEvaluator.evaluateInCell(BaseFormulaEvaluator.java:137)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateInCell(HSSFFormulaEvaluator.java:146)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateInCell(HSSFFormulaEvaluator.java:45)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:272)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.MetaModelHelper.getAggregated(MetaModelHelper.java:470)
+	at org.apache.metamodel.QueryPostprocessDataContext.executeQuery(QueryPostprocessDataContext.java:219)
+	at org.apache.metamodel.excel.ExcelDataContextTest.testInvalidFormula(ExcelDataContextTest.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: -"t" "houetismfsthueiss"
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a ERROR formula cell
+	at org.apache.poi.hssf.usermodel.HSSFCell.typeMismatch(HSSFCell.java:654)
+	at org.apache.poi.hssf.usermodel.HSSFCell.checkFormulaCachedValueType(HSSFCell.java:659)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getNumericCellValue(HSSFCell.java:684)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.ExcelDataContextTest.testInvalidFormula(ExcelDataContextTest.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(2,0) is a formula. Attempting to evaluate: -"t" "houetismfsthueiss"
+[main] WARN org.apache.metamodel.excel.ExcelUtils - Exception occurred while evaluating formula at position (2,0): Unexpected ref arg class (org.apache.poi.ss.formula.eval.StringEval)
+[main] ERROR org.apache.metamodel.excel.ExcelUtils - Illegal formula argument occurred while evaluating cell formula: -"t" "houetismfsthueiss"
+java.lang.IllegalArgumentException: Unexpected ref arg class (org.apache.poi.ss.formula.eval.StringEval)
+	at org.apache.poi.ss.formula.eval.IntersectionEval.evaluateRef(IntersectionEval.java:94)
+	at org.apache.poi.ss.formula.eval.IntersectionEval.evaluate(IntersectionEval.java:37)
+	at org.apache.poi.ss.formula.functions.Fixed2ArgFunction.evaluate(Fixed2ArgFunction.java:33)
+	at org.apache.poi.ss.formula.OperationEvaluatorFactory.evaluate(OperationEvaluatorFactory.java:119)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluateFormula(WorkbookEvaluator.java:514)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluateAny(WorkbookEvaluator.java:278)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluate(WorkbookEvaluator.java:220)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateFormulaCellValue(HSSFFormulaEvaluator.java:200)
+	at org.apache.poi.ss.formula.BaseFormulaEvaluator.evaluateInCell(BaseFormulaEvaluator.java:137)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateInCell(HSSFFormulaEvaluator.java:146)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateInCell(HSSFFormulaEvaluator.java:45)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:272)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.ExcelDataContextTest.testInvalidFormula(ExcelDataContextTest.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@2b76ff4e
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@335b5620
+[Finalizer] WARN org.apache.metamodel.data.RowPublisherDataSet - finalize() invoked, but DataSet is not closed. Invoking close() on DataSet[selectItems=[foobar.value0]]
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: A10/0
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:1077)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getNumericCellValue(XSSFCell.java:301)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.data.FilteredDataSet.next(FilteredDataSet.java:57)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.testStylingOfNullCell(DefaultSpreadsheetReaderDelegateTest.java:210)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(12,1) is a formula. Attempting to evaluate: A10/0
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: A10/0
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:1077)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getNumericCellValue(XSSFCell.java:301)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.testStylingOfNullCell(DefaultSpreadsheetReaderDelegateTest.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(12,1) is a formula. Attempting to evaluate: A10/0
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: IF(A6=5,"yes","no")
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING formula cell
+	at org.apache.poi.hssf.usermodel.HSSFCell.typeMismatch(HSSFCell.java:654)
+	at org.apache.poi.hssf.usermodel.HSSFCell.checkFormulaCachedValueType(HSSFCell.java:659)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getNumericCellValue(HSSFCell.java:684)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.runTest(DefaultSpreadsheetReaderDelegateTest.java:121)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.testReadAllTestResourceFiles(DefaultSpreadsheetReaderDelegateTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(5,1) is a formula. Attempting to evaluate: IF(A6=5,"yes","no")
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: IF(A7=5,"yes","no")
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING formula cell
+	at org.apache.poi.hssf.usermodel.HSSFCell.typeMismatch(HSSFCell.java:654)
+	at org.apache.poi.hssf.usermodel.HSSFCell.checkFormulaCachedValueType(HSSFCell.java:659)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getNumericCellValue(HSSFCell.java:684)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.runTest(DefaultSpreadsheetReaderDelegateTest.java:121)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.testReadAllTestResourceFiles(DefaultSpreadsheetReaderDelegateTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(6,1) is a formula. Attempting to evaluate: IF(A7=5,"yes","no")
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: IF(A6=5,"yes","no")
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING formula cell
+	at org.apache.poi.hssf.usermodel.HSSFCell.typeMismatch(HSSFCell.java:654)
+	at org.apache.poi.hssf.usermodel.HSSFCell.checkFormulaCachedValueType(HSSFCell.java:659)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getNumericCellValue(HSSFCell.java:684)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.runTest(DefaultSpreadsheetReaderDelegateTest.java:121)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.testReadAllTestResourceFiles(DefaultSpreadsheetReaderDelegateTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(5,1) is a formula. Attempting to evaluate: IF(A6=5,"yes","no")
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: IF(A7=5,"yes","no")
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING formula cell
+	at org.apache.poi.hssf.usermodel.HSSFCell.typeMismatch(HSSFCell.java:654)
+	at org.apache.poi.hssf.usermodel.HSSFCell.checkFormulaCachedValueType(HSSFCell.java:659)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getNumericCellValue(HSSFCell.java:684)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.runTest(DefaultSpreadsheetReaderDelegateTest.java:121)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.testReadAllTestResourceFiles(DefaultSpreadsheetReaderDelegateTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(6,1) is a formula. Attempting to evaluate: IF(A7=5,"yes","no")
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@3c9bfddc
+[main] WARN org.apache.metamodel.QueryPostprocessDataContext - Queried table has no columns: Table[name=Sheet2,type=TABLE,remarks=null]
+[main] WARN org.apache.metamodel.QueryPostprocessDataContext - Queried table has no columns: Table[name=Sheet2,type=TABLE,remarks=null]
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@17cdf2d0
+[main] WARN org.apache.metamodel.QueryPostprocessDataContext - Queried table has no columns: Table[name=Sheet3,type=TABLE,remarks=null]
+[main] WARN org.apache.metamodel.QueryPostprocessDataContext - Queried table has no columns: Table[name=Sheet3,type=TABLE,remarks=null]
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@7fe7c640
+[main] WARN org.apache.metamodel.QueryPostprocessDataContext - Queried table has no columns: Table[name=Sheet2,type=TABLE,remarks=null]
+[main] WARN org.apache.metamodel.QueryPostprocessDataContext - Queried table has no columns: Table[name=Sheet3,type=TABLE,remarks=null]
+[main] INFO org.apache.metamodel.data.RowPublisherDataSet - Starting separate thread for publishing action: org.apache.metamodel.excel.XlsxRowPublisherAction@7e22550a
+[MetaModel.SharedExecutorService.Thread.1] WARN org.apache.metamodel.excel.XlsxSheetToRowsHandler - Error-cell occurred: #DIV/0!
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: A10/0
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:1077)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getNumericCellValue(XSSFCell.java:301)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.runTest(DefaultSpreadsheetReaderDelegateTest.java:121)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.testReadAllTestResourceFiles(DefaultSpreadsheetReaderDelegateTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnTests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.517 sec - in org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest
+
+Results :
+
+Tests in error: 
+  ExcelDataContextTest.testCreateTableXlsx:606->runCreateTableTest:650 » IllegalArgument
+
+Tests run: 33, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] MetaModel .......................................... SUCCESS [  2.186 s]
+[INFO] MetaModel core API ................................. SUCCESS [ 17.993 s]
+[INFO] MetaModel module for collection and POJO-based DataContexts. SUCCESS [  1.988 s]
+[INFO] MetaModel module for comma-separated value (CSV) files SUCCESS [  5.951 s]
+[INFO] MetaModel module for fixed width value files ....... SUCCESS [  2.324 s]
+[INFO] MetaModel module for Amazon AWS DynamoDB. .......... SUCCESS [  1.865 s]
+[INFO] MetaModel module for Excel spreadsheets ............ FAILURE [ 16.419 s]
+[INFO] MetaModel module for JSON files .................... SKIPPED
+[INFO] MetaModel module for XML files ..................... SKIPPED
+[INFO] MetaModel module for relational JDBC databases ..... SKIPPED
+[INFO] MetaModel module for Apache Kafka .................. SKIPPED
+[INFO] MetaModel module for Elasticsearch ................. SKIPPED
+[INFO] MetaModel module for ElasticSearch commons ......... SKIPPED
+[INFO] MetaModel module for ElasticSearch via native (Node or Transport) client SKIPPED
+[INFO] MetaModel module for ElasticSearch via REST client . SKIPPED
+[INFO] MetaModel module for Apache Hadoop, HDFS, YARN integration SKIPPED
+[INFO] MetaModel module for Apache HBase .................. SKIPPED
+[INFO] MetaModel module for Apache Cassandra database ..... SKIPPED
+[INFO] MetaModel module for MongoDB ....................... SKIPPED
+[INFO] MetaModel module for MongoDB commons ............... SKIPPED
+[INFO] MetaModel module for MongoDB 2.x ................... SKIPPED
+[INFO] MetaModel module for MongoDB 3.x ................... SKIPPED
+[INFO] MetaModel module for CouchDB databases ............. SKIPPED
+[INFO] MetaModel module for OpenOffice.org database files . SKIPPED
+[INFO] MetaModel module for Salesforce.com ................ SKIPPED
+[INFO] MetaModel module for SugarCRM ...................... SKIPPED
+[INFO] MetaModel module for Neo4j databases ............... SKIPPED
+[INFO] MetaModel full package, including DataContext factories SKIPPED
+[INFO] MetaModel module for Spring enabled configuration .. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 51.277 s
+[INFO] Finished at: 2020-03-18T10:34:06+01:00
+[INFO] Final Memory: 33M/83M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project MetaModel-excel: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-metamodel-394124980-20180619-163218-firstCommit/excel/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project MetaModel-excel: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-metamodel-394124980-20180619-163218-firstCommit/excel/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-metamodel-394124980-20180619-163218-firstCommit/excel/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :MetaModel-excel
+kedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(2,0) is a formula. Attempting to evaluate: -"t" "houetismfsthueiss"
+[main] WARN org.apache.metamodel.excel.ExcelUtils - Exception occurred while evaluating formula at position (2,0): Unexpected ref arg class (org.apache.poi.ss.formula.eval.StringEval)
+[main] ERROR org.apache.metamodel.excel.ExcelUtils - Illegal formula argument occurred while evaluating cell formula: -"t" "houetismfsthueiss"
+java.lang.IllegalArgumentException: Unexpected ref arg class (org.apache.poi.ss.formula.eval.StringEval)
+	at org.apache.poi.ss.formula.eval.IntersectionEval.evaluateRef(IntersectionEval.java:94)
+	at org.apache.poi.ss.formula.eval.IntersectionEval.evaluate(IntersectionEval.java:37)
+	at org.apache.poi.ss.formula.functions.Fixed2ArgFunction.evaluate(Fixed2ArgFunction.java:33)
+	at org.apache.poi.ss.formula.OperationEvaluatorFactory.evaluate(OperationEvaluatorFactory.java:119)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluateFormula(WorkbookEvaluator.java:514)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluateAny(WorkbookEvaluator.java:278)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluate(WorkbookEvaluator.java:220)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateFormulaCellValue(HSSFFormulaEvaluator.java:200)
+	at org.apache.poi.ss.formula.BaseFormulaEvaluator.evaluateInCell(BaseFormulaEvaluator.java:137)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateInCell(HSSFFormulaEvaluator.java:146)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateInCell(HSSFFormulaEvaluator.java:45)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:272)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.runTest(DefaultSpreadsheetReaderDelegateTest.java:121)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.testReadAllTestResourceFiles(DefaultSpreadsheetReaderDelegateTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - Failed to fetch cached/precalculated formula value of cell: -t HouetisMFSTHueiss
+java.lang.IllegalStateException: Cannot get a NUMERIC value from a ERROR formula cell
+	at org.apache.poi.hssf.usermodel.HSSFCell.typeMismatch(HSSFCell.java:654)
+	at org.apache.poi.hssf.usermodel.HSSFCell.checkFormulaCachedValueType(HSSFCell.java:659)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getNumericCellValue(HSSFCell.java:684)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:252)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.runTest(DefaultSpreadsheetReaderDelegateTest.java:121)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.testReadAllTestResourceFiles(DefaultSpreadsheetReaderDelegateTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO org.apache.metamodel.excel.ExcelUtils - cell(99,3) is a formula. Attempting to evaluate: -t HouetisMFSTHueiss
+[main] WARN org.apache.metamodel.excel.ExcelUtils - Exception occurred while evaluating formula at position (99,3): Don't now how to evalate name 't'
+[main] ERROR org.apache.metamodel.excel.ExcelUtils - Unexpected exception occurred while evaluating cell formula: -t HouetisMFSTHueiss
+java.lang.RuntimeException: Don't now how to evalate name 't'
+	at org.apache.poi.ss.formula.WorkbookEvaluator.getEvalForNameRecord(WorkbookEvaluator.java:701)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.getEvalForPtg(WorkbookEvaluator.java:616)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluateFormula(WorkbookEvaluator.java:516)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluateAny(WorkbookEvaluator.java:278)
+	at org.apache.poi.ss.formula.WorkbookEvaluator.evaluate(WorkbookEvaluator.java:220)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateFormulaCellValue(HSSFFormulaEvaluator.java:200)
+	at org.apache.poi.ss.formula.BaseFormulaEvaluator.evaluateInCell(BaseFormulaEvaluator.java:137)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateInCell(HSSFFormulaEvaluator.java:146)
+	at org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator.evaluateInCell(HSSFFormulaEvaluator.java:45)
+	at org.apache.metamodel.excel.ExcelUtils.getFormulaCellValue(ExcelUtils.java:272)
+	at org.apache.metamodel.excel.ExcelUtils.getCellValue(ExcelUtils.java:221)
+	at org.apache.metamodel.excel.ExcelUtils.createRow(ExcelUtils.java:432)
+	at org.apache.metamodel.excel.XlsDataSet.getRow(XlsDataSet.java:76)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.runTest(DefaultSpreadsheetReaderDelegateTest.java:121)
+	at org.apache.metamodel.excel.DefaultSpreadsheetReaderDelegateTest.testReadAllTestResourceFiles(DefaultSpreadsheetReaderDelegateTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
