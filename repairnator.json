@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/incubator-servicecomb-java-chassis",
-  "bugCommit": "https://github.com/apache/incubator-servicecomb-java-chassis/compare/5cc52891e372...38e7d4280534",
-  "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/348180365/foundations/foundation-vertx",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 422,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConnection",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConnection#send_inWorkingStatus"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-348180365-20180302-115721-firstCommit/foundations/foundation-ssl",
+    "overallMetrics": {
+      "numberRunning": 160,
+      "numberPassing": 159,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "failureName": "java.net.BindException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.ssl.SSLManagerTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.ssl.SSLManagerTest",
+        "testMethod": "testSSLManagerServerAndClient",
+        "failureName": "java.net.BindException",
+        "detail": "Address already in use (Bind failed)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 62,
+    "numberPlugins": 0,
+    "numberSourceFiles": 829,
+    "numberTestFiles": 500,
+    "numberLibrariesFailingModule": 64,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:10 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:36:49 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 41782984,
+      "totalMemory": 91791360
+    },
+    "totalDuration": 335,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          28
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-348180365-20180302-115721-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
