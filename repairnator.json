@@ -1,0 +1,119 @@
+{
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-418069898-20180820-110844-firstCommit/saga-core-akka",
+    "overallMetrics": {
+      "numberRunning": 88,
+      "numberPassing": 87,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.awaitility.core.ConditionTimeoutException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.saga.core.actors.ActorBasedSagaExecutionComponentTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.saga.core.actors.ActorBasedSagaExecutionComponentTest",
+        "testMethod": "processRequestsInParallel",
+        "failureName": "org.awaitility.core.ConditionTimeoutException",
+        "detail": "Condition returned by method \"processRequestsInParallel\" in class org.apache.servicecomb.saga.core.SagaExecutionComponentTestBase was not fulfilled within 2 seconds.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 36,
+    "numberPlugins": 0,
+    "numberSourceFiles": 209,
+    "numberTestFiles": 90,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:13 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:36:06 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 20403872,
+      "totalMemory": 87244800
+    },
+    "totalDuration": 287,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 21,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          21
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-418069898-20180820-110844-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  }
+}
