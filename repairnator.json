@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "dta-sherlock/sirh-gestion-paie",
-  "failingModule": "/root/workspace/dta-sherlock/sirh-gestion-paie/384713759",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "javax.persistence.PersistenceException"
-  ],
-  "totalNumberRunningTests": 13,
-  "failing-test-cases": [
-    {
-      "className": "dev.paie.service.CotisationServiceJpaTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "test_sauvegarder_lister_mettre_a_jour"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 13,
+      "numberPassing": 12,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "javax.persistence.PersistenceException",
-          "failureDetail": "org.hibernate.PersistentObjectException: detached entity passed to persist: dev.paie.entite.Cotisation",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dev.paie.service.CotisationServiceJpaTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dev.paie.service.CotisationServiceJpaTest",
+        "testMethod": "test_sauvegarder_lister_mettre_a_jour",
+        "failureName": "javax.persistence.PersistenceException",
+        "detail": "org.hibernate.PersistentObjectException: detached entity passed to persist: dev.paie.entite.Cotisation",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 34,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 39,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:37:05 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 37438944,
+      "totalMemory": 150884352
+    },
+    "totalDuration": 341,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 280,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          280
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
