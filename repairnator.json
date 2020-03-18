@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "dta-sherlock/sirh-gestion-paie",
-  "failingModule": "/root/workspace/dta-sherlock/sirh-gestion-paie/385203965",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalStateException"
-  ],
-  "totalNumberRunningTests": 12,
-  "failing-test-cases": [
-    {
-      "className": "dev.paie.service.CalculerRemunerationServiceSimpleTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "test_calculer"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-385203965-20180529-153745-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 12,
+      "numberPassing": 11,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalStateException",
-          "failureDetail": "Failed to load ApplicationContext",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dev.paie.service.CalculerRemunerationServiceSimpleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dev.paie.service.CalculerRemunerationServiceSimpleTest",
+        "testMethod": "test_calculer",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 37,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 37,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:11 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:50:48 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 101599616,
+      "totalMemory": 265953280
+    },
+    "totalDuration": 1175,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1123,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1123
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-385203965-20180529-153745-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
