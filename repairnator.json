@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 5,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "dipak-pawar/arquillian-cube",
-  "bugCommit": "https://github.com/dipak-pawar/arquillian-cube/compare/54448f694778...7afb01beb405",
-  "failingModule": "/root/workspace/dipak-pawar/arquillian-cube/365463309/docker/docker",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 264,
-  "failing-test-cases": [
-    {
-      "className": "org.arquillian.cube.docker.impl.await.DockerHealthAwaitStrategyTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.arquillian.cube.docker.impl.await.DockerHealthAwaitStrategyTest#org.arquillian.cube.docker.impl.await.DockerHealthAwaitStrategyTest"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dipak-pawar-arquillian-cube-365463309-20180412-084818-firstCommit/docker/docker",
+    "overallMetrics": {
+      "numberRunning": 259,
+      "numberPassing": 258,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
       "failures": [
         {
           "failureName": "java.lang.RuntimeException",
-          "failureDetail": "org.newsclub.net.unix.AFUNIXSocketException: No such file or directory (socket: /run/docker.sock)",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.arquillian.cube.docker.impl.await.DockerHealthAwaitStrategyTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.arquillian.cube.docker.impl.await.DockerHealthAwaitStrategyTest",
+        "testMethod": "org.arquillian.cube.docker.impl.await.DockerHealthAwaitStrategyTest",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "org.newsclub.net.unix.AFUNIXSocketException: No such file or directory (socket: /run/docker.sock)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 72,
+    "numberPlugins": 0,
+    "numberSourceFiles": 577,
+    "numberTestFiles": 142,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 12:16:49 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 25913960,
+      "totalMemory": 142503936
+    },
+    "totalDuration": 6324,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          1
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dipak-pawar-arquillian-cube-365463309-20180412-084818-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
