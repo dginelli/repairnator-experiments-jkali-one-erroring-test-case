@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 103,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/incubator-plc4x",
-  "bugCommit": "https://github.com/apache/incubator-plc4x/compare/75dc65212ab6...cb3082f5a3fc",
-  "failingModule": "/root/workspace/apache/incubator-plc4x/350784414/plc4j/protocols/ads",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.apache.plc4x.java.api.exceptions.PlcRuntimeException"
-  ],
-  "totalNumberRunningTests": 448,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.plc4x.java.ads.protocol.ADS2SerialProtocolTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.plc4x.java.ads.protocol.ADS2SerialProtocolTest#initializationError"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:30:48 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:46:18 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 18728880,
+      "totalMemory": 239403008
+    },
+    "totalDuration": 927,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 699,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          699
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-plc4x-350784414-20180308-125602-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-plc4x-350784414-20180308-125602-firstCommit/plc4j/protocols/ads",
+    "overallMetrics": {
+      "numberRunning": 345,
+      "numberPassing": 344,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 103,
       "failures": [
         {
           "failureName": "org.apache.plc4x.java.api.exceptions.PlcRuntimeException",
-          "failureDetail": "java.security.NoSuchAlgorithmException: CRC-16 MessageDigest not available",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.plc4x.java.ads.protocol.ADS2SerialProtocolTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.plc4x.java.ads.protocol.ADS2SerialProtocolTest",
+        "testMethod": "initializationError",
+        "failureName": "org.apache.plc4x.java.api.exceptions.PlcRuntimeException",
+        "detail": "java.security.NoSuchAlgorithmException: CRC-16 MessageDigest not available",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 30,
+    "numberPlugins": 0,
+    "numberSourceFiles": 227,
+    "numberTestFiles": 81,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  }
 }
