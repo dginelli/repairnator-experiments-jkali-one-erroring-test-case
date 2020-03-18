@@ -8767,3 +8767,77 @@ java.lang.NullPointerException: null
 10:50:39.757 [MockWebServer /127.0.0.1:46468] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A74%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
 10:50:40.133 [MockWebServer /127.0.0.1:48962] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[52279] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A29%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A1377%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
 10:50:40.257 [MockWebServer /127.0.0.1:46468] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A75%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A548%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:40.633 [MockWebServer /127.0.0.1:48962] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[52279] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A30%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A1378%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:40.757 [MockWebServer /127.0.0.1:46468] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A76%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A549%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:41.133 [MockWebServer /127.0.0.1:48962] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[52279] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A31%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A1379%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:41.257 [MockWebServer /127.0.0.1:46468] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A77%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A550%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:41.617 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5049d8b2: startup date [Wed Mar 18 10:50:36 CET 2020]; root of context hierarchy
+10:50:41.633 [MockWebServer /127.0.0.1:48962] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[52279] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A32%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A1380%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:41.648 [Apollo-RemoteConfigRepository-1] WARN  c.c.f.a.i.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: someAppId, cluster: default, namespaces: application
+10:50:41.736 [main] WARN  c.c.f.a.i.LocalFileConfigRepository - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: someAppId, cluster: default, namespace: otherNamespace, url: http://localhost:52279/configs/someAppId/default/otherNamespace?ip=172.27.245.61 [Cause: Could not complete get operation [Cause: Read timed out]]
+10:50:41.736 [MockWebServer /127.0.0.1:48962] ERROR okhttp3.mockwebserver.MockWebServer - MockWebServer[52279] connection from localhost/127.0.0.1 crashed
+java.lang.NullPointerException: null
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo.mockLongPollBody(EmbeddedApollo.java:73)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo.access$200(EmbeddedApollo.java:2)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo$2.dispatch(EmbeddedApollo.java:28)
+	at okhttp3.mockwebserver.MockWebServer$3.processOneRequest(MockWebServer.java:557)
+	at okhttp3.mockwebserver.MockWebServer$3.processConnection(MockWebServer.java:515)
+	at okhttp3.mockwebserver.MockWebServer$3.execute(MockWebServer.java:442)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+10:50:41.757 [MockWebServer /127.0.0.1:46468] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A78%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A551%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:41.968 [Apollo-RemoteConfigRepository-1] WARN  c.c.f.a.i.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: someAppId, cluster: default, namespaces: application
+10:50:42.093 [main] WARN  c.c.f.a.i.LocalFileConfigRepository - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: someAppId, cluster: default, namespace: otherNamespace, url: http://localhost:48473/configs/someAppId/default/otherNamespace?ip=172.27.245.61 [Cause: Could not complete get operation [Cause: Read timed out]]
+10:50:42.093 [main] WARN  c.c.f.a.i.AbstractConfigRepository - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.LocalFileConfigRepository, reason: Load config from local config failed! [Cause: Cannot read from local cache file /pfs/proj/nobackup/fs/projnb01/snic2020-10-10/dginelli/astor/AstorMain-AstorJKali-repairnator-repairnator-experiments-ctripcorp-apollo-420520691-20180825-174217-firstCommit/bin/variant-29/config-cache/someAppId+default+otherNamespace.properties]
+10:50:42.096 [MockWebServer /127.0.0.1:46468] ERROR okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] connection from localhost/127.0.0.1 crashed
+java.lang.NullPointerException: null
+	at java.util.HashMap.putMapEntries(HashMap.java:501)
+	at java.util.HashMap.putAll(HashMap.java:785)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo.mergeOverriddenProperties(EmbeddedApollo.java:89)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo.loadConfigFor(EmbeddedApollo.java:65)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo.access$300(EmbeddedApollo.java:2)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo$2.dispatch(EmbeddedApollo.java:35)
+	at okhttp3.mockwebserver.MockWebServer$3.processOneRequest(MockWebServer.java:557)
+	at okhttp3.mockwebserver.MockWebServer$3.processConnection(MockWebServer.java:515)
+	at okhttp3.mockwebserver.MockWebServer$3.execute(MockWebServer.java:442)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+10:50:42.134 [MockWebServer /127.0.0.1:49068] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[52279] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A33%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A1381%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:42.257 [MockWebServer /127.0.0.1:46572] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A79%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A552%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:42.633 [MockWebServer /127.0.0.1:49068] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[52279] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A34%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A1382%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:42.649 [MockWebServer /127.0.0.1:49068] ERROR okhttp3.mockwebserver.MockWebServer - MockWebServer[52279] connection from localhost/127.0.0.1 crashed
+java.lang.NullPointerException: null
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo.mockLongPollBody(EmbeddedApollo.java:73)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo.access$200(EmbeddedApollo.java:2)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo$2.dispatch(EmbeddedApollo.java:28)
+	at okhttp3.mockwebserver.MockWebServer$3.processOneRequest(MockWebServer.java:557)
+	at okhttp3.mockwebserver.MockWebServer$3.processConnection(MockWebServer.java:515)
+	at okhttp3.mockwebserver.MockWebServer$3.execute(MockWebServer.java:442)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+10:50:42.757 [MockWebServer /127.0.0.1:46572] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A80%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A553%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:42.970 [MockWebServer /127.0.0.1:46572] ERROR okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] connection from localhost/127.0.0.1 crashed
+java.lang.NullPointerException: null
+	at java.util.HashMap.putMapEntries(HashMap.java:501)
+	at java.util.HashMap.putAll(HashMap.java:785)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo.mergeOverriddenProperties(EmbeddedApollo.java:89)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo.loadConfigFor(EmbeddedApollo.java:65)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo.access$300(EmbeddedApollo.java:2)
+	at com.ctrip.framework.apollo.mockserver.EmbeddedApollo$2.dispatch(EmbeddedApollo.java:35)
+	at okhttp3.mockwebserver.MockWebServer$3.processOneRequest(MockWebServer.java:557)
+	at okhttp3.mockwebserver.MockWebServer$3.processConnection(MockWebServer.java:515)
+	at okhttp3.mockwebserver.MockWebServer$3.execute(MockWebServer.java:442)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+10:50:43.134 [MockWebServer /127.0.0.1:49088] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[52279] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A35%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A1383%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:43.257 [MockWebServer /127.0.0.1:46592] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A81%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A554%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:43.632 [MockWebServer /127.0.0.1:49088] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[52279] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A36%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A1384%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
+10:50:43.757 [MockWebServer /127.0.0.1:46592] INFO  okhttp3.mockwebserver.MockWebServer - MockWebServer[48473] received request: GET /notifications/v2?cluster=default&appId=someAppId&ip=172.27.245.61&notifications=%5B%7B%22namespaceName%22%3A%22otherNamespace%22%2C%22notificationId%22%3A82%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A555%7D%5D HTTP/1.1 and responded: HTTP/1.1 200 OK
