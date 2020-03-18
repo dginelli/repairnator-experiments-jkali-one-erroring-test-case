@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 1,
-  "repo": "dangdangdotcom/sharding-jdbc",
-  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/187d46d27c36...440b331591c8",
-  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/277182628/sharding-jdbc-core",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.Exception"
-  ],
-  "totalNumberRunningTests": 7919,
-  "failing-test-cases": [
-    {
-      "className": "com.dangdang.ddframe.rdb.sharding.routing.SelectMixedTablesTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.dangdang.ddframe.rdb.sharding.routing.SelectMixedTablesTest#assertSelectTableWithoutRules"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-277184579-20170919-093730-firstCommit/sharding-jdbc-core",
+    "overallMetrics": {
+      "numberRunning": 7915,
+      "numberPassing": 7914,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "java.lang.Exception",
-          "failureDetail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.exception.ShardingJdbcException\u003e but was\u003cjava.util.NoSuchElementException\u003e",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.dangdang.ddframe.rdb.sharding.routing.SelectMixedTablesTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.dangdang.ddframe.rdb.sharding.routing.SelectMixedTablesTest",
+        "testMethod": "assertSelectTableWithoutRules",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.exception.ShardingJdbcException\u003e but was\u003cjava.util.NoSuchElementException\u003e",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberPlugins": 0,
+    "numberSourceFiles": 367,
+    "numberTestFiles": 247,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 12:17:51 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 273962616,
+      "totalMemory": 578310144
+    },
+    "totalDuration": 6386,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-277184579-20170919-093730-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
