@@ -1,0 +1,809 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Aspectran
+[INFO] Aspectran Core
+[INFO] Aspectran Embed
+[INFO] Aspectran Shell
+[INFO] Aspectran Shell using JLine
+[INFO] Aspectran Web
+[INFO] Aspectran with Jetty
+[INFO] Aspectran Daemon
+[INFO] Aspectran All-in-One
+[INFO] Aspectran Demo
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Aspectran 5.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ aspectran ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (jacoco-initialize) @ aspectran ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/target/jacoco.exec
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-1.8-compat) @ aspectran ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (generate-manifest) @ aspectran ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Aspectran Core 5.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java) @ aspectran-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (jacoco-initialize) @ aspectran-core ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ aspectran-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ aspectran-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-1.8-compat) @ aspectran-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (generate-manifest) @ aspectran-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ aspectran-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ aspectran-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ aspectran-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.pom (7 KB at 16.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 71.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.pom (3 KB at 83.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar (65 KB at 825.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar (79 KB at 782.9 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.aspectran.core.util.apon.AponReadWriteTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 s - in com.aspectran.core.util.apon.AponReadWriteTest
+[INFO] Running com.aspectran.core.util.StringUtilsTest
+1K = 1024
+1KB = 1024
+10M = 10485760
+10MB = 10485760
+1.2 GB = 1288490189
+2.4GB = 2576980378
+3.75MB = 3932160
+1.28KB = 1310
+1024 = 1024
+1024B = 1024
+1 = 1 B
+1024 = 1 KB
+10000 = 9.8 KB
+1234567890 = 1.1 GB
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.aspectran.core.util.StringUtilsTest
+[INFO] Running com.aspectran.core.util.wildcard.PluralWildcardPatternTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.aspectran.core.util.wildcard.PluralWildcardPatternTest
+[INFO] Running com.aspectran.core.util.wildcard.WildcardMatcherTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.aspectran.core.util.wildcard.WildcardMatcherTest
+[INFO] Running com.aspectran.core.util.wildcard.WildcardMaskerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.aspectran.core.util.wildcard.WildcardMaskerTest
+[INFO] Running com.aspectran.core.util.MethodUtilsTest
+539  [main] DEBUG [39mLogging initialized using 'class com.aspectran.core.util.logging.slf4j.Slf4jImpl' adapter[0;39m - c.a.c.util.logging.LogFactory.setImplementation(105)
+563  [main] DEBUG [39mmatched method: public void com.aspectran.core.util.MethodUtilsTest$SampleBean.primitiveArray(int)[0;39m - c.a.core.util.MethodUtilsTest.testGetMatchingAccessibleMethod1(48)
+564  [main] DEBUG [39mspecified args: 1[0;39m - c.a.core.util.MethodUtilsTest.primitiveArray(130)
+566  [main] DEBUG [39mmatched method: public void com.aspectran.core.util.MethodUtilsTest$SampleBean.primitiveArray(int[])[0;39m - c.a.core.util.MethodUtilsTest.testGetMatchingAccessibleMethod2(62)
+566  [main] DEBUG [39mspecified args: [I@3dd31157[0;39m - c.a.core.util.MethodUtilsTest.primitiveArray(135)
+568  [main] DEBUG [39mmatched method: public void com.aspectran.core.util.MethodUtilsTest$SampleBean.setSampleBean(com.aspectran.core.util.MethodUtilsTest$SampleBean)[0;39m - c.a.core.util.MethodUtilsTest.testGetMatchingAccessibleMethod3(76)
+569  [main] DEBUG [39mspecified args: com.aspectran.core.util.MethodUtilsTest$SampleBean@31c628e7[0;39m - c.a.core.util.MethodUtilsTest.setSampleBean(151)
+581  [main] DEBUG [39mmatched method: public void com.aspectran.core.util.MethodUtilsTest$SampleBean.setSampleBean(com.aspectran.core.util.MethodUtilsTest$SampleBean[])[0;39m - c.a.core.util.MethodUtilsTest.testGetMatchingAccessibleMethod4(90)
+582  [main] DEBUG [39mspecified args: [Lcom.aspectran.core.util.MethodUtilsTest$SampleBean;@3240b2a4[0;39m - c.a.core.util.MethodUtilsTest.setSampleBean(156)
+583  [main] DEBUG [39mmatched method: public void com.aspectran.core.util.MethodUtilsTest$SampleBean.setSampleBean(java.util.List)[0;39m - c.a.core.util.MethodUtilsTest.testGetMatchingAccessibleMethod5(108)
+584  [main] DEBUG [39mspecified args: [com.aspectran.core.util.MethodUtilsTest$SampleBean@58434b19, com.aspectran.core.util.MethodUtilsTest$SampleBean@7d3fb0ef][0;39m - c.a.core.util.MethodUtilsTest.setSampleBean(161)
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.566 s - in com.aspectran.core.util.MethodUtilsTest
+[INFO] Running com.aspectran.core.util.nodelet.NodeletParserTest
+/aspectran/append style=compact, text=
+        This is an Aspectran Configuration for Testing.
+    
+/aspectran/append setting defaultTemplateEngineBean=freemarker
+/aspectran/append appendRule={file=/config/another-config.xml}
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in com.aspectran.core.util.nodelet.NodeletParserTest
+[INFO] Running com.aspectran.core.util.ClassScannerTest
+711  [main] DEBUG [39mScanning classes: com/aspectran/**/util/*Test at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes/com/aspectran/[0;39m - c.a.core.util.ClassScanner.scan(119)
+729  [main] DEBUG [39mScanning classes: com/aspectran/**/util/*Test at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/classes/com/aspectran/[0;39m - c.a.core.util.ClassScanner.scan(119)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in com.aspectran.core.util.ClassScannerTest
+[INFO] Running com.aspectran.core.util.FileScannerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in com.aspectran.core.util.FileScannerTest
+[INFO] Running com.aspectran.core.component.bean.BeanTest
+813  [main] INFO  [34mBuilding an ActivityContext with /config/bean/bean-test-config.xml[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(91)
+813  [main] INFO  [34mActivating profiles [dev, local][0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(99)
+816  [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+1001 [main] DEBUG [39mScanning classes: com/aspectran/core/component/**/Test*Bean at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes/com/aspectran/core/component/[0;39m - c.a.core.util.ClassScanner.scan(119)
+1010 [main] DEBUG [39mScanning classes: com/aspectran/core/component/**/Test*Bean at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/classes/com/aspectran/core/component/[0;39m - c.a.core.util.ClassScanner.scan(119)
+1020 [main] DEBUG [39mPending appender {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/bean/test-properties.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.pending(79)
+1022 [main] DEBUG [39mAppending {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/bean/test-properties.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.handle(92)
+1142 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+1143 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+1143 [main] DEBUG [39mParsed ID-based bean rules: 5[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+1152 [main] DEBUG [39mParsed Type-based bean rules: 7[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+1181 [main] INFO  [34mInitialized AspectRuleRegistry@29013ef2[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+1182 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@265c1a7c[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+1208 [main] WARN  [31mNo unique bean of type [class com.aspectran.core.component.bean.TestFieldValueAutowireBean] is defined: expected single matching bean but found 2: [{id=bean.TestFieldValueAutowireBean, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton, replicated=true}, {id=bean.TestFieldValueAutowireBean2, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton}][0;39m - c.a.c.c.b.ContextBeanRegistry.autowiring(285)
+1208 [main] WARN  [31mNo unique bean of type [class com.aspectran.core.component.bean.TestFieldValueAutowireBean] is defined: expected single matching bean but found 2: [{id=bean.TestFieldValueAutowireBean, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton, replicated=true}, {id=bean.TestFieldValueAutowireBean2, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton}][0;39m - c.a.c.c.b.ContextBeanRegistry.autowiring(312)
+1209 [main] INFO  [34mInitialized ContextBeanRegistry@265c1a7c[0;39m - c.a.c.c.b.ContextBeanRegistry.initialize(50)
+1209 [main] INFO  [34mInitialized TemplateRuleRegistry@7c588adc[0;39m - c.a.c.c.t.TemplateRuleRegistry.initialize(50)
+1209 [main] INFO  [34mInitialized ContextTemplateProcessor@33ec2c0c[0;39m - c.a.c.c.t.ContextTemplateProcessor.initialize(50)
+1209 [main] INFO  [34mInitialized ScheduleRuleRegistry@5968800d[0;39m - c.a.c.c.s.ScheduleRuleRegistry.initialize(50)
+1209 [main] INFO  [34mInitialized TransletRuleRegistry@3887c7d7[0;39m - c.a.c.c.t.TransletRuleRegistry.initialize(50)
+1213 [main] DEBUG [39mUnable to locate MessageSource with name 'messageSource': using default [com.aspectran.core.support.i18n.message.DelegatingMessageSource@463afa6e][0;39m - c.a.c.c.AspectranActivityContext.initMessageSource(207)
+1213 [main] INFO  [34mInitialized AspectranActivityContext@7b96de8d[0;39m - c.a.c.c.AspectranActivityContext.initialize(50)
+1213 [main] INFO  [34mActivityContext build completed in 399 ms[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(137)
+1223 [main] DEBUG [39mRegistering shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.addHook(83)
+1223 [main] DEBUG [39mAdding shutdown-hook task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@6de7778f[0;39m - c.a.c.u.thread.ShutdownHooks.add(53)
+1224 [main] INFO  [34mDestroyed TransletRuleRegistry@3887c7d7[0;39m - c.a.c.c.t.TransletRuleRegistry.destroy(68)
+1224 [main] INFO  [34mDestroyed ScheduleRuleRegistry@5968800d[0;39m - c.a.c.c.s.ScheduleRuleRegistry.destroy(68)
+1225 [main] INFO  [34mDestroyed TemplateRuleRegistry@7c588adc[0;39m - c.a.c.c.t.TemplateRuleRegistry.destroy(68)
+1225 [main] INFO  [34mDestroyed ContextTemplateProcessor@33ec2c0c[0;39m - c.a.c.c.t.ContextTemplateProcessor.destroy(68)
+1225 [main] DEBUG [39mDestroying singletons in com.aspectran.core.component.bean.ContextBeanRegistry@265c1a7c[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(431)
+1225 [main] DEBUG [39mDestroyed all cached singletons in com.aspectran.core.component.bean.ContextBeanRegistry@265c1a7c[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(451)
+1225 [main] INFO  [34mDestroyed ContextBeanRegistry@265c1a7c[0;39m - c.a.c.c.b.ContextBeanRegistry.destroy(68)
+1227 [main] INFO  [34mDestroyed AspectRuleRegistry@29013ef2[0;39m - c.a.c.c.a.AspectRuleRegistry.destroy(68)
+1227 [main] INFO  [34mDestroyed AspectranActivityContext@7b96de8d[0;39m - c.a.c.c.AspectranActivityContext.destroy(68)
+1228 [main] DEBUG [39mRemoving shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.removeHook(98)
+1231 [main] INFO  [34mBuilding an ActivityContext with /config/bean/bean-test-config.xml[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(91)
+1231 [main] INFO  [34mActivating profiles [dev, local][0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(99)
+1231 [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+1244 [main] DEBUG [39mScanning classes: com/aspectran/core/component/**/Test*Bean at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes/com/aspectran/core/component/[0;39m - c.a.core.util.ClassScanner.scan(119)
+1249 [main] DEBUG [39mScanning classes: com/aspectran/core/component/**/Test*Bean at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/classes/com/aspectran/core/component/[0;39m - c.a.core.util.ClassScanner.scan(119)
+1261 [main] DEBUG [39mPending appender {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/bean/test-properties.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.pending(79)
+1263 [main] DEBUG [39mAppending {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/bean/test-properties.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.handle(92)
+1269 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+1269 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+1270 [main] DEBUG [39mParsed ID-based bean rules: 5[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+1280 [main] DEBUG [39mParsed Type-based bean rules: 7[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+1281 [main] INFO  [34mInitialized AspectRuleRegistry@6cbb7a7d[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+1281 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@cdb3c85[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+1282 [main] WARN  [31mNo unique bean of type [class com.aspectran.core.component.bean.TestFieldValueAutowireBean] is defined: expected single matching bean but found 2: [{id=bean.TestFieldValueAutowireBean2, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton}, {id=bean.TestFieldValueAutowireBean, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton, replicated=true}][0;39m - c.a.c.c.b.ContextBeanRegistry.autowiring(285)
+1283 [main] WARN  [31mNo unique bean of type [class com.aspectran.core.component.bean.TestFieldValueAutowireBean] is defined: expected single matching bean but found 2: [{id=bean.TestFieldValueAutowireBean2, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton}, {id=bean.TestFieldValueAutowireBean, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton, replicated=true}][0;39m - c.a.c.c.b.ContextBeanRegistry.autowiring(312)
+1283 [main] INFO  [34mInitialized ContextBeanRegistry@cdb3c85[0;39m - c.a.c.c.b.ContextBeanRegistry.initialize(50)
+1284 [main] INFO  [34mInitialized TemplateRuleRegistry@37606fee[0;39m - c.a.c.c.t.TemplateRuleRegistry.initialize(50)
+1284 [main] INFO  [34mInitialized ContextTemplateProcessor@33d28f0a[0;39m - c.a.c.c.t.ContextTemplateProcessor.initialize(50)
+1284 [main] INFO  [34mInitialized ScheduleRuleRegistry@48d739f[0;39m - c.a.c.c.s.ScheduleRuleRegistry.initialize(50)
+1284 [main] INFO  [34mInitialized TransletRuleRegistry@51e7589f[0;39m - c.a.c.c.t.TransletRuleRegistry.initialize(50)
+1285 [main] DEBUG [39mUnable to locate MessageSource with name 'messageSource': using default [com.aspectran.core.support.i18n.message.DelegatingMessageSource@65cc5252][0;39m - c.a.c.c.AspectranActivityContext.initMessageSource(207)
+1285 [main] INFO  [34mInitialized AspectranActivityContext@42c12b3e[0;39m - c.a.c.c.AspectranActivityContext.initialize(50)
+1285 [main] INFO  [34mActivityContext build completed in 54 ms[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(137)
+1286 [main] DEBUG [39mRegistering shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.addHook(83)
+1286 [main] DEBUG [39mAdding shutdown-hook task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@46f73ffa[0;39m - c.a.c.u.thread.ShutdownHooks.add(53)
+1286 [main] INFO  [34mDestroyed TransletRuleRegistry@51e7589f[0;39m - c.a.c.c.t.TransletRuleRegistry.destroy(68)
+1287 [main] INFO  [34mDestroyed ScheduleRuleRegistry@48d739f[0;39m - c.a.c.c.s.ScheduleRuleRegistry.destroy(68)
+1287 [main] INFO  [34mDestroyed TemplateRuleRegistry@37606fee[0;39m - c.a.c.c.t.TemplateRuleRegistry.destroy(68)
+1287 [main] INFO  [34mDestroyed ContextTemplateProcessor@33d28f0a[0;39m - c.a.c.c.t.ContextTemplateProcessor.destroy(68)
+1287 [main] DEBUG [39mDestroying singletons in com.aspectran.core.component.bean.ContextBeanRegistry@cdb3c85[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(431)
+1288 [main] DEBUG [39mDestroyed all cached singletons in com.aspectran.core.component.bean.ContextBeanRegistry@cdb3c85[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(451)
+1289 [main] INFO  [34mDestroyed ContextBeanRegistry@cdb3c85[0;39m - c.a.c.c.b.ContextBeanRegistry.destroy(68)
+1290 [main] INFO  [34mDestroyed AspectRuleRegistry@6cbb7a7d[0;39m - c.a.c.c.a.AspectRuleRegistry.destroy(68)
+1292 [main] INFO  [34mDestroyed AspectranActivityContext@42c12b3e[0;39m - c.a.c.c.AspectranActivityContext.destroy(68)
+1292 [main] DEBUG [39mRemoving shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.removeHook(98)
+1299 [main] INFO  [34mBuilding an ActivityContext with /config/bean/bean-test-config.xml[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(91)
+1300 [main] INFO  [34mActivating profiles [dev, local][0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(99)
+1301 [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+1316 [main] DEBUG [39mScanning classes: com/aspectran/core/component/**/Test*Bean at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes/com/aspectran/core/component/[0;39m - c.a.core.util.ClassScanner.scan(119)
+1318 [main] DEBUG [39mScanning classes: com/aspectran/core/component/**/Test*Bean at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/classes/com/aspectran/core/component/[0;39m - c.a.core.util.ClassScanner.scan(119)
+1324 [main] DEBUG [39mPending appender {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/bean/test-properties.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.pending(79)
+1324 [main] DEBUG [39mAppending {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/bean/test-properties.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.handle(92)
+1344 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+1345 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+1346 [main] DEBUG [39mParsed ID-based bean rules: 5[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+1347 [main] DEBUG [39mParsed Type-based bean rules: 7[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+1348 [main] INFO  [34mInitialized AspectRuleRegistry@69a40b3c[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+1348 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@251c90f[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+1349 [main] WARN  [31mNo unique bean of type [class com.aspectran.core.component.bean.TestFieldValueAutowireBean] is defined: expected single matching bean but found 2: [{id=bean.TestFieldValueAutowireBean, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton, replicated=true}, {id=bean.TestFieldValueAutowireBean2, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton}][0;39m - c.a.c.c.b.ContextBeanRegistry.autowiring(285)
+1349 [main] WARN  [31mNo unique bean of type [class com.aspectran.core.component.bean.TestFieldValueAutowireBean] is defined: expected single matching bean but found 2: [{id=bean.TestFieldValueAutowireBean, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton, replicated=true}, {id=bean.TestFieldValueAutowireBean2, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton}][0;39m - c.a.c.c.b.ContextBeanRegistry.autowiring(312)
+1350 [main] INFO  [34mInitialized ContextBeanRegistry@251c90f[0;39m - c.a.c.c.b.ContextBeanRegistry.initialize(50)
+1350 [main] INFO  [34mInitialized TemplateRuleRegistry@6629643d[0;39m - c.a.c.c.t.TemplateRuleRegistry.initialize(50)
+1350 [main] INFO  [34mInitialized ContextTemplateProcessor@2dd178f3[0;39m - c.a.c.c.t.ContextTemplateProcessor.initialize(50)
+1351 [main] INFO  [34mInitialized ScheduleRuleRegistry@64656b9e[0;39m - c.a.c.c.s.ScheduleRuleRegistry.initialize(50)
+1351 [main] INFO  [34mInitialized TransletRuleRegistry@6870cfac[0;39m - c.a.c.c.t.TransletRuleRegistry.initialize(50)
+1351 [main] DEBUG [39mUnable to locate MessageSource with name 'messageSource': using default [com.aspectran.core.support.i18n.message.DelegatingMessageSource@45554613][0;39m - c.a.c.c.AspectranActivityContext.initMessageSource(207)
+1351 [main] INFO  [34mInitialized AspectranActivityContext@63e5b8aa[0;39m - c.a.c.c.AspectranActivityContext.initialize(50)
+1352 [main] INFO  [34mActivityContext build completed in 51 ms[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(137)
+1352 [main] DEBUG [39mRegistering shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.addHook(83)
+1352 [main] DEBUG [39mAdding shutdown-hook task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@4270b142[0;39m - c.a.c.u.thread.ShutdownHooks.add(53)
+1353 [main] INFO  [34mDestroyed TransletRuleRegistry@6870cfac[0;39m - c.a.c.c.t.TransletRuleRegistry.destroy(68)
+1353 [main] INFO  [34mDestroyed ScheduleRuleRegistry@64656b9e[0;39m - c.a.c.c.s.ScheduleRuleRegistry.destroy(68)
+1354 [main] INFO  [34mDestroyed TemplateRuleRegistry@6629643d[0;39m - c.a.c.c.t.TemplateRuleRegistry.destroy(68)
+1354 [main] INFO  [34mDestroyed ContextTemplateProcessor@2dd178f3[0;39m - c.a.c.c.t.ContextTemplateProcessor.destroy(68)
+3038 [main] DEBUG [39mDestroying singletons in com.aspectran.core.component.bean.ContextBeanRegistry@251c90f[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(431)
+3039 [main] DEBUG [39mDestroyed all cached singletons in com.aspectran.core.component.bean.ContextBeanRegistry@251c90f[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(451)
+3041 [main] INFO  [34mDestroyed ContextBeanRegistry@251c90f[0;39m - c.a.c.c.b.ContextBeanRegistry.destroy(68)
+3042 [main] INFO  [34mDestroyed AspectRuleRegistry@69a40b3c[0;39m - c.a.c.c.a.AspectRuleRegistry.destroy(68)
+3042 [main] INFO  [34mDestroyed AspectranActivityContext@63e5b8aa[0;39m - c.a.c.c.AspectranActivityContext.destroy(68)
+3043 [main] DEBUG [39mRemoving shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.removeHook(98)
+3048 [main] INFO  [34mBuilding an ActivityContext with /config/bean/bean-test-config.xml[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(91)
+3048 [main] INFO  [34mActivating profiles [dev, local][0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(99)
+3048 [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+3074 [main] DEBUG [39mScanning classes: com/aspectran/core/component/**/Test*Bean at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes/com/aspectran/core/component/[0;39m - c.a.core.util.ClassScanner.scan(119)
+3075 [main] DEBUG [39mScanning classes: com/aspectran/core/component/**/Test*Bean at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/classes/com/aspectran/core/component/[0;39m - c.a.core.util.ClassScanner.scan(119)
+3084 [main] DEBUG [39mPending appender {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/bean/test-properties.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.pending(79)
+3085 [main] DEBUG [39mAppending {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/bean/test-properties.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.handle(92)
+3106 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+3107 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+3108 [main] DEBUG [39mParsed ID-based bean rules: 5[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+3110 [main] DEBUG [39mParsed Type-based bean rules: 7[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+3111 [main] INFO  [34mInitialized AspectRuleRegistry@350323a0[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+3111 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@2506b881[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+3113 [main] WARN  [31mNo unique bean of type [class com.aspectran.core.component.bean.TestFieldValueAutowireBean] is defined: expected single matching bean but found 2: [{id=bean.TestFieldValueAutowireBean2, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton}, {id=bean.TestFieldValueAutowireBean, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton, replicated=true}][0;39m - c.a.c.c.b.ContextBeanRegistry.autowiring(285)
+3114 [main] WARN  [31mNo unique bean of type [class com.aspectran.core.component.bean.TestFieldValueAutowireBean] is defined: expected single matching bean but found 2: [{id=bean.TestFieldValueAutowireBean2, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton}, {id=bean.TestFieldValueAutowireBean, class=com.aspectran.core.component.bean.TestFieldValueAutowireBean, scope=singleton, replicated=true}][0;39m - c.a.c.c.b.ContextBeanRegistry.autowiring(312)
+3114 [main] INFO  [34mInitialized ContextBeanRegistry@2506b881[0;39m - c.a.c.c.b.ContextBeanRegistry.initialize(50)
+3115 [main] INFO  [34mInitialized TemplateRuleRegistry@5d7dd549[0;39m - c.a.c.c.t.TemplateRuleRegistry.initialize(50)
+3115 [main] INFO  [34mInitialized ContextTemplateProcessor@486bd064[0;39m - c.a.c.c.t.ContextTemplateProcessor.initialize(50)
+3115 [main] INFO  [34mInitialized ScheduleRuleRegistry@6459f4ea[0;39m - c.a.c.c.s.ScheduleRuleRegistry.initialize(50)
+3116 [main] INFO  [34mInitialized TransletRuleRegistry@740b9a50[0;39m - c.a.c.c.t.TransletRuleRegistry.initialize(50)
+3116 [main] DEBUG [39mUnable to locate MessageSource with name 'messageSource': using default [com.aspectran.core.support.i18n.message.DelegatingMessageSource@476fde05][0;39m - c.a.c.c.AspectranActivityContext.initMessageSource(207)
+3116 [main] INFO  [34mInitialized AspectranActivityContext@5111de7c[0;39m - c.a.c.c.AspectranActivityContext.initialize(50)
+3116 [main] INFO  [34mActivityContext build completed in 68 ms[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(137)
+3117 [main] DEBUG [39mRegistering shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.addHook(83)
+3117 [main] DEBUG [39mAdding shutdown-hook task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@52354202[0;39m - c.a.c.u.thread.ShutdownHooks.add(53)
+3122 [main] INFO  [34mDestroyed TransletRuleRegistry@740b9a50[0;39m - c.a.c.c.t.TransletRuleRegistry.destroy(68)
+3122 [main] INFO  [34mDestroyed ScheduleRuleRegistry@6459f4ea[0;39m - c.a.c.c.s.ScheduleRuleRegistry.destroy(68)
+3123 [main] INFO  [34mDestroyed TemplateRuleRegistry@5d7dd549[0;39m - c.a.c.c.t.TemplateRuleRegistry.destroy(68)
+3123 [main] INFO  [34mDestroyed ContextTemplateProcessor@486bd064[0;39m - c.a.c.c.t.ContextTemplateProcessor.destroy(68)
+3123 [main] DEBUG [39mDestroying singletons in com.aspectran.core.component.bean.ContextBeanRegistry@2506b881[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(431)
+3123 [main] DEBUG [39mDestroyed all cached singletons in com.aspectran.core.component.bean.ContextBeanRegistry@2506b881[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(451)
+3124 [main] INFO  [34mDestroyed ContextBeanRegistry@2506b881[0;39m - c.a.c.c.b.ContextBeanRegistry.destroy(68)
+3124 [main] INFO  [34mDestroyed AspectRuleRegistry@350323a0[0;39m - c.a.c.c.a.AspectRuleRegistry.destroy(68)
+3126 [main] INFO  [34mDestroyed AspectranActivityContext@5111de7c[0;39m - c.a.c.c.AspectranActivityContext.destroy(68)
+3127 [main] DEBUG [39mRemoving shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.removeHook(98)
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.336 s - in com.aspectran.core.component.bean.BeanTest
+[INFO] Running com.aspectran.core.component.bean.CallTest
+3134 [main] INFO  [34mBuilding an ActivityContext with /config/call/call-test-config.xml[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(91)
+3135 [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+3143 [main] DEBUG [39mPending appender {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/call/bean-call-test.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.pending(79)
+3144 [main] DEBUG [39mPending appender {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/call/template-call-test.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.pending(79)
+3145 [main] DEBUG [39mAppending {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/call/bean-call-test.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.handle(92)
+3160 [main] DEBUG [39mAppending {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/call/template-call-test.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.handle(92)
+3172 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+3173 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+3173 [main] DEBUG [39mParsed ID-based bean rules: 4[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+3174 [main] DEBUG [39mParsed Type-based bean rules: 5[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+3177 [main] INFO  [34mInitialized AspectRuleRegistry@3a4a5f3c[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+3177 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@4f3356c0[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+3178 [main] INFO  [34mInitialized ContextBeanRegistry@4f3356c0[0;39m - c.a.c.c.b.ContextBeanRegistry.initialize(50)
+3178 [main] INFO  [34mInitialized TemplateRuleRegistry@586cc15d[0;39m - c.a.c.c.t.TemplateRuleRegistry.initialize(50)
+3178 [main] INFO  [34mInitialized ContextTemplateProcessor@6c835217[0;39m - c.a.c.c.t.ContextTemplateProcessor.initialize(50)
+3179 [main] INFO  [34mInitialized ScheduleRuleRegistry@4584304[0;39m - c.a.c.c.s.ScheduleRuleRegistry.initialize(50)
+3179 [main] INFO  [34mInitialized TransletRuleRegistry@51888019[0;39m - c.a.c.c.t.TransletRuleRegistry.initialize(50)
+3181 [main] DEBUG [39mUnable to locate MessageSource with name 'messageSource': using default [com.aspectran.core.support.i18n.message.DelegatingMessageSource@6f50d55c][0;39m - c.a.c.c.AspectranActivityContext.initMessageSource(207)
+3182 [main] INFO  [34mInitialized AspectranActivityContext@19b5214b[0;39m - c.a.c.c.AspectranActivityContext.initialize(50)
+3182 [main] INFO  [34mActivityContext build completed in 47 ms[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(137)
+3183 [main] DEBUG [39mRegistering shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.addHook(83)
+3183 [main] DEBUG [39mAdding shutdown-hook task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@4aaecabd[0;39m - c.a.c.u.thread.ShutdownHooks.add(53)
+3183 [main] INFO  [34mDestroyed TransletRuleRegistry@51888019[0;39m - c.a.c.c.t.TransletRuleRegistry.destroy(68)
+3183 [main] INFO  [34mDestroyed ScheduleRuleRegistry@4584304[0;39m - c.a.c.c.s.ScheduleRuleRegistry.destroy(68)
+3184 [main] INFO  [34mDestroyed TemplateRuleRegistry@586cc15d[0;39m - c.a.c.c.t.TemplateRuleRegistry.destroy(68)
+3184 [main] INFO  [34mDestroyed ContextTemplateProcessor@6c835217[0;39m - c.a.c.c.t.ContextTemplateProcessor.destroy(68)
+3184 [main] DEBUG [39mDestroying singletons in com.aspectran.core.component.bean.ContextBeanRegistry@4f3356c0[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(431)
+3184 [main] DEBUG [39mDestroyed all cached singletons in com.aspectran.core.component.bean.ContextBeanRegistry@4f3356c0[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(451)
+3185 [main] INFO  [34mDestroyed ContextBeanRegistry@4f3356c0[0;39m - c.a.c.c.b.ContextBeanRegistry.destroy(68)
+3185 [main] INFO  [34mDestroyed AspectRuleRegistry@3a4a5f3c[0;39m - c.a.c.c.a.AspectRuleRegistry.destroy(68)
+3185 [main] INFO  [34mDestroyed AspectranActivityContext@19b5214b[0;39m - c.a.c.c.AspectranActivityContext.destroy(68)
+3185 [main] DEBUG [39mRemoving shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.removeHook(98)
+3188 [main] INFO  [34mBuilding an ActivityContext with /config/call/call-test-config.xml[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(91)
+3188 [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+3195 [main] DEBUG [39mPending appender {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/call/bean-call-test.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.pending(79)
+3195 [main] DEBUG [39mPending appender {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/call/template-call-test.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.pending(79)
+3196 [main] DEBUG [39mAppending {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/call/bean-call-test.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.handle(92)
+3204 [main] DEBUG [39mAppending {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/call/template-call-test.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.handle(92)
+3208 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+3211 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+3212 [main] DEBUG [39mParsed ID-based bean rules: 4[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+3215 [main] DEBUG [39mParsed Type-based bean rules: 5[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+3215 [main] INFO  [34mInitialized AspectRuleRegistry@33e4b9c4[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+3216 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@5cff729b[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+3216 [main] INFO  [34mInitialized ContextBeanRegistry@5cff729b[0;39m - c.a.c.c.b.ContextBeanRegistry.initialize(50)
+3217 [main] INFO  [34mInitialized TemplateRuleRegistry@10d18696[0;39m - c.a.c.c.t.TemplateRuleRegistry.initialize(50)
+3217 [main] INFO  [34mInitialized ContextTemplateProcessor@6b8b5020[0;39m - c.a.c.c.t.ContextTemplateProcessor.initialize(50)
+3217 [main] INFO  [34mInitialized ScheduleRuleRegistry@7d37ee0c[0;39m - c.a.c.c.s.ScheduleRuleRegistry.initialize(50)
+3217 [main] INFO  [34mInitialized TransletRuleRegistry@5a7b309b[0;39m - c.a.c.c.t.TransletRuleRegistry.initialize(50)
+3217 [main] DEBUG [39mUnable to locate MessageSource with name 'messageSource': using default [com.aspectran.core.support.i18n.message.DelegatingMessageSource@4602f874][0;39m - c.a.c.c.AspectranActivityContext.initMessageSource(207)
+3218 [main] INFO  [34mInitialized AspectranActivityContext@7739aac4[0;39m - c.a.c.c.AspectranActivityContext.initialize(50)
+3218 [main] INFO  [34mActivityContext build completed in 30 ms[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(137)
+3218 [main] DEBUG [39mRegistering shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.addHook(83)
+3219 [main] DEBUG [39mAdding shutdown-hook task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@36c07c75[0;39m - c.a.c.u.thread.ShutdownHooks.add(53)
+3220 [main] INFO  [34mDestroyed TransletRuleRegistry@5a7b309b[0;39m - c.a.c.c.t.TransletRuleRegistry.destroy(68)
+3221 [main] INFO  [34mDestroyed ScheduleRuleRegistry@7d37ee0c[0;39m - c.a.c.c.s.ScheduleRuleRegistry.destroy(68)
+3226 [main] INFO  [34mDestroyed TemplateRuleRegistry@10d18696[0;39m - c.a.c.c.t.TemplateRuleRegistry.destroy(68)
+3226 [main] INFO  [34mDestroyed ContextTemplateProcessor@6b8b5020[0;39m - c.a.c.c.t.ContextTemplateProcessor.destroy(68)
+3226 [main] DEBUG [39mDestroying singletons in com.aspectran.core.component.bean.ContextBeanRegistry@5cff729b[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(431)
+3227 [main] DEBUG [39mDestroyed all cached singletons in com.aspectran.core.component.bean.ContextBeanRegistry@5cff729b[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(451)
+3227 [main] INFO  [34mDestroyed ContextBeanRegistry@5cff729b[0;39m - c.a.c.c.b.ContextBeanRegistry.destroy(68)
+3228 [main] INFO  [34mDestroyed AspectRuleRegistry@33e4b9c4[0;39m - c.a.c.c.a.AspectRuleRegistry.destroy(68)
+3228 [main] INFO  [34mDestroyed AspectranActivityContext@7739aac4[0;39m - c.a.c.c.AspectranActivityContext.destroy(68)
+3228 [main] DEBUG [39mRemoving shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.removeHook(98)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in com.aspectran.core.component.bean.CallTest
+[INFO] Running com.aspectran.core.component.session.SessionManagerTest
+3270 [main] DEBUG [39mStarting com.aspectran.core.util.thread.ScheduledExecutorScheduler@59918c8f[0;39m - c.a.c.u.t.ScheduledExecutorScheduler.start(41)
+3295 [main] INFO  [34mInitialized DefaultSessionManager@2b7facc7[0;39m - c.a.c.c.s.DefaultSessionManager.initialize(50)
+3299 [main] DEBUG [39mSessionHandler default maxInactiveInterval=1[0;39m - c.a.c.c.s.AbstractSessionHandler.setDefaultMaxIdleSecs(92)
+3316 [main] DEBUG [39mCreating new session id=TEST2-14swsisqvnebx1qlk3d0xn8qcu0[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+3328 [main] DEBUG [39mNo SessionDataStore, putting into SessionCache only id=TEST2-14swsisqvnebx1qlk3d0xn8qcu0[0;39m - c.a.c.c.s.AbstractSessionCache.put(289)
+3330 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+3346 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+3347 [main] INFO  [34mCreated Session {id=TEST2-14swsisqvnebx1qlk3d0xn8qcu0, state=VALID, requests=0, resident=true, sessionData={id=TEST2-14swsisqvnebx1qlk3d0xn8qcu0, createdTime=1584524129350, accessedTime=1584524129350, lastAccessedTime=1584524129350, maxInactiveInterval=1000, expiryTime=1584524130350}}[0;39m - c.a.c.c.s.SessionManagerTest.testInactivityTimer(72)
+4342 [pool-1-thread-1] DEBUG [39mTimer expired for session TEST2-14swsisqvnebx1qlk3d0xn8qcu0[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+4342 [pool-1-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+4344 [pool-1-thread-1] DEBUG [39mInvalidate session {id=TEST2-14swsisqvnebx1qlk3d0xn8qcu0, state=INVALIDATING, requests=0, sessionData={id=TEST2-14swsisqvnebx1qlk3d0xn8qcu0, createdTime=1584524129350, accessedTime=1584524129350, lastAccessedTime=1584524129350, maxInactiveInterval=1000, expiryTime=1584524130350}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+4421 [main] DEBUG [39mSessionHandler default maxInactiveInterval=3[0;39m - c.a.c.c.s.AbstractSessionHandler.setDefaultMaxIdleSecs(92)
+4444 [main] INFO  [34mInitialized FileSessionDataStore@474e34e4[0;39m - c.a.c.c.s.FileSessionDataStore.initialize(50)
+4445 [main] DEBUG [39mStarting com.aspectran.core.util.thread.ScheduledExecutorScheduler@7e2c6702[0;39m - c.a.c.u.t.ScheduledExecutorScheduler.start(41)
+4446 [main] INFO  [34mInitialized DefaultSessionManager@5fb7ab9c[0;39m - c.a.c.c.s.DefaultSessionManager.initialize(50)
+4447 [main] INFO  [34m=================================================[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(98)
+4448 [main] DEBUG [39mCreating new session id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+4449 [main] DEBUG [39mSession passivating id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4449 [main] DEBUG [39mStore {, id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1, lastSaved=0, period=0, elapsed=1584524130483}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4461 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+4464 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+4464 [main] DEBUG [39mSession reactivated id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4464 [main] INFO  [34mCreated Session: {id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1, state=VALID, requests=0, resident=true, sessionData={id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1, createdTime=1584524130482, accessedTime=1584524130482, lastAccessedTime=1584524130482, maxInactiveInterval=3000, expiryTime=1584524133482}}[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(99)
+4466 [main] INFO  [34mgetAttribute attr0=val-0[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4502 [main] DEBUG [39mSession passivating id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4502 [main] DEBUG [39mStore {, id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1, dirty=true, lastSaved=1584524130491, period=0, elapsed=45}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4504 [main] DEBUG [39mSession reactivated id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4504 [main] INFO  [34m=================================================[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(98)
+4504 [main] DEBUG [39mCreating new session id=TEST3-19ecdl0dnfy5t43jycdwetpff2[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+4504 [main] DEBUG [39mSession passivating id=TEST3-19ecdl0dnfy5t43jycdwetpff2[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4507 [main] DEBUG [39mStore {, id=TEST3-19ecdl0dnfy5t43jycdwetpff2, lastSaved=0, period=0, elapsed=1584524130541}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4507 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+4507 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+4508 [main] DEBUG [39mSession reactivated id=TEST3-19ecdl0dnfy5t43jycdwetpff2[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4508 [main] INFO  [34mCreated Session: {id=TEST3-19ecdl0dnfy5t43jycdwetpff2, state=VALID, requests=0, resident=true, sessionData={id=TEST3-19ecdl0dnfy5t43jycdwetpff2, createdTime=1584524130538, accessedTime=1584524130538, lastAccessedTime=1584524130538, maxInactiveInterval=3000, expiryTime=1584524133538}}[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(99)
+4508 [main] INFO  [34mgetAttribute attr0=val-0[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4508 [main] INFO  [34mgetAttribute attr1=val-1[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4538 [main] DEBUG [39mSession passivating id=TEST3-19ecdl0dnfy5t43jycdwetpff2[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4540 [main] DEBUG [39mStore {, id=TEST3-19ecdl0dnfy5t43jycdwetpff2, dirty=true, lastSaved=1584524130541, period=0, elapsed=33}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4540 [main] DEBUG [39mSession reactivated id=TEST3-19ecdl0dnfy5t43jycdwetpff2[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4541 [main] INFO  [34m=================================================[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(98)
+4541 [main] DEBUG [39mCreating new session id=TEST3-1ohfilbjlfpkpttyap2fncri43[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+4541 [main] DEBUG [39mSession passivating id=TEST3-1ohfilbjlfpkpttyap2fncri43[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4542 [main] DEBUG [39mStore {, id=TEST3-1ohfilbjlfpkpttyap2fncri43, lastSaved=0, period=0, elapsed=1584524130576}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4543 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+4543 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+4544 [main] DEBUG [39mSession reactivated id=TEST3-1ohfilbjlfpkpttyap2fncri43[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4544 [main] INFO  [34mCreated Session: {id=TEST3-1ohfilbjlfpkpttyap2fncri43, state=VALID, requests=0, resident=true, sessionData={id=TEST3-1ohfilbjlfpkpttyap2fncri43, createdTime=1584524130575, accessedTime=1584524130575, lastAccessedTime=1584524130575, maxInactiveInterval=3000, expiryTime=1584524133575}}[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(99)
+4545 [main] INFO  [34mgetAttribute attr0=val-0[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4545 [main] INFO  [34mgetAttribute attr2=val-2[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4545 [main] INFO  [34mgetAttribute attr1=val-1[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4575 [main] DEBUG [39mSession passivating id=TEST3-1ohfilbjlfpkpttyap2fncri43[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4576 [main] DEBUG [39mStore {, id=TEST3-1ohfilbjlfpkpttyap2fncri43, dirty=true, lastSaved=1584524130577, period=0, elapsed=33}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4576 [main] DEBUG [39mSession reactivated id=TEST3-1ohfilbjlfpkpttyap2fncri43[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4577 [main] INFO  [34m=================================================[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(98)
+4577 [main] DEBUG [39mCreating new session id=TEST3-18aemcyw0ubfp1fuzs101johhk4[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+4577 [main] DEBUG [39mSession passivating id=TEST3-18aemcyw0ubfp1fuzs101johhk4[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4577 [main] DEBUG [39mStore {, id=TEST3-18aemcyw0ubfp1fuzs101johhk4, lastSaved=0, period=0, elapsed=1584524130611}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4578 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+4578 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+4578 [main] DEBUG [39mSession reactivated id=TEST3-18aemcyw0ubfp1fuzs101johhk4[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4579 [main] INFO  [34mCreated Session: {id=TEST3-18aemcyw0ubfp1fuzs101johhk4, state=VALID, requests=0, resident=true, sessionData={id=TEST3-18aemcyw0ubfp1fuzs101johhk4, createdTime=1584524130611, accessedTime=1584524130611, lastAccessedTime=1584524130611, maxInactiveInterval=3000, expiryTime=1584524133611}}[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(99)
+4579 [main] INFO  [34mgetAttribute attr0=val-0[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4579 [main] INFO  [34mgetAttribute attr2=val-2[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4579 [main] INFO  [34mgetAttribute attr1=val-1[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4579 [main] INFO  [34mgetAttribute attr3=val-3[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4610 [main] DEBUG [39mSession passivating id=TEST3-18aemcyw0ubfp1fuzs101johhk4[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4610 [main] DEBUG [39mStore {, id=TEST3-18aemcyw0ubfp1fuzs101johhk4, dirty=true, lastSaved=1584524130611, period=0, elapsed=33}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4611 [main] DEBUG [39mSession reactivated id=TEST3-18aemcyw0ubfp1fuzs101johhk4[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4611 [main] INFO  [34m=================================================[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(98)
+4612 [main] DEBUG [39mCreating new session id=TEST3-hrxbfn5otgcl54xq6cchbl4n5[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+4612 [main] DEBUG [39mSession passivating id=TEST3-hrxbfn5otgcl54xq6cchbl4n5[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4612 [main] DEBUG [39mStore {, id=TEST3-hrxbfn5otgcl54xq6cchbl4n5, lastSaved=0, period=0, elapsed=1584524130646}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4614 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+4614 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+4614 [main] DEBUG [39mSession reactivated id=TEST3-hrxbfn5otgcl54xq6cchbl4n5[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4614 [main] INFO  [34mCreated Session: {id=TEST3-hrxbfn5otgcl54xq6cchbl4n5, state=VALID, requests=0, resident=true, sessionData={id=TEST3-hrxbfn5otgcl54xq6cchbl4n5, createdTime=1584524130646, accessedTime=1584524130646, lastAccessedTime=1584524130646, maxInactiveInterval=3000, expiryTime=1584524133646}}[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(99)
+4615 [main] INFO  [34mgetAttribute attr0=val-0[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4616 [main] INFO  [34mgetAttribute attr2=val-2[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4616 [main] INFO  [34mgetAttribute attr1=val-1[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4616 [main] INFO  [34mgetAttribute attr4=val-4[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4616 [main] INFO  [34mgetAttribute attr3=val-3[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4647 [main] DEBUG [39mSession passivating id=TEST3-hrxbfn5otgcl54xq6cchbl4n5[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4647 [main] DEBUG [39mStore {, id=TEST3-hrxbfn5otgcl54xq6cchbl4n5, dirty=true, lastSaved=1584524130647, period=0, elapsed=34}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4648 [main] DEBUG [39mSession reactivated id=TEST3-hrxbfn5otgcl54xq6cchbl4n5[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4648 [main] INFO  [34m=================================================[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(98)
+4648 [main] DEBUG [39mCreating new session id=TEST3-6mcib5jifox5bftx8zbybm56[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+4649 [main] DEBUG [39mSession passivating id=TEST3-6mcib5jifox5bftx8zbybm56[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4649 [main] DEBUG [39mStore {, id=TEST3-6mcib5jifox5bftx8zbybm56, lastSaved=0, period=0, elapsed=1584524130683}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4649 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+4649 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+4650 [main] DEBUG [39mSession reactivated id=TEST3-6mcib5jifox5bftx8zbybm56[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4650 [main] INFO  [34mCreated Session: {id=TEST3-6mcib5jifox5bftx8zbybm56, state=VALID, requests=0, resident=true, sessionData={id=TEST3-6mcib5jifox5bftx8zbybm56, createdTime=1584524130682, accessedTime=1584524130682, lastAccessedTime=1584524130682, maxInactiveInterval=3000, expiryTime=1584524133682}}[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(99)
+4650 [main] INFO  [34mgetAttribute attr0=val-0[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4651 [main] INFO  [34mgetAttribute attr5=val-5[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4651 [main] INFO  [34mgetAttribute attr2=val-2[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4651 [main] INFO  [34mgetAttribute attr1=val-1[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4651 [main] INFO  [34mgetAttribute attr4=val-4[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4651 [main] INFO  [34mgetAttribute attr3=val-3[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4682 [main] DEBUG [39mSession passivating id=TEST3-6mcib5jifox5bftx8zbybm56[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4683 [main] DEBUG [39mStore {, id=TEST3-6mcib5jifox5bftx8zbybm56, dirty=true, lastSaved=1584524130683, period=0, elapsed=34}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4684 [main] DEBUG [39mSession reactivated id=TEST3-6mcib5jifox5bftx8zbybm56[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4684 [main] INFO  [34m=================================================[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(98)
+4685 [main] DEBUG [39mCreating new session id=TEST3-1vfbj5lfyte581abg7zc1wpkl97[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+4685 [main] DEBUG [39mSession passivating id=TEST3-1vfbj5lfyte581abg7zc1wpkl97[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4685 [main] DEBUG [39mStore {, id=TEST3-1vfbj5lfyte581abg7zc1wpkl97, lastSaved=0, period=0, elapsed=1584524130719}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+4685 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+4686 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+4686 [main] DEBUG [39mSession reactivated id=TEST3-1vfbj5lfyte581abg7zc1wpkl97[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+4687 [main] INFO  [34mCreated Session: {id=TEST3-1vfbj5lfyte581abg7zc1wpkl97, state=VALID, requests=0, resident=true, sessionData={id=TEST3-1vfbj5lfyte581abg7zc1wpkl97, createdTime=1584524130719, accessedTime=1584524130719, lastAccessedTime=1584524130719, maxInactiveInterval=3000, expiryTime=1584524133719}}[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(99)
+4687 [main] INFO  [34mgetAttribute attr0=val-0[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4687 [main] INFO  [34mgetAttribute attr6=val-6[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4688 [main] INFO  [34mgetAttribute attr5=val-5[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4688 [main] INFO  [34mgetAttribute attr2=val-2[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4688 [main] INFO  [34mgetAttribute attr1=val-1[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4688 [main] INFO  [34mgetAttribute attr4=val-4[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4688 [main] INFO  [34mgetAttribute attr3=val-3[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+4719 [main] DEBUG [39mSession passivating id=TEST3-1vfbj5lfyte581abg7zc1wpkl97[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+4720 [main] DEBUG [39mStore {, id=TEST3-1vfbj5lfyte581abg7zc1wpkl97, dirty=true, lastSaved=1584524130719, period=0, elapsed=35}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+5297 [main] DEBUG [39mSession reactivated id=TEST3-1vfbj5lfyte581abg7zc1wpkl97[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+5297 [main] INFO  [34m=================================================[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(98)
+5297 [main] DEBUG [39mCreating new session id=TEST3-1e1aih201n8to1d1m82gnmi99r8[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+5297 [main] DEBUG [39mSession passivating id=TEST3-1e1aih201n8to1d1m82gnmi99r8[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+5297 [main] DEBUG [39mStore {, id=TEST3-1e1aih201n8to1d1m82gnmi99r8, lastSaved=0, period=0, elapsed=1584524131331}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+5298 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+5298 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+5298 [main] DEBUG [39mSession reactivated id=TEST3-1e1aih201n8to1d1m82gnmi99r8[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+5298 [main] INFO  [34mCreated Session: {id=TEST3-1e1aih201n8to1d1m82gnmi99r8, state=VALID, requests=0, resident=true, sessionData={id=TEST3-1e1aih201n8to1d1m82gnmi99r8, createdTime=1584524131331, accessedTime=1584524131331, lastAccessedTime=1584524131331, maxInactiveInterval=3000, expiryTime=1584524134331}}[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(99)
+5298 [main] INFO  [34mgetAttribute attr0=val-0[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5298 [main] INFO  [34mgetAttribute attr6=val-6[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5298 [main] INFO  [34mgetAttribute attr5=val-5[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5300 [main] INFO  [34mgetAttribute attr7=val-7[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5301 [main] INFO  [34mgetAttribute attr2=val-2[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5301 [main] INFO  [34mgetAttribute attr1=val-1[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5301 [main] INFO  [34mgetAttribute attr4=val-4[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5301 [main] INFO  [34mgetAttribute attr3=val-3[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5331 [main] DEBUG [39mSession passivating id=TEST3-1e1aih201n8to1d1m82gnmi99r8[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+5332 [main] DEBUG [39mStore {, id=TEST3-1e1aih201n8to1d1m82gnmi99r8, dirty=true, lastSaved=1584524131332, period=0, elapsed=34}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+5332 [main] DEBUG [39mSession reactivated id=TEST3-1e1aih201n8to1d1m82gnmi99r8[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+5333 [main] INFO  [34m=================================================[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(98)
+5333 [main] DEBUG [39mCreating new session id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+5333 [main] DEBUG [39mSession passivating id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+5333 [main] DEBUG [39mStore {, id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9, lastSaved=0, period=0, elapsed=1584524131367}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+5333 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+5333 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+5333 [main] DEBUG [39mSession reactivated id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+5334 [main] INFO  [34mCreated Session: {id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9, state=VALID, requests=0, resident=true, sessionData={id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9, createdTime=1584524131367, accessedTime=1584524131367, lastAccessedTime=1584524131367, maxInactiveInterval=3000, expiryTime=1584524134367}}[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(99)
+5334 [main] INFO  [34mgetAttribute attr0=val-0[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5334 [main] INFO  [34mgetAttribute attr6=val-6[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5334 [main] INFO  [34mgetAttribute attr5=val-5[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5334 [main] INFO  [34mgetAttribute attr8=val-8[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5334 [main] INFO  [34mgetAttribute attr7=val-7[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5334 [main] INFO  [34mgetAttribute attr2=val-2[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5334 [main] INFO  [34mgetAttribute attr1=val-1[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5334 [main] INFO  [34mgetAttribute attr4=val-4[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5334 [main] INFO  [34mgetAttribute attr3=val-3[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5365 [main] DEBUG [39mSession passivating id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+5365 [main] DEBUG [39mStore {, id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9, dirty=true, lastSaved=1584524131367, period=0, elapsed=32}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+5366 [main] DEBUG [39mSession reactivated id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+5367 [main] INFO  [34m=================================================[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(98)
+5367 [main] DEBUG [39mCreating new session id=TEST3-pm91jhzci3t313h8ogaly3hku10[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+5369 [main] DEBUG [39mSession passivating id=TEST3-pm91jhzci3t313h8ogaly3hku10[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+5369 [main] DEBUG [39mStore {, id=TEST3-pm91jhzci3t313h8ogaly3hku10, lastSaved=0, period=0, elapsed=1584524131403}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+5370 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+5370 [main] DEBUG [39mNo inactive session eviction[0;39m - c.a.c.c.session.Session.updateInactivityTimer(200)
+5370 [main] DEBUG [39mSession reactivated id=TEST3-pm91jhzci3t313h8ogaly3hku10[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+5372 [main] INFO  [34mCreated Session: {id=TEST3-pm91jhzci3t313h8ogaly3hku10, state=VALID, requests=0, resident=true, sessionData={id=TEST3-pm91jhzci3t313h8ogaly3hku10, createdTime=1584524131401, accessedTime=1584524131401, lastAccessedTime=1584524131401, maxInactiveInterval=3000, expiryTime=1584524134401}}[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(99)
+5373 [main] INFO  [34mgetAttribute attr0=val-0[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5374 [main] INFO  [34mgetAttribute attr9=val-9[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5374 [main] INFO  [34mgetAttribute attr6=val-6[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5374 [main] INFO  [34mgetAttribute attr5=val-5[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5375 [main] INFO  [34mgetAttribute attr8=val-8[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5375 [main] INFO  [34mgetAttribute attr7=val-7[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5375 [main] INFO  [34mgetAttribute attr2=val-2[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5375 [main] INFO  [34mgetAttribute attr1=val-1[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5375 [main] INFO  [34mgetAttribute attr4=val-4[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5376 [main] INFO  [34mgetAttribute attr3=val-3[0;39m - c.a.c.c.s.SessionManagerTest.testFileSessionStore(108)
+5406 [main] DEBUG [39mSession passivating id=TEST3-pm91jhzci3t313h8ogaly3hku10[0;39m - c.a.c.c.s.AbstractSessionCache.put(324)
+5407 [main] DEBUG [39mStore {, id=TEST3-pm91jhzci3t313h8ogaly3hku10, dirty=true, lastSaved=1584524131404, period=0, elapsed=37}[0;39m - c.a.c.c.s.AbstractSessionDataStore.store(74)
+5407 [main] DEBUG [39mSession reactivated id=TEST3-pm91jhzci3t313h8ogaly3hku10[0;39m - c.a.c.c.s.AbstractSessionCache.put(342)
+7462 [pool-2-thread-1] DEBUG [39mTimer expired for session TEST3-1g5nmh11oglxt3mln7ikzs8ml1[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+7479 [pool-2-thread-1] DEBUG [39mSession TEST3-1g5nmh11oglxt3mln7ikzs8ml1 deleted in db: true[0;39m - c.a.c.c.s.AbstractSessionCache.delete(403)
+7479 [pool-2-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+7480 [pool-2-thread-1] DEBUG [39mInvalidate session {id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1, state=INVALIDATING, requests=-1, sessionData={id=TEST3-1g5nmh11oglxt3mln7ikzs8ml1, createdTime=1584524130482, accessedTime=1584524130482, lastAccessedTime=1584524130482, maxInactiveInterval=3000, expiryTime=1584524133482}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+7508 [pool-2-thread-1] DEBUG [39mTimer expired for session TEST3-19ecdl0dnfy5t43jycdwetpff2[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+7508 [pool-2-thread-1] DEBUG [39mSession TEST3-19ecdl0dnfy5t43jycdwetpff2 deleted in db: true[0;39m - c.a.c.c.s.AbstractSessionCache.delete(403)
+7508 [pool-2-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+7509 [pool-2-thread-1] DEBUG [39mInvalidate session {id=TEST3-19ecdl0dnfy5t43jycdwetpff2, state=INVALIDATING, requests=-1, sessionData={id=TEST3-19ecdl0dnfy5t43jycdwetpff2, createdTime=1584524130538, accessedTime=1584524130538, lastAccessedTime=1584524130538, maxInactiveInterval=3000, expiryTime=1584524133538}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+7543 [pool-2-thread-1] DEBUG [39mTimer expired for session TEST3-1ohfilbjlfpkpttyap2fncri43[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+7544 [pool-2-thread-1] DEBUG [39mSession TEST3-1ohfilbjlfpkpttyap2fncri43 deleted in db: true[0;39m - c.a.c.c.s.AbstractSessionCache.delete(403)
+7544 [pool-2-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+7545 [pool-2-thread-1] DEBUG [39mInvalidate session {id=TEST3-1ohfilbjlfpkpttyap2fncri43, state=INVALIDATING, requests=-1, sessionData={id=TEST3-1ohfilbjlfpkpttyap2fncri43, createdTime=1584524130575, accessedTime=1584524130575, lastAccessedTime=1584524130575, maxInactiveInterval=3000, expiryTime=1584524133575}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+7578 [pool-2-thread-1] DEBUG [39mTimer expired for session TEST3-18aemcyw0ubfp1fuzs101johhk4[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+7579 [pool-2-thread-1] DEBUG [39mSession TEST3-18aemcyw0ubfp1fuzs101johhk4 deleted in db: true[0;39m - c.a.c.c.s.AbstractSessionCache.delete(403)
+7579 [pool-2-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+7580 [pool-2-thread-1] DEBUG [39mInvalidate session {id=TEST3-18aemcyw0ubfp1fuzs101johhk4, state=INVALIDATING, requests=-1, sessionData={id=TEST3-18aemcyw0ubfp1fuzs101johhk4, createdTime=1584524130611, accessedTime=1584524130611, lastAccessedTime=1584524130611, maxInactiveInterval=3000, expiryTime=1584524133611}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+7614 [pool-2-thread-1] DEBUG [39mTimer expired for session TEST3-hrxbfn5otgcl54xq6cchbl4n5[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+7615 [pool-2-thread-1] DEBUG [39mSession TEST3-hrxbfn5otgcl54xq6cchbl4n5 deleted in db: true[0;39m - c.a.c.c.s.AbstractSessionCache.delete(403)
+7615 [pool-2-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+7615 [pool-2-thread-1] DEBUG [39mInvalidate session {id=TEST3-hrxbfn5otgcl54xq6cchbl4n5, state=INVALIDATING, requests=-1, sessionData={id=TEST3-hrxbfn5otgcl54xq6cchbl4n5, createdTime=1584524130646, accessedTime=1584524130646, lastAccessedTime=1584524130646, maxInactiveInterval=3000, expiryTime=1584524133646}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+7650 [pool-2-thread-1] DEBUG [39mTimer expired for session TEST3-6mcib5jifox5bftx8zbybm56[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+7650 [pool-2-thread-1] DEBUG [39mSession TEST3-6mcib5jifox5bftx8zbybm56 deleted in db: true[0;39m - c.a.c.c.s.AbstractSessionCache.delete(403)
+7650 [pool-2-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+7651 [pool-2-thread-1] DEBUG [39mInvalidate session {id=TEST3-6mcib5jifox5bftx8zbybm56, state=INVALIDATING, requests=-1, sessionData={id=TEST3-6mcib5jifox5bftx8zbybm56, createdTime=1584524130682, accessedTime=1584524130682, lastAccessedTime=1584524130682, maxInactiveInterval=3000, expiryTime=1584524133682}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+7686 [pool-2-thread-1] DEBUG [39mTimer expired for session TEST3-1vfbj5lfyte581abg7zc1wpkl97[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+7686 [pool-2-thread-1] DEBUG [39mSession TEST3-1vfbj5lfyte581abg7zc1wpkl97 deleted in db: true[0;39m - c.a.c.c.s.AbstractSessionCache.delete(403)
+7687 [pool-2-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+7687 [pool-2-thread-1] DEBUG [39mInvalidate session {id=TEST3-1vfbj5lfyte581abg7zc1wpkl97, state=INVALIDATING, requests=-1, sessionData={id=TEST3-1vfbj5lfyte581abg7zc1wpkl97, createdTime=1584524130719, accessedTime=1584524130719, lastAccessedTime=1584524130719, maxInactiveInterval=3000, expiryTime=1584524133719}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+8298 [pool-2-thread-1] DEBUG [39mTimer expired for session TEST3-1e1aih201n8to1d1m82gnmi99r8[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+8299 [pool-2-thread-1] DEBUG [39mSession TEST3-1e1aih201n8to1d1m82gnmi99r8 deleted in db: true[0;39m - c.a.c.c.s.AbstractSessionCache.delete(403)
+8299 [pool-2-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+8300 [pool-2-thread-1] DEBUG [39mInvalidate session {id=TEST3-1e1aih201n8to1d1m82gnmi99r8, state=INVALIDATING, requests=-1, sessionData={id=TEST3-1e1aih201n8to1d1m82gnmi99r8, createdTime=1584524131331, accessedTime=1584524131331, lastAccessedTime=1584524131331, maxInactiveInterval=3000, expiryTime=1584524134331}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+8333 [pool-2-thread-1] DEBUG [39mTimer expired for session TEST3-1ff6uhar3cztu1lk8tzq88lu0z9[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+8334 [pool-2-thread-1] DEBUG [39mSession TEST3-1ff6uhar3cztu1lk8tzq88lu0z9 deleted in db: true[0;39m - c.a.c.c.s.AbstractSessionCache.delete(403)
+8334 [pool-2-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+8334 [pool-2-thread-1] DEBUG [39mInvalidate session {id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9, state=INVALIDATING, requests=-1, sessionData={id=TEST3-1ff6uhar3cztu1lk8tzq88lu0z9, createdTime=1584524131367, accessedTime=1584524131367, lastAccessedTime=1584524131367, maxInactiveInterval=3000, expiryTime=1584524134367}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+8370 [pool-2-thread-1] DEBUG [39mTimer expired for session TEST3-pm91jhzci3t313h8ogaly3hku10[0;39m - c.a.c.c.s.SessionInactivityTimer.idleExpired(51)
+8371 [pool-2-thread-1] DEBUG [39mSession TEST3-pm91jhzci3t313h8ogaly3hku10 deleted in db: true[0;39m - c.a.c.c.s.AbstractSessionCache.delete(403)
+8371 [pool-2-thread-1] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+8371 [pool-2-thread-1] DEBUG [39mInvalidate session {id=TEST3-pm91jhzci3t313h8ogaly3hku10, state=INVALIDATING, requests=-1, sessionData={id=TEST3-pm91jhzci3t313h8ogaly3hku10, createdTime=1584524131401, accessedTime=1584524131401, lastAccessedTime=1584524131401, maxInactiveInterval=3000, expiryTime=1584524134401}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+8445 [main] DEBUG [39mStarting com.aspectran.core.util.thread.ScheduledExecutorScheduler@5546e754[0;39m - c.a.c.u.t.ScheduledExecutorScheduler.start(41)
+8446 [main] INFO  [34mInitialized DefaultSessionManager@ad0bb4e[0;39m - c.a.c.c.s.DefaultSessionManager.initialize(50)
+8446 [main] DEBUG [39mCreating new session id=TEST1-co37rsf0pug21hgprrj7kbati11[0;39m - c.a.c.c.s.AbstractSessionCache.newSession(489)
+8446 [main] DEBUG [39mNo SessionDataStore, putting into SessionCache only id=TEST1-co37rsf0pug21hgprrj7kbati11[0;39m - c.a.c.c.s.AbstractSessionCache.put(289)
+8446 [main] DEBUG [39mupdateInactivityTimer[0;39m - c.a.c.c.session.Session.updateInactivityTimer(173)
+8446 [main] DEBUG [39mSession is immortal && no inactivity eviction: timer cancelled[0;39m - c.a.c.c.session.Session.updateInactivityTimer(185)
+8446 [main] INFO  [34mCreated Session {id=TEST1-co37rsf0pug21hgprrj7kbati11, state=VALID, requests=0, resident=true, sessionData={id=TEST1-co37rsf0pug21hgprrj7kbati11, createdTime=1584524134480, accessedTime=1584524134480, lastAccessedTime=1584524134480, maxInactiveInterval=-1, expiryTime=0}}[0;39m - c.a.c.c.s.SessionManagerTest.testShortLifecycle(45)
+8446 [main] INFO  [34mgetAttribute attr2=val-2[0;39m - c.a.c.c.s.SessionManagerTest.testShortLifecycle(54)
+8447 [main] INFO  [34mgetAttribute attr1=val-1[0;39m - c.a.c.c.s.SessionManagerTest.testShortLifecycle(54)
+8447 [main] INFO  [34mgetAttribute attr3=val-3[0;39m - c.a.c.c.s.SessionManagerTest.testShortLifecycle(54)
+8447 [main] DEBUG [39mNo SessionDataStore, putting into SessionCache only id=TEST1-co37rsf0pug21hgprrj7kbati11[0;39m - c.a.c.c.s.AbstractSessionCache.put(289)
+8447 [main] DEBUG [39mSession inactivity timer stopped[0;39m - c.a.c.c.session.Session.stopInactivityTimer(234)
+8447 [main] DEBUG [39mInvalidate session {id=TEST1-co37rsf0pug21hgprrj7kbati11, state=INVALIDATING, requests=-1, sessionData={id=TEST1-co37rsf0pug21hgprrj7kbati11, createdTime=1584524134480, accessedTime=1584524134480, lastAccessedTime=1584524134480, maxInactiveInterval=-1, expiryTime=0}}[0;39m - c.a.c.c.session.Session.finishInvalidate(275)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.217 s - in com.aspectran.core.component.session.SessionManagerTest
+[INFO] Running com.aspectran.core.component.aspect.pointcut.WildcardPointcutTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.aspectran.core.component.aspect.pointcut.WildcardPointcutTest
+[INFO] Running com.aspectran.core.support.i18n.message.ResourceBundleMessageSourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.aspectran.core.support.i18n.message.ResourceBundleMessageSourceTest
+[INFO] Running com.aspectran.core.context.env.ContextEnvironmentTest
+8476 [main] INFO  [34mNo rootConfigLocation or aspectranParameters have been specified[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(95)
+8490 [main] INFO  [34mActivating profiles [profile-1, profile-2, profile-3][0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(99)
+8490 [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+8490 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+8490 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+8491 [main] DEBUG [39mParsed ID-based bean rules: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+8491 [main] DEBUG [39mParsed Type-based bean rules: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+8491 [main] INFO  [34mInitialized AspectRuleRegistry@64910b2d[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+8491 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@1247c72e[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+8491 [main] INFO  [34mInitialized ContextBeanRegistry@1247c72e[0;39m - c.a.c.c.b.ContextBeanRegistry.initialize(50)
+8492 [main] INFO  [34mInitialized TemplateRuleRegistry@6fef75c6[0;39m - c.a.c.c.t.TemplateRuleRegistry.initialize(50)
+8492 [main] INFO  [34mInitialized ContextTemplateProcessor@5f61e002[0;39m - c.a.c.c.t.ContextTemplateProcessor.initialize(50)
+8492 [main] INFO  [34mInitialized ScheduleRuleRegistry@334540a0[0;39m - c.a.c.c.s.ScheduleRuleRegistry.initialize(50)
+8492 [main] INFO  [34mInitialized TransletRuleRegistry@1f179f51[0;39m - c.a.c.c.t.TransletRuleRegistry.initialize(50)
+8492 [main] DEBUG [39mUnable to locate MessageSource with name 'messageSource': using default [com.aspectran.core.support.i18n.message.DelegatingMessageSource@b428830][0;39m - c.a.c.c.AspectranActivityContext.initMessageSource(207)
+8493 [main] INFO  [34mInitialized AspectranActivityContext@5b7308aa[0;39m - c.a.c.c.AspectranActivityContext.initialize(50)
+8493 [main] INFO  [34mActivityContext build completed in 3 ms[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(137)
+8493 [main] DEBUG [39mRegistering shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.addHook(83)
+8493 [main] DEBUG [39mAdding shutdown-hook task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@6164e137[0;39m - c.a.c.u.thread.ShutdownHooks.add(53)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in com.aspectran.core.context.env.ContextEnvironmentTest
+[INFO] Running com.aspectran.core.context.builder.ActivityContextBuilderTest
+ --- Test case for building ActivityContext --- 
+================ load ===============
+8533 [main] INFO  [34mBuilding an ActivityContext with /config/sample/test-config.xml[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(91)
+8533 [main] INFO  [34mActivating profiles [dev, local][0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(99)
+8534 [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+8670 [main] DEBUG [39mScanning classes: com/aspectran/core/sample/**/*Advice at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes/com/aspectran/core/sample/[0;39m - c.a.core.util.ClassScanner.scan(119)
+8671 [main] DEBUG [39mScanning classes: com/aspectran/core/sample/**/*Action at /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes/com/aspectran/core/sample/[0;39m - c.a.core.util.ClassScanner.scan(119)
+8707 [main] DEBUG [39mPending appender {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/sample/scheduler-config.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.pending(79)
+8707 [main] DEBUG [39mAppending {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/sample/scheduler-config.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.handle(92)
+8745 [main] INFO  [34mSave as APON formatted {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/sample/scheduler-config.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.saveAsAponFormatted(123)
+8788 [main] INFO  [34mSave as APON formatted {appenderType=file, basePath=/scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/test-classes, filePath=/config/sample/test-config.xml, format=xml}[0;39m - c.a.c.c.r.a.HybridRuleAppendHandler.saveAsAponFormatted(123)
+8802 [main] DEBUG [39mPending appender {appenderType=file, filePath=/config/sample/scheduler-config.xml, format=xml}[0;39m - c.a.c.c.r.a.ShallowRuleAppendHandler.pending(79)
+8832 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+8832 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+8832 [main] DEBUG [39mParsed ID-based bean rules: 13[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+8861 [main] DEBUG [39mParsed Type-based bean rules: 15[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+8883 [main] INFO  [34mInitialized AspectRuleRegistry@58b3eb1[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+8883 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@6d7e2795[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+8887 [main] DEBUG [39mCustomTrimDirective {groupName=directive, directiveName=trim}[0;39m - c.a.c.s.f.FreeMarkerConfigurationFactory.setTrimDirectives(198)
+8889 [main] DEBUG [39mCustomTrimDirective {groupName=directive, directiveName=where, trimmer={prefix=WHERE , suffix=null, deprefixes=[and, or], desuffixes=null, caseSensitive=false}}[0;39m - c.a.c.s.f.FreeMarkerConfigurationFactory.setTrimDirectives(198)
+8889 [main] DEBUG [39mCustomTrimDirective {groupName=directive, directiveName=set, trimmer={prefix=SET , suffix=null, deprefixes=null, desuffixes=[,], caseSensitive=false}}[0;39m - c.a.c.s.f.FreeMarkerConfigurationFactory.setTrimDirectives(198)
+9086 [main] DEBUG [39mNo FreeMarker TemplateLoaders specified. Can be used only inner template source[0;39m - c.a.c.s.f.FreeMarkerConfigurationFactory.getAggregateTemplateLoader(294)
+9106 [main] DEBUG [39mPebble Engine Template Loader not specified. Default Template Loader registered: com.mitchellbosecke.pebble.loader.StringLoader@2b4954a4[0;39m - c.a.c.s.p.PebbleEngineFactory.getAggregateTemplateLoader(136)
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.93 s <<< FAILURE! - in com.aspectran.core.context.builder.ActivityContextBuilderTest
+[ERROR] test1HybridLoading  Time elapsed: 0.917 s  <<< ERROR!
+java.lang.NoClassDefFoundError: java/lang/StackWalker$Option
+	at com.aspectran.core.context.builder.ActivityContextBuilderTest.test1HybridLoading(ActivityContextBuilderTest.java:66)
+Caused by: java.lang.ClassNotFoundException: java.lang.StackWalker$Option
+	at com.aspectran.core.context.builder.ActivityContextBuilderTest.test1HybridLoading(ActivityContextBuilderTest.java:66)
+
+[INFO] Running com.aspectran.core.context.expr.TokenExpressionParserTest
+9470 [main] INFO  [34mNo rootConfigLocation or aspectranParameters have been specified[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(95)
+9471 [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+9474 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+9478 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+9479 [main] DEBUG [39mParsed ID-based bean rules: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+9479 [main] DEBUG [39mParsed Type-based bean rules: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+9480 [main] INFO  [34mInitialized AspectRuleRegistry@6ebf9c2d[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+9480 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@753c7411[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+9480 [main] INFO  [34mInitialized ContextBeanRegistry@753c7411[0;39m - c.a.c.c.b.ContextBeanRegistry.initialize(50)
+9481 [main] INFO  [34mInitialized TemplateRuleRegistry@3ba015b1[0;39m - c.a.c.c.t.TemplateRuleRegistry.initialize(50)
+9481 [main] INFO  [34mInitialized ContextTemplateProcessor@499445d2[0;39m - c.a.c.c.t.ContextTemplateProcessor.initialize(50)
+9482 [main] INFO  [34mInitialized ScheduleRuleRegistry@5b58f639[0;39m - c.a.c.c.s.ScheduleRuleRegistry.initialize(50)
+9482 [main] INFO  [34mInitialized TransletRuleRegistry@4d529dbf[0;39m - c.a.c.c.t.TransletRuleRegistry.initialize(50)
+9482 [main] DEBUG [39mUnable to locate MessageSource with name 'messageSource': using default [com.aspectran.core.support.i18n.message.DelegatingMessageSource@76641439][0;39m - c.a.c.c.AspectranActivityContext.initMessageSource(207)
+9482 [main] INFO  [34mInitialized AspectranActivityContext@1db565f2[0;39m - c.a.c.c.AspectranActivityContext.initialize(50)
+9482 [main] INFO  [34mActivityContext build completed in 12 ms[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(137)
+9483 [main] DEBUG [39mAdding shutdown-hook task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@1c0a143[0;39m - c.a.c.u.thread.ShutdownHooks.add(53)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in com.aspectran.core.context.expr.TokenExpressionParserTest
+[INFO] Running com.aspectran.core.context.expr.token.TokenParserTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.aspectran.core.context.expr.token.TokenParserTest
+[INFO] Running com.aspectran.core.context.expr.ItemExpressionParserTest
+9503 [main] INFO  [34mNo rootConfigLocation or aspectranParameters have been specified[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(95)
+9503 [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+9504 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+9504 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+9504 [main] DEBUG [39mParsed ID-based bean rules: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+9510 [main] DEBUG [39mParsed Type-based bean rules: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+9510 [main] INFO  [34mInitialized AspectRuleRegistry@58267ba1[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+9510 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@e356940[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+9511 [main] INFO  [34mInitialized ContextBeanRegistry@e356940[0;39m - c.a.c.c.b.ContextBeanRegistry.initialize(50)
+9511 [main] INFO  [34mInitialized TemplateRuleRegistry@38991781[0;39m - c.a.c.c.t.TemplateRuleRegistry.initialize(50)
+9512 [main] INFO  [34mInitialized ContextTemplateProcessor@3c577368[0;39m - c.a.c.c.t.ContextTemplateProcessor.initialize(50)
+9512 [main] INFO  [34mInitialized ScheduleRuleRegistry@57c7ec30[0;39m - c.a.c.c.s.ScheduleRuleRegistry.initialize(50)
+9512 [main] INFO  [34mInitialized TransletRuleRegistry@729de0e1[0;39m - c.a.c.c.t.TransletRuleRegistry.initialize(50)
+9512 [main] DEBUG [39mUnable to locate MessageSource with name 'messageSource': using default [com.aspectran.core.support.i18n.message.DelegatingMessageSource@2c8c42c][0;39m - c.a.c.c.AspectranActivityContext.initMessageSource(207)
+9512 [main] INFO  [34mInitialized AspectranActivityContext@5032b2e[0;39m - c.a.c.c.AspectranActivityContext.initialize(50)
+9512 [main] INFO  [34mActivityContext build completed in 9 ms[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(137)
+9513 [main] DEBUG [39mAdding shutdown-hook task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@6d4df1d2[0;39m - c.a.c.u.thread.ShutdownHooks.add(53)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in com.aspectran.core.context.expr.ItemExpressionParserTest
+[INFO] Running com.aspectran.core.context.config.AspectranConfigTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.aspectran.core.context.config.AspectranConfigTest
+[INFO] Running com.aspectran.core.activity.ActivityDataMapTest
+9541 [main] INFO  [34mNo rootConfigLocation or aspectranParameters have been specified[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(95)
+9541 [main] DEBUG [39mRoot AspectranClassLoader {id=1000, parent=sun.misc.Launcher$AppClassLoader, root=true, firstborn=true, numberOfResource=0, numberOfChildren=0, reloadedCount=0}[0;39m - c.a.c.c.r.AspectranClassLoader.<init>(87)
+9542 [main] DEBUG [39mNow try to parse annotated configurations[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(112)
+9542 [main] DEBUG [39mParsing bean rules for configuring: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(113)
+9542 [main] DEBUG [39mParsed ID-based bean rules: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(128)
+9542 [main] DEBUG [39mParsed Type-based bean rules: 0[0;39m - c.a.c.c.b.AnnotatedConfigParser.parse(142)
+9542 [main] INFO  [34mInitialized AspectRuleRegistry@254210b1[0;39m - c.a.c.c.a.AspectRuleRegistry.initialize(50)
+9542 [main] DEBUG [39mInitializing singletons in com.aspectran.core.component.bean.ContextBeanRegistry@600a1270[0;39m - c.a.c.c.b.ContextBeanRegistry.instantiateSingletons(400)
+9543 [main] INFO  [34mInitialized ContextBeanRegistry@600a1270[0;39m - c.a.c.c.b.ContextBeanRegistry.initialize(50)
+9543 [main] INFO  [34mInitialized TemplateRuleRegistry@3829306d[0;39m - c.a.c.c.t.TemplateRuleRegistry.initialize(50)
+9543 [main] INFO  [34mInitialized ContextTemplateProcessor@28effa3f[0;39m - c.a.c.c.t.ContextTemplateProcessor.initialize(50)
+9543 [main] INFO  [34mInitialized ScheduleRuleRegistry@1d1da00b[0;39m - c.a.c.c.s.ScheduleRuleRegistry.initialize(50)
+9543 [main] INFO  [34mInitialized TransletRuleRegistry@2db4a84a[0;39m - c.a.c.c.t.TransletRuleRegistry.initialize(50)
+9543 [main] DEBUG [39mUnable to locate MessageSource with name 'messageSource': using default [com.aspectran.core.support.i18n.message.DelegatingMessageSource@5cef5fc9][0;39m - c.a.c.c.AspectranActivityContext.initMessageSource(207)
+9544 [main] INFO  [34mInitialized AspectranActivityContext@b867869[0;39m - c.a.c.c.AspectranActivityContext.initialize(50)
+9544 [main] INFO  [34mActivityContext build completed in 3 ms[0;39m - c.a.c.c.b.HybridActivityContextBuilder.doBuild(137)
+9544 [main] DEBUG [39mAdding shutdown-hook task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@7b6b8cea[0;39m - c.a.c.u.thread.ShutdownHooks.add(53)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in com.aspectran.core.activity.ActivityDataMapTest
+[INFO] Running com.aspectran.core.activity.PathVariableMapTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.aspectran.core.activity.PathVariableMapTest
+9632 [Aspectran Shutdown Hook] DEBUG [39mRunning all shutdown-hook tasks[0;39m - c.a.c.u.thread.ShutdownHooks.runTasks(115)
+9632 [Aspectran Shutdown Hook] DEBUG [39mRunning task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@7b6b8cea[0;39m - c.a.c.u.thread.ShutdownHooks.runTasks(122)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed TransletRuleRegistry@2db4a84a[0;39m - c.a.c.c.t.TransletRuleRegistry.destroy(68)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed ScheduleRuleRegistry@1d1da00b[0;39m - c.a.c.c.s.ScheduleRuleRegistry.destroy(68)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed TemplateRuleRegistry@3829306d[0;39m - c.a.c.c.t.TemplateRuleRegistry.destroy(68)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed ContextTemplateProcessor@28effa3f[0;39m - c.a.c.c.t.ContextTemplateProcessor.destroy(68)
+9632 [Aspectran Shutdown Hook] DEBUG [39mDestroying singletons in com.aspectran.core.component.bean.ContextBeanRegistry@600a1270[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(431)
+9632 [Aspectran Shutdown Hook] DEBUG [39mDestroyed all cached singletons in com.aspectran.core.component.bean.ContextBeanRegistry@600a1270[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(451)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed ContextBeanRegistry@600a1270[0;39m - c.a.c.c.b.ContextBeanRegistry.destroy(68)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed AspectRuleRegistry@254210b1[0;39m - c.a.c.c.a.AspectRuleRegistry.destroy(68)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed AspectranActivityContext@b867869[0;39m - c.a.c.c.AspectranActivityContext.destroy(68)
+9632 [Aspectran Shutdown Hook] DEBUG [39mRunning task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@6d4df1d2[0;39m - c.a.c.u.thread.ShutdownHooks.runTasks(122)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed TransletRuleRegistry@729de0e1[0;39m - c.a.c.c.t.TransletRuleRegistry.destroy(68)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed ScheduleRuleRegistry@57c7ec30[0;39m - c.a.c.c.s.ScheduleRuleRegistry.destroy(68)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed TemplateRuleRegistry@38991781[0;39m - c.a.c.c.t.TemplateRuleRegistry.destroy(68)
+9632 [Aspectran Shutdown Hook] INFO  [34mDestroyed ContextTemplateProcessor@3c577368[0;39m - c.a.c.c.t.ContextTemplateProcessor.destroy(68)
+9633 [Aspectran Shutdown Hook] DEBUG [39mDestroying singletons in com.aspectran.core.component.bean.ContextBeanRegistry@e356940[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(431)
+9633 [Aspectran Shutdown Hook] DEBUG [39mDestroyed all cached singletons in com.aspectran.core.component.bean.ContextBeanRegistry@e356940[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(451)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed ContextBeanRegistry@e356940[0;39m - c.a.c.c.b.ContextBeanRegistry.destroy(68)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed AspectRuleRegistry@58267ba1[0;39m - c.a.c.c.a.AspectRuleRegistry.destroy(68)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed AspectranActivityContext@5032b2e[0;39m - c.a.c.c.AspectranActivityContext.destroy(68)
+9633 [Aspectran Shutdown Hook] DEBUG [39mRunning task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@1c0a143[0;39m - c.a.c.u.thread.ShutdownHooks.runTasks(122)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed TransletRuleRegistry@4d529dbf[0;39m - c.a.c.c.t.TransletRuleRegistry.destroy(68)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed ScheduleRuleRegistry@5b58f639[0;39m - c.a.c.c.s.ScheduleRuleRegistry.destroy(68)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed TemplateRuleRegistry@3ba015b1[0;39m - c.a.c.c.t.TemplateRuleRegistry.destroy(68)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed ContextTemplateProcessor@499445d2[0;39m - c.a.c.c.t.ContextTemplateProcessor.destroy(68)
+9633 [Aspectran Shutdown Hook] DEBUG [39mDestroying singletons in com.aspectran.core.component.bean.ContextBeanRegistry@753c7411[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(431)
+9633 [Aspectran Shutdown Hook] DEBUG [39mDestroyed all cached singletons in com.aspectran.core.component.bean.ContextBeanRegistry@753c7411[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(451)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed ContextBeanRegistry@753c7411[0;39m - c.a.c.c.b.ContextBeanRegistry.destroy(68)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed AspectRuleRegistry@6ebf9c2d[0;39m - c.a.c.c.a.AspectRuleRegistry.destroy(68)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed AspectranActivityContext@1db565f2[0;39m - c.a.c.c.AspectranActivityContext.destroy(68)
+9633 [Aspectran Shutdown Hook] DEBUG [39mRunning task: com.aspectran.core.context.builder.HybridActivityContextBuilder$$Lambda$263/1547521797@6164e137[0;39m - c.a.c.u.thread.ShutdownHooks.runTasks(122)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed TransletRuleRegistry@1f179f51[0;39m - c.a.c.c.t.TransletRuleRegistry.destroy(68)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed ScheduleRuleRegistry@334540a0[0;39m - c.a.c.c.s.ScheduleRuleRegistry.destroy(68)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed TemplateRuleRegistry@6fef75c6[0;39m - c.a.c.c.t.TemplateRuleRegistry.destroy(68)
+9633 [Aspectran Shutdown Hook] INFO  [34mDestroyed ContextTemplateProcessor@5f61e002[0;39m - c.a.c.c.t.ContextTemplateProcessor.destroy(68)
+9634 [Aspectran Shutdown Hook] DEBUG [39mDestroying singletons in com.aspectran.core.component.bean.ContextBeanRegistry@1247c72e[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(431)
+9634 [Aspectran Shutdown Hook] DEBUG [39mDestroyed all cached singletons in com.aspectran.core.component.bean.ContextBeanRegistry@1247c72e[0;39m - c.a.c.c.b.ContextBeanRegistry.destroySingletons(451)
+9634 [Aspectran Shutdown Hook] INFO  [34mDestroyed ContextBeanRegistry@1247c72e[0;39m - c.a.c.c.b.ContextBeanRegistry.destroy(68)
+9634 [Aspectran Shutdown Hook] INFO  [34mDestroyed AspectRuleRegistry@64910b2d[0;39m - c.a.c.c.a.AspectRuleRegistry.destroy(68)
+9634 [Aspectran Shutdown Hook] INFO  [34mDestroyed AspectranActivityContext@5b7308aa[0;39m - c.a.c.c.AspectranActivityContext.destroy(68)
+9634 [Aspectran Shutdown Hook] DEBUG [39mRemoving shutdown-hook: Thread[Aspectran Shutdown Hook,5,main][0;39m - c.a.c.u.thread.ShutdownHooks.removeHook(98)
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   ActivityContextBuilderTest.test1HybridLoading:66 » NoClassDefFound java/lang/S...
+[INFO] 
+[ERROR] Tests run: 35, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Aspectran .......................................... SUCCESS [  4.784 s]
+[INFO] Aspectran Core ..................................... FAILURE [ 20.368 s]
+[INFO] Aspectran Embed .................................... SKIPPED
+[INFO] Aspectran Shell .................................... SKIPPED
+[INFO] Aspectran Shell using JLine ........................ SKIPPED
+[INFO] Aspectran Web ...................................... SKIPPED
+[INFO] Aspectran with Jetty ............................... SKIPPED
+[INFO] Aspectran Daemon ................................... SKIPPED
+[INFO] Aspectran All-in-One ............................... SKIPPED
+[INFO] Aspectran Demo ..................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 25.644 s
+[INFO] Finished at: 2020-03-18T10:35:36+01:00
+[INFO] Final Memory: 23M/181M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project aspectran-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project aspectran-core: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-aspectran-aspectran-396461056-20180625-190832-firstCommit/core/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:364)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1052)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:868)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :aspectran-core
