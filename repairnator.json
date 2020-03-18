@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:30:39 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:50:40 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 48949296,
+      "totalMemory": 106016768
+    },
+    "totalDuration": 1195,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 508,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          508
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-417818473-20180819-092207-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-417818473-20180819-092207-firstCommit/dubbo-rpc/dubbo-rpc-dubbo",
+    "overallMetrics": {
+      "numberRunning": 1245,
+      "numberPassing": 1244,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 9,
+      "failures": [
+        {
+          "failureName": "org.apache.dubbo.rpc.RpcException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.dubbo.rpc.protocol.dubbo.MultiThreadTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.dubbo.rpc.protocol.dubbo.MultiThreadTest",
+        "testMethod": "testDubboMultiThreadInvoke",
+        "failureName": "org.apache.dubbo.rpc.RpcException",
+        "detail": "Fail to start server(url: dubbo://127.0.0.1:20259/TestService?channel.readonly.sent\u003dtrue\u0026codec\u003ddubbo\u0026heartbeat\u003d60000) Failed to bind NettyServer on /127.0.0.1:20259, cause: Address already in use",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberPlugins": 0,
+    "numberSourceFiles": 756,
+    "numberTestFiles": 664,
+    "numberLibrariesFailingModule": 30,
+    "numberLines": 0
+  }
+}
