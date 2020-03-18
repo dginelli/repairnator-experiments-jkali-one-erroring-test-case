@@ -1,0 +1,462 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] io.druid:druid
+[INFO] java-util
+[INFO] druid-api
+[INFO] druid-common
+[INFO] druid-hll
+[INFO] extendedset
+[INFO] bytebuffer-collections
+[INFO] druid-processing
+[INFO] druid-aws-common
+[INFO] druid-server
+[INFO] druid-examples
+[INFO] druid-indexing-hadoop
+[INFO] druid-indexing-service
+[INFO] druid-sql
+[INFO] druid-services
+[INFO] druid-s3-extensions
+[INFO] druid-datasketches
+[INFO] druid-kafka-eight
+[INFO] druid-histogram
+[INFO] mysql-metadata-storage
+[INFO] druid-kafka-indexing-service
+[INFO] druid-integration-tests
+[INFO] druid-benchmarks
+[INFO] druid-avro-extensions
+[INFO] druid-kerberos
+[INFO] druid-hdfs-storage
+[INFO] druid-stats
+[INFO] druid-lookups-cached-global
+[INFO] druid-kafka-extraction-namespace
+[INFO] postgresql-metadata-storage
+[INFO] druid-protobuf-extensions
+[INFO] druid-lookups-cached-single
+[INFO] simple-client-sslcontext
+[INFO] druid-azure-extensions
+[INFO] druid-cassandra-storage
+[INFO] druid-rocketmq
+[INFO] druid-cloudfiles-extensions
+[INFO] graphite-emitter
+[INFO] druid-kafka-eight-simple-consumer
+[INFO] druid-rabbitmq
+[INFO] druid-distinctcount
+[INFO] druid-parquet-extensions
+[INFO] statsd-emitter
+[INFO] druid-orc-extensions
+[INFO] druid-time-min-max
+[INFO] druid-google-extensions
+[INFO] druid-virtual-columns
+[INFO] druid-thrift-extensions
+[INFO] ambari-metrics-emitter
+[INFO] sqlserver-metadata-storage
+[INFO] kafka-emitter
+[INFO] druid-redis-cache
+[INFO] distribution
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building io.druid:druid 0.11.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ druid ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] >>> maven-pmd-plugin:3.8:check (validate) > :pmd @ druid >>>
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.8:pmd (pmd) @ druid ---
+[INFO] 
+[INFO] <<< maven-pmd-plugin:3.8:check (validate) < :pmd @ druid <<<
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.8:check (validate) @ druid ---
+[INFO] 
+[INFO] --- forbiddenapis:2.3:check (validate) @ druid ---
+[INFO] Skipping execution for packaging "pom"
+[INFO] 
+[INFO] --- forbiddenapis:2.3:testCheck (testValidate) @ druid ---
+[INFO] Skipping execution for packaging "pom"
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ druid ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ druid ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building java-util 0.11.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ java-util ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] >>> maven-pmd-plugin:3.8:check (validate) > :pmd @ java-util >>>
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.8:pmd (pmd) @ java-util ---
+[WARNING] Unable to locate Source XRef to link to - DISABLED
+[INFO] 
+[INFO] <<< maven-pmd-plugin:3.8:check (validate) < :pmd @ java-util <<<
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.8:check (validate) @ java-util ---
+[INFO] 
+[INFO] 
+[INFO] --- forbiddenapis:2.3:check (validate) @ java-util ---
+[INFO] Scanning for classes to check...
+[INFO] Reading bundled API signatures: jdk-unsafe-1.8
+[INFO] Reading bundled API signatures: jdk-system-out
+[INFO] Reading API signatures: /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/codestyle/joda-time-forbidden-apis.txt
+[INFO] Reading API signatures: /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/codestyle/druid-forbidden-apis.txt
+[INFO] Loading classes to check...
+[INFO] Scanning classes for violations...
+[INFO] Scanned 195 (and 303 related) class file(s) for forbidden API invocations (in 0.36s), 0 error(s).
+[INFO] 
+[INFO] --- forbiddenapis:2.3:testCheck (testValidate) @ java-util ---
+[INFO] Scanning for classes to check...
+[INFO] Reading bundled API signatures: jdk-unsafe-1.8
+[INFO] Reading API signatures: /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/codestyle/joda-time-forbidden-apis.txt
+[INFO] Reading API signatures: /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/codestyle/druid-forbidden-apis.txt
+[INFO] Loading classes to check...
+[INFO] Scanning classes for violations...
+[INFO] Scanned 94 (and 260 related) class file(s) for forbidden API invocations (in 0.37s), 0 error(s).
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ java-util ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.5.1:antlr4 (default) @ java-util ---
+[INFO] No ANTLR 4 grammars to compile in /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/java-util/src/main/antlr4
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ java-util ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/java-util/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ java-util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ java-util ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ java-util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ java-util ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/java-util/target/surefire-reports
+[WARNING] The system property user.timezone is configured twice! The property appears in <argLine/> and any of <systemPropertyVariables/>, <systemProperties/> or user property.
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 9.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 71.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1207.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.druid.java.util.common.io.smoosh.SmooshedFileMapperTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.366 sec - in io.druid.java.util.common.io.smoosh.SmooshedFileMapperTest
+Running io.druid.java.util.common.guava.WrappingSequenceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in io.druid.java.util.common.guava.WrappingSequenceTest
+Running io.druid.java.util.common.guava.LimitedSequenceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in io.druid.java.util.common.guava.LimitedSequenceTest
+Running io.druid.java.util.common.guava.MappedSequenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in io.druid.java.util.common.guava.MappedSequenceTest
+Running io.druid.java.util.common.guava.MergeIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in io.druid.java.util.common.guava.MergeIteratorTest
+Running io.druid.java.util.common.guava.BaseSequenceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in io.druid.java.util.common.guava.BaseSequenceTest
+Running io.druid.java.util.common.guava.FunctionalIterableTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in io.druid.java.util.common.guava.FunctionalIterableTest
+Running io.druid.java.util.common.guava.FunctionalIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in io.druid.java.util.common.guava.FunctionalIteratorTest
+Running io.druid.java.util.common.guava.WithEffectSequenceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in io.druid.java.util.common.guava.WithEffectSequenceTest
+Running io.druid.java.util.common.guava.ConcatSequenceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in io.druid.java.util.common.guava.ConcatSequenceTest
+Running io.druid.java.util.common.guava.nary.SortedMergeIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.druid.java.util.common.guava.nary.SortedMergeIteratorTest
+Running io.druid.java.util.common.guava.MergeSequenceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in io.druid.java.util.common.guava.MergeSequenceTest
+Running io.druid.java.util.common.guava.FilteredSequenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.druid.java.util.common.guava.FilteredSequenceTest
+Running io.druid.java.util.common.guava.ComparatorsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in io.druid.java.util.common.guava.ComparatorsTest
+Running io.druid.java.util.common.parsers.FlatTextFormatParserTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.54 sec - in io.druid.java.util.common.parsers.FlatTextFormatParserTest
+Running io.druid.java.util.common.parsers.JavaScriptParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec - in io.druid.java.util.common.parsers.JavaScriptParserTest
+Running io.druid.java.util.common.parsers.JSONPathParserTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.524 sec - in io.druid.java.util.common.parsers.JSONPathParserTest
+Running io.druid.java.util.common.parsers.TimestampParserTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in io.druid.java.util.common.parsers.TimestampParserTest
+Running io.druid.java.util.common.parsers.RegexParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in io.druid.java.util.common.parsers.RegexParserTest
+Running io.druid.java.util.common.CompressionUtilsTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.275 sec - in io.druid.java.util.common.CompressionUtilsTest
+Running io.druid.java.util.common.RetryUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.237 sec - in io.druid.java.util.common.RetryUtilsTest
+Running io.druid.java.util.common.lifecycle.LifecycleTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.229 sec - in io.druid.java.util.common.lifecycle.LifecycleTest
+Running io.druid.java.util.common.GranularityTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in io.druid.java.util.common.GranularityTest
+Running io.druid.java.util.common.logger.LoggerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in io.druid.java.util.common.logger.LoggerTest
+Running io.druid.java.util.common.ByteBufferUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.druid.java.util.common.ByteBufferUtilsTest
+Running io.druid.java.util.common.StreamUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.638 sec - in io.druid.java.util.common.StreamUtilsTest
+Running io.druid.java.util.common.StringUtilsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.druid.java.util.common.StringUtilsTest
+Running io.druid.java.util.common.FileUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.druid.java.util.common.FileUtilsTest
+
+Results :
+
+Tests run: 162, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ java-util ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building druid-api 0.11.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ druid-api ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] >>> maven-pmd-plugin:3.8:check (validate) > :pmd @ druid-api >>>
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.8:pmd (pmd) @ druid-api ---
+[WARNING] Unable to locate Source XRef to link to - DISABLED
+[INFO] 
+[INFO] <<< maven-pmd-plugin:3.8:check (validate) < :pmd @ druid-api <<<
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.8:check (validate) @ druid-api ---
+[INFO] 
+[INFO] 
+[INFO] --- forbiddenapis:2.3:check (validate) @ druid-api ---
+[INFO] Scanning for classes to check...
+[INFO] Reading bundled API signatures: jdk-unsafe-1.8
+[INFO] Reading bundled API signatures: jdk-system-out
+[INFO] Reading API signatures: /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/codestyle/joda-time-forbidden-apis.txt
+[INFO] Reading API signatures: /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/codestyle/druid-forbidden-apis.txt
+[INFO] Loading classes to check...
+[INFO] Scanning classes for violations...
+[INFO] Scanned 122 (and 269 related) class file(s) for forbidden API invocations (in 0.12s), 0 error(s).
+[INFO] 
+[INFO] --- forbiddenapis:2.3:testCheck (testValidate) @ druid-api ---
+[INFO] Scanning for classes to check...
+[INFO] Reading bundled API signatures: jdk-unsafe-1.8
+[INFO] Reading API signatures: /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/codestyle/joda-time-forbidden-apis.txt
+[INFO] Reading API signatures: /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/codestyle/druid-forbidden-apis.txt
+[INFO] Loading classes to check...
+[INFO] Scanning classes for violations...
+[INFO] Scanned 77 (and 252 related) class file(s) for forbidden API invocations (in 0.10s), 0 error(s).
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ druid-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ druid-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ druid-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ druid-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ druid-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ druid-api ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/api/target/surefire-reports
+[WARNING] The system property user.timezone is configured twice! The property appears in <argLine/> and any of <systemPropertyVariables/>, <systemProperties/> or user property.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.druid.timeline.DataSegmentUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.849 sec - in io.druid.timeline.DataSegmentUtilsTest
+Running io.druid.timeline.DataSegmentTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.394 sec - in io.druid.timeline.DataSegmentTest
+Running io.druid.timeline.partition.NoneShardSpecTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in io.druid.timeline.partition.NoneShardSpecTest
+Running io.druid.segment.SegmentUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in io.druid.segment.SegmentUtilsTest
+Running io.druid.guice.PolyBindTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.289 sec - in io.druid.guice.PolyBindTest
+Running io.druid.guice.ConditionalMultibindTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 sec - in io.druid.guice.ConditionalMultibindTest
+Running io.druid.guice.JsonConfiguratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in io.druid.guice.JsonConfiguratorTest
+Running io.druid.data.input.impl.TimeAndDimsParseSpecTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 sec - in io.druid.data.input.impl.TimeAndDimsParseSpecTest
+Running io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest
+Tests run: 11, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.939 sec <<< FAILURE! - in io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest
+testReconnectWithCacheAndPrefetch(io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest)  Time elapsed: 1.051 sec  <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest.testReconnectWithCacheAndPrefetch(PrefetchableTextFilesFirehoseFactoryTest.java:346)
+Caused by: java.util.concurrent.TimeoutException
+	at io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest.testReconnectWithCacheAndPrefetch(PrefetchableTextFilesFirehoseFactoryTest.java:346)
+
+Running io.druid.data.input.impl.RegexParseSpecTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in io.druid.data.input.impl.RegexParseSpecTest
+Running io.druid.data.input.impl.CSVParseSpecTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.druid.data.input.impl.CSVParseSpecTest
+Running io.druid.data.input.impl.DimensionsSpecSerdeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in io.druid.data.input.impl.DimensionsSpecSerdeTest
+Running io.druid.data.input.impl.StringInputRowParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.druid.data.input.impl.StringInputRowParserTest
+Running io.druid.data.input.impl.JSONLowercaseParseSpecTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in io.druid.data.input.impl.JSONLowercaseParseSpecTest
+Running io.druid.data.input.impl.ParseSpecTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.druid.data.input.impl.ParseSpecTest
+Running io.druid.data.input.impl.JSONParseSpecTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 sec - in io.druid.data.input.impl.JSONParseSpecTest
+Running io.druid.data.input.impl.JavaScriptParseSpecTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec - in io.druid.data.input.impl.JavaScriptParseSpecTest
+Running io.druid.data.input.impl.InputRowParserSerdeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 sec - in io.druid.data.input.impl.InputRowParserSerdeTest
+Running io.druid.data.input.impl.DelimitedParseSpecTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in io.druid.data.input.impl.DelimitedParseSpecTest
+Running io.druid.data.input.impl.TimestampSpecTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.druid.data.input.impl.TimestampSpecTest
+Running io.druid.data.input.impl.FileIteratingFirehoseTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in io.druid.data.input.impl.FileIteratingFirehoseTest
+Running io.druid.data.input.impl.NoopInputRowParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in io.druid.data.input.impl.NoopInputRowParserTest
+Running io.druid.data.input.impl.JSONPathSpecTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in io.druid.data.input.impl.JSONPathSpecTest
+Running io.druid.data.input.MapBasedRowTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.druid.data.input.MapBasedRowTest
+Running io.druid.jackson.JacksonExtremeDoubleValuesSerdeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.druid.jackson.JacksonExtremeDoubleValuesSerdeTest
+Running io.druid.js.JavaScriptConfigTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.druid.js.JavaScriptConfigTest
+
+Results :
+
+Tests in error: 
+  PrefetchableTextFilesFirehoseFactoryTest.testReconnectWithCacheAndPrefetch:346 » Runtime
+
+Tests run: 126, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] io.druid:druid ..................................... SUCCESS [  4.766 s]
+[INFO] java-util .......................................... SUCCESS [ 20.152 s]
+[INFO] druid-api .......................................... FAILURE [ 10.484 s]
+[INFO] druid-common ....................................... SKIPPED
+[INFO] druid-hll .......................................... SKIPPED
+[INFO] extendedset ........................................ SKIPPED
+[INFO] bytebuffer-collections ............................. SKIPPED
+[INFO] druid-processing ................................... SKIPPED
+[INFO] druid-aws-common ................................... SKIPPED
+[INFO] druid-server ....................................... SKIPPED
+[INFO] druid-examples ..................................... SKIPPED
+[INFO] druid-indexing-hadoop .............................. SKIPPED
+[INFO] druid-indexing-service ............................. SKIPPED
+[INFO] druid-sql .......................................... SKIPPED
+[INFO] druid-services ..................................... SKIPPED
+[INFO] druid-s3-extensions ................................ SKIPPED
+[INFO] druid-datasketches ................................. SKIPPED
+[INFO] druid-kafka-eight .................................. SKIPPED
+[INFO] druid-histogram .................................... SKIPPED
+[INFO] mysql-metadata-storage ............................. SKIPPED
+[INFO] druid-kafka-indexing-service ....................... SKIPPED
+[INFO] druid-integration-tests ............................ SKIPPED
+[INFO] druid-benchmarks ................................... SKIPPED
+[INFO] druid-avro-extensions .............................. SKIPPED
+[INFO] druid-kerberos ..................................... SKIPPED
+[INFO] druid-hdfs-storage ................................. SKIPPED
+[INFO] druid-stats ........................................ SKIPPED
+[INFO] druid-lookups-cached-global ........................ SKIPPED
+[INFO] druid-kafka-extraction-namespace ................... SKIPPED
+[INFO] postgresql-metadata-storage ........................ SKIPPED
+[INFO] druid-protobuf-extensions .......................... SKIPPED
+[INFO] druid-lookups-cached-single ........................ SKIPPED
+[INFO] simple-client-sslcontext ........................... SKIPPED
+[INFO] druid-azure-extensions ............................. SKIPPED
+[INFO] druid-cassandra-storage ............................ SKIPPED
+[INFO] druid-rocketmq ..................................... SKIPPED
+[INFO] druid-cloudfiles-extensions ........................ SKIPPED
+[INFO] graphite-emitter ................................... SKIPPED
+[INFO] druid-kafka-eight-simple-consumer .................. SKIPPED
+[INFO] druid-rabbitmq ..................................... SKIPPED
+[INFO] druid-distinctcount ................................ SKIPPED
+[INFO] druid-parquet-extensions ........................... SKIPPED
+[INFO] statsd-emitter ..................................... SKIPPED
+[INFO] druid-orc-extensions ............................... SKIPPED
+[INFO] druid-time-min-max ................................. SKIPPED
+[INFO] druid-google-extensions ............................ SKIPPED
+[INFO] druid-virtual-columns .............................. SKIPPED
+[INFO] druid-thrift-extensions ............................ SKIPPED
+[INFO] ambari-metrics-emitter ............................. SKIPPED
+[INFO] sqlserver-metadata-storage ......................... SKIPPED
+[INFO] kafka-emitter ...................................... SKIPPED
+[INFO] druid-redis-cache .................................. SKIPPED
+[INFO] distribution ....................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 37.092 s
+[INFO] Finished at: 2020-03-18T10:39:49+01:00
+[INFO] Final Memory: 48M/231M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project druid-api: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/api/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project druid-api: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/api/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-295053161-20171030-224056_bugonly-firstCommit/api/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :druid-api
