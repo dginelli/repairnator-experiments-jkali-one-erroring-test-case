@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "cardillo/joinery",
-  "bugCommit": "https://github.com/cardillo/joinery/compare/a11ebdf6d911...43820b1230d2",
-  "failingModule": "/root/workspace/cardillo/joinery/265411412",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.net.UnknownHostException"
-  ],
-  "totalNumberRunningTests": 229,
-  "failing-test-cases": [
-    {
-      "className": "joinery.DataFrame",
-      "failingMethods": [],
-      "erroringMethods": [
-        "joinery.DataFrame#DataFrame"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-cardillo-joinery-265411412-20170817-043139_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 229,
+      "numberPassing": 228,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.net.UnknownHostException",
-          "failureDetail": "real-chart.finance.yahoo.com",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "joinery.DataFrame",
+        "numberRunning": 60,
+        "numberPassing": 59,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "joinery.DataFrame",
+        "testMethod": "DataFrame",
+        "failureName": "java.net.UnknownHostException",
+        "detail": "real-chart.finance.yahoo.com",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 22,
+    "numberTestFiles": 30,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:16 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:44:04 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 280700136,
+      "totalMemory": 828481536
+    },
+    "totalDuration": 766,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 712,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          712
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-cardillo-joinery-265411412-20170817-043139_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
