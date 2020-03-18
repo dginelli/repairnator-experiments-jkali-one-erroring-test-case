@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "derjust/spring-data-dynamodb",
-  "failingModule": "/root/workspace/derjust/spring-data-dynamodb/352674421",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "com.amazonaws.AmazonServiceException"
-  ],
-  "totalNumberRunningTests": 278,
-  "failing-test-cases": [
-    {
-      "className": "org.socialsignin.spring.data.dynamodb.domain.sample.CustomerDocumentTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.socialsignin.spring.data.dynamodb.domain.sample.CustomerDocumentTest#runTest"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-derjust-spring-data-dynamodb-352674421-20180313-055331-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 277,
+      "numberPassing": 276,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
       "failures": [
         {
-          "failureName": "com.amazonaws.AmazonServiceException",
-          "failureDetail": "ALL_PROJECTED_ATTRIBUTES can be used only when Querying using an IndexName (Service: null; Status Code: 400; Error Code: ValidationException; Request ID: null)",
-          "isError": true
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.socialsignin.spring.data.dynamodb.domain.sample.CustomerDocumentTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.socialsignin.spring.data.dynamodb.domain.sample.CustomerDocumentTest",
+        "testMethod": "runTest",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 92,
+    "numberTestFiles": 70,
+    "numberLibrariesFailingModule": 62,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:57:56 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 60291760,
+      "totalMemory": 342929408
+    },
+    "totalDuration": 1592,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1207,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1207
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-derjust-spring-data-dynamodb-352674421-20180313-055331-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
