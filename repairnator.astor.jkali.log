@@ -2629,3 +2629,9 @@ RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `log.info(s) ` -topatch--
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.aspectran.core.util.logging.slf4j.Slf4jLocationAwareLoggerImpl line: 71, pointed element: CtInvocationImpl
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
 RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `logger.log(com.aspectran.core.util.logging.slf4j.Slf4jLocationAwareLoggerImpl.MARKER, com.aspectran.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.aspectran.core.component.bean.scope.AbstractScope line: 48, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.scopeType = scopeType ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.aspectran.core.util.logging.slf4j.Slf4jImpl line: 33, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `log = new com.aspectran.core.util.logging.slf4j.Slf4jLocationAwareLoggerImpl(((org.slf4j.spi.Locatio[...] ` -topatch--> `-` (null) 
