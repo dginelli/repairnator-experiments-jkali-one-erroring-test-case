@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "api-collab/api-collab-server",
-  "bugCommit": "https://github.com/api-collab/api-collab-server/compare/ce2a518b8c6e...0daa9069e7b0",
-  "failingModule": "/root/workspace/api-collab/api-collab-server/377181430",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.springframework.dao.IncorrectResultSizeDataAccessException"
-  ],
-  "totalNumberRunningTests": 46,
-  "failing-test-cases": [
-    {
-      "className": "io.apicollab.server.service.ApiServiceTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.apicollab.server.service.ApiServiceTest#createMultipleVersionsGetSwagger"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-api-collab-api-collab-server-377181430-20180510-102737-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 46,
+      "numberPassing": 45,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.springframework.dao.IncorrectResultSizeDataAccessException",
-          "failureDetail": "query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.apicollab.server.service.ApiServiceTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.apicollab.server.service.ApiServiceTest",
+        "testMethod": "createMultipleVersionsGetSwagger",
+        "failureName": "org.springframework.dao.IncorrectResultSizeDataAccessException",
+        "detail": "query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 38,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 150,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:19 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:35:57 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 82151304,
+      "totalMemory": 198176768
+    },
+    "totalDuration": 275,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 125,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          125
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-api-collab-api-collab-server-377181430-20180510-102737-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
