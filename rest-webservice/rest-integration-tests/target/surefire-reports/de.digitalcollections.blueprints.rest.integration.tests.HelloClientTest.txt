@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: de.digitalcollections.blueprints.rest.integration.tests.HelloClientTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 18.251 sec <<< FAILURE! - in de.digitalcollections.blueprints.rest.integration.tests.HelloClientTest
+de.digitalcollections.blueprints.rest.integration.tests.HelloClientTest  Time elapsed: 18.25 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError: null
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:90)
+	at org.testcontainers.DockerClientFactory.client(DockerClientFactory.java:83)
+	at org.testcontainers.containers.DockerComposeContainer.<init>(DockerComposeContainer.java:94)
+	at org.testcontainers.containers.DockerComposeContainer.<init>(DockerComposeContainer.java:80)
+	at org.testcontainers.containers.DockerComposeContainer.<init>(DockerComposeContainer.java:76)
+	at de.digitalcollections.blueprints.rest.integration.tests.HelloClientTest.<clinit>(HelloClientTest.java:24)
+

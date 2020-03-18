@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.digitalcollections.blueprints.rest.integration.tests.HelloClientTest" time="18.25" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-dbmdz-blueprints-385575727-20180530-103202-firstCommit"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="skip.gulp" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="findbugs.skip" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-dbmdz-blueprints-385575727-20180530-103202-firstCommit"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="skip.npm" value="true"/>
+    <property name="java.endorsed.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="gpg.skip" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="cobertura.skip" value="true"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/hpc2n/eb/software/Core/Maven/3.6.0/lib:/hpc2n/eb/software/Core/Java/1.8.0_202/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="license.skip" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="skip.bower" value="true"/>
+    <property name="maven.repo.local" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-dbmdz-blueprints-385575727-20180530-103202-firstCommit/.m2"/>
+    <property name="os.version" value="4.15.0-91-generic"/>
+    <property name="user.home" value="/home/d/dginelli"/>
+    <property name="user.timezone" value="Europe/Stockholm"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="dginelli"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="skipITs" value="true"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -e -D enforcer.skip=true -D dependency-check.skip=true -D skipITs=true -D cobertura.skip=true -D maven.repo.local=/scratch/dginelli/workspace/repairnator-repairnator-experiments-dbmdz-blueprints-385575727-20180530-103202-firstCommit/.m2 -D rat.skip=true -D findbugs.skip=true -D skip.bower=true -D gpg.skip=true -D skip.gulp=true -D license.skip=true -D skip.npm=true test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="dependency-check.skip" value="true"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/resources.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/rt.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/sunrsasign.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jsse.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jce.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/charsets.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jfr.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="enforcer.skip" value="true"/>
+    <property name="rat.skip" value="true"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="de.digitalcollections.blueprints.rest.integration.tests.HelloClientTest" classname="de.digitalcollections.blueprints.rest.integration.tests.HelloClientTest" time="18.25">
+    <error type="java.lang.ExceptionInInitializerError:"><![CDATA[java.lang.ExceptionInInitializerError: null
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:90)
+	at org.testcontainers.DockerClientFactory.client(DockerClientFactory.java:83)
+	at org.testcontainers.containers.DockerComposeContainer.<init>(DockerComposeContainer.java:94)
+	at org.testcontainers.containers.DockerComposeContainer.<init>(DockerComposeContainer.java:80)
+	at org.testcontainers.containers.DockerComposeContainer.<init>(DockerComposeContainer.java:76)
+	at de.digitalcollections.blueprints.rest.integration.tests.HelloClientTest.<clinit>(HelloClientTest.java:24)
+]]></error>
+    <system-out><![CDATA[10:35:15.032 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy - ping failed with configuration Environment variables, system properties and defaults. Resolved: 
+    dockerHost=unix:///var/run/docker.sock
+    apiVersion='{UNKNOWN_VERSION}'
+    registryUrl='https://index.docker.io/v1/'
+    registryUsername='dginelli'
+    registryPassword='null'
+    registryEmail='null'
+    dockerConfig='DefaultDockerClientConfig[dockerHost=unix:///var/run/docker.sock,registryUsername=dginelli,registryPassword=<null>,registryEmail=<null>,registryUrl=https://index.docker.io/v1/,dockerConfig=/home/d/dginelli/.docker,sslConfig=<null>,apiVersion={UNKNOWN_VERSION}]'
+ due to org.rnorth.ducttape.TimeoutException: Timeout waiting for result with exception
+org.rnorth.ducttape.TimeoutException: Timeout waiting for result with exception
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:51)
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.ping(DockerClientProviderStrategy.java:108)
+	at org.testcontainers.dockerclient.EnvironmentAndSystemPropertyClientProviderStrategy.test(EnvironmentAndSystemPropertyClientProviderStrategy.java:23)
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:54)
+	at org.testcontainers.DockerClientFactory.client(DockerClientFactory.java:83)
+	at org.testcontainers.containers.DockerComposeContainer.<init>(DockerComposeContainer.java:94)
+	at org.testcontainers.containers.DockerComposeContainer.<init>(DockerComposeContainer.java:80)
+	at org.testcontainers.containers.DockerComposeContainer.<init>(DockerComposeContainer.java:76)
+	at de.digitalcollections.blueprints.rest.integration.tests.HelloClientTest.<clinit>(HelloClientTest.java:24)
+	at sun.misc.Unsafe.ensureClassInitialized(Native Method)
+	at sun.reflect.UnsafeFieldAccessorFactory.newFieldAccessor(UnsafeFieldAccessorFactory.java:43)
+	at sun.reflect.ReflectionFactory.newFieldAccessor(ReflectionFactory.java:156)
+	at java.lang.reflect.Field.acquireFieldAccessor(Field.java:1088)
+	at java.lang.reflect.Field.getFieldAccessor(Field.java:1069)
+	at java.lang.reflect.Field.get(Field.java:393)
+	at org.junit.runners.model.FrameworkField.get(FrameworkField.java:73)
+	at org.junit.runners.model.TestClass.getAnnotatedFieldValues(TestClass.java:230)
+	at org.junit.runners.ParentRunner.classRules(ParentRunner.java:255)
+	at org.junit.runners.ParentRunner.withClassRules(ParentRunner.java:244)
+	at org.junit.runners.ParentRunner.classBlock(ParentRunner.java:194)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:362)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.net.ConnectException: connect() failed: No such file or directory: /var/run/docker.sock
+	at org.testcontainers.shaded.io.netty.channel.unix.Errors.throwConnectException(Errors.java:99)
+	at org.testcontainers.shaded.io.netty.channel.unix.Socket.connect(Socket.java:208)
+	at org.testcontainers.shaded.io.netty.channel.epoll.AbstractEpollStreamChannel.doConnect(AbstractEpollStreamChannel.java:719)
+	at org.testcontainers.shaded.io.netty.channel.epoll.EpollDomainSocketChannel.doConnect(EpollDomainSocketChannel.java:98)
+	at org.testcontainers.shaded.io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.connect(AbstractEpollStreamChannel.java:783)
+	at org.testcontainers.shaded.io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1266)
+	at org.testcontainers.shaded.io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:555)
+	at org.testcontainers.shaded.io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:540)
+	at org.testcontainers.shaded.io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:494)
+	at org.testcontainers.shaded.io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:47)
+	at org.testcontainers.shaded.io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:295)
+	at org.testcontainers.shaded.io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:555)
+	at org.testcontainers.shaded.io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:540)
+	at org.testcontainers.shaded.io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:522)
+	at org.testcontainers.shaded.io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:985)
+	at org.testcontainers.shaded.io.netty.channel.AbstractChannel.connect(AbstractChannel.java:255)
+	at org.testcontainers.shaded.io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:252)
+	at org.testcontainers.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.safeExecute(SingleThreadEventExecutor.java:451)
+	at org.testcontainers.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:418)
+	at org.testcontainers.shaded.io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:306)
+	at org.testcontainers.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at org.testcontainers.shaded.io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+10:35:20.539 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+10:35:20.540 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy -     EnvironmentAndSystemPropertyClientProviderStrategy: failed with exception InvalidConfigurationException (ping failed)
+10:35:20.540 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy -     UnixSocketClientProviderStrategy: failed with exception InvalidConfigurationException (ping failed). Root cause NoSuchFileException (/var/run/docker.sock)
+10:35:20.540 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy -     ProxiedUnixSocketClientProviderStrategy: failed with exception IllegalArgumentException (Socket file does not exist: /var/run/docker.sock)
+10:35:20.540 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy -     DockerMachineClientProviderStrategy: failed with exception InvalidConfigurationException (docker-machine executable was not found on PATH ([/hpc2n/eb/software/Core/Maven/3.6.0, /hpc2n/eb/software/Core/Maven/3.6.0/bin, /hpc2n/eb/software/Core/Java/1.8.0_202, /hpc2n/eb/software/Core/Java/1.8.0_202/bin, /home/d/dginelli/Public/bin, /usr/local/bin, /usr/local/sbin, /usr/sbin, /usr/bin, /sbin, /bin, /usr/games, /usr/local/games, /opt/puppetlabs/bin]))
+10:35:20.540 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy -     WindowsClientProviderStrategy: failed with exception TimeoutException (Timeout waiting for result with exception). Root cause ConnectException (Connection refused: localhost/127.0.0.1:2375)
+10:35:20.540 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy - As no valid configuration was found, execution cannot continue
+]]></system-out>
+  </testcase>
+</testsuite>
