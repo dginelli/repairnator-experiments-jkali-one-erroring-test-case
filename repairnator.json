@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 5,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/incubator-servicecomb-java-chassis",
-  "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/333559017/transports/transport-rest/transport-rest-vertx",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 1632,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.servicecomb.transport.rest.vertx.TestVertxRestDispatcher",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.servicecomb.transport.rest.vertx.TestVertxRestDispatcher#onRequest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:06 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:51:22 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 30154336,
+      "totalMemory": 147910656
+    },
+    "totalDuration": 1211,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 659,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          659
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-333559017-20180126-035544_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-333559017-20180126-035544_bugonly-firstCommit/transports/transport-rest/transport-rest-vertx",
+    "overallMetrics": {
+      "numberRunning": 1627,
+      "numberPassing": 1626,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "failureDetail": "must run in vertx context.",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.transport.rest.vertx.TestVertxRestDispatcher",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.transport.rest.vertx.TestVertxRestDispatcher",
+        "testMethod": "onRequest",
+        "failureName": "java.lang.NullPointerException",
+        "detail": "must run in vertx context.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberPlugins": 0,
+    "numberSourceFiles": 888,
+    "numberTestFiles": 517,
+    "numberLibrariesFailingModule": 95,
+    "numberLines": 0
+  }
 }
