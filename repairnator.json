@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "apache/metamodel",
-  "failingModule": "/root/workspace/apache/metamodel/394124980/elasticsearch/native",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 742,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.metamodel.elasticsearch.nativeclient.ElasticSearchDataContextTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.metamodel.elasticsearch.nativeclient.ElasticSearchDataContextTest"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-metamodel-394124980-20180619-163218-firstCommit/excel",
+    "overallMetrics": {
+      "numberRunning": 480,
+      "numberPassing": 479,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
       "failures": [
         {
-          "failureName": "java.lang.RuntimeException",
-          "failureDetail": "can not run elasticsearch as root",
-          "isError": true
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.metamodel.excel.ExcelDataContextTest",
+        "numberRunning": 25,
+        "numberPassing": 24,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.metamodel.excel.ExcelDataContextTest",
+        "testMethod": "testCreateTableXlsx",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Attempting to write a row[2] in the range [0,2] that is already written to disk.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 28,
+    "numberPlugins": 0,
+    "numberSourceFiles": 578,
+    "numberTestFiles": 218,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:06 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:34:28 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 47492920,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 198,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-metamodel-394124980-20180619-163218-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
