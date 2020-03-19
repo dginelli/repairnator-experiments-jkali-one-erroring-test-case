@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "timmolter/XChange",
-  "failingModule": "/root/workspace/timmolter/XChange/248835230/xchange-anx",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalStateException"
-  ],
-  "totalNumberRunningTests": 46,
-  "failing-test-cases": [
-    {
-      "className": "org.knowm.xchange.anx.v2.ANXAdapterTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.knowm.xchange.anx.v2.ANXAdapterTest#testOrderAdapterWithDepth"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:40:12 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:48:52 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 59068584,
+      "totalMemory": 149397504
+    },
+    "totalDuration": 516,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 95,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          95
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-248835230-20170630-174924_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-248835230-20170630-174924_bugonly-firstCommit/xchange-anx",
+    "overallMetrics": {
+      "numberRunning": 46,
+      "numberPassing": 45,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalStateException",
-          "failureDetail": "Don\u0027t understand order direction: ask",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.knowm.xchange.anx.v2.ANXAdapterTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.knowm.xchange.anx.v2.ANXAdapterTest",
+        "testMethod": "testOrderAdapterWithDepth",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Don\u0027t understand order direction: ask",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 60,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1984,
+    "numberTestFiles": 349,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  }
 }
