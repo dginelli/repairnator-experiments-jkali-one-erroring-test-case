@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "gentity/gentity",
-  "bugCommit": "https://github.com/gentity/gentity/compare/219903a3d073...bb9c22ea0827",
-  "failingModule": "/root/workspace/gentity/gentity/361095195/gentity-test",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "javax.persistence.PersistenceException"
-  ],
-  "totalNumberRunningTests": 4,
-  "failing-test-cases": [
-    {
-      "className": "com.github.gentity.test.Test0b_basic_table_sequence",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.github.gentity.test.Test0b_basic_table_sequence#test"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:50:37 AM",
+    "reproductionDateEnd": "Mar 19, 2020 10:53:33 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 65113312,
+      "totalMemory": 227872768
+    },
+    "totalDuration": 174,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 124,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          124
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-gentity-gentity-361095195-20180402-100651-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-gentity-gentity-361095195-20180402-100651-firstCommit/gentity-test",
+    "overallMetrics": {
+      "numberRunning": 4,
+      "numberPassing": 3,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "javax.persistence.PersistenceException",
-          "failureDetail": "Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.1.v20171221-bd47e8f): org.eclipse.persistence.exceptions.DatabaseException Internal Exception: java.sql.SQLIntegrityConstraintViolationException: integrity constraint violation: unique constraint or index violation; SYS_PK_10095 table: PERSON Error Code: -104 Call: INSERT INTO person (id, firstname, surname) VALUES (?, ?, ?)  bind \u003d\u003e [3 parameters bound] Query: InsertObjectQuery(com.github.gentity.test.test0b_basic_table_sequence.Person@343570b7)",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.gentity.test.Test0b_basic_table_sequence",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.gentity.test.Test0b_basic_table_sequence",
+        "testMethod": "test",
+        "failureName": "javax.persistence.PersistenceException",
+        "detail": "Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.1.v20171221-bd47e8f): org.eclipse.persistence.exceptions.DatabaseException\nInternal Exception: java.sql.SQLIntegrityConstraintViolationException: integrity constraint violation: unique constraint or index violation; SYS_PK_10095 table: PERSON\nError Code: -104\nCall: INSERT INTO person (id, firstname, surname) VALUES (?, ?, ?)\n bind \u003d\u003e [3 parameters bound]\nQuery: InsertObjectQuery(com.github.gentity.test.test0b_basic_table_sequence.Person@539d019)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberPlugins": 0,
+    "numberSourceFiles": 10,
+    "numberTestFiles": 5,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  }
 }
