@@ -1153,3 +1153,18 @@ java.io.FileNotFoundException: /com.gzoltar-0.1.1-jar-with-dependencies.jar (No 
 
 Using default security password: 4b021660-0dd4-4b3e-a1a5-346105dea61e
 
+19:51:00.295 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/common.sql for h2 database
+19:51:00.295 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/streams.sql for h2 database
+19:51:00.296 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/tasks.sql for h2 database
+19:51:00.296 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/deployment.sql for h2 database
+19:51:00.296 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/jpa.sql for h2 database
+19:51:00.296 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/common.sql]
+19:51:00.298 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/common.sql] in 1 ms.
+19:51:00.298 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/streams.sql]
+19:51:00.300 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/streams.sql] in 2 ms.
+19:51:00.300 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/tasks.sql]
+19:51:00.301 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/tasks.sql] in 1 ms.
+19:51:00.301 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/deployment.sql]
+19:51:00.305 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/deployment.sql] in 4 ms.
+19:51:00.305 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/jpa.sql]
+19:51:00.313 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/jpa.sql] in 8 ms.
