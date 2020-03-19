@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "kiranreddykasa/budget-tracker-api",
-  "bugCommit": "https://github.com/kiranreddykasa/budget-tracker-api/compare/be734785a218...17b9ef4a4e80",
-  "failingModule": "/root/workspace/kiranreddykasa/budget-tracker-api/352867848",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.springframework.dao.DataIntegrityViolationException"
-  ],
-  "totalNumberRunningTests": 52,
-  "failing-test-cases": [
-    {
-      "className": "com.kiranreddy.budgettracker.transaction.TransactionRepositoryTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.kiranreddy.budgettracker.transaction.TransactionRepositoryTest#saveTransactionTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:55:06 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:12:16 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 39577136,
+      "totalMemory": 117899264
+    },
+    "totalDuration": 1026,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 792,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          792
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-kiranreddykasa-budget-tracker-api-352867848-20180313-153702-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-kiranreddykasa-budget-tracker-api-352867848-20180313-153702-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 52,
+      "numberPassing": 51,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.springframework.dao.DataIntegrityViolationException",
-          "failureDetail": "could not execute statement; SQL [n/a]; constraint [\"FKORMEO9TLR0VPKEH555ND0UMGM: PUBLIC.TRANSACTION FOREIGN KEY(CATEGORY_ID) REFERENCES PUBLIC.TRANSACTION_CATEGORY(ID) (1)\"; SQL statement:\ninsert into transaction (id, amount, category_id, date, note, type) values (null, ?, ?, ?, ?, ?) [23506-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.kiranreddy.budgettracker.transaction.TransactionRepositoryTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.kiranreddy.budgettracker.transaction.TransactionRepositoryTest",
+        "testMethod": "saveTransactionTest",
+        "failureName": "org.springframework.dao.DataIntegrityViolationException",
+        "detail": "could not execute statement; SQL [n/a]; constraint [\"FKORMEO9TLR0VPKEH555ND0UMGM: PUBLIC.TRANSACTION FOREIGN KEY(CATEGORY_ID) REFERENCES PUBLIC.TRANSACTION_CATEGORY(ID) (1)\"; SQL statement:\ninsert into transaction (id, amount, category_id, date, note, type) values (null, ?, ?, ?, ?, ?) [23506-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 16,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 83,
+    "numberLines": 0
+  },
+  "commits": {}
 }
