@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "spring-projects/spring-hateoas",
-  "bugCommit": "https://github.com/spring-projects/spring-hateoas/compare/07333d40d07a...00eb1b29ce02",
-  "failingModule": "/root/workspace/spring-projects/spring-hateoas/295500870",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.springframework.web.client.RestClientException"
-  ],
-  "totalNumberRunningTests": 352,
-  "failing-test-cases": [
-    {
-      "className": "org.springframework.hateoas.client.TraversonTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.springframework.hateoas.client.TraversonTest#doesNotDoubleEncodeURI"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:39:04 PM",
+    "reproductionDateEnd": "Mar 19, 2020 8:11:02 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 241974296,
+      "totalMemory": 386338816
+    },
+    "totalDuration": 1914,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1630,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1630
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-295500870-20171031-223806_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-295500870-20171031-223806_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 352,
+      "numberPassing": 351,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.springframework.web.client.RestClientException",
-          "failureDetail": "Error while extracting response for type [class org.springframework.hateoas.Resource] and content type [application/hal+json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of org.springframework.hateoas.ResourceSupport out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of org.springframework.hateoas.ResourceSupport out of START_ARRAY token  at [Source: (PushbackInputStream); line: 9, column: 15] (through reference chain: org.springframework.hateoas.Resource[\"_embedded\"]-\u003ejava.util.LinkedHashMap[\"items\"])",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.hateoas.client.TraversonTest",
+        "numberRunning": 19,
+        "numberPassing": 18,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.hateoas.client.TraversonTest",
+        "testMethod": "doesNotDoubleEncodeURI",
+        "failureName": "org.springframework.web.client.RestClientException",
+        "detail": "Error while extracting response for type [class org.springframework.hateoas.Resource] and content type [application/hal+json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of org.springframework.hateoas.ResourceSupport out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of org.springframework.hateoas.ResourceSupport out of START_ARRAY token\n at [Source: (PushbackInputStream); line: 9, column: 15] (through reference chain: org.springframework.hateoas.Resource[\"_embedded\"]-\u003ejava.util.LinkedHashMap[\"items\"])",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 91,
+    "numberTestFiles": 63,
+    "numberLibrariesFailingModule": 48,
+    "numberLines": 0
+  }
 }
