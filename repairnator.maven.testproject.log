@@ -1,0 +1,109 @@
+2020-03-19 11:08:50.540 INFO net.spy.memcached.MemcachedConnection:  Setting retryQueueSize to -1
+2020-03-19 11:08:50.651 INFO net.spy.memcached.MemcachedConnection:  Added {QA sa=localhost/127.0.0.1:11211, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+2020-03-19 11:08:50.670 WARN net.spy.memcached.MemcachedConnection:  Could not redistribute to another node, retrying primary node for key.
+2020-03-19 11:08:50.674 INFO net.spy.memcached.MemcachedConnection:  Reconnecting due to failure to connect to {QA sa=localhost/127.0.0.1:11211, #Rops=0, #Wops=1, #iq=0, topRop=null, topWop=Cmd: set Key: key Flags: 0 Exp: 0 Data Length: 5, toWrite=0, interested=0}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at net.spy.memcached.MemcachedConnection.handleIO(MemcachedConnection.java:691)
+	at net.spy.memcached.MemcachedConnection.handleIO(MemcachedConnection.java:450)
+	at net.spy.memcached.MemcachedConnection.run(MemcachedConnection.java:1457)
+2020-03-19 11:08:50.678 WARN net.spy.memcached.MemcachedConnection:  Closing, and reopening {QA sa=localhost/127.0.0.1:11211, #Rops=0, #Wops=1, #iq=0, topRop=null, topWop=Cmd: set Key: key Flags: 0 Exp: 0 Data Length: 5, toWrite=0, interested=0}, attempt 1.
+2020-03-19 11:08:53.225 INFO net.spy.memcached.MemcachedConnection:  Shut down memcached client
+] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ opentracing-spymemcached ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ opentracing-spymemcached ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-opentracing-contrib-java-memcached-client-354224821-20180316-102053-firstCommit/opentracing-spymemcached/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ opentracing-spymemcached ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ opentracing-spymemcached ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-opentracing-contrib-java-memcached-client-354224821-20180316-102053-firstCommit/opentracing-spymemcached/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 5.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 96.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1029.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.opentracing.contrib.spymemcached.TracingSpymemcachedTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.911 sec <<< FAILURE! - in io.opentracing.contrib.spymemcached.TracingSpymemcachedTest
+test(io.opentracing.contrib.spymemcached.TracingSpymemcachedTest)  Time elapsed: 2.817 sec  <<< ERROR!
+java.lang.RuntimeException: Timed out waiting for operation
+	at net.spy.memcached.internal.OperationFuture.get(OperationFuture.java:167)
+	at net.spy.memcached.internal.OperationFuture.get(OperationFuture.java:140)
+	at io.opentracing.contrib.spymemcached.TracingSpymemcachedTest.test(TracingSpymemcachedTest.java:56)
+
+
+Results :
+
+Tests in error: 
+  TracingSpymemcachedTest.test:56 » Runtime Timed out waiting for operation
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] io.opentracing.contrib:opentracing-memcached-parent  SUCCESS [  1.203 s]
+[INFO] opentracing-spymemcached ........................... FAILURE [  6.858 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.274 s
+[INFO] Finished at: 2020-03-19T11:08:53+01:00
+[INFO] Final Memory: 15M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project opentracing-spymemcached: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-opentracing-contrib-java-memcached-client-354224821-20180316-102053-firstCommit/opentracing-spymemcached/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project opentracing-spymemcached: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-opentracing-contrib-java-memcached-client-354224821-20180316-102053-firstCommit/opentracing-spymemcached/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-opentracing-contrib-java-memcached-client-354224821-20180316-102053-firstCommit/opentracing-spymemcached/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :opentracing-spymemcached
