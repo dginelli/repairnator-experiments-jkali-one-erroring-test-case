@@ -1,36 +1,119 @@
 {
-  "totalNumberSkippingTests": 13,
-  "totalMemory": 323485696,
-  "workspace": "./workspace",
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "languagetool-org/languagetool",
-  "freeMemory": 87940912,
-  "failingModule": "/root/workspace/languagetool-org/languagetool/228543962/languagetool-language-modules/ga",
-  "buildid": 228543962,
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 663,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.tagging.disambiguation.rules.ga.IrishDisambiguationRuleTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.languagetool.tagging.disambiguation.rules.ga.IrishDisambiguationRuleTest#testDisambiguationRulesFromXML"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:55:06 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:06:25 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 60497216,
+      "totalMemory": 165134336
+    },
+    "totalDuration": 674,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-228543962-20170504-011549_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-228543962-20170504-011549_bugonly-firstCommit/languagetool-language-modules/ga",
+    "overallMetrics": {
+      "numberRunning": 650,
+      "numberPassing": 649,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 13,
       "failures": [
         {
           "failureName": "java.lang.RuntimeException",
-          "failureDetail": "Could not activate rules",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ],
-  "nbCPU": 4
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.tagging.disambiguation.rules.ga.IrishDisambiguationRuleTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.tagging.disambiguation.rules.ga.IrishDisambiguationRuleTest",
+        "testMethod": "testDisambiguationRulesFromXML",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Could not activate rules",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 45,
+    "numberPlugins": 0,
+    "numberSourceFiles": 669,
+    "numberTestFiles": 440,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  }
 }
