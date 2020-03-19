@@ -292,3 +292,6 @@ ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (serviceEndpoint ==
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.scalecube.services.discovery.ServiceDiscovery line: 83, pointed element: CtIfImpl
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
 ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (serviceEndpoint == null) { 	return; } ` -topatch--> `if (false) { 	return; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.scalecube.services.discovery.ServiceDiscovery line: 83, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (serviceEndpoint == null) { 	return; } ` -topatch--> `-` (null) 
