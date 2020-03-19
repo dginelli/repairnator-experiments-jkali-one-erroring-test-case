@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 336,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "zalando/riptide",
-  "bugCommit": "https://github.com/zalando/riptide/compare/f6ff7334fc01f88b98d5d8e3e6b8c203ab6cc4ec...6f002e4ec3ddf080773fa91dd62c82b0fc8dea91",
-  "failingModule": "/root/workspace/zalando/riptide/378056487/riptide-spring-boot-starter",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.util.concurrent.CompletionException"
-  ],
-  "totalNumberRunningTests": 1414,
-  "failing-test-cases": [
-    {
-      "className": "org.zalando.riptide.spring.KeystoreIntegrationTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.zalando.riptide.spring.KeystoreIntegrationTest#shouldTrustGithub"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:40:38 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:44:38 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 16388184,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 236,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 23,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          23
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-riptide-378056487-20180512-122206-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-riptide-378056487-20180512-122206-firstCommit/riptide-spring-boot-starter",
+    "overallMetrics": {
+      "numberRunning": 1078,
+      "numberPassing": 1077,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 336,
       "failures": [
         {
           "failureName": "java.util.concurrent.CompletionException",
-          "failureDetail": "javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.zalando.riptide.spring.KeystoreIntegrationTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.zalando.riptide.spring.KeystoreIntegrationTest",
+        "testMethod": "shouldTrustGithub",
+        "failureName": "java.util.concurrent.CompletionException",
+        "detail": "javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberPlugins": 0,
+    "numberSourceFiles": 103,
+    "numberTestFiles": 108,
+    "numberLibrariesFailingModule": 90,
+    "numberLines": 0
+  }
 }
