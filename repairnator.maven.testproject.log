@@ -1,0 +1,1650 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] macrobase
+[INFO] macrobase-legacy
+[INFO] macrobase-frontend
+[INFO] macrobase-assembly
+[INFO] macrobase-lib
+[INFO] macrobase-core
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building macrobase 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building macrobase-legacy 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ macrobase-legacy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/legacy/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ macrobase-legacy ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ macrobase-legacy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ macrobase-legacy ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ macrobase-legacy ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/legacy/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 3.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 89.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1082.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running macrobase.pipeline.operator.MBOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.322 sec - in macrobase.pipeline.operator.MBOperatorTest
+Running macrobase.pipeline.BasePipelineTest
+19:41:11.875 [main] INFO  macrobase.conf.MacroBaseConf - Using MAD transform.
+19:41:11.900 [main] INFO  macrobase.conf.MacroBaseConf - Using MCD transform.
+19:41:11.901 [main] INFO  macrobase.conf.MacroBaseConf - Using ZScore transform.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.273 sec - in macrobase.pipeline.BasePipelineTest
+Running macrobase.pipeline.BasicOneShotEWStreamingPipelineTest
+19:41:11.922 [main] DEBUG m.analysis.pipeline.BasePipeline - Running query MacroBaseQuery
+19:41:11.925 [main] DEBUG m.analysis.pipeline.BasePipeline - CONFIG:
+macrobase.analysis.minOIRatio: 1
+macrobase.analysis.minSupport: 0.01
+macrobase.analysis.randomSeed: 0
+macrobase.analysis.streaming.decayRate: 0.01
+macrobase.analysis.streaming.decayType: TUPLE_BASED
+macrobase.analysis.streaming.inlierItemSummarySize: 1000
+macrobase.analysis.streaming.inputReservoirSize: 1000
+macrobase.analysis.streaming.modelUpdatePeriod: 1000
+macrobase.analysis.streaming.outlierSummarySize: 1000
+macrobase.analysis.streaming.scoreReservoirSize: 1000
+macrobase.analysis.streaming.summaryUpdatePeriod: 1000
+macrobase.analysis.streaming.warmupCount: 100
+macrobase.analysis.targetPercentile: 0.99
+macrobase.analysis.usePercentile: true
+macrobase.loader.attributes: device_id
+macrobase.loader.csv.compression: GZIP
+macrobase.loader.csv.file: src/test/resources/data/sensor10k.csv.gz
+macrobase.loader.loaderType: CSV_LOADER
+macrobase.loader.metrics: power_drain
+19:41:12.070 [main] INFO  macrobase.ingest.CSVIngester - 10479/10479 rows successfully parsed (0 malformed rows)
+19:41:12.095 [main] INFO  macrobase.conf.MacroBaseConf - By default: using MAD transform for dimension 1 metric.
+19:41:12.176 [main] DEBUG m.a.s.i.ExponentiallyDecayingEmergingItemsets - REQUIRED SUPPORT: 0.2702855855771482 0.01
+19:41:12.184 [main] INFO  m.a.p.BasicOneShotEWStreamingPipeline - took 96ms (109156.25 tuples/sec)
+19:41:12.197 [main] DEBUG m.analysis.pipeline.BasePipeline - Running query MacroBaseQuery
+19:41:12.198 [main] DEBUG m.analysis.pipeline.BasePipeline - CONFIG:
+macrobase.analysis.mcd.alpha: 0.5
+macrobase.analysis.mcd.stoppingDelta: 0.001
+macrobase.analysis.metrics.lowTransform: A4,A5
+macrobase.analysis.minOIRatio: 1
+macrobase.analysis.minSupport: 0.05
+macrobase.analysis.randomSeed: 0
+macrobase.analysis.streaming.decayRate: 0.01
+macrobase.analysis.streaming.decayType: TUPLE_BASED
+macrobase.analysis.streaming.inlierItemSummarySize: 1000
+macrobase.analysis.streaming.inputReservoirSize: 10
+macrobase.analysis.streaming.modelUpdatePeriod: 50
+macrobase.analysis.streaming.outlierSummarySize: 1000
+macrobase.analysis.streaming.scoreReservoirSize: 10
+macrobase.analysis.streaming.summaryUpdatePeriod: 50
+macrobase.analysis.streaming.warmupCount: 30
+macrobase.analysis.targetPercentile: 0.99
+macrobase.analysis.usePercentile: true
+macrobase.loader.attributes: A1,A2,A3
+macrobase.loader.csv.file: src/test/resources/data/simple.csv
+macrobase.loader.loaderType: CSV_LOADER
+macrobase.loader.metrics: A4,A5
+19:41:12.210 [main] INFO  macrobase.ingest.CSVIngester - 100/100 rows successfully parsed (0 malformed rows)
+19:41:12.222 [main] INFO  macrobase.conf.MacroBaseConf - By default: using MCD transform for dimension 2 metrics.
+19:41:12.254 [main] DEBUG macrobase.analysis.stats.MinCovDet - Number of iterations in MCD step: 1
+19:41:12.257 [main] DEBUG macrobase.analysis.stats.MinCovDet - Number of iterations in MCD step: 1
+19:41:12.281 [main] DEBUG m.a.s.i.ExponentiallyDecayingEmergingItemsets - REQUIRED SUPPORT: 1.047 0.05
+19:41:12.287 [main] INFO  m.a.p.BasicOneShotEWStreamingPipeline - took 65ms (1538.4615384615386 tuples/sec)
+19:41:12.289 [main] DEBUG m.p.BasicOneShotEWStreamingPipelineTest - outliers: 7.000000
+inliers: 93.000000
+load time 22ms
+execution time: 60ms
+summarization time: 5ms
+
+-----
+
+support: 0.190544
+records: 3.990000
+ratio: 10.946157
+
+Columns:
+	A1: 0
+
+-----
+
+
+19:41:12.294 [main] DEBUG m.analysis.pipeline.BasePipeline - Running query MacroBaseQuery
+19:41:12.296 [main] DEBUG m.analysis.pipeline.BasePipeline - CONFIG:
+macrobase.analysis.metrics.lowTransform: temperature
+macrobase.analysis.minOIRatio: 1
+macrobase.analysis.minSupport: 0.06
+macrobase.analysis.randomSeed: 0
+macrobase.analysis.streaming.decayRate: 0.01
+macrobase.analysis.streaming.decayType: TUPLE_BASED
+macrobase.analysis.streaming.inlierItemSummarySize: 1000
+macrobase.analysis.streaming.inputReservoirSize: 1000
+macrobase.analysis.streaming.modelUpdatePeriod: 1000
+macrobase.analysis.streaming.outlierSummarySize: 1000
+macrobase.analysis.streaming.scoreReservoirSize: 1000
+macrobase.analysis.streaming.summaryUpdatePeriod: 1000
+macrobase.analysis.streaming.warmupCount: 100
+macrobase.analysis.targetPercentile: 0.99
+macrobase.analysis.usePercentile: true
+macrobase.loader.attributes: device_id,model,firmware_version
+macrobase.loader.csv.compression: GZIP
+macrobase.loader.csv.file: src/test/resources/data/sensor10k.csv.gz
+macrobase.loader.loaderType: CSV_LOADER
+macrobase.loader.metrics: temperature
+19:41:12.426 [main] INFO  macrobase.ingest.CSVIngester - 10479/10479 rows successfully parsed (0 malformed rows)
+19:41:12.457 [main] INFO  macrobase.conf.MacroBaseConf - By default: using MAD transform for dimension 1 metric.
+19:41:13.181 [main] DEBUG m.a.s.i.ExponentiallyDecayingEmergingItemsets - REQUIRED SUPPORT: 34.86404556367189 0.06
+19:41:13.183 [main] INFO  m.a.p.BasicOneShotEWStreamingPipeline - took 727ms (14414.030261348005 tuples/sec)
+19:41:13.188 [main] DEBUG m.p.BasicOneShotEWStreamingPipelineTest - outliers: 208.000000
+inliers: 10271.000000
+load time 160ms
+execution time: 725ms
+summarization time: 2ms
+
+-----
+
+support: 0.148720
+records: 86.416610
+ratio: 1.909085
+
+Columns:
+	firmware_version: 0.4
+
+-----
+
+support: 0.137810
+records: 80.076892
+ratio: 2.803300
+
+Columns:
+	model: M101
+
+-----
+
+support: 0.093465
+records: 54.309552
+ratio: 9.627568
+
+Columns:
+	firmware_version: 0.4
+	model: M101
+
+-----
+
+
+19:41:13.190 [main] DEBUG m.analysis.pipeline.BasePipeline - Running query MacroBaseQuery
+19:41:13.192 [main] DEBUG m.analysis.pipeline.BasePipeline - CONFIG:
+macrobase.analysis.metrics.lowTransform: A5
+macrobase.analysis.minOIRatio: 1
+macrobase.analysis.minSupport: 0.02
+macrobase.analysis.randomSeed: 0
+macrobase.analysis.streaming.decayRate: 0.01
+macrobase.analysis.streaming.decayType: TUPLE_BASED
+macrobase.analysis.streaming.inlierItemSummarySize: 1000
+macrobase.analysis.streaming.inputReservoirSize: 10
+macrobase.analysis.streaming.modelUpdatePeriod: 50
+macrobase.analysis.streaming.outlierSummarySize: 1000
+macrobase.analysis.streaming.scoreReservoirSize: 10
+macrobase.analysis.streaming.summaryUpdatePeriod: 50
+macrobase.analysis.streaming.warmupCount: 10
+macrobase.analysis.targetPercentile: 0.99
+macrobase.analysis.usePercentile: true
+macrobase.loader.attributes: A1,A2,A3,A4
+macrobase.loader.csv.file: src/test/resources/data/simple.csv
+macrobase.loader.loaderType: CSV_LOADER
+macrobase.loader.metrics: A5
+19:41:13.196 [main] INFO  macrobase.ingest.CSVIngester - 100/100 rows successfully parsed (0 malformed rows)
+19:41:13.213 [main] INFO  macrobase.conf.MacroBaseConf - By default: using MAD transform for dimension 1 metric.
+19:41:13.215 [main] DEBUG m.a.s.i.ExponentiallyDecayingEmergingItemsets - REQUIRED SUPPORT: 3.344 0.02
+19:41:13.216 [main] INFO  m.a.p.BasicOneShotEWStreamingPipeline - took 2ms (50000.0 tuples/sec)
+19:41:13.217 [main] DEBUG m.p.BasicOneShotEWStreamingPipelineTest - outliers: 42.000000
+inliers: 58.000000
+load time 18ms
+execution time: 2ms
+summarization time: 0ms
+
+-----
+
+support: 0.035706
+records: 5.970000
+ratio: 2.330484
+
+Columns:
+	A1: 0
+
+-----
+
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.314 sec - in macrobase.pipeline.BasicOneShotEWStreamingPipelineTest
+Running macrobase.pipeline.BasicBatchedPipelineTest
+19:41:13.228 [main] DEBUG m.analysis.pipeline.BasePipeline - Running query MacroBaseQuery
+19:41:13.228 [main] DEBUG m.analysis.pipeline.BasePipeline - CONFIG:
+macrobase.analysis.minOIRatio: 0.01
+macrobase.analysis.minSupport: 0.01
+macrobase.analysis.randomSeed: 0
+macrobase.analysis.targetPercentile: 0.99
+macrobase.analysis.usePercentile: true
+macrobase.loader.attributes: device_id
+macrobase.loader.csv.compression: GZIP
+macrobase.loader.csv.file: src/test/resources/data/sensor10k.csv.gz
+macrobase.loader.loaderType: CSV_LOADER
+macrobase.loader.metrics: power_drain
+19:41:13.282 [main] INFO  macrobase.ingest.CSVIngester - 10479/10479 rows successfully parsed (0 malformed rows)
+19:41:13.312 [main] INFO  macrobase.conf.MacroBaseConf - By default: using MAD transform for dimension 1 metric.
+19:41:13.348 [main] DEBUG m.a.c.BatchingPercentileClassifier - 0.99 Percentile Cutoff: 12.223306205715751
+19:41:13.350 [main] DEBUG m.a.c.BatchingPercentileClassifier - Median: 1.0
+19:41:13.351 [main] DEBUG m.a.c.BatchingPercentileClassifier - Max: 12.814537943917154
+19:41:13.363 [main] INFO  m.a.pipeline.BasicBatchedPipeline - took 51ms (205470.58823529413 tuples/sec)
+19:41:13.370 [main] DEBUG m.analysis.pipeline.BasePipeline - Running query MacroBaseQuery
+19:41:13.379 [main] DEBUG m.analysis.pipeline.BasePipeline - CONFIG:
+macrobase.analysis.mcd.alpha: 0.05
+macrobase.analysis.mcd.stoppingDelta: 0.001
+macrobase.analysis.metrics.lowTransform: A4,A5
+macrobase.analysis.minOIRatio: 0.01
+macrobase.analysis.minSupport: 0.01
+macrobase.analysis.randomSeed: 0
+macrobase.analysis.targetPercentile: 0.99
+macrobase.analysis.usePercentile: true
+macrobase.loader.attributes: A1,A2,A3
+macrobase.loader.csv.file: src/test/resources/data/simple.csv
+macrobase.loader.loaderType: CSV_LOADER
+macrobase.loader.metrics: A4,A5
+19:41:13.380 [main] INFO  macrobase.ingest.CSVIngester - 100/100 rows successfully parsed (0 malformed rows)
+19:41:13.390 [main] INFO  macrobase.conf.MacroBaseConf - By default: using MCD transform for dimension 2 metrics.
+19:41:13.391 [main] DEBUG macrobase.analysis.stats.MinCovDet - Number of iterations in MCD step: 1
+19:41:13.392 [main] DEBUG m.a.c.BatchingPercentileClassifier - 0.99 Percentile Cutoff: 526250.385321902
+19:41:13.392 [main] DEBUG m.a.c.BatchingPercentileClassifier - Median: 251.8640215348143
+19:41:13.392 [main] DEBUG m.a.c.BatchingPercentileClassifier - Max: 528474.6990583721
+19:41:13.398 [main] DEBUG m.analysis.summary.itemset.FPGrowth - count required: 0
+19:41:13.400 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree load: 2
+19:41:13.402 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree mine: 1
+19:41:13.407 [main] INFO  m.a.pipeline.BasicBatchedPipeline - took 17ms (5882.352941176471 tuples/sec)
+19:41:13.420 [main] DEBUG m.analysis.pipeline.BasePipeline - Running query MacroBaseQuery
+19:41:13.421 [main] DEBUG m.analysis.pipeline.BasePipeline - CONFIG:
+macrobase.analysis.metrics.lowTransform: temperature
+macrobase.analysis.minOIRatio: 3
+macrobase.analysis.minSupport: 0.5
+macrobase.analysis.randomSeed: 0
+macrobase.analysis.targetPercentile: 0.99
+macrobase.analysis.usePercentile: true
+macrobase.loader.attributes: device_id,model,firmware_version
+macrobase.loader.csv.compression: GZIP
+macrobase.loader.csv.file: src/test/resources/data/sensor10k.csv.gz
+macrobase.loader.loaderType: CSV_LOADER
+macrobase.loader.metrics: temperature
+19:41:13.472 [main] INFO  macrobase.ingest.CSVIngester - 10479/10479 rows successfully parsed (0 malformed rows)
+19:41:13.491 [main] INFO  macrobase.conf.MacroBaseConf - By default: using MAD transform for dimension 1 metric.
+19:41:13.521 [main] DEBUG m.a.c.BatchingPercentileClassifier - 0.99 Percentile Cutoff: 2.0948017190164094
+19:41:13.522 [main] DEBUG m.a.c.BatchingPercentileClassifier - Median: 1.0
+19:41:13.522 [main] DEBUG m.a.c.BatchingPercentileClassifier - Max: 1019.9426400871065
+19:41:13.538 [main] DEBUG m.analysis.summary.itemset.FPGrowth - count required: 52
+19:41:13.554 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree load: 2
+19:41:13.556 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree mine: 2
+19:41:13.563 [main] INFO  m.a.pipeline.BasicBatchedPipeline - took 72ms (145541.66666666666 tuples/sec)
+19:41:13.564 [main] DEBUG m.analysis.pipeline.BasePipeline - Running query MacroBaseQuery
+19:41:13.564 [main] DEBUG m.analysis.pipeline.BasePipeline - CONFIG:
+macrobase.analysis.metrics.lowTransform: A5
+macrobase.analysis.minOIRatio: 0.01
+macrobase.analysis.minSupport: 0.01
+macrobase.analysis.randomSeed: 0
+macrobase.analysis.targetPercentile: 0.99
+macrobase.analysis.usePercentile: true
+macrobase.loader.attributes: A1,A2,A3,A4
+macrobase.loader.csv.file: src/test/resources/data/simple.csv
+macrobase.loader.loaderType: CSV_LOADER
+macrobase.loader.metrics: A5
+19:41:13.565 [main] INFO  macrobase.ingest.CSVIngester - 100/100 rows successfully parsed (0 malformed rows)
+19:41:13.575 [main] INFO  macrobase.conf.MacroBaseConf - By default: using MAD transform for dimension 1 metric.
+19:41:13.577 [main] DEBUG m.a.c.BatchingPercentileClassifier - 0.99 Percentile Cutoff: 31.21783923970431
+19:41:13.577 [main] DEBUG m.a.c.BatchingPercentileClassifier - Median: 1.0
+19:41:13.577 [main] DEBUG m.a.c.BatchingPercentileClassifier - Max: 31.285466887916744
+19:41:13.577 [main] DEBUG m.analysis.summary.itemset.FPGrowth - count required: 0
+19:41:13.577 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree load: 0
+19:41:13.578 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree mine: 0
+19:41:13.583 [main] INFO  m.a.pipeline.BasicBatchedPipeline - took 8ms (12500.0 tuples/sec)
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.363 sec - in macrobase.pipeline.BasicBatchedPipelineTest
+Running macrobase.analysis.summary.itemset.FPGrowthTest
+19:41:13.598 [main] DEBUG m.analysis.summary.itemset.FPGrowth - count required: 0
+19:41:13.598 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree load: 0
+19:41:13.601 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree mine: 2
+19:41:13.653 [main] DEBUG m.a.s.itemset.StreamingFPGrowthTest - DIFF: []
+19:41:13.655 [main] DEBUG m.analysis.summary.itemset.FPGrowth - Frequent Item Counts:
+19:41:13.655 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 97: 9.000000
+19:41:13.663 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 98: 5.000000
+19:41:13.663 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 99: 4.000000
+19:41:13.663 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 100: 3.000000
+19:41:13.663 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 101: 2.000000
+19:41:13.664 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 	 node: -1, count: 13.000000
+19:41:13.664 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 		 node: 97, count: 9.000000
+19:41:13.664 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 			 node: 99, count: 2.000000
+19:41:13.664 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 				 node: 100, count: 2.000000
+19:41:13.664 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 					 node: 101, count: 1.000000
+19:41:13.665 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 			 node: 98, count: 2.000000
+19:41:13.665 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 				 node: 100, count: 1.000000
+19:41:13.665 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 				 node: 99, count: 1.000000
+19:41:13.665 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 					 node: 101, count: 1.000000
+19:41:13.665 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 		 node: 99, count: 1.000000
+19:41:13.666 [main] DEBUG m.analysis.summary.itemset.FPGrowth - 		 node: 98, count: 3.000000
+19:41:13.666 [main] DEBUG m.analysis.summary.itemset.FPGrowth - count required: 2
+19:41:13.666 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree load: 0
+19:41:13.667 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree mine: 0
+19:41:13.667 [main] DEBUG m.analysis.summary.itemset.FPGrowth - count required: 3
+19:41:13.667 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree load: 0
+19:41:13.668 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree mine: 0
+19:41:13.668 [main] DEBUG m.analysis.summary.itemset.FPGrowth - count required: 0
+19:41:13.669 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree load: 0
+19:41:13.670 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree mine: 0
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in macrobase.analysis.summary.itemset.FPGrowthTest
+Running macrobase.analysis.summary.itemset.AprioriTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in macrobase.analysis.summary.itemset.AprioriTest
+Running macrobase.analysis.summary.itemset.RiskRatioTest
+19:41:13.699 [main] ERROR m.analysis.summary.itemset.RiskRatio - Computing risk ratio with no exposure.
+19:41:13.699 [main] ERROR m.analysis.summary.itemset.RiskRatio - Computing risk ratio with no exposure.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in macrobase.analysis.summary.itemset.RiskRatioTest
+Running macrobase.analysis.summary.itemset.StreamingFPGrowthTest
+19:41:13.706 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - Frequent Item Counts:
+19:41:13.714 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 97 4.0
+19:41:13.716 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 98 2.0
+19:41:13.716 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 99 2.0
+19:41:13.716 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 100 3.0
+19:41:13.716 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 101 1.0
+19:41:13.716 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - Frequent Item Order:
+19:41:13.717 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 97 4
+19:41:13.717 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 98 1
+19:41:13.718 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 99 2
+19:41:13.718 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 100 3
+19:41:13.718 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 101 0
+19:41:13.718 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 	 node: -1, count: 5.0, sorted: true
+19:41:13.718 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 		 node: 97, count: 4.0, sorted: true
+19:41:13.718 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 			 node: 100, count: 2.0, sorted: true
+19:41:13.718 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 				 node: 101, count: 1.0, sorted: true
+19:41:13.718 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 			 node: 99, count: 1.0, sorted: true
+19:41:13.719 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 				 node: 98, count: 1.0, sorted: true
+19:41:13.719 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 			 node: 98, count: 1.0, sorted: true
+19:41:13.719 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 		 node: 100, count: 1.0, sorted: true
+19:41:13.719 [main] DEBUG m.a.s.itemset.StreamingFPGrowth - 			 node: 99, count: 1.0, sorted: true
+19:41:13.994 [main] DEBUG m.analysis.summary.itemset.FPGrowth - count required: 1
+19:41:13.996 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree load: 0
+19:41:14.002 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree mine: 5
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.332 sec - in macrobase.analysis.summary.itemset.StreamingFPGrowthTest
+Running macrobase.analysis.summary.count.ExactCountTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in macrobase.analysis.summary.count.ExactCountTest
+Running macrobase.analysis.summary.count.AmortizedMaintenanceCounterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in macrobase.analysis.summary.count.AmortizedMaintenanceCounterTest
+Running macrobase.analysis.summary.count.SpaceSavingTest
+19:41:14.109 [main] DEBUG m.a.summary.count.SpaceSavingList - ****
+19:41:14.111 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@5a3783e4
+19:41:14.111 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.952949624185339, so far is 0.952949624185339
+19:41:14.112 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 12
+19:41:14.112 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.112 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@53bf7b33
+19:41:14.112 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.04336833875788543, so far is 0.9963179629432244
+19:41:14.112 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 16
+19:41:14.112 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.112 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@39d06cd9
+19:41:14.113 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.009546730176927698, so far is 1.005864693120152
+19:41:14.113 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 11
+19:41:14.113 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.113 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@6c82ecbe
+19:41:14.114 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.0036820370567755556, so far is 1.0095467301769276
+19:41:14.114 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 6
+19:41:14.114 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.114 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@acc6a69
+19:41:14.114 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.0036820370567755556, so far is 1.0132287672337033
+19:41:14.114 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 2
+19:41:14.114 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.115 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@2202eee0
+19:41:14.115 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.016910804290478754, so far is 1.030139571524182
+19:41:14.115 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 3
+19:41:14.115 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.115 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@180ee8dd
+19:41:14.116 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.14001452618165328, so far is 1.1701540977058351
+19:41:14.116 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 1
+19:41:14.116 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.117 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@6392107e
+19:41:14.117 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.632706837688998, so far is 1.802860935394833
+19:41:14.117 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 15
+19:41:14.117 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.117 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@a64a147
+19:41:14.117 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.032614651950892526, so far is 1.8354755873457256
+19:41:14.117 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 8
+19:41:14.117 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.118 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@3fa43b05
+19:41:14.120 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.14989875370452532, so far is 1.985374341050251
+19:41:14.125 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 19
+19:41:14.125 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.125 [main] DEBUG m.a.summary.count.SpaceSavingList - at group macrobase.analysis.summary.count.SpaceSavingList$CounterGroup@5083642c
+19:41:14.125 [main] DEBUG m.a.summary.count.SpaceSavingList - differential is 0.058216340627236574, so far is 2.0435906816774874
+19:41:14.125 [main] DEBUG m.a.summary.count.SpaceSavingList - 	 counter: 0
+19:41:14.126 [main] DEBUG m.a.summary.count.SpaceSavingList - 
+19:41:14.126 [main] DEBUG m.a.summary.count.SpaceSavingList - ****
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in macrobase.analysis.summary.count.SpaceSavingTest
+Running macrobase.analysis.stats.AutocorrelationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in macrobase.analysis.stats.AutocorrelationTest
+Running macrobase.analysis.stats.TruncateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in macrobase.analysis.stats.TruncateTest
+Running macrobase.analysis.stats.MinCovDetTest
+19:41:14.550 [main] DEBUG macrobase.analysis.stats.MinCovDet - Number of iterations in MCD step: 1
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.553 sec - in macrobase.analysis.stats.MinCovDetTest
+Running macrobase.analysis.stats.ZScoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in macrobase.analysis.stats.ZScoreTest
+Running macrobase.analysis.stats.RandomProjectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in macrobase.analysis.stats.RandomProjectionTest
+Running macrobase.analysis.stats.RobustEmpiricalCovarianceTest
+19:41:16.472 [main] DEBUG macrobase.analysis.stats.MinCovDet - Number of iterations in MCD step: 17
+19:41:16.473 [main] DEBUG m.a.s.RobustEmpiricalCovarianceTest - MCD Trained on 50000 in 1646
+19:41:16.562 [main] DEBUG m.a.s.RobustEmpiricalCovarianceTest - RCOV Trained on 50000 in 88
+19:41:16.588 [main] DEBUG m.a.s.RobustEmpiricalCovarianceTest - MCD Scored on 50000 in 15
+19:41:16.637 [main] DEBUG m.a.s.RobustEmpiricalCovarianceTest - RCOV Scored on 50000 in 46
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.542 sec - in macrobase.analysis.stats.RobustEmpiricalCovarianceTest
+Running macrobase.analysis.stats.WinsorizerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in macrobase.analysis.stats.WinsorizerTest
+Running macrobase.analysis.stats.FFTTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in macrobase.analysis.stats.FFTTest
+Running macrobase.analysis.stats.MADTest
+19:41:16.676 [main] DEBUG macrobase.analysis.stats.MADTest - score is 5.0
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in macrobase.analysis.stats.MADTest
+Running macrobase.analysis.stats.GaussianTest
+19:41:17.236 [main] DEBUG macrobase.analysis.stats.MADTest - Fitted 1000000 in: 72
+19:41:17.280 [main] DEBUG macrobase.analysis.stats.MADTest - Mahalobis distance on 100000 in 11
+19:41:17.374 [main] DEBUG macrobase.analysis.stats.MADTest - LogPDF on 100000 in 94
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.709 sec - in macrobase.analysis.stats.GaussianTest
+Running macrobase.analysis.pipeline.operator.MBGroupByTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in macrobase.analysis.pipeline.operator.MBGroupByTest
+Running macrobase.analysis.transform.LowMetricTransformTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in macrobase.analysis.transform.LowMetricTransformTest
+Running macrobase.analysis.transform.LinearMetricNormalizerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in macrobase.analysis.transform.LinearMetricNormalizerTest
+Running macrobase.analysis.sample.AChaoTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in macrobase.analysis.sample.AChaoTest
+Running macrobase.analysis.classify.StaticThresholdClassifierTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in macrobase.analysis.classify.StaticThresholdClassifierTest
+Running macrobase.runtime.command.MacroBasePipelineCommandTest
+19:41:17.428 [main] ERROR m.r.command.MacroBasePipelineCommand - {} is not an instance of Pipeline! Exiting...
+3/19/20 7:41:17 PM =============================================================
+
+-- Counters --------------------------------------------------------------------
+macrobase.analysis.stats.MAD.zeroMADs
+             count = 1
+macrobase.analysis.stats.MinCovDet.singularCovariances
+             count = 4
+
+-- Timers ----------------------------------------------------------------------
+macrobase.analysis.stats.MAD.medianComputation
+             count = 30
+         mean rate = 5.39 calls/second
+     1-minute rate = 6.00 calls/second
+     5-minute rate = 6.00 calls/second
+    15-minute rate = 6.00 calls/second
+               min = 0.00 milliseconds
+               max = 11.64 milliseconds
+              mean = 0.81 milliseconds
+            stddev = 2.10 milliseconds
+            median = 0.21 milliseconds
+              75% <= 0.44 milliseconds
+              95% <= 2.44 milliseconds
+              98% <= 11.64 milliseconds
+              99% <= 11.64 milliseconds
+            99.9% <= 11.64 milliseconds
+macrobase.analysis.stats.MAD.residualComputation
+             count = 30
+         mean rate = 5.38 calls/second
+     1-minute rate = 6.00 calls/second
+     5-minute rate = 6.00 calls/second
+    15-minute rate = 6.00 calls/second
+               min = 0.00 milliseconds
+               max = 6.20 milliseconds
+              mean = 0.23 milliseconds
+            stddev = 1.11 milliseconds
+            median = 0.03 milliseconds
+              75% <= 0.03 milliseconds
+              95% <= 0.04 milliseconds
+              98% <= 6.20 milliseconds
+              99% <= 6.20 milliseconds
+            99.9% <= 6.20 milliseconds
+macrobase.analysis.stats.MAD.residualMedianComputation
+             count = 30
+         mean rate = 5.37 calls/second
+     1-minute rate = 6.00 calls/second
+     5-minute rate = 6.00 calls/second
+    15-minute rate = 6.00 calls/second
+               min = 0.00 milliseconds
+               max = 3.55 milliseconds
+              mean = 0.24 milliseconds
+            stddev = 0.65 milliseconds
+            median = 0.09 milliseconds
+              75% <= 0.10 milliseconds
+              95% <= 1.25 milliseconds
+              98% <= 3.55 milliseconds
+              99% <= 3.55 milliseconds
+            99.9% <= 3.55 milliseconds
+macrobase.analysis.stats.MinCovDet.chooseKRandom
+             count = 5
+         mean rate = 0.89 calls/second
+     1-minute rate = 1.00 calls/second
+     5-minute rate = 1.00 calls/second
+    15-minute rate = 1.00 calls/second
+               min = 0.02 milliseconds
+               max = 14.40 milliseconds
+              mean = 3.17 milliseconds
+            stddev = 5.68 milliseconds
+            median = 0.17 milliseconds
+              75% <= 0.99 milliseconds
+              95% <= 14.40 milliseconds
+              98% <= 14.40 milliseconds
+              99% <= 14.40 milliseconds
+            99.9% <= 14.40 milliseconds
+macrobase.analysis.stats.MinCovDet.covarianceComputation
+             count = 26
+         mean rate = 4.63 calls/second
+     1-minute rate = 5.20 calls/second
+     5-minute rate = 5.20 calls/second
+    15-minute rate = 5.20 calls/second
+               min = 0.06 milliseconds
+               max = 176.07 milliseconds
+              mean = 24.00 milliseconds
+            stddev = 34.74 milliseconds
+            median = 12.35 milliseconds
+              75% <= 30.38 milliseconds
+              95% <= 83.40 milliseconds
+              98% <= 176.07 milliseconds
+              99% <= 176.07 milliseconds
+            99.9% <= 176.07 milliseconds
+macrobase.analysis.stats.MinCovDet.determinantComputation
+             count = 26
+         mean rate = 4.62 calls/second
+     1-minute rate = 5.20 calls/second
+     5-minute rate = 5.20 calls/second
+    15-minute rate = 5.20 calls/second
+               min = 0.00 milliseconds
+               max = 0.58 milliseconds
+              mean = 0.05 milliseconds
+            stddev = 0.13 milliseconds
+            median = 0.01 milliseconds
+              75% <= 0.01 milliseconds
+              95% <= 0.42 milliseconds
+              98% <= 0.58 milliseconds
+              99% <= 0.58 milliseconds
+            99.9% <= 0.58 milliseconds
+macrobase.analysis.stats.MinCovDet.findKClosest
+             count = 21
+         mean rate = 3.73 calls/second
+     1-minute rate = 4.20 calls/second
+     5-minute rate = 4.20 calls/second
+    15-minute rate = 4.20 calls/second
+               min = 0.03 milliseconds
+               max = 134.06 milliseconds
+              mean = 54.95 milliseconds
+            stddev = 39.49 milliseconds
+            median = 33.71 milliseconds
+              75% <= 84.65 milliseconds
+              95% <= 113.06 milliseconds
+              98% <= 134.06 milliseconds
+              99% <= 134.06 milliseconds
+            99.9% <= 134.06 milliseconds
+macrobase.analysis.stats.MinCovDet.meanComputation
+             count = 26
+         mean rate = 4.60 calls/second
+     1-minute rate = 5.20 calls/second
+     5-minute rate = 5.20 calls/second
+    15-minute rate = 5.20 calls/second
+               min = 0.01 milliseconds
+               max = 36.17 milliseconds
+              mean = 9.01 milliseconds
+            stddev = 9.66 milliseconds
+            median = 5.99 milliseconds
+              75% <= 11.06 milliseconds
+              95% <= 29.30 milliseconds
+              98% <= 36.17 milliseconds
+              99% <= 36.17 milliseconds
+            99.9% <= 36.17 milliseconds
+macrobase.analysis.stats.ZScore.meanComputation
+             count = 1
+         mean rate = 0.18 calls/second
+     1-minute rate = 0.20 calls/second
+     5-minute rate = 0.20 calls/second
+    15-minute rate = 0.20 calls/second
+               min = 0.04 milliseconds
+               max = 0.04 milliseconds
+              mean = 0.04 milliseconds
+            stddev = 0.00 milliseconds
+            median = 0.04 milliseconds
+              75% <= 0.04 milliseconds
+              95% <= 0.04 milliseconds
+              98% <= 0.04 milliseconds
+              99% <= 0.04 milliseconds
+            99.9% <= 0.04 milliseconds
+macrobase.analysis.stats.ZScore.stddevComputation
+             count = 1
+         mean rate = 0.18 calls/second
+     1-minute rate = 0.20 calls/second
+     5-minute rate = 0.20 calls/second
+    15-minute rate = 0.20 calls/second
+               min = 0.02 milliseconds
+               max = 0.02 milliseconds
+              mean = 0.02 milliseconds
+            stddev = 0.00 milliseconds
+            median = 0.02 milliseconds
+              75% <= 0.02 milliseconds
+              95% <= 0.02 milliseconds
+              98% <= 0.02 milliseconds
+              99% <= 0.02 milliseconds
+            99.9% <= 0.02 milliseconds
+macrobase.analysis.summary.itemset.ExponentiallyDecayingEmergingItemsets.inlierDecayTime
+             count = 12
+         mean rate = 2.19 calls/second
+     1-minute rate = 2.40 calls/second
+     5-minute rate = 2.40 calls/second
+    15-minute rate = 2.40 calls/second
+               min = 0.05 milliseconds
+               max = 1.39 milliseconds
+              mean = 0.22 milliseconds
+            stddev = 0.36 milliseconds
+            median = 0.08 milliseconds
+              75% <= 0.17 milliseconds
+              95% <= 1.39 milliseconds
+              98% <= 1.39 milliseconds
+              99% <= 1.39 milliseconds
+            99.9% <= 1.39 milliseconds
+macrobase.analysis.summary.itemset.ExponentiallyDecayingEmergingItemsets.outlierDecayTime
+             count = 12
+         mean rate = 2.18 calls/second
+     1-minute rate = 2.40 calls/second
+     5-minute rate = 2.40 calls/second
+    15-minute rate = 2.40 calls/second
+               min = 0.08 milliseconds
+               max = 572.08 milliseconds
+              mean = 48.77 milliseconds
+            stddev = 158.23 milliseconds
+            median = 0.18 milliseconds
+              75% <= 0.31 milliseconds
+              95% <= 572.08 milliseconds
+              98% <= 572.08 milliseconds
+              99% <= 572.08 milliseconds
+            99.9% <= 572.08 milliseconds
+macrobase.analysis.summary.itemset.FPGrowth.fpMine
+             count = 8
+         mean rate = 1.91 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.06 milliseconds
+               max = 5.51 milliseconds
+              mean = 1.47 milliseconds
+            stddev = 1.75 milliseconds
+            median = 1.17 milliseconds
+              75% <= 2.58 milliseconds
+              95% <= 5.51 milliseconds
+              98% <= 5.51 milliseconds
+              99% <= 5.51 milliseconds
+            99.9% <= 5.51 milliseconds
+macrobase.analysis.summary.itemset.FPGrowth.insertTransactions
+             count = 8
+         mean rate = 1.90 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.02 milliseconds
+               max = 0.92 milliseconds
+              mean = 0.26 milliseconds
+            stddev = 0.38 milliseconds
+            median = 0.05 milliseconds
+              75% <= 0.91 milliseconds
+              95% <= 0.92 milliseconds
+              98% <= 0.92 milliseconds
+              99% <= 0.92 milliseconds
+            99.9% <= 0.92 milliseconds
+macrobase.analysis.summary.itemset.FPGrowth.itemCounts
+             count = 8
+         mean rate = 1.90 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.03 milliseconds
+               max = 1.51 milliseconds
+              mean = 0.29 milliseconds
+            stddev = 0.47 milliseconds
+            median = 0.07 milliseconds
+              75% <= 0.31 milliseconds
+              95% <= 1.51 milliseconds
+              98% <= 1.51 milliseconds
+              99% <= 1.51 milliseconds
+            99.9% <= 1.51 milliseconds
+macrobase.analysis.summary.itemset.FPGrowthEmerging.inlierRatio
+             count = 3
+         mean rate = 0.70 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.34 milliseconds
+               max = 6.93 milliseconds
+              mean = 3.69 milliseconds
+            stddev = 2.69 milliseconds
+            median = 3.79 milliseconds
+              75% <= 6.93 milliseconds
+              95% <= 6.93 milliseconds
+              98% <= 6.93 milliseconds
+              99% <= 6.93 milliseconds
+            99.9% <= 6.93 milliseconds
+macrobase.analysis.summary.itemset.FPGrowthEmerging.outlierFPGrowth
+             count = 3
+         mean rate = 0.70 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 4.96 milliseconds
+               max = 18.23 milliseconds
+              mean = 10.94 milliseconds
+            stddev = 5.49 milliseconds
+            median = 9.64 milliseconds
+              75% <= 18.23 milliseconds
+              95% <= 18.23 milliseconds
+              98% <= 18.23 milliseconds
+              99% <= 18.23 milliseconds
+            99.9% <= 18.23 milliseconds
+macrobase.analysis.summary.itemset.FPGrowthEmerging.singleItemCounts
+             count = 3
+         mean rate = 0.70 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.07 milliseconds
+               max = 10.49 milliseconds
+              mean = 3.57 milliseconds
+            stddev = 4.89 milliseconds
+            median = 0.16 milliseconds
+              75% <= 10.49 milliseconds
+              95% <= 10.49 milliseconds
+              98% <= 10.49 milliseconds
+              99% <= 10.49 milliseconds
+            99.9% <= 10.49 milliseconds
+macrobase.analysis.summary.itemset.StreamingFPGrowth.fpMine
+             count = 5
+         mean rate = 0.90 calls/second
+     1-minute rate = 1.00 calls/second
+     5-minute rate = 1.00 calls/second
+    15-minute rate = 1.00 calls/second
+               min = 0.10 milliseconds
+               max = 16.42 milliseconds
+              mean = 3.97 milliseconds
+            stddev = 6.28 milliseconds
+            median = 1.06 milliseconds
+              75% <= 2.07 milliseconds
+              95% <= 16.42 milliseconds
+              98% <= 16.42 milliseconds
+              99% <= 16.42 milliseconds
+            99.9% <= 16.42 milliseconds
+macrobase.analysis.summary.itemset.StreamingFPGrowth.insertFrequentItems
+             count = 2
+         mean rate = 0.36 calls/second
+     1-minute rate = 0.40 calls/second
+     5-minute rate = 0.40 calls/second
+    15-minute rate = 0.40 calls/second
+               min = 0.06 milliseconds
+               max = 0.47 milliseconds
+              mean = 0.26 milliseconds
+            stddev = 0.21 milliseconds
+            median = 0.47 milliseconds
+              75% <= 0.47 milliseconds
+              95% <= 0.47 milliseconds
+              98% <= 0.47 milliseconds
+              99% <= 0.47 milliseconds
+            99.9% <= 0.47 milliseconds
+macrobase.analysis.summary.itemset.StreamingFPGrowth.restructureTree
+             count = 83
+         mean rate = 14.89 calls/second
+     1-minute rate = 16.60 calls/second
+     5-minute rate = 16.60 calls/second
+    15-minute rate = 16.60 calls/second
+               min = 0.02 milliseconds
+               max = 571.96 milliseconds
+              mean = 8.07 milliseconds
+            stddev = 62.39 milliseconds
+            median = 0.57 milliseconds
+              75% <= 1.19 milliseconds
+              95% <= 2.85 milliseconds
+              98% <= 22.07 milliseconds
+              99% <= 571.96 milliseconds
+            99.9% <= 571.96 milliseconds
+macrobase.analysis.summary.itemset.StreamingFPGrowth.updateFrequentItemOrder
+             count = 235
+         mean rate = 42.06 calls/second
+     1-minute rate = 47.00 calls/second
+     5-minute rate = 47.00 calls/second
+    15-minute rate = 47.00 calls/second
+               min = 0.00 milliseconds
+               max = 10.00 milliseconds
+              mean = 0.08 milliseconds
+            stddev = 0.67 milliseconds
+            median = 0.01 milliseconds
+              75% <= 0.03 milliseconds
+              95% <= 0.11 milliseconds
+              98% <= 0.34 milliseconds
+              99% <= 0.97 milliseconds
+            99.9% <= 10.00 milliseconds
+
+
+19:41:17.686 [main] INFO  m.r.command.MacroBasePipelineCommand - Result: []
+3/19/20 7:41:17 PM =============================================================
+
+-- Counters --------------------------------------------------------------------
+macrobase.analysis.stats.MAD.zeroMADs
+             count = 1
+macrobase.analysis.stats.MinCovDet.singularCovariances
+             count = 4
+
+-- Timers ----------------------------------------------------------------------
+macrobase.analysis.stats.MAD.medianComputation
+             count = 30
+         mean rate = 5.16 calls/second
+     1-minute rate = 6.00 calls/second
+     5-minute rate = 6.00 calls/second
+    15-minute rate = 6.00 calls/second
+               min = 0.00 milliseconds
+               max = 11.64 milliseconds
+              mean = 0.81 milliseconds
+            stddev = 2.10 milliseconds
+            median = 0.21 milliseconds
+              75% <= 0.44 milliseconds
+              95% <= 2.44 milliseconds
+              98% <= 11.64 milliseconds
+              99% <= 11.64 milliseconds
+            99.9% <= 11.64 milliseconds
+macrobase.analysis.stats.MAD.residualComputation
+             count = 30
+         mean rate = 5.14 calls/second
+     1-minute rate = 6.00 calls/second
+     5-minute rate = 6.00 calls/second
+    15-minute rate = 6.00 calls/second
+               min = 0.00 milliseconds
+               max = 6.20 milliseconds
+              mean = 0.23 milliseconds
+            stddev = 1.11 milliseconds
+            median = 0.03 milliseconds
+              75% <= 0.03 milliseconds
+              95% <= 0.04 milliseconds
+              98% <= 6.20 milliseconds
+              99% <= 6.20 milliseconds
+            99.9% <= 6.20 milliseconds
+macrobase.analysis.stats.MAD.residualMedianComputation
+             count = 30
+         mean rate = 5.14 calls/second
+     1-minute rate = 6.00 calls/second
+     5-minute rate = 6.00 calls/second
+    15-minute rate = 6.00 calls/second
+               min = 0.00 milliseconds
+               max = 3.55 milliseconds
+              mean = 0.24 milliseconds
+            stddev = 0.65 milliseconds
+            median = 0.09 milliseconds
+              75% <= 0.10 milliseconds
+              95% <= 1.25 milliseconds
+              98% <= 3.55 milliseconds
+              99% <= 3.55 milliseconds
+            99.9% <= 3.55 milliseconds
+macrobase.analysis.stats.MinCovDet.chooseKRandom
+             count = 5
+         mean rate = 0.85 calls/second
+     1-minute rate = 1.00 calls/second
+     5-minute rate = 1.00 calls/second
+    15-minute rate = 1.00 calls/second
+               min = 0.02 milliseconds
+               max = 14.40 milliseconds
+              mean = 3.17 milliseconds
+            stddev = 5.68 milliseconds
+            median = 0.17 milliseconds
+              75% <= 0.99 milliseconds
+              95% <= 14.40 milliseconds
+              98% <= 14.40 milliseconds
+              99% <= 14.40 milliseconds
+            99.9% <= 14.40 milliseconds
+macrobase.analysis.stats.MinCovDet.covarianceComputation
+             count = 26
+         mean rate = 4.44 calls/second
+     1-minute rate = 5.20 calls/second
+     5-minute rate = 5.20 calls/second
+    15-minute rate = 5.20 calls/second
+               min = 0.06 milliseconds
+               max = 176.07 milliseconds
+              mean = 24.00 milliseconds
+            stddev = 34.74 milliseconds
+            median = 12.35 milliseconds
+              75% <= 30.38 milliseconds
+              95% <= 83.40 milliseconds
+              98% <= 176.07 milliseconds
+              99% <= 176.07 milliseconds
+            99.9% <= 176.07 milliseconds
+macrobase.analysis.stats.MinCovDet.determinantComputation
+             count = 26
+         mean rate = 4.43 calls/second
+     1-minute rate = 5.20 calls/second
+     5-minute rate = 5.20 calls/second
+    15-minute rate = 5.20 calls/second
+               min = 0.00 milliseconds
+               max = 0.58 milliseconds
+              mean = 0.05 milliseconds
+            stddev = 0.13 milliseconds
+            median = 0.01 milliseconds
+              75% <= 0.01 milliseconds
+              95% <= 0.42 milliseconds
+              98% <= 0.58 milliseconds
+              99% <= 0.58 milliseconds
+            99.9% <= 0.58 milliseconds
+macrobase.analysis.stats.MinCovDet.findKClosest
+             count = 21
+         mean rate = 3.57 calls/second
+     1-minute rate = 4.20 calls/second
+     5-minute rate = 4.20 calls/second
+    15-minute rate = 4.20 calls/second
+               min = 0.03 milliseconds
+               max = 134.06 milliseconds
+              mean = 54.95 milliseconds
+            stddev = 39.49 milliseconds
+            median = 33.71 milliseconds
+              75% <= 84.65 milliseconds
+              95% <= 113.06 milliseconds
+              98% <= 134.06 milliseconds
+              99% <= 134.06 milliseconds
+            99.9% <= 134.06 milliseconds
+macrobase.analysis.stats.MinCovDet.meanComputation
+             count = 26
+         mean rate = 4.42 calls/second
+     1-minute rate = 5.20 calls/second
+     5-minute rate = 5.20 calls/second
+    15-minute rate = 5.20 calls/second
+               min = 0.01 milliseconds
+               max = 36.17 milliseconds
+              mean = 9.01 milliseconds
+            stddev = 9.66 milliseconds
+            median = 5.99 milliseconds
+              75% <= 11.06 milliseconds
+              95% <= 29.30 milliseconds
+              98% <= 36.17 milliseconds
+              99% <= 36.17 milliseconds
+            99.9% <= 36.17 milliseconds
+macrobase.analysis.stats.ZScore.meanComputation
+             count = 1
+         mean rate = 0.17 calls/second
+     1-minute rate = 0.20 calls/second
+     5-minute rate = 0.20 calls/second
+    15-minute rate = 0.20 calls/second
+               min = 0.04 milliseconds
+               max = 0.04 milliseconds
+              mean = 0.04 milliseconds
+            stddev = 0.00 milliseconds
+            median = 0.04 milliseconds
+              75% <= 0.04 milliseconds
+              95% <= 0.04 milliseconds
+              98% <= 0.04 milliseconds
+              99% <= 0.04 milliseconds
+            99.9% <= 0.04 milliseconds
+macrobase.analysis.stats.ZScore.stddevComputation
+             count = 1
+         mean rate = 0.17 calls/second
+     1-minute rate = 0.20 calls/second
+     5-minute rate = 0.20 calls/second
+    15-minute rate = 0.20 calls/second
+               min = 0.02 milliseconds
+               max = 0.02 milliseconds
+              mean = 0.02 milliseconds
+            stddev = 0.00 milliseconds
+            median = 0.02 milliseconds
+              75% <= 0.02 milliseconds
+              95% <= 0.02 milliseconds
+              98% <= 0.02 milliseconds
+              99% <= 0.02 milliseconds
+            99.9% <= 0.02 milliseconds
+macrobase.analysis.summary.itemset.ExponentiallyDecayingEmergingItemsets.inlierDecayTime
+             count = 12
+         mean rate = 2.10 calls/second
+     1-minute rate = 2.40 calls/second
+     5-minute rate = 2.40 calls/second
+    15-minute rate = 2.40 calls/second
+               min = 0.05 milliseconds
+               max = 1.39 milliseconds
+              mean = 0.22 milliseconds
+            stddev = 0.36 milliseconds
+            median = 0.08 milliseconds
+              75% <= 0.17 milliseconds
+              95% <= 1.39 milliseconds
+              98% <= 1.39 milliseconds
+              99% <= 1.39 milliseconds
+            99.9% <= 1.39 milliseconds
+macrobase.analysis.summary.itemset.ExponentiallyDecayingEmergingItemsets.outlierDecayTime
+             count = 12
+         mean rate = 2.10 calls/second
+     1-minute rate = 2.40 calls/second
+     5-minute rate = 2.40 calls/second
+    15-minute rate = 2.40 calls/second
+               min = 0.08 milliseconds
+               max = 572.08 milliseconds
+              mean = 48.77 milliseconds
+            stddev = 158.23 milliseconds
+            median = 0.18 milliseconds
+              75% <= 0.31 milliseconds
+              95% <= 572.08 milliseconds
+              98% <= 572.08 milliseconds
+              99% <= 572.08 milliseconds
+            99.9% <= 572.08 milliseconds
+macrobase.analysis.summary.itemset.FPGrowth.fpMine
+             count = 8
+         mean rate = 1.81 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.06 milliseconds
+               max = 5.51 milliseconds
+              mean = 1.47 milliseconds
+            stddev = 1.75 milliseconds
+            median = 1.17 milliseconds
+              75% <= 2.58 milliseconds
+              95% <= 5.51 milliseconds
+              98% <= 5.51 milliseconds
+              99% <= 5.51 milliseconds
+            99.9% <= 5.51 milliseconds
+macrobase.analysis.summary.itemset.FPGrowth.insertTransactions
+             count = 8
+         mean rate = 1.81 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.02 milliseconds
+               max = 0.92 milliseconds
+              mean = 0.26 milliseconds
+            stddev = 0.38 milliseconds
+            median = 0.05 milliseconds
+              75% <= 0.91 milliseconds
+              95% <= 0.92 milliseconds
+              98% <= 0.92 milliseconds
+              99% <= 0.92 milliseconds
+            99.9% <= 0.92 milliseconds
+macrobase.analysis.summary.itemset.FPGrowth.itemCounts
+             count = 8
+         mean rate = 1.80 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.03 milliseconds
+               max = 1.51 milliseconds
+              mean = 0.29 milliseconds
+            stddev = 0.47 milliseconds
+            median = 0.07 milliseconds
+              75% <= 0.31 milliseconds
+              95% <= 1.51 milliseconds
+              98% <= 1.51 milliseconds
+              99% <= 1.51 milliseconds
+            99.9% <= 1.51 milliseconds
+macrobase.analysis.summary.itemset.FPGrowthEmerging.inlierRatio
+             count = 3
+         mean rate = 0.67 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.34 milliseconds
+               max = 6.93 milliseconds
+              mean = 3.69 milliseconds
+            stddev = 2.69 milliseconds
+            median = 3.79 milliseconds
+              75% <= 6.93 milliseconds
+              95% <= 6.93 milliseconds
+              98% <= 6.93 milliseconds
+              99% <= 6.93 milliseconds
+            99.9% <= 6.93 milliseconds
+macrobase.analysis.summary.itemset.FPGrowthEmerging.outlierFPGrowth
+             count = 3
+         mean rate = 0.67 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 4.96 milliseconds
+               max = 18.23 milliseconds
+              mean = 10.94 milliseconds
+            stddev = 5.49 milliseconds
+            median = 9.64 milliseconds
+              75% <= 18.23 milliseconds
+              95% <= 18.23 milliseconds
+              98% <= 18.23 milliseconds
+              99% <= 18.23 milliseconds
+            99.9% <= 18.23 milliseconds
+macrobase.analysis.summary.itemset.FPGrowthEmerging.singleItemCounts
+             count = 3
+         mean rate = 0.67 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.07 milliseconds
+               max = 10.49 milliseconds
+              mean = 3.57 milliseconds
+            stddev = 4.89 milliseconds
+            median = 0.16 milliseconds
+              75% <= 10.49 milliseconds
+              95% <= 10.49 milliseconds
+              98% <= 10.49 milliseconds
+              99% <= 10.49 milliseconds
+            99.9% <= 10.49 milliseconds
+macrobase.analysis.summary.itemset.StreamingFPGrowth.fpMine
+             count = 5
+         mean rate = 0.87 calls/second
+     1-minute rate = 1.00 calls/second
+     5-minute rate = 1.00 calls/second
+    15-minute rate = 1.00 calls/second
+               min = 0.10 milliseconds
+               max = 16.42 milliseconds
+              mean = 3.97 milliseconds
+            stddev = 6.28 milliseconds
+            median = 1.06 milliseconds
+              75% <= 2.07 milliseconds
+              95% <= 16.42 milliseconds
+              98% <= 16.42 milliseconds
+              99% <= 16.42 milliseconds
+            99.9% <= 16.42 milliseconds
+macrobase.analysis.summary.itemset.StreamingFPGrowth.insertFrequentItems
+             count = 2
+         mean rate = 0.35 calls/second
+     1-minute rate = 0.40 calls/second
+     5-minute rate = 0.40 calls/second
+    15-minute rate = 0.40 calls/second
+               min = 0.06 milliseconds
+               max = 0.47 milliseconds
+              mean = 0.26 milliseconds
+            stddev = 0.21 milliseconds
+            median = 0.47 milliseconds
+              75% <= 0.47 milliseconds
+              95% <= 0.47 milliseconds
+              98% <= 0.47 milliseconds
+              99% <= 0.47 milliseconds
+            99.9% <= 0.47 milliseconds
+macrobase.analysis.summary.itemset.StreamingFPGrowth.restructureTree
+             count = 83
+         mean rate = 14.36 calls/second
+     1-minute rate = 16.60 calls/second
+     5-minute rate = 16.60 calls/second
+    15-minute rate = 16.60 calls/second
+               min = 0.02 milliseconds
+               max = 571.96 milliseconds
+              mean = 8.07 milliseconds
+            stddev = 62.39 milliseconds
+            median = 0.57 milliseconds
+              75% <= 1.19 milliseconds
+              95% <= 2.85 milliseconds
+              98% <= 22.07 milliseconds
+              99% <= 571.96 milliseconds
+            99.9% <= 571.96 milliseconds
+macrobase.analysis.summary.itemset.StreamingFPGrowth.updateFrequentItemOrder
+             count = 235
+         mean rate = 40.61 calls/second
+     1-minute rate = 47.00 calls/second
+     5-minute rate = 47.00 calls/second
+    15-minute rate = 47.00 calls/second
+               min = 0.00 milliseconds
+               max = 10.00 milliseconds
+              mean = 0.08 milliseconds
+            stddev = 0.67 milliseconds
+            median = 0.01 milliseconds
+              75% <= 0.03 milliseconds
+              95% <= 0.11 milliseconds
+              98% <= 0.34 milliseconds
+              99% <= 0.97 milliseconds
+            99.9% <= 10.00 milliseconds
+
+
+19:41:17.880 [main] INFO  m.r.command.MacroBasePipelineCommand - Result: []
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.456 sec - in macrobase.runtime.command.MacroBasePipelineCommandTest
+Running macrobase.runtime.MacroBaseApplicationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.666 sec - in macrobase.runtime.MacroBaseApplicationTest
+Running macrobase.ingest.DatumEncoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in macrobase.ingest.DatumEncoderTest
+Running macrobase.ingest.CachingSQLIngesterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.09 sec - in macrobase.ingest.CachingSQLIngesterTest
+Running macrobase.ingest.SQLIngesterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in macrobase.ingest.SQLIngesterTest
+Running macrobase.ingest.CSVIngesterTest
+macrobase.ingest.result.RowSet@304cc24
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in macrobase.ingest.CSVIngesterTest
+Running macrobase.conf.MacroBaseConfTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 sec - in macrobase.conf.MacroBaseConfTest
+
+Results :
+
+Tests run: 76, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building macrobase-frontend 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ macrobase-frontend ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ macrobase-frontend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ macrobase-frontend ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ macrobase-frontend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ macrobase-frontend ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/frontend/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running macrobase.runtime.resources.AnalyzeResourceTest
+19:41:21.611 [main] DEBUG m.analysis.pipeline.BasePipeline - Running query MacroBaseQuery
+19:41:21.617 [main] DEBUG m.analysis.pipeline.BasePipeline - CONFIG:
+macrobase.analysis.metrics.lowTransform: A5
+macrobase.analysis.minOIRatio: 0.01
+macrobase.analysis.minSupport: 0.01
+macrobase.analysis.randomSeed: 0
+macrobase.analysis.targetPercentile: 0.99
+macrobase.analysis.usePercentile: true
+macrobase.loader.attributes: A1,A2,A3,A4
+macrobase.loader.csv.file: src/test/resources/data/simple.csv
+macrobase.loader.db.baseQuery: also should be unused
+macrobase.loader.db.url: should be unused
+macrobase.loader.loaderType: CSV_LOADER
+macrobase.loader.metrics: A5
+19:41:21.678 [main] INFO  macrobase.ingest.CSVIngester - 100/100 rows successfully parsed (0 malformed rows)
+19:41:21.687 [main] INFO  macrobase.conf.MacroBaseConf - By default: using MAD transform for dimension 1 metric.
+19:41:21.723 [main] DEBUG m.a.c.BatchingPercentileClassifier - 0.99 Percentile Cutoff: 31.21783923970431
+19:41:21.724 [main] DEBUG m.a.c.BatchingPercentileClassifier - Median: 1.0
+19:41:21.724 [main] DEBUG m.a.c.BatchingPercentileClassifier - Max: 31.285466887916744
+19:41:21.728 [main] DEBUG m.analysis.summary.itemset.FPGrowth - count required: 0
+19:41:21.735 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree load: 7
+19:41:21.737 [main] DEBUG m.analysis.summary.itemset.FPGrowth - FPTree mine: 2
+19:41:21.745 [main] INFO  m.a.pipeline.BasicBatchedPipeline - took 58ms (1724.1379310344826 tuples/sec)
+3/19/20 7:41:21 PM =============================================================
+
+-- Counters --------------------------------------------------------------------
+macrobase.analysis.stats.MAD.zeroMADs
+             count = 0
+
+-- Timers ----------------------------------------------------------------------
+macrobase.analysis.stats.MAD.medianComputation
+             count = 1
+         mean rate = 16.07 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.22 milliseconds
+               max = 0.22 milliseconds
+              mean = 0.22 milliseconds
+            stddev = 0.00 milliseconds
+            median = 0.22 milliseconds
+              75% <= 0.22 milliseconds
+              95% <= 0.22 milliseconds
+              98% <= 0.22 milliseconds
+              99% <= 0.22 milliseconds
+            99.9% <= 0.22 milliseconds
+macrobase.analysis.stats.MAD.residualComputation
+             count = 1
+         mean rate = 14.13 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.01 milliseconds
+               max = 0.01 milliseconds
+              mean = 0.01 milliseconds
+            stddev = 0.00 milliseconds
+            median = 0.01 milliseconds
+              75% <= 0.01 milliseconds
+              95% <= 0.01 milliseconds
+              98% <= 0.01 milliseconds
+              99% <= 0.01 milliseconds
+            99.9% <= 0.01 milliseconds
+macrobase.analysis.stats.MAD.residualMedianComputation
+             count = 1
+         mean rate = 12.72 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 0.03 milliseconds
+               max = 0.03 milliseconds
+              mean = 0.03 milliseconds
+            stddev = 0.00 milliseconds
+            median = 0.03 milliseconds
+              75% <= 0.03 milliseconds
+              95% <= 0.03 milliseconds
+              98% <= 0.03 milliseconds
+              99% <= 0.03 milliseconds
+            99.9% <= 0.03 milliseconds
+macrobase.analysis.summary.itemset.FPGrowth.fpMine
+             count = 1
+         mean rate = 15.02 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 1.71 milliseconds
+               max = 1.71 milliseconds
+              mean = 1.71 milliseconds
+            stddev = 0.00 milliseconds
+            median = 1.71 milliseconds
+              75% <= 1.71 milliseconds
+              95% <= 1.71 milliseconds
+              98% <= 1.71 milliseconds
+              99% <= 1.71 milliseconds
+            99.9% <= 1.71 milliseconds
+macrobase.analysis.summary.itemset.FPGrowth.insertTransactions
+             count = 1
+         mean rate = 10.98 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 3.97 milliseconds
+               max = 3.97 milliseconds
+              mean = 3.97 milliseconds
+            stddev = 0.00 milliseconds
+            median = 3.97 milliseconds
+              75% <= 3.97 milliseconds
+              95% <= 3.97 milliseconds
+              98% <= 3.97 milliseconds
+              99% <= 3.97 milliseconds
+            99.9% <= 3.97 milliseconds
+macrobase.analysis.summary.itemset.FPGrowth.itemCounts
+             count = 1
+         mean rate = 10.19 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 2.74 milliseconds
+               max = 2.74 milliseconds
+              mean = 2.74 milliseconds
+            stddev = 0.00 milliseconds
+            median = 2.74 milliseconds
+              75% <= 2.74 milliseconds
+              95% <= 2.74 milliseconds
+              98% <= 2.74 milliseconds
+              99% <= 2.74 milliseconds
+            99.9% <= 2.74 milliseconds
+macrobase.analysis.summary.itemset.FPGrowthEmerging.inlierRatio
+             count = 1
+         mean rate = 8.83 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 7.54 milliseconds
+               max = 7.54 milliseconds
+              mean = 7.54 milliseconds
+            stddev = 0.00 milliseconds
+            median = 7.54 milliseconds
+              75% <= 7.54 milliseconds
+              95% <= 7.54 milliseconds
+              98% <= 7.54 milliseconds
+              99% <= 7.54 milliseconds
+            99.9% <= 7.54 milliseconds
+macrobase.analysis.summary.itemset.FPGrowthEmerging.outlierFPGrowth
+             count = 1
+         mean rate = 7.61 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 10.22 milliseconds
+               max = 10.22 milliseconds
+              mean = 10.22 milliseconds
+            stddev = 0.00 milliseconds
+            median = 10.22 milliseconds
+              75% <= 10.22 milliseconds
+              95% <= 10.22 milliseconds
+              98% <= 10.22 milliseconds
+              99% <= 10.22 milliseconds
+            99.9% <= 10.22 milliseconds
+macrobase.analysis.summary.itemset.FPGrowthEmerging.singleItemCounts
+             count = 1
+         mean rate = 7.17 calls/second
+     1-minute rate = 0.00 calls/second
+     5-minute rate = 0.00 calls/second
+    15-minute rate = 0.00 calls/second
+               min = 1.32 milliseconds
+               max = 1.32 milliseconds
+              mean = 1.32 milliseconds
+            stddev = 0.00 milliseconds
+            median = 1.32 milliseconds
+              75% <= 1.32 milliseconds
+              95% <= 1.32 milliseconds
+              98% <= 1.32 milliseconds
+              99% <= 1.32 milliseconds
+            99.9% <= 1.32 milliseconds
+
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.751 sec - in macrobase.runtime.resources.AnalyzeResourceTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building macrobase-assembly 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ macrobase-assembly ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/assembly/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ macrobase-assembly ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ macrobase-assembly ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/assembly/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ macrobase-assembly ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ macrobase-assembly ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building macrobase-lib 0.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ macrobase-lib ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/lib/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ macrobase-lib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ macrobase-lib ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ macrobase-lib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ macrobase-lib ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/lib/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running edu.stanford.futuredata.macrobase.analysis.summary.MovingAverageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 sec - in edu.stanford.futuredata.macrobase.analysis.summary.MovingAverageTest
+Running edu.stanford.futuredata.macrobase.analysis.summary.itemset.IntSetTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in edu.stanford.futuredata.macrobase.analysis.summary.itemset.IntSetTest
+Running edu.stanford.futuredata.macrobase.analysis.summary.itemset.AttributeEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in edu.stanford.futuredata.macrobase.analysis.summary.itemset.AttributeEncoderTest
+Running edu.stanford.futuredata.macrobase.analysis.summary.itemset.RiskRatioTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in edu.stanford.futuredata.macrobase.analysis.summary.itemset.RiskRatioTest
+Running edu.stanford.futuredata.macrobase.analysis.summary.itemset.result.AttributeSetTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in edu.stanford.futuredata.macrobase.analysis.summary.itemset.result.AttributeSetTest
+Running edu.stanford.futuredata.macrobase.analysis.summary.itemset.FPGrowthTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 sec - in edu.stanford.futuredata.macrobase.analysis.summary.itemset.FPGrowthTest
+Running edu.stanford.futuredata.macrobase.analysis.summary.APrioriSummarizerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.379 sec - in edu.stanford.futuredata.macrobase.analysis.summary.APrioriSummarizerTest
+Running edu.stanford.futuredata.macrobase.analysis.summary.count.ExactCountTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in edu.stanford.futuredata.macrobase.analysis.summary.count.ExactCountTest
+Running edu.stanford.futuredata.macrobase.analysis.summary.ExplanationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.stanford.futuredata.macrobase.analysis.summary.ExplanationTest
+Running edu.stanford.futuredata.macrobase.analysis.classify.ArithmeticClassifierTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in edu.stanford.futuredata.macrobase.analysis.classify.ArithmeticClassifierTest
+Running edu.stanford.futuredata.macrobase.analysis.classify.PercentileClassifierTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in edu.stanford.futuredata.macrobase.analysis.classify.PercentileClassifierTest
+Running edu.stanford.futuredata.macrobase.analysis.classify.stats.NormalDistTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in edu.stanford.futuredata.macrobase.analysis.classify.stats.NormalDistTest
+Running edu.stanford.futuredata.macrobase.analysis.classify.stats.WeightedPercentileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in edu.stanford.futuredata.macrobase.analysis.classify.stats.WeightedPercentileTest
+Running edu.stanford.futuredata.macrobase.analysis.transform.MetricBucketTransformerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in edu.stanford.futuredata.macrobase.analysis.transform.MetricBucketTransformerTest
+Running edu.stanford.futuredata.macrobase.StreamingSummarizationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec - in edu.stanford.futuredata.macrobase.StreamingSummarizationTest
+Running edu.stanford.futuredata.macrobase.operator.WindowedOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in edu.stanford.futuredata.macrobase.operator.WindowedOperatorTest
+Running edu.stanford.futuredata.macrobase.ingest.DataFrameCSVLoaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in edu.stanford.futuredata.macrobase.ingest.DataFrameCSVLoaderTest
+Running edu.stanford.futuredata.macrobase.UnsupervisedCSVTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in edu.stanford.futuredata.macrobase.UnsupervisedCSVTest
+Running edu.stanford.futuredata.macrobase.datamodel.SchemaTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.stanford.futuredata.macrobase.datamodel.SchemaTest
+Running edu.stanford.futuredata.macrobase.datamodel.RowTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.stanford.futuredata.macrobase.datamodel.RowTest
+Running edu.stanford.futuredata.macrobase.datamodel.DataFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in edu.stanford.futuredata.macrobase.datamodel.DataFrameTest
+Running edu.stanford.futuredata.macrobase.MetricAsExplanationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in edu.stanford.futuredata.macrobase.MetricAsExplanationTest
+Running edu.stanford.futuredata.macrobase.LoggingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.stanford.futuredata.macrobase.LoggingTest
+Running edu.stanford.futuredata.macrobase.SupervisedEventTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in edu.stanford.futuredata.macrobase.SupervisedEventTest
+
+Results :
+
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building macrobase-core 0.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ macrobase-core ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ macrobase-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ macrobase-core ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ macrobase-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ macrobase-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running edu.stanford.futuredata.macrobase.cli.PipelineConfigTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.561 sec - in edu.stanford.futuredata.macrobase.cli.PipelineConfigTest
+Running edu.stanford.futuredata.macrobase.contrib.aria.CubeParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in edu.stanford.futuredata.macrobase.contrib.aria.CubeParserTest
+Running edu.stanford.futuredata.macrobase.contrib.aria.CubeAPILoaderTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.016 sec <<< FAILURE! - in edu.stanford.futuredata.macrobase.contrib.aria.CubeAPILoaderTest
+testPost(edu.stanford.futuredata.macrobase.contrib.aria.CubeAPILoaderTest)  Time elapsed: 0.014 sec  <<< ERROR!
+java.nio.file.NoSuchFileException: src/test/resources/apikey.txt
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at java.nio.file.Files.newBufferedReader(Files.java:2784)
+	at java.nio.file.Files.readAllLines(Files.java:3202)
+	at java.nio.file.Files.readAllLines(Files.java:3242)
+	at edu.stanford.futuredata.macrobase.contrib.aria.CubeAPILoaderTest.testPost(CubeAPILoaderTest.java:20)
+
+Running edu.stanford.futuredata.macrobase.pipeline.BasicBatchPipelineTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 sec - in edu.stanford.futuredata.macrobase.pipeline.BasicBatchPipelineTest
+
+Results :
+
+Tests in error: 
+  CubeAPILoaderTest.testPost:20 » NoSuchFile src/test/resources/apikey.txt
+
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] macrobase .......................................... SUCCESS [  0.013 s]
+[INFO] macrobase-legacy ................................... SUCCESS [ 15.199 s]
+[INFO] macrobase-frontend ................................. SUCCESS [  3.171 s]
+[INFO] macrobase-assembly ................................. SUCCESS [  0.050 s]
+[INFO] macrobase-lib ...................................... SUCCESS [  3.252 s]
+[INFO] macrobase-core ..................................... FAILURE [  1.966 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 23.905 s
+[INFO] Finished at: 2020-03-19T19:41:28+01:00
+[INFO] Final Memory: 18M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project macrobase-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project macrobase-core: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/core/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026223-20170828-022221-firstCommit/core/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :macrobase-core
