@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 188,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "mreutegg/jackrabbit-oak",
-  "bugCommit": "https://github.com/mreutegg/jackrabbit-oak/compare/cf653b912755...884cedfd0905",
-  "failingModule": "/root/workspace/mreutegg/jackrabbit-oak/368056575/oak-it",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 6665,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.jackrabbit.oak.composite.AtomicCompositeMergeTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.jackrabbit.oak.composite.AtomicCompositeMergeTest#testDistributedMerge"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:03:22 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:23:17 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 51389456,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 1190,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mreutegg-jackrabbit-oak-368056575-20180418-115125-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mreutegg-jackrabbit-oak-368056575-20180418-115125-firstCommit/oak-it",
+    "overallMetrics": {
+      "numberRunning": 6477,
+      "numberPassing": 6476,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 188,
       "failures": [
         {
           "failureName": "java.lang.RuntimeException",
-          "failureDetail": "org.apache.jackrabbit.oak.api.CommitFailedException: OakState0002: Conflicting concurrent change on branch commits [r162d838d526-0-64, r162d838d523-0-64, r162d838d520-0-64, r162d838d521-0-64, r162d838d51f-0-64, r162d838d51c-0-64, r162d838d51d-0-64, r162d838d51b-0-64, r162d838d519-0-64, r162d838d516-0-64, r162d838d517-0-64, r162d838d514-0-64, r162d838d512-0-64, r162d838d513-0-64, r162d838d510-0-64, r162d838d50f-0-64, r162d838d50c-0-64, r162d838d50d-0-64, r162d838d50a-0-64, r162d838d508-0-64, r162d838d509-0-64, r162d838d506-0-64, r162d838d504-0-64, r162d838d505-0-64, r162d838d502-0-64, r162d838d500-0-64, r162d838d47f-0-64, r162d838d47c-0-64, r162d838d479-0-64, r162d838d476-0-64, r162d838d46b-0-64, r162d838d4be-0-64, r162d838d4bc-0-64, r162d838d4bd-0-64, r162d838d4ba-0-64, r162d838d4b9-0-64, r162d838d4b6-0-64, r162d838d4b7-0-64, r162d838d4b4-0-64, r162d838d4b2-0-64, r162d838d4b0-0-64, r162d838d4ae-0-64, r162d838d4ac-0-64, r162d838d4aa-0-64, r162d838d4a9-0-64, r162d838d4a7-0-64, r162d838d4a5-0-64, r162d838d4a2-0-64, r162d838d4a3-0-64, r162d838d4a0-0-64, r162d838d49e-0-64, r162d838d49c-0-64, r162d838d49a-0-64, r162d838d498-0-64, r162d838d48f-0-64, r162d838d48d-0-64, r162d838d48b-0-64, r162d838d489-0-64, r162d838d487-0-64, r162d838d485-0-64, r162d838d483-0-64, r162d838d481-0-64, r162d838d4fe-0-64, r162d838d4fc-0-64, r162d838d4fd-0-64, r162d838d4fa-0-64, r162d838d4f8-0-64, r162d838d4f9-0-64, r162d838d4f6-0-64, r162d838d4f4-0-64, r162d838d4f5-0-64, r162d838d4f2-0-64, r162d838d4f1-0-64, r162d838d4ee-0-64, r162d838d4ef-0-64, r162d838d4ed-0-64, r162d838d4ea-0-64, r162d838d4eb-0-64, r162d838d4e8-0-64, r162d838d4e9-0-64, r162d838d4e6-0-64, r162d838d4e4-0-64, r162d838d4e5-0-64, r162d838d4e3-0-64, r162d838d4e0-0-64, r162d838d4e1-0-64, r162d838d4de-0-64, r162d838d4dc-0-64, r162d838d4dd-0-64, r162d838d4da-0-64, r162d838d4d8-0-64, r162d838d4d9-0-64, r162d838d4d6-0-64, r162d838d4d4-0-64, r162d838d4d5-0-64, r162d838d4d2-0-64, r162d838d4d0-0-64, r162d838d4d1-0-64, r162d838d4ce-0-64, r162d838d4cd-0-64, r162d838d4ca-0-64, r162d838d4cb-0-64, r162d838d4c8-0-64, r162d838d4c7-0-64, r162d838d4c4-0-64, r162d838d4c5-0-64, r162d838d4c2-0-64, r162d838d4c0-0-64, r162d838d4c1-0-64]",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.composite.AtomicCompositeMergeTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.composite.AtomicCompositeMergeTest",
+        "testMethod": "testDistributedMerge",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "org.apache.jackrabbit.oak.api.CommitFailedException: OakState0002: Conflicting concurrent change on branch commits [r170f24f0652-0-64, r170f24f0552-0-64, r170f24f0650-0-64, r170f24f0556-0-64, r170f24f0654-0-64, r170f24f064a-0-64, r170f24f0649-0-64, r170f24f064f-0-64, r170f24f054f-0-64, r170f24f064d-0-64, r170f24f064c-0-64, r170f24f0643-0-64, r170f24f0543-0-64, r170f24f0647-0-64, r170f24f0547-0-64, r170f24f0645-0-64, r170f24f0545-0-64, r170f24f0544-0-64, r170f24f057b-0-64, r170f24f057f-0-64, r170f24f057d-0-64, r170f24f0577-0-64, r170f24f056b-0-64, r170f24f0569-0-64, r170f24f056e-0-64, r170f24f056d-0-64, r170f24f056c-0-64, r170f24f0563-0-64, r170f24f0562-0-64, r170f24f0566-0-64, r170f24f0565-0-64, r170f24f0518-0-64, r170f24f051e-0-64, r170f24f0512-0-64, r170f24f0515-0-64, r170f24f0514-0-64, r170f24f0509-0-64, r170f24f050c-0-64, r170f24f053b-0-64, r170f24f053a-0-64, r170f24f0539-0-64, r170f24f053f-0-64, r170f24f053d-0-64, r170f24f0522-0-64, r170f24f0521-0-64, r170f24f04db-0-64, r170f24f05df-0-64, r170f24f04de-0-64, r170f24f05d3-0-64, r170f24f05d1-0-64, r170f24f05d0-0-64, r170f24f05d7-0-64, r170f24f05d6-0-64, r170f24f05d4-0-64, r170f24f05cb-0-64, r170f24f04ca-0-64, r170f24f05c9-0-64, r170f24f05ce-0-64, r170f24f05cc-0-64, r170f24f04cc-0-64, r170f24f04c3-0-64, r170f24f05c7-0-64, r170f24f05c5-0-64, r170f24f05fb-0-64, r170f24f05fa-0-64, r170f24f05f9-0-64, r170f24f04f8-0-64, r170f24f04f1-0-64, r170f24f05f7-0-64, r170f24f04ea-0-64, r170f24f04ef-0-64, r170f24f04ed-0-64, r170f24f04e2-0-64, r170f24f05e1-0-64, r170f24f05e7-0-64, r170f24f04e7-0-64, r170f24f05e5-0-64, r170f24f04e4-0-64, r170f24f059b-0-64, r170f24f059a-0-64, r170f24f049a-0-64, r170f24f0599-0-64, r170f24f0598-0-64, r170f24f059f-0-64, r170f24f059e-0-64, r170f24f059d-0-64, r170f24f0592-0-64, r170f24f0591-0-64, r170f24f0590-0-64, r170f24f0596-0-64, r170f24f0595-0-64, r170f24f0594-0-64, r170f24f058e-0-64, r170f24f0580-0-64, r170f24f04b9-0-64, r170f24f05b3-0-64, r170f24f05b6-0-64, r170f24f05b5-0-64, r170f24f04b4-0-64, r170f24f04a9-0-64, r170f24f04ad-0-64, r170f24f05a3-0-64, r170f24f05a2-0-64, r170f24f04a2-0-64, r170f24f05a0-0-64, r170f24f04a7-0-64, r170f24f04a6-0-64, r170f24f05a4-0-64, r170f24f04a4-0-64]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 37,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2229,
+    "numberTestFiles": 1580,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  }
 }
