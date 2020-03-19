@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:59:36 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:51:22 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 86262648,
+      "totalMemory": 372649984
+    },
+    "totalDuration": 6703,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6001,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6001
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-leusonmario-jmeter-plugins-417483869-20180818-011514-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-leusonmario-jmeter-plugins-417483869-20180818-011514-firstCommit/webdriver",
+    "overallMetrics": {
+      "numberRunning": 1783,
+      "numberPassing": 1782,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.openqa.selenium.WebDriverException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.googlecode.jmeter.plugins.webdriver.config.FirefoxDriverConfigTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.googlecode.jmeter.plugins.webdriver.config.FirefoxDriverConfigTest",
+        "testMethod": "shouldCreateFirefox",
+        "failureName": "org.openqa.selenium.WebDriverException",
+        "detail": "Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: LINUX\nBuild info: version: \u0027unknown\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027b-cn0906.hpc2n.umu.se\u0027, ip: \u0027130.239.242.16\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.15.0-91-generic\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: unknown",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 323,
+    "numberTestFiles": 316,
+    "numberLibrariesFailingModule": 148,
+    "numberLines": 0
+  }
+}
