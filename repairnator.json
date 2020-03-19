@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "scalecube/scalecube-services",
-  "bugCommit": "https://github.com/scalecube/scalecube-services/compare/e8bcc574cdd1^...940afb849e86",
-  "failingModule": "/root/workspace/scalecube/scalecube-services/373918013/services",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.Exception"
-  ],
-  "totalNumberRunningTests": 59,
-  "failing-test-cases": [
-    {
-      "className": "io.scalecube.services.ErrorFlowTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.scalecube.services.ErrorFlowTest#testCorruptedRequest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:38:20 PM",
+    "reproductionDateEnd": "Mar 19, 2020 9:24:45 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 71392040,
+      "totalMemory": 257634304
+    },
+    "totalDuration": 6382,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373918013-20180502-150128-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373918013-20180502-150128-firstCommit/services",
+    "overallMetrics": {
+      "numberRunning": 58,
+      "numberPassing": 57,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "java.lang.Exception",
-          "failureDetail": "Unexpected exception, expected\u003cio.scalecube.services.exceptions.BadRequestException\u003e but was\u003cio.scalecube.services.exceptions.InternalServiceException\u003e",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.scalecube.services.ErrorFlowTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.scalecube.services.ErrorFlowTest",
+        "testMethod": "testCorruptedRequest",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003cio.scalecube.services.exceptions.BadRequestException\u003e but was\u003cio.scalecube.services.exceptions.InternalServiceException\u003e",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 59,
+    "numberTestFiles": 28,
+    "numberLibrariesFailingModule": 48,
+    "numberLines": 0
+  }
 }
