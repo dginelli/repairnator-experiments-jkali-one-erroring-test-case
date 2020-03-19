@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:59:36 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:18:40 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 45770184,
+      "totalMemory": 134107136
+    },
+    "totalDuration": 1140,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 640,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          640
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-maestro-performance-maestro-java-418329919-20180820-191438-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-maestro-performance-maestro-java-418329919-20180820-191438-firstCommit/maestro-worker",
+    "overallMetrics": {
+      "numberRunning": 120,
+      "numberPassing": 119,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.maestro.common.exceptions.MaestroConnectionException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.maestro.worker.TestFlowTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.maestro.worker.TestFlowTest",
+        "testMethod": "testSimpleTest",
+        "failureName": "org.maestro.common.exceptions.MaestroConnectionException",
+        "detail": "Unable to publish message: Client is not connected",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 23,
+    "numberPlugins": 0,
+    "numberSourceFiles": 403,
+    "numberTestFiles": 52,
+    "numberLibrariesFailingModule": 86,
+    "numberLines": 0
+  }
+}
