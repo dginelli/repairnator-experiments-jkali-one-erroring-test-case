@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "openpnp/openpnp",
-  "bugCommit": "https://github.com/openpnp/openpnp/compare/f07be4bad833...d086a6480555",
-  "failingModule": "/root/workspace/openpnp/openpnp/248822216",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.Exception"
-  ],
-  "totalNumberRunningTests": 11,
-  "failing-test-cases": [
-    {
-      "className": "SampleJobTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "SampleJobTest#testSampleJob"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:07:54 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:17:17 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 143955880,
+      "totalMemory": 311336960
+    },
+    "totalDuration": 560,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 363,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          363
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openpnp-openpnp-248822216-20170630-170810_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openpnp-openpnp-248822216-20170630-170810_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 11,
+      "numberPassing": 10,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.Exception",
-          "failureDetail": "Bottom vision alignment failed for part R0201-1K on nozzle N1. No result found.",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "SampleJobTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "SampleJobTest",
+        "testMethod": "testSampleJob",
+        "failureName": "java.lang.Exception",
+        "detail": "Bottom vision alignment failed for part R0201-1K on nozzle N1. No result found.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 403,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 67,
+    "numberLines": 0
+  }
 }
