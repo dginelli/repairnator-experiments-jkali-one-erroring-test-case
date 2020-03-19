@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 6,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "matsim-org/matsim",
-  "bugCommit": "https://github.com/matsim-org/matsim/compare/c44045db7ce0...578b1a8742f1",
-  "failingModule": "/root/workspace/matsim-org/matsim/394957308/contribs/freight",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.matsim.core.utils.io.UncheckedIOException"
-  ],
-  "totalNumberRunningTests": 1522,
-  "failing-test-cases": [
-    {
-      "className": "org.matsim.contrib.freight.io.ReceiversWriterTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testV1"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:57:55 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:31:17 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 623300288,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1997,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          1
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 504,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          504
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-matsim-org-matsim-394957308-20180621-135450-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-matsim-org-matsim-394957308-20180621-135450-firstCommit/matsim",
+    "overallMetrics": {
+      "numberRunning": 1338,
+      "numberPassing": 1337,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
       "failures": [
         {
           "failureName": "org.matsim.core.utils.io.UncheckedIOException",
-          "failureDetail": "java.io.FileNotFoundException: ./output/run_001/carrierVehicleTypes.xml (No such file or directory)",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.matsim.other.DownloadAndReadXmlTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.matsim.other.DownloadAndReadXmlTest",
+        "testMethod": "testHttpFromSvn",
+        "failureName": "org.matsim.core.utils.io.UncheckedIOException",
+        "detail": "org.xml.sax.SAXParseException; systemId: http://svn.vsp.tu-berlin.de/repos/public-svn/matsim/scenarios/countries/atlantis/minibus/input/network.xml; lineNumber: 1; columnNumber: 50; White spaces are required between publicId and systemId.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 39,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3538,
+    "numberTestFiles": 652,
+    "numberLibrariesFailingModule": 34,
+    "numberLines": 0
+  }
 }
