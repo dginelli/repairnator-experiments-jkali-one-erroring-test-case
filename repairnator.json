@@ -1,38 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "totalMemory": 208666624,
-  "bugType": "only_fail",
-  "workspace": "./workspace",
-  "totalNumberErroringTests": 1,
-  "repo": "javaee-samples/javaee7-samples",
-  "freeMemory": 113749104,
-  "bugCommit": "https://github.com/javaee-samples/javaee7-samples/compare/4f5f8fd8f022...3f50e1d86729",
-  "failingModule": "/root/workspace/javaee-samples/javaee7-samples/229371495/batch/chunk-csv-database",
-  "buildid": 229371495,
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "com.sun.jersey.api.container.ContainerException"
-  ],
-  "totalNumberRunningTests": 3,
-  "failing-test-cases": [
-    {
-      "className": "org.javaee7.batch.chunk.csv.database.BatchCSVDatabaseTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.javaee7.batch.chunk.csv.database.BatchCSVDatabaseTest#org.javaee7.batch.chunk.csv.database.BatchCSVDatabaseTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:58:01 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:14:45 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 16820704,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 1000,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 17,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          17,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee7-samples-229371495-20170506-122839_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee7-samples-229371495-20170506-122839_bugonly-firstCommit/batch/batchlet-simple",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "com.sun.jersey.api.container.ContainerException",
-          "failureDetail": "exit_code: FAILURE, message: Error occurred during deployment: Exception while preparing the app : Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.4.qualifier): org.eclipse.persistence.exceptions.DatabaseException Internal Exception: java.sql.SQLException: Error in allocating a connection. Cause: Connection could not be allocated because: java.net.ConnectException : Error connecting to server localhost on port 1527 with message Connection refused (Connection refused). Error Code: 0. Please see server.log for more details. [status: CLIENT_ERROR reason: Bad Request]",
-          "isError": true
+          "failureName": "org.jboss.arquillian.container.spi.client.container.LifecycleException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ],
-  "nbCPU": 4,
-  "bugRepo": "javaee-samples/javaee7-samples"
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.javaee7.batch.batchlet.simple.MyBatchletTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.javaee7.batch.batchlet.simple.MyBatchletTest",
+        "testMethod": "org.javaee7.batch.batchlet.simple.MyBatchletTest",
+        "failureName": "org.jboss.arquillian.container.spi.client.container.LifecycleException",
+        "detail": "Unable to execute [java, -jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee7-samples-229371495-20170506-122839_bugonly-firstCommit/target/payara41/glassfish/modules/admin-cli.jar, start-domain, -t]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 228,
+    "numberPlugins": 0,
+    "numberSourceFiles": 742,
+    "numberTestFiles": 201,
+    "numberLibrariesFailingModule": 111,
+    "numberLines": 0
+  }
 }
