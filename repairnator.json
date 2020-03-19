@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 5,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "languagetool-org/languagetool",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/358166807/languagetool-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IndexOutOfBoundsException"
-  ],
-  "totalNumberRunningTests": 233,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.UppercaseSentenceStartRuleTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.languagetool.rules.UppercaseSentenceStartRuleTest#testRule"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:59:36 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:04:14 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 51575040,
+      "totalMemory": 145915904
+    },
+    "totalDuration": 274,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-358166807-20180325-231532-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-358166807-20180325-231532-firstCommit/languagetool-core",
+    "overallMetrics": {
+      "numberRunning": 228,
+      "numberPassing": 227,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
       "failures": [
         {
           "failureName": "java.lang.IndexOutOfBoundsException",
-          "failureDetail": "fromIndex \u003d -4",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.UppercaseSentenceStartRuleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.UppercaseSentenceStartRuleTest",
+        "testMethod": "testRule",
+        "failureName": "java.lang.IndexOutOfBoundsException",
+        "detail": "fromIndex \u003d -4",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 757,
+    "numberTestFiles": 493,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  }
 }
