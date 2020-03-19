@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "guanchao-yang/sofa-common-tools",
-  "bugCommit": "https://github.com/guanchao-yang/sofa-common-tools/compare/7674207d1c22...485aab26581b",
-  "failingModule": "/root/workspace/guanchao-yang/sofa-common-tools/387740127",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalArgumentException"
-  ],
-  "totalNumberRunningTests": 34,
-  "failing-test-cases": [
-    {
-      "className": "com.alipay.sofa.common.utils.AssertUtilTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testIsTrueForExpressionMessage"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:51:34 AM",
+    "reproductionDateEnd": "Mar 19, 2020 10:56:25 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 63248744,
+      "totalMemory": 114966528
+    },
+    "totalDuration": 288,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 231,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          231
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-guanchao-yang-sofa-common-tools-387740127-20180604-133133-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-guanchao-yang-sofa-common-tools-387740127-20180604-133133-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 34,
+      "numberPassing": 33,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalArgumentException",
-          "failureDetail": "isTrue",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alipay.sofa.common.utils.AssertUtilTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alipay.sofa.common.utils.AssertUtilTest",
+        "testMethod": "testIsTrueForExpressionMessage",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "isTrue",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 35,
+    "numberTestFiles": 18,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  }
 }
