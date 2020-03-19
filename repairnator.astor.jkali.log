@@ -1143,3 +1143,9 @@ RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `new java.io.File((baseDi
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.wix.mysql.config.directories.TargetGeneratedFixedPath line: 31, pointed element: CtForEachImpl
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
 RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.lang.String dir : paths) { 	new java.io.File((baseDir + "/") + dir).mkdirs(); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.wix.mysql.config.extract.PathPrefixingNaming line: 10, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.basePath = basePath ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.wix.mysql.distribution.FileSet line: 23, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return emitter.emit() ` -topatch--> `-` (null) 
