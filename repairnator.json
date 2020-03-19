@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "zalando/zalenium",
-  "failingModule": "/root/workspace/zalando/zalenium/395838341",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.awaitility.core.ConditionTimeoutException"
-  ],
-  "totalNumberRunningTests": 124,
-  "failing-test-cases": [
-    {
-      "className": "de.zalando.ep.zalenium.proxy.BrowserStackRemoteProxyTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testInformationIsRetrievedWhenStoppingSession"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:41:14 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:45:30 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 86305272,
+      "totalMemory": 178917376
+    },
+    "totalDuration": 253,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 80,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          80
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-zalenium-395838341-20180623-163938-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-zalenium-395838341-20180623-163938-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 124,
+      "numberPassing": 123,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.awaitility.core.ConditionTimeoutException",
-          "failureDetail": "Condition with de.zalando.ep.zalenium.proxy.BrowserStackRemoteProxyTest was not fulfilled within 2 seconds.",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "de.zalando.ep.zalenium.proxy.BrowserStackRemoteProxyTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "de.zalando.ep.zalenium.proxy.BrowserStackRemoteProxyTest",
+        "testMethod": "testInformationIsRetrievedWhenStoppingSession",
+        "failureName": "org.awaitility.core.ConditionTimeoutException",
+        "detail": "Condition with de.zalando.ep.zalenium.proxy.BrowserStackRemoteProxyTest was not fulfilled within 2 seconds.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 46,
+    "numberTestFiles": 21,
+    "numberLibrariesFailingModule": 142,
+    "numberLines": 0
+  }
 }
