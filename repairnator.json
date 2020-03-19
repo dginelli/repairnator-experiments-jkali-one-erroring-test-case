@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "hs-web/hsweb-framework",
-  "bugCommit": "https://github.com/hs-web/hsweb-framework/compare/289cdcc5c453...451426311ed7",
-  "failingModule": "/root/workspace/hs-web/hsweb-framework/376859594/hsweb-system/hsweb-system-authorization/hsweb-system-authorization-starter",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException:"
-  ],
-  "totalNumberRunningTests": 38,
-  "failing-test-cases": [
-    {
-      "className": "org.hswebframework.web.authorization.starter.LoginTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.hswebframework.web.authorization.starter.LoginTests#testLogin"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:53:26 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:52:03 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 32512352,
+      "totalMemory": 91049984
+    },
+    "totalDuration": 3512,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 12,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          3,
+          9,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          28
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-hs-web-hsweb-framework-376859594-20180509-163439-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-hs-web-hsweb-framework-376859594-20180509-163439-firstCommit/hsweb-system/hsweb-system-authorization/hsweb-system-authorization-starter",
+    "overallMetrics": {
+      "numberRunning": 38,
+      "numberPassing": 37,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.NullPointerException:",
-          "isError": true
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.hswebframework.web.authorization.starter.LoginTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.hswebframework.web.authorization.starter.LoginTests",
+        "testMethod": "testLogin",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 219,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1007,
+    "numberTestFiles": 112,
+    "numberLibrariesFailingModule": 104,
+    "numberLines": 0
+  }
 }
