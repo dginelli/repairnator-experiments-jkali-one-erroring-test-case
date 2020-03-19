@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "roscopeco/moxy",
-  "bugCommit": "https://github.com/roscopeco/moxy/compare/6f17cb2afe70...ff0c8cf22d5f",
-  "failingModule": "/root/workspace/roscopeco/moxy/391484130",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.UnsupportedOperationException"
-  ],
-  "totalNumberRunningTests": 331,
-  "failing-test-cases": [
-    {
-      "className": "com.roscopeco.moxy.TestMoxyVerifying",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testMoxyMockWithMockAssertMocksAllCalledWorks"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:03:29 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:07:49 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 55568880,
+      "totalMemory": 105635840
+    },
+    "totalDuration": 258,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 204,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          204
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-roscopeco-moxy-391484130-20180613-000144-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-roscopeco-moxy-391484130-20180613-000144-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 331,
+      "numberPassing": 330,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.UnsupportedOperationException",
-          "failureDetail": "Not yet implemented",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.roscopeco.moxy.TestMoxyVerifying",
+        "numberRunning": 21,
+        "numberPassing": 20,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.roscopeco.moxy.TestMoxyVerifying",
+        "testMethod": "testMoxyMockWithMockAssertMocksAllCalledWorks",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "detail": "Not yet implemented",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 65,
+    "numberTestFiles": 48,
+    "numberLibrariesFailingModule": 18,
+    "numberLines": 0
+  }
 }
