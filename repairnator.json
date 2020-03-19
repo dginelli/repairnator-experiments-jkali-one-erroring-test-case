@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "javaee-samples/javaee7-samples",
-  "bugCommit": "https://github.com/javaee-samples/javaee7-samples/compare/c0e248378042...f964125fb0b0",
-  "failingModule": "/root/workspace/javaee-samples/javaee7-samples/237243299/batch/chunk-csv-database",
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "com.sun.jersey.api.container.ContainerException"
-  ],
-  "totalNumberRunningTests": 3,
-  "failing-test-cases": [
-    {
-      "className": "org.javaee7.batch.chunk.csv.database.BatchCSVDatabaseTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.javaee7.batch.chunk.csv.database.BatchCSVDatabaseTest#org.javaee7.batch.chunk.csv.database.BatchCSVDatabaseTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:57:24 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:20:50 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 18172048,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 1401,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 14,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          14,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 54,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          54
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee7-samples-237243299-20170530-075026_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee7-samples-237243299-20170530-075026_bugonly-firstCommit/batch/batchlet-simple",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "com.sun.jersey.api.container.ContainerException",
-          "failureDetail": "exit_code: FAILURE, message: Error occurred during deployment: Exception while preparing the app : Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.4.qualifier): org.eclipse.persistence.exceptions.DatabaseException\nInternal Exception: java.sql.SQLException: Error in allocating a connection. Cause: Connection could not be allocated because: java.net.ConnectException : Error connecting to server localhost on port 1527 with message Connection refused (Connection refused).\nError Code: 0. Please see server.log for more details. [status: CLIENT_ERROR reason: Bad Request]",
-          "isError": true
+          "failureName": "org.jboss.arquillian.container.spi.client.container.LifecycleException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.javaee7.batch.batchlet.simple.MyBatchletTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.javaee7.batch.batchlet.simple.MyBatchletTest",
+        "testMethod": "org.javaee7.batch.batchlet.simple.MyBatchletTest",
+        "failureName": "org.jboss.arquillian.container.spi.client.container.LifecycleException",
+        "detail": "The server is already running! Managed containers does not support connecting to running server instances due to the possible harmful effect of connecting to the wrong server. Please stop server before running or change to another type of container.\nTo disable this check and allow Arquillian to connect to a running server, set allowConnectingToRunningServer to true in the container configuration",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 229,
+    "numberPlugins": 0,
+    "numberSourceFiles": 746,
+    "numberTestFiles": 203,
+    "numberLibrariesFailingModule": 111,
+    "numberLines": 0
+  }
 }
