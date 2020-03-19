@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "openmrs/openmrs-module-htmlformentry",
-  "failingModule": "/root/workspace/openmrs/openmrs-module-htmlformentry/357762555/api-tests",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalArgumentException"
-  ],
-  "totalNumberRunningTests": 536,
-  "failing-test-cases": [
-    {
-      "className": "org.openmrs.module.htmlformentry.RegressionTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.openmrs.module.htmlformentry.RegressionTest#testDatatypes"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:58:56 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:11:03 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 53271968,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 723,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openmrs-openmrs-module-htmlformentry-357762555-20180324-133925-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openmrs-openmrs-module-htmlformentry-357762555-20180324-133925-firstCommit/api-tests",
+    "overallMetrics": {
+      "numberRunning": 532,
+      "numberPassing": 531,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "java.lang.IllegalArgumentException",
-          "failureDetail": "This widget is already registered",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.openmrs.module.htmlformentry.RegressionTest",
+        "numberRunning": 59,
+        "numberPassing": 58,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.openmrs.module.htmlformentry.RegressionTest",
+        "testMethod": "testDatatypes",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "This widget is already registered",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 197,
+    "numberTestFiles": 69,
+    "numberLibrariesFailingModule": 130,
+    "numberLines": 0
+  }
 }
