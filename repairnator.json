@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 2,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "javaparser/javaparser",
-  "failingModule": "/root/workspace/javaparser/javaparser/386794643/javaparser-symbol-solver-testing",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.util.NoSuchElementException"
-  ],
-  "totalNumberRunningTests": 2118,
-  "failing-test-cases": [
-    {
-      "className": "com.github.javaparser.symbolsolver.utils.SymbolSolverCollectionStrategyTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "resolveExpressions"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:57:24 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:46:33 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 23801856,
+      "totalMemory": 152195072
+    },
+    "totalDuration": 6543,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6004,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6004
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-386794643-20180601-201529-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-386794643-20180601-201529-firstCommit/javaparser-symbol-solver-testing",
+    "overallMetrics": {
+      "numberRunning": 2116,
+      "numberPassing": 2115,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
       "failures": [
         {
           "failureName": "java.util.NoSuchElementException",
-          "failureDetail": "No value present",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.javaparser.symbolsolver.utils.SymbolSolverCollectionStrategyTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.javaparser.symbolsolver.utils.SymbolSolverCollectionStrategyTest",
+        "testMethod": "resolveExpressions",
+        "failureName": "java.util.NoSuchElementException",
+        "detail": "No value present",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 610,
+    "numberTestFiles": 245,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  }
 }
