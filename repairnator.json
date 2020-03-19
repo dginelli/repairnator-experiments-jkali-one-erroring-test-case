@@ -1,35 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "totalMemory": 191889408,
-  "workspace": "./workspace",
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "windy1/google-places-api-java",
-  "freeMemory": 151941064,
-  "failingModule": "/root/workspace/windy1/google-places-api-java/228028206",
-  "buildid": 228028206,
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "se.walkercrou.places.GooglePlacesTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "se.walkercrou.places.GooglePlacesTest#testGetNearbyPlacesRankedByDistance"
-      ],
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:40:23 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:42:18 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 35928752,
+      "totalMemory": 76091392
+    },
+    "totalDuration": 112,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-windy1-google-places-api-java-228028206-20170502-185550_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-windy1-google-places-api-java-228028206-20170502-185550_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ],
-  "nbCPU": 4
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "se.walkercrou.places.GooglePlacesTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "se.walkercrou.places.GooglePlacesTest",
+        "testMethod": "testGetNearbyPlacesRankedByDistance",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 25,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  }
 }
