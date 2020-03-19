@@ -1,0 +1,1205 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ScaleCube
+[INFO] ScaleCube/Services-api
+[INFO] ScaleCube/services-transport
+[INFO] Scalecube/RSocket-Transport
+[INFO] ScaleCube/Services
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ScaleCube 2.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom (7 KB at 4.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom (10 KB at 31.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/24/maven-parent-24.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/24/maven-parent-24.pom (37 KB at 88.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/14/apache-14.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/14/apache-14.pom (15 KB at 49.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar (33 KB at 89.8 KB/sec)
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ scalecube-services-parent ---
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom (2 KB at 4.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven/2.2.1/maven-2.2.1.pom (22 KB at 72.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/11/maven-parent-11.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/11/maven-parent-11.pom (32 KB at 96.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/5/apache-5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/5/apache-5.pom (4 KB at 13.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom (3 KB at 8.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom (3 KB at 7.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom (4 KB at 11.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom (7 KB at 22.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom (12 KB at 40.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom (889 B at 3.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom (6 KB at 20.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom (4 KB at 12.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom (492 B at 1.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom (6 KB at 19.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/junit/junit/3.8.1/junit-3.8.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/junit/junit/3.8.1/junit-3.8.1.pom (998 B at 3.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom (6 KB at 21.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom (4 KB at 10.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom (3 KB at 7.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom (4 KB at 10.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom (2 KB at 6.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom (2 KB at 5.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom (880 B at 3.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom (2 KB at 6.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-codec/commons-codec/1.6/commons-codec-1.6.pom (11 KB at 34.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/commons/commons-parent/22/commons-parent-22.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/commons/commons-parent/22/commons-parent-22.pom (41 KB at 119.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/9/apache-9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/9/apache-9.pom (15 KB at 46.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom (4 KB at 13.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom (7 KB at 21.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/23/maven-parent-23.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/23/maven-parent-23.pom (33 KB at 105.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/13/apache-13.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/13/apache-13.pom (14 KB at 42.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom (965 B at 3.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom (4 KB at 11.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom (20 KB at 64.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/spice/spice-parent/17/spice-parent-17.pom (7 KB at 23.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 KB at 45.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar (13 KB at 40.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar (35 KB at 98.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar (48 KB at 134.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/junit/junit/3.8.1/junit-3.8.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar (30 KB at 78.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar (153 KB at 261.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar (50 KB at 73.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar (37 KB at 53.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar (190 KB at 250.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/junit/junit/3.8.1/junit-3.8.1.jar (119 KB at 132.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar (26 KB at 26.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar (86 KB at 87.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar (66 KB at 59.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar (324 KB at 274.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar (152 KB at 111.3 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar (79 KB at 56.1 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar (32 KB at 21.9 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-codec/commons-codec/1.6/commons-codec-1.6.jar (228 KB at 147.4 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar (234 KB at 147.7 KB/sec)
+[INFO] Installing /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/pom.xml to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/.m2/io/scalecube/scalecube-services-parent/2.0.1-SNAPSHOT/scalecube-services-parent-2.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ScaleCube/Services-api 2.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom (8 KB at 28.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom (9 KB at 32.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/22/maven-parent-22.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/22/maven-parent-22.pom (30 KB at 107.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/11/apache-11.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/11/apache-11.pom (15 KB at 53.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar (29 KB at 99.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.pom (11 KB at 37.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom (12 KB at 39.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/26/maven-parent-26.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/26/maven-parent-26.pom (40 KB at 142.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/16/apache-16.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/16/apache-16.pom (16 KB at 54.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.jar (46 KB at 162.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.pom (5 KB at 18.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/surefire/2.17/surefire-2.17.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/surefire/2.17/surefire-2.17.pom (17 KB at 59.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.jar (34 KB at 100.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom (6 KB at 20.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom (13 KB at 45.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/21/maven-parent-21.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/21/maven-parent-21.pom (27 KB at 94.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/10/apache-10.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/10/apache-10.pom (15 KB at 53.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.jar (34 KB at 118.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-cluster/1.0.9/scalecube-cluster-1.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-cluster/1.0.9/scalecube-cluster-1.0.9.pom (997 B at 3.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-parent/1.0.9/scalecube-parent-1.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-parent/1.0.9/scalecube-parent-1.0.9.pom (14 KB at 49.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-transport/1.0.9/scalecube-transport-1.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-transport/1.0.9/scalecube-transport-1.0.9.pom (4 KB at 11.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-utils/1.0.9/scalecube-utils-1.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-utils/1.0.9/scalecube-utils-1.0.9.pom (2 KB at 3.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/guava/guava/19.0/guava-19.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/guava/guava/19.0/guava-19.0.pom (7 KB at 24.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom (10 KB at 35.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (5 KB at 16.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.pom (2 KB at 4.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-buffer/4.1.21.Final/netty-buffer-4.1.21.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-buffer/4.1.21.Final/netty-buffer-4.1.21.Final.pom (2 KB at 5.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-parent/4.1.21.Final/netty-parent-4.1.21.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-parent/4.1.21.Final/netty-parent-4.1.21.Final.pom (51 KB at 181.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/sonatype/oss/oss-parent/9/oss-parent-9.pom (7 KB at 22.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-common/4.1.21.Final/netty-common-4.1.21.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-common/4.1.21.Final/netty-common-4.1.21.Final.pom (9 KB at 30.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-codec/4.1.21.Final/netty-codec-4.1.21.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-codec/4.1.21.Final/netty-codec-4.1.21.Final.pom (4 KB at 11.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport/4.1.21.Final/netty-transport-4.1.21.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport/4.1.21.Final/netty-transport-4.1.21.Final.pom (2 KB at 6.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-resolver/4.1.21.Final/netty-resolver-4.1.21.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-resolver/4.1.21.Final/netty-resolver-4.1.21.Final.pom (2 KB at 5.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-handler/4.1.21.Final/netty-handler-4.1.21.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-handler/4.1.21.Final/netty-handler-4.1.21.Final.pom (3 KB at 10.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-epoll/4.1.21.Final/netty-transport-native-epoll-4.1.21.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-epoll/4.1.21.Final/netty-transport-native-epoll-4.1.21.Final.pom (15 KB at 53.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-unix-common/4.1.21.Final/netty-transport-native-unix-common-4.1.21.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-unix-common/4.1.21.Final/netty-transport-native-unix-common-4.1.21.Final.pom (15 KB at 53.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/reactivex/rxjava/1.3.0/rxjava-1.3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/reactivex/rxjava/1.3.0/rxjava-1.3.0.pom (3 KB at 8.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom (3 KB at 9.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-parent/1.7.7/slf4j-parent-1.7.7.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-parent/1.7.7/slf4j-parent-1.7.7.pom (12 KB at 40.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-api/1.6.0/protostuff-api-1.6.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-api/1.6.0/protostuff-api-1.6.0.pom (681 B at 2.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff/1.6.0/protostuff-1.6.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff/1.6.0/protostuff-1.6.0.pom (15 KB at 51.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-runtime/1.6.0/protostuff-runtime-1.6.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-runtime/1.6.0/protostuff-runtime-1.6.0.pom (2 KB at 7.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-collectionschema/1.6.0/protostuff-collectionschema-1.6.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-collectionschema/1.6.0/protostuff-collectionschema-1.6.0.pom (2 KB at 4.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-core/1.6.0/protostuff-core-1.6.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-core/1.6.0/protostuff-core-1.6.0.pom (860 B at 2.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/protobuf/protobuf-java/3.4.0/protobuf-java-3.4.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/protobuf/protobuf-java/3.4.0/protobuf-java-3.4.0.pom (5 KB at 16.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/protobuf/protobuf-parent/3.4.0/protobuf-parent-3.4.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/protobuf/protobuf-parent/3.4.0/protobuf-parent-3.4.0.pom (7 KB at 24.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/google/1/google-1.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/google/1/google-1.pom (2 KB at 5.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/projectreactor/reactor-core/3.1.6.RELEASE/reactor-core-3.1.6.RELEASE.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/projectreactor/reactor-core/3.1.6.RELEASE/reactor-core-3.1.6.RELEASE.pom (3 KB at 9.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom (2 KB at 4.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-slf4j-impl/2.6.2/log4j-slf4j-impl-2.6.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-slf4j-impl/2.6.2/log4j-slf4j-impl-2.6.2.pom (9 KB at 30.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j/2.6.2/log4j-2.6.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j/2.6.2/log4j-2.6.2.pom (52 KB at 180.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom (3 KB at 9.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom (14 KB at 47.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.pom (9 KB at 31.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.pom (18 KB at 63.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-runtime-registry/1.6.0/protostuff-runtime-registry-1.6.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-runtime-registry/1.6.0/protostuff-runtime-registry-1.6.0.pom (2 KB at 6.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-cluster/1.0.9/scalecube-cluster-1.0.9.jar
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-transport/1.0.9/scalecube-transport-1.0.9.jar
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-codec/4.1.21.Final/netty-codec-4.1.21.Final.jar
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-buffer/4.1.21.Final/netty-buffer-4.1.21.Final.jar
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-common/4.1.21.Final/netty-common-4.1.21.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-cluster/1.0.9/scalecube-cluster-1.0.9.jar (53 KB at 177.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-handler/4.1.21.Final/netty-handler-4.1.21.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-transport/1.0.9/scalecube-transport-1.0.9.jar (40 KB at 120.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport/4.1.21.Final/netty-transport-4.1.21.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-common/4.1.21.Final/netty-common-4.1.21.Final.jar (563 KB at 1181.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-resolver/4.1.21.Final/netty-resolver-4.1.21.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-buffer/4.1.21.Final/netty-buffer-4.1.21.Final.jar (264 KB at 399.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-epoll/4.1.21.Final/netty-transport-native-epoll-4.1.21.Final-linux-x86_64.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-handler/4.1.21.Final/netty-handler-4.1.21.Final.jar (366 KB at 525.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-unix-common/4.1.21.Final/netty-transport-native-unix-common-4.1.21.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-resolver/4.1.21.Final/netty-resolver-4.1.21.Final.jar (32 KB at 42.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/reactivex/rxjava/1.3.0/rxjava-1.3.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-codec/4.1.21.Final/netty-codec-4.1.21.Final.jar (309 KB at 388.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/protobuf/protobuf-java/3.4.0/protobuf-java-3.4.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport/4.1.21.Final/netty-transport-4.1.21.Final.jar (446 KB at 469.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-utils/1.0.9/scalecube-utils-1.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-unix-common/4.1.21.Final/netty-transport-native-unix-common-4.1.21.Final.jar (31 KB at 31.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/guava/guava/19.0/guava-19.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-epoll/4.1.21.Final/netty-transport-native-epoll-4.1.21.Final-linux-x86_64.jar (138 KB at 130.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-utils/1.0.9/scalecube-utils-1.0.9.jar (8 KB at 6.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/projectreactor/reactor-core/3.1.6.RELEASE/reactor-core-3.1.6.RELEASE.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.jar (33 KB at 24.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/protobuf/protobuf-java/3.4.0/protobuf-java-3.4.0.jar (1352 KB at 920.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/reactivex/rxjava/1.3.0/rxjava-1.3.0.jar (1129 KB at 735.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-slf4j-impl/2.6.2/log4j-slf4j-impl-2.6.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar (3 KB at 1.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/guava/guava/19.0/guava-19.0.jar (2255 KB at 1355.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar (29 KB at 16.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-api/1.6.0/protostuff-api-1.6.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-slf4j-impl/2.6.2/log4j-slf4j-impl-2.6.2.jar (23 KB at 12.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-runtime/1.6.0/protostuff-runtime-1.6.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-api/1.6.0/protostuff-api-1.6.0.jar (58 KB at 28.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-core/1.6.0/protostuff-core-1.6.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/projectreactor/reactor-core/3.1.6.RELEASE/reactor-core-3.1.6.RELEASE.jar (1299 KB at 614.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-runtime-registry/1.6.0/protostuff-runtime-registry-1.6.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.jar (195 KB at 90.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-collectionschema/1.6.0/protostuff-collectionschema-1.6.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-runtime/1.6.0/protostuff-runtime-1.6.0.jar (424 KB at 188.7 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.jar (1165 KB at 486.4 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-runtime-registry/1.6.0/protostuff-runtime-registry-1.6.0.jar (39 KB at 15.7 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-collectionschema/1.6.0/protostuff-collectionschema-1.6.0.jar (52 KB at 20.8 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/protostuff/protostuff-core/1.6.0/protostuff-core-1.6.0.jar (64 KB at 25.3 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ scalecube-services-api ---
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom (2 KB at 5.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven/2.0.6/maven-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven/2.0.6/maven-2.0.6.pom (9 KB at 31.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/5/maven-parent-5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/5/maven-parent-5.pom (15 KB at 53.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/3/apache-3.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/3/apache-3.pom (4 KB at 11.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom (3 KB at 9.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom (2 KB at 7.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom (3 KB at 10.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom (2 KB at 6.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom (9 KB at 32.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom (2 KB at 7.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom (3 KB at 9.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom (2 KB at 6.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom (2 KB at 5.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom (2 KB at 7.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom (7 KB at 22.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom (2 KB at 6.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.pom (2 KB at 6.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting/2.0.6/maven-reporting-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting/2.0.6/maven-reporting-2.0.6.pom (2 KB at 5.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.pom (424 B at 1.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia/1.0-alpha-7/doxia-1.0-alpha-7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia/1.0-alpha-7/doxia-1.0-alpha-7.pom (4 KB at 13.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom (2 KB at 6.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-cli/commons-cli/1.0/commons-cli-1.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-cli/commons-cli/1.0/commons-cli-1.0.pom (3 KB at 7.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom (2 KB at 7.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom (7 KB at 20.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom (2 KB at 4.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/classworlds/classworlds/1.1/classworlds-1.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/classworlds/classworlds/1.1/classworlds-1.1.pom (4 KB at 11.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom (4 KB at 12.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom (17 KB at 57.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom (6 KB at 19.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom (9 KB at 29.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom (889 B at 3.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom (3 KB at 10.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/spice/spice-parent/10/spice-parent-10.pom (3 KB at 10.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/forge/forge-parent/3/forge-parent-3.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/forge/forge-parent/3/forge-parent-3.pom (5 KB at 17.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom (8 KB at 27.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom (890 B at 3.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom (3 KB at 10.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom (16 KB at 53.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar (56 KB at 188.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 KB at 42.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar (29 KB at 95.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar (35 KB at 108.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar (114 KB at 211.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar (10 KB at 16.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar (6 KB at 9.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-cli/commons-cli/1.0/commons-cli-1.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar (21 KB at 34.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar (149 KB at 214.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar (24 KB at 29.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/classworlds/classworlds/1.1/classworlds-1.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar (14 KB at 15.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-cli/commons-cli/1.0/commons-cli-1.0.jar (30 KB at 33.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar (37 KB at 40.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar (14 KB at 13.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/classworlds/classworlds/1.1/classworlds-1.1.jar (37 KB at 34.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar (48 KB at 40.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar (11 KB at 8.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar (86 KB at 67.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar (43 KB at 28.1 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar (7 KB at 4.4 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar (60 KB at 38.6 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar (85 KB at 53.8 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar (218 KB at 133.2 KB/sec)
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ scalecube-services-api ---
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom (12 KB at 41.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom (2 KB at 7.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom (2 KB at 6.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom (8 KB at 28.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom (3 KB at 10.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom (3 KB at 7.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom (2 KB at 6.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom (3 KB at 7.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom (2 KB at 4.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom (3 KB at 10.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (7 KB at 24.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (9 KB at 29.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom (6 KB at 18.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom (3 KB at 7.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.pom (4 KB at 9.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom (2 KB at 6.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom (2 KB at 5.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom (2 KB at 7.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom (15 KB at 54.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom (2 KB at 5.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom (4 KB at 12.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom (2 KB at 6.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom (3 KB at 8.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom (4 KB at 11.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom (8 KB at 27.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-cli/commons-cli/1.2/commons-cli-1.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-cli/commons-cli/1.2/commons-cli-1.2.pom (8 KB at 27.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/commons/commons-parent/11/commons-parent-11.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/commons/commons-parent/11/commons-parent-11.pom (25 KB at 80.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/4/apache-4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/4/apache-4.pom (5 KB at 14.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.pom (5 KB at 17.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-components/20/maven-shared-components-20.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-components/20/maven-shared-components-20.pom (5 KB at 17.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom (5 KB at 16.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom (4 KB at 14.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom (5 KB at 16.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom (815 B at 2.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom (5 KB at 15.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom (17 KB at 55.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-api/2.5/plexus-compiler-api-2.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-api/2.5/plexus-compiler-api-2.5.pom (865 B at 3.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler/2.5/plexus-compiler-2.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler/2.5/plexus-compiler-2.5.pom (6 KB at 18.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom (3 KB at 10.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0.10/plexus-utils-3.0.10.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0.10/plexus-utils-3.0.10.pom (4 KB at 11.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/3.3/plexus-3.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/3.3/plexus-3.3.pom (20 KB at 66.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-manager/2.5/plexus-compiler-manager-2.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-manager/2.5/plexus-compiler-manager-2.5.pom (690 B at 2.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-javac/2.5/plexus-compiler-javac-2.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-javac/2.5/plexus-compiler-javac-2.5.pom (769 B at 2.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compilers/2.5/plexus-compilers-2.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compilers/2.5/plexus-compilers-2.5.pom (2 KB at 4.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom (3 KB at 9.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom (4 KB at 12.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom (3 KB at 10.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/xbean/xbean/3.4/xbean-3.4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/xbean/xbean/3.4/xbean-3.4.pom (18 KB at 64.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/log4j/log4j/1.2.12/log4j-1.2.12.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/log4j/log4j/1.2.12/log4j-1.2.12.pom (145 B at 0.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom (6 KB at 19.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/com/google/collections/google-collections/1.0/google-collections-1.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/com/google/collections/google-collections/1.0/google-collections-1.0.pom (3 KB at 8.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/junit/junit/3.8.2/junit-3.8.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/junit/junit/3.8.2/junit-3.8.2.pom (747 B at 2.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar (22 KB at 71.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar (9 KB at 28.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar (22 KB at 71.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar (174 KB at 412.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar (223 KB at 504.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar (17 KB at 28.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar (13 KB at 22.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar (39 KB at 65.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar (28 KB at 40.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar (11 KB at 14.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar (14 KB at 15.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-api/2.5/plexus-compiler-api-2.5.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar (37 KB at 41.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-manager/2.5/plexus-compiler-manager-2.5.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar (14 KB at 13.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-javac/2.5/plexus-compiler-javac-2.5.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar (5 KB at 4.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar (167 KB at 168.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-api/2.5/plexus-compiler-api-2.5.jar (25 KB at 22.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-manager/2.5/plexus-compiler-manager-2.5.jar (5 KB at 3.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/log4j/log4j/1.2.12/log4j-1.2.12.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-javac/2.5/plexus-compiler-javac-2.5.jar (19 KB at 15.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar (46 KB at 34.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar (44 KB at 29.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/junit/junit/3.8.2/junit-3.8.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar (131 KB at 85.6 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/log4j/log4j/1.2.12/log4j-1.2.12.jar (350 KB at 223.6 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar (212 KB at 131.7 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/junit/junit/3.8.2/junit-3.8.2.jar (118 KB at 62.1 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/com/google/collections/google-collections/1.0/google-collections-1.0.jar (625 KB at 329.1 KB/sec)
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-api/target/classes
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-api/src/main/java/io/scalecube/services/api/ServiceMessage.java:[132,16] unchecked cast
+  required: T
+  found:    java.lang.Object
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ scalecube-services-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ scalecube-services-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ scalecube-services-api ---
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom (2 KB at 5.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven/2.0.9/maven-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven/2.0.9/maven-2.0.9.pom (19 KB at 65.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/8/maven-parent-8.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/8/maven-parent-8.pom (24 KB at 85.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.pom (6 KB at 21.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.pom (2 KB at 5.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugin-tools/maven-plugin-tools/3.2/maven-plugin-tools-3.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugin-tools/maven-plugin-tools/3.2/maven-plugin-tools-3.2.pom (17 KB at 56.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom (2 KB at 5.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom (3 KB at 8.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.pom (3 KB at 8.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.pom (3 KB at 10.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom (3 KB at 7.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom (3 KB at 9.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom (3 KB at 7.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom (4 KB at 11.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom (3 KB at 7.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom (3 KB at 9.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom (2 KB at 6.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom (2 KB at 7.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom (8 KB at 27.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom (2 KB at 7.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.pom (2 KB at 6.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting/2.0.9/maven-reporting-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting/2.0.9/maven-reporting-2.0.9.pom (2 KB at 5.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom (2 KB at 6.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom (2 KB at 4.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom (4 KB at 12.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom (17 KB at 56.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.jar (13 KB at 42.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.jar (39 KB at 118.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar (206 KB at 489.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar (87 KB at 192.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.jar (260 KB at 541.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar (37 KB at 61.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar (119 KB at 159.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar (57 KB at 74.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar (35 KB at 45.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar (48 KB at 57.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar (29 KB at 33.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar (21 KB at 19.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar (10 KB at 9.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar (24 KB at 21.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar (86 KB at 73.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.jar (156 KB at 132.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar (14 KB at 10.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.jar (11 KB at 7.3 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar (38 KB at 25.6 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.jar (144 KB at 90.7 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar (15 KB at 9.1 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (309 KB at 171.7 KB/sec)
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ scalecube-services-api ---
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom (5 KB at 16.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom (3 KB at 10.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (4 KB at 14.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/spice/spice-parent/16/spice-parent-16.pom (9 KB at 30.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (9 KB at 30.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom (2 KB at 6.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom (3 KB at 9.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom (19 KB at 65.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom (1018 B at 3.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-lang/commons-lang/2.1/commons-lang-2.1.pom (10 KB at 36.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar (57 KB at 199.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.jar (60 KB at 195.6 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar (22 KB at 64.6 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar (181 KB at 403.8 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-lang/commons-lang/2.1/commons-lang-2.1.jar (203 KB at 463.1 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (221 KB at 312.7 KB/sec)
+[INFO] Building jar: /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-api/target/scalecube-services-api-2.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ scalecube-services-api ---
+[INFO] Installing /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-api/target/scalecube-services-api-2.0.1-SNAPSHOT.jar to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/.m2/io/scalecube/scalecube-services-api/2.0.1-SNAPSHOT/scalecube-services-api-2.0.1-SNAPSHOT.jar
+[INFO] Installing /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-api/pom.xml to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/.m2/io/scalecube/scalecube-services-api/2.0.1-SNAPSHOT/scalecube-services-api-2.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ScaleCube/services-transport 2.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-compiler-plugin/3.7.0/maven-compiler-plugin-3.7.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-compiler-plugin/3.7.0/maven-compiler-plugin-3.7.0.pom (11 KB at 37.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-plugins/30/maven-plugins-30.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-plugins/30/maven-plugins-30.pom (10 KB at 36.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/30/maven-parent-30.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/30/maven-parent-30.pom (42 KB at 149.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/18/apache-18.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/18/apache-18.pom (16 KB at 56.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-compiler-plugin/3.7.0/maven-compiler-plugin-3.7.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/plugins/maven-compiler-plugin/3.7.0/maven-compiler-plugin-3.7.0.jar (57 KB at 206.0 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ scalecube-services-transport ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-transport/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ scalecube-services-transport ---
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom (3 KB at 8.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven/3.0/maven-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven/3.0/maven-3.0.pom (22 KB at 79.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/15/maven-parent-15.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-parent/15/maven-parent-15.pom (24 KB at 86.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/6/apache-6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/apache/6/apache-6.pom (13 KB at 45.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/3.0/maven-model-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/3.0/maven-model-3.0.pom (4 KB at 13.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom (4 KB at 12.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom (2 KB at 6.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom (6 KB at 17.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom (4 KB at 11.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom (3 KB at 9.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom (2 KB at 4.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom (8 KB at 28.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/forge/forge-parent/6/forge-parent-6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/forge/forge-parent/6/forge-parent-6.pom (11 KB at 38.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom (748 B at 2.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom (4 KB at 13.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom (22 KB at 77.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom (4 KB at 14.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom (6 KB at 19.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom (11 KB at 40.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/3.0/maven-core-3.0.pom (7 KB at 23.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom (2 KB at 6.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom (3 KB at 7.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom (910 B at 3.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom (6 KB at 18.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom (2 KB at 6.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom (3 KB at 8.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom (3 KB at 8.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom (2 KB at 6.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom (8 KB at 27.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom (3 KB at 7.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom (4 KB at 13.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom (2 KB at 6.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom (5 KB at 17.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom (5 KB at 16.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-io/commons-io/2.5/commons-io-2.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-io/commons-io/2.5/commons-io-2.5.pom (13 KB at 47.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/commons/commons-parent/39/commons-parent-39.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/commons/commons-parent/39/commons-parent-39.pom (61 KB at 220.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-java/0.9.2/plexus-java-0.9.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-java/0.9.2/plexus-java-0.9.2.pom (3 KB at 8.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-languages/0.9.2/plexus-languages-0.9.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-languages/0.9.2/plexus-languages-0.9.2.pom (3 KB at 8.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/4.0/plexus-4.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus/4.0/plexus-4.0.pom (21 KB at 78.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/ow2/asm/asm/6.0_BETA/asm-6.0_BETA.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/ow2/asm/asm/6.0_BETA/asm-6.0_BETA.pom (2 KB at 6.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/ow2/asm/asm-parent/6.0_BETA/asm-parent-6.0_BETA.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/ow2/asm/asm-parent/6.0_BETA/asm-parent-6.0_BETA.pom (6 KB at 20.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/ow2/ow2/1.3/ow2-1.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/ow2/ow2/1.3/ow2-1.3.pom (9 KB at 31.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.pom (16 KB at 56.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-api/2.8.2/plexus-compiler-api-2.8.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-api/2.8.2/plexus-compiler-api-2.8.2.pom (867 B at 3.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler/2.8.2/plexus-compiler-2.8.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler/2.8.2/plexus-compiler-2.8.2.pom (5 KB at 17.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom (3 KB at 8.2 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom (4 KB at 13.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-manager/2.8.2/plexus-compiler-manager-2.8.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-manager/2.8.2/plexus-compiler-manager-2.8.2.pom (692 B at 2.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-javac/2.8.2/plexus-compiler-javac-2.8.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-javac/2.8.2/plexus-compiler-javac-2.8.2.pom (771 B at 2.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compilers/2.8.2/plexus-compilers-2.8.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compilers/2.8.2/plexus-compilers-2.8.2.pom (2 KB at 4.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/3.0/maven-model-3.0.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar (48 KB at 157.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar (150 KB at 345.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model/3.0/maven-model-3.0.jar (161 KB at 351.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/3.0/maven-core-3.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar (51 KB at 93.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar (197 KB at 335.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar (461 KB at 621.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar (46 KB at 56.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar (37 KB at 44.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-core/3.0/maven-core-3.0.jar (515 KB at 606.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar (217 KB at 242.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar (30 KB at 28.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar (50 KB at 44.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar (14 KB at 11.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar (145 KB at 120.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar (104 KB at 84.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar (73 KB at 51.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar (60 KB at 41.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/commons-io/commons-io/2.5/commons-io-2.5.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar (46 KB at 30.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-java/0.9.2/plexus-java-0.9.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar (5 KB at 2.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/ow2/asm/asm/6.0_BETA/asm-6.0_BETA.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar (106 KB at 69.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-java/0.9.2/plexus-java-0.9.2.jar (31 KB at 17.4 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-api/2.8.2/plexus-compiler-api-2.8.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/ow2/asm/asm/6.0_BETA/asm-6.0_BETA.jar (56 KB at 30.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-manager/2.8.2/plexus-compiler-manager-2.8.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar (160 KB at 87.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-javac/2.8.2/plexus-compiler-javac-2.8.2.jar
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/commons-io/commons-io/2.5/commons-io-2.5.jar (204 KB at 108.5 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-api/2.8.2/plexus-compiler-api-2.8.2.jar (26 KB at 12.7 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.jar (308 KB at 152.0 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-manager/2.8.2/plexus-compiler-manager-2.8.2.jar (5 KB at 2.2 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/artifactory/plugins-release/org/codehaus/plexus/plexus-compiler-javac/2.8.2/plexus-compiler-javac-2.8.2.jar (20 KB at 9.3 KB/sec)
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-transport/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ scalecube-services-transport ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-transport/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ scalecube-services-transport ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ scalecube-services-transport ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ scalecube-services-transport ---
+[INFO] Building jar: /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-transport/target/scalecube-services-transport-2.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ scalecube-services-transport ---
+[INFO] Installing /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-transport/target/scalecube-services-transport-2.0.1-SNAPSHOT.jar to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/.m2/io/scalecube/scalecube-services-transport/2.0.1-SNAPSHOT/scalecube-services-transport-2.0.1-SNAPSHOT.jar
+[INFO] Installing /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services-transport/pom.xml to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/.m2/io/scalecube/scalecube-services-transport/2.0.1-SNAPSHOT/scalecube-services-transport-2.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Scalecube/RSocket-Transport 2.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: http://jcenter.bintray.com/io/rsocket/rsocket-core/0.10.3/rsocket-core-0.10.3.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/rsocket/rsocket-core/0.10.3/rsocket-core-0.10.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/rsocket/rsocket-core/0.10.3/rsocket-core-0.10.3.pom (2 KB at 4.1 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/projectreactor/reactor-core/3.1.3.RELEASE/reactor-core-3.1.3.RELEASE.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/projectreactor/reactor-core/3.1.3.RELEASE/reactor-core-3.1.3.RELEASE.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/projectreactor/reactor-core/3.1.3.RELEASE/reactor-core-3.1.3.RELEASE.pom (3 KB at 10.2 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-buffer/4.1.20.Final/netty-buffer-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-buffer/4.1.20.Final/netty-buffer-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-buffer/4.1.20.Final/netty-buffer-4.1.20.Final.pom (2 KB at 5.6 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-parent/4.1.20.Final/netty-parent-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-parent/4.1.20.Final/netty-parent-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-parent/4.1.20.Final/netty-parent-4.1.20.Final.pom (51 KB at 184.0 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-common/4.1.20.Final/netty-common-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-common/4.1.20.Final/netty-common-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-common/4.1.20.Final/netty-common-4.1.20.Final.pom (9 KB at 30.0 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom (4 KB at 13.9 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom (14 KB at 46.1 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom (5 KB at 15.2 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/rsocket/rsocket-transport-netty/0.10.3/rsocket-transport-netty-0.10.3.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/rsocket/rsocket-transport-netty/0.10.3/rsocket-transport-netty-0.10.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/rsocket/rsocket-transport-netty/0.10.3/rsocket-transport-netty-0.10.3.pom (2 KB at 5.5 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/projectreactor/ipc/reactor-netty/0.7.3.RELEASE/reactor-netty-0.7.3.RELEASE.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/projectreactor/ipc/reactor-netty/0.7.3.RELEASE/reactor-netty-0.7.3.RELEASE.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/projectreactor/ipc/reactor-netty/0.7.3.RELEASE/reactor-netty-0.7.3.RELEASE.pom (5 KB at 15.7 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-codec-http/4.1.20.Final/netty-codec-http-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-codec-http/4.1.20.Final/netty-codec-http-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-codec-http/4.1.20.Final/netty-codec-http-4.1.20.Final.pom (2 KB at 6.9 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-codec/4.1.20.Final/netty-codec-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-codec/4.1.20.Final/netty-codec-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-codec/4.1.20.Final/netty-codec-4.1.20.Final.pom (4 KB at 11.7 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-transport/4.1.20.Final/netty-transport-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport/4.1.20.Final/netty-transport-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport/4.1.20.Final/netty-transport-4.1.20.Final.pom (2 KB at 6.4 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-resolver/4.1.20.Final/netty-resolver-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-resolver/4.1.20.Final/netty-resolver-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-resolver/4.1.20.Final/netty-resolver-4.1.20.Final.pom (2 KB at 5.7 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-handler/4.1.20.Final/netty-handler-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-handler/4.1.20.Final/netty-handler-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-handler/4.1.20.Final/netty-handler-4.1.20.Final.pom (3 KB at 10.5 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-handler-proxy/4.1.20.Final/netty-handler-proxy-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-handler-proxy/4.1.20.Final/netty-handler-proxy-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-handler-proxy/4.1.20.Final/netty-handler-proxy-4.1.20.Final.pom (3 KB at 8.1 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-codec-socks/4.1.20.Final/netty-codec-socks-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-codec-socks/4.1.20.Final/netty-codec-socks-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-codec-socks/4.1.20.Final/netty-codec-socks-4.1.20.Final.pom (2 KB at 5.3 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-transport-native-epoll/4.1.20.Final/netty-transport-native-epoll-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-epoll/4.1.20.Final/netty-transport-native-epoll-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-epoll/4.1.20.Final/netty-transport-native-epoll-4.1.20.Final.pom (15 KB at 54.6 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-transport-native-unix-common/4.1.20.Final/netty-transport-native-unix-common-4.1.20.Final.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-unix-common/4.1.20.Final/netty-transport-native-unix-common-4.1.20.Final.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-unix-common/4.1.20.Final/netty-transport-native-unix-common-4.1.20.Final.pom (15 KB at 54.9 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0.pom (6 KB at 19.7 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/jackson-parent/2.9.0/jackson-parent-2.9.0.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/jackson-parent/2.9.0/jackson-parent-2.9.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/jackson-parent/2.9.0/jackson-parent-2.9.0.pom (8 KB at 27.4 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/oss-parent/28/oss-parent-28.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/oss-parent/28/oss-parent-28.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/oss-parent/28/oss-parent-28.pom (20 KB at 67.5 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-databind/2.9.0/jackson-databind-2.9.0.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-databind/2.9.0/jackson-databind-2.9.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-databind/2.9.0/jackson-databind-2.9.0.pom (6 KB at 20.4 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/jackson-bom/2.9.0/jackson-bom-2.9.0.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/jackson-bom/2.9.0/jackson-bom-2.9.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/jackson-bom/2.9.0/jackson-bom-2.9.0.pom (12 KB at 41.5 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom (2 KB at 7.0 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.0/jackson-datatype-jsr310-2.9.0.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.0/jackson-datatype-jsr310-2.9.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.0/jackson-datatype-jsr310-2.9.0.pom (5 KB at 15.1 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/module/jackson-modules-java8/2.9.0/jackson-modules-java8-2.9.0.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/module/jackson-modules-java8/2.9.0/jackson-modules-java8-2.9.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/module/jackson-modules-java8/2.9.0/jackson-modules-java8-2.9.0.pom (3 KB at 9.8 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/scalecube/scalecube-testlib/1.0.9/scalecube-testlib-1.0.9.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-testlib/1.0.9/scalecube-testlib-1.0.9.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-testlib/1.0.9/scalecube-testlib-1.0.9.pom (2 KB at 5.7 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/junit/junit/4.11/junit-4.11.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/junit/junit/4.11/junit-4.11.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/junit/junit/4.11/junit-4.11.pom (3 KB at 8.5 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 2.8 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom (2 KB at 7.1 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.pom (2 KB at 4.8 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom (481 B at 1.7 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom (6 KB at 21.3 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/org/objenesis/objenesis/1.0/objenesis-1.0.pom
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/objenesis/objenesis/1.0/objenesis-1.0.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/objenesis/objenesis/1.0/objenesis-1.0.pom (853 B at 3.1 KB/sec)
+[INFO] Downloading: http://jcenter.bintray.com/io/rsocket/rsocket-core/0.10.3/rsocket-core-0.10.3.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-buffer/4.1.20.Final/netty-buffer-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-common/4.1.20.Final/netty-common-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/rsocket/rsocket-transport-netty/0.10.3/rsocket-transport-netty-0.10.3.jar
+[INFO] Downloading: http://jcenter.bintray.com/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/projectreactor/ipc/reactor-netty/0.7.3.RELEASE/reactor-netty-0.7.3.RELEASE.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-codec-http/4.1.20.Final/netty-codec-http-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-codec/4.1.20.Final/netty-codec-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-handler/4.1.20.Final/netty-handler-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-transport/4.1.20.Final/netty-transport-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-resolver/4.1.20.Final/netty-resolver-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-handler-proxy/4.1.20.Final/netty-handler-proxy-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-codec-socks/4.1.20.Final/netty-codec-socks-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-transport-native-epoll/4.1.20.Final/netty-transport-native-epoll-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/netty/netty-transport-native-unix-common/4.1.20.Final/netty-transport-native-unix-common-4.1.20.Final.jar
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0.jar
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-databind/2.9.0/jackson-databind-2.9.0.jar
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar
+[INFO] Downloading: http://jcenter.bintray.com/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.0/jackson-datatype-jsr310-2.9.0.jar
+[INFO] Downloading: http://jcenter.bintray.com/io/scalecube/scalecube-testlib/1.0.9/scalecube-testlib-1.0.9.jar
+[INFO] Downloading: http://jcenter.bintray.com/junit/junit/4.11/junit-4.11.jar
+[INFO] Downloading: http://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[INFO] Downloading: http://jcenter.bintray.com/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar
+[INFO] Downloading: http://jcenter.bintray.com/org/objenesis/objenesis/1.0/objenesis-1.0.jar
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/rsocket/rsocket-core/0.10.3/rsocket-core-0.10.3.jar
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-buffer/4.1.20.Final/netty-buffer-4.1.20.Final.jar
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-common/4.1.20.Final/netty-common-4.1.20.Final.jar
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/rsocket/rsocket-transport-netty/0.10.3/rsocket-transport-netty-0.10.3.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar (20 KB at 66.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/projectreactor/ipc/reactor-netty/0.7.3.RELEASE/reactor-netty-0.7.3.RELEASE.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/rsocket/rsocket-transport-netty/0.10.3/rsocket-transport-netty-0.10.3.jar (18 KB at 59.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-codec-http/4.1.20.Final/netty-codec-http-4.1.20.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-buffer/4.1.20.Final/netty-buffer-4.1.20.Final.jar (264 KB at 601.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-codec/4.1.20.Final/netty-codec-4.1.20.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-common/4.1.20.Final/netty-common-4.1.20.Final.jar (560 KB at 1085.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-handler/4.1.20.Final/netty-handler-4.1.20.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/rsocket/rsocket-core/0.10.3/rsocket-core-0.10.3.jar (173 KB at 320.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport/4.1.20.Final/netty-transport-4.1.20.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/projectreactor/ipc/reactor-netty/0.7.3.RELEASE/reactor-netty-0.7.3.RELEASE.jar (253 KB at 362.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-resolver/4.1.20.Final/netty-resolver-4.1.20.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-handler/4.1.20.Final/netty-handler-4.1.20.Final.jar (366 KB at 388.9 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-handler-proxy/4.1.20.Final/netty-handler-proxy-4.1.20.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-resolver/4.1.20.Final/netty-resolver-4.1.20.Final.jar (32 KB at 32.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-codec-socks/4.1.20.Final/netty-codec-socks-4.1.20.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-codec/4.1.20.Final/netty-codec-4.1.20.Final.jar (307 KB at 314.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-epoll/4.1.20.Final/netty-transport-native-epoll-4.1.20.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-codec-http/4.1.20.Final/netty-codec-http-4.1.20.Final.jar (551 KB at 534.5 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-unix-common/4.1.20.Final/netty-transport-native-unix-common-4.1.20.Final.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport/4.1.20.Final/netty-transport-4.1.20.Final.jar (446 KB at 386.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-handler-proxy/4.1.20.Final/netty-handler-proxy-4.1.20.Final.jar (21 KB at 16.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-databind/2.9.0/jackson-databind-2.9.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-unix-common/4.1.20.Final/netty-transport-native-unix-common-4.1.20.Final.jar (31 KB at 23.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-codec-socks/4.1.20.Final/netty-codec-socks-4.1.20.Final.jar (117 KB at 85.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.0/jackson-datatype-jsr310-2.9.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/netty/netty-transport-native-epoll/4.1.20.Final/netty-transport-native-epoll-4.1.20.Final.jar (115 KB at 83.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-testlib/1.0.9/scalecube-testlib-1.0.9.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/scalecube/scalecube-testlib/1.0.9/scalecube-testlib-1.0.9.jar (4 KB at 2.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/junit/junit/4.11/junit-4.11.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-databind/2.9.0/jackson-databind-2.9.0.jar (1298 KB at 771.1 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar (65 KB at 37.8 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.0/jackson-datatype-jsr310-2.9.0.jar (94 KB at 53.3 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/org/objenesis/objenesis/1.0/objenesis-1.0.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0.jar (313 KB at 173.8 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar (44 KB at 22.3 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/objenesis/objenesis/1.0/objenesis-1.0.jar (28 KB at 13.7 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/junit/junit/4.11/junit-4.11.jar (240 KB at 116.2 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar (1465 KB at 635.0 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ rsocket-services-transport ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ rsocket-services-transport ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/rsocket-transport/target/classes
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/rsocket-transport/src/main/java/io/scalecube/services/transport/rsocket/client/RSocketClientTransport.java:[39,12] unchecked method invocation: constructor <init> in class io.scalecube.services.transport.rsocket.client.RSocketServiceClientAdapter is applied to given types
+  required: org.reactivestreams.Publisher<io.rsocket.RSocket>,io.scalecube.services.codecs.api.ServiceMessageCodec<io.rsocket.Payload>
+  found: reactor.core.publisher.Mono<io.rsocket.RSocket>,io.scalecube.services.codecs.api.ServiceMessageCodec
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/rsocket-transport/src/main/java/io/scalecube/services/transport/rsocket/client/RSocketClientTransport.java:[39,94] unchecked conversion
+  required: io.scalecube.services.codecs.api.ServiceMessageCodec<io.rsocket.Payload>
+  found:    io.scalecube.services.codecs.api.ServiceMessageCodec
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/rsocket-transport/src/main/java/io/scalecube/services/transport/rsocket/server/RSocketServerFactory.java:[21,19] unchecked method invocation: constructor <init> in class io.scalecube.services.transport.rsocket.server.RSocketServiceMethodAcceptor is applied to given types
+  required: io.scalecube.services.transport.server.api.ServerMessageAcceptor,io.scalecube.services.codecs.api.ServiceMessageCodec<io.rsocket.Payload>
+  found: io.scalecube.services.transport.server.api.ServerMessageAcceptor,io.scalecube.services.codecs.api.ServiceMessageCodec
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/rsocket-transport/src/main/java/io/scalecube/services/transport/rsocket/server/RSocketServerFactory.java:[21,61] unchecked conversion
+  required: io.scalecube.services.codecs.api.ServiceMessageCodec<io.rsocket.Payload>
+  found:    io.scalecube.services.codecs.api.ServiceMessageCodec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ rsocket-services-transport ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/rsocket-transport/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ rsocket-services-transport ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/rsocket-transport/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ rsocket-services-transport ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ rsocket-services-transport ---
+[INFO] Building jar: /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/rsocket-transport/target/rsocket-services-transport-2.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ rsocket-services-transport ---
+[INFO] Installing /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/rsocket-transport/target/rsocket-services-transport-2.0.1-SNAPSHOT.jar to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/.m2/io/scalecube/rsocket-services-transport/2.0.1-SNAPSHOT/rsocket-services-transport-2.0.1-SNAPSHOT.jar
+[INFO] Installing /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/rsocket-transport/pom.xml to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/.m2/io/scalecube/rsocket-services-transport/2.0.1-SNAPSHOT/rsocket-services-transport-2.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ScaleCube/Services 2.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.pom (846 B at 3.0 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/dropwizard/metrics/metrics-parent/3.1.2/metrics-parent-3.1.2.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/dropwizard/metrics/metrics-parent/3.1.2/metrics-parent-3.1.2.pom (12 KB at 42.6 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.pom
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.pom (3 KB at 8.7 KB/sec)
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar
+[INFO] Downloading: https://oss.jfrog.org/libs-release/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.jar
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar (110 KB at 248.1 KB/sec)
+[INFO] Downloaded: https://oss.jfrog.org/libs-release/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.jar (1132 KB at 2131.8 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ scalecube-services ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ scalecube-services ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services/target/classes
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services/src/main/java/io/scalecube/services/ServiceCall.java:[202,47] unchecked call to decodeData(io.scalecube.services.api.ServiceMessage,java.lang.Class<?>) as a member of the raw type io.scalecube.services.codecs.api.ServiceMessageCodec
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services/src/main/java/io/scalecube/services/ServiceCall.java:[209,47] unchecked call to decodeData(io.scalecube.services.api.ServiceMessage,java.lang.Class<?>) as a member of the raw type io.scalecube.services.codecs.api.ServiceMessageCodec
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services/src/main/java/io/scalecube/services/Reflect.java:[118,38] unchecked call to isAnnotationPresent(java.lang.Class<? extends java.lang.annotation.Annotation>) as a member of the raw type java.lang.Class
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ scalecube-services ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ scalecube-services ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ scalecube-services ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ scalecube-services ---
+[INFO] Building jar: /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services/target/scalecube-services-2.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ scalecube-services ---
+[INFO] Installing /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services/target/scalecube-services-2.0.1-SNAPSHOT.jar to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/.m2/io/scalecube/scalecube-services/2.0.1-SNAPSHOT/scalecube-services-2.0.1-SNAPSHOT.jar
+[INFO] Installing /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/services/pom.xml to /scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-services-373851086-20180502-115421-firstCommit/.m2/io/scalecube/scalecube-services/2.0.1-SNAPSHOT/scalecube-services-2.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] ScaleCube .......................................... SUCCESS [ 15.749 s]
+[INFO] ScaleCube/Services-api ............................. SUCCESS [01:08 min]
+[INFO] ScaleCube/services-transport ....................... SUCCESS [ 18.457 s]
+[INFO] Scalecube/RSocket-Transport ........................ SUCCESS [ 16.918 s]
+[INFO] ScaleCube/Services ................................. SUCCESS [  2.988 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:03 min
+[INFO] Finished at: 2020-03-19T19:41:02+01:00
+[INFO] Final Memory: 31M/76M
+[INFO] ------------------------------------------------------------------------
