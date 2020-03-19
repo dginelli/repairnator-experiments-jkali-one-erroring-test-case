@@ -1,0 +1,475 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] qulice
+[INFO] qulice-spi
+[INFO] qulice-checkstyle
+[INFO] qulice-pmd
+[INFO] qulice-findbugs
+[INFO] qulice-ant
+[INFO] qulice-maven-plugin
+[INFO] qulice-gradle-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building qulice 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven-3) @ qulice ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (jcabi-build-number) @ qulice ---
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit
+[INFO] Storing buildNumber: 77d6843 at timestamp: 2020-03-19T19:50:23
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (jcabi-build-number) @ qulice ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building qulice-spi 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven-3) @ qulice-spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (jcabi-build-number) @ qulice-spi ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (jcabi-build-number) @ qulice-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ qulice-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-spi/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ qulice-spi ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-spi/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ qulice-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-spi/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ qulice-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ qulice-spi ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-spi/target/surefire-reports
+[INFO] parallel='all', perCoreThreadCount=true, threadCount=4, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/surefire-junit47/2.19/surefire-junit47-2.19.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19/surefire-junit47-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19/surefire-junit47-2.19.pom (7 KB at 84.5 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom (3 KB at 104.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit48/2.19/common-junit48-2.19.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19/common-junit48-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19/common-junit48-2.19.pom (4 KB at 136.8 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit4/2.19/common-junit4-2.19.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19/common-junit4-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19/common-junit4-2.19.pom (3 KB at 86.8 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit3/2.19/common-junit3-2.19.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19/common-junit3-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19/common-junit3-2.19.pom (2 KB at 55.0 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-java5/2.19/common-java5-2.19.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19/common-java5-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19/common-java5-2.19.pom (3 KB at 113.6 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom (7 KB at 253.3 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.pom (3 KB at 102.6 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/surefire-junit47/2.19/surefire-junit47-2.19.jar
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit48/2.19/common-junit48-2.19.jar
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit3/2.19/common-junit3-2.19.jar
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-java5/2.19/common-java5-2.19.jar
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit4/2.19/common-junit4-2.19.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19/common-junit3-2.19.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19/common-java5-2.19.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19/common-junit48-2.19.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19/common-junit4-2.19.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19/surefire-junit47-2.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19/common-java5-2.19.jar (44 KB at 861.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19/common-junit3-2.19.jar (12 KB at 216.1 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19/common-junit48-2.19.jar (22 KB at 392.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19/common-junit4-2.19.jar (25 KB at 449.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19/surefire-junit47-2.19.jar (150 KB at 1823.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.jar (38 KB at 1338.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar (168 KB at 2579.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.qulice.spi.EnvironmentTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in com.qulice.spi.EnvironmentTest
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building qulice-checkstyle 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven-3) @ qulice-checkstyle ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (jcabi-build-number) @ qulice-checkstyle ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (jcabi-build-number) @ qulice-checkstyle ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ qulice-checkstyle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ qulice-checkstyle ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-checkstyle/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ qulice-checkstyle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 96 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ qulice-checkstyle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ qulice-checkstyle ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-checkstyle/target/surefire-reports
+[INFO] parallel='all', perCoreThreadCount=true, threadCount=4, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.qulice.checkstyle.CheckstyleValidatorTest
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE7954567368536825355.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE4520050443775590303.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE4565429550393940786.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE1799516668911627016.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE4579428869526775654.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * License-1.
+ *
+ * License-2.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE4003366475278426888.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE8441799352361037977.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE4047255645431356695.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE118010737769087289.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE8806348843643455024.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE1427486009786853208.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * License-1.
+ *
+ * License-2.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE3085843943973873572.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE7177745829819472785.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE537588417263842507.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE2276501119056685597.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE2719886154661525892.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE2320676587148366985.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE6497075923919815035.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE4638536232539634511.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE6851275729927963519.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE643166693306502504.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE4477937558236777131.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE4641606663607140455.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE2814086850525051328.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE6959573651074937862.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE2999542311043296841.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE8933851111223925619.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE2105245413727612693.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE2415759669761128783.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE5679456282386382384.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE found: file:/tmp/LICENSE6194543598810766594.txt
+[DEBUG] com.qulice.checkstyle.CheckstyleValidator: LICENSE full text after parsing:
+/*
+ * Hello.
+ */
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 18.743 sec - in com.qulice.checkstyle.CheckstyleValidatorTest
+Running [15]
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.044 sec - in [15]
+
+Results :
+
+Tests run: 65, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building qulice-pmd 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven-3) @ qulice-pmd ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (jcabi-build-number) @ qulice-pmd ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (jcabi-build-number) @ qulice-pmd ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ qulice-pmd ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ qulice-pmd ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-pmd/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ qulice-pmd ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 39 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ qulice-pmd ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ qulice-pmd ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-pmd/target/surefire-reports
+[INFO] parallel='classes', perCoreThreadCount=true, threadCount=4, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.qulice.pmd.PmdEmptyTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.841 sec - in com.qulice.pmd.PmdEmptyTest
+Running com.qulice.pmd.UseStringIsEmptyRuleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.138 sec - in com.qulice.pmd.UseStringIsEmptyRuleTest
+Running [2]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.587 sec - in [2]
+Running com.qulice.pmd.PmdValidatorTest
+Tests run: 26, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.77 sec <<< FAILURE! - in com.qulice.pmd.PmdValidatorTest
+forbidsFilesCreateFile(com.qulice.pmd.PmdValidatorTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+	at java.io.Reader.<init>(Reader.java:78)
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:113)
+	at org.apache.commons.io.IOUtils.copy(IOUtils.java:1906)
+	at org.apache.commons.io.IOUtils.toString(IOUtils.java:778)
+	at org.apache.commons.io.IOUtils.toString(IOUtils.java:759)
+	at com.qulice.pmd.PmdAssert.validate(PmdAssert.java:85)
+	at com.qulice.pmd.PmdValidatorTest.forbidsFilesCreateFile(PmdValidatorTest.java:314)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:387)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:346)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:387)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Results :
+
+Tests in error: 
+  PmdValidatorTest.forbidsFilesCreateFile:314 » NullPointer
+
+Tests run: 42, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] qulice ............................................. SUCCESS [  1.353 s]
+[INFO] qulice-spi ......................................... SUCCESS [ 10.193 s]
+[INFO] qulice-checkstyle .................................. SUCCESS [ 22.141 s]
+[INFO] qulice-pmd ......................................... FAILURE [  8.799 s]
+[INFO] qulice-findbugs .................................... SKIPPED
+[INFO] qulice-ant ......................................... SKIPPED
+[INFO] qulice-maven-plugin ................................ SKIPPED
+[INFO] qulice-gradle-plugin ............................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 43.851 s
+[INFO] Finished at: 2020-03-19T19:51:05+01:00
+[INFO] Final Memory: 29M/71M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19:test (default-test) on project qulice-pmd: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-pmd/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19:test (default-test) on project qulice-pmd: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-pmd/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853210-20180507-134958-firstCommit/qulice-pmd/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:318)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:880)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:739)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :qulice-pmd
