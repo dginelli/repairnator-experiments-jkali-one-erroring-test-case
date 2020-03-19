@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 7,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "runelite/runelite",
-  "failingModule": "/root/workspace/runelite/runelite/389939588/cache",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.ArrayIndexOutOfBoundsException"
-  ],
-  "totalNumberRunningTests": 41,
-  "failing-test-cases": [
-    {
-      "className": "net.runelite.cache.SoundEffectsDumperTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "extractWavTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:38:20 PM",
+    "reproductionDateEnd": "Mar 19, 2020 8:08:19 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 466411880,
+      "totalMemory": 1108074496
+    },
+    "totalDuration": 1796,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1338,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1338
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-389939588-20180609-001121-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-389939588-20180609-001121-firstCommit/cache",
+    "overallMetrics": {
+      "numberRunning": 34,
+      "numberPassing": 33,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 7,
       "failures": [
         {
           "failureName": "java.lang.ArrayIndexOutOfBoundsException",
-          "failureDetail": "22050",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.runelite.cache.SoundEffectsDumperTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.runelite.cache.SoundEffectsDumperTest",
+        "testMethod": "extractWavTest",
+        "failureName": "java.lang.ArrayIndexOutOfBoundsException",
+        "detail": "22050",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1256,
+    "numberTestFiles": 79,
+    "numberLibrariesFailingModule": 20,
+    "numberLines": 0
+  }
 }
