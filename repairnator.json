@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "mjeanroy/rest-assert",
-  "bugCommit": "https://github.com/mjeanroy/rest-assert/compare/b57e854581d9...b0300538dce8",
-  "failingModule": "/root/workspace/mjeanroy/rest-assert/377167393/rest-assert-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NumberFormatException"
-  ],
-  "totalNumberRunningTests": 1080,
-  "failing-test-cases": [
-    {
-      "className": "com.github.mjeanroy.restassert.core.internal.assertions.http.headers.headerequalto.IsCacheControlEqualToStringTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.github.mjeanroy.restassert.core.internal.assertions.http.headers.headerequalto.IsCacheControlEqualToStringTest#it_should_fail_with_if_response_does_not_contain_header_with_expected_value"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:58:15 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:10:16 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 99064192,
+      "totalMemory": 367833088
+    },
+    "totalDuration": 718,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 654,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          654
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mjeanroy-rest-assert-377167393-20180510-093208-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mjeanroy-rest-assert-377167393-20180510-093208-firstCommit/rest-assert-core",
+    "overallMetrics": {
+      "numberRunning": 1080,
+      "numberPassing": 1079,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NumberFormatException",
-          "failureDetail": "For input string: \"300foo\"",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.mjeanroy.restassert.core.internal.assertions.http.headers.headerequalto.IsCacheControlEqualToStringTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.mjeanroy.restassert.core.internal.assertions.http.headers.headerequalto.IsCacheControlEqualToStringTest",
+        "testMethod": "it_should_fail_with_if_response_does_not_contain_header_with_expected_value",
+        "failureName": "java.lang.NumberFormatException",
+        "detail": "For input string: \"300foo\"",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 206,
+    "numberTestFiles": 1832,
+    "numberLibrariesFailingModule": 64,
+    "numberLines": 0
+  }
 }
