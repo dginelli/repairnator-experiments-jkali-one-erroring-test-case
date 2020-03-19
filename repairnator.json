@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "google/google-http-java-client",
-  "failingModule": "/root/workspace/google/google-http-java-client/256041557/google-http-client",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.net.UnknownHostException"
-  ],
-  "totalNumberRunningTests": 302,
-  "failing-test-cases": [
-    {
-      "className": "com.google.api.client.http.apache.ApacheHttpTransportTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.google.api.client.http.apache.ApacheHttpTransportTest#testRequestsWithContent"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:51:13 AM",
+    "reproductionDateEnd": "Mar 19, 2020 10:55:27 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 45170688,
+      "totalMemory": 233099264
+    },
+    "totalDuration": 250,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 147,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          147
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-google-google-http-java-client-256041557-20170721-144505_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-google-google-http-java-client-256041557-20170721-144505_bugonly-firstCommit/google-http-client",
+    "overallMetrics": {
+      "numberRunning": 302,
+      "numberPassing": 301,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.net.UnknownHostException",
-          "failureDetail": "www.test.url: Name or service not known",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.google.api.client.http.apache.ApacheHttpTransportTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.google.api.client.http.apache.ApacheHttpTransportTest",
+        "testMethod": "testRequestsWithContent",
+        "failureName": "java.net.UnknownHostException",
+        "detail": "www.test.url: Name or service not known",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 14,
+    "numberPlugins": 0,
+    "numberSourceFiles": 208,
+    "numberTestFiles": 63,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  }
 }
