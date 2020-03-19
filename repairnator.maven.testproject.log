@@ -1,0 +1,569 @@
+[main] INFO net.runelite.cache.script.assembler.AssemblerTest - .int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   iload                  0
+   switch                
+      3: LABEL20
+      5: LABEL54
+      6: LABEL54
+      7: LABEL3
+   jump                   LABEL84
+LABEL3:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL7
+   jump                   LABEL9
+LABEL7:
+   load_int               0
+   return                
+LABEL9:
+   sload                  0
+   string_remove_html    
+   is_ignore             
+   load_int               1
+   if_icmpeq              LABEL15
+   jump                   LABEL17
+LABEL15:
+   load_int               0
+   return                
+LABEL17:
+   load_int               1
+   return                
+   jump                   LABEL84
+LABEL20:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL24
+   jump                   LABEL26
+LABEL24:
+   load_int               0
+   return                
+LABEL26:
+   sload                  0
+   string_remove_html    
+   is_ignore             
+   load_int               1
+   if_icmpeq              LABEL32
+   jump                   LABEL34
+LABEL32:
+   load_int               0
+   return                
+LABEL34:
+   5005                  
+   load_int               0
+   if_icmpeq              LABEL38
+   jump                   LABEL40
+LABEL38:
+   load_int               1
+   return                
+LABEL40:
+   5005                  
+   load_int               1
+   if_icmpeq              LABEL44
+   jump                   LABEL51
+LABEL44:
+   sload                  0
+   is_friend             
+   load_int               1
+   if_icmpeq              LABEL49
+   jump                   LABEL51
+LABEL49:
+   load_int               1
+   return                
+LABEL51:
+   load_int               0
+   return                
+   jump                   LABEL84
+LABEL54:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL58
+   jump                   LABEL60
+LABEL58:
+   load_int               0
+   return                
+LABEL60:
+   iload                  0
+   load_int               5
+   if_icmpeq              LABEL64
+   jump                   LABEL76
+LABEL64:
+   get_varbit             1627
+   load_int               0
+   if_icmpeq              LABEL68
+   jump                   LABEL76
+LABEL68:
+   get_gamecycle         
+   iload                  1
+   isub                  
+   load_int               500
+   if_icmpge              LABEL74
+   jump                   LABEL76
+LABEL74:
+   load_int               0
+   return                
+LABEL76:
+   5005                  
+   load_int               2
+   if_icmpne              LABEL80
+   jump                   LABEL82
+LABEL80:
+   load_int               1
+   return                
+LABEL82:
+   load_int               0
+   return                
+LABEL84:
+   load_int               0
+   return                
+   load_int               -1
+   return                
+
+[main] INFO net.runelite.cache.script.assembler.AssemblerTest - -----------------------
+[main] INFO net.runelite.cache.script.assembler.AssemblerTest - .int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   iload                  0
+   switch                
+      3: LABEL20
+      5: LABEL54
+      6: LABEL54
+      7: LABEL3
+   jump                   LABEL84
+LABEL3:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL7
+   jump                   LABEL9
+LABEL7:
+   load_int               0
+   return                
+LABEL9:
+   sload                  0
+   string_remove_html    
+   is_ignore             
+   load_int               1
+   if_icmpeq              LABEL15
+   jump                   LABEL17
+LABEL15:
+   load_int               0
+   return                
+LABEL17:
+   load_int               1
+   return                
+   jump                   LABEL84
+LABEL20:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL24
+   jump                   LABEL26
+LABEL24:
+   load_int               0
+   return                
+LABEL26:
+   sload                  0
+   string_remove_html    
+   is_ignore             
+   load_int               1
+   if_icmpeq              LABEL32
+   jump                   LABEL34
+LABEL32:
+   load_int               0
+   return                
+LABEL34:
+   5005                  
+   load_int               0
+   if_icmpeq              LABEL38
+   jump                   LABEL40
+LABEL38:
+   load_int               1
+   return                
+LABEL40:
+   5005                  
+   load_int               1
+   if_icmpeq              LABEL44
+   jump                   LABEL51
+LABEL44:
+   sload                  0
+   is_friend             
+   load_int               1
+   if_icmpeq              LABEL49
+   jump                   LABEL51
+LABEL49:
+   load_int               1
+   return                
+LABEL51:
+   load_int               0
+   return                
+   jump                   LABEL84
+LABEL54:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL58
+   jump                   LABEL60
+LABEL58:
+   load_int               0
+   return                
+LABEL60:
+   iload                  0
+   load_int               5
+   if_icmpeq              LABEL64
+   jump                   LABEL76
+LABEL64:
+   get_varbit             1627
+   load_int               0
+   if_icmpeq              LABEL68
+   jump                   LABEL76
+LABEL68:
+   get_gamecycle         
+   iload                  1
+   isub                  
+   load_int               500
+   if_icmpge              LABEL74
+   jump                   LABEL76
+LABEL74:
+   load_int               0
+   return                
+LABEL76:
+   5005                  
+   load_int               2
+   if_icmpne              LABEL80
+   jump                   LABEL82
+LABEL80:
+  Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.013 sec - in net.runelite.cache.script.disassembler.DisassemblerTest
+Running net.runelite.cache.SpriteManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.737 sec - in net.runelite.cache.SpriteManagerTest
+Running net.runelite.cache.SoundEffectsDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.528 sec - in net.runelite.cache.SoundEffectsDumperTest
+Running net.runelite.cache.fs.StoreLoadTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.321 sec - in net.runelite.cache.fs.StoreLoadTest
+Running net.runelite.cache.fs.ContainerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in net.runelite.cache.fs.ContainerTest
+Running net.runelite.cache.fs.jagex.DiskStorageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.cache.fs.jagex.DiskStorageTest
+Running net.runelite.cache.fs.jagex.IndexFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.cache.fs.jagex.IndexFileTest
+Running net.runelite.cache.fs.jagex.DataFileTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in net.runelite.cache.fs.jagex.DataFileTest
+Running net.runelite.cache.fs.StoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in net.runelite.cache.fs.StoreTest
+Running net.runelite.cache.EnumDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 sec - in net.runelite.cache.EnumDumperTest
+Running net.runelite.cache.util.XteaTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.runelite.cache.util.XteaTest
+Running net.runelite.cache.util.Djb2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.runelite.cache.util.Djb2Test
+Running net.runelite.cache.ItemManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.39 sec - in net.runelite.cache.ItemManagerTest
+Running net.runelite.cache.io.OutputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.runelite.cache.io.OutputStreamTest
+Running net.runelite.cache.KitDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in net.runelite.cache.KitDumperTest
+Running net.runelite.cache.ModelDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.035 sec - in net.runelite.cache.ModelDumperTest
+Running net.runelite.cache.InterfaceManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.008 sec - in net.runelite.cache.InterfaceManagerTest
+Running net.runelite.cache.MapDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.002 sec - in net.runelite.cache.MapDumperTest
+Running net.runelite.cache.ObjectManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.005 sec - in net.runelite.cache.ObjectManagerTest
+Running net.runelite.cache.WorldMapDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in net.runelite.cache.WorldMapDumperTest
+Running net.runelite.cache.NpcManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.548 sec - in net.runelite.cache.NpcManagerTest
+Running net.runelite.cache.TrackDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.909 sec - in net.runelite.cache.TrackDumperTest
+Running net.runelite.cache.item.ItemSpriteFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in net.runelite.cache.item.ItemSpriteFactoryTest
+Running net.runelite.cache.MapImageDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.002 sec - in net.runelite.cache.MapImageDumperTest
+Running net.runelite.cache.definitions.savers.InterfaceSaverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in net.runelite.cache.definitions.savers.InterfaceSaverTest
+Running net.runelite.cache.definitions.savers.ScriptSaverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in net.runelite.cache.definitions.savers.ScriptSaverTest
+Running net.runelite.cache.models.ObjExporterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in net.runelite.cache.models.ObjExporterTest
+
+Results :
+
+
+
+
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 7
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RuneLite API 1.3.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ runelite-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/runelite-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ runelite-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ runelite-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ runelite-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/runelite-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ runelite-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ runelite-api ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/runelite-api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.api.model.JarvisTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in net.runelite.api.model.JarvisTest
+Running net.runelite.api.coords.AngleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.runelite.api.coords.AngleTest
+Running net.runelite.api.ExperienceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in net.runelite.api.ExperienceTest
+
+Results :
+
+
+
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Protocol API 1.3.6-SNAPSHOT
+[INFO] -------------------------------------------------------------------[main] INFO net.runelite.cache.StoreLocation - Using preexisting cache working directory /tmp/cache-165
+FO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/protocol-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ protocol-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ protocol-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ protocol-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/protocol-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ protocol-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ protocol-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Protocol 1.3.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ protocol ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/protocol/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ protocol ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ protocol ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ protocol ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/protocol/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ protocol ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ protocol ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/protocol/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.protocol.update.encoders.XorEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 sec - in net.runelite.protocol.update.encoders.XorEncoderTest
+Running net.runelite.protocol.update.encoders.ArchiveResponseEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in net.runelite.protocol.update.encoders.ArchiveResponseEncoderTest
+
+Results :
+
+
+
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cache Client 1.3.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cache-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/cache-client/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ cache-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ cache-client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cache-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/cache-client/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ cache-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ cache-client ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/cache-client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.cache.client.CacheClientTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.006 sec - in net.runelite.cache.client.CacheClientTest
+
+Results :
+
+
+
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cache Server 1.3.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cache-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/cache-server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ cache-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ cache-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cache-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/cache-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ cache-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ cache-server ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/cache-server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.cache.server.CacheServerTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 1, Time elapsed: 0.31 sec <<< FAILURE! - in net.runelite.cache.server.CacheServerTest
+testServer(net.runelite.cache.server.CacheServerTest)  Time elapsed: 0.252 sec  <<< ERROR!
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:125)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:543)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1254)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:488)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:473)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:965)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:243)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:360)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:339)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Results :
+
+
+Tests in error: 
+  CacheServerTest.testServer » Bind Address already in use
+
+
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] RuneLite ........................................... SUCCESS [  1.080 s]
+[INFO] Web API ............................................ SUCCESS [  0.728 s]
+[INFO] Cache .............................................. SUCCESS [ 42.302 s]
+[INFO] RuneLite API ....................................... SUCCESS [  0.492 s]
+[INFO] Protocol API ....................................... SUCCESS [  0.028 s]
+[INFO] Protocol ........................................... SUCCESS [  0.792 s]
+[INFO] Cache Client ....................................... SUCCESS [  0.445 s]
+[INFO] Cache Server ....................................... FAILURE [  1.066 s]
+[INFO] Cache Updater ...................................... SKIPPED
+[INFO] RuneScape API ...................................... SKIPPED
+[INFO] RuneScape Client ................................... SKIPPED
+[INFO] Deobfuscator ....................................... SKIPPED
+[INFO] Model Viewer ....................................... SKIPPED
+[INFO] RuneLite Mixins .................................... SKIPPED
+[INFO] Injector ........................................... SKIPPED
+[INFO] Injected Client .................................... SKIPPED
+[INFO] Script Assembler Plugin ............................ SKIPPED
+[INFO] RuneLite Scripts ................................... SKIPPED
+[INFO] RuneLite Client .................................... SKIPPED
+[INFO] Web Service ........................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 47.629 s
+[INFO] Finished at: 2020-03-19T19:45:01+01:00
+[INFO] Final Memory: 24M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18:test (default-test) on project cache-server: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/cache-server/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18:test (default-test) on project cache-server: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/cache-server/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-370818186-20180425-011301-firstCommit/cache-server/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:213)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:883)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:751)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :cache-server
