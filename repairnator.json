@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "perwendel/spark",
-  "failingModule": "/root/workspace/perwendel/spark/397458501",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NoSuchMethodError"
-  ],
-  "totalNumberRunningTests": 303,
-  "failing-test-cases": [
-    {
-      "className": "spark.embeddedserver.jetty.websocket.WebSocketServletContextHandlerFactoryTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testCreate_whenWebSocketContextHandlerCreationFails_thenThrowException"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:04:16 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:46:46 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 45871608,
+      "totalMemory": 116629504
+    },
+    "totalDuration": 6148,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6004,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6004
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-perwendel-spark-397458501-20180627-195114-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-perwendel-spark-397458501-20180627-195114-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 303,
+      "numberPassing": 302,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.NoSuchMethodError",
-          "failureDetail": "org.mockito.internal.handler.MockHandlerFactory.createMockHandler(Lorg/mockito/mock/MockCreationSettings;)Lorg/mockito/internal/InternalMockHandler;",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spark.embeddedserver.jetty.websocket.WebSocketServletContextHandlerFactoryTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spark.embeddedserver.jetty.websocket.WebSocketServletContextHandlerFactoryTest",
+        "testMethod": "testCreate_whenWebSocketContextHandlerCreationFails_thenThrowException",
+        "failureName": "java.lang.NoSuchMethodError",
+        "detail": "org.mockito.internal.handler.MockHandlerFactory.createMockHandler(Lorg/mockito/mock/MockCreationSettings;)Lorg/mockito/internal/InternalMockHandler;",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 99,
+    "numberTestFiles": 81,
+    "numberLibrariesFailingModule": 37,
+    "numberLines": 0
+  }
 }
