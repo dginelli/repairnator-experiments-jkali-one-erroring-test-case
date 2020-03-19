@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 1,
-  "repo": "stanford-futuredata/macrobase",
-  "failingModule": "/root/workspace/stanford-futuredata/macrobase/262899880/core",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.nio.file.NoSuchFileException"
-  ],
-  "totalNumberRunningTests": 125,
-  "failing-test-cases": [
-    {
-      "className": "edu.stanford.futuredata.macrobase.contrib.aria.CubeAPILoaderTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "edu.stanford.futuredata.macrobase.contrib.aria.CubeAPILoaderTest#testPost"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:39:02 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:41:53 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 3332064,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 168,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026238-20170828-022010-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-stanford-futuredata-macrobase-269026238-20170828-022010-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 125,
+      "numberPassing": 124,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.nio.file.NoSuchFileException",
-          "failureDetail": "src/test/resources/apikey.txt",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.stanford.futuredata.macrobase.contrib.aria.CubeAPILoaderTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.stanford.futuredata.macrobase.contrib.aria.CubeAPILoaderTest",
+        "testMethod": "testPost",
+        "failureName": "java.nio.file.NoSuchFileException",
+        "detail": "src/test/resources/apikey.txt",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 126,
+    "numberTestFiles": 68,
+    "numberLibrariesFailingModule": 30,
+    "numberLines": 0
+  }
 }
