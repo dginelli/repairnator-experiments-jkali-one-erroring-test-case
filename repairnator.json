@@ -1,30 +1,118 @@
 {
-  "totalNumberSkippingTests": 2,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "teamed/qulice",
-  "failingModule": "/root/workspace/teamed/qulice/375853714/qulice-pmd",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 113,
-  "failing-test-cases": [
-    {
-      "className": "com.qulice.pmd.PmdValidatorTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.qulice.pmd.PmdValidatorTest#forbidsFilesCreateFile"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:39:09 PM",
+    "reproductionDateEnd": "Mar 19, 2020 8:03:03 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 68578952,
+      "totalMemory": 184164352
+    },
+    "totalDuration": 1430,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 660,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          660
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853714-20180507-135027-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-teamed-qulice-375853714-20180507-135027-firstCommit/qulice-pmd",
+    "overallMetrics": {
+      "numberRunning": 111,
+      "numberPassing": 110,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.qulice.pmd.PmdValidatorTest",
+        "numberRunning": 26,
+        "numberPassing": 25,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.qulice.pmd.PmdValidatorTest",
+        "testMethod": "forbidsFilesCreateFile",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberPlugins": 0,
+    "numberSourceFiles": 64,
+    "numberTestFiles": 26,
+    "numberLibrariesFailingModule": 27,
+    "numberLines": 0
+  }
 }
