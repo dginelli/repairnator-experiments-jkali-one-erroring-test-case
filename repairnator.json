@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:53:26 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:36:38 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 885157040,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 6187,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6067,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6067
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 440,
+      "numberPassing": 439,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.awt.HeadlessException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "inra.ijpb.measure.region2d.OrientedBoundingBox2DTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "inra.ijpb.measure.region2d.OrientedBoundingBox2DTest",
+        "testMethod": "testAnalyzeRegions_circles",
+        "failureName": "java.awt.HeadlessException",
+        "detail": "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 300,
+    "numberTestFiles": 111,
+    "numberLibrariesFailingModule": 4,
+    "numberLines": 0
+  }
+}
