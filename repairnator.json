@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "hneemann/Digital",
-  "bugCommit": "https://github.com/hneemann/Digital/compare/298d2890a0a9...3ba47e2875b0",
-  "failingModule": "/root/workspace/hneemann/Digital/351304911",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.Exception"
-  ],
-  "totalNumberRunningTests": 461,
-  "failing-test-cases": [
-    {
-      "className": "de.neemann.digital.integration.TestExamples",
-      "failingMethods": [],
-      "erroringMethods": [
-        "de.neemann.digital.integration.TestExamples#testTestExamples"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:53:26 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:14:07 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 710919280,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 4839,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4679,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4679
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-hneemann-Digital-351304911-20180309-144002-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-hneemann-Digital-351304911-20180309-144002-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 461,
+      "numberPassing": 460,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.Exception",
-          "failureDetail": "errors testing files: 1",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "de.neemann.digital.integration.TestExamples",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "de.neemann.digital.integration.TestExamples",
+        "testMethod": "testTestExamples",
+        "failureName": "java.lang.Exception",
+        "detail": "errors testing files: 1",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 595,
+    "numberTestFiles": 172,
+    "numberLibrariesFailingModule": 33,
+    "numberLines": 0
+  }
 }
