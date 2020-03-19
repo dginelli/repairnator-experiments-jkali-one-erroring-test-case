@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "wix/wix-embedded-mysql",
-  "bugCommit": "https://github.com/wix/wix-embedded-mysql/compare/96c160f6d8ca...d4285c142612",
-  "failingModule": "/root/workspace/wix/wix-embedded-mysql/272867892/wix-embedded-mysql",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "de.flapdoodle.embed.process.exceptions.DistributionException"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "com.wix.mysql.SupportedVersionsTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.wix.mysql.SupportedVersionsTest#Version 5.5.40 should work on Linux"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:40:26 PM",
+    "reproductionDateEnd": "Mar 19, 2020 8:42:29 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 132318008,
+      "totalMemory": 336273408
+    },
+    "totalDuration": 3719,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 3626,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          3626
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-wix-wix-embedded-mysql-272867892-20170907-151124_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-wix-wix-embedded-mysql-272867892-20170907-151124_bugonly-firstCommit/wix-embedded-mysql",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "de.flapdoodle.embed.process.exceptions.DistributionException",
-          "failureDetail": "java.io.IOException: Could not open inputStream for https://dev.mysql.com/get/Downloads//MySQL-5.7/mysql-5.7.19-linux-glibc2.5-x86_64.tar.gz",
-          "isError": true
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.wix.mysql.EmbeddedMysqlTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.wix.mysql.EmbeddedMysqlTest",
+        "testMethod": "EmbeddedMysql instance should::start with default values",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Could NOT create Directory /home/d/dginelli/.embedmysql",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberPlugins": 0,
+    "numberSourceFiles": 54,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 40,
+    "numberLines": 0
+  }
 }
