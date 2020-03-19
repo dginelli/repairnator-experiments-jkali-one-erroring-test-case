@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "javaparser/javaparser",
-  "failingModule": "/root/workspace/javaparser/javaparser/300438497/javaparser-testing",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "com.github.javaparser.ParseProblemException"
-  ],
-  "totalNumberRunningTests": 1468,
-  "failing-test-cases": [
-    {
-      "className": "com.github.javaparser.ast.expr.SimpleNameTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.github.javaparser.ast.expr.SimpleNameTest#mayContainUnicodeEscapes"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:57:24 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:41:01 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 24796192,
+      "totalMemory": 153702400
+    },
+    "totalDuration": 6213,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 6,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          4,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6017,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6017
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-300438497-20171111-015908_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-300438497-20171111-015908_bugonly-firstCommit/javaparser-testing",
+    "overallMetrics": {
+      "numberRunning": 1468,
+      "numberPassing": 1467,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "com.github.javaparser.ParseProblemException",
-          "failureDetail": "Lexical error at line 1, column 4.  Encountered: \"\\\\\" (92), after : \"\" Problem stacktrace :    com.github.javaparser.GeneratedJavaParserTokenManager.getNextToken(GeneratedJavaParserTokenManager.java:2704)   com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10111)   com.github.javaparser.GeneratedJavaParser.SimpleNameParseStart(GeneratedJavaParser.java:5636)   com.github.javaparser.JavaParser.parse(JavaParser.java:133)   com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:339)   com.github.javaparser.JavaParser.parseSimpleName(JavaParser.java:511)   com.github.javaparser.ast.expr.SimpleNameTest.mayContainUnicodeEscapes(SimpleNameTest.java:48)   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)   java.lang.reflect.Method.invoke(Method.java:498)   org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)   org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)   org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)   org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)   org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)   org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)   org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)   org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)   org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)   org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)   org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)   org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)   org.junit.runners.ParentRunner.run(ParentRunner.java:363)   org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)   org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)   org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)   java.lang.reflect.Method.invoke(Method.java:498)   org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)   org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)   org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)   org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)   org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) ",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.javaparser.ast.expr.SimpleNameTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.javaparser.ast.expr.SimpleNameTest",
+        "testMethod": "mayContainUnicodeEscapes",
+        "failureName": "com.github.javaparser.ParseProblemException",
+        "detail": "Lexical error at line 1, column 4.  Encountered: \"\\\\\" (92), after : \"\"\nProblem stacktrace : \n  com.github.javaparser.GeneratedJavaParserTokenManager.getNextToken(GeneratedJavaParserTokenManager.java:2704)\n  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10111)\n  com.github.javaparser.GeneratedJavaParser.SimpleNameParseStart(GeneratedJavaParser.java:5636)\n  com.github.javaparser.JavaParser.parse(JavaParser.java:133)\n  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:339)\n  com.github.javaparser.JavaParser.parseSimpleName(JavaParser.java:511)\n  com.github.javaparser.ast.expr.SimpleNameTest.mayContainUnicodeEscapes(SimpleNameTest.java:48)\n  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n  java.lang.reflect.Method.invoke(Method.java:498)\n  org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n  org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n  org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n  org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n  org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n  org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n  org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n  org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n  org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n  org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n  org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n  org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n  org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n  org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n  org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n  org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n  org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberPlugins": 0,
+    "numberSourceFiles": 451,
+    "numberTestFiles": 143,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  }
 }
