@@ -1440,3 +1440,11 @@ RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (variantErrorProb < minErrorP
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.languagetool.dev.RuleCreator line: 126, pointed element: CtInvocationImpl
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
 RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.lang.System.out.printf(java.util.Locale.ENGLISH,  "  <rule case_sensitive=\'yes\'>\n" +  (((((([...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.languagetool.dev.RuleCreator line: 141, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.lang.System.out.printf(java.util.Locale.ENGLISH, "%.2f\t%s\t%s\n", variantErrorProb, variantPhr[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 10 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 568376
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.languagetool.dev.RuleCreator line: 125, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (org.languagetool.dev.RuleCreator.XML_MODE) { 	java.lang.System.out.printf(java.util.Locale.ENGLI[...] ` -topatch--> `if (true) { 	java.lang.System.out.printf(java.util.Locale.ENGLISH,  	"  <rule case_sensitive=\'yes\'[...]` (spoon.support.reflect.code.CtIfImpl) 
