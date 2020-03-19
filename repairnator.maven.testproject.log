@@ -1,0 +1,122 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OpenBlog 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ openblog ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-mmahmoodictbd-OpenBlog-407797201-20180724-230017-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-mmahmoodictbd-OpenBlog-407797201-20180724-230017-firstCommit/target/coverage-reports/jacoco-ut.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ openblog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 41 resources
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ openblog ---
+[INFO] Test Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-mmahmoodictbd-OpenBlog-407797201-20180724-230017-firstCommit/src/integration-test/java added.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ openblog ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ openblog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-mmahmoodictbd-OpenBlog-407797201-20180724-230017-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ openblog ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ openblog ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-mmahmoodictbd-OpenBlog-407797201-20180724-230017-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom (4 KB at 8.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom (3 KB at 106.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar (83 KB at 1355.1 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.unloadbrain.blog.service.SiteServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.572 s - in com.unloadbrain.blog.service.SiteServiceTest
+[INFO] Running com.unloadbrain.blog.service.CategoryServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 s - in com.unloadbrain.blog.service.CategoryServiceTest
+[INFO] Running com.unloadbrain.blog.service.PublishedPostServiceTest
+[ERROR] Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.406 s <<< FAILURE! - in com.unloadbrain.blog.service.PublishedPostServiceTest
+[ERROR] testPublishActionForNewPublishedPost(com.unloadbrain.blog.service.PublishedPostServiceTest)  Time elapsed: 0.006 s  <<< ERROR!
+com.unloadbrain.blog.exception.PublishedPostNotFoundException: Could not found published post id - null
+	at com.unloadbrain.blog.service.PublishedPostServiceTest.testPublishActionForNewPublishedPost(PublishedPostServiceTest.java:78)
+
+[INFO] Running com.unloadbrain.blog.service.PostServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.35 s - in com.unloadbrain.blog.service.PostServiceTest
+[INFO] Running com.unloadbrain.blog.service.DraftPostServiceTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.345 s - in com.unloadbrain.blog.service.DraftPostServiceTest
+[INFO] Running com.unloadbrain.blog.util.SlugUtilTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in com.unloadbrain.blog.util.SlugUtilTest
+[INFO] Running com.unloadbrain.blog.util.UrlUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.unloadbrain.blog.util.UrlUtilTest
+[INFO] Running com.unloadbrain.blog.config.MappingConfigTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.974 s - in com.unloadbrain.blog.config.MappingConfigTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   PublishedPostServiceTest.testPublishActionForNewPublishedPost:78 » PublishedPostNotFound
+[INFO] 
+[ERROR] Tests run: 29, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 25.476 s
+[INFO] Finished at: 2020-03-19T11:06:04+01:00
+[INFO] Final Memory: 28M/69M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project openblog: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-mmahmoodictbd-OpenBlog-407797201-20180724-230017-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project openblog: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-mmahmoodictbd-OpenBlog-407797201-20180724-230017-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-mmahmoodictbd-OpenBlog-407797201-20180724-230017-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:354)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1008)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
