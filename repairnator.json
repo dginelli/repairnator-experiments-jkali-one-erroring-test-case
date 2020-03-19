@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "kevindeyne/tasker",
-  "bugCommit": "https://github.com/kevindeyne/tasker/compare/e0ae7cba02ffeea079fc9ebbbfd09ce895152931...af4d0191988912e28d7cbc32a93778356f3126aa",
-  "failingModule": "/root/workspace/kevindeyne/tasker/361895455",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.openqa.selenium.NoSuchElementException"
-  ],
-  "totalNumberRunningTests": 17,
-  "failing-test-cases": [
-    {
-      "className": "com.kevindeyne.tasker.integration.LoginLeniumTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.kevindeyne.tasker.integration.LoginLeniumTest#testLoginAsDevGetToTaskboard"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:55:06 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:04:37 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 24016904,
+      "totalMemory": 70975488
+    },
+    "totalDuration": 567,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-kevindeyne-tasker-361895455-20180404-012439-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-kevindeyne-tasker-361895455-20180404-012439-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 16,
+      "numberPassing": 15,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "org.openqa.selenium.NoSuchElementException",
-          "failureDetail": "Elements By.cssSelector: #as-dev (Lazy Element List) is not present\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.9.1\u0027, revision: \u002763f7b50\u0027, time: \u00272018-02-07T22:25:02.294Z\u0027\nSystem info: host: \u0027spirals-vortex.lille.inria.fr\u0027, ip: \u0027172.17.0.3\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00273.10.0-693.21.1.el7.x86_64\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: driver.version: unknown",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.kevindeyne.tasker.integration.LoginLeniumTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.kevindeyne.tasker.integration.LoginLeniumTest",
+        "testMethod": "testLoginAsDevGetToTaskboard",
+        "failureName": "org.openqa.selenium.NoSuchElementException",
+        "detail": "Unable to locate element using css: com.gargoylesoftware.htmlunit.UnexpectedPage@2d799923\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.9.1\u0027, revision: \u002763f7b50\u0027, time: \u00272018-02-07T22:25:02.294Z\u0027\nSystem info: host: \u0027b-cn0412\u0027, ip: \u0027130.239.241.22\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.15.0-91-generic\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: EventFiringWebDriver",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 0,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 180,
+    "numberLines": 0
+  }
 }
