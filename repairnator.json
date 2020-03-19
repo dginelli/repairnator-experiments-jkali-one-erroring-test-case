@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:38:20 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:42:51 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 45558672,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 267,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-salesforce-reactive-grpc-404626806-20180716-234128-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-salesforce-reactive-grpc-404626806-20180716-234128-firstCommit/reactor/reactor-grpc-test",
+    "overallMetrics": {
+      "numberRunning": 318,
+      "numberPassing": 317,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 188,
+      "failures": [
+        {
+          "failureName": "org.awaitility.core.ConditionTimeoutException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.salesforce.reactorgrpc.StandardClientReactiveServerInteropTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.salesforce.reactorgrpc.StandardClientReactiveServerInteropTest",
+        "testMethod": "manyToOne",
+        "failureName": "org.awaitility.core.ConditionTimeoutException",
+        "detail": "org.awaitility.core.ConditionFactory.untilAtomic Callable expected (\u003ctrue\u003e or \u003ctrue\u003e) but was \u003cfalse\u003e within 1 seconds.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 10,
+    "numberPlugins": 0,
+    "numberSourceFiles": 33,
+    "numberTestFiles": 57,
+    "numberLibrariesFailingModule": 43,
+    "numberLines": 0
+  }
+}
