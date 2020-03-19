@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "pedrohub/pontoeletronico",
-  "bugCommit": "https://github.com/pedrohub/pontoeletronico/compare/fe433a15a152...ffec34ccca32",
-  "failingModule": "/root/workspace/pedrohub/pontoeletronico/335445375",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.Exception"
-  ],
-  "totalNumberRunningTests": 8,
-  "failing-test-cases": [
-    {
-      "className": "com.springboot.pontoeletronico.api.services.LancamentoServiceTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.springboot.pontoeletronico.api.services.LancamentoServiceTest#initializationError"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:04:16 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:30:37 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 93517088,
+      "totalMemory": 199643136
+    },
+    "totalDuration": 1578,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1504,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1504
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-pedrohub-pontoeletronico-335445375-20180131-033151_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-pedrohub-pontoeletronico-335445375-20180131-033151_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 8,
+      "numberPassing": 7,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.Exception",
-          "failureDetail": "No runnable methods",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.springboot.pontoeletronico.api.services.LancamentoServiceTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.springboot.pontoeletronico.api.services.LancamentoServiceTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.Exception",
+        "detail": "No runnable methods",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 19,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 79,
+    "numberLines": 0
+  }
 }
