@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "spring-cloud/spring-cloud-gcp",
-  "failingModule": "/root/workspace/spring-cloud/spring-cloud-gcp/394160217/spring-cloud-gcp-pubsub",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalArgumentException"
-  ],
-  "totalNumberRunningTests": 39,
-  "failing-test-cases": [
-    {
-      "className": "org.springframework.cloud.gcp.pubsub.support.converter.SimplePubSubMessageConverterTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testToByteBuffer"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:39:04 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:54:16 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 65694736,
+      "totalMemory": 245268480
+    },
+    "totalDuration": 908,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 264,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          264
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-cloud-spring-cloud-gcp-394160217-20180619-175746-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-cloud-spring-cloud-gcp-394160217-20180619-175746-firstCommit/spring-cloud-gcp-pubsub",
+    "overallMetrics": {
+      "numberRunning": 39,
+      "numberPassing": 38,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalArgumentException",
-          "failureDetail": "Unable to convert Pub/Sub message to payload of type java.nio.ByteBuffer.",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.cloud.gcp.pubsub.support.converter.SimplePubSubMessageConverterTests",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.cloud.gcp.pubsub.support.converter.SimplePubSubMessageConverterTests",
+        "testMethod": "testToByteBuffer",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unable to convert Pub/Sub message to payload of type java.nio.ByteBuffer.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 33,
+    "numberPlugins": 0,
+    "numberSourceFiles": 174,
+    "numberTestFiles": 73,
+    "numberLibrariesFailingModule": 82,
+    "numberLines": 0
+  }
 }
