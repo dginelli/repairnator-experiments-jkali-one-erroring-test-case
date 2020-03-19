@@ -1,0 +1,231 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Tablesaw
+[INFO] tablesaw-core
+[INFO] tablesaw-beakerx
+[INFO] tablesaw-jsplot
+[INFO] tablesaw-aggregate
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Tablesaw 0.25.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ tablesaw-parent ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building tablesaw-core 0.25.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ tablesaw-core ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/core/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tablesaw-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (java-compile) @ tablesaw-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tablesaw-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (java-test-compile) @ tablesaw-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ tablesaw-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 6.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 86.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1121.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running tech.tablesaw.columns.datetimes.DateTimeFiltersTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.871 sec - in tech.tablesaw.columns.datetimes.DateTimeFiltersTest
+Running tech.tablesaw.columns.datetimes.DateTimeFillersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in tech.tablesaw.columns.datetimes.DateTimeFillersTest
+Running tech.tablesaw.columns.datetimes.DateTimeMapFunctionsTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec - in tech.tablesaw.columns.datetimes.DateTimeMapFunctionsTest
+Running tech.tablesaw.columns.datetimes.PackedLocalDateTimeTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in tech.tablesaw.columns.datetimes.PackedLocalDateTimeTest
+Running tech.tablesaw.columns.numbers.NumberFiltersTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.284 sec - in tech.tablesaw.columns.numbers.NumberFiltersTest
+Running tech.tablesaw.columns.numbers.NumberFillersTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in tech.tablesaw.columns.numbers.NumberFillersTest
+Running tech.tablesaw.columns.numbers.NumberMapFunctionsTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in tech.tablesaw.columns.numbers.NumberMapFunctionsTest
+Running tech.tablesaw.columns.strings.StringFiltersTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in tech.tablesaw.columns.strings.StringFiltersTest
+Running tech.tablesaw.columns.dates.DateMapFunctionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in tech.tablesaw.columns.dates.DateMapFunctionsTest
+Running tech.tablesaw.columns.dates.DateFiltersTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in tech.tablesaw.columns.dates.DateFiltersTest
+Running tech.tablesaw.columns.dates.DateFillersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in tech.tablesaw.columns.dates.DateFillersTest
+Running tech.tablesaw.columns.dates.PackedLocalDateTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in tech.tablesaw.columns.dates.PackedLocalDateTest
+Running tech.tablesaw.columns.booleans.BooleanFillersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in tech.tablesaw.columns.booleans.BooleanFillersTest
+Running tech.tablesaw.columns.booleans.BooleanMapUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in tech.tablesaw.columns.booleans.BooleanMapUtilsTest
+Running tech.tablesaw.columns.times.PackedLocalTimeTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in tech.tablesaw.columns.times.PackedLocalTimeTest
+Running tech.tablesaw.columns.times.LocalTimeFilterTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in tech.tablesaw.columns.times.LocalTimeFilterTest
+Running tech.tablesaw.columns.times.TimeFillersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in tech.tablesaw.columns.times.TimeFillersTest
+Running tech.tablesaw.columns.ColumnTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.475 sec - in tech.tablesaw.columns.ColumnTest
+Running tech.tablesaw.columns.AbstractColumnTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in tech.tablesaw.columns.AbstractColumnTest
+Running tech.tablesaw.api.TableQueryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in tech.tablesaw.api.TableQueryTest
+Running tech.tablesaw.api.NumberColumnTest
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 2.309 sec - in tech.tablesaw.api.NumberColumnTest
+Running tech.tablesaw.api.TimeColumnTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in tech.tablesaw.api.TimeColumnTest
+Running tech.tablesaw.api.QueryHelperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in tech.tablesaw.api.QueryHelperTest
+Running tech.tablesaw.api.DateColumnTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in tech.tablesaw.api.DateColumnTest
+Running tech.tablesaw.api.DateTimeColumnTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in tech.tablesaw.api.DateTimeColumnTest
+Running tech.tablesaw.api.RowTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in tech.tablesaw.api.RowTest
+Running tech.tablesaw.api.DateColumnMapTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in tech.tablesaw.api.DateColumnMapTest
+Running tech.tablesaw.api.TableTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.264 sec - in tech.tablesaw.api.TableTest
+Running tech.tablesaw.api.BooleanColumnTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in tech.tablesaw.api.BooleanColumnTest
+Running tech.tablesaw.api.StringColumnTest
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in tech.tablesaw.api.StringColumnTest
+Running tech.tablesaw.io.csv.CsvReaderTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.26 sec - in tech.tablesaw.io.csv.CsvReaderTest
+Running tech.tablesaw.io.TypeUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in tech.tablesaw.io.TypeUtilsTest
+Running tech.tablesaw.io.jdbc.SqlResultSetReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.649 sec - in tech.tablesaw.io.jdbc.SqlResultSetReaderTest
+Running tech.tablesaw.io.DataFrameWriterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in tech.tablesaw.io.DataFrameWriterTest
+Running tech.tablesaw.io.html.HtmlTableWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in tech.tablesaw.io.html.HtmlTableWriterTest
+Running tech.tablesaw.io.string.DataFramePrinterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in tech.tablesaw.io.string.DataFramePrinterTest
+Running tech.tablesaw.util.DoubleArraysTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.604 sec - in tech.tablesaw.util.DoubleArraysTest
+Running tech.tablesaw.util.StatUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in tech.tablesaw.util.StatUtilTest
+Running tech.tablesaw.TestDataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.051 sec - in tech.tablesaw.TestDataTest
+Running tech.tablesaw.aggregate.CrossTabTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in tech.tablesaw.aggregate.CrossTabTest
+Running tech.tablesaw.aggregate.AggregateFunctionsTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec - in tech.tablesaw.aggregate.AggregateFunctionsTest
+Running tech.tablesaw.index.LongIndexTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in tech.tablesaw.index.LongIndexTest
+Running tech.tablesaw.index.DoubleIndexTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec - in tech.tablesaw.index.DoubleIndexTest
+Running tech.tablesaw.index.IntIndexTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in tech.tablesaw.index.IntIndexTest
+Running tech.tablesaw.table.RollingColumnTest
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.019 sec <<< FAILURE! - in tech.tablesaw.table.RollingColumnTest
+testRollingCountTrue(tech.tablesaw.table.RollingColumnTest)  Time elapsed: 0.009 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot append java.lang.Integer to DoubleColumn
+	at tech.tablesaw.api.DoubleColumn.appendObj(DoubleColumn.java:299)
+	at tech.tablesaw.api.DoubleColumn.appendObj(DoubleColumn.java:64)
+	at tech.tablesaw.table.RollingColumn.calc(RollingColumn.java:43)
+	at tech.tablesaw.table.RollingColumnTest.testRollingCountTrue(RollingColumnTest.java:53)
+
+Running tech.tablesaw.table.TableSliceGroupTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in tech.tablesaw.table.TableSliceGroupTest
+Running tech.tablesaw.table.TableSliceTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec - in tech.tablesaw.table.TableSliceTest
+Running tech.tablesaw.selection.SelectionTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in tech.tablesaw.selection.SelectionTest
+Running tech.tablesaw.SortTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in tech.tablesaw.SortTest
+Running tech.tablesaw.TableFilteringTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in tech.tablesaw.TableFilteringTest
+Running tech.tablesaw.joining.DataFrameJoinerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in tech.tablesaw.joining.DataFrameJoinerTest
+Running tech.tablesaw.conversion.TableConverterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in tech.tablesaw.conversion.TableConverterTest
+
+Results :
+
+Tests in error: 
+  RollingColumnTest.testRollingCountTrue:53 » IllegalArgument Cannot append java...
+
+Tests run: 598, Failures: 0, Errors: 1, Skipped: 4
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Tablesaw ........................................... SUCCESS [  1.932 s]
+[INFO] tablesaw-core ...................................... FAILURE [ 17.342 s]
+[INFO] tablesaw-beakerx ................................... SKIPPED
+[INFO] tablesaw-jsplot .................................... SKIPPED
+[INFO] tablesaw-aggregate ................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.554 s
+[INFO] Finished at: 2020-03-19T10:59:12+01:00
+[INFO] Final Memory: 18M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project tablesaw-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project tablesaw-core: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/core/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/core/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :tablesaw-core
