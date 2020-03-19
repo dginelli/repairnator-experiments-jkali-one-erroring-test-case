@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 19,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "languagetool-org/languagetool",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/399227123/languagetool-language-modules/de",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IndexOutOfBoundsException"
-  ],
-  "totalNumberRunningTests": 440,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.de.SwissGermanSpellerRuleTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testGetSuggestionsFromSpellingTxt"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:59:36 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:14:08 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 34576056,
+      "totalMemory": 161427456
+    },
+    "totalDuration": 866,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 69,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          69
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-399227123-20180702-192940-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-399227123-20180702-192940-firstCommit/languagetool-language-modules/ga",
+    "overallMetrics": {
+      "numberRunning": 741,
+      "numberPassing": 740,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 19,
       "failures": [
         {
-          "failureName": "java.lang.IndexOutOfBoundsException",
-          "failureDetail": "Index: 0, Size: 0",
-          "isError": true
+          "failureName": "java.io.IOException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.tagging.disambiguation.rules.ga.IrishDisambiguationRuleTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.tagging.disambiguation.rules.ga.IrishDisambiguationRuleTest",
+        "testMethod": "testDisambiguationRulesFromXML",
+        "failureName": "java.io.IOException",
+        "detail": "Cannot load or parse \u0027/org/languagetool/resource/ga/disambiguation.xml\u0027",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 47,
+    "numberPlugins": 0,
+    "numberSourceFiles": 780,
+    "numberTestFiles": 498,
+    "numberLibrariesFailingModule": 27,
+    "numberLines": 0
+  }
 }
