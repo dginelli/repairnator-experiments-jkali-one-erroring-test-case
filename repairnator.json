@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:56:03 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:59:58 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 243670552,
+      "totalMemory": 734855168
+    },
+    "totalDuration": 3831,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 3604,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          3604
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-417553793-20180818-081155-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 594,
+      "numberPassing": 593,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 4,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "tech.tablesaw.table.RollingColumnTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "tech.tablesaw.table.RollingColumnTest",
+        "testMethod": "testRollingCountTrue",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Cannot append java.lang.Integer to DoubleColumn",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberPlugins": 0,
+    "numberSourceFiles": 179,
+    "numberTestFiles": 76,
+    "numberLibrariesFailingModule": 28,
+    "numberLines": 0
+  }
+}
