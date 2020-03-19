@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "nahual/semillero2-api",
-  "bugCommit": "https://github.com/nahual/semillero2-api/compare/0477bb8e42b6...b228fbd9c05a",
-  "failingModule": "/root/workspace/nahual/semillero2-api/371272208",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 62,
-  "failing-test-cases": [
-    {
-      "className": "ar.edu.undav.semillero.service.StudentServiceTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "ar.edu.undav.semillero.service.StudentServiceTest#testImportCSV"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:03:22 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:09:12 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 27659920,
+      "totalMemory": 108818432
+    },
+    "totalDuration": 346,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 109,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          109,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 151,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          151
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-nahual-semillero2-api-371272208-20180425-231620-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-nahual-semillero2-api-371272208-20180425-231620-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 62,
+      "numberPassing": 61,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.RuntimeException",
-          "failureDetail": "Error importing CSV",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ar.edu.undav.semillero.service.StudentServiceTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ar.edu.undav.semillero.service.StudentServiceTest",
+        "testMethod": "testImportCSV",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Error importing CSV",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 34,
+    "numberTestFiles": 17,
+    "numberLibrariesFailingModule": 84,
+    "numberLines": 0
+  }
 }
