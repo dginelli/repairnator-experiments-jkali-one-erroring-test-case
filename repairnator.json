@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "smartsheet-platform/smartsheet-java-sdk",
-  "bugCommit": "https://github.com/smartsheet-platform/smartsheet-java-sdk/compare/599dea07b829...00f9ef673d80",
-  "failingModule": "/root/workspace/smartsheet-platform/smartsheet-java-sdk/351045321",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.InstantiationError"
-  ],
-  "totalNumberRunningTests": 259,
-  "failing-test-cases": [
-    {
-      "className": "com.smartsheet.api.internal.ShareResourcesImplTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.smartsheet.api.internal.ShareResourcesImplTest#testShareTo"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:39:02 PM",
+    "reproductionDateEnd": "Mar 19, 2020 8:53:50 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 137719672,
+      "totalMemory": 449486848
+    },
+    "totalDuration": 4485,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4328,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4328
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-smartsheet-platform-smartsheet-java-sdk-351045321-20180308-225838-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-smartsheet-platform-smartsheet-java-sdk-351045321-20180308-225838-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 259,
+      "numberPassing": 258,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.InstantiationError",
-          "failureDetail": "emailAddress and accessLevel are required",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.smartsheet.api.internal.ShareResourcesImplTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.smartsheet.api.internal.ShareResourcesImplTest",
+        "testMethod": "testShareTo",
+        "failureName": "java.lang.InstantiationError",
+        "detail": "emailAddress and accessLevel are required",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 311,
+    "numberTestFiles": 75,
+    "numberLibrariesFailingModule": 20,
+    "numberLines": 0
+  }
 }
