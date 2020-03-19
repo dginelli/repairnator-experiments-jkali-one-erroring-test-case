@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "tj-developers/jgrapht",
-  "bugCommit": "https://github.com/tj-developers/jgrapht/compare/3c02843842de...8cd94e5c6e12",
-  "failingModule": "/root/workspace/tj-developers/jgrapht/383243931/jgrapht-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.UnsupportedOperationException"
-  ],
-  "totalNumberRunningTests": 1243,
-  "failing-test-cases": [
-    {
-      "className": "org.jgrapht.alg.intervalgraph.IntervalGraphRecognizerTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "completeGraphTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:40:12 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:44:16 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 41649776,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 242,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-tj-developers-jgrapht-383243931-20180524-171812-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-tj-developers-jgrapht-383243931-20180524-171812-firstCommit/jgrapht-core",
+    "overallMetrics": {
+      "numberRunning": 1243,
+      "numberPassing": 1242,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.UnsupportedOperationException",
-          "failureDetail": "The graph contains no vertex supplier",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jgrapht.alg.intervalgraph.IntervalGraphRecognizerTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jgrapht.alg.intervalgraph.IntervalGraphRecognizerTest",
+        "testMethod": "completeGraphTest",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "detail": "The graph contains no vertex supplier",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 374,
+    "numberTestFiles": 218,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  }
 }
