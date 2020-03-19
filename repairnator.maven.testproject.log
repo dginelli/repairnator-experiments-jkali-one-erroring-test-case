@@ -1,0 +1,170 @@
+Mar 19, 2020 10:58:38 AM io.github.mike10004.crxtool.testing.Chromedrivers$ExecutingChromeVersionQuerier getChromeVersionString
+INFO: chrome executable could not be detected
+Mar 19, 2020 10:58:40 AM io.github.mike10004.crxtool.testing.Chromedrivers$ExecutingChromeVersionQuerier getChromeVersionString
+INFO: chrome executable could not be detected
+Mar 19, 2020 10:58:41 AM io.github.bonigarcia.wdm.WebDriverManager getDriversFromXml
+INFO: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]
+Mar 19, 2020 10:58:42 AM io.github.bonigarcia.wdm.WebDriverManager getLatest
+INFO: Latest version of [chromedriver] is 81.0.4044.69
+Mar 19, 2020 10:58:43 AM io.github.bonigarcia.wdm.WebDriverManager handleException
+WARNING: There was an error managing [chromedriver] NOT_SPECIFIED (Directory '/home/d/dginelli/.m2/repository/webdriver/chromedriver/linux64/81.0.4044.69' could not be created) ... trying again forcing to use cache
+----------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ crxtool-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-mike10004-crxtool-414094986-20180809-164701-firstCommit/crxtool-testing/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ crxtool-testing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ crxtool-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ crxtool-testing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ crxtool-testing ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-mike10004-crxtool-414094986-20180809-164701-firstCommit/crxtool-testing/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 9.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 108.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 969.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.github.mike10004.crxtool.testing.UnzippageTest
+directories: [ziptest/, ziptest/d1/, ziptest/d1/d4/, ziptest/d1/d2/, ziptest/d1/d2/d3/, ziptest/d1/d5/]
+files: [ziptest/d1/d2/d3/a, ziptest/d1/d5/b, ziptest/d1/d, ziptest/d1/c]
+directories: [ziptest/, ziptest/d1/, ziptest/d1/d4/, ziptest/d1/d2/, ziptest/d1/d2/d3/, ziptest/d1/d5/]
+files: [ziptest/d1/d2/d3/a, ziptest/d1/d5/b, ziptest/d1/d, ziptest/d1/c]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.364 sec - in io.github.mike10004.crxtool.testing.UnzippageTest
+Running io.github.mike10004.crxtool.testing.ChromedriversTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.068 sec - in io.github.mike10004.crxtool.testing.ChromedriversTest
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building crxtool-core 0.8
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ crxtool-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-mike10004-crxtool-414094986-20180809-164701-firstCommit/crxtool-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ crxtool-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ crxtool-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ crxtool-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ crxtool-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-mike10004-crxtool-414094986-20180809-164701-firstCommit/crxtool-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.github.mike10004.crxtool.CrxMetadataTest
+CrxMetadata{id='dnogaomdbgfngjgalaoggcfahgeibfdc', magicNumber='Cr24', version=2, pubkeyLength=294, pubkeyBase64='MIIBIjANBgkqh...', signatureLength=256, signatureBase64='fqE//dBAJVMbs...'}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec - in io.github.mike10004.crxtool.CrxMetadataTest
+Running io.github.mike10004.crxtool.KeyPairsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in io.github.mike10004.crxtool.KeyPairsTest
+Running io.github.mike10004.crxtool.ZippingFileVisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 sec - in io.github.mike10004.crxtool.ZippingFileVisitorTest
+Running io.github.mike10004.crxtool.BasicCrxPackerTest
+metadata: CrxMetadata{id='gcplpibanldlbikdlndkepiihgjjobcm', magicNumber='Cr24', version=2, pubkeyLength=162, pubkeyBase64='MIGfMA0GCSqGS...', signatureLength=128, signatureBase64='XIL3RXGL2D19i...'}
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 sec - in io.github.mike10004.crxtool.BasicCrxPackerTest
+Running io.github.mike10004.crxtool.BasicCrxParserTest
+headerLength=566
+id=dnogaomdbgfngjgalaoggcfahgeibfdc
+pubkey=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu+t15UsWTfyHvGYT/NgFN+ScBIu0ZCTWLUlONYitEL9vEtVcQWjEtn71q6OnM+TlbUSAzT9uXjLdrClrW9CJHjOJs8qIBNVVJzi9vYnc57YPVTNJCKVS4+XKyT+79AUiLeOhMEbr6pedlnrNqmb4AsOGKmZrpfDWRPw4Eofypx9z+duYeUWRgB/xmhuhV9898YXZ68bCCoNsUugKLBVFYXxw/T10AdIkvY5pyxknVXei+iuQsoaMOlLZ0J8W+82qhiOCUkPvTmPBTrqeFhxjC6TnO0aPwPMcKrslTCfCh+keTjmeok8R3XGlwFpPZOQGS/aesHZ5E6v9UhUWlZr+UQIDAQAB
+signature=fqE//dBAJVMbs63Za023gynfbXQnAubmgB67AG6kjnj+OzG+/yeqmzg1xt9c+LM8PPzcyYnA1HVIym2cRDzV04rEjgvAiZVS+VLFrjvlBg2Eenoz3JiaBK2HJxz7OU/5b9ZJkQL8s6U5/ioTzCoUwWXjxN6zignyIGqHPNTYxaA2DGgrFxgyCBexjNZwwwL0xCNeSBuafiCwFikxz+cbBeyfFGf1Zk2Jfhqq58sXm4L5mn6db6ZdjiA7G/jE8lEcdAWqk2yXVo79e/KwiKV9+972agDAYvTB9Kv4O4sCnx5t+lCxtnqo/lI5NqhDXMxCnK4yWgtkGSzOr4Nx2hjWiw==
+manifest.json
+background.js
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in io.github.mike10004.crxtool.BasicCrxParserTest
+Running io.github.mike10004.crxtool.BasicCrxPacker_WebDriverTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.319 sec <<< FAILURE! - in io.github.mike10004.crxtool.BasicCrxPacker_WebDriverTest
+io.github.mike10004.crxtool.BasicCrxPacker_WebDriverTest  Time elapsed: 3.319 sec  <<< ERROR!
+io.github.bonigarcia.wdm.WebDriverManagerException: java.lang.IllegalArgumentException: Parameter 'directory' is not a directory: /home/d/dginelli/.m2/repository/webdriver
+	at io.github.mike10004.crxtool.BasicCrxPacker_WebDriverTest.configureChromedriver(BasicCrxPacker_WebDriverTest.java:46)
+Caused by: java.lang.IllegalArgumentException: Parameter 'directory' is not a directory: /home/d/dginelli/.m2/repository/webdriver
+	at io.github.mike10004.crxtool.BasicCrxPacker_WebDriverTest.configureChromedriver(BasicCrxPacker_WebDriverTest.java:46)
+
+
+Results :
+
+Tests in error: 
+  BasicCrxPacker_WebDriverTest.configureChromedriver:46 » WebDriverManager java....
+
+Tests run: 14, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] crxtool ............................................ SUCCESS [  0.001 s]
+[INFO] crxtool-testing .................................... SUCCESS [  3.450 s]
+[INFO] crxtool-core ....................................... FAILURE [  5.276 s]
+[INFO] crxtool-maven-plugin ............................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.030 s
+[INFO] Finished at: 2020-03-19T10:58:44+01:00
+[INFO] Final Memory: 18M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project crxtool-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-mike10004-crxtool-414094986-20180809-164701-firstCommit/crxtool-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project crxtool-core: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-mike10004-crxtool-414094986-20180809-164701-firstCommit/crxtool-core/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-mike10004-crxtool-414094986-20180809-164701-firstCommit/crxtool-core/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :crxtool-core
