@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 18,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 1,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/414dd7d66e22...2dd60e9d5c0b",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/307791493/languagetool-language-modules/gl",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.io.IOException"
-  ],
-  "totalNumberRunningTests": 552,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.gl.GalicianPatternRuleTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.languagetool.rules.gl.GalicianPatternRuleTest#testRules"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:53:10 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:03:29 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 16365248,
+      "totalMemory": 92495872
+    },
+    "totalDuration": 615,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-307796498-20171127-102439-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-307796498-20171127-102439-firstCommit/languagetool-language-modules/gl",
+    "overallMetrics": {
+      "numberRunning": 534,
+      "numberPassing": 533,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 18,
       "failures": [
         {
           "failureName": "java.io.IOException",
-          "failureDetail": "Cannot load or parse \u0027/org/languagetool/rules/gl/grammar.xml\u0027",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.gl.GalicianPatternRuleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.gl.GalicianPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.io.IOException",
+        "detail": "Cannot load or parse \u0027/org/languagetool/rules/gl/grammar.xml\u0027",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 706,
+    "numberTestFiles": 457,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  }
 }
