@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 13,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 1,
-  "repo": "languagetool-org/languagetool",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/231921041/languagetool-language-modules/ga",
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.io.IOException"
-  ],
-  "totalNumberRunningTests": 663,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.tagging.disambiguation.rules.ga.IrishDisambiguationRuleTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.languagetool.tagging.disambiguation.rules.ga.IrishDisambiguationRuleTest#testDisambiguationRulesFromXML"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:55:06 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:07:14 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 60180296,
+      "totalMemory": 164114432
+    },
+    "totalDuration": 723,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 31,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          31
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-231938787-20170513-212623-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-231938787-20170513-212623-firstCommit/languagetool-language-modules/ga",
+    "overallMetrics": {
+      "numberRunning": 650,
+      "numberPassing": 649,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 13,
       "failures": [
         {
           "failureName": "java.io.IOException",
-          "failureDetail": "Cannot load or parse \u0027/org/languagetool/resource/ga/disambiguation.xml\u0027",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.tagging.disambiguation.rules.ga.IrishDisambiguationRuleTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.tagging.disambiguation.rules.ga.IrishDisambiguationRuleTest",
+        "testMethod": "testDisambiguationRulesFromXML",
+        "failureName": "java.io.IOException",
+        "detail": "Cannot load or parse \u0027/org/languagetool/resource/ga/disambiguation.xml\u0027",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 45,
+    "numberPlugins": 0,
+    "numberSourceFiles": 672,
+    "numberTestFiles": 440,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  }
 }
