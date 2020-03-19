@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 1,
-  "repo": "json-iterator/java",
-  "failingModule": "/root/workspace/json-iterator/java/347950456",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IndexOutOfBoundsException"
-  ],
-  "totalNumberRunningTests": 1277,
-  "failing-test-cases": [
-    {
-      "className": "com.jsoniter.TestString",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.jsoniter.TestString#test_unicode_escape"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:56:03 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:40:56 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 113617968,
+      "totalMemory": 400621568
+    },
+    "totalDuration": 6289,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 15,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          15,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6092,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6092
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-json-iterator-java-347950456-20180301-213148-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-json-iterator-java-347950456-20180301-213148-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1277,
+      "numberPassing": 1276,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IndexOutOfBoundsException",
-          "failureDetail": "52 is not valid hex digit",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.jsoniter.TestString",
+        "numberRunning": 45,
+        "numberPassing": 44,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.jsoniter.TestString",
+        "testMethod": "test_unicode_escape",
+        "failureName": "java.lang.IndexOutOfBoundsException",
+        "detail": "52 is not valid hex digit",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 117,
+    "numberTestFiles": 68,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  }
 }
