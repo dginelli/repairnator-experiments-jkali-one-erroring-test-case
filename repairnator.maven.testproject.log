@@ -1,0 +1,814 @@
+[main] WARN org.javalite.app_config.AppConfig - Environment variable 'ACTIVE_ENV' not found, defaulting to 'development'
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/global.properties
+[main] WARN org.javalite.app_config.AppConfig - Environment variable 'ACTIVE_ENV' not found, defaulting to 'development'
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/development.properties
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/global.properties
+[main] WARN org.javalite.app_config.AppConfig - Environment variable 'ACTIVE_ENV' not found, defaulting to 'development'
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/development.properties
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/global.properties
+[main] WARN org.javalite.app_config.AppConfig - Environment variable 'ACTIVE_ENV' not found, defaulting to 'development'
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/development.properties
+[main] WARN org.javalite.app_config.AppConfig - Temporary overriding property: first.name. Old value: John. New value: Mike
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/global.properties
+[main] WARN org.javalite.app_config.AppConfig - Environment variable 'ACTIVE_ENV' not found, defaulting to 'development'
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/development.properties
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/global.properties
+[main] WARN org.javalite.app_config.AppConfig - Environment variable 'ACTIVE_ENV' not found, defaulting to 'development'
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/development.properties
+[main] INFO org.javalite.app_config.AppConfig - Registering properties from: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/production.properties
+[main] WARN org.javalite.app_config.AppConfig - 
+************************************************************
+Duplicate property defined. Property: 'first.name' found in files: 
+/scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/app_config/development.properties, 
+/scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/production.properties
+Using value 'Larry' from:
+/scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/test-classes/production.properties
+************************************************************
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM animals WHERE animal_id = ? LIMIT 1","params":[1],"duration_millis":0,"cache":"miss"},"context":{"user_id":"234","user":"joeschmoe","email":"joe@schmoe.me"}}
+st
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.javalite.common.ConvertTest
+Running org.javalite.common.TemplatorSpec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.javalite.common.TemplatorSpec
+Running org.javalite.common.JsonHelperSpec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 sec - in org.javalite.common.JsonHelperSpec
+Running org.javalite.logging.JsonLog4jLayoutSpec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.javalite.logging.JsonLog4jLayoutSpec
+
+Results :
+
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JavaLite - Instrumentation Plugin and JavaAgent 2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ activejdbc-instrumentation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ activejdbc-instrumentation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc-instrumentation/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ activejdbc-instrumentation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.3:descriptor (default-descriptor) @ activejdbc-instrumentation ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[INFO] Mojo extractor for language: java found 1 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 0 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ activejdbc-instrumentation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc-instrumentation/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ activejdbc-instrumentation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ activejdbc-instrumentation ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JavaLite - AppConfig 2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ app-config ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ app-config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ app-config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ app-config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ app-config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ app-config ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/app-config/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.javalite.app_config.AppConfigTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in org.javalite.app_config.AppConfigTest
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JavaLite - ActiveJDBC ORM Framework 2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ activejdbc ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-versions) @ activejdbc ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ activejdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ activejdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ activejdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 22 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ activejdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> activejdbc-instrumentation:2.1-SNAPSHOT:instrument (default) > process-classes @ activejdbc >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ activejdbc ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-versions) @ activejdbc ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ activejdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ activejdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< activejdbc-instrumentation:2.1-SNAPSHOT:instrument (default) < process-classes @ activejdbc <<<
+[INFO] 
+[INFO] --- activejdbc-instrumentation:2.1-SNAPSHOT:instrument (default) @ activejdbc ---
+**************************** START INSTRUMENTATION ****************************
+Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Item.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Person.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Address.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/WildAnimal.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Node.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Account.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Band.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Passenger.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Temperature.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Cheese.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Meal.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Recipe.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Sword.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/OtherDbModel.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Animal.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Room.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Comment.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Programmer.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Page.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Project.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Alarm.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Interval.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Prescription.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/SubClassification.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Employee.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/ContentGroup.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Classification.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/NoArg.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Doctor.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Salary.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Student.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Assignment.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/University.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Computer.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Book.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Team.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/User.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Keyboard.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/DoctorsPatients.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Reader.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Tag.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Motherboard.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Box.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Image.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Developer.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Article.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Post.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Patient.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Apple.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Player.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Course.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Vehicle.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Cake.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/School.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Plant.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Library.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Fruit.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Ingredient.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Musician.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Mammal.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Watermelon.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Genre.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Member.class
+Instrumented class: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/org/javalite/activejdbc/test_models/Vegetable.class
+**************************** END INSTRUMENTATION ****************************
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ activejdbc ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.javalite.activejdbc.PaginatorDefect38Test
+Getting statements from file: h2_schema.sql
+DB: h2, Driver: org.h2.Driver
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:36 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Configuration","message":"Reading properties from: /database.properties. Will try classpath, then file system."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:36 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Configuration","message":"Load models from: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/activejdbc_models.properties"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:36 CET 2020","thread":"main","logger":"org.ehcache.config.xml.XmlConfiguration","message":"Loading Ehcache XML configuration from /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/test-classes/activejdbc-ehcache.xml."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:36 CET 2020","thread":"main","logger":"org.ehcache.spi.ServiceLocator","message":"All Services successfully started."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:36 CET 2020","thread":"main","logger":"org.ehcache.EhcacheManager","message":"Initialize successful."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Item"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Person"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Address"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.WildAnimal"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Node"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Account"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Band"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Passenger"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Temperature"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Cheese"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Meal"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Recipe"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Sword"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Animal"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Room"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Comment"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Programmer"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Page"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Project"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Alarm"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Interval"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Prescription"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.SubClassification"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Employee"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.ContentGroup"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Classification"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.NoArg"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Doctor"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Salary"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Student"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Assignment"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.University"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Computer"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Book"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Team"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.User"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Keyboard"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.DoctorsPatients"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Reader"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Tag"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Motherboard"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Box"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Image"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Developer"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Article"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Post"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Patient"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Apple"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Player"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Course"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Vehicle"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Cake"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.School"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Plant"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Library"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Fruit"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Ingredient"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Musician"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Mammal"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Watermelon"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Genre"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Member"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Registered model: class org.javalite.activejdbc.test_models.Vegetable"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: "Wild Animals""}
+{"level":"WARN","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Failed to retrieve metadata for table: '`interval`'. Are you sure this table exists? For some databases table names are case sensitive."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: accounts"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: addresses"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: alarms"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: animals"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: apples"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: articles"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: bands"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: books"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: boxes"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: cakes"}
+{"level":"WARN","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Failed to retrieve metadata for table: 'cheeses'. Are you sure this table exists? For some databases table names are case sensitive."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: classifications"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: comments"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: computers"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: content_groups"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: courses"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: developers"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: doctors"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: doctors_patients"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: employees"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: fruits"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: genres"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: images"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: ingredients"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: items"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: keyboards"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: legacy_universities"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: libraries"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: mammals"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: meals"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: Member"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: motherboards"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: musicians"}
+{"level":"WARN","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Failed to retrieve metadata for table: 'no_args'. Are you sure this table exists? For some databases table names are case sensitive."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: nodes"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: pages"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: passengers"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: patients"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: people"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: plants"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: players"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: posts"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: prescriptions"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: programmers"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: programmers_projects"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: projects"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: readers"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: recipes"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: rooms"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: salaries"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: schools"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: students"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: sub_classifications"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: swords"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: tags"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: teams"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: temperatures"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: users"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: vegetables"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: vehicles"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Fetched metadata for table: watermelons"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Room  >----------  Address, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Address  ----------<  Room, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Reader  >----------  Book, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Book  ----------<  Reader, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: SubClassification  >----------  Classification, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Classification  ----------<  SubClassification, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: DoctorsPatients  >----------  Doctor, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Doctor  ----------<  DoctorsPatients, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Doctor  >---------<  Patient, type: many-to-many, join: doctors_patients"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Box  >----------  Fruit, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Fruit  ----------<  Box, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: DoctorsPatients  >----------  Patient, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Patient  ----------<  DoctorsPatients, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Prescription  >----------  Patient, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Patient  ----------<  Prescription, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Patient  >---------<  Doctor, type: many-to-many, join: doctors_patients"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Assignment  >----------  Programmer, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Programmer  ----------<  Assignment, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Programmer  >---------<  Project, type: many-to-many, join: programmers_projects"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Assignment  >----------  Project, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Project  ----------<  Assignment, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Project  >---------<  Programmer, type: many-to-many, join: programmers_projects"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Player  >----------  Team, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Team  ----------<  Player, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Address  >----------  User, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: User  ----------<  Address, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Passenger  >----------  User, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: User  ----------<  Passenger, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Node  ----------<  Node, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Node  >----------  Node, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Band  >---------<  Genre, type: many-to-many, join: bands_genres"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Genre  >---------<  Band, type: many-to-many, join: bands_genres"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Band  >---------<  Musician, type: many-to-many, join: bands_musicians"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Musician  >---------<  Band, type: many-to-many, join: bands_musicians"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Recipe  >---------<  Ingredient, type: many-to-many, join: ingredients_recipes"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Ingredient  >---------<  Recipe, type: many-to-many, join: ingredients_recipes"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Comment  >----------  Article, type: belongs-to-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Article  ----------<  Comment, type: has-many-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Comment  >----------  Post, type: belongs-to-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Post  ----------<  Comment, type: has-many-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Comment  >----------  Prescription, type: belongs-to-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Prescription  ----------<  Comment, type: has-many-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Classification  >----------  Vehicle, type: belongs-to-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Vehicle  ----------<  Classification, type: has-many-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Classification  >----------  Mammal, type: belongs-to-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Mammal  ----------<  Classification, type: has-many-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Student  >---------<  Course, type: many-to-many, join: registrations"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Course  >---------<  Student, type: many-to-many, join: registrations"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Keyboard  ----------<  Computer, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Computer  >----------  Keyboard, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Motherboard  ----------<  Computer, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Computer  >----------  Motherboard, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Library  ----------<  Book, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Book  >----------  Library, type: belongs-to"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Tag  >----------  Article, type: belongs-to-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Article  ----------<  Tag, type: has-many-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Tag  >----------  Post, type: belongs-to-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.MetaModel","message":"Association found: Post  ----------<  Tag, type: has-many-polymorphic"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Removed association: Fruit  ----------<  Box, type: has-many"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Registry","message":"Removed association: Box  >----------  Fruit, type: belongs-to"}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.897 sec - in org.javalite.activejdbc.PaginatorDefect38Test
+Running org.javalite.activejdbc.test.DBSpecTest
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.Configuration","message":"Environment variable ACTIVE_ENV not provided, defaulting to 'development'"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"delete from patients","params":[],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"insert into patients (first_name, last_name) values ('Billie', 'Holiday')","params":[],"duration_millis":10}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM patients","params":[],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"insert into patients (first_name, last_name) values ('Billie', 'Holiday')","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM patients","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:37 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"delete from patients","params":[],"duration_millis":10}}
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in org.javalite.activejdbc.test.DBSpecTest
+Running org.javalite.activejdbc.HierarchyTest
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO cakes (name) VALUES (?)","params":["Cheese"],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM cakes","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM swords","params":[],"duration_millis":0}}
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 sec - in org.javalite.activejdbc.HierarchyTest
+Running org.javalite.activejdbc.CompositePkTest
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO developers (address, email, first_name, last_name) VALUES (?, ?, ?, ?)","params":["123 Pine St","j.cash@spam.org","Johnny","Cash"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["Johnny","Cash","j.cash@spam.org"],"duration_millis":2,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO developers (address, email, first_name, last_name) VALUES (?, ?, ?, ?)","params":["123 Pine St","j.cash@spam.org","Johnny","Cash2"],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO developers (address, email, first_name, last_name) VALUES (?, ?, ?, ?)","params":["123 Pine St","j.cash@spam.org","Johnny","Cash"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["Johnny","Cash","j.cash@spam.org"],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM developers","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"DELETE FROM developers WHERE first_name = ? AND last_name = ? AND email = ?","params":["Johnny","Cash","j.cash@spam.org"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM developers","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO developers (address, email, first_name, last_name) VALUES (?, ?, ?, ?)","params":["123 Pine St","j.cash@spam.org","Johnny","Cash"],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["Johnny","Casher","j.cash@spam.org"],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["John","Cash","j.cash@spam.org"],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["Johnny","Cash","j.cash@spam.com"],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO developers (address, email, first_name, last_name) VALUES ('123 Pine St', 'j.cash@spam.org', 'Johnny', 'Cash')","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"UPDATE developers SET address = 'updated', email = 'j.cash@spam.org', first_name = 'Johnny', last_name = 'Cash' WHERE first_name = 'Johnny' AND last_name = 'Cash' AND email = 'j.cash@spam.org'","params":[],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["Johnny","Cash","j.cash@spam.org"],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["Johnny","WrongName","j.cash@spam.org"],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO developers (address, email, first_name, last_name) VALUES (?, ?, ?, ?)","params":["bla","smithy@spam.org","John","Smith"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO developers (address, email, first_name, last_name) VALUES (?, ?, ?, ?)","params":["blabla","smithy@spam.org","John","Smith2"],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM developers","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["John","Smith","smithy@spam.org"],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["John","Smith2","smithy@spam.org"],"duration_millis":3,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["John","Smith2","smithy@spam.org"],"duration_millis":2,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"UPDATE developers SET ADDRESS = ? WHERE first_name = ? AND last_name = ? AND email = ?","params":["blablabla","John","Smith2","smithy@spam.org"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:38 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM developers WHERE first_name = ? AND last_name = ? AND email = ? LIMIT 1","params":["John","Smith2","smithy@spam.org"],"duration_millis":1,"cache":"miss"}}
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in org.javalite.activejdbc.CompositePkTest
+Running org.javalite.activejdbc.IsModelValidTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.javalite.activejdbc.IsModelValidTest
+Running org.javalite.activejdbc.PaginatorSpec
+Tests run: 12, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.518 sec <<< FAILURE! - in org.javalite.activejdbc.PaginatorSpec
+shouldSetCurrentPage(org.javalite.activejdbc.PaginatorSpec)  Time elapsed: 0.096 sec  <<< ERROR!
+org.javalite.activejdbc.InternalException: 
+org.javalite.activejdbc.DBException: org.h2.jdbc.JdbcSQLException: Column "ITEM_NUMBER" must be in the GROUP BY list; SQL statement:
+SELECT COUNT(*) FROM items order by item_number [90016-171], query: SELECT COUNT(*) FROM items order by item_number
+	at org.javalite.activejdbc.PaginatorSpec.shouldSetCurrentPage(PaginatorSpec.java:198)
+Caused by: org.javalite.activejdbc.DBException: 
+org.h2.jdbc.JdbcSQLException: Column "ITEM_NUMBER" must be in the GROUP BY list; SQL statement:
+SELECT COUNT(*) FROM items order by item_number [90016-171], query: SELECT COUNT(*) FROM items order by item_number
+	at org.javalite.activejdbc.PaginatorSpec.shouldSetCurrentPage(PaginatorSpec.java:198)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Column "ITEM_NUMBER" must be in the GROUP BY list; SQL statement:
+SELECT COUNT(*) FROM items order by item_number [90016-171]
+	at org.javalite.activejdbc.PaginatorSpec.shouldSetCurrentPage(PaginatorSpec.java:198)
+
+Running org.javalite.activejdbc.CallbackSupportTest
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:39 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO plants (category, created_at, plant_name, updated_at) VALUES (?, ?, ?, ?)","params":["none","2020-03-19 10:58:39.858","Fern","2020-03-19 10:58:39.858"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:39 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"DELETE FROM plants WHERE id        = ?","params":[1],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:39 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO fruits (category, created_at, fruit_name, updated_at) VALUES (?, ?, ?, ?)","params":["tree fruit","2020-03-19 10:58:39.864","apple","2020-03-19 10:58:39.864"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:39 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"DELETE FROM fruits WHERE id        = ?","params":[1],"duration_millis":0}}
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.CallbackSupportTest
+Running org.javalite.activejdbc.FreemarkerSpec
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:39 CET 2020","thread":"main","logger":"org.ehcache.EhcacheManager","message":"Cache 'people' is getting created in EhcacheManager."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:39 CET 2020","thread":"main","logger":"org.ehcache.spi.serialization.DefaultSerializationProvider","message":"Serializer for <java.lang.String> : org.ehcache.internal.serialization.CompactJavaSerializer@2034b64c"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:39 CET 2020","thread":"main","logger":"org.ehcache.spi.copy.DefaultCopyProvider","message":"Copier for <java.lang.String> : org.ehcache.internal.copy.IdentityCopier@33065d67"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:39 CET 2020","thread":"main","logger":"org.ehcache.spi.copy.DefaultCopyProvider","message":"Copier for <java.lang.Object> : org.ehcache.internal.copy.IdentityCopier@712625fd"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"class org.ehcache.Ehcache-people","message":"Initialize successful."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.ehcache.EhcacheManager","message":"Cache 'people' created in EhcacheManager."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM people WHERE last_name = ? LIMIT 1","params":["Smith"],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"UPDATE people SET GRADUATION_DATE = ?, updated_at = ? WHERE id = ?","params":[null,"2020-03-19 10:58:40.042",1],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM people WHERE last_name = ? LIMIT 1","params":["Smith"],"duration_millis":5,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM people WHERE last_name = ? LIMIT 1","params":["Smith"],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"UPDATE people SET GRADUATION_DATE = ?, updated_at = ? WHERE id = ?","params":[null,"2020-03-19 10:58:40.179",1],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM people ORDER BY id","params":[],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM people WHERE last_name = ? LIMIT 1","params":["Smith"],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"UPDATE people SET GRADUATION_DATE = ?, updated_at = ? WHERE id = ?","params":[null,"2020-03-19 10:58:40.207",1],"duration_millis":1}}
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.FreemarkerSpec
+Running org.javalite.activejdbc.Defect107Test
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM content_groups WHERE group_name = 1","params":[],"duration_millis":0,"cache":"miss"}}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Defect107Test
+Running org.javalite.activejdbc.DataSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.DataSourceTest
+Running org.javalite.activejdbc.ModelExistsTest
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM people","params":[],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"DELETE FROM people WHERE id = ?","params":[1],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT id FROM people WHERE id = ?","params":[1],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT id FROM people WHERE id = ?","params":[10000],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT id FROM people WHERE id = ?","params":[1],"duration_millis":0}}
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.ModelExistsTest
+Running org.javalite.activejdbc.RaceConditionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.RaceConditionTest
+Running org.javalite.activejdbc.logging.JsonLog4jLayoutSpec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.logging.JsonLog4jLayoutSpec
+Running org.javalite.activejdbc.dialects.DefaultDialectTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.dialects.DefaultDialectTest
+Running org.javalite.activejdbc.dialects.PostgreSQLDialectTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.dialects.PostgreSQLDialectTest
+Running org.javalite.activejdbc.dialects.OracleDialectTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.dialects.OracleDialectTest
+Running org.javalite.activejdbc.dialects.MSSQLDialectTest
+SELECT sq.* FROM (SELECT ROW_NUMBER() OVER (ORDER BY page_id) AS rownumber, * FROM pages) AS sq WHERE rownumber BETWEEN 21 AND 30
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.dialects.MSSQLDialectTest
+Running org.javalite.activejdbc.AssociationEqualityTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.AssociationEqualityTest
+Running org.javalite.activejdbc.PolymorphicAssociationsOverrideTest
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO vehicles (name) VALUES (?)","params":["car"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["four wheeled",1,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["sedan",1,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM classifications WHERE parent_id = ? AND  parent_type = 'Vehicle' AND ( name = ? ) ","params":[1,"sedan"],"duration_millis":2,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO vehicles (name) VALUES (?)","params":["car"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["four wheeled",1,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["sedan",1,"Vehicle"],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM classifications","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"DELETE FROM classifications WHERE id        = ?","params":[1],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM classifications","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM classifications WHERE parent_id = ? AND  parent_type = 'Vehicle'","params":[1],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO vehicles (name) VALUES (?)","params":["car"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["four wheeled",1,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["sedan",1,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM classifications WHERE parent_id = ? AND  parent_type = 'Vehicle'","params":[1],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO vehicles (name) VALUES (?)","params":["bike"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO vehicles (name) VALUES (?)","params":["car"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["four wheeled",2,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["sedan",2,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM classifications","params":[],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT * FROM vehicles WHERE id = ?","params":[2],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO vehicles (name) VALUES (?)","params":["car"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["four wheeled",1,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM classifications","params":[],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO vehicles (name) VALUES (?)","params":["car"],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["four wheeled",1,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["sedan",1,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM classifications","params":[],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO vehicles (name) VALUES (?)","params":["car"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["four wheeled",1,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["sedan",1,"Vehicle"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM classifications WHERE parent_id = ? AND  parent_type = 'Vehicle' ORDER BY id","params":[1],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO mammals (name) VALUES (?)","params":["fox"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["furry",1,"Mammal"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["carnivore",1,"Mammal"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO classifications (name, parent_id, parent_type) VALUES (?, ?, ?)","params":["four legged",1,"Mammal"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM classifications WHERE parent_id = ? AND  parent_type = 'Mammal' ORDER BY id","params":[1],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM classifications","params":[],"duration_millis":1,"cache":"miss"}}
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.PolymorphicAssociationsOverrideTest
+Running org.javalite.activejdbc.statistics.StatisticsQueueTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.statistics.StatisticsQueueTest
+Running org.javalite.activejdbc.statistics.QueryStatsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.statistics.QueryStatsTest
+Running org.javalite.activejdbc.ErrorsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.ErrorsTest
+Running org.javalite.activejdbc.NumericValidationBuilderTest
+{ }
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.NumericValidationBuilderTest
+Running org.javalite.activejdbc.UnrelatedSpec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.UnrelatedSpec
+Running org.javalite.activejdbc.Many2ManyRelationshipTest
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO students (dob, first_name, last_name) VALUES (?, ?, ?)","params":["2020-03-19","Bill","Jansen"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.ehcache.EhcacheManager","message":"Cache 'doctors' is getting created in EhcacheManager."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.ehcache.spi.serialization.DefaultSerializationProvider","message":"Serializer for <java.lang.String> : org.ehcache.internal.serialization.CompactJavaSerializer@27216cd"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.ehcache.spi.copy.DefaultCopyProvider","message":"Copier for <java.lang.String> : org.ehcache.internal.copy.IdentityCopier@558bdf1f"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.ehcache.spi.copy.DefaultCopyProvider","message":"Copier for <java.lang.Object> : org.ehcache.internal.copy.IdentityCopier@8576fa0"}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"class org.ehcache.Ehcache-doctors","message":"Initialize successful."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.ehcache.EhcacheManager","message":"Cache 'doctors' created in EhcacheManager."}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM doctors WHERE id = ? LIMIT 1","params":[1],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT patients.* FROM patients, doctors_patients WHERE patients.id = doctors_patients.patient_id AND doctors_patients.doctor_id = ? ","params":[1],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO programmers (created_at, first_name, last_name, updated_at) VALUES (?, ?, ?, ?)","params":["2020-03-19 10:58:40.467","Jim","Garnoe","2020-03-19 10:58:40.467"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO projects (created_at, project_name, updated_at) VALUES (?, ?, ?)","params":["2020-03-19 10:58:40.467","Prove theory of everything","2020-03-19 10:58:40.467"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO projects (created_at, project_name, updated_at) VALUES (?, ?, ?)","params":["2020-03-19 10:58:40.468","Find meaning of life","2020-03-19 10:58:40.468"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO programmers_projects (created_at, duration_weeks, updated_at) VALUES (?, ?, ?)","params":["2020-03-19 10:58:40.468",3,"2020-03-19 10:58:40.468"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"UPDATE programmers_projects SET PROGRAMMER_ID = ?, updated_at = ? WHERE id = ?","params":[1,"2020-03-19 10:58:40.468",1],"duration_millis":1}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"UPDATE programmers_projects SET PROJECT_ID = ?, updated_at = ? WHERE id = ?","params":[1,"2020-03-19 10:58:40.469",1],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO programmers_projects (created_at, programmer_id, project_id, updated_at) VALUES (?, ?, ?, ?)","params":["2020-03-19 10:58:40.469",1,2,"2020-03-19 10:58:40.469"],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT projects.* FROM projects, programmers_projects WHERE projects.id = programmers_projects.project_id AND programmers_projects.programmer_id = ?  AND ( duration_weeks = ? ) ","params":[1,3],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM doctors WHERE id = ? LIMIT 1","params":[1],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT patients.* FROM patients, doctors_patients WHERE patients.id = doctors_patients.patient_id AND doctors_patients.doctor_id = ? ","params":[1],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM doctors WHERE id = ? LIMIT 1","params":[2],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT patients.* FROM patients, doctors_patients WHERE patients.id = doctors_patients.patient_id AND doctors_patients.doctor_id = ? ","params":[2],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM patients WHERE id = ? LIMIT 1","params":[1],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT doctors.* FROM doctors, doctors_patients WHERE doctors.id = doctors_patients.doctor_id AND doctors_patients.patient_id = ? ","params":[1],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM patients WHERE id = ? LIMIT 1","params":[2],"duration_millis":1,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT doctors.* FROM doctors, doctors_patients WHERE doctors.id = doctors_patients.doctor_id AND doctors_patients.patient_id = ? ","params":[2],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT * FROM doctors WHERE id = ? LIMIT 1","params":[1],"duration_millis":0,"cache":"miss"}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM doctors_patients","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO patients (first_name, last_name) VALUES (?, ?)","params":["Jim","Smith"],"duration_millis":2}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"INSERT INTO doctors_patients (doctor_id, patient_id) VALUES (?, ?)","params":[1,4],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.DB","message":{"sql":"SELECT COUNT(*) FROM doctors_patients","params":[],"duration_millis":0}}
+{"level":"INFO","timestamp":"Thu Mar 19 10:58:40 CET 2020","thread":"main","logger":"org.javalite.activejdbc.LazyList","message":{"sql":"SELECT patients.* FROM patients, doctors_patients WHERE patients.id = doctors_patients.patient_id AND doctors_patients.doctor_id = ?  ORDER BY patients.id","params":[1],"duration_millis":0,"cache":"miss"}}
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.javalite.activejdbc.Many2ManyRelationshipTest
+Running org.javalite.activejdbc.Defect149Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Defect149Test
+Running org.javalite.activejdbc.Defect222Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Defect222Test
+Running org.javalite.activejdbc.Issue217Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Issue217Test
+Running org.javalite.activejdbc.OtherDbTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.OtherDbTest
+Running org.javalite.activejdbc.AttachDetachTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.AttachDetachTest
+Running org.javalite.activejdbc.RawPaginatorSpec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.javalite.activejdbc.RawPaginatorSpec
+Running org.javalite.activejdbc.ConnectionFailedMessageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.ConnectionFailedMessageTest
+Running org.javalite.activejdbc.LifecycleCallbackSpec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.LifecycleCallbackSpec
+Running org.javalite.activejdbc.Defect133Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Defect133Test
+Running org.javalite.activejdbc.Defect381_UpdateModifiedOnlyTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Defect381_UpdateModifiedOnlyTest
+Running org.javalite.activejdbc.CreateModelTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.CreateModelTest
+Running org.javalite.activejdbc.ToJsonSpec
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.ToJsonSpec
+Running org.javalite.activejdbc.Defect48Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Defect48Test
+Running org.javalite.activejdbc.CustomValidatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.CustomValidatorTest
+Running org.javalite.activejdbc.Defect329Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Defect329Test
+Running org.javalite.activejdbc.OptimisticLockingOverrideVersionColumnTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.javalite.activejdbc.OptimisticLockingOverrideVersionColumnTest
+Running org.javalite.activejdbc.OffsetLimitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.OffsetLimitTest
+Running org.javalite.activejdbc.CacheEventListenerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.CacheEventListenerTest
+Running org.javalite.activejdbc.CloseConnectionsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.CloseConnectionsTest
+Running org.javalite.activejdbc.Defect150ConnectionLeakTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Defect150ConnectionLeakTest
+Running org.javalite.activejdbc.AttributeLengthValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.AttributeLengthValidatorTest
+Running org.javalite.activejdbc.BaseTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.BaseTest
+Running org.javalite.activejdbc.OrphanRecordTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.OrphanRecordTest
+Running org.javalite.activejdbc.BlobTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.BlobTest
+Running org.javalite.activejdbc.SQLDialectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.SQLDialectTest
+Running org.javalite.activejdbc.TableNameTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.TableNameTest
+Running org.javalite.activejdbc.Defect141Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Defect141Test
+Running org.javalite.activejdbc.CreatedAtUpdatedAtTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.506 sec - in org.javalite.activejdbc.CreatedAtUpdatedAtTest
+Running org.javalite.activejdbc.CustomConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.CustomConverterTest
+Running org.javalite.activejdbc.ConverterTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.javalite.activejdbc.ConverterTest
+Running org.javalite.activejdbc.CaseSensitiveSpec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.CaseSensitiveSpec
+Running org.javalite.activejdbc.Defect104Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.Defect104Test
+Running org.javalite.activejdbc.Defect122Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.javalite.activejdbc.Defect122Test
+Running org.javalite.activejdbc.Defect140Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.Defect140Test
+Running org.javalite.activejdbc.LongIdTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.javalite.activejdbc.LongIdTest
+Running org.javalite.activejdbc.AttributeConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.javalite.activejdbc.AttributeConverterTest
+Running org.javalite.activejdbc.ScopeSpec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.javalite.activejdbc.ScopeSpec
+Running org.javalite.activejdbc.ToFromXmlSpec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 sec - in org.javalite.activejdbc.ToFromXmlSpec
+Running org.javalite.activejdbc.BatchExecTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.javalite.activejdbc.BatchExecTest
+Running org.javalite.activejdbc.BelongsToParentsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.BelongsToParentsTest
+Running org.javalite.activejdbc.BaseTest2
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.javalite.activejdbc.BaseTest2
+Running org.javalite.activejdbc.C3P0PoolTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 sec - in org.javalite.activejdbc.C3P0PoolTest
+Running org.javalite.activejdbc.DeleteChildrenSpec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.javalite.activejdbc.DeleteChildrenSpec
+Running org.javalite.activejdbc.PolymorphicAssociationsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.javalite.activejdbc.PolymorphicAssociationsTest
+Running org.javalite.activejdbc.LazyListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.javalite.activejdbc.LazyListTest
+Running org.javalite.activejdbc.PartitionIDSpec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.PartitionIDSpec
+Running org.javalite.activejdbc.Defect638Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.Defect638Test
+Running org.javalite.activejdbc.ValidationWithResourceBundlesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.javalite.activejdbc.ValidationWithResourceBundlesTest
+Running org.javalite.activejdbc.RemoveAssociatedChildTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.javalite.activejdbc.RemoveAssociatedChildTest
+Running org.javalite.activejdbc.ModelTest
+Tests run: 63, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in org.javalite.activejdbc.ModelTest
+Running org.javalite.activejdbc.CacheTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.244 sec - in org.javalite.activejdbc.CacheTest
+Running org.javalite.activejdbc.OptimisticLockingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.javalite.activejdbc.OptimisticLockingTest
+Running org.javalite.activejdbc.ConnectionSpecTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.javalite.activejdbc.ConnectionSpecTest
+Running org.javalite.activejdbc.Defect123Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.javalite.activejdbc.Defect123Test
+Running org.javalite.activejdbc.Many2ManyOverrideConventionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.javalite.activejdbc.Many2ManyOverrideConventionsTest
+Running org.javalite.activejdbc.Defect117Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.javalite.activejdbc.Defect117Test
+Running org.javalite.activejdbc.ValidatorsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.javalite.activejdbc.ValidatorsTest
+Running org.javalite.activejdbc.Defect199Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.javalite.activejdbc.Defect199Test
+Running org.javalite.activejdbc.AttributesAndAssociationsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.AttributesAndAssociationsTest
+Running org.javalite.activejdbc.TimeManagementSpec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.javalite.activejdbc.TimeManagementSpec
+Running org.javalite.activejdbc.Defect153Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.Defect153Test
+Running org.javalite.activejdbc.ShardingSpec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.javalite.activejdbc.ShardingSpec
+Running org.javalite.activejdbc.SetParentTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.javalite.activejdbc.SetParentTest
+Running org.javalite.activejdbc.DeleteCascadeTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.javalite.activejdbc.DeleteCascadeTest
+Running org.javalite.activejdbc.UnmaganedIdTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.javalite.activejdbc.UnmaganedIdTest
+Running org.javalite.activejdbc.IncludesTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.javalite.activejdbc.IncludesTest
+Running org.javalite.activejdbc.CorrectAttributeSpec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.javalite.activejdbc.CorrectAttributeSpec
+
+Results :
+
+Tests in error: 
+  PaginatorSpec.shouldSetCurrentPage:198 » Internal org.javalite.activejdbc.DBEx...
+
+Tests run: 410, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] JavaLite - ActiveJDBC Root ......................... SUCCESS [  0.985 s]
+[INFO] JavaLite - Common .................................. SUCCESS [  5.481 s]
+[INFO] JavaLite - Instrumentation Plugin and JavaAgent .... SUCCESS [  1.124 s]
+[INFO] JavaLite - AppConfig ............................... SUCCESS [  0.949 s]
+[INFO] JavaLite - ActiveJDBC ORM Framework ................ FAILURE [ 17.425 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 26.271 s
+[INFO] Finished at: 2020-03-19T10:58:51+01:00
+[INFO] Final Memory: 20M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project activejdbc: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project activejdbc: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-javalite-activejdbc-414698788-20180810-231417-firstCommit/activejdbc/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :activejdbc
