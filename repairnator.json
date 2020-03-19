@@ -1,31 +1,118 @@
 {
-    "totalNumberSkippingTests" : 0,
-    "bugType" : "only_fail",
-    "totalNumberErroringTests" : 1,
-    "repo" : "openmrs/openmrs-module-attachments",
-    "failingModule" : "/root/workspace/openmrs/openmrs-module-attachments/359935323/api-2.0",
-    "hostname" : "spirals-vortex.lille.inria.fr",
-    "totalNumberFailingTests" : 0,
-    "error-types" : [
-        "java.lang.IllegalStateException"
-    ],
-    "totalNumberRunningTests" : 12,
-    "failing-test-cases" : [
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:58:45 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:50:33 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 58781568,
+      "totalMemory": 236818432
+    },
+    "totalDuration": 6704,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openmrs-openmrs-module-attachments-359935323-20180329-185429-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openmrs-openmrs-module-attachments-359935323-20180329-185429-firstCommit/api",
+    "overallMetrics": {
+      "numberRunning": 11,
+      "numberPassing": 10,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
         {
-            "className" : "org.openmrs.module.attachments.AttachmentsServiceTest",
-            "failingMethods" : [ ],
-            "erroringMethods" : [
-                "org.openmrs.module.attachments.AttachmentsServiceTest#getAttachments_shouldReturnAttachments"
-            ],
-            "failures" : [
-                {
-                    "failureName" : "java.lang.IllegalStateException",
-                    "failureDetail" : "Failed to load ApplicationContext",
-                    "isError" : true
-                }
-            ],
-            "nbFailures" : 0,
-            "nbErrors" : 1
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
         }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.openmrs.module.attachments.obs.ImageAttachmentHandlerTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.openmrs.module.attachments.obs.ImageAttachmentHandlerTest",
+        "testMethod": "imageDocumentHandler_shouldFetchLikeImageHandler",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
     ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 31,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 135,
+    "numberLines": 0
+  }
 }
