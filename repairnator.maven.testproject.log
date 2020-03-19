@@ -1,0 +1,155 @@
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.wix.mysql.io.NotifyingStreamProcessor$ResultMatchingListener.waitForResult(NotifyingStreamProcessor.java:74)
+	at com.wix.mysql.io.ResultMatchingListenerTest$$anonfun$1$$anonfun$apply$11$$anonfun$apply$3.apply$mcV$sp(ResultMatchingListenerTest.scala:27)
+	at com.wix.mysql.io.ResultMatchingListenerTest$$anonfun$1$$anonfun$apply$11$$anonfun$apply$3.apply(ResultMatchingListenerTest.scala:27)
+	at com.wix.mysql.io.ResultMatchingListenerTest$$anonfun$1$$anonfun$apply$11$$anonfun$apply$3.apply(ResultMatchingListenerTest.scala:27)
+	at org.specs2.matcher.Expectable.value$lzycompute(Expectable.scala:20)
+	at org.specs2.matcher.Expectable.value(Expectable.scala:20)
+	at org.specs2.matcher.ExceptionBaseMatchers$$anonfun$6.apply(ExceptionMatchers.scala:194)
+	at org.specs2.matcher.ExceptionBaseMatchers$$anonfun$getException$1.apply(ExceptionMatchers.scala:218)
+	at org.specs2.control.Exceptions$class.catchAll(Exceptions.scala:116)
+	at org.specs2.control.Exceptions$.catchAll(Exceptions.scala:132)
+	at org.specs2.matcher.ExceptionBaseMatchers$class.getException(ExceptionMatchers.scala:222)
+	at org.specs2.matcher.ExceptionBaseMatchers$class.checkExceptionWithMatcher(ExceptionMatchers.scala:194)
+	at org.specs2.matcher.ExceptionBaseMatchers$class.org$specs2$matcher$ExceptionBaseMatchers$$checkExceptionValueWithMatcher(ExceptionMatchers.scala:163)
+	at org.specs2.matcher.ExceptionBaseMatchers$ExceptionClassMatcher.org$specs2$matcher$ExceptionBaseMatchers$ExceptionClassMatcher$$checkMatchResult(ExceptionMatchers.scala:76)
+	at org.specs2.matcher.ExceptionBaseMatchers$ExceptionClassMatcher$$anon$1.apply(ExceptionMatchers.scala:59)
+	at org.specs2.matcher.Expectable.applyMatcher(Expectable.scala:50)
+	at org.specs2.matcher.MustThrownExpectationsCreation$$anon$4.applyMatcher(MustExpectations.scala:64)
+	at org.specs2.matcher.MustExpectable.must(MustExpectable.scala:14)
+	at com.wix.mysql.io.ResultMatchingListenerTest$$anonfun$1$$anonfun$apply$11.apply(ResultMatchingListenerTest.scala:27)
+	at com.wix.mysql.io.ResultMatchingListenerTest$$anonfun$1$$anonfun$apply$11.apply(ResultMatchingListenerTest.scala:27)
+	at org.specs2.matcher.MatchResult$$anon$12$$anonfun$asResult$1.apply(MatchResult.scala:343)
+	at org.specs2.matcher.MatchResult$$anon$12$$anonfun$asResult$1.apply(MatchResult.scala:343)
+	at org.specs2.execute.ResultExecution$class.execute(ResultExecution.scala:23)
+	at org.specs2.execute.ResultExecution$.execute(ResultExecution.scala:118)
+	at org.specs2.execute.Result$$anon$10.asResult(Result.scala:227)
+	at org.specs2.execute.AsResult$.apply(AsResult.scala:25)
+	at org.specs2.matcher.MatchResult$$anon$12.asResult(MatchResult.scala:343)
+	at org.specs2.execute.AsResult$.apply(AsResult.scala:25)
+	at org.specs2.specification.core.Execution$$anonfun$result$2.apply(Execution.scala:129)
+	at org.specs2.specification.core.Execution$$anonfun$result$2.apply(Execution.scala:129)
+	at org.specs2.specification.core.Execution$$anonfun$withEnv$1$$anonfun$apply$5.apply(Execution.scala:132)
+	at org.specs2.execute.ResultExecution$class.execute(ResultExecution.scala:23)
+	at org.specs2.execute.ResultExecution$.execute(ResultExecution.scala:118)
+	at org.specs2.execute.Result$$anon$10.asResult(Result.scala:227)
+	at org.specs2.execute.AsResult$.apply(AsResult.scala:25)
+	at org.specs2.specification.core.Execution$$anonfun$withEnv$1.apply(Execution.scala:132)
+	at org.specs2.specification.core.Execution$$anonfun$withEnv$1.apply(Execution.scala:132)
+	at org.specs2.specification.core.Execution$$anonfun$execute$2$$anonfun$apply$4.apply(Execution.scala:73)
+	at org.specs2.specification.core.Execution$$anonfun$execute$2$$anonfun$apply$4.apply(Execution.scala:73)
+	at org.specs2.specification.core.Execution.setResult(Execution.scala:81)
+	at org.specs2.specification.core.Execution$$anonfun$execute$2.apply(Execution.scala:73)
+	at org.specs2.specification.core.Execution$$anonfun$execute$2.apply(Execution.scala:72)
+	at scala.Option.fold(Option.scala:158)
+	at org.specs2.specification.core.Execution.execute(Execution.scala:72)
+	at org.specs2.specification.process.DefaultExecutor$$anonfun$executeFragment$1$$anonfun$apply$16.apply(Executor.scala:150)
+	at org.specs2.specification.process.DefaultExecutor$$anonfun$executeFragment$1$$anonfun$apply$16.apply(Executor.scala:148)
+	at org.specs2.specification.core.Fragment.updateExecution(Fragment.scala:49)
+	at org.specs2.specification.process.DefaultExecutor$$anonfun$executeFragment$1.apply(Executor.scala:148)
+	at org.specs2.specification.process.DefaultExecutor$$anonfun$executeFragment$1.apply(Executor.scala:147)
+	at org.specs2.specification.process.DefaultExecutor$$anonfun$sequencedExecution$1$$anonfun$9.apply(Executor.scala:135)
+	at org.specs2.specification.process.DefaultExecutor$$anonfun$sequencedExecution$1$$anonfun$9.apply(Executor.scala:135)
+	at scalaz.concurrent.Task$.Try(Task.scala:446)
+	at org.specs2.data.Processes$$anonfun$start$1.apply(Processes.scala:115)
+	at org.specs2.data.Processes$$anonfun$start$1.apply(Processes.scala:115)
+	at scalaz.concurrent.Future$$anonfun$apply$15$$anon$3.call(Future.scala:433)
+	at scalaz.concurrent.Future$$anonfun$apply$15$$anon$3.call(Future.scala:433)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ 5.6.35'...
+19:42:15.175 [main] INFO  com.wix.mysql.EmbeddedMysql - Preparing EmbeddedMysql version 'Version 5.6.35'...
+19:42:15.493 [main] INFO  com.wix.mysql.EmbeddedMysql - Preparing EmbeddedMysql version 'Version 5.6.35'...
+19:42:15.497 [main] INFO  com.wix.mysql.EmbeddedMysql - Preparing EmbeddedMysql version 'Version 5.6.35'...
+19:42:15.501 [main] INFO  com.wix.mysql.EmbeddedMysql - Preparing EmbeddedMysql version 'Version 5.6.35'...
+19:42:15.504 [main] INFO  com.wix.mysql.EmbeddedMysql - Preparing EmbeddedMysql version 'Version 5.6.35'...
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.639 sec <<< FAILURE! - in com.wix.mysql.EmbeddedMysqlTest
+EmbeddedMysql instance should::start with default values(com.wix.mysql.EmbeddedMysqlTest)  Time elapsed: 0.093 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Could NOT create Directory /home/d/dginelli/.embedmysql
+
+Running com.wix.mysql.config.MysqldConfigTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in com.wix.mysql.config.MysqldConfigTest
+Running com.wix.mysql.MysqlTest
+19:42:16.492 [main] INFO  com.wix.mysql.EmbeddedMysql - Preparing EmbeddedMysql version 'Version 5.6.35'...
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in com.wix.mysql.MysqlTest
+Running com.wix.mysql.ParallelEmbeddedMysqlTest
+19:42:16.596 [ForkJoinPool-1-worker-1] INFO  com.wix.mysql.EmbeddedMysql - Preparing EmbeddedMysql version 'Version 5.7.17'...
+19:42:16.603 [ForkJoinPool-1-worker-1] INFO  com.wix.mysql.EmbeddedMysql - Preparing EmbeddedMysql version 'Version 5.7.17'...
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 sec - in com.wix.mysql.ParallelEmbeddedMysqlTest
+Running com.wix.mysql.SchemaConfigTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec - in com.wix.mysql.SchemaConfigTest
+Running com.wix.mysql.ScriptResolverTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec - in com.wix.mysql.ScriptResolverTest
+Running com.wix.mysql.distribution.VersionTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec - in com.wix.mysql.distribution.VersionTest
+Running com.wix.mysql.distribution.service.ServiceCommandBuilderTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in com.wix.mysql.distribution.service.ServiceCommandBuilderTest
+Running com.wix.mysql.SupportedVersionsTest
+19:42:17.120 [main] INFO  com.wix.mysql.EmbeddedMysql - Preparing EmbeddedMysql version 'Version 5.5.40'...
+19:42:17.122 [main] INFO  com.wix.mysql.EmbeddedMysql - Preparing EmbeddedMysql version 'Version 5.6.21'...
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in com.wix.mysql.SupportedVersionsTest
+Running com.wix.mysql.io.ResultMatchingListenerTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in com.wix.mysql.io.ResultMatchingListenerTest
+Running com.wix.mysql.io.TimingOutProcessExecutorTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.038 sec - in com.wix.mysql.io.TimingOutProcessExecutorTest
+
+Results :
+
+Tests in error: 
+  EmbeddedMysqlTest>IntegrationTest.start:38 » IllegalArgument Could NOT create ...
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.722 s
+[INFO] Finished at: 2020-03-19T19:42:18+01:00
+[INFO] Final Memory: 21M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project wix-embedded-mysql: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-wix-wix-embedded-mysql-237512156-20170530-153526_bugonly-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project wix-embedded-mysql: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-wix-wix-embedded-mysql-237512156-20170530-153526_bugonly-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-wix-wix-embedded-mysql-237512156-20170530-153526_bugonly-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
