@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:53:26 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:42:15 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 210342656,
+      "totalMemory": 694751232
+    },
+    "totalDuration": 6524,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6002,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6002
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-htynkn-incubator-dubbo-417884071-20180819-153729-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-htynkn-incubator-dubbo-417884071-20180819-153729-firstCommit/dubbo-common",
+    "overallMetrics": {
+      "numberRunning": 529,
+      "numberPassing": 528,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.dubbo.common.concurrent.ExecutionListTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.dubbo.common.concurrent.ExecutionListTest",
+        "testMethod": "testAddNullRunnable",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003cjava.lang.NullPointerException\u003e but was\u003corg.mockito.exceptions.misusing.UnfinishedVerificationException\u003e",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberPlugins": 0,
+    "numberSourceFiles": 756,
+    "numberTestFiles": 664,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  }
+}
