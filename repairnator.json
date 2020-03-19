@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 19,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/aa97896c7e7d...2a82bd97adc6",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/349865922/languagetool-language-modules/nl",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.io.IOException"
-  ],
-  "totalNumberRunningTests": 518,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.nl.DutchPatternRuleTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.languagetool.rules.nl.DutchPatternRuleTest#testRules"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:59:36 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:10:24 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 89058360,
+      "totalMemory": 225415168
+    },
+    "totalDuration": 642,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 20,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          20
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-349865922-20180306-163230-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-349865922-20180306-163230-firstCommit/languagetool-language-modules/nl",
+    "overallMetrics": {
+      "numberRunning": 499,
+      "numberPassing": 498,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 19,
       "failures": [
         {
           "failureName": "java.io.IOException",
-          "failureDetail": "Cannot load or parse \u0027/org/languagetool/rules/nl/grammar.xml\u0027",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.nl.DutchPatternRuleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.nl.DutchPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.io.IOException",
+        "detail": "Cannot load or parse \u0027/org/languagetool/rules/nl/grammar.xml\u0027",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 756,
+    "numberTestFiles": 489,
+    "numberLibrariesFailingModule": 27,
+    "numberLines": 0
+  }
 }
