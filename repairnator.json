@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "sflin/ASER_Parser",
-  "bugCommit": "https://github.com/sflin/ASER_Parser/compare/9c5ea8371880...c3df0fdfbb7d",
-  "failingModule": "/root/workspace/sflin/ASER_Parser/380628283",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalArgumentException"
-  ],
-  "totalNumberRunningTests": 12,
-  "failing-test-cases": [
-    {
-      "className": "parser.ParserTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "testRun"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:38:20 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:40:34 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 54370096,
+      "totalMemory": 97665024
+    },
+    "totalDuration": 131,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 54,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          54
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-sflin-ASER_Parser-380628283-20180518-123617-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-sflin-ASER_Parser-380628283-20180518-123617-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 12,
+      "numberPassing": 11,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalArgumentException",
-          "failureDetail": "Parameter \u0027directory\u0027 is not a directory",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "parser.ParserTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "parser.ParserTest",
+        "testMethod": "testRun",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Parameter \u0027directory\u0027 is not a directory",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 10,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 43,
+    "numberLines": 0
+  }
 }
