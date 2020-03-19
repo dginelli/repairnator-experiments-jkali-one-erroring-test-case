@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "matheustf/testereclameaqui",
-  "bugCommit": "https://github.com/matheustf/testereclameaqui/compare/be62c082cae3...45d9c7f63070",
-  "failingModule": "/root/workspace/matheustf/testereclameaqui/366974958",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.Exception"
-  ],
-  "totalNumberRunningTests": 34,
-  "failing-test-cases": [
-    {
-      "className": "br.com.reclameaqui.teste.controller.TestClienteController",
-      "failingMethods": [],
-      "erroringMethods": [
-        "br.com.reclameaqui.teste.controller.TestClienteController#initializationError"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 20, 2020 12:26:21 AM",
+    "reproductionDateEnd": "Mar 20, 2020 12:55:50 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 76872472,
+      "totalMemory": 252588032
+    },
+    "totalDuration": 1767,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1703,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1703
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-matheustf-testereclameaqui-366974958-20180416-051609-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-matheustf-testereclameaqui-366974958-20180416-051609-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 34,
+      "numberPassing": 33,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.Exception",
-          "failureDetail": "No runnable methods",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "br.com.reclameaqui.teste.controller.TestClienteController",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "br.com.reclameaqui.teste.controller.TestClienteController",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.Exception",
+        "detail": "No runnable methods",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 29,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 84,
+    "numberLines": 0
+  }
 }
