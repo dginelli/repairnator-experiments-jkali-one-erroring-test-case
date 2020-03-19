@@ -1,0 +1,1398 @@
+19:50:52.529 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.springframework.cloud.dataflow.server.kubernetes.ContextLoadsTests], using SpringBootContextLoader
+19:50:52.545 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.springframework.cloud.dataflow.server.kubernetes.ContextLoadsTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:50:52.717 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+19:50:52.769 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@21de60b4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@c267ef4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@30ee2816, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@31d7b7bf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@635eaaf1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5c30a9b0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ddf84b8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1139b2f3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a69b07, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5e82df6a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3f197a46, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@636be97c]
+19:50:52.858 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:50:55.222 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+19:50:56.062 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:50:56.066 [main] WARN  o.s.c.k.KubernetesClientProperties - No namespace has been detected. Please specify KUBERNETES_NAMESPACE env var, or use a later kubernetes version (1.3 or later)
+19:50:56.703 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+19:50:56.824 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-cloud-dataflow-server-kubernetes/default": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+19:50:56.915 [main] WARN  o.s.c.k.c.ConfigMapPropertySource - Can't read configMap with name: [spring-cloud-dataflow-server-kubernetes] in namespace:[null]. Ignoring
+io.fabric8.kubernetes.client.KubernetesClientException: Operation: [get]  for kind: [ConfigMap]  with name: [spring-cloud-dataflow-server-kubernetes]  in namespace: [null]  failed.
+	at io.fabric8.kubernetes.client.KubernetesClientException.launderThrowable(KubernetesClientException.java:62)
+	at io.fabric8.kubernetes.client.KubernetesClientException.launderThrowable(KubernetesClientException.java:71)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.getMandatory(BaseOperation.java:206)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.get(BaseOperation.java:162)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySource.getData(ConfigMapPropertySource.java:74)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySource.<init>(ConfigMapPropertySource.java:57)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySourceLocator.locate(ConfigMapPropertySourceLocator.java:44)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySourceLocator.locate(ConfigMapPropertySourceLocator.java:28)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:567)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:56)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:379)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:344)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleGet(OperationSupport.java:313)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleGet(OperationSupport.java:296)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.handleGet(BaseOperation.java:770)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.getMandatory(BaseOperation.java:195)
+	... 46 common frames omitted
+19:50:56.935 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: ConfigMapPropertySource {name='configmap.spring-cloud-dataflow-server-kubernetes.null'}
+19:50:56.938 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: SecretsPropertySource {name='secrets.spring-cloud-dataflow-server-kubernetes.null'}
+19:50:57.029 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-cloud-spring-cloud-dataflow-server-kubernetes-388403095-20180605-194835-firstCommit/.m2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/pfs/nobackup/home/d/dginelli/development/astor-1.0.0-SNAPSHOT-jar-with-dependencies.jar!/org/json/JSONObject.class
+	jar:file:/pfs/nobackup/home/d/dginelli/development/repairnator-pipeline-3.3-SNAPSHOT-jar-with-dependencies.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+19:50:57.035 [main] INFO  o.s.c.d.s.k.ContextLoadsTests - No active profile set, falling back to default profiles: default
+19:50:58.955 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:50:59.003 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:50:59.157 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:50:59.757 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=08b8698f-87f0-3da3-9dfb-2524de7723c6
+19:51:01.432 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 0 (http)
+19:51:01.732 [localhost-startStop-1] WARN  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Unable to open jar '/com.gzoltar-0.1.1-jar-with-dependencies.jar' to determine if it contains static resources
+java.io.FileNotFoundException: /com.gzoltar-0.1.1-jar-with-dependencies.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isResourcesJar(AbstractEmbeddedServletContainerFactory.java:154)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isStaticResourceJar(AbstractEmbeddedServletContainerFactory.java:115)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.getUrlsOfJarsWithMetaInfResources(AbstractEmbeddedServletContainerFactory.java:101)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.access$100(TomcatEmbeddedServletContainerFactory.java:99)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory$1.lifecycleEvent(TomcatEmbeddedServletContainerFactory.java:228)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5113)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19:51:03.061 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:51:03.362 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:51:03.501 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+19:51:03.539 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:51:03.668 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.12.Final}
+19:51:03.681 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+19:51:03.749 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:51:03.982 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+19:51:05.054 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@58945295'
+19:51:05.056 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:51:06.234 [main] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+19:51:06.515 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+19:51:06.558 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 43 ms.
+19:51:06.574 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/cloud/task/schema-h2.sql]
+19:51:06.593 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/cloud/task/schema-h2.sql] in 19 ms.
+19:51:06.724 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:06.727 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:06.867 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:06.879 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:07.027 [main] INFO  o.s.b.a.s.SimpleJobServiceFactoryBean - No database type set, using meta data indicating: H2
+19:51:08.030 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 782f6e92-8026-4b16-9b37-6bf85e0f289d
+
+19:51:10.340 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+19:51:10.340 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:51:10.347 [main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3b32f0b4
+19:51:10.837 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/common.sql for h2 database
+19:51:10.837 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/streams.sql for h2 database
+19:51:10.837 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/tasks.sql for h2 database
+19:51:10.837 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/deployment.sql for h2 database
+19:51:10.837 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/jpa.sql for h2 database
+19:51:10.838 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/common.sql]
+19:51:10.840 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/common.sql] in 2 ms.
+19:51:10.840 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/streams.sql]
+19:51:10.843 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/streams.sql] in 3 ms.
+19:51:10.843 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/tasks.sql]
+19:51:10.844 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/tasks.sql] in 1 ms.
+19:51:10.844 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/deployment.sql]
+19:51:10.846 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/deployment.sql] in 1 ms.
+19:51:10.846 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/jpa.sql]
+19:51:10.848 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/jpa.sql] in 2 ms.
+19:51:11.098 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:11.112 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:11.116 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appDeployer' defined in class path resource [org/springframework/cloud/deployer/spi/kubernetes/KubernetesAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+19:51:11.122 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:51:11.124 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+19:51:11.142 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:51:11.153 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+19:51:11.213 [main] ERROR o.s.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appDeployer' defined in class path resource [org/springframework/cloud/deployer/spi/kubernetes/KubernetesAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 52 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:139)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.get(KubernetesHttpClient.java:81)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.getApiVersionForK8sVersionFromCluster(KubernetesHttpClient.java:111)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAppDeployer.<init>(KubernetesAppDeployer.java:101)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration.appDeployer(KubernetesAutoConfiguration.java:48)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$a3ba6227.CGLIB$appDeployer$3(<generated>)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$a3ba6227$$FastClassBySpringCGLIB$$925c31f6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$a3ba6227.appDeployer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 53 common frames omitted
+Caused by: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:56)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:135)
+	... 67 common frames omitted
+19:51:11.220 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:11.606 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:11.606 [main] WARN  o.s.c.k.KubernetesClientProperties - No namespace has been detected. Please specify KUBERNETES_NAMESPACE env var, or use a later kubernetes version (1.3 or later)
+19:51:11.901 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+19:51:11.908 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-cloud-dataflow-server-kubernetes/default": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+19:51:11.917 [main] WARN  o.s.c.k.c.ConfigMapPropertySource - Can't read configMap with name: [spring-cloud-dataflow-server-kubernetes] in namespace:[null]. Ignoring
+io.fabric8.kubernetes.client.KubernetesClientException: Operation: [get]  for kind: [ConfigMap]  with name: [spring-cloud-dataflow-server-kubernetes]  in namespace: [null]  failed.
+	at io.fabric8.kubernetes.client.KubernetesClientException.launderThrowable(KubernetesClientException.java:62)
+	at io.fabric8.kubernetes.client.KubernetesClientException.launderThrowable(KubernetesClientException.java:71)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.getMandatory(BaseOperation.java:206)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.get(BaseOperation.java:162)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySource.getData(ConfigMapPropertySource.java:74)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySource.<init>(ConfigMapPropertySource.java:57)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySourceLocator.locate(ConfigMapPropertySourceLocator.java:44)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySourceLocator.locate(ConfigMapPropertySourceLocator.java:28)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:567)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: java.net.UnknownHostException: kubernetes.default.svc
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:56)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:379)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:344)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleGet(OperationSupport.java:313)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleGet(OperationSupport.java:296)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.handleGet(BaseOperation.java:770)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.getMandatory(BaseOperation.java:195)
+	... 45 common frames omitted
+19:51:11.918 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: ConfigMapPropertySource {name='configmap.spring-cloud-dataflow-server-kubernetes.null'}
+19:51:11.918 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: SecretsPropertySource {name='secrets.spring-cloud-dataflow-server-kubernetes.null'}
+19:51:11.952 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-cloud-spring-cloud-dataflow-server-kubernetes-388403095-20180605-194835-firstCommit/.m2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/pfs/nobackup/home/d/dginelli/development/astor-1.0.0-SNAPSHOT-jar-with-dependencies.jar!/org/json/JSONObject.class
+	jar:file:/pfs/nobackup/home/d/dginelli/development/repairnator-pipeline-3.3-SNAPSHOT-jar-with-dependencies.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+19:51:11.953 [main] INFO  o.s.c.d.s.k.ContextLoadsTests - No active profile set, falling back to default profiles: default
+19:51:12.724 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:51:12.733 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:51:12.800 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:51:12.835 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=08b8698f-87f0-3da3-9dfb-2524de7723c6
+19:51:13.428 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 0 (http)
+19:51:13.441 [localhost-startStop-1] WARN  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Unable to open jar '/com.gzoltar-0.1.1-jar-with-dependencies.jar' to determine if it contains static resources
+java.io.FileNotFoundException: /com.gzoltar-0.1.1-jar-with-dependencies.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isResourcesJar(AbstractEmbeddedServletContainerFactory.java:154)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isStaticResourceJar(AbstractEmbeddedServletContainerFactory.java:115)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.getUrlsOfJarsWithMetaInfResources(AbstractEmbeddedServletContainerFactory.java:101)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.access$100(TomcatEmbeddedServletContainerFactory.java:99)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory$1.lifecycleEvent(TomcatEmbeddedServletContainerFactory.java:228)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5113)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19:51:14.173 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+19:51:14.183 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+19:51:14.221 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+19:51:14.222 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:51:14.232 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+19:51:14.294 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@58945295'
+19:51:14.294 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:51:15.121 [main] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+19:51:15.162 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+19:51:15.167 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 5 ms.
+19:51:15.181 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/cloud/task/schema-h2.sql]
+19:51:15.182 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/cloud/task/schema-h2.sql] in 1 ms.
+19:51:15.238 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:15.239 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:15.335 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:15.335 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:15.407 [main] INFO  o.s.b.a.s.SimpleJobServiceFactoryBean - No database type set, using meta data indicating: H2
+19:51:15.936 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 200e5a7b-8586-4dbe-9472-8562b2d2cd9c
+
+19:51:17.249 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/common.sql for h2 database
+19:51:17.249 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/streams.sql for h2 database
+19:51:17.249 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/tasks.sql for h2 database
+19:51:17.249 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/deployment.sql for h2 database
+19:51:17.249 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/jpa.sql for h2 database
+19:51:17.249 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/common.sql]
+19:51:17.250 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/common.sql] in 1 ms.
+19:51:17.250 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/streams.sql]
+19:51:17.250 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/streams.sql] in 0 ms.
+19:51:17.250 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/tasks.sql]
+19:51:17.251 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/tasks.sql] in 1 ms.
+19:51:17.251 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/deployment.sql]
+19:51:17.251 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/deployment.sql] in 0 ms.
+19:51:17.251 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/jpa.sql]
+19:51:17.252 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/jpa.sql] in 1 ms.
+19:51:17.420 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:17.422 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:17.424 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appDeployer' defined in class path resource [org/springframework/cloud/deployer/spi/kubernetes/KubernetesAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc
+19:51:17.444 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:51:17.444 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+19:51:17.446 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+19:51:17.461 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+19:51:17.490 [main] ERROR o.s.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appDeployer' defined in class path resource [org/springframework/cloud/deployer/spi/kubernetes/KubernetesAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 51 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:139)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.get(KubernetesHttpClient.java:81)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.getApiVersionForK8sVersionFromCluster(KubernetesHttpClient.java:111)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAppDeployer.<init>(KubernetesAppDeployer.java:101)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration.appDeployer(KubernetesAutoConfiguration.java:48)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$a3ba6227.CGLIB$appDeployer$3(<generated>)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$a3ba6227$$FastClassBySpringCGLIB$$925c31f6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$a3ba6227.appDeployer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 52 common frames omitted
+Caused by: java.net.UnknownHostException: kubernetes.default.svc
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:56)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:135)
+	... 66 common frames omitted
+19:51:17.492 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@31d7b7bf] to prepare test instance [org.springframework.cloud.dataflow.server.kubernetes.ContextLoadsTests@6068e9d9]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appDeployer' defined in class path resource [org/springframework/cloud/deployer/spi/kubernetes/KubernetesAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 52 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:139)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.get(KubernetesHttpClient.java:81)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.getApiVersionForK8sVersionFromCluster(KubernetesHttpClient.java:111)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAppDeployer.<init>(KubernetesAppDeployer.java:101)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration.appDeployer(KubernetesAutoConfiguration.java:48)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$a3ba6227.CGLIB$appDeployer$3(<generated>)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$a3ba6227$$FastClassBySpringCGLIB$$925c31f6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$a3ba6227.appDeployer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 53 common frames omitted
+Caused by: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:56)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:135)
+	... 67 common frames omitted
+19:51:21.022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.springframework.cloud.dataflow.server.kubernetes.ContextLoadsTests], using SpringBootContextLoader
+19:51:21.038 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.springframework.cloud.dataflow.server.kubernetes.ContextLoadsTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:51:21.220 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+19:51:21.287 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c267ef4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@30ee2816, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@31d7b7bf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@635eaaf1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c30a9b0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1ddf84b8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1139b2f3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7a69b07, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e82df6a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3f197a46, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@636be97c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@50a638b5]
+19:51:21.388 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:24.027 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+19:51:25.061 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:25.062 [main] WARN  o.s.c.k.KubernetesClientProperties - No namespace has been detected. Please specify KUBERNETES_NAMESPACE env var, or use a later kubernetes version (1.3 or later)
+19:51:25.765 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+19:51:25.920 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-cloud-dataflow-server-kubernetes/default": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+19:51:25.988 [main] WARN  o.s.c.k.c.ConfigMapPropertySource - Can't read configMap with name: [spring-cloud-dataflow-server-kubernetes] in namespace:[null]. Ignoring
+io.fabric8.kubernetes.client.KubernetesClientException: Operation: [get]  for kind: [ConfigMap]  with name: [spring-cloud-dataflow-server-kubernetes]  in namespace: [null]  failed.
+	at io.fabric8.kubernetes.client.KubernetesClientException.launderThrowable(KubernetesClientException.java:62)
+	at io.fabric8.kubernetes.client.KubernetesClientException.launderThrowable(KubernetesClientException.java:71)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.getMandatory(BaseOperation.java:206)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.get(BaseOperation.java:162)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySource.getData(ConfigMapPropertySource.java:74)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySource.<init>(ConfigMapPropertySource.java:57)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySourceLocator.locate(ConfigMapPropertySourceLocator.java:44)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySourceLocator.locate(ConfigMapPropertySourceLocator.java:28)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:567)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:56)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:379)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:344)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleGet(OperationSupport.java:313)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleGet(OperationSupport.java:296)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.handleGet(BaseOperation.java:770)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.getMandatory(BaseOperation.java:195)
+	... 46 common frames omitted
+19:51:26.000 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: ConfigMapPropertySource {name='configmap.spring-cloud-dataflow-server-kubernetes.null'}
+19:51:26.003 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: SecretsPropertySource {name='secrets.spring-cloud-dataflow-server-kubernetes.null'}
+19:51:26.111 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-cloud-spring-cloud-dataflow-server-kubernetes-388403095-20180605-194835-firstCommit/.m2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/pfs/nobackup/home/d/dginelli/development/astor-1.0.0-SNAPSHOT-jar-with-dependencies.jar!/org/json/JSONObject.class
+	jar:file:/pfs/nobackup/home/d/dginelli/development/repairnator-pipeline-3.3-SNAPSHOT-jar-with-dependencies.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+19:51:26.126 [main] INFO  o.s.c.d.s.k.ContextLoadsTests - No active profile set, falling back to default profiles: default
+19:51:28.599 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:51:28.644 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:51:28.813 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:51:29.476 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=08b8698f-87f0-3da3-9dfb-2524de7723c6
+19:51:31.588 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 0 (http)
+19:51:32.038 [localhost-startStop-1] WARN  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Unable to open jar '/com.gzoltar-0.1.1-jar-with-dependencies.jar' to determine if it contains static resources
+java.io.FileNotFoundException: /com.gzoltar-0.1.1-jar-with-dependencies.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isResourcesJar(AbstractEmbeddedServletContainerFactory.java:154)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isStaticResourceJar(AbstractEmbeddedServletContainerFactory.java:115)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.getUrlsOfJarsWithMetaInfResources(AbstractEmbeddedServletContainerFactory.java:101)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.access$100(TomcatEmbeddedServletContainerFactory.java:99)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory$1.lifecycleEvent(TomcatEmbeddedServletContainerFactory.java:228)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5113)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19:51:33.590 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:51:33.999 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:51:34.156 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+19:51:34.191 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:51:34.411 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.12.Final}
+19:51:34.417 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+19:51:34.548 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:51:34.861 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+19:51:36.306 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5e5d40ec'
+19:51:36.311 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:51:37.855 [main] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+19:51:38.139 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+19:51:38.197 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 57 ms.
+19:51:38.212 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/cloud/task/schema-h2.sql]
+19:51:38.237 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/cloud/task/schema-h2.sql] in 24 ms.
+19:51:38.363 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:38.368 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:38.518 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:38.521 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:38.696 [main] INFO  o.s.b.a.s.SimpleJobServiceFactoryBean - No database type set, using meta data indicating: H2
+19:51:39.666 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 2e50db52-2fe3-4668-b704-41631cc52165
+
+19:51:42.195 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+19:51:42.196 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:51:42.205 [main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@39d44217
+19:51:42.708 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/common.sql for h2 database
+19:51:42.709 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/streams.sql for h2 database
+19:51:42.709 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/tasks.sql for h2 database
+19:51:42.709 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/deployment.sql for h2 database
+19:51:42.710 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/jpa.sql for h2 database
+19:51:42.710 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/common.sql]
+19:51:42.716 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/common.sql] in 6 ms.
+19:51:42.716 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/streams.sql]
+19:51:42.718 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/streams.sql] in 2 ms.
+19:51:42.719 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/tasks.sql]
+19:51:42.720 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/tasks.sql] in 1 ms.
+19:51:42.720 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/deployment.sql]
+19:51:42.734 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/deployment.sql] in 14 ms.
+19:51:42.735 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/jpa.sql]
+19:51:42.736 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/jpa.sql] in 1 ms.
+19:51:42.996 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:42.997 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:43.001 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appDeployer' defined in class path resource [org/springframework/cloud/deployer/spi/kubernetes/KubernetesAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+19:51:43.010 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:51:43.011 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+19:51:43.025 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:51:43.053 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+19:51:43.153 [main] ERROR o.s.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appDeployer' defined in class path resource [org/springframework/cloud/deployer/spi/kubernetes/KubernetesAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 52 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:139)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.get(KubernetesHttpClient.java:81)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.getApiVersionForK8sVersionFromCluster(KubernetesHttpClient.java:111)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAppDeployer.<init>(KubernetesAppDeployer.java:101)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration.appDeployer(KubernetesAutoConfiguration.java:48)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$70a4dd42.CGLIB$appDeployer$2(<generated>)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$70a4dd42$$FastClassBySpringCGLIB$$e49ece4e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$70a4dd42.appDeployer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 53 common frames omitted
+Caused by: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:56)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:135)
+	... 67 common frames omitted
+19:51:43.167 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:43.682 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:43.682 [main] WARN  o.s.c.k.KubernetesClientProperties - No namespace has been detected. Please specify KUBERNETES_NAMESPACE env var, or use a later kubernetes version (1.3 or later)
+19:51:43.987 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+19:51:44.000 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-cloud-dataflow-server-kubernetes/default": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+19:51:44.002 [main] WARN  o.s.c.k.c.ConfigMapPropertySource - Can't read configMap with name: [spring-cloud-dataflow-server-kubernetes] in namespace:[null]. Ignoring
+io.fabric8.kubernetes.client.KubernetesClientException: Operation: [get]  for kind: [ConfigMap]  with name: [spring-cloud-dataflow-server-kubernetes]  in namespace: [null]  failed.
+	at io.fabric8.kubernetes.client.KubernetesClientException.launderThrowable(KubernetesClientException.java:62)
+	at io.fabric8.kubernetes.client.KubernetesClientException.launderThrowable(KubernetesClientException.java:71)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.getMandatory(BaseOperation.java:206)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.get(BaseOperation.java:162)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySource.getData(ConfigMapPropertySource.java:74)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySource.<init>(ConfigMapPropertySource.java:57)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySourceLocator.locate(ConfigMapPropertySourceLocator.java:44)
+	at org.springframework.cloud.kubernetes.config.ConfigMapPropertySourceLocator.locate(ConfigMapPropertySourceLocator.java:28)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:567)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: java.net.UnknownHostException: kubernetes.default.svc
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:56)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:379)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:344)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleGet(OperationSupport.java:313)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleGet(OperationSupport.java:296)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.handleGet(BaseOperation.java:770)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.getMandatory(BaseOperation.java:195)
+	... 45 common frames omitted
+19:51:44.002 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: ConfigMapPropertySource {name='configmap.spring-cloud-dataflow-server-kubernetes.null'}
+19:51:44.003 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: SecretsPropertySource {name='secrets.spring-cloud-dataflow-server-kubernetes.null'}
+19:51:44.030 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-cloud-spring-cloud-dataflow-server-kubernetes-388403095-20180605-194835-firstCommit/.m2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/pfs/nobackup/home/d/dginelli/development/astor-1.0.0-SNAPSHOT-jar-with-dependencies.jar!/org/json/JSONObject.class
+	jar:file:/pfs/nobackup/home/d/dginelli/development/repairnator-pipeline-3.3-SNAPSHOT-jar-with-dependencies.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+19:51:44.036 [main] INFO  o.s.c.d.s.k.ContextLoadsTests - No active profile set, falling back to default profiles: default
+19:51:44.990 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:51:45.013 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:51:45.060 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:51:45.103 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=08b8698f-87f0-3da3-9dfb-2524de7723c6
+19:51:45.807 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 0 (http)
+19:51:45.846 [localhost-startStop-1] WARN  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Unable to open jar '/com.gzoltar-0.1.1-jar-with-dependencies.jar' to determine if it contains static resources
+java.io.FileNotFoundException: /com.gzoltar-0.1.1-jar-with-dependencies.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isResourcesJar(AbstractEmbeddedServletContainerFactory.java:154)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isStaticResourceJar(AbstractEmbeddedServletContainerFactory.java:115)
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.getUrlsOfJarsWithMetaInfResources(AbstractEmbeddedServletContainerFactory.java:101)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.access$100(TomcatEmbeddedServletContainerFactory.java:99)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory$1.lifecycleEvent(TomcatEmbeddedServletContainerFactory.java:228)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5113)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19:51:46.677 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+19:51:46.679 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+19:51:46.733 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+19:51:46.733 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:51:46.750 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+19:51:46.813 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5e5d40ec'
+19:51:46.814 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:51:47.679 [main] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+19:51:47.707 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+19:51:47.712 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 5 ms.
+19:51:47.717 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/cloud/task/schema-h2.sql]
+19:51:47.719 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/cloud/task/schema-h2.sql] in 2 ms.
+19:51:47.794 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:47.794 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:47.891 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:47.891 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:47.978 [main] INFO  o.s.b.a.s.SimpleJobServiceFactoryBean - No database type set, using meta data indicating: H2
+19:51:48.568 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 9b6625be-93a8-489d-b986-e171f3fa950b
+
+19:51:50.187 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/common.sql for h2 database
+19:51:50.187 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/streams.sql for h2 database
+19:51:50.187 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/tasks.sql for h2 database
+19:51:50.187 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/deployment.sql for h2 database
+19:51:50.187 [main] INFO  o.s.c.d.s.r.s.DataflowRdbmsInitializer - Adding dataflow schema classpath:schemas/h2/jpa.sql for h2 database
+19:51:50.187 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/common.sql]
+19:51:50.188 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/common.sql] in 1 ms.
+19:51:50.188 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/streams.sql]
+19:51:50.188 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/streams.sql] in 0 ms.
+19:51:50.188 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/tasks.sql]
+19:51:50.189 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/tasks.sql] in 1 ms.
+19:51:50.189 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/deployment.sql]
+19:51:50.189 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/deployment.sql] in 0 ms.
+19:51:50.189 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schemas/h2/jpa.sql]
+19:51:50.190 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schemas/h2/jpa.sql] in 1 ms.
+19:51:50.407 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:50.410 [main] WARN  io.fabric8.kubernetes.client.Config - Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+19:51:50.410 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appDeployer' defined in class path resource [org/springframework/cloud/deployer/spi/kubernetes/KubernetesAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc
+19:51:50.414 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:51:50.414 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+19:51:50.417 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+19:51:50.433 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+19:51:50.470 [main] ERROR o.s.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appDeployer' defined in class path resource [org/springframework/cloud/deployer/spi/kubernetes/KubernetesAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 51 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:139)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.get(KubernetesHttpClient.java:81)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.getApiVersionForK8sVersionFromCluster(KubernetesHttpClient.java:111)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAppDeployer.<init>(KubernetesAppDeployer.java:101)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration.appDeployer(KubernetesAutoConfiguration.java:48)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$70a4dd42.CGLIB$appDeployer$2(<generated>)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$70a4dd42$$FastClassBySpringCGLIB$$e49ece4e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$70a4dd42.appDeployer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 52 common frames omitted
+Caused by: java.net.UnknownHostException: kubernetes.default.svc
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:56)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:135)
+	... 66 common frames omitted
+19:51:50.472 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@635eaaf1] to prepare test instance [org.springframework.cloud.dataflow.server.kubernetes.ContextLoadsTests@201a6b7d]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at fr.inria.astor.core.validation.junit.JUnitExternalExecutor.run(JUnitExternalExecutor.java:88)
+	at fr.inria.astor.core.validation.junit.JUnitNologExternalExecutor.main(JUnitNologExternalExecutor.java:37)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appDeployer' defined in class path resource [org/springframework/cloud/deployer/spi/kubernetes/KubernetesAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.deployer.spi.app.AppDeployer]: Factory method 'appDeployer' threw exception; nested exception is java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 52 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:139)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.get(KubernetesHttpClient.java:81)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.getApiVersionForK8sVersionFromCluster(KubernetesHttpClient.java:111)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAppDeployer.<init>(KubernetesAppDeployer.java:101)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration.appDeployer(KubernetesAutoConfiguration.java:48)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$70a4dd42.CGLIB$appDeployer$2(<generated>)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$70a4dd42$$FastClassBySpringCGLIB$$e49ece4e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration$$EnhancerBySpringCGLIB$$70a4dd42.appDeployer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 53 common frames omitted
+Caused by: java.net.UnknownHostException: kubernetes.default.svc: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:56)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at org.springframework.cloud.deployer.spi.kubernetes.KubernetesHttpClient.execute(KubernetesHttpClient.java:135)
+	... 67 common frames omitted
