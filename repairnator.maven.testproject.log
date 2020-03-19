@@ -1,0 +1,2284 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for ca.uhn.hapi.fhir:hapi-fhir-jacoco:jar:2.5-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: xmlunit:xmlunit:jar -> duplicate declaration of version (?) @ ca.uhn.hapi.fhir:hapi-fhir-jacoco:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jacoco/pom.xml, line 193, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] HAPI-FHIR
+[INFO] HAPI FHIR - Deployable Artifact Parent POM
+[INFO] HAPI FHIR - Core Library
+[INFO] HAPI Tinder Plugin
+[INFO] HAPI FHIR Structures - DSTU1 (FHIR v0.80)
+[INFO] HAPI FHIR - Validation Resources (DSTU2)
+[INFO] HAPI FHIR Structures - DSTU2 (FHIR v1.0.0)
+[INFO] HAPI FHIR - Minimal Dependency Test - Client
+[INFO] HAPI FHIR - Minimal Dependency Test - Server
+[INFO] HAPI FHIR - Validation Resources DSTU2.1 (2016May)
+[INFO] HAPI FHIR Structures - DSTU2.1 (2016May)
+[INFO] HAPI FHIR - Validation Resources (DSTU3)
+[INFO] HAPI FHIR Structures - DSTU3
+[INFO] HAPI FHIR Structures - HL7.org DSTU2
+[INFO] HAPI Tinder Plugin - Test Project
+[INFO] HAPI FHIR JAX-RS Server
+[INFO] HAPI FHIR JAX-RS Server - Example
+[INFO] HAPI FHIR JPA Server
+[INFO] HAPI FHIR TestPage Overlay
+[INFO] HAPI FHIR JPA Server - Example
+[INFO] HAPI FHIR Sample RESTful Server
+[INFO] HAPI FHIR Sample RESTful Server - Tests
+[INFO] HAPI FHIR - fhirtest.uhn.ca Deployable WAR
+[INFO] HAPI FHIR OkHttp Client
+[INFO] HAPI FHIR - Android
+[INFO] HAPI FHIR - Converter
+[INFO] HAPI FHIR - Command Line Client - Base Project
+[INFO] HAPI FHIR - Command Line Client - Server WAR
+[INFO] HAPI FHIR - Command Line Client - Application
+[INFO] HAPI FHIR - Distribution Archive
+[INFO] HAPI FHIR - Examples (for site)
+[INFO] hapi-fhir-base-example-embedded-ws
+[INFO] hapi-fhir-standalone-overlay-example
+[INFO] HAPI FHIR - JaCoCo Test Coverage
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI-FHIR 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR - Deployable Artifact Parent POM 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-deployable-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-deployable-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-deployable-pom ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR - Core Library 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ hapi-fhir-base ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-base/target/jacoco.exec,dumponexit=true
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 21 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-base ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-base/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 9.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 80.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1339.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.parser.json.JsonLikeStructureTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.375 sec - in ca.uhn.fhir.parser.json.JsonLikeStructureTest
+Running ca.uhn.fhir.util.ValidateUtilTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in ca.uhn.fhir.util.ValidateUtilTest
+Running ca.uhn.fhir.util.DependencyLogUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 sec - in ca.uhn.fhir.util.DependencyLogUtilTest
+Running ca.uhn.fhir.rest.param.StringParamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in ca.uhn.fhir.rest.param.StringParamTest
+Running ca.uhn.fhir.rest.server.interceptor.auth.RuleImplOpTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in ca.uhn.fhir.rest.server.interceptor.auth.RuleImplOpTest
+Running ca.uhn.fhir.validation.ResultSeverityEnumTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in ca.uhn.fhir.validation.ResultSeverityEnumTest
+Running ca.uhn.fhir.i18n.HapiLocalizerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in ca.uhn.fhir.i18n.HapiLocalizerTest
+Running ca.uhn.fhir.util.ReflectionUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in ca.uhn.fhir.util.ReflectionUtilTest
+Running ca.uhn.fhir.util.ObjectUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in ca.uhn.fhir.util.ObjectUtilTest
+Running ca.uhn.fhir.util.UrlUtilTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in ca.uhn.fhir.util.UrlUtilTest
+Running ca.uhn.fhir.validation.PlaceholderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.validation.PlaceholderTest
+
+Results :
+
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-fhir-base ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI Tinder Plugin 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-tinder-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-tinder-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-tinder-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 392 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-tinder-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.5:descriptor (default-descriptor) @ hapi-tinder-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[WARNING] Deprecated @Component annotation for 'myProject' field in ca.uhn.fhir.tinder.TinderGenericMultiFileMojo: replace with @Parameter( defaultValue = "${project}", readonly = true )
+[WARNING] Deprecated @Component annotation for 'myProject' field in ca.uhn.fhir.tinder.TinderJpaRestServerMojo: replace with @Parameter( defaultValue = "${project}", readonly = true )
+[WARNING] Deprecated @Component annotation for 'myProject' field in ca.uhn.fhir.tinder.TinderGenericSingleFileMojo: replace with @Parameter( defaultValue = "${project}", readonly = true )
+[WARNING] Deprecated @Component annotation for 'myProject' field in ca.uhn.fhir.tinder.TinderStructuresMojo: replace with @Parameter( defaultValue = "${project}", readonly = true )
+[INFO] java-annotations mojo extractor found 6 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.5:descriptor (mojo-descriptor) @ hapi-tinder-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[WARNING] Deprecated @Component annotation for 'myProject' field in ca.uhn.fhir.tinder.TinderGenericMultiFileMojo: replace with @Parameter( defaultValue = "${project}", readonly = true )
+[WARNING] Deprecated @Component annotation for 'myProject' field in ca.uhn.fhir.tinder.TinderJpaRestServerMojo: replace with @Parameter( defaultValue = "${project}", readonly = true )
+[WARNING] Deprecated @Component annotation for 'myProject' field in ca.uhn.fhir.tinder.TinderGenericSingleFileMojo: replace with @Parameter( defaultValue = "${project}", readonly = true )
+[WARNING] Deprecated @Component annotation for 'myProject' field in ca.uhn.fhir.tinder.TinderStructuresMojo: replace with @Parameter( defaultValue = "${project}", readonly = true )
+[INFO] java-annotations mojo extractor found 6 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-tinder-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-tinder-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-tinder-plugin ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR Structures - DSTU1 (FHIR v0.80) 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-structures-dstu ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-structures-dstu ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ hapi-fhir-structures-dstu ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu/target/jacoco.exec,dumponexit=true
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-structures (default) @ hapi-fhir-structures-dstu ---
+[INFO] Beginning HAPI-FHIR Tinder Code Generation...
+[INFO]  * Output Package: ca.uhn.fhir.model.dstu
+[INFO]  * Output Resource Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu/target/generated-resources/tinder/ca/uhn/fhir/model/dstu
+[INFO]  * Output Source Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu/target/generated-sources/tinder/ca/uhn/fhir/model/dstu
+[INFO] HAPI FHIR version is: 2.5-SNAPSHOT
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Parsing built-in ValueSets
+[INFO] Loading valuesets from: /vs/dstu/all-valuesets-bundle.xml
+[INFO] FHIR XML procesing will use StAX implementation 'Woodstox XML-processor' version '4.4.1'
+[WARNING] Duplicate Name: LOINC Diagnostic Report Codes
+[WARNING] Duplicate Name: Condition/Problem/Diagnosis Codes
+[WARNING] Duplicate Name: SNOMED CT Form Codes
+[WARNING] Duplicate Name: XDS Connect-a-thon healthcareFacilityTypeCodes
+[WARNING] Duplicate Name: FHIR Document Codes
+[WARNING] Duplicate Name: Diet
+[INFO] Loading Datatypes...
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Parsed 13 spreadsheet structures
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Loading Resources...
+[INFO] Parsed 63 spreadsheet structures
+[INFO] Writing Resources to directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu/target/generated-sources/tinder/ca/uhn/fhir/model/dstu/resource
+[INFO] Scanning resources for imports...
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Writing Composite Datatypes...
+[INFO] Scanning resources for imports...
+[INFO] Writing ValueSet Enums...
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 1 with description: Origination OR Creation
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 2 with description: Import OR Copy from original
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 3 with description: Amendment
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 4 with description: Verification
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 5 with description: Translation
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 6 with description: Access OR Use
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 7 with description: De-identification
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 8 with description: Aggregation
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 9 with description: Report
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 10 with description: Export OR Copy to target
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 11 with description: Disclosure
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 12 with description: Receipt of disclosure
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 13 with description: Archiving
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 14 with description: Logical deletion
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 15 with description: Permanent erasure OR Physical destruction
+[INFO] [SecurityEventParticipantNetworkType] Replacing numeric code 1 with description: Machine Name
+[INFO] [SecurityEventParticipantNetworkType] Replacing numeric code 2 with description: IP Address
+[INFO] [SecurityEventParticipantNetworkType] Replacing numeric code 3 with description: Telephone Number
+[INFO] [SecurityEventParticipantNetworkType] Replacing numeric code 4 with description: Email address
+[INFO] [SecurityEventParticipantNetworkType] Replacing numeric code 5 with description: URI
+[INFO] [SecurityEventObjectType] Replacing numeric code 1 with description: Person
+[INFO] [SecurityEventObjectType] Replacing numeric code 2 with description: System Object
+[INFO] [SecurityEventObjectType] Replacing numeric code 3 with description: Organization
+[INFO] [SecurityEventObjectType] Replacing numeric code 4 with description: Other
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ hapi-fhir-structures-dstu ---
+[INFO] Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu/target/generated-sources/tinder added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-structures-dstu ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 57 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-structures-dstu ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 207 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-structures-dstu ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 39 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-structures-dstu ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-structures-dstu ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.rest.client.ClientDstu1Test
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.766 sec - in ca.uhn.fhir.rest.client.ClientDstu1Test
+Running ca.uhn.fhir.parser.BaseParserTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec - in ca.uhn.fhir.parser.BaseParserTest
+Running ca.uhn.fhir.rest.server.DynamicSearchTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.807 sec - in ca.uhn.fhir.rest.server.DynamicSearchTest
+Running ca.uhn.fhir.rest.server.ResourceMethodTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec - in ca.uhn.fhir.rest.server.ResourceMethodTest
+Running ca.uhn.fhir.rest.server.UpdateDstu1Test
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.763 sec - in ca.uhn.fhir.rest.server.UpdateDstu1Test
+Running ca.uhn.fhir.rest.server.BinaryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.769 sec - in ca.uhn.fhir.rest.server.BinaryTest
+Running ca.uhn.fhir.rest.server.ServletContextParsingTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.846 sec - in ca.uhn.fhir.rest.server.ServletContextParsingTest
+Running ca.uhn.fhir.rest.client.BearerTokenAuthInterceptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in ca.uhn.fhir.rest.client.BearerTokenAuthInterceptorTest
+Running ca.uhn.fhir.rest.server.PagingTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.72 sec - in ca.uhn.fhir.rest.server.PagingTest
+Running ca.uhn.fhir.rest.server.ServerExtraParametersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.216 sec - in ca.uhn.fhir.rest.server.ServerExtraParametersTest
+Running ca.uhn.fhir.rest.server.TransactionWithBundleParamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.643 sec - in ca.uhn.fhir.rest.server.TransactionWithBundleParamTest
+Running ca.uhn.fhir.util.FhirTerserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in ca.uhn.fhir.util.FhirTerserTest
+Running ca.uhn.fhir.narrative.BaseThymeleafNarrativeGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in ca.uhn.fhir.narrative.BaseThymeleafNarrativeGeneratorTest
+Running ca.uhn.fhir.rest.client.BinaryClientTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in ca.uhn.fhir.rest.client.BinaryClientTest
+Running ca.uhn.fhir.rest.client.ExceptionHandlingTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in ca.uhn.fhir.rest.client.ExceptionHandlingTest
+Running ca.uhn.fhir.rest.param.ReferenceParamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in ca.uhn.fhir.rest.param.ReferenceParamTest
+Running ca.uhn.fhir.rest.server.RestfulServerSelfReferenceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.152 sec - in ca.uhn.fhir.rest.server.RestfulServerSelfReferenceTest
+Running ca.uhn.fhir.rest.server.SortTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.637 sec - in ca.uhn.fhir.rest.server.SortTest
+Running ca.uhn.fhir.model.primitive.StringDtTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.model.primitive.StringDtTest
+Running ca.uhn.fhir.rest.server.SearchBundleProviderWithNoSizeDstu1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 sec - in ca.uhn.fhir.rest.server.SearchBundleProviderWithNoSizeDstu1Test
+Running ca.uhn.fhir.model.primitive.Base64BinaryDtTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.model.primitive.Base64BinaryDtTest
+Running ca.uhn.fhir.rest.param.DateRangeParamTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in ca.uhn.fhir.rest.param.DateRangeParamTest
+Running ca.uhn.fhir.context.ModelExtensionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in ca.uhn.fhir.context.ModelExtensionTest
+Running ca.uhn.fhir.context.ModelScannerDstu1Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.149 sec - in ca.uhn.fhir.context.ModelScannerDstu1Test
+Running ca.uhn.fhir.rest.client.BasicAuthInterceptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in ca.uhn.fhir.rest.client.BasicAuthInterceptorTest
+Running ca.uhn.fhir.rest.server.MethodPriorityTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.66 sec - in ca.uhn.fhir.rest.server.MethodPriorityTest
+Running ca.uhn.fhir.rest.client.StringClientTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec - in ca.uhn.fhir.rest.client.StringClientTest
+Running ca.uhn.fhir.parser.jsonlike.JsonLikeParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.687 sec - in ca.uhn.fhir.parser.jsonlike.JsonLikeParserTest
+Running ca.uhn.fhir.util.XmlUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in ca.uhn.fhir.util.XmlUtilTest
+Running ca.uhn.fhir.rest.param.QuantityParamTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in ca.uhn.fhir.rest.param.QuantityParamTest
+Running ca.uhn.fhir.rest.client.GenericClientTest
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.531 sec - in ca.uhn.fhir.rest.client.GenericClientTest
+Running ca.uhn.fhir.rest.client.ClientIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.664 sec - in ca.uhn.fhir.rest.client.ClientIntegrationTest
+Running ca.uhn.fhir.model.primitive.IdentifierDtTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in ca.uhn.fhir.model.primitive.IdentifierDtTest
+Running ca.uhn.fhir.rest.client.SortClientTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in ca.uhn.fhir.rest.client.SortClientTest
+Running ca.uhn.fhir.rest.server.ServerInvalidDefinitionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in ca.uhn.fhir.rest.server.ServerInvalidDefinitionTest
+Running ca.uhn.fhir.model.primitive.CodingDtTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in ca.uhn.fhir.model.primitive.CodingDtTest
+Running ca.uhn.fhir.rest.server.PlainProviderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.79 sec - in ca.uhn.fhir.rest.server.PlainProviderTest
+Running ca.uhn.fhir.rest.server.InterceptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.612 sec - in ca.uhn.fhir.rest.server.InterceptorTest
+Running ca.uhn.fhir.rest.server.ServerFeaturesTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.66 sec - in ca.uhn.fhir.rest.server.ServerFeaturesTest
+Running ca.uhn.fhir.model.view.ViewGeneratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in ca.uhn.fhir.model.view.ViewGeneratorTest
+Running ca.uhn.fhir.rest.server.exceptions.ExceptionPropertiesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec - in ca.uhn.fhir.rest.server.exceptions.ExceptionPropertiesTest
+Running ca.uhn.fhir.rest.client.LoggingInterceptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.617 sec - in ca.uhn.fhir.rest.client.LoggingInterceptorTest
+Running ca.uhn.fhir.rest.param.TokenOrListParamTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in ca.uhn.fhir.rest.param.TokenOrListParamTest
+Running ca.uhn.fhir.rest.server.CustomTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.795 sec - in ca.uhn.fhir.rest.server.CustomTypeTest
+Running ca.uhn.fhir.validation.ResourceValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.329 sec - in ca.uhn.fhir.validation.ResourceValidatorTest
+Running ca.uhn.fhir.model.primitive.IdDtTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.model.primitive.IdDtTest
+Running ca.uhn.fhir.model.base.composite.BaseCodingDtTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in ca.uhn.fhir.model.base.composite.BaseCodingDtTest
+Running ca.uhn.fhir.validation.ValidatorInstantiatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in ca.uhn.fhir.validation.ValidatorInstantiatorTest
+Running ca.uhn.fhir.model.primitive.UriDtTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in ca.uhn.fhir.model.primitive.UriDtTest
+Running ca.uhn.fhir.parser.JsonParserTest
+Tests run: 56, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.02 sec - in ca.uhn.fhir.parser.JsonParserTest
+Running ca.uhn.fhir.rest.method.BaseOutcomeReturningMethodBindingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in ca.uhn.fhir.rest.method.BaseOutcomeReturningMethodBindingTest
+Running ca.uhn.fhir.rest.server.Dstu1BundleFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in ca.uhn.fhir.rest.server.Dstu1BundleFactoryTest
+Running ca.uhn.fhir.model.primitive.XhtmlDtTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in ca.uhn.fhir.model.primitive.XhtmlDtTest
+Running ca.uhn.fhir.rest.server.ExceptionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.616 sec - in ca.uhn.fhir.rest.server.ExceptionTest
+Running ca.uhn.fhir.rest.server.ReferenceParameterTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.654 sec - in ca.uhn.fhir.rest.server.ReferenceParameterTest
+Running ca.uhn.fhir.context.FhirVersionEnumTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.context.FhirVersionEnumTest
+Running ca.uhn.fhir.rest.server.ReadDstu1Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.576 sec - in ca.uhn.fhir.rest.server.ReadDstu1Test
+Running ca.uhn.fhir.context.ProvidedResourceScannerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in ca.uhn.fhir.context.ProvidedResourceScannerTest
+Running ca.uhn.fhir.rest.server.TransactionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.618 sec - in ca.uhn.fhir.rest.server.TransactionTest
+Running ca.uhn.fhir.rest.server.IncludeTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.656 sec - in ca.uhn.fhir.rest.server.IncludeTest
+Running ca.uhn.fhir.rest.client.SearchClientDstu1Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in ca.uhn.fhir.rest.client.SearchClientDstu1Test
+Running ca.uhn.fhir.parser.XmlParserTest
+Tests run: 78, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.363 sec - in ca.uhn.fhir.parser.XmlParserTest
+Running ca.uhn.fhir.rest.server.AcceptHeaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.605 sec - in ca.uhn.fhir.rest.server.AcceptHeaderTest
+Running ca.uhn.fhir.context.ExtensionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in ca.uhn.fhir.context.ExtensionTest
+Running ca.uhn.fhir.rest.client.CapturingInterceptorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in ca.uhn.fhir.rest.client.CapturingInterceptorTest
+Running ca.uhn.fhir.rest.server.SearchSearchServerDstu1Test
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.98 sec - in ca.uhn.fhir.rest.server.SearchSearchServerDstu1Test
+Running ca.uhn.fhir.context.DuplicateExtensionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in ca.uhn.fhir.context.DuplicateExtensionTest
+Running ca.uhn.fhir.rest.client.HttpProxyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.609 sec - in ca.uhn.fhir.rest.client.HttpProxyTest
+Running ca.uhn.fhir.rest.server.CompressionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.602 sec - in ca.uhn.fhir.rest.server.CompressionTest
+Running ca.uhn.fhir.context.InvalidResourceTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.context.InvalidResourceTypeTest
+Running ca.uhn.fhir.rest.method.QualifiedParamListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in ca.uhn.fhir.rest.method.QualifiedParamListTest
+Running ca.uhn.fhir.parser.ContainedResourceEncodingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec - in ca.uhn.fhir.parser.ContainedResourceEncodingTest
+Running ca.uhn.fhir.rest.client.TagsClientTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec - in ca.uhn.fhir.rest.client.TagsClientTest
+Running ca.uhn.fhir.rest.server.RestfulServerMethodTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.883 sec - in ca.uhn.fhir.rest.server.RestfulServerMethodTest
+Running ca.uhn.fhir.rest.client.IncludedResourceStitchingClientTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in ca.uhn.fhir.rest.client.IncludedResourceStitchingClientTest
+Running ca.uhn.fhir.rest.server.CreateTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.622 sec - in ca.uhn.fhir.rest.server.CreateTest
+Running ca.uhn.fhir.narrative.DefaultThymeleafNarrativeGeneratorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.935 sec - in ca.uhn.fhir.narrative.DefaultThymeleafNarrativeGeneratorTest
+Running ca.uhn.fhir.narrative.CustomThymeleafNarrativeGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in ca.uhn.fhir.narrative.CustomThymeleafNarrativeGeneratorTest
+Running ca.uhn.fhir.rest.server.RestfulServerUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in ca.uhn.fhir.rest.server.RestfulServerUtilsTest
+Running ca.uhn.fhir.rest.server.IncomingRequestAddressStrategyTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.685 sec - in ca.uhn.fhir.rest.server.IncomingRequestAddressStrategyTest
+Running ca.uhn.fhir.rest.server.CompositeParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.566 sec - in ca.uhn.fhir.rest.server.CompositeParameterTest
+Running ca.uhn.fhir.rest.server.ServerConformanceProviderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.654 sec - in ca.uhn.fhir.rest.server.ServerConformanceProviderTest
+Running ca.uhn.fhir.rest.server.ServerBaseTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.604 sec - in ca.uhn.fhir.rest.server.ServerBaseTest
+Running ca.uhn.fhir.rest.client.ReferenceClientTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in ca.uhn.fhir.rest.client.ReferenceClientTest
+Running ca.uhn.fhir.rest.server.ServerProvidedResourceScannerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in ca.uhn.fhir.rest.server.ServerProvidedResourceScannerTest
+Running ca.uhn.fhir.context.RuntimeResourceDefinitionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.124 sec - in ca.uhn.fhir.context.RuntimeResourceDefinitionTest
+Running ca.uhn.fhir.rest.client.TransactionClientTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec - in ca.uhn.fhir.rest.client.TransactionClientTest
+Running ca.uhn.fhir.rest.client.ClientServerValidationDstu1Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in ca.uhn.fhir.rest.client.ClientServerValidationDstu1Test
+Running ca.uhn.fhir.rest.server.StringParameterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.556 sec - in ca.uhn.fhir.rest.server.StringParameterTest
+Running ca.uhn.fhir.model.primitive.DecimalDtTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.model.primitive.DecimalDtTest
+Running ca.uhn.fhir.rest.server.DefaultEncodingTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.561 sec - in ca.uhn.fhir.rest.server.DefaultEncodingTest
+Running ca.uhn.fhir.rest.server.ResourceProviderWithNoMethodsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.046 sec - in ca.uhn.fhir.rest.server.ResourceProviderWithNoMethodsTest
+Running ca.uhn.fhir.rest.server.interceptor.AuditingInterceptorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.593 sec - in ca.uhn.fhir.rest.server.interceptor.AuditingInterceptorTest
+Running ca.uhn.fhir.rest.server.interceptor.ExceptionHandlingInterceptorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.575 sec - in ca.uhn.fhir.rest.server.interceptor.ExceptionHandlingInterceptorTest
+Running ca.uhn.fhir.rest.server.DestroyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in ca.uhn.fhir.rest.server.DestroyTest
+Running ca.uhn.fhir.rest.server.TagsServerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.597 sec - in ca.uhn.fhir.rest.server.TagsServerTest
+Running ca.uhn.fhir.rest.server.interceptor.ExceptionInterceptorMethodTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.616 sec - in ca.uhn.fhir.rest.server.interceptor.ExceptionInterceptorMethodTest
+Running ca.uhn.fhir.context.FhirContextDstu1Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in ca.uhn.fhir.context.FhirContextDstu1Test
+Running ca.uhn.fhir.rest.server.ValidateDstu1Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.545 sec - in ca.uhn.fhir.rest.server.ValidateDstu1Test
+Running ca.uhn.fhir.model.api.TagListTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.555 sec - in ca.uhn.fhir.model.api.TagListTest
+Running ca.uhn.fhir.rest.server.TokenParamTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in ca.uhn.fhir.rest.server.TokenParamTest
+
+Results :
+
+Tests run: 683, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-fhir-structures-dstu ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR - Validation Resources (DSTU2) 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-validation-resources-dstu2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-validation-resources-dstu2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-validation-resources-dstu2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 278 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-validation-resources-dstu2 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-validation-resources-dstu2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-validation-resources-dstu2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-validation-resources-dstu2 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-validation-resources-dstu2 ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-fhir-validation-resources-dstu2 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR Structures - DSTU2 (FHIR v1.0.0) 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-structures-dstu2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-structures-dstu2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ hapi-fhir-structures-dstu2 ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu2/target/jacoco.exec,dumponexit=true
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-structures (generate) @ hapi-fhir-structures-dstu2 ---
+[INFO] Beginning HAPI-FHIR Tinder Code Generation...
+[INFO]  * Output Package: ca.uhn.fhir.model.dstu2
+[INFO]  * Output Resource Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu2/target/generated-resources/tinder/ca/uhn/fhir/model/dstu2
+[INFO]  * Output Source Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu2/target/generated-sources/tinder/ca/uhn/fhir/model/dstu2
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Parsing built-in ValueSets
+[INFO] Loading valuesets from: /org/hl7/fhir/instance/model/valueset/valuesets.xml
+[WARNING] Duplicate Name: LOINC Codes for Cholesterol in Serum/Plasma
+[WARNING] Duplicate Name: LOINC Codes for Cholesterol in Serum/Plasma
+[WARNING] Duplicate Name: Signature Type Codes
+[WARNING] Duplicate Name: Surface Codes
+[WARNING] Duplicate Name: SNOMED CT Clinical Findings
+[WARNING] Duplicate Name: Contract Term Type Codes
+[WARNING] Duplicate Name: Surface Codes
+[WARNING] Duplicate Name: SNOMED CT Form Codes
+[WARNING] Duplicate Name: DataElement SDC Object Class
+[WARNING] Duplicate Name: Vaccine Administered Value Set
+[WARNING] Duplicate Name: Condition/Diagnosis Certainty
+[WARNING] Duplicate Name: PresentAbsent
+[WARNING] Duplicate Name: SNOMED CT Clinical Findings
+[WARNING] Duplicate Name: Common UCUM units
+[WARNING] Duplicate Name: DataElement SDC Concept
+[INFO] Loading Datatypes...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Loading ValueSets...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Done Loading ValueSets
+[INFO] Parsed 18 spreadsheet structures
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Loading Resources...
+[INFO] Loading ValueSets...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Done Loading ValueSets
+[INFO] Parsed 96 spreadsheet structures
+[INFO] Writing Resources to directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu2/target/generated-sources/tinder/ca/uhn/fhir/model/dstu2/resource
+[INFO] Scanning resources for imports...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Writing Composite Datatypes...
+[INFO] Scanning resources for imports...
+[INFO] Writing ValueSet Enums...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ hapi-fhir-structures-dstu2 ---
+[INFO] Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu2/target/generated-sources/tinder added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-structures-dstu2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-structures-dstu2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 293 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu2/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-structures-dstu2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 22 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-structures-dstu2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-structures-dstu2 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu2/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.rest.server.interceptor.auth.AuthorizationInterceptorDstu2Test
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.887 sec - in ca.uhn.fhir.rest.server.interceptor.auth.AuthorizationInterceptorDstu2Test
+Running ca.uhn.fhir.rest.server.OperationServerWithSearchParamTypesDstu2Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.011 sec - in ca.uhn.fhir.rest.server.OperationServerWithSearchParamTypesDstu2Test
+Running ca.uhn.fhir.rest.server.SearchWithGenericListDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.621 sec - in ca.uhn.fhir.rest.server.SearchWithGenericListDstu2Test
+Running ca.uhn.fhir.rest.server.BinaryDstu2Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.66 sec - in ca.uhn.fhir.rest.server.BinaryDstu2Test
+Running ca.uhn.fhir.rest.client.apache.ApacheRestfulClientFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in ca.uhn.fhir.rest.client.apache.ApacheRestfulClientFactoryTest
+Running ca.uhn.fhir.model.primitive.UriDtTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in ca.uhn.fhir.model.primitive.UriDtTest
+Running ca.uhn.fhir.rest.server.HistoryDstu2Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.625 sec - in ca.uhn.fhir.rest.server.HistoryDstu2Test
+Running ca.uhn.fhir.rest.server.DeleteDstu2Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.617 sec - in ca.uhn.fhir.rest.server.DeleteDstu2Test
+Running ca.uhn.fhir.model.primitive.DateDtTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in ca.uhn.fhir.model.primitive.DateDtTest
+Running ca.uhn.fhir.rest.server.ServerWithResponseHighlightingInterceptorExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.619 sec - in ca.uhn.fhir.rest.server.ServerWithResponseHighlightingInterceptorExceptionTest
+Running ca.uhn.fhir.rest.server.TransactionWithBundleResourceParamTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.7 sec - in ca.uhn.fhir.rest.server.TransactionWithBundleResourceParamTest
+Running ca.uhn.fhir.rest.server.CreateConditionalTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.634 sec - in ca.uhn.fhir.rest.server.CreateConditionalTest
+Running ca.uhn.fhir.parser.ExtensionsDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.236 sec - in ca.uhn.fhir.parser.ExtensionsDstu2Test
+Running ca.uhn.fhir.rest.client.ClientWithProfileDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in ca.uhn.fhir.rest.client.ClientWithProfileDstu2Test
+Running ca.uhn.fhir.rest.server.OperationDuplicateServerDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.603 sec - in ca.uhn.fhir.rest.server.OperationDuplicateServerDstu2Test
+Running ca.uhn.fhir.rest.client.interceptor.CompressOutgoingContentInterceptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.591 sec - in ca.uhn.fhir.rest.client.interceptor.CompressOutgoingContentInterceptorTest
+Running ca.uhn.fhir.model.primitive.BaseResourceReferenceDtTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 sec - in ca.uhn.fhir.model.primitive.BaseResourceReferenceDtTest
+Running ca.uhn.fhir.rest.server.SummaryParamTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 sec - in ca.uhn.fhir.rest.server.SummaryParamTest
+Running ca.uhn.fhir.rest.param.DateParamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in ca.uhn.fhir.rest.param.DateParamTest
+Running ca.uhn.fhir.validation.ResourceValidatorDstu2Test
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.695 sec - in ca.uhn.fhir.validation.ResourceValidatorDstu2Test
+Running ca.uhn.fhir.parser.i391.TestOutcomeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec - in ca.uhn.fhir.parser.i391.TestOutcomeTest
+Running ca.uhn.fhir.rest.server.ETagServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.636 sec - in ca.uhn.fhir.rest.server.ETagServerTest
+Running ca.uhn.fhir.parser.ElementWithExtensionDstu2Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.048 sec - in ca.uhn.fhir.parser.ElementWithExtensionDstu2Test
+Running ca.uhn.fhir.narrative.DefaultThymeleafNarrativeGeneratorDstu2Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.382 sec - in ca.uhn.fhir.narrative.DefaultThymeleafNarrativeGeneratorDstu2Test
+Running ca.uhn.fhir.parser.XmlParserDstu2Test
+Tests run: 90, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.732 sec - in ca.uhn.fhir.parser.XmlParserDstu2Test
+Running ca.uhn.fhir.ctx.FhirContextDstu2Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.01 sec - in ca.uhn.fhir.ctx.FhirContextDstu2Test
+Running ca.uhn.fhir.rest.server.ReadDstu2Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.6 sec - in ca.uhn.fhir.rest.server.ReadDstu2Test
+Running ca.uhn.fhir.model.dstu2.CompartmentDstu2Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in ca.uhn.fhir.model.dstu2.CompartmentDstu2Test
+Running ca.uhn.fhir.rest.client.OperationClientDstu2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec - in ca.uhn.fhir.rest.client.OperationClientDstu2Test
+Running ca.uhn.fhir.rest.server.CompartmentDstu2Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.771 sec - in ca.uhn.fhir.rest.server.CompartmentDstu2Test
+Running ca.uhn.fhir.narrative.CustomThymeleafNarrativeGeneratorDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in ca.uhn.fhir.narrative.CustomThymeleafNarrativeGeneratorDstu2Test
+Running ca.uhn.fhir.rest.client.MessageClientDstu2Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in ca.uhn.fhir.rest.client.MessageClientDstu2Test
+Running ca.uhn.fhir.rest.server.provider.dstu2.Dstu2BundleFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec - in ca.uhn.fhir.rest.server.provider.dstu2.Dstu2BundleFactoryTest
+Running ca.uhn.fhir.rest.server.ValidateDstu2Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.648 sec - in ca.uhn.fhir.rest.server.ValidateDstu2Test
+Running ca.uhn.fhir.rest.server.PreferTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.599 sec - in ca.uhn.fhir.rest.server.PreferTest
+Running ca.uhn.fhir.rest.client.RestfulClientFactoryDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in ca.uhn.fhir.rest.client.RestfulClientFactoryDstu2Test
+Running ca.uhn.fhir.model.dstu2.BundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in ca.uhn.fhir.model.dstu2.BundleTest
+Running ca.uhn.fhir.rest.client.ClientMockingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in ca.uhn.fhir.rest.client.ClientMockingTest
+Running ca.uhn.fhir.rest.server.UpdateDstu2Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.657 sec - in ca.uhn.fhir.rest.server.UpdateDstu2Test
+Running ca.uhn.fhir.rest.client.BundleTypeDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in ca.uhn.fhir.rest.client.BundleTypeDstu2Test
+Running ca.uhn.fhir.util.FhirTerserDstu2Test
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec - in ca.uhn.fhir.util.FhirTerserDstu2Test
+Running ca.uhn.fhir.model.dstu2.ModelInstantiationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.417 sec - in ca.uhn.fhir.model.dstu2.ModelInstantiationTest
+Running ca.uhn.fhir.rest.server.ServerInvalidDefinitionDstu2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in ca.uhn.fhir.rest.server.ServerInvalidDefinitionDstu2Test
+Running ca.uhn.fhir.model.dstu2.ModelDstu2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in ca.uhn.fhir.model.dstu2.ModelDstu2Test
+Running ca.uhn.fhir.rest.server.BundleTypeInResponseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.639 sec - in ca.uhn.fhir.rest.server.BundleTypeInResponseTest
+Running ca.uhn.fhir.validation.BundleValidationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.304 sec - in ca.uhn.fhir.validation.BundleValidationTest
+Running ca.uhn.fhir.rest.server.IncludeAndRevincludeParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.569 sec - in ca.uhn.fhir.rest.server.IncludeAndRevincludeParameterTest
+Running ca.uhn.fhir.validation.ValidatorInstantiatorDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.254 sec - in ca.uhn.fhir.validation.ValidatorInstantiatorDstu2Test
+Running ca.uhn.fhir.parser.i423.CustomProcedureRequestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in ca.uhn.fhir.parser.i423.CustomProcedureRequestTest
+Running ca.uhn.fhir.rest.server.IncludeDstu2Test
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.829 sec - in ca.uhn.fhir.rest.server.IncludeDstu2Test
+Running ca.uhn.fhir.rest.server.ElementsParamTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 sec - in ca.uhn.fhir.rest.server.ElementsParamTest
+Running ca.uhn.fhir.rest.server.OperationServerDstu2Test
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.723 sec - in ca.uhn.fhir.rest.server.OperationServerDstu2Test
+Running ca.uhn.fhir.rest.server.ServerConformanceProviderDstu2Test
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.898 sec - in ca.uhn.fhir.rest.server.ServerConformanceProviderDstu2Test
+Running ca.uhn.fhir.narrative.BaseThymeleafNarrativeGeneratorDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in ca.uhn.fhir.narrative.BaseThymeleafNarrativeGeneratorDstu2Test
+Running ca.uhn.fhir.rest.server.interceptor.LoggingInterceptorDstu2Test
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.751 sec - in ca.uhn.fhir.rest.server.interceptor.LoggingInterceptorDstu2Test
+Running ca.uhn.fhir.parser.jsonlike.JsonLikeParserDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec - in ca.uhn.fhir.parser.jsonlike.JsonLikeParserDstu2Test
+Running ca.uhn.fhir.rest.server.SearchCountParamDstu2Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.543 sec - in ca.uhn.fhir.rest.server.SearchCountParamDstu2Test
+Running ca.uhn.fhir.model.primitive.BaseDateTimeDtDstu2Test
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.727 sec - in ca.uhn.fhir.model.primitive.BaseDateTimeDtDstu2Test
+Running ca.uhn.fhir.model.dstu2.ModelSerializationDstu2Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.098 sec - in ca.uhn.fhir.model.dstu2.ModelSerializationDstu2Test
+Running ca.uhn.fhir.rest.server.SearchDstu2Test
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.655 sec - in ca.uhn.fhir.rest.server.SearchDstu2Test
+Running ca.uhn.fhir.rest.server.SearchBundleProviderWithNoSizeDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.58 sec - in ca.uhn.fhir.rest.server.SearchBundleProviderWithNoSizeDstu2Test
+Running ca.uhn.fhir.rest.server.SearchWithDstu2BundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.564 sec - in ca.uhn.fhir.rest.server.SearchWithDstu2BundleTest
+Running ca.uhn.fhir.model.primitive.DecimalDtTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in ca.uhn.fhir.model.primitive.DecimalDtTest
+Running ca.uhn.fhir.parser.CustomTypeDstu2Test
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 sec - in ca.uhn.fhir.parser.CustomTypeDstu2Test
+Running ca.uhn.fhir.rest.client.ClientServerValidationDstu2Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec - in ca.uhn.fhir.rest.client.ClientServerValidationDstu2Test
+Running ca.uhn.fhir.rest.client.GenericClientDstu2Test
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.545 sec - in ca.uhn.fhir.rest.client.GenericClientDstu2Test
+Running ca.uhn.fhir.rest.server.ServerFeaturesDstu2Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.589 sec - in ca.uhn.fhir.rest.server.ServerFeaturesDstu2Test
+Running ca.uhn.fhir.rest.server.interceptor.ServerActionInterceptorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.636 sec - in ca.uhn.fhir.rest.server.interceptor.ServerActionInterceptorTest
+Running ca.uhn.fhir.parser.EmptyElementWithExtensionDstu2Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in ca.uhn.fhir.parser.EmptyElementWithExtensionDstu2Test
+Running ca.uhn.fhir.parser.RoundTripDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.parser.RoundTripDstu2Test
+Running ca.uhn.fhir.rest.server.SearchReturningProfiledResourceDstu2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.718 sec - in ca.uhn.fhir.rest.server.SearchReturningProfiledResourceDstu2Test
+Running ca.uhn.fhir.rest.client.ETagClientDstu2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in ca.uhn.fhir.rest.client.ETagClientDstu2Test
+Running ca.uhn.fhir.rest.client.apache.ApacheClientIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.581 sec - in ca.uhn.fhir.rest.client.apache.ApacheClientIntegrationTest
+Running ca.uhn.fhir.model.primitive.TimeDtTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.model.primitive.TimeDtTest
+Running ca.uhn.fhir.rest.server.interceptor.InterceptorUserDataMapDstu2Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.576 sec - in ca.uhn.fhir.rest.server.interceptor.InterceptorUserDataMapDstu2Test
+Running ca.uhn.fhir.rest.server.interceptor.ResponseHighlightingInterceptorTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.636 sec - in ca.uhn.fhir.rest.server.interceptor.ResponseHighlightingInterceptorTest
+Running ca.uhn.fhir.rest.server.ServerSearchDstu2Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.567 sec - in ca.uhn.fhir.rest.server.ServerSearchDstu2Test
+Running ca.uhn.fhir.parser.JsonParserDstu2Test
+Tests run: 71, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.87 sec - in ca.uhn.fhir.parser.JsonParserDstu2Test
+
+Results :
+
+Tests run: 683, Failures: 0, Errors: 0, Skipped: 9
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-fhir-structures-dstu2 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR - Minimal Dependency Test - Client 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-base-testmindeps-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-base-testmindeps-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-base-testmindeps-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-base-test-mindeps-client/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-base-testmindeps-client ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-base-testmindeps-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-base-test-mindeps-client/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-base-testmindeps-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-base-testmindeps-client ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-base-test-mindeps-client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.rest.client.ClientTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.349 sec - in ca.uhn.fhir.rest.client.ClientTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR - Minimal Dependency Test - Server 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-base-testmindeps-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-base-testmindeps-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-base-testmindeps-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-base-test-mindeps-server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-base-testmindeps-server ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-base-testmindeps-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-base-test-mindeps-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-base-testmindeps-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-base-testmindeps-server ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-base-test-mindeps-server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.parser.MultiVersionJsonParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec - in ca.uhn.fhir.parser.MultiVersionJsonParserTest
+Running ca.uhn.fhir.testmindeps.ReadTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.038 sec - in ca.uhn.fhir.testmindeps.ReadTest
+Running ca.uhn.fhir.testmindeps.FhirContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in ca.uhn.fhir.testmindeps.FhirContextTest
+Running ca.uhn.fhir.parser.MultiVersionXmlParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.407 sec - in ca.uhn.fhir.parser.MultiVersionXmlParserTest
+Running ca.uhn.fhir.testmindeps.ValidatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.612 sec - in ca.uhn.fhir.testmindeps.ValidatorTest
+Running ca.uhn.fhir.testmindeps.SetupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.testmindeps.SetupTest
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR - Validation Resources DSTU2.1 (2016May) 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-validation-resources-dstu2.1 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-validation-resources-dstu2.1 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-validation-resources-dstu2.1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 151 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-validation-resources-dstu2.1 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-validation-resources-dstu2.1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-validation-resources-dstu2.1/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-validation-resources-dstu2.1 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-validation-resources-dstu2.1 ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-fhir-validation-resources-dstu2.1 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR Structures - DSTU2.1 (2016May) 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-structures-dstu2.1 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-structures-dstu2.1 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ hapi-fhir-structures-dstu2.1 ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu2.1/target/jacoco.exec,dumponexit=true
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-structures-dstu2.1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-structures-dstu2.1 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-structures-dstu2.1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-structures-dstu2.1 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-structures-dstu2.1 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu2.1/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.rest.server.DeleteConditionalDstu2_1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.129 sec - in ca.uhn.fhir.rest.server.DeleteConditionalDstu2_1Test
+Running ca.uhn.fhir.rest.server.MetadataConformanceDstu2_1Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.241 sec - in ca.uhn.fhir.rest.server.MetadataConformanceDstu2_1Test
+Running ca.uhn.fhir.rest.server.SearchWithIncludesDstu2_1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.772 sec - in ca.uhn.fhir.rest.server.SearchWithIncludesDstu2_1Test
+Running ca.uhn.fhir.parser.XmlParserDstu2_1Test
+Tests run: 79, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 4.033 sec - in ca.uhn.fhir.parser.XmlParserDstu2_1Test
+Running ca.uhn.fhir.rest.server.SearchPostDstu2_1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.678 sec - in ca.uhn.fhir.rest.server.SearchPostDstu2_1Test
+Running ca.uhn.fhir.rest.server.SearchSortDstu2_1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.626 sec - in ca.uhn.fhir.rest.server.SearchSortDstu2_1Test
+Running ca.uhn.fhir.rest.server.ServerMimetypeDstu2_1Test
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.731 sec - in ca.uhn.fhir.rest.server.ServerMimetypeDstu2_1Test
+Running ca.uhn.fhir.rest.server.ReadDstu2_1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.598 sec - in ca.uhn.fhir.rest.server.ReadDstu2_1Test
+Running ca.uhn.fhir.rest.server.ServerExceptionDstu2_1Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.6 sec - in ca.uhn.fhir.rest.server.ServerExceptionDstu2_1Test
+Running ca.uhn.fhir.rest.client.OperationClientDstu2_1Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 sec - in ca.uhn.fhir.rest.client.OperationClientDstu2_1Test
+Running ca.uhn.fhir.rest.server.OperationServerWithSearchParamTypesDstu2_1Test
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.744 sec - in ca.uhn.fhir.rest.server.OperationServerWithSearchParamTypesDstu2_1Test
+Running ca.uhn.fhir.rest.server.SearchWithServerAddressStrategyDstu2_1Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 sec - in ca.uhn.fhir.rest.server.SearchWithServerAddressStrategyDstu2_1Test
+Running ca.uhn.fhir.parser.ErrorHandlerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in ca.uhn.fhir.parser.ErrorHandlerTest
+Running ca.uhn.fhir.rest.server.UpdateDstu2_1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.615 sec - in ca.uhn.fhir.rest.server.UpdateDstu2_1Test
+Running ca.uhn.fhir.rest.client.SearchClientDstu2_1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 sec - in ca.uhn.fhir.rest.client.SearchClientDstu2_1Test
+Running ca.uhn.fhir.rest.server.FormatParameterDstu2_1Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.717 sec - in ca.uhn.fhir.rest.server.FormatParameterDstu2_1Test
+Running ca.uhn.fhir.rest.client.PatchClientDstu2_1Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in ca.uhn.fhir.rest.client.PatchClientDstu2_1Test
+Running ca.uhn.fhir.model.ModelDstu2_1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in ca.uhn.fhir.model.ModelDstu2_1Test
+Running ca.uhn.fhir.parser.CustomTypeDstu2_1Test
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 sec - in ca.uhn.fhir.parser.CustomTypeDstu2_1Test
+Running ca.uhn.fhir.rest.server.SearchWithGenericListDstu2_1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.57 sec - in ca.uhn.fhir.rest.server.SearchWithGenericListDstu2_1Test
+Running ca.uhn.fhir.rest.server.DateRangeParamSearchDstu2_1Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.805 sec - in ca.uhn.fhir.rest.server.DateRangeParamSearchDstu2_1Test
+Running ca.uhn.fhir.rest.server.InterceptorDstu2_1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.177 sec - in ca.uhn.fhir.rest.server.InterceptorDstu2_1Test
+Running ca.uhn.fhir.rest.client.GenericClientDstu2_1Test
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.896 sec - in ca.uhn.fhir.rest.client.GenericClientDstu2_1Test
+Running ca.uhn.fhir.rest.server.CreateBinaryDstu2_1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.68 sec - in ca.uhn.fhir.rest.server.CreateBinaryDstu2_1Test
+Running ca.uhn.fhir.rest.server.ValidateDstu2_1Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.646 sec - in ca.uhn.fhir.rest.server.ValidateDstu2_1Test
+Running ca.uhn.fhir.rest.server.UnclassifiedServerExceptionDstu2_1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.688 sec - in ca.uhn.fhir.rest.server.UnclassifiedServerExceptionDstu2_1Test
+Running ca.uhn.fhir.model.IdTypeDstu2_1Test
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in ca.uhn.fhir.model.IdTypeDstu2_1Test
+Running ca.uhn.fhir.parser.RoundTripDstu2_1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in ca.uhn.fhir.parser.RoundTripDstu2_1Test
+Running ca.uhn.fhir.rest.server.SearchDstu2_1Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.591 sec - in ca.uhn.fhir.rest.server.SearchDstu2_1Test
+Running ca.uhn.fhir.rest.server.SearchHasParamDstu2_1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.59 sec - in ca.uhn.fhir.rest.server.SearchHasParamDstu2_1Test
+Running ca.uhn.fhir.rest.server.PatchDstu2_1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.594 sec - in ca.uhn.fhir.rest.server.PatchDstu2_1Test
+Running ca.uhn.fhir.model.ModelSerializationDstu2_1Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in ca.uhn.fhir.model.ModelSerializationDstu2_1Test
+Running ca.uhn.fhir.rest.client.ClientWithCustomTypeDstu2_1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in ca.uhn.fhir.rest.client.ClientWithCustomTypeDstu2_1Test
+Running ca.uhn.fhir.rest.client.RestfulClientFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec - in ca.uhn.fhir.rest.client.RestfulClientFactoryTest
+Running ca.uhn.fhir.rest.client.NonGenericClientDstu2_1Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec - in ca.uhn.fhir.rest.client.NonGenericClientDstu2_1Test
+Running ca.uhn.fhir.rest.server.SearchCountParamDstu2_1Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.619 sec - in ca.uhn.fhir.rest.server.SearchCountParamDstu2_1Test
+Running ca.uhn.fhir.rest.server.OperationServerDstu2_1Test
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.777 sec - in ca.uhn.fhir.rest.server.OperationServerDstu2_1Test
+Running ca.uhn.fhir.parser.JsonParserDstu2_1Test
+Tests run: 67, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 0.806 sec - in ca.uhn.fhir.parser.JsonParserDstu2_1Test
+Running ca.uhn.fhir.rest.server.ServerUsingOldTypesDstu2_1Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in ca.uhn.fhir.rest.server.ServerUsingOldTypesDstu2_1Test
+Running ca.uhn.fhir.rest.server.CreateDstu2_1Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.615 sec - in ca.uhn.fhir.rest.server.CreateDstu2_1Test
+Running ca.uhn.fhir.parser.EmptyElementWithExtensionDstu3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in ca.uhn.fhir.parser.EmptyElementWithExtensionDstu3Test
+Running org.hl7.fhir.dstu2016may.hapi.validation.ResourceValidatorDstu2_1Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 14.06 sec - in org.hl7.fhir.dstu2016may.hapi.validation.ResourceValidatorDstu2_1Test
+
+Results :
+
+Tests run: 378, Failures: 0, Errors: 0, Skipped: 14
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-fhir-structures-dstu2.1 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR - Validation Resources (DSTU3) 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-validation-resources-dstu3 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-validation-resources-dstu3 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-validation-resources-dstu3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 176 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-validation-resources-dstu3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-validation-resources-dstu3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-validation-resources-dstu3 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-validation-resources-dstu3 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-fhir-validation-resources-dstu3 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR Structures - DSTU3 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-structures-dstu3 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-structures-dstu3 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ hapi-fhir-structures-dstu3 ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu3/target/jacoco.exec,dumponexit=true
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-structures-dstu3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-structures-dstu3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-structures-dstu3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 26 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-structures-dstu3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-structures-dstu3 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-dstu3/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.rest.server.interceptor.BanUnsupprtedHttpMethodsInterceptorDstu3Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.277 sec - in ca.uhn.fhir.rest.server.interceptor.BanUnsupprtedHttpMethodsInterceptorDstu3Test
+Running ca.uhn.fhir.narrative.DefaultThymeleafNarrativeGeneratorDstu3Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.401 sec - in ca.uhn.fhir.narrative.DefaultThymeleafNarrativeGeneratorDstu3Test
+Running ca.uhn.fhir.rest.client.OperationClientDstu3Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.578 sec - in ca.uhn.fhir.rest.client.OperationClientDstu3Test
+Running ca.uhn.fhir.rest.client.PatchClientDstu3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.033 sec - in ca.uhn.fhir.rest.client.PatchClientDstu3Test
+Running ca.uhn.fhir.rest.server.UnclassifiedServerExceptionDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.632 sec - in ca.uhn.fhir.rest.server.UnclassifiedServerExceptionDstu3Test
+Running z.TestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in z.TestTest
+Running ca.uhn.fhir.rest.server.SearchHasParamDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.736 sec - in ca.uhn.fhir.rest.server.SearchHasParamDstu3Test
+Running ca.uhn.fhir.rest.server.ServerMimetypeDstu3Test
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.962 sec - in ca.uhn.fhir.rest.server.ServerMimetypeDstu3Test
+Running ca.uhn.fhir.context.RuntimeResourceDefinitionDstu3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in ca.uhn.fhir.context.RuntimeResourceDefinitionDstu3Test
+Running ca.uhn.fhir.rest.server.UpdateDstu3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.648 sec - in ca.uhn.fhir.rest.server.UpdateDstu3Test
+Running org.hl7.fhir.dstu3.model.BaseDateTimeTypeDstu3Test
+Tests run: 59, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.889 sec - in org.hl7.fhir.dstu3.model.BaseDateTimeTypeDstu3Test
+Running ca.uhn.fhir.rest.server.DateRangeParamSearchDstu3Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.811 sec - in ca.uhn.fhir.rest.server.DateRangeParamSearchDstu3Test
+Running ca.uhn.fhir.rest.server.interceptor.CorsInterceptorDstu3Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.795 sec - in ca.uhn.fhir.rest.server.interceptor.CorsInterceptorDstu3Test
+Running ca.uhn.fhir.validation.QuestionnaireResponseValidatorDstu3Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.682 sec - in ca.uhn.fhir.validation.QuestionnaireResponseValidatorDstu3Test
+Running org.hl7.fhir.utilities.xhtml.XhtmlNodeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.hl7.fhir.utilities.xhtml.XhtmlNodeTest
+Running ca.uhn.fhir.rest.server.SearchPostDstu3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.632 sec - in ca.uhn.fhir.rest.server.SearchPostDstu3Test
+Running ca.uhn.fhir.validation.SchemaValidationDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.484 sec - in ca.uhn.fhir.validation.SchemaValidationDstu3Test
+Running ca.uhn.fhir.rest.method.MethodUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in ca.uhn.fhir.rest.method.MethodUtilTest
+Running ca.uhn.fhir.rest.server.SearchCountParamDstu3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.628 sec - in ca.uhn.fhir.rest.server.SearchCountParamDstu3Test
+Running ca.uhn.fhir.context.ContextScanningDstu3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.88 sec - in ca.uhn.fhir.context.ContextScanningDstu3Test
+Running ca.uhn.fhir.rest.server.MetadataConformanceDstu3Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.629 sec - in ca.uhn.fhir.rest.server.MetadataConformanceDstu3Test
+Running ca.uhn.fhir.rest.server.RequestValidatingInterceptorDstu3Test
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.883 sec - in ca.uhn.fhir.rest.server.RequestValidatingInterceptorDstu3Test
+Running ca.uhn.fhir.rest.client.ClientMimetypeDstu3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in ca.uhn.fhir.rest.client.ClientMimetypeDstu3Test
+Running ca.uhn.fhir.rest.server.ValidateDstu3Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.646 sec - in ca.uhn.fhir.rest.server.ValidateDstu3Test
+Running ca.uhn.fhir.model.ModelDstu3Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in ca.uhn.fhir.model.ModelDstu3Test
+Running ca.uhn.fhir.rest.server.SearchSortDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.617 sec - in ca.uhn.fhir.rest.server.SearchSortDstu3Test
+Running ca.uhn.fhir.context.VersionDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in ca.uhn.fhir.context.VersionDstu3Test
+Running ca.uhn.fhir.rest.server.ReadDstu3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.606 sec - in ca.uhn.fhir.rest.server.ReadDstu3Test
+Running ca.uhn.fhir.rest.server.SearchBundleProviderWithNoSizeDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.623 sec - in ca.uhn.fhir.rest.server.SearchBundleProviderWithNoSizeDstu3Test
+Running ca.uhn.fhir.parser.EmptyElementWithExtensionDstu3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in ca.uhn.fhir.parser.EmptyElementWithExtensionDstu3Test
+Running ca.uhn.fhir.parser.XmlParserDstu3Test
+Tests run: 102, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 1.513 sec - in ca.uhn.fhir.parser.XmlParserDstu3Test
+Running ca.uhn.fhir.rest.server.PatchDstu3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.624 sec - in ca.uhn.fhir.rest.server.PatchDstu3Test
+Running ca.uhn.fhir.rest.server.FormatParameterDstu3Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec - in ca.uhn.fhir.rest.server.FormatParameterDstu3Test
+Running ca.uhn.fhir.rest.server.SearchWithIncludesDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.622 sec - in ca.uhn.fhir.rest.server.SearchWithIncludesDstu3Test
+Running ca.uhn.fhir.rest.server.ResponseValidatingInterceptorDstu3Test
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 10.849 sec - in ca.uhn.fhir.rest.server.ResponseValidatingInterceptorDstu3Test
+Running ca.uhn.fhir.model.XhtmlNodeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in ca.uhn.fhir.model.XhtmlNodeTest
+Running ca.uhn.fhir.rest.server.MetadataCapabilityStatementDstu3Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.757 sec - in ca.uhn.fhir.rest.server.MetadataCapabilityStatementDstu3Test
+Running ca.uhn.fhir.rest.server.SearchDefaultMethodDstu3Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.596 sec - in ca.uhn.fhir.rest.server.SearchDefaultMethodDstu3Test
+Running ca.uhn.fhir.rest.client.SearchClientDstu3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in ca.uhn.fhir.rest.client.SearchClientDstu3Test
+Running ca.uhn.fhir.model.IdTypeDstu3Test
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in ca.uhn.fhir.model.IdTypeDstu3Test
+Running ca.uhn.fhir.model.DateTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in ca.uhn.fhir.model.DateTypeTest
+Running ca.uhn.fhir.rest.server.ServerExceptionDstu3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.575 sec - in ca.uhn.fhir.rest.server.ServerExceptionDstu3Test
+Running ca.uhn.fhir.rest.server.SearchWithServerAddressStrategyDstu3Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.59 sec - in ca.uhn.fhir.rest.server.SearchWithServerAddressStrategyDstu3Test
+Running ca.uhn.fhir.parser.ElementWithExtensionDstu3Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.001 sec - in ca.uhn.fhir.parser.ElementWithExtensionDstu3Test
+Running org.hl7.fhir.dstu3.utils.FhirPathEngineTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.798 sec - in org.hl7.fhir.dstu3.utils.FhirPathEngineTest
+Running ca.uhn.fhir.rest.client.ClientWithCustomTypeDstu3Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in ca.uhn.fhir.rest.client.ClientWithCustomTypeDstu3Test
+Running ca.uhn.fhir.context.FhirContextDstu3Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.333 sec - in ca.uhn.fhir.context.FhirContextDstu3Test
+Running ca.uhn.fhir.context.ModelScannerDstu3Test
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.302 sec - in ca.uhn.fhir.context.ModelScannerDstu3Test
+Running ca.uhn.fhir.rest.server.SearchDstu3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.675 sec - in ca.uhn.fhir.rest.server.SearchDstu3Test
+Running ca.uhn.fhir.rest.server.ServerUsingOldTypesDstu3Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in ca.uhn.fhir.rest.server.ServerUsingOldTypesDstu3Test
+Running ca.uhn.fhir.fluentpath.FluentPathTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.012 sec - in ca.uhn.fhir.fluentpath.FluentPathTest
+Running ca.uhn.fhir.rest.client.NonGenericClientDstu3Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in ca.uhn.fhir.rest.client.NonGenericClientDstu3Test
+Running ca.uhn.fhir.rest.server.CreateDstu3Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.579 sec - in ca.uhn.fhir.rest.server.CreateDstu3Test
+Running ca.uhn.fhir.rest.server.DeleteConditionalDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.569 sec - in ca.uhn.fhir.rest.server.DeleteConditionalDstu3Test
+Running ca.uhn.fhir.validation.FhirInstanceValidatorDstu3Test
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 28.506 sec - in ca.uhn.fhir.validation.FhirInstanceValidatorDstu3Test
+Running org.hl7.fhir.dstu3.hapi.validation.ResourceValidatorDstu3Test
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 10.602 sec - in org.hl7.fhir.dstu3.hapi.validation.ResourceValidatorDstu3Test
+Running ca.uhn.fhir.rest.server.SearchWithGenericListDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.488 sec - in ca.uhn.fhir.rest.server.SearchWithGenericListDstu3Test
+Running ca.uhn.fhir.util.FhirTerserDstu3Test
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in ca.uhn.fhir.util.FhirTerserDstu3Test
+Running ca.uhn.fhir.parser.ErrorHandlerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in ca.uhn.fhir.parser.ErrorHandlerTest
+Running ca.uhn.fhir.parser.JsonParserDstu3Test
+Tests run: 84, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 1.37 sec - in ca.uhn.fhir.parser.JsonParserDstu3Test
+Running ca.uhn.fhir.parser.RoundTripDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.parser.RoundTripDstu3Test
+Running ca.uhn.fhir.rest.server.OperationServerWithSearchParamTypesDstu3Test
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.627 sec - in ca.uhn.fhir.rest.server.OperationServerWithSearchParamTypesDstu3Test
+Running org.hl7.fhir.dstu3.hapi.rest.server.ServerCapabilityStatementProviderDstu3Test
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.199 sec - in org.hl7.fhir.dstu3.hapi.rest.server.ServerCapabilityStatementProviderDstu3Test
+Running ca.uhn.fhir.util.XmlUtilDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in ca.uhn.fhir.util.XmlUtilDstu3Test
+Running ca.uhn.fhir.rest.client.GenericClientDstu3Test
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.486 sec - in ca.uhn.fhir.rest.client.GenericClientDstu3Test
+Running ca.uhn.fhir.rest.server.InterceptorDstu3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.169 sec - in ca.uhn.fhir.rest.server.InterceptorDstu3Test
+Running ca.uhn.fhir.rest.server.CreateBinaryDstu3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.591 sec - in ca.uhn.fhir.rest.server.CreateBinaryDstu3Test
+Running ca.uhn.fhir.model.ModelSerializationDstu3Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in ca.uhn.fhir.model.ModelSerializationDstu3Test
+Running ca.uhn.fhir.parser.CustomTypeDstu3Test
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 sec - in ca.uhn.fhir.parser.CustomTypeDstu3Test
+Running ca.uhn.fhir.rest.server.OperationServerDstu3Test
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.7 sec - in ca.uhn.fhir.rest.server.OperationServerDstu3Test
+Running ca.uhn.fhir.model.DecimalTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in ca.uhn.fhir.model.DecimalTypeTest
+
+Results :
+
+Tests run: 664, Failures: 0, Errors: 0, Skipped: 29
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-fhir-structures-dstu3 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR Structures - HL7.org DSTU2 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-structures-hl7org-dstu2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-structures-hl7org-dstu2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ hapi-fhir-structures-hl7org-dstu2 ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-hl7org-dstu2/target/jacoco.exec,dumponexit=true
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-structures-hl7org-dstu2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-structures-hl7org-dstu2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-structures-hl7org-dstu2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 24 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-structures-hl7org-dstu2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-structures-hl7org-dstu2 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-structures-hl7org-dstu2/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.model.ModelInheritanceTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.977 sec - in ca.uhn.fhir.model.ModelInheritanceTest
+Running ca.uhn.fhir.rest.server.SearchWithHl7OrgDstu2BundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.684 sec - in ca.uhn.fhir.rest.server.SearchWithHl7OrgDstu2BundleTest
+Running ca.uhn.fhir.rest.server.UpdateConditionalHl7OrgDstu2Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.874 sec - in ca.uhn.fhir.rest.server.UpdateConditionalHl7OrgDstu2Test
+Running ca.uhn.fhir.rest.server.ReadHl7OrgDstu2Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.604 sec - in ca.uhn.fhir.rest.server.ReadHl7OrgDstu2Test
+Running ca.uhn.fhir.validation.FhirInstanceValidatorTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.542 sec - in ca.uhn.fhir.validation.FhirInstanceValidatorTest
+Running ca.uhn.fhir.rest.server.DeleteConditionalHl7OrgTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.595 sec - in ca.uhn.fhir.rest.server.DeleteConditionalHl7OrgTest
+Running ca.uhn.fhir.rest.server.OperationDuplicateServerHl7OrgDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.666 sec - in ca.uhn.fhir.rest.server.OperationDuplicateServerHl7OrgDstu2Test
+Running ca.uhn.fhir.rest.server.BundleTypeInResponseHl7OrgTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.414 sec - in ca.uhn.fhir.rest.server.BundleTypeInResponseHl7OrgTest
+Running ca.uhn.fhir.rest.client.OperationClientTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 sec - in ca.uhn.fhir.rest.client.OperationClientTest
+Running ca.uhn.fhir.parser.XmlParserHl7OrgDstu2Test
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 2.492 sec - in ca.uhn.fhir.parser.XmlParserHl7OrgDstu2Test
+Running ca.uhn.fhir.validation.QuestionnaireResponseValidatorIntegrationTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.27 sec - in ca.uhn.fhir.validation.QuestionnaireResponseValidatorIntegrationTest
+Running ca.uhn.fhir.rest.server.BinaryHl7OrgDstu2Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.664 sec - in ca.uhn.fhir.rest.server.BinaryHl7OrgDstu2Test
+Running ca.uhn.fhir.model.IdTypeTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in ca.uhn.fhir.model.IdTypeTest
+Running ca.uhn.fhir.model.XhtmlNodeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in ca.uhn.fhir.model.XhtmlNodeTest
+Running ca.uhn.fhir.rest.client.GenericClientDstu2Hl7OrgTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 sec - in ca.uhn.fhir.rest.client.GenericClientDstu2Hl7OrgTest
+Running ca.uhn.fhir.rest.server.ETagServerHl7OrgTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 sec - in ca.uhn.fhir.rest.server.ETagServerHl7OrgTest
+Running ca.uhn.fhir.rest.server.SearchWithGenericListHl7OrgDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.627 sec - in ca.uhn.fhir.rest.server.SearchWithGenericListHl7OrgDstu2Test
+Running ca.uhn.fhir.model.InstantiationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.672 sec - in ca.uhn.fhir.model.InstantiationTest
+Running ca.uhn.fhir.rest.server.TransactionWithBundleResourceParamHl7OrgDstu2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.708 sec - in ca.uhn.fhir.rest.server.TransactionWithBundleResourceParamHl7OrgDstu2Test
+Running ca.uhn.fhir.rest.server.IncludeAndRevincludeParameterHl7OrgTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.568 sec - in ca.uhn.fhir.rest.server.IncludeAndRevincludeParameterHl7OrgTest
+Running ca.uhn.fhir.rest.server.ValidateHl7OrgDstu2Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.595 sec - in ca.uhn.fhir.rest.server.ValidateHl7OrgDstu2Test
+Running ca.uhn.fhir.validation.QuestionnaireResponseValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 sec - in ca.uhn.fhir.validation.QuestionnaireResponseValidatorTest
+Running ca.uhn.fhir.rest.server.ServerConformanceProviderHl7OrgDstu2Test
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.357 sec - in ca.uhn.fhir.rest.server.ServerConformanceProviderHl7OrgDstu2Test
+Running ca.uhn.fhir.model.PrimititeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in ca.uhn.fhir.model.PrimititeTest
+Running ca.uhn.fhir.parser.JsonParserHl7OrgDstu2Test
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.405 sec - in ca.uhn.fhir.parser.JsonParserHl7OrgDstu2Test
+Running ca.uhn.fhir.rest.server.ServerInvalidDefinitionHl7OrgDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in ca.uhn.fhir.rest.server.ServerInvalidDefinitionHl7OrgDstu2Test
+Running ca.uhn.fhir.rest.server.CreateConditionalHl7OrgTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.6 sec - in ca.uhn.fhir.rest.server.CreateConditionalHl7OrgTest
+Running ca.uhn.fhir.rest.server.PreferHl7OrgDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.595 sec - in ca.uhn.fhir.rest.server.PreferHl7OrgDstu2Test
+Running ca.uhn.fhir.rest.server.IncludeHl7OrgDstu2Test
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.66 sec - in ca.uhn.fhir.rest.server.IncludeHl7OrgDstu2Test
+Running ca.uhn.fhir.rest.server.SearchHl7OrgDstu2Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.594 sec - in ca.uhn.fhir.rest.server.SearchHl7OrgDstu2Test
+Running ca.uhn.fhir.rest.client.ETagClientTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in ca.uhn.fhir.rest.client.ETagClientTest
+Running ca.uhn.fhir.rest.client.BundleTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in ca.uhn.fhir.rest.client.BundleTypeTest
+Running ca.uhn.fhir.context.FhirContextDstu2Hl7OrgTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.context.FhirContextDstu2Hl7OrgTest
+Running ca.uhn.fhir.rest.server.OperationServerHl7OrgTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.639 sec - in ca.uhn.fhir.rest.server.OperationServerHl7OrgTest
+
+Results :
+
+Tests run: 283, Failures: 0, Errors: 0, Skipped: 5
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-fhir-structures-hl7org-dstu2 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI Tinder Plugin - Test Project 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-tinder-test ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-tinder-test ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-structures (custom-structs) @ hapi-tinder-test ---
+[INFO] Beginning HAPI-FHIR Tinder Code Generation...
+[INFO]  * Output Package: ca.uhn.test.customstructs
+[INFO]  * Output Resource Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-resources/tinder/ca/uhn/test/customstructs
+[INFO]  * Output Source Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-sources/tinder/ca/uhn/test/customstructs
+[INFO] HAPI FHIR version is: 2.5-SNAPSHOT
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Parsing built-in ValueSets
+[INFO] Loading valuesets from: /vs/dstu/all-valuesets-bundle.xml
+[INFO] FHIR XML procesing will use StAX implementation 'Woodstox XML-processor' version '4.4.1'
+[WARNING] Duplicate Name: LOINC Diagnostic Report Codes
+[WARNING] Duplicate Name: Condition/Problem/Diagnosis Codes
+[WARNING] Duplicate Name: SNOMED CT Form Codes
+[WARNING] Duplicate Name: XDS Connect-a-thon healthcareFacilityTypeCodes
+[WARNING] Duplicate Name: FHIR Document Codes
+[WARNING] Duplicate Name: Diet
+[INFO] Parsing ValueSet file: {}valueset-cgta-patientidpool.xml
+[INFO] Parsing ValueSet file: {}valueset-cgta-provideridpool.xml
+[INFO] Loading Datatypes...
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Loading profiles...
+[INFO] Parsing file: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/src/test/resources/profile/patient.xml
+[INFO] Creating new FhirContext with auto-detected version [DSTU1]. It is recommended to explicitly select a version for future compatibility by invoking FhirContext.forDstuX()
+[WARNING] Unknown attribute 'schemaLocation' found while parsing
+[INFO] Parsing file: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/src/test/resources/profile/organization.xml
+[INFO] Creating new FhirContext with auto-detected version [DSTU1]. It is recommended to explicitly select a version for future compatibility by invoking FhirContext.forDstuX()
+[WARNING] Unknown attribute 'schemaLocation' found while parsing
+[INFO] Element at path Organization.extension is using extension #providerIdPool
+[INFO] Scanning resources for imports...
+[INFO] Writing Composite Datatypes...
+[INFO] Scanning resources for imports...
+[INFO] Writing ValueSet Enums...
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-structures (generalstructs) @ hapi-tinder-test ---
+[INFO] Beginning HAPI-FHIR Tinder Code Generation...
+[INFO]  * Output Package: ca.uhn.test.realstructs
+[INFO]  * Output Resource Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-resources/tinder/ca/uhn/test/realstructs
+[INFO]  * Output Source Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-sources/tinder/ca/uhn/test/realstructs
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Parsing built-in ValueSets
+[INFO] Loading valuesets from: /vs/dstu/all-valuesets-bundle.xml
+[WARNING] Duplicate Name: LOINC Diagnostic Report Codes
+[WARNING] Duplicate Name: Condition/Problem/Diagnosis Codes
+[WARNING] Duplicate Name: SNOMED CT Form Codes
+[WARNING] Duplicate Name: XDS Connect-a-thon healthcareFacilityTypeCodes
+[WARNING] Duplicate Name: FHIR Document Codes
+[WARNING] Duplicate Name: Diet
+[INFO] Loading Datatypes...
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Parsed 13 spreadsheet structures
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Loading Resources...
+[INFO] Parsed 8 spreadsheet structures
+[INFO] Writing Resources to directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-sources/tinder/ca/uhn/test/realstructs/resource
+[INFO] Scanning resources for imports...
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Writing Composite Datatypes...
+[INFO] Scanning resources for imports...
+[INFO] Writing ValueSet Enums...
+[INFO] [SecurityEventObjectType] Replacing numeric code 1 with description: Person
+[INFO] [SecurityEventObjectType] Replacing numeric code 2 with description: System Object
+[INFO] [SecurityEventObjectType] Replacing numeric code 3 with description: Organization
+[INFO] [SecurityEventObjectType] Replacing numeric code 4 with description: Other
+[INFO] [SecurityEventParticipantNetworkType] Replacing numeric code 1 with description: Machine Name
+[INFO] [SecurityEventParticipantNetworkType] Replacing numeric code 2 with description: IP Address
+[INFO] [SecurityEventParticipantNetworkType] Replacing numeric code 3 with description: Telephone Number
+[INFO] [SecurityEventParticipantNetworkType] Replacing numeric code 4 with description: Email address
+[INFO] [SecurityEventParticipantNetworkType] Replacing numeric code 5 with description: URI
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 1 with description: Origination OR Creation
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 2 with description: Import OR Copy from original
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 3 with description: Amendment
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 4 with description: Verification
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 5 with description: Translation
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 6 with description: Access OR Use
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 7 with description: De-identification
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 8 with description: Aggregation
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 9 with description: Report
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 10 with description: Export OR Copy to target
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 11 with description: Disclosure
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 12 with description: Receipt of disclosure
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 13 with description: Archiving
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 14 with description: Logical deletion
+[INFO] [SecurityEventObjectLifecycle] Replacing numeric code 15 with description: Permanent erasure OR Physical destruction
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-multi-files (generic_multi) @ hapi-tinder-test ---
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Including the following elements: [patient, organization]
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Parsing built-in ValueSets
+[INFO] Loading valuesets from: /vs/dstu/all-valuesets-bundle.xml
+[WARNING] Duplicate Name: LOINC Diagnostic Report Codes
+[WARNING] Duplicate Name: Condition/Problem/Diagnosis Codes
+[WARNING] Duplicate Name: SNOMED CT Form Codes
+[WARNING] Duplicate Name: XDS Connect-a-thon healthcareFacilityTypeCodes
+[WARNING] Duplicate Name: FHIR Document Codes
+[WARNING] Duplicate Name: Diet
+[INFO] Loading Datatypes...
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Parsed 13 spreadsheet structures
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Loading Resources...
+[INFO] Parsed 2 spreadsheet structures
+[INFO]  * Output [SOURCE] Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-sources/tinder/ca/uhn/test/generic/multi
+[INFO] Writing Resources...
+[INFO] Scanning resources for imports...
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-multi-files (generic_multi_json) @ hapi-tinder-test ---
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Including the following elements: [patient, organization, bundle, composition]
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Parsing built-in ValueSets
+[INFO] Loading valuesets from: /org/hl7/fhir/instance/model/valueset/valuesets.xml
+[WARNING] Duplicate Name: LOINC Codes for Cholesterol in Serum/Plasma
+[WARNING] Duplicate Name: LOINC Codes for Cholesterol in Serum/Plasma
+[WARNING] Duplicate Name: Signature Type Codes
+[WARNING] Duplicate Name: Surface Codes
+[WARNING] Duplicate Name: SNOMED CT Clinical Findings
+[WARNING] Duplicate Name: Contract Term Type Codes
+[WARNING] Duplicate Name: Surface Codes
+[WARNING] Duplicate Name: SNOMED CT Form Codes
+[WARNING] Duplicate Name: DataElement SDC Object Class
+[WARNING] Duplicate Name: Vaccine Administered Value Set
+[WARNING] Duplicate Name: Condition/Diagnosis Certainty
+[WARNING] Duplicate Name: PresentAbsent
+[WARNING] Duplicate Name: SNOMED CT Clinical Findings
+[WARNING] Duplicate Name: Common UCUM units
+[WARNING] Duplicate Name: DataElement SDC Concept
+[INFO] Loading Datatypes...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Loading ValueSets...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Done Loading ValueSets
+[INFO] Parsed 18 spreadsheet structures
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Loading Resources...
+[INFO] Loading ValueSets...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Done Loading ValueSets
+[INFO] Parsed 4 spreadsheet structures
+[INFO]  * Output [RESOURCE] Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-resources/tinder/maps
+[INFO] Writing Resources...
+[INFO] Scanning resources for imports...
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-single-file (generic_single) @ hapi-tinder-test ---
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Including the following elements: [patient, organization]
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Parsing built-in ValueSets
+[INFO] Loading valuesets from: /vs/dstu/all-valuesets-bundle.xml
+[WARNING] Duplicate Name: LOINC Diagnostic Report Codes
+[WARNING] Duplicate Name: Condition/Problem/Diagnosis Codes
+[WARNING] Duplicate Name: SNOMED CT Form Codes
+[WARNING] Duplicate Name: XDS Connect-a-thon healthcareFacilityTypeCodes
+[WARNING] Duplicate Name: FHIR Document Codes
+[WARNING] Duplicate Name: Diet
+[INFO] Loading Datatypes...
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Parsed 13 spreadsheet structures
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Loading Resources...
+[INFO] Parsed 2 spreadsheet structures
+[INFO]  * Output [SOURCE] file [TestConfigDstu1.java] in directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-sources/tinder/ca/uhn/test/generic/single
+[INFO] Writing Resources...
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-single-file (generic_single_json) @ hapi-tinder-test ---
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Including the following elements: [patient, organization]
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Parsing built-in ValueSets
+[INFO] Loading valuesets from: /org/hl7/fhir/instance/model/valueset/valuesets.xml
+[WARNING] Duplicate Name: LOINC Codes for Cholesterol in Serum/Plasma
+[WARNING] Duplicate Name: LOINC Codes for Cholesterol in Serum/Plasma
+[WARNING] Duplicate Name: Signature Type Codes
+[WARNING] Duplicate Name: Surface Codes
+[WARNING] Duplicate Name: SNOMED CT Clinical Findings
+[WARNING] Duplicate Name: Contract Term Type Codes
+[WARNING] Duplicate Name: Surface Codes
+[WARNING] Duplicate Name: SNOMED CT Form Codes
+[WARNING] Duplicate Name: DataElement SDC Object Class
+[WARNING] Duplicate Name: Vaccine Administered Value Set
+[WARNING] Duplicate Name: Condition/Diagnosis Certainty
+[WARNING] Duplicate Name: PresentAbsent
+[WARNING] Duplicate Name: SNOMED CT Clinical Findings
+[WARNING] Duplicate Name: Common UCUM units
+[WARNING] Duplicate Name: DataElement SDC Concept
+[INFO] Loading Datatypes...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Loading ValueSets...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Done Loading ValueSets
+[INFO] Parsed 18 spreadsheet structures
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Loading Resources...
+[INFO] Loading ValueSets...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Done Loading ValueSets
+[INFO] Parsed 2 spreadsheet structures
+[INFO]  * Output [RESOURCE] file [Datatypes_Dstu2.json] in directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-resources/tinder/maps
+[INFO] Writing DataTypes...
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (testTinderTask) @ hapi-tinder-test ---
+[INFO] Executing tasks
+
+main:
+[INFO] HAPI FHIR version is: 2.5-SNAPSHOT
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[hapi-tinder] Including the following elements: [patient, organization]
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Parsing built-in ValueSets
+[INFO] Loading valuesets from: /org/hl7/fhir/instance/model/valueset/valuesets.xml
+[INFO] FHIR XML procesing will use StAX implementation 'Woodstox XML-processor' version '4.4.1'
+[WARNING] Duplicate Name: LOINC Codes for Cholesterol in Serum/Plasma
+[WARNING] Duplicate Name: LOINC Codes for Cholesterol in Serum/Plasma
+[WARNING] Duplicate Name: Signature Type Codes
+[WARNING] Duplicate Name: Surface Codes
+[WARNING] Duplicate Name: SNOMED CT Clinical Findings
+[WARNING] Duplicate Name: Contract Term Type Codes
+[WARNING] Duplicate Name: Surface Codes
+[WARNING] Duplicate Name: SNOMED CT Form Codes
+[WARNING] Duplicate Name: DataElement SDC Object Class
+[WARNING] Duplicate Name: Vaccine Administered Value Set
+[WARNING] Duplicate Name: Condition/Diagnosis Certainty
+[WARNING] Duplicate Name: PresentAbsent
+[WARNING] Duplicate Name: SNOMED CT Clinical Findings
+[WARNING] Duplicate Name: Common UCUM units
+[WARNING] Duplicate Name: DataElement SDC Concept
+[hapi-tinder] Loading Datatypes...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Loading ValueSets...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Done Loading ValueSets
+[INFO] Parsed 18 spreadsheet structures
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[hapi-tinder] Loading Resources...
+[INFO] Loading ValueSets...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Done Loading ValueSets
+[INFO] Parsed 2 spreadsheet structures
+[hapi-tinder]  * Output [SOURCE] Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-sources/tinder/ca/uhn/test/ant/multi
+[hapi-tinder] Writing Resources...
+[INFO] Scanning resources for imports...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[hapi-tinder] Including the following elements: [patient, organization]
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Parsing built-in ValueSets
+[INFO] Loading valuesets from: /org/hl7/fhir/instance/model/valueset/valuesets.xml
+[WARNING] Duplicate Name: LOINC Codes for Cholesterol in Serum/Plasma
+[WARNING] Duplicate Name: LOINC Codes for Cholesterol in Serum/Plasma
+[WARNING] Duplicate Name: Signature Type Codes
+[WARNING] Duplicate Name: Surface Codes
+[WARNING] Duplicate Name: SNOMED CT Clinical Findings
+[WARNING] Duplicate Name: Contract Term Type Codes
+[WARNING] Duplicate Name: Surface Codes
+[WARNING] Duplicate Name: SNOMED CT Form Codes
+[WARNING] Duplicate Name: DataElement SDC Object Class
+[WARNING] Duplicate Name: Vaccine Administered Value Set
+[WARNING] Duplicate Name: Condition/Diagnosis Certainty
+[WARNING] Duplicate Name: PresentAbsent
+[WARNING] Duplicate Name: SNOMED CT Clinical Findings
+[WARNING] Duplicate Name: Common UCUM units
+[WARNING] Duplicate Name: DataElement SDC Concept
+[hapi-tinder] Loading Datatypes...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Loading ValueSets...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Done Loading ValueSets
+[INFO] Parsed 18 spreadsheet structures
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[hapi-tinder] Loading Resources...
+[INFO] Loading ValueSets...
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Done Loading ValueSets
+[INFO] Parsed 2 spreadsheet structures
+[hapi-tinder]  * Output [SOURCE] Directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-sources/tinder/ca/uhn/test/ant/single
+[hapi-tinder] Writing Resources...
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ hapi-tinder-test ---
+[INFO] Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/generated-sources/tinder added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-tinder-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/src/main/resources
+[INFO] Copying 7 resources
+[INFO] Copying 5 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-tinder-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 67 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-tinder-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-tinder-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-tinder-test ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-tinder-test/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running test.TestAntTask
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in test.TestAntTask
+Running test.TestCustomStructures
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.522 sec - in test.TestCustomStructures
+Running test.TestParticulars
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in test.TestParticulars
+Running test.TestGenerics
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in test.TestGenerics
+Running test.TestProfileGenerator
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in test.TestProfileGenerator
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR JAX-RS Server 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-jaxrsserver-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-jaxrsserver-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-jaxrsserver-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jaxrsserver-base/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-jaxrsserver-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-jaxrsserver-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-jaxrsserver-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-jaxrsserver-base ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jaxrsserver-base/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.jaxrs.server.AbstractJaxRsConformanceProviderDstu3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.914 sec - in ca.uhn.fhir.jaxrs.server.AbstractJaxRsConformanceProviderDstu3Test
+Running ca.uhn.fhir.jaxrs.server.util.JaxRsResponseTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.435 sec - in ca.uhn.fhir.jaxrs.server.util.JaxRsResponseTest
+Running ca.uhn.fhir.jaxrs.server.util.JaxRsMethodBindingsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec - in ca.uhn.fhir.jaxrs.server.util.JaxRsMethodBindingsTest
+Running ca.uhn.fhir.jaxrs.server.AbstractJaxRsConformanceProviderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.042 sec - in ca.uhn.fhir.jaxrs.server.AbstractJaxRsConformanceProviderTest
+Running ca.uhn.fhir.jaxrs.server.util.JaxRsResponseDstu3Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec - in ca.uhn.fhir.jaxrs.server.util.JaxRsResponseDstu3Test
+Running ca.uhn.fhir.jaxrs.client.GenericJaxRsClientDstu2Test
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.843 sec - in ca.uhn.fhir.jaxrs.client.GenericJaxRsClientDstu2Test
+Running ca.uhn.fhir.jaxrs.server.AbstractJaxRsProviderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 sec - in ca.uhn.fhir.jaxrs.server.AbstractJaxRsProviderTest
+Running ca.uhn.fhir.jaxrs.server.util.JaxRsMethodBindingsDstu3Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 sec - in ca.uhn.fhir.jaxrs.server.util.JaxRsMethodBindingsDstu3Test
+Running ca.uhn.fhir.jaxrs.server.util.JaxRsRequestDstu3Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in ca.uhn.fhir.jaxrs.server.util.JaxRsRequestDstu3Test
+Running ca.uhn.fhir.jaxrs.server.AbstractJaxRsResourceProviderDstu3Test
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 2.096 sec - in ca.uhn.fhir.jaxrs.server.AbstractJaxRsResourceProviderDstu3Test
+Running ca.uhn.fhir.jaxrs.server.AbstractJaxRsResourceProviderTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 1.531 sec - in ca.uhn.fhir.jaxrs.server.AbstractJaxRsResourceProviderTest
+Running ca.uhn.fhir.jaxrs.server.interceptor.JaxRsResponseExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in ca.uhn.fhir.jaxrs.server.interceptor.JaxRsResponseExceptionTest
+Running ca.uhn.fhir.jaxrs.server.util.JaxRsRequestTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in ca.uhn.fhir.jaxrs.server.util.JaxRsRequestTest
+Running ca.uhn.fhir.jaxrs.client.GenericJaxRsClientDstu3Test
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.268 sec - in ca.uhn.fhir.jaxrs.client.GenericJaxRsClientDstu3Test
+Running ca.uhn.fhir.jaxrs.server.interceptor.JaxRsExceptionInterceptorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in ca.uhn.fhir.jaxrs.server.interceptor.JaxRsExceptionInterceptorTest
+
+Results :
+
+Tests run: 204, Failures: 0, Errors: 0, Skipped: 5
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (check-java-api) @ hapi-fhir-jaxrsserver-base ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR JAX-RS Server - Example 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-jaxrsserver-example ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-jaxrsserver-example ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-jaxrsserver-example ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jaxrsserver-example/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-jaxrsserver-example ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-jaxrsserver-example ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-jaxrsserver-example ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-jaxrsserver-example ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jaxrsserver-example/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.jaxrs.server.example.JaxRsPatientProviderTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 6.048 sec - in ca.uhn.fhir.jaxrs.server.example.JaxRsPatientProviderTest
+Running ca.uhn.fhir.jaxrs.server.example.JaxRsPatientProviderDstu3Test
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 2.847 sec - in ca.uhn.fhir.jaxrs.server.example.JaxRsPatientProviderDstu3Test
+
+Results :
+
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 6
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HAPI FHIR JPA Server 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ hapi-fhir-jpaserver-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ hapi-fhir-jpaserver-base ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ hapi-fhir-jpaserver-base ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/jacoco.exec,dumponexit=true
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-jparest-server (build_dstu1) @ hapi-fhir-jpaserver-base ---
+[INFO] HAPI FHIR version is: 2.5-SNAPSHOT
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] No resource names supplied, going to use all resources from version: DSTU1
+[INFO] Including the following resources: [adversereaction, alert, allergyintolerance, appointment, appointmentresponse, availability, careplan, claim, composition, conceptmap, condition, conformance, coverage, device, deviceobservationreport, diagnosticorder, diagnosticreport, documentmanifest, documentreference, encounter, familyhistory, gvfmeta, gvfvariant, geneexpression, geneticanalysis, group, imagingstudy, immunization, immunizationrecommendation, list, location, media, medication, medicationadministration, medicationdispense, medicationprescription, medicationstatement, messageheader, microarray, observation, operationoutcome, order, orderresponse, organization, other, patient, practitioner, procedure, profile, provenance, query, questionnaire, relatedperson, remittance, securityevent, sequencinganalysis, sequencinglab, slot, specimen, substance, supply, user, valueset]
+[INFO] Creating new FHIR context for FHIR version [DSTU1]
+[INFO] Scanning resources for imports...
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-jparest-server (build_dstu2) @ hapi-fhir-jpaserver-base ---
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] No resource names supplied, going to use all resources from version: DSTU2
+[INFO] Including the following resources: [account, allergyintolerance, appointment, appointmentresponse, auditevent, basic, binary, bodysite, bundle, careplan, claim, claimresponse, clinicalimpression, communication, communicationrequest, composition, conceptmap, condition, conformance, contract, coverage, dataelement, detectedissue, device, devicecomponent, devicemetric, deviceuserequest, deviceusestatement, diagnosticorder, diagnosticreport, documentmanifest, documentreference, eligibilityrequest, eligibilityresponse, encounter, enrollmentrequest, enrollmentresponse, episodeofcare, explanationofbenefit, familymemberhistory, flag, goal, group, healthcareservice, imagingobjectselection, imagingstudy, immunization, immunizationrecommendation, implementationguide, list, location, media, medication, medicationadministration, medicationdispense, medicationorder, medicationstatement, messageheader, namingsystem, nutritionorder, observation, operationdefinition, operationoutcome, order, orderresponse, organization, parameters, patient, paymentnotice, paymentreconciliation, person, practitioner, procedure, procedurerequest, processrequest, processresponse, provenance, questionnaire, questionnaireresponse, referralrequest, relatedperson, riskassessment, schedule, searchparameter, slot, specimen, structuredefinition, subscription, substance, supplydelivery, supplyrequest, test, testscript, user, valueset, visionprescription]
+[INFO] Creating new FHIR context for FHIR version [DSTU2]
+[INFO] Scanning resources for imports...
+[INFO] 
+[INFO] --- hapi-tinder-plugin:2.5-SNAPSHOT:generate-jparest-server (build_dstu3) @ hapi-fhir-jpaserver-base ---
+[INFO] Creating new FHIR context for FHIR version [DSTU3]
+[INFO] No resource names supplied, going to use all resources from version: DSTU3
+[INFO] Including the following resources: [account, activitydefinition, adverseevent, allergyintolerance, appointment, appointmentresponse, auditevent, basic, binary, bodysite, bundle, capabilitystatement, careplan, careteam, chargeitem, claim, claimresponse, clinicalimpression, codesystem, communication, communicationrequest, compartmentdefinition, composition, conceptmap, condition, consent, contract, coverage, dataelement, detectedissue, device, devicecomponent, devicemetric, devicerequest, deviceusestatement, diagnosticreport, documentmanifest, documentreference, eligibilityrequest, eligibilityresponse, encounter, endpoint, enrollmentrequest, enrollmentresponse, episodeofcare, expansionprofile, explanationofbenefit, familymemberhistory, flag, goal, graphdefinition, group, guidanceresponse, healthcareservice, imagingmanifest, imagingstudy, immunization, immunizationrecommendation, implementationguide, library, linkage, list, location, measure, measurereport, media, medication, medicationadministration, medicationdispense, medicationrequest, medicationstatement, messagedefinition, messageheader, namingsystem, nutritionorder, observation, operationdefinition, operationoutcome, organization, parameters, patient, paymentnotice, paymentreconciliation, person, plandefinition, practitioner, practitionerrole, procedure, procedurerequest, processrequest, processresponse, provenance, questionnaire, questionnaireresponse, referralrequest, relatedperson, requestgroup, researchstudy, researchsubject, riskassessment, schedule, searchparameter, sequence, servicedefinition, slot, specimen, structuredefinition, structuremap, subscription, substance, supplydelivery, supplyrequest, task, testreport, testscript, valueset, visionprescription]
+[INFO] Creating new FHIR context for FHIR version [DSTU3]
+[INFO] Scanning resources for imports...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ hapi-fhir-jpaserver-base ---
+[INFO] Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/generated-sources/tinder added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hapi-fhir-jpaserver-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hapi-fhir-jpaserver-base ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 460 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/classes
+[INFO] 
+[INFO] --- hibernate-maven-plugin:2.0.0:create (postgres94) @ hapi-fhir-jpaserver-base ---
+[INFO] HHH000318: Could not find any META-INF/persistence.xml file in the classpath
+[INFO] Found no META-INF/persistence.xml.
+[INFO] Gathered hibernate-configuration (turn on debugging for details):
+[INFO]   hibernate.dialect = org.hibernate.dialect.PostgreSQL94Dialect
+[INFO]   hibernate.hbm2dll.create_namespaces = false
+[INFO] HHH000412: Hibernate Core {5.0.2.Final}
+[INFO] HHH000206: hibernate.properties not found
+[INFO] HHH000021: Bytecode provider name : javassist
+[INFO] Adding /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/classes to the list of roots to scan...
+[INFO] Adding dependencies from scope false to the list of roots to scan
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ForcedId
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchParamPresent
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamToken
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchResult
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseResourceIndexedSearchParam
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchInclude
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SubscriptionFlaggedResource
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConceptParentChildLink
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamNumber
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceHistoryTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConcept
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamDate
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamString
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TagDefinition
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceLink
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamCoords
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceHistoryTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamQuantity
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SubscriptionTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchParam
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.Search
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermCodeSystemVersion
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseHasResource
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamUri
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermCodeSystem
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConceptProperty
+[INFO] Mapping and configuration unchanged.
+[INFO] Schema generation is forced!
+[INFO] No connection opened, because connection information is incomplete
+[INFO] Driver-Class: null
+[INFO] URL: null
+[INFO] User: null
+[INFO] HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+[WARNING] HHH000342: Could not obtain connection to query metadata : No connection available, because of insufficient connection information!
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+[INFO] HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5ea4d357
+[INFO] Envers integration enabled? : true
+[INFO] HHH000227: Running hbm2ddl schema export
+[INFO] HHH000230: Schema export complete
+[INFO] 
+[INFO] --- hibernate-maven-plugin:2.0.0:create (mysql57) @ hapi-fhir-jpaserver-base ---
+[INFO] HHH000318: Could not find any META-INF/persistence.xml file in the classpath
+[INFO] Found no META-INF/persistence.xml.
+[INFO] Gathered hibernate-configuration (turn on debugging for details):
+[INFO]   hibernate.dialect = org.hibernate.dialect.MySQL57InnoDBDialect
+[INFO]   hibernate.hbm2dll.create_namespaces = false
+[INFO] Adding /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/classes to the list of roots to scan...
+[INFO] Adding dependencies from scope false to the list of roots to scan
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ForcedId
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchParamPresent
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamToken
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchResult
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseResourceIndexedSearchParam
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchInclude
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SubscriptionFlaggedResource
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConceptParentChildLink
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamNumber
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceHistoryTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConcept
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamDate
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamString
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TagDefinition
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceLink
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamCoords
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceHistoryTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamQuantity
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SubscriptionTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchParam
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.Search
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermCodeSystemVersion
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseHasResource
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamUri
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermCodeSystem
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConceptProperty
+[INFO] Mapping and configuration unchanged.
+[INFO] Schema generation is forced!
+[INFO] No connection opened, because connection information is incomplete
+[INFO] Driver-Class: null
+[INFO] URL: null
+[INFO] User: null
+[WARNING] HHH000342: Could not obtain connection to query metadata : No connection available, because of insufficient connection information!
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.MySQL57InnoDBDialect
+[INFO] HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] Envers integration enabled? : true
+[INFO] HHH000227: Running hbm2ddl schema export
+[INFO] HHH000230: Schema export complete
+[INFO] 
+[INFO] --- hibernate-maven-plugin:2.0.0:create (oracle12c) @ hapi-fhir-jpaserver-base ---
+[INFO] HHH000318: Could not find any META-INF/persistence.xml file in the classpath
+[INFO] Found no META-INF/persistence.xml.
+[INFO] Gathered hibernate-configuration (turn on debugging for details):
+[INFO]   hibernate.dialect = org.hibernate.dialect.Oracle12cDialect
+[INFO]   hibernate.hbm2dll.create_namespaces = false
+[INFO] Adding /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/classes to the list of roots to scan...
+[INFO] Adding dependencies from scope false to the list of roots to scan
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ForcedId
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchParamPresent
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamToken
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchResult
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseResourceIndexedSearchParam
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchInclude
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SubscriptionFlaggedResource
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConceptParentChildLink
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamNumber
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceHistoryTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConcept
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamDate
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamString
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TagDefinition
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceLink
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamCoords
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceHistoryTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamQuantity
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SubscriptionTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchParam
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.Search
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermCodeSystemVersion
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseHasResource
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamUri
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermCodeSystem
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConceptProperty
+[INFO] Mapping and configuration unchanged.
+[INFO] Schema generation is forced!
+[INFO] No connection opened, because connection information is incomplete
+[INFO] Driver-Class: null
+[INFO] URL: null
+[INFO] User: null
+[WARNING] HHH000342: Could not obtain connection to query metadata : No connection available, because of insufficient connection information!
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+[INFO] HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] Envers integration enabled? : true
+[INFO] HHH000227: Running hbm2ddl schema export
+[INFO] HHH000230: Schema export complete
+[INFO] 
+[INFO] --- hibernate-maven-plugin:2.0.0:create (sqlserver2012) @ hapi-fhir-jpaserver-base ---
+[INFO] HHH000318: Could not find any META-INF/persistence.xml file in the classpath
+[INFO] Found no META-INF/persistence.xml.
+[INFO] Gathered hibernate-configuration (turn on debugging for details):
+[INFO]   hibernate.dialect = org.hibernate.dialect.SQLServer2012Dialect
+[INFO]   hibernate.hbm2dll.create_namespaces = false
+[INFO] Adding /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/classes to the list of roots to scan...
+[INFO] Adding dependencies from scope false to the list of roots to scan
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ForcedId
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchParamPresent
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamToken
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchResult
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseResourceIndexedSearchParam
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchInclude
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SubscriptionFlaggedResource
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConceptParentChildLink
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamNumber
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceHistoryTag
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConcept
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamDate
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamString
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TagDefinition
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceLink
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamCoords
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceHistoryTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamQuantity
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SubscriptionTable
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.SearchParam
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.Search
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermCodeSystemVersion
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.BaseHasResource
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.ResourceIndexedSearchParamUri
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermCodeSystem
+[INFO] Adding annotated resource: ca.uhn.fhir.jpa.entity.TermConceptProperty
+[INFO] Mapping and configuration unchanged.
+[INFO] Schema generation is forced!
+[INFO] No connection opened, because connection information is incomplete
+[INFO] Driver-Class: null
+[INFO] URL: null
+[INFO] User: null
+[WARNING] HHH000342: Could not obtain connection to query metadata : No connection available, because of insufficient connection information!
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[INFO] HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] Envers integration enabled? : true
+[INFO] HHH000227: Running hbm2ddl schema export
+[INFO] HHH000230: Schema export complete
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hapi-fhir-jpaserver-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 76 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hapi-fhir-jpaserver-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ hapi-fhir-jpaserver-base ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ca.uhn.fhir.jpa.config.IdentifierLengthTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.073 sec - in ca.uhn.fhir.jpa.config.IdentifierLengthTest
+Running ca.uhn.fhir.jpa.dao.BaseHapiFhirDaoTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.209 sec - in ca.uhn.fhir.jpa.dao.BaseHapiFhirDaoTest
+Running ca.uhn.fhir.jpa.dao.DaoConfigTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in ca.uhn.fhir.jpa.dao.DaoConfigTest
+Running ca.uhn.fhir.jpa.dao.FhirResourceDaoDstu1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.679 sec - in ca.uhn.fhir.jpa.dao.FhirResourceDaoDstu1Test
+Running ca.uhn.fhir.jpa.dao.FhirSystemDaoDstu1Test
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.401 sec - in ca.uhn.fhir.jpa.dao.FhirSystemDaoDstu1Test
+Running ca.uhn.fhir.jpa.dao.SearchBuilderTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in ca.uhn.fhir.jpa.dao.SearchBuilderTest
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2InterceptorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.756 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2InterceptorTest
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2SearchFtTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.79 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2SearchFtTest
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2SearchNoFtTest
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 13.155 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2SearchNoFtTest
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2SubscriptionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.305 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2SubscriptionTest
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2Test
+Tests run: 70, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.376 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2Test
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2UpdateTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.924 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2UpdateTest
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2ValidateTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.705 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoDstu2ValidateTest
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoValueSetDstu2Test
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirResourceDaoValueSetDstu2Test
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirSearchDaoDstu2Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirSearchDaoDstu2Test
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirSystemDaoDstu2SearchTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirSystemDaoDstu2SearchTest
+Running ca.uhn.fhir.jpa.dao.dstu2.FhirSystemDaoDstu2Test
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.634 sec - in ca.uhn.fhir.jpa.dao.dstu2.FhirSystemDaoDstu2Test
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoCustomTypeDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.848 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoCustomTypeDstu3Test
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDocumentDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.755 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDocumentDstu3Test
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3CodeSystemTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.425 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3CodeSystemTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3ContainedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.924 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3ContainedTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3ExternalReferenceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.449 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3ExternalReferenceTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3InterceptorTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.008 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3InterceptorTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchCustomSearchParamTest
+Tests run: 20, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.186 sec <<< FAILURE! - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchCustomSearchParamTest
+testSearchForExtensionTwoDeepDate(ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchCustomSearchParamTest)  Time elapsed: 0.101 sec  <<< ERROR!
+ca.uhn.fhir.context.ConfigurationException: Search param foobar is of unexpected datatype: class org.hl7.fhir.dstu3.model.Extension
+	at ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchCustomSearchParamTest.testSearchForExtensionTwoDeepDate(FhirResourceDaoDstu3SearchCustomSearchParamTest.java:404)
+
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchFtTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.593 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchFtTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchNoFtTest
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 18.47 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchNoFtTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchPageExpiryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.602 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchPageExpiryTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchWithLuceneDisabledTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.432 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SearchWithLuceneDisabledTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SubscriptionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.461 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3SubscriptionTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3TerminologyTest
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 16.391 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3TerminologyTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3Test
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 19.438 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3Test
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3UpdateTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.525 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3UpdateTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3ValidateTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 2.355 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3ValidateTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3ValueSetTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 3.139 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirResourceDaoDstu3ValueSetTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirSearchDaoDstu3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.198 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirSearchDaoDstu3Test
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirSystemDaoDstu3SearchTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirSystemDaoDstu3SearchTest
+Running ca.uhn.fhir.jpa.dao.dstu3.FhirSystemDaoDstu3Test
+Tests run: 63, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 7.97 sec - in ca.uhn.fhir.jpa.dao.dstu3.FhirSystemDaoDstu3Test
+Running ca.uhn.fhir.jpa.dao.dstu3.SearchParamExtractorDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.286 sec - in ca.uhn.fhir.jpa.dao.dstu3.SearchParamExtractorDstu3Test
+Running ca.uhn.fhir.jpa.entity.TagTypeEnumTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ca.uhn.fhir.jpa.entity.TagTypeEnumTest
+Running ca.uhn.fhir.jpa.provider.ResourceProviderDstu1Test
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.391 sec - in ca.uhn.fhir.jpa.provider.ResourceProviderDstu1Test
+Running ca.uhn.fhir.jpa.provider.ResourceProviderDstu2Test
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 20.275 sec - in ca.uhn.fhir.jpa.provider.ResourceProviderDstu2Test
+Running ca.uhn.fhir.jpa.provider.ResourceProviderDstu2ValueSetTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.133 sec - in ca.uhn.fhir.jpa.provider.ResourceProviderDstu2ValueSetTest
+Running ca.uhn.fhir.jpa.provider.ResourceProviderInterceptorDstu3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.647 sec - in ca.uhn.fhir.jpa.provider.ResourceProviderInterceptorDstu3Test
+Running ca.uhn.fhir.jpa.provider.SearchParameterMapTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in ca.uhn.fhir.jpa.provider.SearchParameterMapTest
+Running ca.uhn.fhir.jpa.provider.SubscriptionsDstu2Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.008 sec - in ca.uhn.fhir.jpa.provider.SubscriptionsDstu2Test
+Running ca.uhn.fhir.jpa.provider.SystemProviderDstu1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.439 sec - in ca.uhn.fhir.jpa.provider.SystemProviderDstu1Test
+Running ca.uhn.fhir.jpa.provider.SystemProviderDstu2Test
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.822 sec - in ca.uhn.fhir.jpa.provider.SystemProviderDstu2Test
+Running ca.uhn.fhir.jpa.provider.dstu3.AuthorizationInterceptorResourceProviderDstu3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.161 sec - in ca.uhn.fhir.jpa.provider.dstu3.AuthorizationInterceptorResourceProviderDstu3Test
+Running ca.uhn.fhir.jpa.provider.dstu3.CorsDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.483 sec - in ca.uhn.fhir.jpa.provider.dstu3.CorsDstu3Test
+Running ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderCustomSearchParamDstu3Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.554 sec - in ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderCustomSearchParamDstu3Test
+Running ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderDstu3BundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.787 sec - in ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderDstu3BundleTest
+Running ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderDstu3CodeSystemTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.907 sec - in ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderDstu3CodeSystemTest
+Running ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderDstu3Test
+Tests run: 113, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 39.096 sec - in ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderDstu3Test
+Running ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderDstu3ValueSetTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.771 sec - in ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderDstu3ValueSetTest
+Running ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderInterceptorDstu3Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.817 sec - in ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderInterceptorDstu3Test
+Running ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderQuestionnaireResponseDstu3Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.468 sec - in ca.uhn.fhir.jpa.provider.dstu3.ResourceProviderQuestionnaireResponseDstu3Test
+Running ca.uhn.fhir.jpa.provider.dstu3.ServerDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.592 sec - in ca.uhn.fhir.jpa.provider.dstu3.ServerDstu3Test
+Running ca.uhn.fhir.jpa.provider.dstu3.StaleSearchDeletingSvcDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.02 sec - in ca.uhn.fhir.jpa.provider.dstu3.StaleSearchDeletingSvcDstu3Test
+Running ca.uhn.fhir.jpa.provider.dstu3.SubscriptionsDstu3Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.548 sec - in ca.uhn.fhir.jpa.provider.dstu3.SubscriptionsDstu3Test
+Running ca.uhn.fhir.jpa.provider.dstu3.SystemProviderDstu3Test
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.433 sec - in ca.uhn.fhir.jpa.provider.dstu3.SystemProviderDstu3Test
+Running ca.uhn.fhir.jpa.provider.dstu3.TerminologyUploaderProviderDstu3Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.447 sec - in ca.uhn.fhir.jpa.provider.dstu3.TerminologyUploaderProviderDstu3Test
+Running ca.uhn.fhir.jpa.search.PagingMultinodeProviderDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.814 sec - in ca.uhn.fhir.jpa.search.PagingMultinodeProviderDstu3Test
+Running ca.uhn.fhir.jpa.search.SearchCoordinatorSvcImplTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.469 sec - in ca.uhn.fhir.jpa.search.SearchCoordinatorSvcImplTest
+Running ca.uhn.fhir.jpa.term.TerminologyLoaderSvcIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in ca.uhn.fhir.jpa.term.TerminologyLoaderSvcIntegrationTest
+Running ca.uhn.fhir.jpa.term.TerminologyLoaderSvcTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.061 sec - in ca.uhn.fhir.jpa.term.TerminologyLoaderSvcTest
+Running ca.uhn.fhir.jpa.term.TerminologySvcImplTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.247 sec - in ca.uhn.fhir.jpa.term.TerminologySvcImplTest
+Running ca.uhn.fhir.jpa.testutil.SpringFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in ca.uhn.fhir.jpa.testutil.SpringFileTest
+Running ca.uhn.fhir.jpa.util.StopWatchTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.309 sec - in ca.uhn.fhir.jpa.util.StopWatchTest
+Running ca.uhn.fhir.jpa.util.jsonpatch.JsonPatchTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in ca.uhn.fhir.jpa.util.jsonpatch.JsonPatchTest
+Running ca.uhn.fhir.jpa.util.xmlpatch.XmlPatchTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in ca.uhn.fhir.jpa.util.xmlpatch.XmlPatchTest
+Running ca.uhn.fhir.jpa.z.ZContextCloserDstu2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec - in ca.uhn.fhir.jpa.z.ZContextCloserDstu2Test
+Running ca.uhn.fhir.jpa.z.ZContextCloserDstu3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in ca.uhn.fhir.jpa.z.ZContextCloserDstu3Test
+Running ca.uhn.fhir.validator.ValidatorAcrossVersionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in ca.uhn.fhir.validator.ValidatorAcrossVersionsTest
+
+Results :
+
+Tests in error: 
+  FhirResourceDaoDstu3SearchCustomSearchParamTest.testSearchForExtensionTwoDeepDate:404 » Configuration
+
+Tests run: 1010, Failures: 0, Errors: 1, Skipped: 24
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] HAPI-FHIR .......................................... SUCCESS [  0.479 s]
+[INFO] HAPI FHIR - Deployable Artifact Parent POM ......... SUCCESS [  0.925 s]
+[INFO] HAPI FHIR - Core Library ........................... SUCCESS [  7.071 s]
+[INFO] HAPI Tinder Plugin ................................. SUCCESS [  7.537 s]
+[INFO] HAPI FHIR Structures - DSTU1 (FHIR v0.80) .......... SUCCESS [01:14 min]
+[INFO] HAPI FHIR - Validation Resources (DSTU2) ........... SUCCESS [  0.330 s]
+[INFO] HAPI FHIR Structures - DSTU2 (FHIR v1.0.0) ......... SUCCESS [01:06 min]
+[INFO] HAPI FHIR - Minimal Dependency Test - Client ....... SUCCESS [  2.608 s]
+[INFO] HAPI FHIR - Minimal Dependency Test - Server ....... SUCCESS [  4.417 s]
+[INFO] HAPI FHIR - Validation Resources DSTU2.1 (2016May) . SUCCESS [  0.207 s]
+[INFO] HAPI FHIR Structures - DSTU2.1 (2016May) ........... SUCCESS [ 46.915 s]
+[INFO] HAPI FHIR - Validation Resources (DSTU3) ........... SUCCESS [  0.500 s]
+[INFO] HAPI FHIR Structures - DSTU3 ....................... SUCCESS [01:48 min]
+[INFO] HAPI FHIR Structures - HL7.org DSTU2 ............... SUCCESS [ 32.114 s]
+[INFO] HAPI Tinder Plugin - Test Project .................. SUCCESS [ 19.672 s]
+[INFO] HAPI FHIR JAX-RS Server ............................ SUCCESS [ 17.471 s]
+[INFO] HAPI FHIR JAX-RS Server - Example .................. SUCCESS [ 10.161 s]
+[INFO] HAPI FHIR JPA Server ............................... FAILURE [07:29 min]
+[INFO] HAPI FHIR TestPage Overlay ......................... SKIPPED
+[INFO] HAPI FHIR JPA Server - Example ..................... SKIPPED
+[INFO] HAPI FHIR Sample RESTful Server .................... SKIPPED
+[INFO] HAPI FHIR Sample RESTful Server - Tests ............ SKIPPED
+[INFO] HAPI FHIR - fhirtest.uhn.ca Deployable WAR ......... SKIPPED
+[INFO] HAPI FHIR OkHttp Client ............................ SKIPPED
+[INFO] HAPI FHIR - Android ................................ SKIPPED
+[INFO] HAPI FHIR - Converter .............................. SKIPPED
+[INFO] HAPI FHIR - Command Line Client - Base Project ..... SKIPPED
+[INFO] HAPI FHIR - Command Line Client - Server WAR ....... SKIPPED
+[INFO] HAPI FHIR - Command Line Client - Application ...... SKIPPED
+[INFO] HAPI FHIR - Distribution Archive ................... SKIPPED
+[INFO] HAPI FHIR - Examples (for site) .................... SKIPPED
+[INFO] hapi-fhir-base-example-embedded-ws ................. SKIPPED
+[INFO] hapi-fhir-standalone-overlay-example ............... SKIPPED
+[INFO] HAPI FHIR - JaCoCo Test Coverage ................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14:12 min
+[INFO] Finished at: 2020-03-19T11:21:25+01:00
+[INFO] Final Memory: 107M/366M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project hapi-fhir-jpaserver-base: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project hapi-fhir-jpaserver-base: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-234167762-20170519-234017_bugonly-firstCommit/hapi-fhir-jpaserver-base/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :hapi-fhir-jpaserver-base
