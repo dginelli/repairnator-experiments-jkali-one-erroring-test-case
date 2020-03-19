@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "mverdecanna/desapp-unq-grupo-D-012018",
-  "bugCommit": "https://github.com/mverdecanna/desapp-unq-grupo-D-012018/compare/b9fe758d9bb4...de74dadb6b20",
-  "failingModule": "/root/workspace/mverdecanna/desapp-unq-grupo-D-012018/372886539",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.springframework.transaction.CannotCreateTransactionException"
-  ],
-  "totalNumberRunningTests": 44,
-  "failing-test-cases": [
-    {
-      "className": "HibernateTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "HibernateTest#testSave"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:03:22 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:17:27 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 134996832,
+      "totalMemory": 288415744
+    },
+    "totalDuration": 841,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 115,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          115,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 646,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          646
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mverdecanna-desapp-unq-grupo-D-012018-372886539-20180430-072444-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mverdecanna-desapp-unq-grupo-D-012018-372886539-20180430-072444-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 44,
+      "numberPassing": 43,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.springframework.transaction.CannotCreateTransactionException",
-          "failureDetail": "Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "HibernateTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "HibernateTest",
+        "testMethod": "testSave",
+        "failureName": "org.springframework.transaction.CannotCreateTransactionException",
+        "detail": "Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 21,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 100,
+    "numberLines": 0
+  }
 }
