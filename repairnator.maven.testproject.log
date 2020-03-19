@@ -1,0 +1,341 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MorphoLibJ 1.3.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-rules) @ MorphoLibJ_ ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:regex-property (sanitize-version) @ MorphoLibJ_ ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ MorphoLibJ_ ---
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit
+[INFO] Storing buildNumber: 6a43e4a496c1c3e86360dd6be9b4bdbf8765d7eb at timestamp: 1584611662064
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- scijava-maven-plugin:1.0.0:set-rootdir (set-rootdir) @ MorphoLibJ_ ---
+[INFO] Setting rootdir: /scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ MorphoLibJ_ ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ MorphoLibJ_ ---
+[INFO] Compiling 25 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ MorphoLibJ_ ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 24 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ MorphoLibJ_ ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ MorphoLibJ_ ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 7.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 104.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1207.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running inra.ijpb.morphology.geodrec.GeodesicReconstructionByDilation3DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.852 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstructionByDilation3DTest
+Running inra.ijpb.morphology.geodrec.GeodesicReconstructionByDilation3DScanningTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.971 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstructionByDilation3DScanningTest
+Running inra.ijpb.morphology.geodrec.GeodesicReconstructionByErosion3DScanningTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.293 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstructionByErosion3DScanningTest
+Running inra.ijpb.morphology.geodrec.GeodesicReconstruction3DHybrid0Gray8Test
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.869 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstruction3DHybrid0Gray8Test
+Running inra.ijpb.morphology.geodrec.GeodesicReconstruction3DHybrid1Image3DTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.896 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstruction3DHybrid1Image3DTest
+Running inra.ijpb.morphology.geodrec.GeodesicReconstructionByErosion3DGray8Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.032 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstructionByErosion3DGray8Test
+Running inra.ijpb.morphology.geodrec.GeodesicReconstructionHybridTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstructionHybridTest
+Running inra.ijpb.morphology.geodrec.GeodesicReconstructionByDilation3DGray8Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.955 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstructionByDilation3DGray8Test
+Running inra.ijpb.morphology.geodrec.GeodesicReconstructionByDilation3DScanningGray8Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.557 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstructionByDilation3DScanningGray8Test
+Running inra.ijpb.morphology.geodrec.GeodesicReconstructionScanningTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstructionScanningTest
+Running inra.ijpb.morphology.geodrec.GeodesicReconstruction3DHybrid0Gray16Test
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.688 sec - in inra.ijpb.morphology.geodrec.GeodesicReconstruction3DHybrid0Gray16Test
+Running inra.ijpb.morphology.attrfilt.AreaOpeningQueueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in inra.ijpb.morphology.attrfilt.AreaOpeningQueueTest
+Running inra.ijpb.morphology.attrfilt.SizeOpening3DQueueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in inra.ijpb.morphology.attrfilt.SizeOpening3DQueueTest
+Running inra.ijpb.morphology.strel.Cross3x3StrelTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in inra.ijpb.morphology.strel.Cross3x3StrelTest
+Running inra.ijpb.morphology.strel.LinearDiagDownStrelTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in inra.ijpb.morphology.strel.LinearDiagDownStrelTest
+Running inra.ijpb.morphology.strel.DiamondStrelTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in inra.ijpb.morphology.strel.DiamondStrelTest
+Running inra.ijpb.morphology.strel.ShiftedCross3x3Strel_RightTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in inra.ijpb.morphology.strel.ShiftedCross3x3Strel_RightTest
+Running inra.ijpb.morphology.strel.LinearDiagUpStrelTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in inra.ijpb.morphology.strel.LinearDiagUpStrelTest
+Running inra.ijpb.morphology.strel.SquareStrelTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in inra.ijpb.morphology.strel.SquareStrelTest
+Running inra.ijpb.morphology.strel.LinearVerticalStrelTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in inra.ijpb.morphology.strel.LinearVerticalStrelTest
+Running inra.ijpb.morphology.strel.OctagonStrelTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 sec - in inra.ijpb.morphology.strel.OctagonStrelTest
+Running inra.ijpb.morphology.strel.ShiftedCross3x3Strel_LeftTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in inra.ijpb.morphology.strel.ShiftedCross3x3Strel_LeftTest
+Running inra.ijpb.morphology.strel.LinearHorizontalStrelTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in inra.ijpb.morphology.strel.LinearHorizontalStrelTest
+Running inra.ijpb.morphology.strel.DiskStrelTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in inra.ijpb.morphology.strel.DiskStrelTest
+Running inra.ijpb.morphology.FloodFill3DTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.423 sec - in inra.ijpb.morphology.FloodFill3DTest
+Running inra.ijpb.morphology.MinimaAndMaxima3DTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.719 sec - in inra.ijpb.morphology.MinimaAndMaxima3DTest
+Running inra.ijpb.morphology.ReconstructionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in inra.ijpb.morphology.ReconstructionTest
+Running inra.ijpb.morphology.StrelTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in inra.ijpb.morphology.StrelTest
+Running inra.ijpb.morphology.extrema.RegionalExtrema3DByFloodingTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in inra.ijpb.morphology.extrema.RegionalExtrema3DByFloodingTest
+Running inra.ijpb.morphology.extrema.RegionalExtremaByFloodingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in inra.ijpb.morphology.extrema.RegionalExtremaByFloodingTest
+Running inra.ijpb.morphology.FloodFillTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in inra.ijpb.morphology.FloodFillTest
+Running inra.ijpb.morphology.MorphologyTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.361 sec - in inra.ijpb.morphology.MorphologyTest
+Running inra.ijpb.morphology.MinimaAndMaximaTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in inra.ijpb.morphology.MinimaAndMaximaTest
+Running inra.ijpb.morphology.Reconstruction3DTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.279 sec - in inra.ijpb.morphology.Reconstruction3DTest
+Running inra.ijpb.measure.ResultsBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in inra.ijpb.measure.ResultsBuilderTest
+Running inra.ijpb.measure.region3d.MaxFeretDiameter3DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in inra.ijpb.measure.region3d.MaxFeretDiameter3DTest
+Running inra.ijpb.measure.region3d.InertiaEllipsoidTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in inra.ijpb.measure.region3d.InertiaEllipsoidTest
+Running inra.ijpb.measure.IntrinsicVolumes2DTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec - in inra.ijpb.measure.IntrinsicVolumes2DTest
+Running inra.ijpb.measure.GeometricMeasures3DTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.799 sec - in inra.ijpb.measure.GeometricMeasures3DTest
+Running inra.ijpb.measure.region2d.InertiaEllipseTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in inra.ijpb.measure.region2d.InertiaEllipseTest
+Running inra.ijpb.measure.region2d.GeodesicDiameterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.436 sec - in inra.ijpb.measure.region2d.GeodesicDiameterTest
+Running inra.ijpb.measure.region2d.OrientedBoundingBox2DTest
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.097 sec <<< FAILURE! - in inra.ijpb.measure.region2d.OrientedBoundingBox2DTest
+testAnalyzeRegions_circles(inra.ijpb.measure.region2d.OrientedBoundingBox2DTest)  Time elapsed: 0.022 sec  <<< ERROR!
+java.awt.HeadlessException: 
+
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+	at inra.ijpb.measure.region2d.OrientedBoundingBox2DTest.testAnalyzeRegions_circles(OrientedBoundingBox2DTest.java:84)
+
+Running inra.ijpb.measure.region2d.ConvexityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in inra.ijpb.measure.region2d.ConvexityTest
+Running inra.ijpb.measure.region2d.MaxFeretDiameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in inra.ijpb.measure.region2d.MaxFeretDiameterTest
+Running inra.ijpb.measure.region2d.BinaryConfigurations2DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in inra.ijpb.measure.region2d.BinaryConfigurations2DTest
+Running inra.ijpb.measure.region2d.LargestInscribedCircleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in inra.ijpb.measure.region2d.LargestInscribedCircleTest
+Running inra.ijpb.measure.IntrinsicVolumes3DTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.237 sec - in inra.ijpb.measure.IntrinsicVolumes3DTest
+Running inra.ijpb.measure.GeometricMeasures2DTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in inra.ijpb.measure.GeometricMeasures2DTest
+Running inra.ijpb.measure.GeometryUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in inra.ijpb.measure.GeometryUtilsTest
+Running inra.ijpb.binary.geodesic.GeodesicDistanceTransformFloatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in inra.ijpb.binary.geodesic.GeodesicDistanceTransformFloatTest
+Running inra.ijpb.binary.geodesic.GeodesicDistanceTransformShort5x5Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in inra.ijpb.binary.geodesic.GeodesicDistanceTransformShort5x5Test
+Running inra.ijpb.binary.geodesic.GeodesicDiameterFloatTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 sec - in inra.ijpb.binary.geodesic.GeodesicDiameterFloatTest
+Running inra.ijpb.binary.geodesic.GeodesicDistanceTransform3DFloatTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in inra.ijpb.binary.geodesic.GeodesicDistanceTransform3DFloatTest
+Running inra.ijpb.binary.geodesic.GeodesicDistanceTransformShortTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in inra.ijpb.binary.geodesic.GeodesicDistanceTransformShortTest
+Running inra.ijpb.binary.geodesic.GeodesicDiameter3DFloatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.995 sec - in inra.ijpb.binary.geodesic.GeodesicDiameter3DFloatTest
+Running inra.ijpb.binary.geodesic.GeodesicDiameterShortTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.299 sec - in inra.ijpb.binary.geodesic.GeodesicDiameterShortTest
+Running inra.ijpb.binary.geodesic.GeodesicDistanceTransformFloat5x5Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in inra.ijpb.binary.geodesic.GeodesicDistanceTransformFloat5x5Test
+Running inra.ijpb.binary.distmap.DistanceTransform5x5FloatTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in inra.ijpb.binary.distmap.DistanceTransform5x5FloatTest
+Running inra.ijpb.binary.distmap.DistanceTransform3DFloatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in inra.ijpb.binary.distmap.DistanceTransform3DFloatTest
+Running inra.ijpb.binary.distmap.DistanceTransform3DShortTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in inra.ijpb.binary.distmap.DistanceTransform3DShortTest
+Running inra.ijpb.binary.distmap.DistanceTransform3D4WeightsFloatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in inra.ijpb.binary.distmap.DistanceTransform3D4WeightsFloatTest
+Running inra.ijpb.binary.distmap.DistanceTransform5x5ShortTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in inra.ijpb.binary.distmap.DistanceTransform5x5ShortTest
+Running inra.ijpb.binary.distmap.DistanceTransform3x3FloatTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in inra.ijpb.binary.distmap.DistanceTransform3x3FloatTest
+Running inra.ijpb.binary.distmap.DistanceTransform3D4WeightsShortTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in inra.ijpb.binary.distmap.DistanceTransform3D4WeightsShortTest
+Running inra.ijpb.binary.distmap.DistanceTransform3x3ShortTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in inra.ijpb.binary.distmap.DistanceTransform3x3ShortTest
+Running inra.ijpb.binary.conncomp.FloodFillComponentsLabelingTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in inra.ijpb.binary.conncomp.FloodFillComponentsLabelingTest
+Running inra.ijpb.binary.conncomp.FloodFillComponentsLabeling3DTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in inra.ijpb.binary.conncomp.FloodFillComponentsLabeling3DTest
+Running inra.ijpb.binary.BinaryImagesTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec - in inra.ijpb.binary.BinaryImagesTest
+Running inra.ijpb.label.distmap.DistanceTransform3DShortTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in inra.ijpb.label.distmap.DistanceTransform3DShortTest
+Running inra.ijpb.label.distmap.DistanceTransform3DFloatTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in inra.ijpb.label.distmap.DistanceTransform3DFloatTest
+Running inra.ijpb.label.RegionAdjacencyGraphTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in inra.ijpb.label.RegionAdjacencyGraphTest
+Running inra.ijpb.label.LabelImagesTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in inra.ijpb.label.LabelImagesTest
+Running inra.ijpb.geometry.Polygon2DTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in inra.ijpb.geometry.Polygon2DTest
+Running inra.ijpb.geometry.Vector3DTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in inra.ijpb.geometry.Vector3DTest
+Running inra.ijpb.geometry.StraightLine2DTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in inra.ijpb.geometry.StraightLine2DTest
+Running inra.ijpb.geometry.Polygons2DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in inra.ijpb.geometry.Polygons2DTest
+Running inra.ijpb.util.ColorMapsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in inra.ijpb.util.ColorMapsTest
+Running inra.ijpb.plugins.MorphologicalSegmentationTest
+  Extracting voxel values...
+  Extraction took 63 ms.
+  Flooding from 12045 voxels...
+  Flooding took: 215 ms
+  Extracting voxel values...
+  Extraction took 23 ms.
+  Flooding from 12045 voxels...
+  Flooding took: 121 ms
+  Extracting voxel values...
+  Extraction took 8 ms.
+  Flooding from 12045 voxels...
+  Flooding took: 121 ms
+  Extracting voxel values...
+  Extraction took 8 ms.
+  Flooding from 12045 voxels...
+  Flooding took: 137 ms
+  Extracting voxel values...
+  Extraction took 8 ms.
+  Flooding from 12045 voxels...
+  Flooding took: 117 ms
+  Extracting voxel values...
+  Extraction took 8 ms.
+  Flooding from 12045 voxels...
+  Flooding took: 111 ms
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.724 sec - in inra.ijpb.plugins.MorphologicalSegmentationTest
+Running inra.ijpb.plugins.ExtendBordersPluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in inra.ijpb.plugins.ExtendBordersPluginTest
+Running inra.ijpb.plugins.GeodesicDistanceMapPluginTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in inra.ijpb.plugins.GeodesicDistanceMapPluginTest
+Running inra.ijpb.plugins.Watershed2DTest
+  Extracting pixel values (h_min = 0.0, h_max = 255.0)...
+  Extraction took 8 ms.
+  Sorting pixels by value...
+  Sorting took 29 ms.
+  Flooding...
+  Flooding took: 59 ms
+  Extracting pixel values (h_min = 0.0, h_max = 255.0)...
+  Extraction took 1 ms.
+  Sorting pixels by value...
+  Sorting took 20 ms.
+  Flooding...
+  Flooding took: 20 ms
+  Extracting pixel values (h_min = 0.0, h_max = 255.0)...
+  Extraction took 1 ms.
+  Sorting pixels by value...
+  Sorting took 6 ms.
+  Flooding...
+  Flooding took: 10 ms
+  Extracting pixel values (h_min = 40.0, h_max = 204.0)...
+  Extraction took 2 ms.
+  Sorting pixels by value...
+  Sorting took 5 ms.
+  Flooding...
+  Flooding took: 27 ms
+  Extracting pixel values (h_min = 40.0, h_max = 204.0)...
+  Extraction took 4 ms.
+  Sorting pixels by value...
+  Sorting took 5 ms.
+  Flooding...
+  Flooding took: 27 ms
+  Extracting pixel values (h_min = 40.0, h_max = 204.0)...
+  Extraction took 2 ms.
+  Sorting pixels by value...
+  Sorting took 19 ms.
+  Flooding...
+  Flooding took: 11 ms
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.373 sec - in inra.ijpb.plugins.Watershed2DTest
+Running inra.ijpb.math.ImageCalculatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in inra.ijpb.math.ImageCalculatorTest
+
+Results :
+
+Tests in error: 
+  OrientedBoundingBox2DTest.testAnalyzeRegions_circles:84 » Headless 
+No X11 DIS...
+
+Tests run: 440, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 43.662 s
+[INFO] Finished at: 2020-03-19T10:55:02+01:00
+[INFO] Final Memory: 27M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project MorphoLibJ_: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project MorphoLibJ_: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-ijpb-MorphoLibJ-410192860-20180731-091327-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
