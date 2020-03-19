@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "jamersonapce/projeto01-topicos2",
-  "bugCommit": "https://github.com/jamersonapce/projeto01-topicos2/compare/74c21264f1c2...09eb5f2276f5",
-  "failingModule": "/root/workspace/jamersonapce/projeto01-topicos2/373733270",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalStateException"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "com.jamerson.topicos2.primeiroprojeto.PrimeiroProjetoApplicationTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.jamerson.topicos2.primeiroprojeto.PrimeiroProjetoApplicationTests#contextLoads"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:58:01 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:01:55 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 14508368,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 231,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 117,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          117
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamersonapce-projeto01-topicos2-373733270-20180502-034856-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamersonapce-projeto01-topicos2-373733270-20180502-034856-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalStateException",
-          "failureDetail": "Failed to load ApplicationContext",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.jamerson.topicos2.primeiroprojeto.PrimeiroProjetoApplicationTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.jamerson.topicos2.primeiroprojeto.PrimeiroProjetoApplicationTests",
+        "testMethod": "contextLoads",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 62,
+    "numberLines": 0
+  }
 }
