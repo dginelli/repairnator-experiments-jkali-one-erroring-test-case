@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "wix/wix-embedded-mysql",
-  "failingModule": "/root/workspace/wix/wix-embedded-mysql/238353021",
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "com.wix.mysql.exceptions.MissingDependencyException"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "com.wix.mysql.EmbeddedMysqlTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.wix.mysql.EmbeddedMysqlTest#EmbeddedMysql instance should::start with default values"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:41:14 PM",
+    "reproductionDateEnd": "Mar 19, 2020 9:24:04 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 46293200,
+      "totalMemory": 202211328
+    },
+    "totalDuration": 6167,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-wix-wix-embedded-mysql-238353021-20170601-161311_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-wix-wix-embedded-mysql-238353021-20170601-161311_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "com.wix.mysql.exceptions.MissingDependencyException",
-          "failureDetail": "System library \u0027libaio.so.1\u0027 missing. Please install it via system package manager, ex. \u0027sudo apt-get install libaio1\u0027.\nFor details see: http://bugs.mysql.com/bug.php?id\u003d60544",
-          "isError": true
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.wix.mysql.EmbeddedMysqlTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.wix.mysql.EmbeddedMysqlTest",
+        "testMethod": "EmbeddedMysql instance should::start with default values",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Could NOT create Directory /home/d/dginelli/.embedmysql",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 49,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 40,
+    "numberLines": 0
+  }
 }
