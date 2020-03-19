@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "simasch/jtaf",
-  "bugCommit": "https://github.com/simasch/jtaf/compare/5d888ffb026d...8364e9f2b13e",
-  "failingModule": "/root/workspace/simasch/jtaf/385279454",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalArgumentException"
-  ],
-  "totalNumberRunningTests": 35,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.maven.surefire.junit4.JUnit4Provider",
-      "failingMethods": [],
-      "erroringMethods": [
-        "ch.jtaf.architecture.ArchitectureTest"
-      ],
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:38:20 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:43:30 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 15921232,
+      "totalMemory": 116342784
+    },
+    "totalDuration": 307,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-simasch-jtaf-385279454-20180529-181657-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-simasch-jtaf-385279454-20180529-181657-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 34,
+      "numberPassing": 33,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "java.lang.IllegalArgumentException",
-          "failureDetail": "With @ArchTest annotated members must be public and static",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.maven.surefire.junit4.JUnit4Provider",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.maven.surefire.junit4.JUnit4Provider",
+        "testMethod": "ch.jtaf.architecture.ArchitectureTest",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "With @ArchTest annotated members must be public and static",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 0,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 146,
+    "numberLines": 0
+  }
 }
