@@ -1,0 +1,230 @@
+2020-03-19 11:01:02.318:INFO::main: Logging initialized @66547ms to org.eclipse.jetty.util.log.StdErrLog
+2020-03-19 11:01:03.694:WARN:oejuts.EatWhatYouKill:qtp1969875555-26: 
+java.lang.NoSuchFieldError: state
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:198)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:970)
+	at sun.security.ssl.Handshaker$1.run(Handshaker.java:967)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1459)
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.fill(SslConnection.java:747)
+	at org.eclipse.jetty.io.NegotiatingClientConnection.fill(NegotiatingClientConnection.java:100)
+	at org.eclipse.jetty.io.NegotiatingClientConnection.onFillable(NegotiatingClientConnection.java:82)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillable(SslConnection.java:289)
+	at org.eclipse.jetty.io.ssl.SslConnection$3.succeeded(SslConnection.java:149)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ samples-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:unpack (unpack) @ samples-parent ---
+[INFO] Configured Artifact: fish.payara.distributions:payara:5.Beta2:zip
+[INFO] payara-5.Beta2.zip already unpacked.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java EE 8 Samples: test-utils 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ test-utils ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ test-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ test-utils ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ test-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/test-utils/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ test-utils ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:unpack (unpack) @ test-utils ---
+[INFO] Configured Artifact: fish.payara.distributions:payara:5.Beta2:zip
+[INFO] payara-5.Beta2.zip already unpacked.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ test-utils ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java EE 8 Samples: Servlet 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ servlet ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:unpack (unpack) @ servlet ---
+[INFO] Configured Artifact: fish.payara.distributions:payara:5.Beta2:zip
+[INFO] payara-5.Beta2.zip already unpacked.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java EE 8 Samples: Servlet - http2 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ servlet-http2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ servlet-http2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/servlet/http2/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ servlet-http2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ servlet-http2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/servlet/http2/src/test/resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:get (default) @ servlet-http2 ---
+[INFO] Resolving org.mortbay.jetty.alpn:alpn-boot:jar:8.1.12.v20180117 with transitive dependencies
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ servlet-http2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:unpack (unpack) @ servlet-http2 ---
+[INFO] Configured Artifact: fish.payara.distributions:payara:5.Beta2:zip
+[INFO] payara-5.Beta2.zip already unpacked.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ servlet-http2 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/servlet/http2/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom (4 KB at 8.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom (3 KB at 83.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar (81 KB at 1545.2 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.javaee8.servlet.http2.Http2Test
+Starting container using command: [java, -jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/target/payara5/glassfish/modules/admin-cli.jar, start-domain, payaradomain, -t]
+Successfully started the domain : payaradomain
+domain  Location: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/target/payara5/glassfish/domains/payaradomain
+Log File: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/target/payara5/glassfish/domains/payaradomain/logs/server.log
+Admin Port: 4848
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 72.729 s <<< FAILURE! - in org.javaee8.servlet.http2.Http2Test
+[ERROR] testHttp2ControlGroup(org.javaee8.servlet.http2.Http2Test)  Time elapsed: 5.182 s  <<< ERROR!
+java.util.concurrent.TimeoutException
+	at org.javaee8.servlet.http2.Http2Test.testHttp2ControlGroup(Http2Test.java:40)
+
+Stopping container using command: [java, -jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/target/payara5/glassfish/modules/admin-cli.jar, stop-domain, payaradomain, -t]
+Unable to create client data directory: /home/d/dginelli/.gfclient
+Unable to create client data directory: /home/d/dginelli/.gfclient
+Unable to create client data directory: /home/d/dginelli/.gfclient
+Cannot read admin cache file for cache/localhost_4848/__locations
+Unable to create client data directory: /home/d/dginelli/.gfclient
+Unable to create client data directory: /home/d/dginelli/.gfclient
+Unable to create client data directory: /home/d/dginelli/.gfclient
+Unable to create client data directory: /home/d/dginelli/.gfclient
+Cannot read admin cache file for cache/localhost_4848/stop-domain
+Unable to create client data directory: /home/d/dginelli/.gfclient
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   Http2Test.testHttp2ControlGroup:40 » Timeout
+[INFO] 
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Java EE 8 Samples: root ............................ SUCCESS [  2.252 s]
+[INFO] Java EE 8 Samples: test-utils ...................... SUCCESS [  0.783 s]
+[INFO] Java EE 8 Samples: Servlet ......................... SUCCESS [  0.033 s]
+[INFO] Java EE 8 Samples: Servlet - http2 ................. FAILURE [01:20 min]
+[INFO] Java EE 8 Samples: Servlet - mapping ............... SKIPPED
+[INFO] Java EE 8 Samples: JAX-RS .......................... SKIPPED
+[INFO] Java EE 8 Samples: JAX-RS - SSE Producer ........... SKIPPED
+[INFO] Java EE 8 Samples: Security ........................ SKIPPED
+[INFO] Java EE 8 Samples: Security - Dynamic Remember-me .. SKIPPED
+[INFO] Java EE 8 Samples: Security - JWT .................. SKIPPED
+[INFO] Java EE 8 Samples: JSF ............................. SKIPPED
+[INFO] Java EE 8 Samples: JSF - Extensionless Mapping ..... SKIPPED
+[INFO] Java EE 8 Samples: CDI ............................. SKIPPED
+[INFO] Java EE 8 Samples: CDI - Dynamic Bean .............. SKIPPED
+[INFO] Java EE 8 Samples: CDI - Events Async .............. SKIPPED
+[INFO] Java EE 8 Samples: CDI - Events Priority ........... SKIPPED
+[INFO] Java EE 8 Samples: CDI - Interception factory ...... SKIPPED
+[INFO] Java EE 8 Samples: CDI - Qualified Lookup .......... SKIPPED
+[INFO] Java EE 8 Samples: CDI - Discovery Modes ........... SKIPPED
+[INFO] Java EE 8 Samples: JPA ............................. SKIPPED
+[INFO] Java EE 8 Samples: JPA - Dynamic Transaction ....... SKIPPED
+[INFO] Java EE 8 Samples: JPA - Stream .................... SKIPPED
+[INFO] Java EE 8 Samples: JSON-B .......................... SKIPPED
+[INFO] Java EE 8 Samples: JSON-B - Mapping ................ SKIPPED
+[INFO] Java EE 8 Samples: Bean Validation 2 ............... SKIPPED
+[INFO] Java EE 8 Samples: Bean Validation 2: Support for java.time API SKIPPED
+[INFO] Java EE 8 Samples: JSON-P .......................... SKIPPED
+[INFO] Java EE 8 Samples: JSON-P - Patch .................. SKIPPED
+[INFO] Java EE 8 Samples: JSON-P - Pointer ................ SKIPPED
+[INFO] Java EE 8 Samples: JSON-P - Merge .................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:25 min
+[INFO] Finished at: 2020-03-19T11:01:13+01:00
+[INFO] Final Memory: 28M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project servlet-http2: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/servlet/http2/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project servlet-http2: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/servlet/http2/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaee-samples-javaee8-samples-353779719-20180315-123550-firstCommit/servlet/http2/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:354)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:984)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :servlet-http2
