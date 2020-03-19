@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "lavatahir/Perkpack",
-  "bugCommit": "https://github.com/lavatahir/Perkpack/compare/760bb6bd9960...48d10fdca21c",
-  "failingModule": "/root/workspace/lavatahir/Perkpack/355046204",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.springframework.dao.DataIntegrityViolationException"
-  ],
-  "totalNumberRunningTests": 45,
-  "failing-test-cases": [
-    {
-      "className": "perkpack.controllers.CardRestControllerTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "perkpack.controllers.CardRestControllerTest#removePerkFromCardTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:59:36 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:38:44 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 50660400,
+      "totalMemory": 191737856
+    },
+    "totalDuration": 2345,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2006,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2006
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lavatahir-Perkpack-355046204-20180318-172342-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lavatahir-Perkpack-355046204-20180318-172342-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 45,
+      "numberPassing": 44,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.springframework.dao.DataIntegrityViolationException",
-          "failureDetail": "could not execute statement; SQL [n/a]; constraint [\"UK_46CCWNSI9409T36LURVTYLJAK_INDEX_3 ON PUBLIC.CATEGORY(NAME) VALUES (\u0027Games\u0027, 7)\"; SQL statement:\ninsert into category (id, name) values (null, ?) [23505-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "perkpack.controllers.CardRestControllerTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "perkpack.controllers.CardRestControllerTest",
+        "testMethod": "removePerkFromCardTest",
+        "failureName": "org.springframework.dao.DataIntegrityViolationException",
+        "detail": "could not execute statement; SQL [n/a]; constraint [\"UK_46CCWNSI9409T36LURVTYLJAK_INDEX_3 ON PUBLIC.CATEGORY(NAME) VALUES (\u0027Games\u0027, 3)\"; SQL statement:\ninsert into category (id, name) values (null, ?) [23505-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 17,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 88,
+    "numberLines": 0
+  }
 }
