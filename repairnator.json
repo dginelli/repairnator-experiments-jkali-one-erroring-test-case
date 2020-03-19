@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "mjeanroy/rest-assert",
-  "bugCommit": "https://github.com/mjeanroy/rest-assert/compare/dec647403f73...0f95a2aea003",
-  "failingModule": "/root/workspace/mjeanroy/rest-assert/393019276/rest-assert-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalArgumentException"
-  ],
-  "totalNumberRunningTests": 1138,
-  "failing-test-cases": [
-    {
-      "className": "com.github.mjeanroy.restassert.core.internal.assertions.http.headers.headerequalto.IsStrictTransportSecurityEqualToStringTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "it_should_fail_with_if_response_does_not_contain_header_with_expected_value"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:58:20 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:14:43 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 87866784,
+      "totalMemory": 441876480
+    },
+    "totalDuration": 979,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 777,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          777
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mjeanroy-rest-assert-393019276-20180616-111535-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mjeanroy-rest-assert-393019276-20180616-111535-firstCommit/rest-assert-core",
+    "overallMetrics": {
+      "numberRunning": 1138,
+      "numberPassing": 1137,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalArgumentException",
-          "failureDetail": "Cannot parse Strict-Transport-Security, directive includeSubDomainsfoo is unknown",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.mjeanroy.restassert.core.internal.assertions.http.headers.headerequalto.IsStrictTransportSecurityEqualToStringTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.mjeanroy.restassert.core.internal.assertions.http.headers.headerequalto.IsStrictTransportSecurityEqualToStringTest",
+        "testMethod": "it_should_fail_with_if_response_does_not_contain_header_with_expected_value",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Cannot parse Strict-Transport-Security, directive includeSubDomainsfoo is unknown",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 207,
+    "numberTestFiles": 1833,
+    "numberLibrariesFailingModule": 65,
+    "numberLines": 0
+  }
 }
