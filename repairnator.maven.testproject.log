@@ -1,0 +1,192 @@
+WARNING: Token 'VAR' defined, but not used
+WARNING: Token 'RSQUARE' defined, but not used
+WARNING: Token 'VERSION' defined, but not used
+WARNING: Token 'RANGE' defined, but not used
+WARNING: Token 'LSQUARE' defined, but not used
+WARNING: There are 5 unused tokens
+Generating LALR tables
+----------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-resources) @ nammu ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 41 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ nammu ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 37 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ nammu ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-java-class) @ nammu ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ nammu ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ nammu ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jython-compile-maven-plugin:1.4:jython (before-tests) @ nammu ---
+[INFO] extracting /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/.m2/org/python/jython-standalone/2.7.1b3/jython-standalone-2.7.1b3.jar
+[INFO] installing easy_install ...
+[INFO] extracting target/jython-plugins-tmp/build/setuptools-0.6c11-py2.7.egg
+[INFO] installing easy_install done
+[INFO] installing requested python libraries
+[INFO] running [java, -cp, .:Lib, -Dpython.home=., -Dpython.executable=jython, org.python.util.jython, Lib/site-packages/setuptools-0.6c11-py2.7.egg/easy_install.py, --build-directory, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/jython-plugins-tmp/build, --index-url=https://pypi.python.org/simple/, requests<2.12.0, pyyaml, mako, ply, jython-swingutils, https://github.com/ucl/pyoracc/archive/80313c17744c8aea6196a854656e4aed2d1835b8.tar.gz] in target/jython-plugins-tmp
+Searching for requests<2.12.0
+Best match: requests 2.11.1
+Processing requests-2.11.1-py2.7.egg
+requests 2.11.1 is already the active version in easy-install.pth
+
+Using /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/jython-plugins-tmp/Lib/site-packages/requests-2.11.1-py2.7.egg
+Processing dependencies for requests<2.12.0
+Finished processing dependencies for requests<2.12.0
+Searching for pyyaml
+Best match: PyYAML 5.3.1
+Processing PyYAML-5.3.1-py2.7.egg
+PyYAML 5.3.1 is already the active version in easy-install.pth
+
+Using /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/jython-plugins-tmp/Lib/site-packages/PyYAML-5.3.1-py2.7.egg
+Processing dependencies for pyyaml
+Finished processing dependencies for pyyaml
+Searching for mako
+Best match: Mako 1.1.2
+Processing Mako-1.1.2-py2.7.egg
+Mako 1.1.2 is already the active version in easy-install.pth
+Installing mako-render script to /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/jython-plugins-tmp/bin
+
+Using /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/jython-plugins-tmp/Lib/site-packages/Mako-1.1.2-py2.7.egg
+Processing dependencies for mako
+Finished processing dependencies for mako
+Searching for ply
+Best match: ply 3.11
+Processing ply-3.11-py2.7.egg
+ply 3.11 is already the active version in easy-install.pth
+
+Using /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/jython-plugins-tmp/Lib/site-packages/ply-3.11-py2.7.egg
+Processing dependencies for ply
+Finished processing dependencies for ply
+Searching for jython-swingutils
+Best match: jython-swingutils 2.1.2
+Processing jython_swingutils-2.1.2-py2.7.egg
+jython-swingutils 2.1.2 is already the active version in easy-install.pth
+
+Using /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/jython-plugins-tmp/Lib/site-packages/jython_swingutils-2.1.2-py2.7.egg
+Processing dependencies for jython-swingutils
+Finished processing dependencies for jython-swingutils
+Downloading https://github.com/ucl/pyoracc/archive/80313c17744c8aea6196a854656e4aed2d1835b8.tar.gz
+Processing 80313c17744c8aea6196a854656e4aed2d1835b8.tar.gz
+Running pyoracc-80313c17744c8aea6196a854656e4aed2d1835b8/setup.py -q bdist_egg --dist-dir /scratch/easy_install-6P88jY/pyoracc-80313c17744c8aea6196a854656e4aed2d1835b8/egg-dist-tmp-kd9M9l
+pyoracc 0.0.1 is already the active version in easy-install.pth
+
+Installed /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/jython-plugins-tmp/Lib/site-packages/pyoracc-0.0.1-py2.7.egg
+Processing dependencies for pyoracc==0.0.1
+Finished processing dependencies for pyoracc==0.0.1
+[INFO] installing requested python libraries done
+[INFO] copying requested libraries
+[INFO] copying target/jython-plugins-tmp/Lib/site-packages/setuptools-0.6c11-py2.7.egg into /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/classes/Lib
+[INFO] copying target/jython-plugins-tmp/Lib/site-packages/requests-2.11.1-py2.7.egg into /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/classes/Lib
+[INFO] copying target/jython-plugins-tmp/Lib/site-packages/PyYAML-5.3.1-py2.7.egg into /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/classes/Lib
+[INFO] copying target/jython-plugins-tmp/Lib/site-packages/Mako-1.1.2-py2.7.egg into /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/classes/Lib
+[INFO] copying target/jython-plugins-tmp/Lib/site-packages/MarkupSafe-1.1.1-py2.7.egg into /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/classes/Lib
+[INFO] copying target/jython-plugins-tmp/Lib/site-packages/ply-3.11-py2.7.egg into /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/classes/Lib
+[INFO] copying target/jython-plugins-tmp/Lib/site-packages/jython_swingutils-2.1.2-py2.7.egg into /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/classes/Lib
+[INFO] copying target/jython-plugins-tmp/Lib/site-packages/futures-3.3.0-py2.7.egg into /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/classes/Lib
+[INFO] copying target/jython-plugins-tmp/Lib/site-packages/pyoracc-0.0.1-py2.7.egg into /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/classes/Lib
+[INFO] copying requested libraries done
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ nammu ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 6.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 74.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 910.3 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running uk.ac.ucl.rc.development.oracc.nammu.NammuTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.495 sec <<< FAILURE! - in uk.ac.ucl.rc.development.oracc.nammu.NammuTest
+testNammu(uk.ac.ucl.rc.development.oracc.nammu.NammuTest)  Time elapsed: 4.392 sec  <<< ERROR!
+org.python.core.PyException: null
+	at org.python.core.Py.ImportError(Py.java:330)
+	at org.python.core.imp.import_first(imp.java:859)
+	at org.python.core.imp.import_module_level(imp.java:953)
+	at org.python.core.imp.importName(imp.java:1041)
+	at org.python.core.ImportFunction.__call__(__builtin__.java:1280)
+	at org.python.core.PyObject.__call__(PyObject.java:450)
+	at org.python.core.__builtin__.__import__(__builtin__.java:1232)
+	at org.python.core.imp.importOne(imp.java:1059)
+	at org.python.pycode._pyx0.f$0(<string>:4)
+	at org.python.pycode._pyx0.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:167)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1401)
+	at org.python.core.Py.exec(Py.java:1445)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:267)
+	at uk.ac.ucl.rc.development.oracc.nammu.NammuTest.testNammu(NammuTest.java:53)
+
+
+Results :
+
+Tests in error: 
+  NammuTest.testNammu:53 » Py
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 34.533 s
+[INFO] Finished at: 2020-03-19T11:11:36+01:00
+[INFO] Final Memory: 24M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project nammu: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project nammu: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-oracc-nammu-415953956-20180814-165333-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
