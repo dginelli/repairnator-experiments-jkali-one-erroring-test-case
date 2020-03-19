@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "opentracing-contrib/java-memcached-client",
-  "bugCommit": "https://github.com/opentracing-contrib/java-memcached-client/compare/1c5e3d401639...21d4c228c8d3",
-  "failingModule": "/root/workspace/opentracing-contrib/java-memcached-client/354224821/opentracing-spymemcached",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "io.opentracing.contrib.spymemcached.TracingSpymemcachedTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.opentracing.contrib.spymemcached.TracingSpymemcachedTest#test"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:07:52 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:12:37 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 16907600,
+      "totalMemory": 103964672
+    },
+    "totalDuration": 281,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 22,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          22,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 148,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          148
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-opentracing-contrib-java-memcached-client-354224821-20180316-102053-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-opentracing-contrib-java-memcached-client-354224821-20180316-102053-firstCommit/opentracing-spymemcached",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.RuntimeException",
-          "failureDetail": "Timed out waiting for operation",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.opentracing.contrib.spymemcached.TracingSpymemcachedTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.opentracing.contrib.spymemcached.TracingSpymemcachedTest",
+        "testMethod": "test",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Timed out waiting for operation",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 5,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  }
 }
