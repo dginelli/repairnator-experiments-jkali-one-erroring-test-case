@@ -1,0 +1,11 @@
+--- /src/main/java/de/unistuttgart/ims/coref/annotator/document/EntityTreeModel.java
++++ /src/main/java/de/unistuttgart/ims/coref/annotator/document/EntityTreeModel.java
+@@ -14,7 +14,6 @@
+ 		super(new de.unistuttgart.ims.coref.annotator.CATreeNode(null, de.unistuttgart.ims.coref.annotator.Annotator.getString("tree.root")));
+ 		this.coreferenceModel = docMod;
+ 		this.coreferenceModel.addCoreferenceModelListener(this);
+-		this.initialise();
+ 		this.resort();
+ 	}
+ 
+
