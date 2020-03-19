@@ -1,30 +1,118 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "fcrepo4/fcrepo4",
-  "failingModule": "/root/workspace/fcrepo4/fcrepo4/371742794/fcrepo-kernel-modeshape",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException:"
-  ],
-  "totalNumberRunningTests": 361,
-  "failing-test-cases": [
-    {
-      "className": "org.fcrepo.kernel.modeshape.services.BinaryServiceImplTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.fcrepo.kernel.modeshape.services.BinaryServiceImplTest#testFindOrCreateBinaryNewBinary"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:52:34 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:04:56 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 40221864,
+      "totalMemory": 287870976
+    },
+    "totalDuration": 737,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 171,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          171
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-fcrepo4-fcrepo4-371742794-20180426-223014-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-fcrepo4-fcrepo4-371742794-20180426-223014-firstCommit/fcrepo-kernel-modeshape",
+    "overallMetrics": {
+      "numberRunning": 358,
+      "numberPassing": 357,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 3,
       "failures": [
         {
-          "failureName": "java.lang.NullPointerException:",
-          "isError": true
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.fcrepo.kernel.modeshape.services.BinaryServiceImplTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.fcrepo.kernel.modeshape.services.BinaryServiceImplTest",
+        "testMethod": "testFindOrCreateBinaryNewBinary",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 17,
+    "numberPlugins": 0,
+    "numberSourceFiles": 315,
+    "numberTestFiles": 205,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  }
 }
