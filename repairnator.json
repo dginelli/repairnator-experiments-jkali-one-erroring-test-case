@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "rodJeronimo/ponto-inteligente-api",
-  "bugCommit": "https://github.com/rodJeronimo/ponto-inteligente-api/compare/0acdfb90c3f0...bacbd1e0c14e",
-  "failingModule": "/root/workspace/rodJeronimo/ponto-inteligente-api/381106717",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.Exception"
-  ],
-  "totalNumberRunningTests": 3,
-  "failing-test-cases": [
-    {
-      "className": "br.com.rodrigo.ponto.inteligente.api.repositories.FuncionarioRepositoryTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "initializationError"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:05:04 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:14:16 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 18258512,
+      "totalMemory": 102273024
+    },
+    "totalDuration": 550,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 489,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          489
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-rodJeronimo-ponto-inteligente-api-381106717-20180519-180957-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-rodJeronimo-ponto-inteligente-api-381106717-20180519-180957-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 3,
+      "numberPassing": 2,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.Exception",
-          "failureDetail": "No runnable methods",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "br.com.rodrigo.ponto.inteligente.api.repositories.FuncionarioRepositoryTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "br.com.rodrigo.ponto.inteligente.api.repositories.FuncionarioRepositoryTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.Exception",
+        "detail": "No runnable methods",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 10,
+    "numberTestFiles": 4,
+    "numberLibrariesFailingModule": 68,
+    "numberLines": 0
+  }
 }
