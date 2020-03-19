@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "vagner-montenegro/ponto-inteligente-api",
-  "bugCommit": "https://github.com/vagner-montenegro/ponto-inteligente-api/compare/1a0e679a8a4c...e1f2a297a3d9",
-  "failingModule": "/root/workspace/vagner-montenegro/ponto-inteligente-api/352547076",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalStateException"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "br.com.compasso.pontointeligente.api.PontoInteligenteApplicationTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "br.com.compasso.pontointeligente.api.PontoInteligenteApplicationTests#contextLoads"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:40:12 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:43:37 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 46724800,
+      "totalMemory": 110288896
+    },
+    "totalDuration": 203,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 32,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          32
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vagner-montenegro-ponto-inteligente-api-352547076-20180312-221020-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vagner-montenegro-ponto-inteligente-api-352547076-20180312-221020-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalStateException",
-          "failureDetail": "Failed to load ApplicationContext",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "br.com.compasso.pontointeligente.api.PontoInteligenteApplicationTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "br.com.compasso.pontointeligente.api.PontoInteligenteApplicationTests",
+        "testMethod": "contextLoads",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 61,
+    "numberLines": 0
+  }
 }
