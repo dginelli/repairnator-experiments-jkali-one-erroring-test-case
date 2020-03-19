@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "javablick/DateConvert",
-  "bugCommit": "https://github.com/javablick/DateConvert/commit/9b13014033d2",
-  "failingModule": "/root/workspace/javablick/DateConvert/333330641",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.time.DateTimeException"
-  ],
-  "totalNumberRunningTests": 3,
-  "failing-test-cases": [
-    {
-      "className": "com.java.blick.dates.DateConvertTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.java.blick.dates.DateConvertTest#converting_from_to_date"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:58:01 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:02:12 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 38572280,
+      "totalMemory": 87330816
+    },
+    "totalDuration": 248,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 142,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          142
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javablick-DateConvert-333330641-20180125-170318_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javablick-DateConvert-333330641-20180125-170318_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 3,
+      "numberPassing": 2,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.time.DateTimeException",
-          "failureDetail": "Unable to obtain MonthDay from TemporalAccessor: 2018-02-01T11:30:00Z of type java.time.Instant",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.java.blick.dates.DateConvertTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.java.blick.dates.DateConvertTest",
+        "testMethod": "converting_from_to_date",
+        "failureName": "java.time.DateTimeException",
+        "detail": "Unable to obtain MonthDay from TemporalAccessor: 2018-02-01T11:30:00Z of type java.time.Instant",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 9,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  }
 }
