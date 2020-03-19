@@ -1,0 +1,245 @@
+[main] INFO org.knowm.xchange.anx.v2.ANXExchange - Calling Remote Init...
+[main] INFO org.knowm.xchange.anx.v2.ANXExchange - No remote initialization implemented for ANXPRO. The exchange meta data for this exchange is loaded from a json file containing hard-coded exchange meta-data. This may or may not be OK for you, and you should understand exactly how this works. Each exchange can either 1) rely on the hard-coded json file that comes packaged with XChange's jar, 2) provide your own override json file, 3) properly implement the `remoteInit()` method for the exchange (please submit a pull request so the whole community can benefit) or 4) a combination of hard-coded JSON and remote API calls. For more info see: https://github.com/timmolter/XChange/wiki/Design-Notes#exchange-metadata
+[main] INFO org.knowm.xchange.anx.v2.ANXExchange - Calling Remote Init...
+[main] INFO org.knowm.xchange.anx.v2.ANXExchange - No remote initialization implemented for ANXPRO. The exchange meta data for this exchange is loaded from a json file containing hard-coded exchange meta-data. This may or may not be OK for you, and you should understand exactly how this works. Each exchange can either 1) rely on the hard-coded json file that comes packaged with XChange's jar, 2) provide your own override json file, 3) properly implement the `remoteInit()` method for the exchange (please submit a pull request so the whole community can benefit) or 4) a combination of hard-coded JSON and remote API calls. For more info see: https://github.com/timmolter/XChange/wiki/Design-Notes#exchange-metadata
+QuadrigaCx
+[INFO] XChange Bitcoin Core
+[INFO] XChange Vaultoro
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange 4.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange Core 4.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-248835230-20170630-174924_bugonly-firstCommit/xchange-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ xchange-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ xchange-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ xchange-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-248835230-20170630-174924_bugonly-firstCommit/xchange-core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 5.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 89.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1029.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.knowm.xchange.dto.trade.UserTradeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in org.knowm.xchange.dto.trade.UserTradeTest
+Running org.knowm.xchange.dto.trade.LimitOrderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.knowm.xchange.dto.trade.LimitOrderTest
+Running org.knowm.xchange.dto.account.FundingRecordStatusTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.knowm.xchange.dto.account.FundingRecordStatusTest
+Running org.knowm.xchange.dto.meta.ExchangeMetaDataTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.knowm.xchange.dto.meta.ExchangeMetaDataTest
+Running org.knowm.xchange.utils.BigDecimalTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.knowm.xchange.utils.BigDecimalTest
+Running org.knowm.xchange.utils.DateUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.knowm.xchange.utils.DateUtilsTest
+Running org.knowm.xchange.utils.CurrencyPairDeserializerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.knowm.xchange.utils.CurrencyPairDeserializerTest
+Running org.knowm.xchange.utils.AssertTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.knowm.xchange.utils.AssertTest
+Running org.knowm.xchange.CurrencyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.knowm.xchange.CurrencyTest
+Running org.knowm.xchange.CurrencyPairTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.knowm.xchange.CurrencyPairTest
+Running org.knowm.xchange.OrderBookTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.knowm.xchange.OrderBookTest
+
+Results :
+
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange ANX 4.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-anx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ xchange-anx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-anx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ xchange-anx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ xchange-anx ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-248835230-20170630-174924_bugonly-firstCommit/xchange-anx/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.knowm.xchange.anx.v2.dto.trade.OpenOrdersJSONTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.484 sec - in org.knowm.xchange.anx.v2.dto.trade.OpenOrdersJSONTest
+Running org.knowm.xchange.anx.v2.dto.marketdata.TickerJSONTest
+ANXTicker [high=ANXValue [value=725.38123, currency=USD], low=ANXValue [value=380.00000, currency=USD], avg=ANXValue [value=429.34018, currency=USD], vwap=ANXValue [value=429.34018, currency=USD], vol=ANXValue [value=7.00000000, currency=BTC], last=ANXValue [value=725.38123, currency=USD], buy=ANXValue [value=38.85148, currency=USD], sell=ANXValue [value=897.25596, currency=USD], now=1393388594814000]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.knowm.xchange.anx.v2.dto.marketdata.TickerJSONTest
+Running org.knowm.xchange.anx.v2.dto.marketdata.TradesJSONTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.knowm.xchange.anx.v2.dto.marketdata.TradesJSONTest
+Running org.knowm.xchange.anx.v2.dto.marketdata.FullDepthJSONTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.knowm.xchange.anx.v2.dto.marketdata.FullDepthJSONTest
+Running org.knowm.xchange.anx.v2.dto.account.DepositResponseJSONTest
+ANXBitcoinDepositAddress [address=1GAUBau3nKQYJ1uvMWUfWCdEbMTJ1BXFjW]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.knowm.xchange.anx.v2.dto.account.DepositResponseJSONTest
+Running org.knowm.xchange.anx.v2.dto.account.WalletHistoryJSONTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.knowm.xchange.anx.v2.dto.account.WalletHistoryJSONTest
+Running org.knowm.xchange.anx.v2.dto.account.WalletJSONTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.425 sec - in org.knowm.xchange.anx.v2.dto.account.WalletJSONTest
+Running org.knowm.xchange.anx.v2.ANXAdapterTest
+412.34567
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.111 sec <<< FAILURE! - in org.knowm.xchange.anx.v2.ANXAdapterTest
+testOrderAdapterWithDepth(org.knowm.xchange.anx.v2.ANXAdapterTest)  Time elapsed: 0.012 sec  <<< ERROR!
+java.lang.IllegalStateException: Don't understand order direction: ask
+	at org.knowm.xchange.anx.v2.ANXAdapters.adaptSide(ANXAdapters.java:284)
+	at org.knowm.xchange.anx.v2.ANXAdapters.adaptOrder(ANXAdapters.java:78)
+	at org.knowm.xchange.anx.v2.ANXAdapters.adaptOrders(ANXAdapters.java:100)
+	at org.knowm.xchange.anx.v2.ANXAdapterTest.testOrderAdapterWithDepth(ANXAdapterTest.java:109)
+
+
+Results :
+
+Tests in error: 
+  ANXAdapterTest.testOrderAdapterWithDepth:109 » IllegalState Don't understand o...
+
+Tests run: 14, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] XChange ............................................ SUCCESS [  0.227 s]
+[INFO] XChange Core ....................................... SUCCESS [  4.347 s]
+[INFO] XChange ANX ........................................ FAILURE [  1.924 s]
+[INFO] XChange Bitbay ..................................... SKIPPED
+[INFO] XChange BitcoinAverage ............................. SKIPPED
+[INFO] XChange Bitcoin Charts ............................. SKIPPED
+[INFO] XChange Bitcoin Core ............................... SKIPPED
+[INFO] XChange Bitcoin.de ................................. SKIPPED
+[INFO] XChange Bitcoinium ................................. SKIPPED
+[INFO] XChange Bitcurex ................................... SKIPPED
+[INFO] XChange BitFinex ................................... SKIPPED
+[INFO] XChange Bitcoin Bitmarket .......................... SKIPPED
+[INFO] XChange Bitso ...................................... SKIPPED
+[INFO] XChange Bitstamp ................................... SKIPPED
+[INFO] XChange Bittrex .................................... SKIPPED
+[INFO] XChange Bleutrade .................................. SKIPPED
+[INFO] XChange Blockchain ................................. SKIPPED
+[INFO] XChange BTC38 ...................................... SKIPPED
+[INFO] XChange BTCC ....................................... SKIPPED
+[INFO] XChange BTC China .................................. SKIPPED
+[INFO] XChange BTCE ....................................... SKIPPED
+[INFO] XChange BTCMarkets ................................. SKIPPED
+[INFO] XChange BtcTrade ................................... SKIPPED
+[INFO] XChange BTER ....................................... SKIPPED
+[INFO] XChange CampBX ..................................... SKIPPED
+[INFO] XChange C-Cex ...................................... SKIPPED
+[INFO] XChange Cex.io ..................................... SKIPPED
+[INFO] XChange CHBTC ...................................... SKIPPED
+[INFO] XChange Coinbase ................................... SKIPPED
+[INFO] XChange Coinfloor .................................. SKIPPED
+[INFO] XChange Coinmate ................................... SKIPPED
+[INFO] XChange CryptoFacilities ........................... SKIPPED
+[INFO] XChange Cryptonit .................................. SKIPPED
+[INFO] XChange EmpoEX ..................................... SKIPPED
+[INFO] XChange Open Exchange Rates ........................ SKIPPED
+[INFO] XChange Kraken ..................................... SKIPPED
+[INFO] XChange GDAX ....................................... SKIPPED
+[INFO] XChange ItBit ...................................... SKIPPED
+[INFO] XChange Independent Reserve ........................ SKIPPED
+[INFO] XChange LakeBTC .................................... SKIPPED
+[INFO] XChange Hitbtc ..................................... SKIPPED
+[INFO] XChange Paymium .................................... SKIPPED
+[INFO] XChange Poloniex ................................... SKIPPED
+[INFO] XChange OKCoin ..................................... SKIPPED
+[INFO] XChange Mercado Bitcoin ............................ SKIPPED
+[INFO] XChange Jubi ....................................... SKIPPED
+[INFO] XChange taurus ..................................... SKIPPED
+[INFO] XChange Quoine ..................................... SKIPPED
+[INFO] XChange Ripple ..................................... SKIPPED
+[INFO] XChange The Rock Trading ........................... SKIPPED
+[INFO] XChange Gatecoin ................................... SKIPPED
+[INFO] XChange BitVC ...................................... SKIPPED
+[INFO] XChange Vircurex ................................... SKIPPED
+[INFO] XChange Livecoin ................................... SKIPPED
+[INFO] XChange YoBit ...................................... SKIPPED
+[INFO] XChange DSX ........................................ SKIPPED
+[INFO] XChange Examples ................................... SKIPPED
+[INFO] XChange Gemini ..................................... SKIPPED
+[INFO] XChange QuadrigaCx ................................. SKIPPED
+[INFO] XChange Bitcoin Core ............................... SKIPPED
+[INFO] XChange Vaultoro ................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.647 s
+[INFO] Finished at: 2020-03-19T19:46:56+01:00
+[INFO] Final Memory: 20M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project xchange-anx: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-248835230-20170630-174924_bugonly-firstCommit/xchange-anx/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project xchange-anx: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-248835230-20170630-174924_bugonly-firstCommit/xchange-anx/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-248835230-20170630-174924_bugonly-firstCommit/xchange-anx/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :xchange-anx
