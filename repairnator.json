@@ -1,30 +1,118 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "spring-cloud/spring-cloud-gcp",
-  "failingModule": "/root/workspace/spring-cloud/spring-cloud-gcp/371762370/spring-cloud-gcp-data-spanner",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 262,
-  "failing-test-cases": [
-    {
-      "className": "org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests#countTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:39:04 PM",
+    "reproductionDateEnd": "Mar 19, 2020 8:00:37 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 75020848,
+      "totalMemory": 318468096
+    },
+    "totalDuration": 1289,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 649,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          649
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-cloud-spring-cloud-gcp-371762370-20180426-231737-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-cloud-spring-cloud-gcp-371762370-20180426-231737-firstCommit/spring-cloud-gcp-data-spanner",
+    "overallMetrics": {
+      "numberRunning": 259,
+      "numberPassing": 258,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 3,
       "failures": [
         {
           "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests",
+        "numberRunning": 29,
+        "numberPassing": 28,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests",
+        "testMethod": "countTest",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 32,
+    "numberPlugins": 0,
+    "numberSourceFiles": 166,
+    "numberTestFiles": 71,
+    "numberLibrariesFailingModule": 81,
+    "numberLines": 0
+  }
 }
