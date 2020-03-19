@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:40:12 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:43:02 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 10045456,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 168,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 29,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          29
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-trasiercom-trasier-client-416014045-20180814-191044-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-trasiercom-trasier-client-416014045-20180814-191044-firstCommit/trasier-client-spring",
+    "overallMetrics": {
+      "numberRunning": 37,
+      "numberPassing": 36,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.trasier.client.impl.spring5.TrasierSpringConfigurationTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.trasier.client.impl.spring5.TrasierSpringConfigurationTest",
+        "testMethod": "createRestTemplate",
+        "failureName": "java.lang.NoClassDefFoundError",
+        "detail": "com/fasterxml/jackson/databind/exc/InvalidDefinitionException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 41,
+    "numberTestFiles": 18,
+    "numberLibrariesFailingModule": 22,
+    "numberLines": 0
+  }
+}
