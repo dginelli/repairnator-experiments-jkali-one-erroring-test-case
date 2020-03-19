@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 17,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "uonafya/jphes-core",
-  "bugCommit": "https://github.com/uonafya/jphes-core/compare/0ea93ccb31e59cba2fdf4fabd685c33a7f338879...a7d7d6fb49f14bcf07fd1ef1dcf087ed6cba1c0a",
-  "failingModule": "/root/workspace/uonafya/jphes-core/356851057/dhis-2/dhis-services/dhis-service-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.hibernate.QueryException"
-  ],
-  "totalNumberRunningTests": 1329,
-  "failing-test-cases": [
-    {
-      "className": "org.hisp.dhis.program.ProgramStoreTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.hisp.dhis.program.ProgramStoreTest#testGetProgramsByDataEntryForm"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:40:12 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:47:35 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 812237840,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 439,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 69,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          69
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-uonafya-jphes-core-356851057-20180322-133503-firstCommit/dhis-2/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-uonafya-jphes-core-356851057-20180322-133503-firstCommit/dhis-2/dhis-services/dhis-service-core",
+    "overallMetrics": {
+      "numberRunning": 1312,
+      "numberPassing": 1311,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 17,
       "failures": [
         {
           "failureName": "org.hibernate.QueryException",
-          "failureDetail": "could not resolve property: dataEntryForm of: org.hisp.dhis.jphes.program.Program [from org.hisp.dhis.jphes.program.Program p where p.dataEntryForm \u003d :dataEntryForm]",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.hisp.dhis.program.ProgramStoreTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.hisp.dhis.program.ProgramStoreTest",
+        "testMethod": "testGetProgramsByDataEntryForm",
+        "failureName": "org.hibernate.QueryException",
+        "detail": "could not resolve property: dataEntryForm of: org.hisp.dhis.jphes.program.Program [from org.hisp.dhis.jphes.program.Program p where p.dataEntryForm \u003d :dataEntryForm]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1710,
+    "numberTestFiles": 293,
+    "numberLibrariesFailingModule": 235,
+    "numberLines": 0
+  }
 }
