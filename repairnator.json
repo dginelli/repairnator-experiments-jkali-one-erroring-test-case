@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "vitorenesduarte/VCD-java-client",
-  "bugCommit": "https://github.com/vitorenesduarte/VCD-java-client/compare/cee5f3c94718...cca57cd39edd",
-  "failingModule": "/root/workspace/vitorenesduarte/VCD-java-client/373043004",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.OutOfMemoryError"
-  ],
-  "totalNumberRunningTests": 10,
-  "failing-test-cases": [
-    {
-      "className": "org.imdea.vcd.queue.DependencyQueueTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.imdea.vcd.queue.DependencyQueueTest#testAdd"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:39:50 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:55:54 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 637630472,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 961,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 6,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          6,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 909,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          909
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373043004-20180430-155241-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373043004-20180430-155241-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 10,
+      "numberPassing": 9,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.OutOfMemoryError",
-          "failureDetail": "Requested array size exceeds VM limit",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.imdea.vcd.queue.DependencyQueueTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.imdea.vcd.queue.DependencyQueueTest",
+        "testMethod": "testAdd",
+        "failureName": "java.lang.OutOfMemoryError",
+        "detail": "Java heap space",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 14,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  }
 }
