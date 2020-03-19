@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:40:23 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:42:50 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 8277600,
+      "totalMemory": 96890880
+    },
+    "totalDuration": 145,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 43,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          43
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vpro-mediaconnect-418106002-20180820-092610-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vpro-mediaconnect-418106002-20180820-092610-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 11,
+      "numberPassing": 10,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "nl.vpro.io.mediaconnect.domain.MCScheduleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "nl.vpro.io.mediaconnect.domain.MCScheduleTest",
+        "testMethod": "unmarshal",
+        "failureName": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException",
+        "detail": "Unrecognized field \"reference\" (class nl.vpro.io.mediaconnect.domain.MCShow), not marked as ignorable (14 known properties: \"body\", \"last_seen\", \"unpublish_on\", \"changed_on\", \"slug\", \"reference_id\", \"published_on\", \"status\", \"label\", \"created_on\", \"cover\", \"tags\", \"id\", \"name\"])\n at [Source: (BufferedInputStream); line: 33, column: 23] (through reference chain: java.lang.Object[][0]-\u003enl.vpro.io.mediaconnect.domain.MCEvent[\"show\"]-\u003enl.vpro.io.mediaconnect.domain.MCShow[\"reference\"])",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 53,
+    "numberTestFiles": 9,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  }
+}
