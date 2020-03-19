@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "spring-cloud/spring-cloud-dataflow-server-kubernetes",
-  "bugCommit": "https://github.com/spring-cloud/spring-cloud-dataflow-server-kubernetes/compare/4d64c62d7798...6a796b61731e",
-  "failingModule": "/root/workspace/spring-cloud/spring-cloud-dataflow-server-kubernetes/399379345/spring-cloud-dataflow-server-kubernetes",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalStateException"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "org.springframework.cloud.dataflow.server.kubernetes.ContextLoadsTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "contextLoads"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:39:04 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:51:50 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 28751856,
+      "totalMemory": 110145536
+    },
+    "totalDuration": 761,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 63,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          63
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-cloud-spring-cloud-dataflow-server-kubernetes-399379345-20180703-024101-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-cloud-spring-cloud-dataflow-server-kubernetes-399379345-20180703-024101-firstCommit/spring-cloud-dataflow-server-kubernetes",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalStateException",
-          "failureDetail": "Failed to load ApplicationContext",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.cloud.dataflow.server.kubernetes.ContextLoadsTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.cloud.dataflow.server.kubernetes.ContextLoadsTests",
+        "testMethod": "contextLoads",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 198,
+    "numberLines": 0
+  }
 }
