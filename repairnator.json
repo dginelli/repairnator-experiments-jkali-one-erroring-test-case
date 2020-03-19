@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 2,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "jmrozanec/cron-utils",
-  "failingModule": "/root/workspace/jmrozanec/cron-utils/310182136",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalArgumentException"
-  ],
-  "totalNumberRunningTests": 474,
-  "failing-test-cases": [
-    {
-      "className": "com.cronutils.model.time.ExecutionTimeCustomDefinitionIntegrationTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.cronutils.model.time.ExecutionTimeCustomDefinitionIntegrationTest#testThreeRequiredFieldsSupported"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:56:03 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:23:07 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 28651344,
+      "totalMemory": 244928512
+    },
+    "totalDuration": 1621,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 16,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          16,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1425,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1425
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jmrozanec-cron-utils-310182136-20171201-194056_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jmrozanec-cron-utils-310182136-20171201-194056_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 472,
+      "numberPassing": 471,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
       "failures": [
         {
           "failureName": "java.lang.IllegalArgumentException",
-          "failureDetail": "Cron expression contains 4 parts but we expect one of [6, 7]",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.cronutils.model.time.ExecutionTimeCustomDefinitionIntegrationTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.cronutils.model.time.ExecutionTimeCustomDefinitionIntegrationTest",
+        "testMethod": "testThreeRequiredFieldsSupported",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Cron expression contains 4 parts but we expect one of [6, 7]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 70,
+    "numberTestFiles": 66,
+    "numberLibrariesFailingModule": 18,
+    "numberLines": 0
+  }
 }
