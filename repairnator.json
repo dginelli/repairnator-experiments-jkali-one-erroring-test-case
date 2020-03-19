@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 1,
-  "repo": "resteasy/Resteasy",
-  "failingModule": "/root/workspace/resteasy/Resteasy/258099216/server-adapters/resteasy-netty4",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.junit.runners.model.TestTimedOutException"
-  ],
-  "totalNumberRunningTests": 40,
-  "failing-test-cases": [
-    {
-      "className": "org.jboss.resteasy.test.JaxrsAsyncTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.jboss.resteasy.test.JaxrsAsyncTest#testResumeObject"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:05:04 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:16:25 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 31186672,
+      "totalMemory": 104849408
+    },
+    "totalDuration": 676,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-resteasy-Resteasy-258496713-20170807-161521-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-resteasy-Resteasy-258496713-20170807-161521-firstCommit/providers/jackson",
+    "overallMetrics": {
+      "numberRunning": 8,
+      "numberPassing": 7,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "org.junit.runners.model.TestTimedOutException",
-          "failureDetail": "test timed out after 1000 milliseconds",
-          "isError": true
+          "failureName": "java.lang.reflect.InvocationTargetException",
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jboss.resteasy.test.nextgen.providers.jackson.ProxyWithGenericReturnTypeJacksonTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jboss.resteasy.test.nextgen.providers.jackson.ProxyWithGenericReturnTypeJacksonTest",
+        "testMethod": "test",
+        "failureName": "java.lang.reflect.InvocationTargetException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 0,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 30,
+    "numberLines": 0
+  }
 }
