@@ -1,0 +1,729 @@
+[main] INFO net.runelite.cache.script.assembler.AssemblerTest - .int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   iload                  0
+   switch                
+      3: LABEL20
+      5: LABEL54
+      6: LABEL54
+      7: LABEL3
+   jump                   LABEL84
+LABEL3:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL7
+   jump                   LABEL9
+LABEL7:
+   load_int               0
+   return                
+LABEL9:
+   sload                  0
+   string_remove_html    
+   is_ignore             
+   load_int               1
+   if_icmpeq              LABEL15
+   jump                   LABEL17
+LABEL15:
+   load_int               0
+   return                
+LABEL17:
+   load_int               1
+   return                
+   jump                   LABEL84
+LABEL20:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL24
+   jump                   LABEL26
+LABEL24:
+   load_int               0
+   return                
+LABEL26:
+   sload                  0
+   string_remove_html    
+   is_ignore             
+   load_int               1
+   if_icmpeq              LABEL32
+   jump                   LABEL34
+LABEL32:
+   load_int               0
+   return                
+LABEL34:
+   5005                  
+   load_int               0
+   if_icmpeq              LABEL38
+   jump                   LABEL40
+LABEL38:
+   load_int               1
+   return                
+LABEL40:
+   5005                  
+   load_int               1
+   if_icmpeq              LABEL44
+   jump                   LABEL51
+LABEL44:
+   sload                  0
+   is_friend             
+   load_int               1
+   if_icmpeq              LABEL49
+   jump                   LABEL51
+LABEL49:
+   load_int               1
+   return                
+LABEL51:
+   load_int               0
+   return                
+   jump                   LABEL84
+LABEL54:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL58
+   jump                   LABEL60
+LABEL58:
+   load_int               0
+   return                
+LABEL60:
+   iload                  0
+   load_int               5
+   if_icmpeq              LABEL64
+   jump                   LABEL76
+LABEL64:
+   get_varbit             1627
+   load_int               0
+   if_icmpeq              LABEL68
+   jump                   LABEL76
+LABEL68:
+   get_gamecycle         
+   iload                  1
+   isub                  
+   load_int               500
+   if_icmpge              LABEL74
+   jump                   LABEL76
+LABEL74:
+   load_int               0
+   return                
+LABEL76:
+   5005                  
+   load_int               2
+   if_icmpne              LABEL80
+   jump                   LABEL82
+LABEL80:
+   load_int               1
+   return                
+LABEL82:
+   load_int               0
+   return                
+LABEL84:
+   load_int               0
+   return                
+   load_int               -1
+   return                
+
+[main] INFO net.runelite.cache.script.assembler.AssemblerTest - -----------------------
+[main] INFO net.runelite.cache.script.assembler.AssemblerTest - .int_stack_count    2
+.string_stack_count 1
+.int_var_count      2
+.string_var_count   1
+   iload                  0
+   switch                
+      3: LABEL20
+      5: LABEL54
+      6: LABEL54
+      7: LABEL3
+   jump                   LABEL84
+LABEL3:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL7
+   jump                   LABEL9
+LABEL7:
+   load_int               0
+   return                
+LABEL9:
+   sload                  0
+   string_remove_html    
+   is_ignore             
+   load_int               1
+   if_icmpeq              LABEL15
+   jump                   LABEL17
+LABEL15:
+   load_int               0
+   return                
+LABEL17:
+   load_int               1
+   return                
+   jump                   LABEL84
+LABEL20:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL24
+   jump                   LABEL26
+LABEL24:
+   load_int               0
+   return                
+LABEL26:
+   sload                  0
+   string_remove_html    
+   is_ignore             
+   load_int               1
+   if_icmpeq              LABEL32
+   jump                   LABEL34
+LABEL32:
+   load_int               0
+   return                
+LABEL34:
+   5005                  
+   load_int               0
+   if_icmpeq              LABEL38
+   jump                   LABEL40
+LABEL38:
+   load_int               1
+   return                
+LABEL40:
+   5005                  
+   load_int               1
+   if_icmpeq              LABEL44
+   jump                   LABEL51
+LABEL44:
+   sload                  0
+   is_friend             
+   load_int               1
+   if_icmpeq              LABEL49
+   jump                   LABEL51
+LABEL49:
+   load_int               1
+   return                
+LABEL51:
+   load_int               0
+   return                
+   jump                   LABEL84
+LABEL54:
+   iload                  1
+   get_varc               175
+   if_icmplt              LABEL58
+   jump                   LABEL60
+LABEL58:
+   load_int               0
+   return                
+LABEL60:
+   iload                  0
+   load_int               5
+   if_icmpeq              LABEL64
+   jump                   LABEL76
+LABEL64:
+   get_varbit             1627
+   load_int               0
+   if_icmpeq              LABEL68
+   jump                   LABEL76
+LABEL68:
+   get_gamecycle         
+   iload                  1
+   isub                  
+   load_int               500
+   if_icmpge              LABEL74
+   jump                   LABEL76
+LABEL74:
+   load_int               0
+   return                
+LABEL76:
+   5005                  
+   load_int               2
+   if_icmpne              LABEL80
+   jump                   LABEL82
+LABEL80:
+   load_int               1
+   return                
+LABEL82:
+   load_int               0
+   return                
+LABEL84:
+   load_int               0
+   return                
+  Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.584 sec - in net.runelite.cache.SoundEffectsDumperTest
+Running net.runelite.cache.KitDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in net.runelite.cache.KitDumperTest
+Running net.runelite.cache.ItemManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.969 sec - in net.runelite.cache.ItemManagerTest
+Running net.runelite.cache.InterfaceManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.316 sec - in net.runelite.cache.InterfaceManagerTest
+Running net.runelite.cache.EnumDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.13 sec - in net.runelite.cache.EnumDumperTest
+Running net.runelite.cache.definitions.savers.InterfaceSaverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in net.runelite.cache.definitions.savers.InterfaceSaverTest
+Running net.runelite.cache.definitions.savers.ScriptSaverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in net.runelite.cache.definitions.savers.ScriptSaverTest
+Running net.runelite.cache.SpriteManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.376 sec - in net.runelite.cache.SpriteManagerTest
+Running net.runelite.cache.util.XteaTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in net.runelite.cache.util.XteaTest
+Running net.runelite.cache.util.Djb2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.runelite.cache.util.Djb2Test
+Running net.runelite.cache.MapImageDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.002 sec - in net.runelite.cache.MapImageDumperTest
+Running net.runelite.cache.fs.ContainerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in net.runelite.cache.fs.ContainerTest
+Running net.runelite.cache.fs.StoreLoadTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 sec - in net.runelite.cache.fs.StoreLoadTest
+Running net.runelite.cache.fs.jagex.DiskStorageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in net.runelite.cache.fs.jagex.DiskStorageTest
+Running net.runelite.cache.fs.jagex.IndexFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.runelite.cache.fs.jagex.IndexFileTest
+Running net.runelite.cache.fs.jagex.DataFileTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec - in net.runelite.cache.fs.jagex.DataFileTest
+Running net.runelite.cache.fs.StoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in net.runelite.cache.fs.StoreTest
+Running net.runelite.cache.item.ItemSpriteFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 sec - in net.runelite.cache.item.ItemSpriteFactoryTest
+Running net.runelite.cache.MapDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0 sec - in net.runelite.cache.MapDumperTest
+Running net.runelite.cache.WorldMapDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in net.runelite.cache.WorldMapDumperTest
+Running net.runelite.cache.models.ObjExporterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in net.runelite.cache.models.ObjExporterTest
+Running net.runelite.cache.ModelDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.644 sec - in net.runelite.cache.ModelDumperTest
+Running net.runelite.cache.ObjectManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.552 sec - in net.runelite.cache.ObjectManagerTest
+Running net.runelite.cache.io.OutputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.runelite.cache.io.OutputStreamTest
+Running net.runelite.cache.NpcManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.474 sec - in net.runelite.cache.NpcManagerTest
+Running net.runelite.cache.TrackDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.21 sec - in net.runelite.cache.TrackDumperTest
+
+Results :
+
+
+
+
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 7
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RuneLite API 1.3.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ runelite-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/runelite-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ runelite-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ runelite-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ runelite-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/runelite-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ runelite-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ runelite-api ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/runelite-api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.api.ExperienceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in net.runelite.api.ExperienceTest
+Running net.runelite.api.model.JarvisTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in net.runelite.api.model.JarvisTest
+Running net.runelite.api.coords.AngleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.runelite.api.coords.AngleTest
+
+Results :
+
+
+
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Protocol API 1.3.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------[main] INFO net.runelite.cache.StoreLocation - Using preexisting cache working directory /tmp/cache-165
+[main] INFO net.runelite.cache.server.CacheServer - Server is now listening on 43594
+[main] INFO net.runelite.cache.client.CacheClient - Sent handshake with revision 154
+[nioEventLoopGroup-2-1] INFO net.runelite.cache.server.HandshakeHandler - Handshake complete from client /127.0.0.1:53412, revision 154
+[nioEventLoopGroup-3-1] INFO net.runelite.cache.client.HandshakeResponseHandler - Client is now connected!
+[main] INFO net.runelite.cache.client.CacheClient - Requesting indexes
+[nioEventLoopGroup-2-1] INFO net.runelite.cache.server.ArchiveRequestHandler - Client /127.0.0.1:53412 requests 255: index 255, archive 255
+[main] INFO net.runelite.cache.client.CacheClient - Index 0 does not exist, creating
+[main] INFO net.runelite.cache.client.CacheClient - Downloading index 0
+[nioEventLoopGroup-2-1] INFO net.runelite.cache.server.ArchiveRequestHandler - Client /127.0.0.1:53412 requests 255: index 255, archive 0
+[main] INFO net.runelite.cache.client.CacheClient - Downloaded index 0
+[main] INFO net.runelite.cache.client.CacheClient - Index 0 has 1 archives
+[main] INFO net.runelite.cache.client.CacheClient - Archive 0/1 in index 0 is out of date, downloading
+[nioEventLoopGroup-2-1] INFO net.runelite.cache.server.ArchiveRequestHandler - Client /127.0.0.1:53412 requests index 0 archive 0
+[main] INFO net.runelite.cache.client.CacheClient - Download completed in 27.41 ms
+[nioEventLoopGroup-3-1] WARN net.runelite.cache.client.CacheClientHandler - Channel has gone inactive
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 3 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 3
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 8 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 8
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 3 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 3
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 3 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 3
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 5 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 5
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 7 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 7
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 7 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 7
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 3 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 3
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 5 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 5
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 3 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 3
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 5 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 5
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 2 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 2
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 5 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 5
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplyOneDeobfuscator - Removed 0 1 multiplications
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplyOneDeobfuscator - Removed 1 1 multiplications
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplyOneDeobfuscator - Removed 1 1 multiplications
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.ModArith - Done processing 4
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 34 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 34
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.ModArith - Done processing 1
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Replaced 11 constants
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscator - Total changed 11
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.DupDeobfuscator - Replaced 1 dup instructions
+[main] INFO net.runelite.deob.deobfuscators.arithmetic.DupDeobfuscator - Replaced 1 dup instructions
+[main] INFO net.runelite.deob.deobfuscators.UnusedClass - Removed 1 classes
+[main] INFO net.runelite.deob.deobfuscators.Lvt - Remapped 3 lvt indexes
+[main] INFO net.runelite.deob.deobfuscators.IllegalStateExceptions - Removed 5818 illegal state exceptions
+[main] INFO net.runelite.deob.deobfuscators.FieldInliner - Inlined 1311 fields
+[main] INFO net.runelite.deob.deobfuscators.Renamer - Renamed 341 classes, 4116 fields, and 6290 methods
+[main] INFO net.runelite.deob.deobfuscators.RuntimeExceptions - Remove 1674 exception handlers
+[main] INFO net.runelite.deob.deobfuscators.UnreachedCode - Removed 548058 unused instructions
+[main] INFO net.runelite.deob.deobfuscators.UnusedMethods - Removed 4588 methods
+[main] INFO net.runelite.deob.deobfuscators.IllegalStateExceptions - Removed 5815 illegal state exceptions
+[main] INFO net.runelite.deob.deobfuscators.UnusedParameters - Removed 973 unused parameters
+[main] INFO net.runelite.deob.deobfuscators.CastNull - Removed 1 casts on null
+[main] INFO net.runelite.deob.deobfuscators.RuntimeExceptions - Remove 1674 exception handlers
+[main] INFO net.runelite.deob.deobfuscators.exprargorder.ExprArgOrder - Reordered 1 expressions
+[main] INFO net.runelite.deob.deobfuscators.exprargorder.ExprArgOrder - Reordered 2 expressions
+[main] INFO net.runelite.deob.deobfuscators.exprargorder.ExprArgOrder - Reordered 1 expressions
+[main] INFO net.runelite.deob.deobfuscators.exprargorder.ExprArgOrder - Reordered 2 expressions
+[main] INFO net.runelite.deob.deobfuscators.exprargorder.ExprArgOrder - Reordered 1 expressions
+[main] INFO net.runelite.deob.deobfuscators.exprargorder.ExprArgOrder - Reordered 1 expressions
+[main] INFO net.runelite.deob.deobfuscators.Renamer - Renamed 341 classes, 4116 fields, and 6290 methods
+[main] INFO net.runelite.deob.deobfuscators.UnusedMethods - Removed 4588 methods
+[main] INFO net.runelite.deob.deobfuscators.UnusedFields - Removed 586 unused fields
+[main] INFO net.runelite.deob.deobfuscators.UnreachedCode - Removed 12 unused instructions
+lures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cache Updater 1.3.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cache-updater ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/cache-updater/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ cache-updater ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ cache-updater ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cache-updater ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/cache-updater/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ cache-updater ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ cache-updater ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RuneScape API 1.3.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ runescape-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/runescape-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ runescape-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ runescape-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ runescape-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/runescape-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ runescape-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ runescape-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RuneScape Client 1.3.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/runescape-client/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ client ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/runescape-client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ISAACCipherTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in ISAACCipherTest
+
+Results :
+
+
+
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Deobfuscator 1.3.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ deob ---
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/deobfuscator' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/deobfuscator
+[INFO] Storing buildNumber: 75d9d67aaa81b7ace74c69420f838e0aad780a52 at timestamp: 1584643607408
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/deobfuscator' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/deobfuscator
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:properties (default) @ deob ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ deob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ deob ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ deob ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ deob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ deob ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ deob ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/deobfuscator/target/surefire-reports
+[INFO] Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom
+[INFO] Downloading: http://repo.runelite.net/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom (3 KB at 97.3 KB/sec)
+[INFO] Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom
+[INFO] Downloading: http://repo.runelite.net/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom (3 KB at 96.8 KB/sec)
+[INFO] Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar
+[INFO] Downloading: http://repo.runelite.net/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar (63 KB at 1121.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.asm.execution.ParallelMappingExecutorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.425 sec - in net.runelite.asm.execution.ParallelMappingExecutorTest
+Running net.runelite.asm.execution.ParallellMappingExecutorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in net.runelite.asm.execution.ParallellMappingExecutorTest
+Running net.runelite.asm.execution.ExecutionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.696 sec - in net.runelite.asm.execution.ExecutionTest
+Running net.runelite.asm.visitors.ClassFileVisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.823 sec - in net.runelite.asm.visitors.ClassFileVisitorTest
+Running net.runelite.asm.attributes.code.instructions.IfICmpEqTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 sec - in net.runelite.asm.attributes.code.instructions.IfICmpEqTest
+Running net.runelite.asm.attributes.code.instructions.LCmpTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.runelite.asm.attributes.code.instructions.LCmpTest
+Running net.runelite.asm.attributes.code.instructions.IfEqTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in net.runelite.asm.attributes.code.instructions.IfEqTest
+Running net.runelite.asm.annotations.AnnotationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in net.runelite.asm.annotations.AnnotationTest
+Running net.runelite.asm.signature.SignatureTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.runelite.asm.signature.SignatureTest
+Running net.runelite.deob.deobfuscators.arithmetic.MultiplyZeroDeobfuscatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in net.runelite.deob.deobfuscators.arithmetic.MultiplyZeroDeobfuscatorTest
+Running net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscatorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in net.runelite.deob.deobfuscators.arithmetic.MultiplicationDeobfuscatorTest
+Running net.runelite.deob.deobfuscators.arithmetic.ModArithTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in net.runelite.deob.deobfuscators.arithmetic.ModArithTest
+Running net.runelite.deob.deobfuscators.arithmetic.MultiplyOneDeobfuscatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in net.runelite.deob.deobfuscators.arithmetic.MultiplyOneDeobfuscatorTest
+Running net.runelite.deob.deobfuscators.arithmetic.SimpleModArithTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in net.runelite.deob.deobfuscators.arithmetic.SimpleModArithTest
+Running net.runelite.deob.deobfuscators.arithmetic.DupDeobfuscatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in net.runelite.deob.deobfuscators.arithmetic.DupDeobfuscatorTest
+Running net.runelite.deob.deobfuscators.UnusedClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in net.runelite.deob.deobfuscators.UnusedClassTest
+Running net.runelite.deob.deobfuscators.cfg.ControlFlowDeobfuscatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 sec - in net.runelite.deob.deobfuscators.cfg.ControlFlowDeobfuscatorTest
+Running net.runelite.deob.deobfuscators.EnumDeobfuscatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in net.runelite.deob.deobfuscators.EnumDeobfuscatorTest
+Running net.runelite.deob.deobfuscators.LvtTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in net.runelite.deob.deobfuscators.LvtTest
+Running net.runelite.deob.deobfuscators.transformers.buffer.BufferFinderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in net.runelite.deob.deobfuscators.transformers.buffer.BufferFinderTest
+Running net.runelite.deob.deobfuscators.transformers.buffer.RuneliteBufferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.deob.deobfuscators.transformers.buffer.RuneliteBufferTest
+Running net.runelite.deob.deobfuscators.IllegalStateExceptionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.635 sec - in net.runelite.deob.deobfuscators.IllegalStateExceptionsTest
+Running net.runelite.deob.deobfuscators.OrderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in net.runelite.deob.deobfuscators.OrderTest
+Running net.runelite.deob.deobfuscators.menuaction.MenuActionDeobfuscatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in net.runelite.deob.deobfuscators.menuaction.MenuActionDeobfuscatorTest
+Running net.runelite.deob.deobfuscators.FieldInlinerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.898 sec - in net.runelite.deob.deobfuscators.FieldInlinerTest
+Running net.runelite.deob.deobfuscators.UnusedParametersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.426 sec - in net.runelite.deob.deobfuscators.UnusedParametersTest
+Running net.runelite.deob.deobfuscators.packetwrite.PacketWriteDeobfuscatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in net.runelite.deob.deobfuscators.packetwrite.PacketWriteDeobfuscatorTest
+Running net.runelite.deob.deobfuscators.packethandler.PacketTypeFinderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 sec - in net.runelite.deob.deobfuscators.packethandler.PacketTypeFinderTest
+Running net.runelite.deob.deobfuscators.CastNullTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in net.runelite.deob.deobfuscators.CastNullTest
+Running net.runelite.deob.deobfuscators.RuntimeExceptionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.125 sec - in net.runelite.deob.deobfuscators.RuntimeExceptionsTest
+Running net.runelite.deob.deobfuscators.exprargorder.ExprArgOrderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in net.runelite.deob.deobfuscators.exprargorder.ExprArgOrderTest
+Running net.runelite.deob.deobfuscators.constparam.ConstantParameterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 sec - in net.runelite.deob.deobfuscators.constparam.ConstantParameterTest
+Running net.runelite.deob.deobfuscators.RenameUniqueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.361 sec - in net.runelite.deob.deobfuscators.RenameUniqueTest
+Running net.runelite.deob.deobfuscators.PacketHandlerOrderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in net.runelite.deob.deobfuscators.PacketHandlerOrderTest
+Running net.runelite.deob.deobfuscators.UnusedMethodsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.793 sec - in net.runelite.deob.deobfuscators.UnusedMethodsTest
+Running net.runelite.deob.deobfuscators.UnusedFieldsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.159 sec - in net.runelite.deob.deobfuscators.UnusedFieldsTest
+Running net.runelite.deob.deobfuscators.UnreachedCodeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in net.runelite.deob.deobfuscators.UnreachedCodeTest
+Running net.runelite.deob.clientver.ClientVersionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in net.runelite.deob.clientver.ClientVersionTest
+Running net.runelite.deob.updater.UpdateMappingsTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 1, Time elapsed: 0.008 sec <<< FAILURE! - in net.runelite.deob.updater.UpdateMappingsTest
+testRun(net.runelite.deob.updater.UpdateMappingsTest)  Time elapsed: 0.005 sec  <<< ERROR!
+java.io.FileNotFoundException: /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/runescape-client/target/classes (Is a directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at net.runelite.deob.util.JarUtil.loadJar(JarUtil.java:55)
+	at net.runelite.deob.updater.UpdateMappingsTest.testRun(UpdateMappingsTest.java:77)
+
+
+Results :
+
+Tests in error: 
+  UpdateMappingsTest.testRun:77 » FileNotFound /scratch/dginelli/workspace/repai...
+
+Tests run: 61, Failures: 0, Errors: 1, Skipped: 12
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] RuneLite ........................................... SUCCESS [  1.241 s]
+[INFO] Web API ............................................ SUCCESS [  0.846 s]
+[INFO] Cache .............................................. SUCCESS [01:13 min]
+[INFO] RuneLite API ....................................... SUCCESS [  0.866 s]
+[INFO] Protocol API ....................................... SUCCESS [  0.050 s]
+[INFO] Protocol ........................................... SUCCESS [  0.842 s]
+[INFO] Cache Client ....................................... SUCCESS [  0.723 s]
+[INFO] Cache Server ....................................... SUCCESS [  1.457 s]
+[INFO] Cache Updater ...................................... SUCCESS [  0.269 s]
+[INFO] RuneScape API ...................................... SUCCESS [  0.054 s]
+[INFO] RuneScape Client ................................... SUCCESS [  1.143 s]
+[INFO] Deobfuscator ....................................... FAILURE [01:16 min]
+[INFO] Model Viewer ....................................... SKIPPED
+[INFO] RuneLite Mixins .................................... SKIPPED
+[INFO] Injector ........................................... SKIPPED
+[INFO] Injected Client .................................... SKIPPED
+[INFO] Script Assembler Plugin ............................ SKIPPED
+[INFO] RuneLite Scripts ................................... SKIPPED
+[INFO] RuneLite Client .................................... SKIPPED
+[INFO] Web Service ........................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:38 min
+[INFO] Finished at: 2020-03-19T19:48:03+01:00
+[INFO] Final Memory: 29M/71M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project deob: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/deobfuscator/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project deob: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/deobfuscator/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-runelite-runelite-375193533-20180505-084209-firstCommit/deobfuscator/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:190)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:852)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:720)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :deob
