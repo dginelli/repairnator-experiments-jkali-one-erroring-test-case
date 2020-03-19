@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:56:03 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:00:30 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 227066416,
+      "totalMemory": 1025339392
+    },
+    "totalDuration": 3863,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 3636,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          3636
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-418067288-20180820-061608-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jtablesaw-tablesaw-418067288-20180820-061608-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 591,
+      "numberPassing": 590,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 4,
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "tech.tablesaw.SortTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "tech.tablesaw.SortTest",
+        "testMethod": "testAscendingWithPlusSignNegative",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003corg.junit.ComparisonFailure\u003e but was\u003cjava.lang.AssertionError\u003e",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberPlugins": 0,
+    "numberSourceFiles": 190,
+    "numberTestFiles": 76,
+    "numberLibrariesFailingModule": 28,
+    "numberLines": 0
+  }
+}
