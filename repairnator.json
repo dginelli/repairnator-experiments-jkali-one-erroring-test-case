@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "skapral/puzzlerbot",
-  "bugCommit": "https://github.com/skapral/puzzlerbot/commit/cc6d9f1bda1d",
-  "failingModule": "/root/workspace/skapral/puzzlerbot/385414611/puzzler-web",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.json.JSONException"
-  ],
-  "totalNumberRunningTests": 20,
-  "failing-test-cases": [
-    {
-      "className": "produceTests()",
-      "failingMethods": [],
-      "erroringMethods": [
-        "produceTests"
-      ],
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:39:02 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:44:55 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 84306976,
+      "totalMemory": 258531328
+    },
+    "totalDuration": 351,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 108,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          108
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-skapral-puzzlerbot-385414611-20180529-235528-firstCommit/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-skapral-puzzlerbot-385414611-20180529-235528-firstCommit/puzzler-web",
+    "overallMetrics": {
+      "numberRunning": 20,
+      "numberPassing": 19,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.json.JSONException",
-          "failureDetail": "JSONObject[\"comments_url\"] not found.",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "produceTests()",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "produceTests()",
+        "testMethod": "produceTests",
+        "failureName": "org.json.JSONException",
+        "detail": "JSONObject[\"comments_url\"] not found.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberPlugins": 0,
+    "numberSourceFiles": 72,
+    "numberTestFiles": 7,
+    "numberLibrariesFailingModule": 94,
+    "numberLines": 0
+  }
 }
