@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "nilsreiter/CorefAnnotator",
-  "bugCommit": "https://github.com/nilsreiter/CorefAnnotator/compare/62e71cb1dcd5...17358339bd5c",
-  "failingModule": "/root/workspace/nilsreiter/CorefAnnotator/365686734",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IllegalStateException"
-  ],
-  "totalNumberRunningTests": 23,
-  "failing-test-cases": [
-    {
-      "className": "de.unistuttgart.ims.coref.annotator.plugin.tei.TestTeiReader",
-      "failingMethods": [],
-      "erroringMethods": [
-        "de.unistuttgart.ims.coref.annotator.plugin.tei.TestTeiReader#testReader"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:03:22 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:48:52 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 365942216,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 2727,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 97,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          97,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2528,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2528
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-365686734-20180412-180440-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-365686734-20180412-180440-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 23,
+      "numberPassing": 22,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.IllegalStateException",
-          "failureDetail": "org.apache.uima.resource.ResourceInitializationException: Error initializing \"de.tudarmstadt.ukp.dkpro.core.api.io.ResourceCollectionReaderBase\" from descriptor \u003cunknown\u003e.",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "de.unistuttgart.ims.coref.annotator.plugin.tei.TestTeiReader",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "de.unistuttgart.ims.coref.annotator.plugin.tei.TestTeiReader",
+        "testMethod": "testReader",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "org.apache.uima.resource.ResourceInitializationException: Error initializing \"de.tudarmstadt.ukp.dkpro.core.api.io.ResourceCollectionReaderBase\" from descriptor \u003cunknown\u003e.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 137,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 94,
+    "numberLines": 0
+  }
 }
