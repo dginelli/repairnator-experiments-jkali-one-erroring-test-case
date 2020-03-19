@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:58:18 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:29:06 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 60643248,
+      "totalMemory": 139001856
+    },
+    "totalDuration": 1844,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1344,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1344
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mmahmoodictbd-OpenBlog-407797201-20180724-230017-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mmahmoodictbd-OpenBlog-407797201-20180724-230017-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 29,
+      "numberPassing": 28,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "com.unloadbrain.blog.exception.PublishedPostNotFoundException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.unloadbrain.blog.service.PublishedPostServiceTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.unloadbrain.blog.service.PublishedPostServiceTest",
+        "testMethod": "testPublishActionForNewPublishedPost",
+        "failureName": "com.unloadbrain.blog.exception.PublishedPostNotFoundException",
+        "detail": "Could not found published post id - null",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 78,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 124,
+    "numberLines": 0
+  }
+}
