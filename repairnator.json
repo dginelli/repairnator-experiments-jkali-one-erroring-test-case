@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "javaparser/javaparser",
-  "failingModule": "/root/workspace/javaparser/javaparser/343506452/javaparser-testing",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.util.NoSuchElementException"
-  ],
-  "totalNumberRunningTests": 1518,
-  "failing-test-cases": [
-    {
-      "className": "com.github.javaparser.bdd.steps.CommentParsingSteps",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.github.javaparser.bdd.steps.CommentParsingSteps#Then method 1 in class 1 is commented \"* Return the original user.\""
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:57:24 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:41:20 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 71363744,
+      "totalMemory": 171532288
+    },
+    "totalDuration": 6232,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-343506452-20180219-200440-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-343506452-20180219-200440-firstCommit/javaparser-testing",
+    "overallMetrics": {
+      "numberRunning": 1518,
+      "numberPassing": 1517,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.util.NoSuchElementException",
-          "failureDetail": "No value present",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.javaparser.bdd.steps.CommentParsingSteps",
+        "numberRunning": 226,
+        "numberPassing": 225,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.javaparser.bdd.steps.CommentParsingSteps",
+        "testMethod": "Then method 1 in class 1 is commented \"* Return the original user.\"",
+        "failureName": "java.util.NoSuchElementException",
+        "detail": "No value present",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 597,
+    "numberTestFiles": 235,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  }
 }
