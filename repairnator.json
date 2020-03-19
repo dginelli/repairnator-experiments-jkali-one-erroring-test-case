@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:03:22 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:08:49 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 88246600,
+      "totalMemory": 238206976
+    },
+    "totalDuration": 322,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 104,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          104,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 128,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          128
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ollierob-coljate-414949591-20180811-221052-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ollierob-coljate-414949591-20180811-221052-firstCommit/api",
+    "overallMetrics": {
+      "numberRunning": 437,
+      "numberPassing": 436,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.coljate.list.impl.CircularBufferTest$SingletonBufferTest",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.coljate.list.impl.CircularBufferTest$SingletonBufferTest",
+        "testMethod": "testRemoveFirst",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "detail": "remove",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 404,
+    "numberTestFiles": 78,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  },
+  "commits": {}
+}
