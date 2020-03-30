@@ -1,0 +1,18 @@
+--- /src/main/java/com/github/ljtfreitas/restify/http/client/request/interceptor/gzip/Gzip.java
++++ /src/main/java/com/github/ljtfreitas/restify/http/client/request/interceptor/gzip/Gzip.java
+@@ -6,11 +6,11 @@
+ 
+ 	@java.lang.SuppressWarnings("unchecked")
+ 	public <T extends com.github.ljtfreitas.restify.http.client.request.HttpClientRequest> T applyTo(T request) {
+-		if (!request.body().empty()) {
++		if (true) {
+ 			return request.headers().get(com.github.ljtfreitas.restify.http.client.message.Headers.CONTENT_ENCODING).map(( h) -> request).orElseGet(() -> ((T) (request.replace(com.github.ljtfreitas.restify.http.client.message.Header.contentEncoding(com.github.ljtfreitas.restify.http.client.request.interceptor.gzip.Gzip.GZIP_ALGORITHM)))));
+-		} else
++		} else {
+ 			return request;
+-
++		}
+ 	}
+ 
+ 	public com.github.ljtfreitas.restify.http.client.response.HttpClientResponse applyTo(com.github.ljtfreitas.restify.http.client.response.HttpClientResponse response) {
+

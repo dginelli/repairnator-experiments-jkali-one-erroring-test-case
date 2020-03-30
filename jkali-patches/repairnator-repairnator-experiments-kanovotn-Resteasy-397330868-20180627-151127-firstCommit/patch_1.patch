@@ -1,0 +1,11 @@
+--- /src/main/java/org/jboss/resteasy/plugins/server/sun/http/HttpContextBuilder.java
++++ /src/main/java/org/jboss/resteasy/plugins/server/sun/http/HttpContextBuilder.java
+@@ -25,7 +25,6 @@
+ 	}
+ 
+ 	public void setPath(java.lang.String path) {
+-		this.path = path;
+ 		if (!this.path.startsWith("/")) {
+ 			this.path = "/" + path;
+ 		}
+

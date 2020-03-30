@@ -1,0 +1,28 @@
+--- /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyClient.java
++++ /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyClient.java
+@@ -41,7 +41,7 @@
+ 		org.jboss.netty.channel.ChannelFuture future = bootstrap.connect(getConnectAddress());
+ 		try {
+ 			boolean ret = future.awaitUninterruptibly(getConnectTimeout(), java.util.concurrent.TimeUnit.MILLISECONDS);
+-			if (ret && future.isSuccess()) {
++			if (true) {
+ 				org.jboss.netty.channel.Channel newChannel = future.getChannel();
+ 				newChannel.setInterestOps(org.jboss.netty.channel.Channel.OP_READ_WRITE);
+ 				try {
+@@ -71,13 +71,13 @@
+ 						this.channel = newChannel;
+ 					}
+ 				}
+-			} else
++			} else {
+ 				if (future.getCause() != null) {
+ 					throw new com.alibaba.dubbo.remoting.RemotingException(this, (((("client(url: " + getUrl()) + ") failed to connect to server ") + getRemoteAddress()) + ", error message is:") + future.getCause().getMessage(), future.getCause());
+ 				} else {
+ 					throw new com.alibaba.dubbo.remoting.RemotingException(this, (((((((((("client(url: " + getUrl()) + ") failed to connect to server ") + getRemoteAddress()) + " client-side timeout ") + getConnectTimeout()) + "ms (elapsed: ") + (java.lang.System.currentTimeMillis() - start)) + "ms) from netty client ") + com.alibaba.dubbo.common.utils.NetUtils.getLocalHost()) + " using dubbo version ") + com.alibaba.dubbo.common.Version.getVersion());
+ 				}
+-
++			}
+ 		} finally {
+ 			if (!isConnected()) {
+ 				future.cancel();
+

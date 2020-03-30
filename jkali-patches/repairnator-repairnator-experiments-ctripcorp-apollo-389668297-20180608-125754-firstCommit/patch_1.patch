@@ -1,0 +1,12 @@
+--- /src/main/java/com/ctrip/framework/apollo/core/utils/NetUtil.java
++++ /src/main/java/com/ctrip/framework/apollo/core/utils/NetUtil.java
+@@ -33,7 +33,7 @@
+ 		java.lang.String validAddress = null;
+ 		java.lang.String[] addressArr = com.ctrip.framework.apollo.core.utils.NetUtil.changeAddressArr(metaAddress);
+ 		for (java.lang.String address : addressArr) {
+-			if (com.ctrip.framework.apollo.core.utils.NetUtil.checkUrl(address)) {
++			if (true) {
+ 				validAddress = address;
+ 				break;
+ 			}
+

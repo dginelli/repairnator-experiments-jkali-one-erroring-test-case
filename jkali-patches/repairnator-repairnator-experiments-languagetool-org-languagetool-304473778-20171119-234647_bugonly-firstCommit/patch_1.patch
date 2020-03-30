@@ -1,0 +1,15 @@
+--- /src/main/java/org/languagetool/server/TextChecker.java
++++ /src/main/java/org/languagetool/server/TextChecker.java
+@@ -131,11 +131,6 @@
+ 		}
+ 		java.lang.String agent = (parameters.get("useragent") != null) ? parameters.get("useragent") : "-";
+ 		java.lang.Integer count = languageCheckCounts.get(lang.getShortCodeWithCountryAndVariant());
+-		if (count == null) {
+-			count = 1;
+-		} else {
+-			count++;
+-		}
+ 		languageCheckCounts.put(lang.getShortCodeWithCountryAndVariant(), count);
+ 		org.languagetool.server.ServerTools.print((((((((((((((("Check done: " + aText.getPlainText().length()) + " chars, ") + languageMessage) + ", #") + count) + ", ") + referrer) + ", ") + matches.size()) + " matches, ") + (java.lang.System.currentTimeMillis() - timeStart)) + "ms, agent:") + agent) + ", ") + messageSent);
+ 	}
+

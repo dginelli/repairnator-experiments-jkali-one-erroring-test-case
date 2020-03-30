@@ -1,0 +1,12 @@
+--- /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyClient.java
++++ /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyClient.java
+@@ -72,7 +72,7 @@
+ 					}
+ 				}
+ 			} else {
+-				if (future.getCause() != null) {
++				if (true) {
+ 					throw new com.alibaba.dubbo.remoting.RemotingException(this, (((("client(url: " + getUrl()) + ") failed to connect to server ") + getRemoteAddress()) + ", error message is:") + future.getCause().getMessage(), future.getCause());
+ 				} else {
+ 					throw new com.alibaba.dubbo.remoting.RemotingException(this, (((((((((("client(url: " + getUrl()) + ") failed to connect to server ") + getRemoteAddress()) + " client-side timeout ") + getConnectTimeout()) + "ms (elapsed: ") + (java.lang.System.currentTimeMillis() - start)) + "ms) from netty client ") + com.alibaba.dubbo.common.utils.NetUtils.getLocalHost()) + " using dubbo version ") + com.alibaba.dubbo.common.Version.getVersion());
+

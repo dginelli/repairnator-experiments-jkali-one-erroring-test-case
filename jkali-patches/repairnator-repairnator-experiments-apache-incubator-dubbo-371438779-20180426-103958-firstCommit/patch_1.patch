@@ -1,0 +1,11 @@
+--- /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyClient.java
++++ /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyClient.java
+@@ -18,7 +18,6 @@
+ 	protected void doOpen() throws java.lang.Throwable {
+ 		com.alibaba.dubbo.remoting.transport.netty.NettyHelper.setNettyLoggerFactory();
+ 		bootstrap = new org.jboss.netty.bootstrap.ClientBootstrap(com.alibaba.dubbo.remoting.transport.netty.NettyClient.channelFactory);
+-		bootstrap.setOption("keepAlive", true);
+ 		bootstrap.setOption("tcpNoDelay", true);
+ 		bootstrap.setOption("connectTimeoutMillis", getTimeout());
+ 		final com.alibaba.dubbo.remoting.transport.netty.NettyHandler nettyHandler = new com.alibaba.dubbo.remoting.transport.netty.NettyHandler(getUrl(), this);
+

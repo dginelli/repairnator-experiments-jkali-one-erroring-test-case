@@ -1,0 +1,11 @@
+--- /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyClient.java
++++ /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyClient.java
+@@ -20,7 +20,6 @@
+ 		bootstrap = new org.jboss.netty.bootstrap.ClientBootstrap(com.alibaba.dubbo.remoting.transport.netty.NettyClient.channelFactory);
+ 		bootstrap.setOption("keepAlive", true);
+ 		bootstrap.setOption("tcpNoDelay", true);
+-		bootstrap.setOption("connectTimeoutMillis", getTimeout());
+ 		final com.alibaba.dubbo.remoting.transport.netty.NettyHandler nettyHandler = new com.alibaba.dubbo.remoting.transport.netty.NettyHandler(getUrl(), this);
+ 		bootstrap.setPipelineFactory(new org.jboss.netty.channel.ChannelPipelineFactory() {
+ 			public org.jboss.netty.channel.ChannelPipeline getPipeline() {
+

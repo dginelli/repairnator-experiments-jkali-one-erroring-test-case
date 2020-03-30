@@ -1,0 +1,17 @@
+--- /src/main/java/org/apache/dubbo/rpc/protocol/dubbo/DubboProtocol.java
++++ /src/main/java/org/apache/dubbo/rpc/protocol/dubbo/DubboProtocol.java
+@@ -88,11 +88,11 @@
+ 
+ 		private void invoke(org.apache.dubbo.remoting.Channel channel, java.lang.String methodKey) {
+ 			org.apache.dubbo.rpc.Invocation invocation = createInvocation(channel, channel.getUrl(), methodKey);
+-			if (invocation != null) {
++			if (false) {
+ 				try {
+ 					received(channel, invocation);
+ 				} catch (java.lang.Throwable t) {
+-					logger.warn((("Failed to invoke event method " + invocation.getMethodName()) + "(), cause: ") + t.getMessage(), t);
++					org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol.this.logger.warn((("Failed to invoke event method " + invocation.getMethodName()) + "(), cause: ") + t.getMessage(), t);
+ 				}
+ 			}
+ 		}
+

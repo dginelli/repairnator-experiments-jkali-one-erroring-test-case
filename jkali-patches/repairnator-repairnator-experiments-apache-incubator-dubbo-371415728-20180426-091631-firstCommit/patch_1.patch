@@ -1,0 +1,12 @@
+--- /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyChannel.java
++++ /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyChannel.java
+@@ -28,7 +28,7 @@
+ 			if (ch.isConnected()) {
+ 				ret = com.alibaba.dubbo.remoting.transport.netty.NettyChannel.channelMap.putIfAbsent(ch, nc);
+ 			}
+-			if (ret == null) {
++			if (true) {
+ 				ret = nc;
+ 			}
+ 		}
+

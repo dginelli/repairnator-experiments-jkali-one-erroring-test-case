@@ -1,0 +1,12 @@
+--- /src/main/java/org/sonar/plugins/fxcop/FxCopSensor.java
++++ /src/main/java/org/sonar/plugins/fxcop/FxCopSensor.java
+@@ -33,7 +33,7 @@
+ 	void executeImpl(org.sonar.api.batch.sensor.SensorContext context) {
+ 		GetAlternativeSlnPath(context);
+ 		fxCopConf.setAlternativeSln(this.altSlnFile);
+-		if (!fxCopConf.checkProperties(context.settings())) {
++		if (true) {
+ 			org.sonar.plugins.fxcop.FxCopSensor.LOG.warn("Skipping FxCop, either the report file or the assembly is missing");
+ 			return;
+ 		}
+
