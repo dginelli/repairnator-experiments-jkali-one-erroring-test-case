@@ -14,4 +14,4 @@ The structure of the repository is as follows:
 
 ## Statistics
 
-There are currently 1.176 (excluding `master` branch) branches, each of them associated with a failure, and there are 52 Kali patches.
+There are currently 1.176 (excluding `master` branch) branches, each of them associated with a failure, and there are 52 cases in which AstorJKali succeeded to generate one patch.
