@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 5,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "megadotnet/SpringBootDemoApp",
-  "bugCommit": "https://github.com/megadotnet/SpringBootDemoApp/compare/edac481b02cc...6398682cd77a",
-  "failingModule": "/root/workspace/megadotnet/SpringBootDemoApp/371076891",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.mockito.exceptions.misusing.UnnecessaryStubbingException"
-  ],
-  "totalNumberRunningTests": 16,
-  "failing-test-cases": [
-    {
-      "className": "com.app.login.web.rest.UserAccountControllerTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.app.login.web.rest.UserAccountControllerTest#unnecessary Mockito stubbings"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 11, 2020 7:58:37 PM",
+    "reproductionDateEnd": "Apr 11, 2020 8:01:28 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 32184760,
+      "totalMemory": 144883712
+    },
+    "totalDuration": 168,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 67,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          67
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-megadotnet-SpringBootDemoApp-371076891-20180425-160119-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-megadotnet-SpringBootDemoApp-371076891-20180425-160119-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 11,
+      "numberPassing": 10,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 5,
       "failures": [
         {
           "failureName": "org.mockito.exceptions.misusing.UnnecessaryStubbingException",
-          "failureDetail": "\nUnnecessary stubbings detected in test class: UserAccountControllerTest\nClean \u0026 maintainable test code requires zero unnecessary code.\nFollowing stubbings are unnecessary (click to navigate to relevant line of code):\n  1. -\u003e at com.app.login.web.rest.UserAccountControllerTest.registerAccount(UserAccountControllerTest.java:88)\n  2. -\u003e at com.app.login.web.rest.UserAccountControllerTest.registerAccount(UserAccountControllerTest.java:89)\n  3. -\u003e at com.app.login.web.rest.UserAccountControllerTest.getAccount(UserAccountControllerTest.java:103)\nPlease remove unnecessary stubbings or use \u0027lenient\u0027 strictness. More info: javadoc for UnnecessaryStubbingException class.",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.app.login.web.rest.UserAccountControllerTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.app.login.web.rest.UserAccountControllerTest",
+        "testMethod": "unnecessary Mockito stubbings",
+        "failureName": "org.mockito.exceptions.misusing.UnnecessaryStubbingException",
+        "detail": "\nUnnecessary stubbings detected in test class: UserAccountControllerTest\nClean \u0026 maintainable test code requires zero unnecessary code.\nFollowing stubbings are unnecessary (click to navigate to relevant line of code):\n  1. -\u003e at com.app.login.web.rest.UserAccountControllerTest.registerAccount(UserAccountControllerTest.java:88)\n  2. -\u003e at com.app.login.web.rest.UserAccountControllerTest.registerAccount(UserAccountControllerTest.java:89)\n  3. -\u003e at com.app.login.web.rest.UserAccountControllerTest.getAccount(UserAccountControllerTest.java:103)\nPlease remove unnecessary stubbings or use \u0027lenient\u0027 strictness. More info: javadoc for UnnecessaryStubbingException class.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 34,
+    "numberTestFiles": 7,
+    "numberLibrariesFailingModule": 119,
+    "numberLines": 0
+  }
 }
