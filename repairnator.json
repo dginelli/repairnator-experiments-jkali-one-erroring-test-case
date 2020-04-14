@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "thelastpickle/cassandra-reaper",
-  "failingModule": "/root/workspace/thelastpickle/cassandra-reaper/360193692/src/server",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.ClassCastException"
-  ],
-  "totalNumberRunningTests": 100,
-  "failing-test-cases": [
-    {
-      "className": "io.cassandrareaper.resources.RepairRunResourceTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.cassandrareaper.resources.RepairRunResourceTest#testTriggerNewRunAlreadyRunningRun"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 14, 2020 4:50:59 PM",
+    "reproductionDateEnd": "Apr 14, 2020 6:39:43 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 130436704,
+      "totalMemory": 345214976
+    },
+    "totalDuration": 6520,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 31,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          31,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-360193692-20180330-111334-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-360193692-20180330-111334-firstCommit/src/server",
+    "overallMetrics": {
+      "numberRunning": 100,
+      "numberPassing": 99,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.ClassCastException",
-          "failureDetail": "java.lang.String cannot be cast to io.cassandrareaper.resources.view.RepairRunStatus",
-          "isError": true
+          "isError": true,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.cassandrareaper.resources.RepairRunResourceTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.cassandrareaper.resources.RepairRunResourceTest",
+        "testMethod": "testTriggerNewRunAlreadyRunningRun",
+        "failureName": "java.lang.ClassCastException",
+        "detail": "java.lang.String cannot be cast to io.cassandrareaper.resources.view.RepairRunStatus",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 83,
+    "numberTestFiles": 32,
+    "numberLibrariesFailingModule": 182,
+    "numberLines": 0
+  }
 }
