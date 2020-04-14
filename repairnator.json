@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 14, 2020 4:50:32 PM",
+    "reproductionDateEnd": "Apr 14, 2020 5:57:24 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 910951016,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 4006,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1074,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1074
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-druid-419313867-20180823-001037-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-druid-419313867-20180823-001037-firstCommit/server",
+    "overallMetrics": {
+      "numberRunning": 85537,
+      "numberPassing": 85536,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 88,
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.druid.server.coordinator.CuratorDruidCoordinatorTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.druid.server.coordinator.CuratorDruidCoordinatorTest",
+        "testMethod": "testMoveSegment",
+        "failureName": "java.lang.Exception",
+        "detail": "test timed out after 60000 milliseconds",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 56,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2697,
+    "numberTestFiles": 987,
+    "numberLibrariesFailingModule": 173,
+    "numberLines": 0
+  }
+}
