@@ -56,104 +56,206 @@ The test case terminates with an error only running it with Maven, but it passes
 
 **Useful information for the developer**:
 
-## repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit
+## AudibleAppliances-AudibleAppliances-348327780-20180302-182413
 
-## repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit)
 
-## repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit
+## AudibleAppliances-AudibleAppliances-348335601-20180302-184224
 
-## repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit)
 
-## repairnator-repairnator-experiments-Raaycc-inglesapp-422238225-20180829-220230-firstCommit
+## AudibleAppliances-AudibleAppliances-348337755-20180302-184636
 
-## repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit)
 
-## repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit
+## DanielHWe-sonar-fxcop-385681821-20180530-150823
 
-## repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit)
 
-## repairnator-repairnator-experiments-alibaba-dubbo-345512689-20180224-023053-firstCommit
+## Raaycc-inglesapp-422238225-20180829-220230
 
-## repairnator-repairnator-experiments-alibaba-dubbo-346169964-20180226-085855-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-Raaycc-inglesapp-422238225-20180829-220230-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Raaycc-inglesapp-422238225-20180829-220230-firstCommit)
 
-## repairnator-repairnator-experiments-alibaba-dubbo-350134248-20180307-042920-firstCommit
+## RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-368026517-20180418-101128-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit)
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-371415728-20180426-091631-firstCommit
+## Schrotty-DoIT-388971125-20180606-230606
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-371420525-20180426-092949-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit)
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-371438779-20180426-103958-firstCommit
+## Schrotty-DoIT-388971144-20180606-230500
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-371497244-20180426-131254-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit)
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-371887427-20180427-083644-firstCommit
+## alibaba-dubbo-345512689-20180224-023053
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-372356327-20180428-112827-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-alibaba-dubbo-345512689-20180224-023053-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-alibaba-dubbo-345512689-20180224-023053-firstCommit)
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-372411068-20180428-154917-firstCommit
+## alibaba-dubbo-346169964-20180226-085855
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-375894168-20180507-161037-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-alibaba-dubbo-346169964-20180226-085855-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-alibaba-dubbo-346169964-20180226-085855-firstCommit)
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-403447416-20180713-102123-firstCommit
+## alibaba-dubbo-350134248-20180307-042920
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-414400217-20180810-102729-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-alibaba-dubbo-350134248-20180307-042920-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-alibaba-dubbo-350134248-20180307-042920-firstCommit)
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-415733184-20180814-051602-firstCommit
+## apache-incubator-dubbo-368026517-20180418-101128
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-415733606-20180814-052352-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-368026517-20180418-101128-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-368026517-20180418-101128-firstCommit)
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-415738684-20180814-054812-firstCommit
+## apache-incubator-dubbo-371415728-20180426-091631
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-415744784-20180814-063101-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-371415728-20180426-091631-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-371415728-20180426-091631-firstCommit)
 
-## repairnator-repairnator-experiments-apache-incubator-dubbo-415750114-20180814-073311-firstCommit
+## apache-incubator-dubbo-371420525-20180426-092949
 
-## repairnator-repairnator-experiments-apache-incubator-samoa-250252707-20170705-104107_bugonly-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-371420525-20180426-092949-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-371420525-20180426-092949-firstCommit)
 
-## repairnator-repairnator-experiments-apache-incubator-samoa-252350217-20170711-125441_bugonly-firstCommit
+## apache-incubator-dubbo-371438779-20180426-103958
 
-## repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-371438779-20180426-103958-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-371438779-20180426-103958-firstCommit)
 
-## repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit
+## apache-incubator-dubbo-371497244-20180426-131254
 
-## repairnator-repairnator-experiments-biojava-biojava-258692928-20170728-215205_bugonly-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-371497244-20180426-131254-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-371497244-20180426-131254-firstCommit)
 
-## repairnator-repairnator-experiments-biojava-biojava-260338518-20170802-214829-firstCommit
+## apache-incubator-dubbo-371887427-20180427-083644
 
-## repairnator-repairnator-experiments-codingchili-parser-excel-elasticsearch-372415239-20180428-154442-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-371887427-20180427-083644-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-371887427-20180427-083644-firstCommit)
 
-## repairnator-repairnator-experiments-ctripcorp-apollo-389668297-20180608-125754-firstCommit
+## apache-incubator-dubbo-372356327-20180428-112827
 
-## repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-372356327-20180428-112827-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-372356327-20180428-112827-firstCommit)
 
-## repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit
+## apache-incubator-dubbo-372411068-20180428-154917
 
-## repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-372411068-20180428-154917-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-372411068-20180428-154917-firstCommit)
 
-## repairnator-repairnator-experiments-eclipse-ditto-402096641-20180710-102844-firstCommit
+## apache-incubator-dubbo-375894168-20180507-161037
 
-## repairnator-repairnator-experiments-eclipse-ditto-407599059-20180724-213504-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-375894168-20180507-161037-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-375894168-20180507-161037-firstCommit)
 
-## repairnator-repairnator-experiments-kanovotn-Resteasy-397330868-20180627-151127-firstCommit
+## apache-incubator-dubbo-403447416-20180713-102123
 
-## repairnator-repairnator-experiments-languagetool-org-languagetool-304473778-20171119-234647_bugonly-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-403447416-20180713-102123-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-403447416-20180713-102123-firstCommit)
 
-## repairnator-repairnator-experiments-ljtfreitas-java-restify-415273387-20180813-051438-firstCommit
+## apache-incubator-dubbo-414400217-20180810-102729
 
-## repairnator-repairnator-experiments-ljtfreitas-java-restify-418488986-20180826-222549-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-414400217-20180810-102729-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-414400217-20180810-102729-firstCommit)
 
-## repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-354919174-20180318-063510-firstCommit
+## apache-incubator-dubbo-415733184-20180814-051602
 
-## repairnator-repairnator-experiments-powsybl-powsybl-core-357398567-20180323-145111-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-415733184-20180814-051602-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-415733184-20180814-051602-firstCommit)
 
-## repairnator-repairnator-experiments-powsybl-powsybl-core-384715876-20180528-142524-firstCommit
+## apache-incubator-dubbo-415733606-20180814-052352
 
-## repairnator-repairnator-experiments-santanusinha-dropwizard-db-sharding-bundle-415477949-20180813-165531-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-415733606-20180814-052352-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-415733606-20180814-052352-firstCommit)
 
-## repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373018834-20180430-144835-firstCommit
+## apache-incubator-dubbo-415738684-20180814-054812
 
-## repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373043004-20180430-155241-firstCommit
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-415738684-20180814-054812-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-415738684-20180814-054812-firstCommit)
 
-## repairnator-repairnator-experiments-vlingo-vlingo-actors-415654258-20180813-233512-firstCommit
+## apache-incubator-dubbo-415744784-20180814-063101
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-415744784-20180814-063101-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-415744784-20180814-063101-firstCommit)
+
+## apache-incubator-dubbo-415750114-20180814-073311
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-415750114-20180814-073311-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-415750114-20180814-073311-firstCommit)
+
+## apache-incubator-samoa-250252707-20170705-104107_bugonly
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-samoa-250252707-20170705-104107_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-samoa-250252707-20170705-104107_bugonly-firstCommit)
+
+## apache-incubator-samoa-252350217-20170711-125441_bugonly
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-samoa-252350217-20170711-125441_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-incubator-samoa-252350217-20170711-125441_bugonly-firstCommit)
+
+## atomix-atomix-389979054-20180609-024703
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit)
+
+## biojava-biojava-250779242-20170706-162512_bugonly
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit)
+
+## biojava-biojava-258692928-20170728-215205_bugonly
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-biojava-biojava-258692928-20170728-215205_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-biojava-biojava-258692928-20170728-215205_bugonly-firstCommit)
+
+## biojava-biojava-260338518-20170802-214829
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-biojava-biojava-260338518-20170802-214829-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-biojava-biojava-260338518-20170802-214829-firstCommit)
+
+## codingchili-parser-excel-elasticsearch-372415239-20180428-154442
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-codingchili-parser-excel-elasticsearch-372415239-20180428-154442-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-codingchili-parser-excel-elasticsearch-372415239-20180428-154442-firstCommit)
+
+## ctripcorp-apollo-389668297-20180608-125754
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-ctripcorp-apollo-389668297-20180608-125754-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-ctripcorp-apollo-389668297-20180608-125754-firstCommit)
+
+## dhatim-dropwizard-sentry-386721415-20180601-172805
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit)
+
+## dta-sherlock-sirh-gestion-paie-384713759-20180528-141604
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit)
+
+## dta-sherlock-sirh-gestion-paie-384760371-20180528-160928
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit)
+
+## eclipse-ditto-402096641-20180710-102844
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-eclipse-ditto-402096641-20180710-102844-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-eclipse-ditto-402096641-20180710-102844-firstCommit)
+
+## eclipse-ditto-407599059-20180724-213504
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-eclipse-ditto-407599059-20180724-213504-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-eclipse-ditto-402096641-20180710-102844-firstCommit)
+
+## kanovotn-Resteasy-397330868-20180627-151127
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-kanovotn-Resteasy-397330868-20180627-151127-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-kanovotn-Resteasy-397330868-20180627-151127-firstCommit)
+
+## languagetool-org-languagetool-304473778-20171119-234647_bugonly
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-languagetool-org-languagetool-304473778-20171119-234647_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-languagetool-org-languagetool-304473778-20171119-234647_bugonly-firstCommit)
+
+## ljtfreitas-java-restify-415273387-20180813-051438
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-ljtfreitas-java-restify-415273387-20180813-051438-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-ljtfreitas-java-restify-415273387-20180813-051438-firstCommit)
+
+## ljtfreitas-java-restify-418488986-20180826-222549
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-ljtfreitas-java-restify-418488986-20180826-222549-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-ljtfreitas-java-restify-418488986-20180826-222549-firstCommit)
+
+## nilsreiter-CorefAnnotator-354919174-20180318-063510
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-354919174-20180318-063510-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-354919174-20180318-063510-firstCommit)
+
+## powsybl-powsybl-core-357398567-20180323-145111
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-powsybl-powsybl-core-357398567-20180323-145111-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-powsybl-powsybl-core-357398567-20180323-145111-firstCommit)
+
+## powsybl-powsybl-core-384715876-20180528-142524
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-powsybl-powsybl-core-384715876-20180528-142524-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-powsybl-powsybl-core-384715876-20180528-142524-firstCommit)
+
+## santanusinha-dropwizard-db-sharding-bundle-415477949-20180813-165531
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-santanusinha-dropwizard-db-sharding-bundle-415477949-20180813-165531-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-santanusinha-dropwizard-db-sharding-bundle-415477949-20180813-165531-firstCommit)
+
+## vitorenesduarte-VCD-java-client-373018834-20180430-144835
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373018834-20180430-144835-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373018834-20180430-144835-firstCommit)
+
+## vitorenesduarte-VCD-java-client-373043004-20180430-155241
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373043004-20180430-155241-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373043004-20180430-155241-firstCommit)
+
+## vlingo-vlingo-actors-415654258-20180813-233512
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-vlingo-vlingo-actors-415654258-20180813-233512-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-vlingo-vlingo-actors-415654258-20180813-233512-firstCommit)
