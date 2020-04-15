@@ -48,6 +48,8 @@ In this repository there are 1.189 branches (excluding `master` branch), each of
  }
 ```
 
+The test case terminates with an error only running it with Maven, but it passes when it is executed with Eclipse.
+
 **Overview**:
 
 **Reason why the patch has been generated**:
