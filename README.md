@@ -55,3 +55,105 @@ The test case terminates with an error only running it with Maven, but it passes
 **Reason why the patch has been generated**:
 
 **Useful information for the developer**:
+
+## repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit
+
+## repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit
+
+## repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit
+
+## repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit
+
+## repairnator-repairnator-experiments-Raaycc-inglesapp-422238225-20180829-220230-firstCommit
+
+## repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit
+
+## repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit
+
+## repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit
+
+## repairnator-repairnator-experiments-alibaba-dubbo-345512689-20180224-023053-firstCommit
+
+## repairnator-repairnator-experiments-alibaba-dubbo-346169964-20180226-085855-firstCommit
+
+## repairnator-repairnator-experiments-alibaba-dubbo-350134248-20180307-042920-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-368026517-20180418-101128-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-371415728-20180426-091631-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-371420525-20180426-092949-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-371438779-20180426-103958-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-371497244-20180426-131254-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-371887427-20180427-083644-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-372356327-20180428-112827-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-372411068-20180428-154917-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-375894168-20180507-161037-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-403447416-20180713-102123-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-414400217-20180810-102729-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-415733184-20180814-051602-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-415733606-20180814-052352-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-415738684-20180814-054812-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-415744784-20180814-063101-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-dubbo-415750114-20180814-073311-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-samoa-250252707-20170705-104107_bugonly-firstCommit
+
+## repairnator-repairnator-experiments-apache-incubator-samoa-252350217-20170711-125441_bugonly-firstCommit
+
+## repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit
+
+## repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit
+
+## repairnator-repairnator-experiments-biojava-biojava-258692928-20170728-215205_bugonly-firstCommit
+
+## repairnator-repairnator-experiments-biojava-biojava-260338518-20170802-214829-firstCommit
+
+## repairnator-repairnator-experiments-codingchili-parser-excel-elasticsearch-372415239-20180428-154442-firstCommit
+
+## repairnator-repairnator-experiments-ctripcorp-apollo-389668297-20180608-125754-firstCommit
+
+## repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit
+
+## repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit
+
+## repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit
+
+## repairnator-repairnator-experiments-eclipse-ditto-402096641-20180710-102844-firstCommit
+
+## repairnator-repairnator-experiments-eclipse-ditto-407599059-20180724-213504-firstCommit
+
+## repairnator-repairnator-experiments-kanovotn-Resteasy-397330868-20180627-151127-firstCommit
+
+## repairnator-repairnator-experiments-languagetool-org-languagetool-304473778-20171119-234647_bugonly-firstCommit
+
+## repairnator-repairnator-experiments-ljtfreitas-java-restify-415273387-20180813-051438-firstCommit
+
+## repairnator-repairnator-experiments-ljtfreitas-java-restify-418488986-20180826-222549-firstCommit
+
+## repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-354919174-20180318-063510-firstCommit
+
+## repairnator-repairnator-experiments-powsybl-powsybl-core-357398567-20180323-145111-firstCommit
+
+## repairnator-repairnator-experiments-powsybl-powsybl-core-384715876-20180528-142524-firstCommit
+
+## repairnator-repairnator-experiments-santanusinha-dropwizard-db-sharding-bundle-415477949-20180813-165531-firstCommit
+
+## repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373018834-20180430-144835-firstCommit
+
+## repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373043004-20180430-155241-firstCommit
+
+## repairnator-repairnator-experiments-vlingo-vlingo-actors-415654258-20180813-233512-firstCommit
