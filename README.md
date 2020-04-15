@@ -21,3 +21,35 @@ The builds collected in the dataset [repairnator-experiments](https://github.com
 | **Number of the builds** | 1.137    | 52       |     -        | 366           | -              | 25            | 131    |
 
 In this repository there are 1.189 branches (excluding `master` branch), each of them associated with a failure.
+
+# Patch Analysis
+
+## repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit)
+
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| org.springframework.boot.context.embedded.<br>tomcat.ConnectorStartFailedException | [MainControllerTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/blob/742d559025c5ae3085be6b91de987d3743064be9/src/test/java/agent/MainControllerTest.java#L56) | [Application.java](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/blob/742d559025c5ae3085be6b91de987d3743064be9/src/main/java/agent/Application.java#L14)|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/agent/Application.java
++++ /src/main/java/agent/Application.java
+@@ -6,7 +6,6 @@
+ @org.springframework.context.annotation.ComponentScan({ "dbmanagement", "validator", "services", "controller", "agent" })
+ public class Application {
+ 	public static void main(java.lang.String[] args) {
+-		org.springframework.boot.SpringApplication.run(agent.Application.class, args);
+ 	}
+ }
+```
+
+**Overview**:
+
+**Reason why the patch has been generated**:
+
+**Useful information for the developer**:
