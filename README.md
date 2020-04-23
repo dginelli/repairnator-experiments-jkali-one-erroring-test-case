@@ -64,7 +64,33 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [ConfigDataTest.java]()| []()|
+| java.lang.NullPointerException | [ConfigDataTest.java]()| [ConfigData.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/uk/ac/cam/groupprojects/bravo/config/ConfigData.java
++++ /src/main/java/uk/ac/cam/groupprojects/bravo/config/ConfigData.java
+@@ -21,17 +21,6 @@
+ 			com.google.gson.JsonParser parser = new com.google.gson.JsonParser();
+ 			com.google.gson.JsonObject config = parser.parse(reader).getAsJsonObject();
+ 			com.google.gson.JsonObject boxes = config.getAsJsonObject("boxes");
+-			for (uk.ac.cam.groupprojects.bravo.imageProcessing.ScreenBox type : uk.ac.cam.groupprojects.bravo.imageProcessing.ScreenBox.values()) {
+-				java.lang.String typeName = type.name().toLowerCase();
+-				com.google.gson.JsonObject box = boxes.getAsJsonObject(typeName);
+-				double boxWidth = box.get("width").getAsDouble();
+-				double boxHeight = box.get("height").getAsDouble();
+-				com.google.gson.JsonArray corner = box.getAsJsonArray("corner");
+-				double cornerX = corner.get(0).getAsDouble();
+-				double cornerY = corner.get(1).getAsDouble();
+-				uk.ac.cam.groupprojects.bravo.imageProcessing.BoxInfo newBox = new uk.ac.cam.groupprojects.bravo.imageProcessing.BoxInfo(type, new java.awt.geom.Point2D.Double(cornerX, cornerY), boxWidth, boxHeight);
+-				mBoxes.put(type, newBox);
+-			}
+ 			com.google.gson.JsonPrimitive voice = config.getAsJsonPrimitive("voice");
+ 			mVoice = voice.getAsString();
+ 			com.google.gson.JsonObject spoken_fields = config.getAsJsonObject("spoken_fields");
+
+```
 
 ## AudibleAppliances-AudibleAppliances-348335601-20180302-184224
 
@@ -76,6 +102,31 @@ The test case terminates with an error only running it with Maven, but it passes
 |--------------|-------------------|----------------------------|
 | java.lang.NullPointerException | [ConfigDataTest.java]()| []()|
 
+**Kali patch**:
+
+```diff
+--- /src/main/java/uk/ac/cam/groupprojects/bravo/config/ConfigData.java
++++ /src/main/java/uk/ac/cam/groupprojects/bravo/config/ConfigData.java
+@@ -21,17 +21,6 @@
+ 			com.google.gson.JsonParser parser = new com.google.gson.JsonParser();
+ 			com.google.gson.JsonObject config = parser.parse(reader).getAsJsonObject();
+ 			com.google.gson.JsonObject boxes = config.getAsJsonObject("boxes");
+-			for (uk.ac.cam.groupprojects.bravo.imageProcessing.ScreenBox type : uk.ac.cam.groupprojects.bravo.imageProcessing.ScreenBox.values()) {
+-				java.lang.String typeName = type.name().toLowerCase();
+-				com.google.gson.JsonObject box = boxes.getAsJsonObject(typeName);
+-				double boxWidth = box.get("width").getAsDouble();
+-				double boxHeight = box.get("height").getAsDouble();
+-				com.google.gson.JsonArray corner = box.getAsJsonArray("corner");
+-				double cornerX = corner.get(0).getAsDouble();
+-				double cornerY = corner.get(1).getAsDouble();
+-				uk.ac.cam.groupprojects.bravo.imageProcessing.BoxInfo newBox = new uk.ac.cam.groupprojects.bravo.imageProcessing.BoxInfo(type, new java.awt.geom.Point2D.Double(cornerX, cornerY), boxWidth, boxHeight);
+-				mBoxes.put(type, newBox);
+-			}
+ 			com.google.gson.JsonPrimitive voice = config.getAsJsonPrimitive("voice");
+ 			mVoice = voice.getAsString();
+ 			com.google.gson.JsonObject spoken_fields = config.getAsJsonObject("spoken_fields");
+```
+
 ## AudibleAppliances-AudibleAppliances-348337755-20180302-184636
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit)
@@ -84,7 +135,33 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [ConfigDataTest.java]()| []()|
+| java.lang.NullPointerException | [ConfigDataTest.java]()| [ConfigData.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/uk/ac/cam/groupprojects/bravo/config/ConfigData.java
++++ /src/main/java/uk/ac/cam/groupprojects/bravo/config/ConfigData.java
+@@ -21,17 +21,6 @@
+ 			com.google.gson.JsonParser parser = new com.google.gson.JsonParser();
+ 			com.google.gson.JsonObject config = parser.parse(reader).getAsJsonObject();
+ 			com.google.gson.JsonObject boxes = config.getAsJsonObject("boxes");
+-			for (uk.ac.cam.groupprojects.bravo.imageProcessing.ScreenBox type : uk.ac.cam.groupprojects.bravo.imageProcessing.ScreenBox.values()) {
+-				java.lang.String typeName = type.name().toLowerCase();
+-				com.google.gson.JsonObject box = boxes.getAsJsonObject(typeName);
+-				double boxWidth = box.get("width").getAsDouble();
+-				double boxHeight = box.get("height").getAsDouble();
+-				com.google.gson.JsonArray corner = box.getAsJsonArray("corner");
+-				double cornerX = corner.get(0).getAsDouble();
+-				double cornerY = corner.get(1).getAsDouble();
+-				uk.ac.cam.groupprojects.bravo.imageProcessing.BoxInfo newBox = new uk.ac.cam.groupprojects.bravo.imageProcessing.BoxInfo(type, new java.awt.geom.Point2D.Double(cornerX, cornerY), boxWidth, boxHeight);
+-				mBoxes.put(type, newBox);
+-			}
+ 			com.google.gson.JsonPrimitive voice = config.getAsJsonPrimitive("voice");
+ 			mVoice = voice.getAsString();
+ 			com.google.gson.JsonObject spoken_fields = config.getAsJsonObject("spoken_fields");
+
+```
 
 ## DanielHWe-sonar-fxcop-385681821-20180530-150823
 
@@ -94,7 +171,23 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.IllegalArgumentException | [FxCopSensorTest.java]()| []()|
+| java.lang.IllegalArgumentException | [FxCopSensorTest.java]()| [FxCopSensor.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/org/sonar/plugins/fxcop/FxCopSensor.java
++++ /src/main/java/org/sonar/plugins/fxcop/FxCopSensor.java
+@@ -33,7 +33,7 @@
+ 	void executeImpl(org.sonar.api.batch.sensor.SensorContext context) {
+ 		GetAlternativeSlnPath(context);
+ 		fxCopConf.setAlternativeSln(this.altSlnFile);
+-		if (!fxCopConf.checkProperties(context.settings())) {
++		if (true) {
+ 			org.sonar.plugins.fxcop.FxCopSensor.LOG.warn("Skipping FxCop, either the report file or the assembly is missing");
+ 			return;
+ 		}
+```
 
 ## Raaycc-inglesapp-422238225-20180829-220230
 
@@ -104,7 +197,21 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.IllegalStateException | [ApplicationTests.java]()| []()|
+| java.lang.IllegalStateException | [ApplicationTests.java]()| [Application.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/br/edu/fapce/nexti/Application.java
++++ /src/main/java/br/edu/fapce/nexti/Application.java
+@@ -13,7 +13,6 @@
+ 	@org.springframework.context.annotation.Bean
+ 	public org.springframework.boot.CommandLineRunner commandLineRunner() {
+ 		return ( args) -> {
+-			createDefaultFinalUser();
+ 		};
+ 	}
+```
 
 ## RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313
 
@@ -114,7 +221,40 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [OutputTest.java]()| []()|
+| java.lang.NullPointerException | [OutputTest.java]()| [TerminalOutput.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/mars/out/TerminalOutput.java
++++ /src/main/java/mars/out/TerminalOutput.java
+@@ -16,18 +16,18 @@
+ 	public void writeToOutput() {
+ 		java.lang.System.out.println("\nOutput path: ");
+ 		java.lang.System.out.println("------------");
+-		if (coordinateType.equals("L") || coordinateType.equals("l")) {
++		if (true) {
+ 			mars.map.GeoTIFF convert = new mars.map.GeoTIFF();
+-			for (int i = 1; i <= resultList.size(); i++) {
+-				int x = resultList.get(i - 1).getX();
+-				int y = resultList.get(i - 1).getY();
++			for (int i = 1; i <= this.resultList.size(); i++) {
++				int x = this.resultList.get(i - 1).getX();
++				int y = this.resultList.get(i - 1).getY();
+ 				double[] outputCoordinate = convert.coordinateConvert(new mars.coordinate.Coordinate(x, y));
+ 				java.lang.System.out.println(((((i + ". (") + outputCoordinate[0]) + ", ") + outputCoordinate[1]) + ")");
+ 			}
+ 		} else {
+-			for (int i = 1; i <= resultList.size(); i++) {
+-				int x = resultList.get(i - 1).getX();
+-				int y = resultList.get(i - 1).getY();
++			for (int i = 1; i <= this.resultList.size(); i++) {
++				int x = this.resultList.get(i - 1).getX();
++				int y = this.resultList.get(i - 1).getY();
+ 				java.lang.System.out.println(((((i + ". (") + x) + ", ") + y) + ")");
+ 			}
+ 		}
+```
 
 ## Schrotty-DoIT-388971125-20180606-230606
 
@@ -124,7 +264,22 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-|  java.lang.ClassCastException| [ToDoTest.java]()| []()|
+|  java.lang.ClassCastException| [ToDoTest.java]()| [ToDo.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/de/swtproject/doit/core/ToDo.java
++++ /src/main/java/de/swtproject/doit/core/ToDo.java
+@@ -123,7 +123,6 @@
+ 		ds.put("start", this.getStart());
+ 		ds.put("deadline", this.getDeadline());
+ 		ds.put("notifyPoint", this.getNotifyPoint());
+-		ds.put("priority", this.getPriority());
+ 		return ds;
+ 	}
+ }
+```
 
 ## Schrotty-DoIT-388971144-20180606-230500
 
@@ -134,7 +289,22 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.ClassCastException | [ToDoTest.java]()| []()|
+| java.lang.ClassCastException | [ToDoTest.java]()| [ToDo.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/de/swtproject/doit/core/ToDo.java
++++ /src/main/java/de/swtproject/doit/core/ToDo.java
+@@ -123,7 +123,6 @@
+ 		ds.put("start", this.getStart());
+ 		ds.put("deadline", this.getDeadline());
+ 		ds.put("notifyPoint", this.getNotifyPoint());
+-		ds.put("priority", this.getPriority());
+ 		return ds;
+ 	}
+ }
+```
 
 ## atomix-atomix-389979054-20180609-024703
 
@@ -144,7 +314,31 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.util.concurrent.CompletionException | [AtomixClusterTest.java]()| []()|
+| java.util.concurrent.CompletionException | [AtomixClusterTest.java]()| [NettyMessagingService.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/io/atomix/cluster/messaging/impl/NettyMessagingService.java
++++ /src/main/java/io/atomix/cluster/messaging/impl/NettyMessagingService.java
+@@ -471,12 +471,12 @@
+ 			b.childHandler(new io.atomix.cluster.messaging.impl.NettyMessagingService.BasicChannelInitializer());
+ 		}
+ 		b.bind(localAddress.port()).addListener(((io.netty.channel.ChannelFutureListener) (( f) -> {
+-			if (f.isSuccess()) {
+-				log.info("{} accepting incoming connections on port {}", localAddress.address(), localAddress.port());
+-				serverChannel = f.channel();
++			if (true) {
++				this.log.info("{} accepting incoming connections on port {}", this.localAddress.address(), this.localAddress.port());
++				this.serverChannel = f.channel();
+ 				future.complete(null);
+ 			} else {
+-				log.warn("{} failed to bind to port {} due to {}", localAddress.address(), localAddress.port(), f.cause());
++				this.log.warn("{} failed to bind to port {} due to {}", this.localAddress.address(), this.localAddress.port(), f.cause());
+ 				future.completeExceptionally(f.cause());
+ 			}
+ 		})));
+```
 
 ## biojava-biojava-250779242-20170706-162512_bugonly
 
@@ -154,7 +348,22 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.io.IOException | [GenbankCookbookTest.java]()| []()|
+| java.io.IOException | [GenbankCookbookTest.java]()| [ProteinSequenceCreator.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/org/biojava/nbio/core/sequence/io/ProteinSequenceCreator.java
++++ /src/main/java/org/biojava/nbio/core/sequence/io/ProteinSequenceCreator.java
+@@ -16,7 +16,6 @@
+ 	@java.lang.Override
+ 	public org.biojava.nbio.core.sequence.template.AbstractSequence<org.biojava.nbio.core.sequence.compound.AminoAcidCompound> getSequence(java.util.List<org.biojava.nbio.core.sequence.compound.AminoAcidCompound> list) {
+ 		org.biojava.nbio.core.sequence.loader.ArrayListProxySequenceReader<org.biojava.nbio.core.sequence.compound.AminoAcidCompound> store = new org.biojava.nbio.core.sequence.loader.ArrayListProxySequenceReader<org.biojava.nbio.core.sequence.compound.AminoAcidCompound>();
+-		store.setCompoundSet(compoundSet);
+ 		store.setContents(list);
+ 		return new org.biojava.nbio.core.sequence.ProteinSequence(store);
+ 	}
+```
 
 ## codingchili-parser-excel-elasticsearch-372415239-20180428-154442
 
@@ -164,7 +373,32 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.io.FileNotFoundException | [TestParser.java]()| []()|
+| java.io.FileNotFoundException | [TestParser.java]()| [FileParser.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/com/codingchili/Model/FileParser.java
++++ /src/main/java/com/codingchili/Model/FileParser.java
+@@ -22,14 +22,14 @@
+ 
+ 	public FileParser(java.io.File file, int offset, java.lang.String fileName) throws com.codingchili.Model.ParserException, java.io.FileNotFoundException {
+ 		offset -= 1;
+-		if (file.exists()) {
++		if (true) {
+ 			try {
+ 				org.apache.poi.ss.usermodel.Workbook workbook = getWorkbook(file, fileName);
+ 				this.sheet = workbook.getSheetAt(0);
+ 				this.offset = offset;
+ 				this.fileName = fileName;
+-				this.columns = getColumnCount(sheet.getRow(offset));
+-				this.rows = getItemCount(sheet, offset);
++				this.columns = getColumnCount(this.sheet.getRow(offset));
++				this.rows = getItemCount(this.sheet, offset);
+ 			} catch (java.lang.Exception e) {
+ 				if (e instanceof com.codingchili.Model.ParserException) {
+ 					throw ((com.codingchili.Model.ParserException) (e));
+```
 
 ## ctripcorp-apollo-389668297-20180608-125754
 
@@ -174,7 +408,23 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.RuntimeException | [MetaDomainTest.java]()| []()|
+| java.lang.RuntimeException | [MetaDomainTest.java]()| [NetUtil.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/com/ctrip/framework/apollo/core/utils/NetUtil.java
++++ /src/main/java/com/ctrip/framework/apollo/core/utils/NetUtil.java
+@@ -33,7 +33,7 @@
+ 		java.lang.String validAddress = null;
+ 		java.lang.String[] addressArr = com.ctrip.framework.apollo.core.utils.NetUtil.changeAddressArr(metaAddress);
+ 		for (java.lang.String address : addressArr) {
+-			if (com.ctrip.framework.apollo.core.utils.NetUtil.checkUrl(address)) {
++			if (true) {
+ 				validAddress = address;
+ 				break;
+ 			}
+```
 
 ## dhatim-dropwizard-sentry-386721415-20180601-172805
 
@@ -184,7 +434,25 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [SentryAppenderFactoryTest.java]()| []()|
+| java.lang.NullPointerException | [SentryAppenderFactoryTest.java]()| [SentryAppenderFactory.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/org/dhatim/dropwizard/sentry/logging/SentryAppenderFactory.java
++++ /src/main/java/org/dhatim/dropwizard/sentry/logging/SentryAppenderFactory.java
+@@ -117,8 +117,8 @@
+ 			throw new java.lang.RuntimeException(ex);
+ 		}
+ 		java.lang.String dsn = this.dsn;
+-		if (!new io.sentry.dsn.Dsn(dsn).getOptions().containsKey("stacktrace.app.packages")) {
+-			dsn += "&stacktrace.app.packages=" + stacktraceAppPackages.map(( list) -> list.stream().collect(java.util.stream.Collectors.joining(","))).orElse("");
++		if (false) {
++			dsn += "&stacktrace.app.packages=" + this.stacktraceAppPackages.map(( list) -> list.stream().collect(java.util.stream.Collectors.joining(","))).orElse("");
+ 		}
+ 		io.sentry.SentryClient sentryClient = io.sentry.SentryClientFactory.sentryClient(dsn, factory);
+ 		final io.sentry.logback.SentryAppender appender = new io.sentry.logback.SentryAppender();
+```
 
 ## dta-sherlock-sirh-gestion-paie-384713759-20180528-141604
 
@@ -194,7 +462,22 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| javax.persistence.PersistenceException | [CotisationServiceJpaTest.java]()| []()|
+| javax.persistence.PersistenceException | [CotisationServiceJpaTest.java]()| [Cotisation.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/dev/paie/entite/Cotisation.java
++++ /src/main/java/dev/paie/entite/Cotisation.java
+@@ -21,7 +21,6 @@
+ 
+ 	public Cotisation(java.lang.Integer id, java.lang.String code, java.lang.String libelle, java.math.BigDecimal tauxSalarial, java.math.BigDecimal tauxPatronal) {
+ 		super();
+-		this.id = id;
+ 		this.code = code;
+ 		this.libelle = libelle;
+ 		this.tauxSalarial = tauxSalarial;
+```
 
 ## dta-sherlock-sirh-gestion-paie-384760371-20180528-160928
 
@@ -204,7 +487,22 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [AvantageRepositoryTest.java]()| []()|
+| java.lang.NullPointerException | [AvantageRepositoryTest.java]()| [Avantage.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/dev/paie/entite/Avantage.java
++++ /src/main/java/dev/paie/entite/Avantage.java
+@@ -46,7 +46,6 @@
+ 	}
+ 
+ 	public void setId(java.lang.Integer id) {
+-		this.id = id;
+ 	}
+ 
+ 	public boolean equals(dev.paie.entite.Avantage av) {
+```
 
 ## nilsreiter-CorefAnnotator-354919174-20180318-063510
 
@@ -214,7 +512,21 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [TestCoreferenceModelLoader.java]()| []()|
+| java.lang.NullPointerException | [TestCoreferenceModelLoader.java]()| [EntityTreeModel.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/de/unistuttgart/ims/coref/annotator/document/EntityTreeModel.java
++++ /src/main/java/de/unistuttgart/ims/coref/annotator/document/EntityTreeModel.java
+@@ -14,7 +14,6 @@
+ 		super(new de.unistuttgart.ims.coref.annotator.CATreeNode(null, de.unistuttgart.ims.coref.annotator.Annotator.getString("tree.root")));
+ 		this.coreferenceModel = docMod;
+ 		this.coreferenceModel.addCoreferenceModelListener(this);
+-		this.initialise();
+ 		this.resort();
+ 	}
+```
 
 ## vitorenesduarte-VCD-java-client-373018834-20180430-144835
 
@@ -224,7 +536,22 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.OutOfMemoryError | [DependencyQueueTest.java]()| []()|
+| java.lang.OutOfMemoryError | [DependencyQueueTest.java]()| [DependencyQueue.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/org/imdea/vcd/queue/DependencyQueue.java
++++ /src/main/java/org/imdea/vcd/queue/DependencyQueue.java
+@@ -64,7 +64,6 @@
+ 		org.imdea.vcd.queue.DependencyQueue.Node<E> it = first;
+ 		while (it != null) {
+ 			if (e.before(it.item)) {
+-				return it;
+ 			}
+ 			it = it.next;
+ 		} 
+```
 
 ## vitorenesduarte-VCD-java-client-373043004-20180430-155241
 
@@ -234,7 +561,22 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.OutOfMemoryError | [DependencyQueueTest.java]()| []()|
+| java.lang.OutOfMemoryError | [DependencyQueueTest.java]()| [DependencyQueue.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/org/imdea/vcd/queue/DependencyQueue.java
++++ /src/main/java/org/imdea/vcd/queue/DependencyQueue.java
+@@ -63,7 +63,6 @@
+ 		org.imdea.vcd.queue.DependencyQueue.Node<E> it = first;
+ 		while (it != null) {
+ 			if (e.before(it.item)) {
+-				return it;
+ 			}
+ 			it = it.next;
+ 		} 
+```
 
 ## vlingo-vlingo-actors-415654258-20180813-233512
 
@@ -244,4 +586,19 @@ The test case terminates with an error only running it with Maven, but it passes
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.Exception | [ActorStopTest.java]()| []()|
+| java.lang.Exception | [ActorStopTest.java]()| [ConcurrentQueueMailbox.java]()|
+
+**Kali patch**:
+
+```diff
+--- /src/main/java/io/vlingo/actors/plugin/mailbox/concurrentqueue/ConcurrentQueueMailbox.java
++++ /src/main/java/io/vlingo/actors/plugin/mailbox/concurrentqueue/ConcurrentQueueMailbox.java
+@@ -12,7 +12,6 @@
+ 
+ 	public void close() {
+ 		queue.clear();
+-		dispatcher.close();
+ 	}
+ 
+ 	@java.lang.Override
+```
