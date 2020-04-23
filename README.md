@@ -60,74 +60,188 @@ The test case terminates with an error only running it with Maven, but it passes
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit)
 
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.NullPointerException | [ConfigDataTest.java]()| []()|
+
 ## AudibleAppliances-AudibleAppliances-348335601-20180302-184224
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit)
+
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.NullPointerException | [ConfigDataTest.java]()| []()|
 
 ## AudibleAppliances-AudibleAppliances-348337755-20180302-184636
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit)
 
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.NullPointerException | [ConfigDataTest.java]()| []()|
+
 ## DanielHWe-sonar-fxcop-385681821-20180530-150823
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit)
+
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.IllegalArgumentException | [FxCopSensorTest.java]()| []()|
 
 ## Raaycc-inglesapp-422238225-20180829-220230
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Raaycc-inglesapp-422238225-20180829-220230-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Raaycc-inglesapp-422238225-20180829-220230-firstCommit)
 
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.IllegalStateException | [ApplicationTests.java]()| []()|
+
 ## RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit)
+
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.NullPointerException | [OutputTest.java]()| []()|
 
 ## Schrotty-DoIT-388971125-20180606-230606
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit)
 
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+|  java.lang.ClassCastException| [ToDoTest.java]()| []()|
+
 ## Schrotty-DoIT-388971144-20180606-230500
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit)
+
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.ClassCastException | [ToDoTest.java]()| []()|
 
 ## atomix-atomix-389979054-20180609-024703
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit)
 
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.util.concurrent.CompletionException | [AtomixClusterTest.java]()| []()|
+
 ## biojava-biojava-250779242-20170706-162512_bugonly
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit)
+
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.io.IOException | [GenbankCookbookTest.java]()| []()|
 
 ## codingchili-parser-excel-elasticsearch-372415239-20180428-154442
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-codingchili-parser-excel-elasticsearch-372415239-20180428-154442-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-codingchili-parser-excel-elasticsearch-372415239-20180428-154442-firstCommit)
 
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.io.FileNotFoundException | [TestParser.java]()| []()|
+
 ## ctripcorp-apollo-389668297-20180608-125754
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-ctripcorp-apollo-389668297-20180608-125754-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-ctripcorp-apollo-389668297-20180608-125754-firstCommit)
+
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.RuntimeException | [MetaDomainTest.java]()| []()|
 
 ## dhatim-dropwizard-sentry-386721415-20180601-172805
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit)
 
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.NullPointerException | [SentryAppenderFactoryTest.java]()| []()|
+
 ## dta-sherlock-sirh-gestion-paie-384713759-20180528-141604
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit)
+
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| javax.persistence.PersistenceException | [CotisationServiceJpaTest.java]()| []()|
 
 ## dta-sherlock-sirh-gestion-paie-384760371-20180528-160928
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit)
 
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.NullPointerException | [AvantageRepositoryTest.java]()| []()|
+
 ## nilsreiter-CorefAnnotator-354919174-20180318-063510
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-354919174-20180318-063510-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-354919174-20180318-063510-firstCommit)
+
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.NullPointerException | [TestCoreferenceModelLoader.java]()| []()|
 
 ## vitorenesduarte-VCD-java-client-373018834-20180430-144835
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373018834-20180430-144835-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373018834-20180430-144835-firstCommit)
 
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.OutOfMemoryError | [DependencyQueueTest.java]()| []()|
+
 ## vitorenesduarte-VCD-java-client-373043004-20180430-155241
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373043004-20180430-155241-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373043004-20180430-155241-firstCommit)
 
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.OutOfMemoryError | [DependencyQueueTest.java]()| []()|
+
 ## vlingo-vlingo-actors-415654258-20180813-233512
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-vlingo-vlingo-actors-415654258-20180813-233512-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-vlingo-vlingo-actors-415654258-20180813-233512-firstCommit)
+
+**Information about the failure**:
+
+| Error type   | Erroring test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.Exception | [ActorStopTest.java]()| []()|
