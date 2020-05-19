@@ -294,6 +294,9 @@ index b1d5143..489610d 100644
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit)
 
+**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/346537408](https://api.travis-ci.org/v3/build/346537408)
+**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/346548339](https://api.travis-ci.org/v3/build/346548339)
+
 **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
@@ -333,9 +336,14 @@ index b1d5143..489610d 100644
  		}
 ```
 
+**Human fix**: [https://github.com/RossBlassingame/JPL-CUSeniorProjects/commit/b1b88cfacb0a4c3fae653ad2bb8098b27f9b7a0e](https://github.com/RossBlassingame/JPL-CUSeniorProjects/commit/b1b88cfacb0a4c3fae653ad2bb8098b27f9b7a0e)
+
 ## Schrotty-DoIT-388971125-20180606-230606
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit)
+
+**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/388971125](https://api.travis-ci.org/v3/build/388971125)
+**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/388978079](https://api.travis-ci.org/v3/build/388978079) There is another failing build before the passed one (388975711).
 
 **Information about the failure**:
 
