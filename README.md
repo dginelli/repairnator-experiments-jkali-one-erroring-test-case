@@ -24,7 +24,7 @@ In this repository there are 1.189 branches (excluding `master` branch), each of
 
 # Patch Analysis
 
-### repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit
+### Arquisoft-Agents_i1a-363526725-20180407-180717
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit)
 
@@ -122,9 +122,13 @@ There are other builds, and thus other changes before the passed one (348327863 
 
 ```
 
-## AudibleAppliances-AudibleAppliances-348335601-20180302-184224
+### AudibleAppliances-AudibleAppliances-348335601-20180302-184224
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit)
+
+**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/348335601](https://api.travis-ci.org/v3/build/348335601)
+**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/348335998](https://api.travis-ci.org/v3/build/348335998)
+**List of Builds**: [https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=499](https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=499)
 
 **Information about the failure**:
 
@@ -156,6 +160,8 @@ There are other builds, and thus other changes before the passed one (348327863 
  			mVoice = voice.getAsString();
  			com.google.gson.JsonObject spoken_fields = config.getAsJsonObject("spoken_fields");
 ```
+
+**Human fix**: [https://github.com/AudibleAppliances/AudibleAppliances/compare/11b75eadf3f7...c3a110e62fa4](https://github.com/AudibleAppliances/AudibleAppliances/compare/11b75eadf3f7...c3a110e62fa4)
 
 ## AudibleAppliances-AudibleAppliances-348337755-20180302-184636
 
