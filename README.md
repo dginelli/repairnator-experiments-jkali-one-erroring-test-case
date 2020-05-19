@@ -785,7 +785,7 @@ index febeacf..506ed08 100644
  	private Integer id;
 ```
 
-## nilsreiter-CorefAnnotator-354919174-20180318-063510
+### nilsreiter-CorefAnnotator-354919174-20180318-063510
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-354919174-20180318-063510-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-354919174-20180318-063510-firstCommit)
 
@@ -816,6 +816,12 @@ index febeacf..506ed08 100644
 ## vitorenesduarte-VCD-java-client-373018834-20180430-144835
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373018834-20180430-144835-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-vitorenesduarte-VCD-java-client-373018834-20180430-144835-firstCommit)
+
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/373018834](https://api.travis-ci.org/v3/build/373018834)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/373050763](https://api.travis-ci.org/v3/build/373050763)
+There are other failing builds before the passed one (373018849, 373024770, 373024800, 373041215, 373041223, 373043004, 373043033)
+- **List of Builds**: [https://api.travis-ci.org/v3/repo/VCD-java-client/14879569/builds?offset=378](https://api.travis-ci.org/v3/repo/VCD-java-client/14879569/builds?offset=378)
+- **Pull Request**: [https://github.com/vitorenesduarte/VCD-java-client/pull/13](https://github.com/vitorenesduarte/VCD-java-client/pull/13)
 
 **Information about the failure**:
 
