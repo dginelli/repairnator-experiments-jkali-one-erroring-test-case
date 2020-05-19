@@ -494,7 +494,7 @@ index fc36c38..6fdb097 100644
 **Branch associated with the failure**: [repairnator-repairnator-experiments-codingchili-parser-excel-elasticsearch-372415239-20180428-154442-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-codingchili-parser-excel-elasticsearch-372415239-20180428-154442-firstCommit)
 
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/372415239](https://api.travis-ci.org/v3/build/372415239)
-_ **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/372417731](https://api.travis-ci.org/v3/build/372417731)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/372417731](https://api.travis-ci.org/v3/build/372417731)
 
 **Information about the failure**:
 
@@ -553,9 +553,13 @@ index f632e03..f2654b0 100644
      private static final String XLSX = ".xlsx";
  ```
 
-## ctripcorp-apollo-389668297-20180608-125754
+### ctripcorp-apollo-389668297-20180608-125754
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-ctripcorp-apollo-389668297-20180608-125754-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-ctripcorp-apollo-389668297-20180608-125754-firstCommit)
+
+-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/389668297](https://api.travis-ci.org/v3/build/389668297)
+-**Passing Travis CI Build**: Not found, the pull request has not been accepted
+-**Pull Request**: [https://github.com/ctripcorp/apollo/pull/1167](https://github.com/ctripcorp/apollo/pull/1167)
 
 **Information about the failure**:
 
