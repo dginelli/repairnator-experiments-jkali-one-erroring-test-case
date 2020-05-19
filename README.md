@@ -648,7 +648,7 @@ index 8dee656..7b33490 100644
      }
 ```
 
-## dta-sherlock-sirh-gestion-paie-384713759-20180528-141604
+### dta-sherlock-sirh-gestion-paie-384713759-20180528-141604
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit)
 
@@ -719,9 +719,13 @@ index 160e012..cb165a1 100644
  		cotisationService.supprimer();
  ```
 
-## dta-sherlock-sirh-gestion-paie-384760371-20180528-160928
+### dta-sherlock-sirh-gestion-paie-384760371-20180528-160928
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384760371-20180528-160928-firstCommit)
+
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/384760371](https://api.travis-ci.org/v3/build/384760371)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/384762369](https://api.travis-ci.org/v3/build/384762369)
+- **Pull Request**: [https://github.com/dta-sherlock/sirh-gestion-paie/pull/6](https://github.com/dta-sherlock/sirh-gestion-paie/pull/6)
 
 **Information about the failure**:
 
@@ -742,6 +746,43 @@ index 160e012..cb165a1 100644
  	}
  
  	public boolean equals(dev.paie.entite.Avantage av) {
+```
+
+**Human fix**:
+
+```diff
+From d81b4ef14fe1137c6c087d18b436fffe03c7cd72 Mon Sep 17 00:00:00 2001
+From: Gauthier Puertas <gauthier.puertas@gmail.com>
+Date: Mon, 28 May 2018 16:11:56 +0200
+Subject: =?UTF-8?q?Suppression=20g=C3=A9n=C3=A9ration=20ID=20pour?=
+ =?UTF-8?q?=20avantage?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ src/main/java/dev/paie/entite/Avantage.java | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/src/main/java/dev/paie/entite/Avantage.java b/src/main/java/dev/paie/entite/Avantage.java
+index febeacf..506ed08 100644
+--- a/src/main/java/dev/paie/entite/Avantage.java
++++ b/src/main/java/dev/paie/entite/Avantage.java
+@@ -4,15 +4,12 @@
+ 
+ import javax.persistence.Column;
+ import javax.persistence.Entity;
+-import javax.persistence.GeneratedValue;
+-import javax.persistence.GenerationType;
+ import javax.persistence.Id;
+ 
+ @Entity
+ public class Avantage {
+ 
+ 	@Id
+-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+ 	@Column(name = "id_avantage", unique = true, nullable = false)
+ 	private Integer id;
 ```
 
 ## nilsreiter-CorefAnnotator-354919174-20180318-063510
