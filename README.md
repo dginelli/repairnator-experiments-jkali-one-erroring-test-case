@@ -262,9 +262,13 @@ index b1d5143..489610d 100644
      SensorContext context = mock(SensorContext.class);]
 ```
 
-## Raaycc-inglesapp-422238225-20180829-220230
+### Raaycc-inglesapp-422238225-20180829-220230
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Raaycc-inglesapp-422238225-20180829-220230-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Raaycc-inglesapp-422238225-20180829-220230-firstCommit)
+
+**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/422238225](https://api.travis-ci.org/v3/build/422238225)
+**Passing Travis CI Buildé**: Not found
+**List of Builds**: [https://api.travis-ci.org/v3/repo/inglesapp/19094602/builds?offset=17](https://api.travis-ci.org/v3/repo/inglesapp/19094602/builds?offset=17)
 
 **Information about the failure**:
 
