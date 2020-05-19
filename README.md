@@ -292,12 +292,12 @@ index b1d5143..489610d 100644
 
 ## RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-RossBlassingame-JPL-CUSeniorProjects-346537408-20180227-000313-firstCommit)
 
-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/346537408](https://api.travis-ci.org/v3/build/346537408)
-**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/346548339](https://api.travis-ci.org/v3/build/346548339)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/346537408](https://api.travis-ci.org/v3/build/346537408)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/346548339](https://api.travis-ci.org/v3/build/346548339)
 
-**Information about the failure**:
+- **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
@@ -340,10 +340,10 @@ index b1d5143..489610d 100644
 
 ### Schrotty-DoIT-388971125-20180606-230606
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit)
 
-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/388971125](https://api.travis-ci.org/v3/build/388971125)
-**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/388978079](https://api.travis-ci.org/v3/build/388978079) There is another failing build before the passed one (388975711).
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/388971125](https://api.travis-ci.org/v3/build/388971125)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/388978079](https://api.travis-ci.org/v3/build/388978079) There is another failing build before the passed one (388975711).
 
 **Information about the failure**:
 
@@ -368,14 +368,14 @@ index b1d5143..489610d 100644
 
 ### Schrotty-DoIT-388971144-20180606-230500
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit)
 
-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/388971144](https://api.travis-ci.org/v3/build/388971144)
-**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/388978099](https://api.travis-ci.org/v3/build/388978099)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/388971144](https://api.travis-ci.org/v3/build/388971144)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/388978099](https://api.travis-ci.org/v3/build/388978099)
 
-**Pull Request**: [https://github.com/Schrotty/DoIT/pull/25](https://github.com/Schrotty/DoIT/pull/25)
+- **Pull Request**: [https://github.com/Schrotty/DoIT/pull/25](https://github.com/Schrotty/DoIT/pull/25)
 
-**Information about the failure**:
+- **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
@@ -421,14 +421,14 @@ index fc36c38..6fdb097 100644
      }
 ```
 
-## atomix-atomix-389979054-20180609-024703
+### atomix-atomix-389979054-20180609-024703
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit)
 
-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/389979054](https://api.travis-ci.org/v3/build/389979054)
-**Passing Travis CI Build**: Not found, but it seems that the pull request has been merged even the build failed.
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/389979054](https://api.travis-ci.org/v3/build/389979054)
+- **Passing Travis CI Build**: Not found, but it seems that the pull request has been merged even the build failed.
 
-**Pull Request**: [https://github.com/atomix/atomix/pull/603](https://github.com/atomix/atomix/pull/603)
+- **Pull Request**: [https://github.com/atomix/atomix/pull/603](https://github.com/atomix/atomix/pull/603)
 
 **Information about the failure**:
 
@@ -460,13 +460,13 @@ index fc36c38..6fdb097 100644
  		})));
 ```
 
-## biojava-biojava-250779242-20170706-162512_bugonly
+### biojava-biojava-250779242-20170706-162512_bugonly
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit)
 
-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/250779242](https://api.travis-ci.org/v3/build/250779242)
-**Passing Travis CI Build**: Not found
-**List of Builds**: [https://api.travis-ci.org/v3/repo/biojava/746869/builds?offset=562](https://api.travis-ci.org/v3/repo/biojava/746869/builds?offset=562)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/250779242](https://api.travis-ci.org/v3/build/250779242)
+- **Passing Travis CI Build**: Not found
+- **List of Builds**: [https://api.travis-ci.org/v3/repo/biojava/746869/builds?offset=562](https://api.travis-ci.org/v3/repo/biojava/746869/builds?offset=562)
 
 **Information about the failure**:
 
@@ -489,9 +489,12 @@ index fc36c38..6fdb097 100644
  	}
 ```
 
-## codingchili-parser-excel-elasticsearch-372415239-20180428-154442
+### codingchili-parser-excel-elasticsearch-372415239-20180428-154442
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-codingchili-parser-excel-elasticsearch-372415239-20180428-154442-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-codingchili-parser-excel-elasticsearch-372415239-20180428-154442-firstCommit)
+
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/372415239](https://api.travis-ci.org/v3/build/372415239)
+_ **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/372417731](https://api.travis-ci.org/v3/build/372417731)
 
 **Information about the failure**:
 
@@ -523,6 +526,32 @@ index fc36c38..6fdb097 100644
  				if (e instanceof com.codingchili.Model.ParserException) {
  					throw ((com.codingchili.Model.ParserException) (e));
 ```
+
+**Human fix**:
+
+```diff
+From 9f6e0abf2210a832cbaf55b152904161bf841ac3 Mon Sep 17 00:00:00 2001
+From: Robin Duda <robin.duda@idainfront.se>
+Date: Sat, 28 Apr 2018 15:54:28 +0200
+Subject: Renamed file used in test-case for invalid excel content.
+
+---
+ src/test/java/TestParser.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/test/java/TestParser.java b/src/test/java/TestParser.java
+index f632e03..f2654b0 100644
+--- a/src/test/java/TestParser.java
++++ b/src/test/java/TestParser.java
+@@ -18,7 +18,7 @@
+ public class TestParser {
+     public static final String TEST_XLSX_FILE = "src/test/java/test.xlsx";
+     public static final String TEST_XLS_FILE = "src/test/java/test.xls";
+-    public static final String TEST_INVALID_FILE = "src/test/java/test_invalid.xlsx";
++    public static final String TEST_INVALID_FILE = "src/test/java/invalid.xlsx";
+     public static final int ROW_OFFSET = 5;
+     private static final String XLSX = ".xlsx";
+ ```
 
 ## ctripcorp-apollo-389668297-20180608-125754
 
