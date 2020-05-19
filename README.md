@@ -789,6 +789,10 @@ index febeacf..506ed08 100644
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-354919174-20180318-063510-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-354919174-20180318-063510-firstCommit)
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/354919174](https://api.travis-ci.org/v3/build/354919174)
+- **Passing Travis CI Build**: Not found
+- **List of Builds**: [https://api.travis-ci.org/v3/repo/CorefAnnotator/17531534/builds?offset=960](https://api.travis-ci.org/v3/repo/CorefAnnotator/17531534/builds?offset=960)
+
 **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
