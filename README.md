@@ -904,35 +904,39 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
  	@java.lang.Override
 ```
 
-### repairnator-repairnator-experiments-Hellojungle-rocketmq-421420531-20180828-082343-firstCommit
+### Hellojungle-rocketmq-421420531-20180828-082343
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Hellojungle-rocketmq-421420531-20180828-082343-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Hellojungle-rocketmq-421420531-20180828-082343-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/421420531](https://api.travis-ci.org/v3/build/421420531) - Status is errored
+- **Passing Travis CI Build**: Not found
 
-### repairnator-repairnator-experiments-apache-twill-356030973-20180320-212647-firstCommit
+### apache-twill-356030973-20180320-212647
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-twill-356030973-20180320-212647-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-twill-356030973-20180320-212647-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/356030973](https://api.travis-ci.org/v3/build/356030973)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/356031863](https://api.travis-ci.org/v3/build/356031863)
 
-### repairnator-repairnator-experiments-chtyim-twill-356031025-20180320-212226-firstCommit
+**Human fix**: [https://github.com/apache/twill/compare/8f70aa4d4924...ee4d13701b21](https://github.com/apache/twill/compare/8f70aa4d4924...ee4d13701b21)
+
+### chtyim-twill-356031025-20180320-212226
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-chtyim-twill-356031025-20180320-212226-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-chtyim-twill-356031025-20180320-212226-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/356031025](https://api.travis-ci.org/v3/build/356031025) (Check why based on the endpoint, the status is different: failed vs errored)
+- **Passing Travis CI Build**: Not found
+- **List of Failing Builds**: [https://api.travis-ci.org/v3/repo/twill/9575800/builds?offset=279](https://api.travis-ci.org/v3/repo/twill/9575800/builds?offset=279)
 
-### repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit
+### dropwizard-dropwizard-279515036-20170925-155015_bugonly
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/279515036](https://api.travis-ci.org/v3/build/279515036)
+- **Passing Travis CI Build**: Not found
+- **List of Builds**: [https://api.travis-ci.org/v3/repo/dropwizard/552978/builds?offset=3400](https://api.travis-ci.org/v3/repo/dropwizard/552978/builds?offset=3400)
 
-### repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit
+### dropwizard-dropwizard-279538331-20170925-165443_bugonly
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit)
 
