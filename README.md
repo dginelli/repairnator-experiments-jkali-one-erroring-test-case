@@ -79,9 +79,16 @@ index 7d0ac71..2ee3c25 100644
      }
 ```
 
-## AudibleAppliances-AudibleAppliances-348327780-20180302-182413
+### AudibleAppliances-AudibleAppliances-348327780-20180302-182413
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit)
+
+**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/348327780](https://api.travis-ci.org/v3/build/348327780)
+**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/348330105](https://api.travis-ci.org/v3/build/348330105)
+There are other builds, and thus other changes before the passed one (348327863 and 348328353)
+
+**List of builds**: [https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=500](https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=500)
+
 
 **Information about the failure**:
 
