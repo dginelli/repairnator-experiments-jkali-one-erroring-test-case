@@ -905,15 +905,88 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
 ```
 
 ### repairnator-repairnator-experiments-Hellojungle-rocketmq-421420531-20180828-082343-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-Hellojungle-rocketmq-421420531-20180828-082343-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Hellojungle-rocketmq-421420531-20180828-082343-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-apache-twill-356030973-20180320-212647-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-twill-356030973-20180320-212647-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-twill-356030973-20180320-212647-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-chtyim-twill-356031025-20180320-212226-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-chtyim-twill-356031025-20180320-212226-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-chtyim-twill-356031025-20180320-212226-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-dropwizard-dropwizard-300099479-20171110-114555_bugonly-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-300099479-20171110-114555_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-300099479-20171110-114555_bugonly-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-dropwizard-dropwizard-300124879-20171110-125652-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-300124879-20171110-125652-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-300124879-20171110-125652-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-dropwizard-dropwizard-316114281-20171213-225745_bugonly-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-316114281-20171213-225745_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-316114281-20171213-225745_bugonly-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-dropwizard-dropwizard-324212976-20180102-184011-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-324212976-20180102-184011-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-324212976-20180102-184011-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-dropwizard-dropwizard-358392819-20180326-151558-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-358392819-20180326-151558-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-358392819-20180326-151558-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-dropwizard-dropwizard-373737953-20180502-042402-firstCommit
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-373737953-20180502-042402-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-373737953-20180502-042402-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
 ### repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit
 
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
+
+**Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit)
+
+- **Failing Travis CI Build**: 
+- **Passing Travis CI Build**:
