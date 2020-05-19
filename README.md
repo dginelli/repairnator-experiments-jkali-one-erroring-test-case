@@ -557,9 +557,9 @@ index f632e03..f2654b0 100644
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-ctripcorp-apollo-389668297-20180608-125754-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-ctripcorp-apollo-389668297-20180608-125754-firstCommit)
 
--**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/389668297](https://api.travis-ci.org/v3/build/389668297)
--**Passing Travis CI Build**: Not found, the pull request has not been accepted
--**Pull Request**: [https://github.com/ctripcorp/apollo/pull/1167](https://github.com/ctripcorp/apollo/pull/1167)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/389668297](https://api.travis-ci.org/v3/build/389668297)
+- **Passing Travis CI Build**: Not found, the pull request has not been accepted
+- **Pull Request**: [https://github.com/ctripcorp/apollo/pull/1167](https://github.com/ctripcorp/apollo/pull/1167)
 
 **Information about the failure**:
 
@@ -652,6 +652,10 @@ index 8dee656..7b33490 100644
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-384713759-20180528-141604-firstCommit)
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/384713759](https://api.travis-ci.org/v3/build/384713759)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/384715417](https://api.travis-ci.org/v3/build/384715417)
+- **Pull Request**: [https://github.com/dta-sherlock/sirh-gestion-paie/pull/2](https://github.com/dta-sherlock/sirh-gestion-paie/pull/2)
+
 **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
@@ -672,6 +676,48 @@ index 8dee656..7b33490 100644
  		this.libelle = libelle;
  		this.tauxSalarial = tauxSalarial;
 ```
+
+**Human fix**:
+
+```diff
+From dc7cbf5a7f1343b49d849dae078258315a92904a Mon Sep 17 00:00:00 2001
+From: Geraud Tourrilhes <geraud.tourrilhes@gmail.com>
+Date: Mon, 28 May 2018 14:19:36 +0200
+Subject: [PATCH] suppression id cotisation
+
+---
+ src/main/java/dev/paie/entite/Cotisation.java                | 3 +--
+ src/test/java/dev/paie/service/CotisationServiceJpaTest.java | 2 +-
+ 2 files changed, 2 insertions(+), 3 deletions(-)
+
+diff --git a/src/main/java/dev/paie/entite/Cotisation.java b/src/main/java/dev/paie/entite/Cotisation.java
+index 5c675df..df4f35a 100644
+--- a/src/main/java/dev/paie/entite/Cotisation.java
++++ b/src/main/java/dev/paie/entite/Cotisation.java
+@@ -26,9 +26,8 @@
+ 	@Column(name = "tauxPatronal")
+ 	private BigDecimal tauxPatronal;
+ 
+-	public Cotisation(Integer id, String code, String libelle, BigDecimal tauxSalarial, BigDecimal tauxPatronal) {
++	public Cotisation(String code, String libelle, BigDecimal tauxSalarial, BigDecimal tauxPatronal) {
+ 		super();
+-		this.id = id;
+ 		this.code = code;
+ 		this.libelle = libelle;
+ 		this.tauxSalarial = tauxSalarial;
+diff --git a/src/test/java/dev/paie/service/CotisationServiceJpaTest.java b/src/test/java/dev/paie/service/CotisationServiceJpaTest.java
+index 160e012..cb165a1 100644
+--- a/src/test/java/dev/paie/service/CotisationServiceJpaTest.java
++++ b/src/test/java/dev/paie/service/CotisationServiceJpaTest.java
+@@ -26,7 +26,7 @@
+ 	@Test
+ 	public void test_sauvegarder_lister_mettre_a_jour() {
+ 
+-		cotisation = new Cotisation(new Integer(1), "EP50", "l", new BigDecimal("0.54045"), new BigDecimal("0.1478"));
++		cotisation = new Cotisation("EP50", "l", new BigDecimal("0.54045"), new BigDecimal("0.1478"));
+ 
+ 		cotisationService.supprimer();
+ ```
 
 ## dta-sherlock-sirh-gestion-paie-384760371-20180528-160928
 
