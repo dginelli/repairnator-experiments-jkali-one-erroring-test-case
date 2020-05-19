@@ -903,3 +903,17 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
  
  	@java.lang.Override
 ```
+
+### repairnator-repairnator-experiments-Hellojungle-rocketmq-421420531-20180828-082343-firstCommit
+### repairnator-repairnator-experiments-apache-twill-356030973-20180320-212647-firstCommit
+### repairnator-repairnator-experiments-chtyim-twill-356031025-20180320-212226-firstCommit
+### repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit
+### repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit
+### repairnator-repairnator-experiments-dropwizard-dropwizard-300099479-20171110-114555_bugonly-firstCommit
+### repairnator-repairnator-experiments-dropwizard-dropwizard-300124879-20171110-125652-firstCommit
+### repairnator-repairnator-experiments-dropwizard-dropwizard-316114281-20171213-225745_bugonly-firstCommit
+### repairnator-repairnator-experiments-dropwizard-dropwizard-324212976-20180102-184011-firstCommit
+### repairnator-repairnator-experiments-dropwizard-dropwizard-358392819-20180326-151558-firstCommit
+### repairnator-repairnator-experiments-dropwizard-dropwizard-373737953-20180502-042402-firstCommit
+### repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit
+
