@@ -202,9 +202,12 @@ There are other builds, and thus other changes before the passed one (348327863 
 
 ```
 
-## DanielHWe-sonar-fxcop-385681821-20180530-150823
+### DanielHWe-sonar-fxcop-385681821-20180530-150823
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit)
+
+**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/385681821](https://api.travis-ci.org/v3/build/385681821)
+**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/385688380](https://api.travis-ci.org/v3/build/385688380)
 
 **Information about the failure**:
 
@@ -226,6 +229,37 @@ There are other builds, and thus other changes before the passed one (348327863 
  			org.sonar.plugins.fxcop.FxCopSensor.LOG.warn("Skipping FxCop, either the report file or the assembly is missing");
  			return;
  		}
+```
+
+**Human fix**:
+
+```diff
+[From 8bb8cccd253f73d81a3120ec0f42bd6bd32f7a90 Mon Sep 17 00:00:00 2001
+From: Daniel Wehrle <daniel.wehrle@haufe-lexware.com>
+Date: Wed, 30 May 2018 15:20:32 +0200
+Subject: Extend UnitTests
+
+---
+ src/test/java/org/sonar/plugins/fxcop/FxCopSensorTest.java | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+diff --git a/src/test/java/org/sonar/plugins/fxcop/FxCopSensorTest.java b/src/test/java/org/sonar/plugins/fxcop/FxCopSensorTest.java
+index b1d5143..489610d 100644
+--- a/src/test/java/org/sonar/plugins/fxcop/FxCopSensorTest.java
++++ b/src/test/java/org/sonar/plugins/fxcop/FxCopSensorTest.java
+@@ -173,10 +173,9 @@ public void testExecute() {
+   
+   @Test
+   public void testExecuteImpl() {  
+-	  if (System.getProperty("os.name").startsWith("Windows")) {
+-		  thrown.expect(IllegalArgumentException.class);
++	    thrown.expect(IllegalArgumentException.class);
+ 	    thrown.expectMessage("Cannot find the FxCop report");
+-	  }
++	  
+ 	  
+     FxCopSensor sensor = new FxCopSensor(new FxCopConfiguration("foo", "foo-fxcop", "", "", "sonar.cs.fxcop.slnFile", "", "", "", "", "", "sonar.cs.fxcop.report"));
+     SensorContext context = mock(SensorContext.class);]
 ```
 
 ## Raaycc-inglesapp-422238225-20180829-220230
