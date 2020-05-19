@@ -875,9 +875,13 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
  		} 
 ```
 
-## vlingo-vlingo-actors-415654258-20180813-233512
+### vlingo-vlingo-actors-415654258-20180813-233512
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-vlingo-vlingo-actors-415654258-20180813-233512-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-vlingo-vlingo-actors-415654258-20180813-233512-firstCommit)
+
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/415654258](https://api.travis-ci.org/v3/build/415654258) - 
+- **Passing Travis CI Build**: It seems that the failing build status is actually "passed"
+- **List of Builds**: [https://api.travis-ci.org/v3/repo/vlingo-actors/18808483/builds?offset=530](https://api.travis-ci.org/v3/repo/vlingo-actors/18808483/builds?offset=530)
 
 **Information about the failure**:
 
