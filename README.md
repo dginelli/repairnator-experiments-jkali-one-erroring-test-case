@@ -338,7 +338,7 @@ index b1d5143..489610d 100644
 
 **Human fix**: [https://github.com/RossBlassingame/JPL-CUSeniorProjects/commit/b1b88cfacb0a4c3fae653ad2bb8098b27f9b7a0e](https://github.com/RossBlassingame/JPL-CUSeniorProjects/commit/b1b88cfacb0a4c3fae653ad2bb8098b27f9b7a0e)
 
-## Schrotty-DoIT-388971125-20180606-230606
+### Schrotty-DoIT-388971125-20180606-230606
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971125-20180606-230606-firstCommit)
 
@@ -366,9 +366,14 @@ index b1d5143..489610d 100644
  }
 ```
 
-## Schrotty-DoIT-388971144-20180606-230500
+### Schrotty-DoIT-388971144-20180606-230500
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Schrotty-DoIT-388971144-20180606-230500-firstCommit)
+
+**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/388971144](https://api.travis-ci.org/v3/build/388971144)
+**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/388978099](https://api.travis-ci.org/v3/build/388978099)
+
+**Pull Request**: [https://github.com/Schrotty/DoIT/pull/25](https://github.com/Schrotty/DoIT/pull/25)
 
 **Information about the failure**:
 
@@ -391,9 +396,39 @@ index b1d5143..489610d 100644
  }
 ```
 
+**Possible Human fix**:
+
+```diff
+From 6f6213bd8ea7ff2348af86e5b113d3f81c4e40f9 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Niklas=20K=C3=BChtmann?= <admin@i-zed.net>
+Date: Wed, 6 Jun 2018 23:17:14 +0200
+Subject: [PATCH] #14 Kidding, one more try.
+
+---
+ src/main/java/de/swtproject/doit/core/ToDo.java | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/main/java/de/swtproject/doit/core/ToDo.java b/src/main/java/de/swtproject/doit/core/ToDo.java
+index fc36c38..6fdb097 100644
+--- a/src/main/java/de/swtproject/doit/core/ToDo.java
++++ b/src/main/java/de/swtproject/doit/core/ToDo.java
+@@ -82,6 +82,7 @@
+      */
+     public ToDo(String title) {
+         this.title = title;
++        this.interval = IntervalType.NONE;
+         this.priority = Priority.DEFAULT;
+     }
+```
+
 ## atomix-atomix-389979054-20180609-024703
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-atomix-atomix-389979054-20180609-024703-firstCommit)
+
+**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/389979054](https://api.travis-ci.org/v3/build/389979054)
+**Passing Travis CI Build**: Not found, but it seems that the pull request has been merged even the build failed.
+
+**Pull Request**: [https://github.com/atomix/atomix/pull/603](https://github.com/atomix/atomix/pull/603)
 
 **Information about the failure**:
 
@@ -428,6 +463,10 @@ index b1d5143..489610d 100644
 ## biojava-biojava-250779242-20170706-162512_bugonly
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-biojava-biojava-250779242-20170706-162512_bugonly-firstCommit)
+
+**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/250779242](https://api.travis-ci.org/v3/build/250779242)
+**Passing Travis CI Build**: Not found
+**List of Builds**: [https://api.travis-ci.org/v3/repo/biojava/746869/builds?offset=562](https://api.travis-ci.org/v3/repo/biojava/746869/builds?offset=562)
 
 **Information about the failure**:
 
