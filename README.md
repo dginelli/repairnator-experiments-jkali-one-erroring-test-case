@@ -587,6 +587,10 @@ index f632e03..f2654b0 100644
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit)
 
+-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/386721415](https://api.travis-ci.org/v3/build/386721415)
+-**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/386728336](https://api.travis-ci.org/v3/build/386728336)
+-**Pull Request**: [https://github.com/dhatim/dropwizard-sentry/pull/4](https://github.com/dhatim/dropwizard-sentry/pull/4)
+
 **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
@@ -609,6 +613,39 @@ index f632e03..f2654b0 100644
  		}
  		io.sentry.SentryClient sentryClient = io.sentry.SentryClientFactory.sentryClient(dsn, factory);
  		final io.sentry.logback.SentryAppender appender = new io.sentry.logback.SentryAppender();
+```
+
+**Human fix**
+
+```diff
+From 7e2b50b3acc662f84b2a55aa46cfbaaecb8f840f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Olivier=20Ch=C3=A9dru?= <ochedru@dhatim.com>
+Date: Fri, 1 Jun 2018 17:40:06 +0200
+Subject: [PATCH] Fix test
+
+---
+ .../sentry/logging/SentryAppenderFactoryTest.java           | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/src/test/java/org/dhatim/dropwizard/sentry/logging/SentryAppenderFactoryTest.java b/src/test/java/org/dhatim/dropwizard/sentry/logging/SentryAppenderFactoryTest.java
+index 8dee656..7b33490 100644
+--- a/src/test/java/org/dhatim/dropwizard/sentry/logging/SentryAppenderFactoryTest.java
++++ b/src/test/java/org/dhatim/dropwizard/sentry/logging/SentryAppenderFactoryTest.java
+@@ -42,11 +42,11 @@ public void buildSentryAppenderShouldFailWithNullContext() {
+ 
+     @Test
+     public void buildSentryAppenderShouldWorkWithValidConfiguration() {
+-        final SentryAppenderFactory factory = new SentryAppenderFactory();
+-        final String dsn = "https://user:pass@app.sentry.io/id";
++        SentryAppenderFactory factory = new SentryAppenderFactory();
++        factory.setDsn("https://user:pass@app.sentry.io/id");
+ 
+         Appender<ILoggingEvent> appender
+-                = factory.build(context, dsn, layoutFactory, levelFilterFactory, asyncAppenderFactory);
++                = factory.build(context, "", layoutFactory, levelFilterFactory, asyncAppenderFactory);
+ 
+         assertThat(appender, instanceOf(AsyncAppender.class));
+     }
 ```
 
 ## dta-sherlock-sirh-gestion-paie-384713759-20180528-141604
