@@ -24,9 +24,12 @@ In this repository there are 1.189 branches (excluding `master` branch), each of
 
 # Patch Analysis
 
-## repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit
+### repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Arquisoft-Agents_i1a-363526725-20180407-180717-firstCommit)
+
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/363526725](https://api.travis-ci.org/v3/build/363526725)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/364535870](https://api.travis-ci.org/v3/build/364535870) - There are other builds, and thus other changes before the passed one (363586535, 363595862, 363769975, and 364156573)
 
 **Information about the failure**:
 
@@ -55,6 +58,26 @@ The test case terminates with an error only running it with Maven, but it passes
 **Reason why the patch has been generated**:
 
 **Useful information for the developer**:
+
+**Human fix**:
+
+```diff
+From 48d727bc10387132621bc51aa0aff14567a2c962 Mon Sep 17 00:00:00 2001
+From: PabloSuaGar <uo250924@uniovi.es>
+Date: Tue, 10 Apr 2018 12:17:55 +0200
+Subject: Removed invocation of Spring application on MainController test
+diff --git a/src/test/java/agent/MainControllerTest.java b/src/test/java/agent/MainControllerTest.java
+index 7d0ac71..2ee3c25 100644
+--- a/src/test/java/agent/MainControllerTest.java
++++ b/src/test/java/agent/MainControllerTest.java
+@@ -41,7 +41,6 @@
+     public void setUp() throws Exception {
+         this.base = new URL("http://localhost:" + port + "/");
+         template = new TestRestTemplate();
+-        Application.main(new String[0]);
+         mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
+     }
+```
 
 ## AudibleAppliances-AudibleAppliances-348327780-20180302-182413
 
