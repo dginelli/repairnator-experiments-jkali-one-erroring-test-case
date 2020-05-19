@@ -940,57 +940,58 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/279538331](https://api.travis-ci.org/v3/build/279538331)
+- **Passing Travis CI Build**: Not found
+- **List of Builds**: [https://api.travis-ci.org/v3/repo/dropwizard/552978/builds?offset=3400](https://api.travis-ci.org/v3/repo/dropwizard/552978/builds?offset=3400)
 
-### repairnator-repairnator-experiments-dropwizard-dropwizard-300099479-20171110-114555_bugonly-firstCommit
+### dropwizard-dropwizard-300099479-20171110-114555
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-300099479-20171110-114555_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-300099479-20171110-114555_bugonly-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/300099479](https://api.travis-ci.org/v3/build/300099479)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/300124879](https://api.travis-ci.org/v3/build/300124879) There failing builds before the passed one (300102302 ,300106952, 300118399, 300122045, 300124026
+- **Pull Request** [https://github.com/dropwizard/dropwizard/pull/2197](https://github.com/dropwizard/dropwizard/pull/2197)
 
-### repairnator-repairnator-experiments-dropwizard-dropwizard-300124879-20171110-125652-firstCommit
+### dropwizard-dropwizard-300124879-20171110-125652
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-300124879-20171110-125652-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-300124879-20171110-125652-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/300124879](https://api.travis-ci.org/v3/build/300124879)
+- **Passing Travis CI Build**: It seems that that the failing build actually has "passed" as status.
 
-### repairnator-repairnator-experiments-dropwizard-dropwizard-316114281-20171213-225745_bugonly-firstCommit
+### dropwizard-dropwizard-316114281-20171213-225745_bugonly
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-316114281-20171213-225745_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-316114281-20171213-225745_bugonly-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/316114281](https://api.travis-ci.org/v3/build/316114281)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/316120102](https://api.travis-ci.org/v3/build/316120102) It is not clear actually
+- **Pull Request**: [https://github.com/dropwizard/dropwizard/pull/2229](https://github.com/dropwizard/dropwizard/pull/2229)
 
-### repairnator-repairnator-experiments-dropwizard-dropwizard-324212976-20180102-184011-firstCommit
+### dropwizard-dropwizard-324212976-20180102-184011
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-324212976-20180102-184011-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-324212976-20180102-184011-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/324212976]8https://api.travis-ci.org/v3/build/324212976)
+- **Passing Travis CI Build**: It seems that the failing build has the status "passed".
 
-### repairnator-repairnator-experiments-dropwizard-dropwizard-358392819-20180326-151558-firstCommit
+### dropwizard-dropwizard-358392819-20180326-151558
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-358392819-20180326-151558-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-358392819-20180326-151558-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/358392819](https://api.travis-ci.org/v3/build/358392819)
+- **Passing Travis CI Build**: It seems that the failing build has the status "passed".
 
-### repairnator-repairnator-experiments-dropwizard-dropwizard-373737953-20180502-042402-firstCommit
+### dropwizard-dropwizard-373737953-20180502-042402
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-373737953-20180502-042402-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-373737953-20180502-042402-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: https://api.travis-ci.org/v3/build/373737953
+- **Passing Travis CI Build**: It seems that the failing build has the status "passed".
 
-### repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit
-
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+### dropwizard-dropwizard-375524651-20180506-150610
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit)
 
-- **Failing Travis CI Build**: 
-- **Passing Travis CI Build**:
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/375524651](https://api.travis-ci.org/v3/build/375524651)
+- **Passing Travis CI Build**: Not found, it seems that the pull request has been merged even though it had a failure.
+- **Pull Request**: [https://github.com/dropwizard/dropwizard/pull/2347](https://github.com/dropwizard/dropwizard/pull/2347)
