@@ -446,9 +446,11 @@ index fc36c38..6fdb097 100644
 
 **Information about the failure**:
 
-| Error type   | Erroring test case | Changed file by AstorJKali |
-|--------------|-------------------|----------------------------|
-| java.util.concurrent.CompletionException | [AtomixClusterTest.java]()| [NettyMessagingService.java]()|
+| Error type   | Details | Erroring test case | Changed file by AstorJKali |
+|--------------|---------|---------|----------------------------|
+| java.util.concurrent.CompletionException | failed: Address already in use | [AtomixClusterTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/cbf97c018a42280d2b471172d9983587b29b6d7f/cluster/src/test/java/io/atomix/cluster/AtomixClusterTest.java#L35)| [NettyMessagingService.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/cbf97c018a42280d2b471172d9983587b29b6d7f/cluster/src/main/java/io/atomix/cluster/messaging/impl/NettyMessagingService.java#L603)|
+
+
 
 **Kali patch**:
 
