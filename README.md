@@ -81,16 +81,16 @@ index 7d0ac71..2ee3c25 100644
 
 ### AudibleAppliances-AudibleAppliances-348327780-20180302-182413
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348327780-20180302-182413-firstCommit)
 
-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/348327780](https://api.travis-ci.org/v3/build/348327780)
-**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/348330105](https://api.travis-ci.org/v3/build/348330105)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/348327780](https://api.travis-ci.org/v3/build/348327780)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/348330105](https://api.travis-ci.org/v3/build/348330105)
 There are other builds, and thus other changes before the passed one (348327863 and 348328353)
 
-**List of builds**: [https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=500](https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=500)
+- **List of builds**: [https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=500](https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=500)
 
 
-**Information about the failure**:
+- **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
@@ -122,25 +122,28 @@ There are other builds, and thus other changes before the passed one (348327863 
 
 ```
 
-**Overview**: The problem is related to an example config file that has to be parsed in the crashing test case. Indeed, looking at the commit history, there is [this commit](https://github.com/AudibleAppliances/AudibleAppliances/compare/e4a1a2b2f001...fd05ac127efd) that changes the file content, so that the program passes all test cases. There other changes associated with previous failing builds. Applying only the change related to the test data, the program passes all the test cases.
+- **Overview**: The problem is related to an example config file that has to be parsed in the crashing test case. Indeed, looking at the commit history, there is [this commit](https://github.com/AudibleAppliances/AudibleAppliances/compare/e4a1a2b2f001...fd05ac127efd) that changes the file content, so that the program passes all test cases. There other changes associated with previous failing builds. Applying only the change related to the test data, the program passes all the test cases.
 
-**Reason why the patch has been generated**: jKali managed to create the Kali patch because of the test suite. Indeed, adding for example an assert to check the value of attribute `width` related to the Box `ScreenBox.GRAPH`, the program patched with the Kali patch doesn't pass the test cases. Indeed, jKali removed the instructions to parse the section of file related to the `ScreenBox`, and so these properties are not available.
+- **Reason why the patch has been generated**: jKali managed to create the Kali patch because of the test suite. Indeed, adding for example an assert to check the value of attribute `width` related to the Box `ScreenBox.GRAPH`, the program patched with the Kali patch doesn't pass the test cases. Indeed, jKali removed the instructions to parse the section of file related to the `ScreenBox`, and so these properties are not available.
 
-**Useful information for the developer**: The developer can understand that there is some problem with the for-cycle removed by jKali. If after checking that the parsing is correct, she can check the input file test data.
+- **Useful information for the developer**: The developer can understand that there is some problem with the for-cycle removed by jKali. If after checking that the parsing is correct, she can check the input file test data.
 
 ### AudibleAppliances-AudibleAppliances-348335601-20180302-184224
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348335601-20180302-184224-firstCommit)
 
-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/348335601](https://api.travis-ci.org/v3/build/348335601)
-**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/348335998](https://api.travis-ci.org/v3/build/348335998)
-**List of Builds**: [https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=499](https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=499)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/348335601](https://api.travis-ci.org/v3/build/348335601)
+
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/348335998](https://api.travis-ci.org/v3/build/348335998)
+- **List of Builds**: [https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=499](https://api.travis-ci.org/v3/repo/AudibleAppliances/17278605/builds?offset=499)
 
 **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [ConfigDataTest.java]()| []()|
+| java.lang.NullPointerException | [ConfigDataTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/fb3a63d240bfa762dc244bee6a77d3801d24f5f6/src/test/java/uk/ac/cam/groupprojects/bravo/config/ConfigDataTest.java#L24)| [ConfigData.json](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/fb3a63d240bfa762dc244bee6a77d3801d24f5f6/src/main/java/uk/ac/cam/groupprojects/bravo/config/ConfigData.java#L56)|
+
+This is a previous build (number 215) compared to the build 348327780 (number 220), and the both the Kali patch and the human fix are the same.
 
 **Kali patch**:
 
