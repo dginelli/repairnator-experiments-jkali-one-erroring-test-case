@@ -918,7 +918,27 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/356030973](https://api.travis-ci.org/v3/build/356030973)
 - **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/356031863](https://api.travis-ci.org/v3/build/356031863)
 
-**Human fix**: [https://github.com/apache/twill/compare/8f70aa4d4924...ee4d13701b21](https://github.com/apache/twill/compare/8f70aa4d4924...ee4d13701b21)
+**Human fix**: [https://github.com/apache/twill/compare/8f70aa4d4924...ee4d13701b21](https://github.com/apache/twill/compare/8f70aa4d4924...ee4d13701b21)+
+
+**Information about the failure**:
+
+| Error type   | Details | Erroring test case | Changed file by AstorJKali |
+|--------------|----------|---------|----------------------------|
+| java.lang.Exception | test timed out after 120000 milliseconds | [ZKClientTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/b810d2347ec6054de28ef2d7637222047f1b1cec/twill-zookeeper/src/test/java/org/apache/twill/zookeeper/ZKClientTest.java#L347)| [InMemoryZKServer.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/b810d2347ec6054de28ef2d7637222047f1b1cec/twill-zookeeper/src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java#L105)|
+
+```diff
+--- /src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java
++++ /src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java
+@@ -67,7 +67,7 @@
+ 
+ 	private java.net.InetSocketAddress getAddress(int port) {
+ 		int socketPort = (port < 0) ? 0 : port;
+-		if (java.lang.Boolean.parseBoolean(java.lang.System.getProperties().getProperty("twill.zk.server.localhost", "true"))) {
++		if (false) {
+ 			return new java.net.InetSocketAddress(java.net.InetAddress.getLoopbackAddress(), socketPort);
+ 		} else {
+ 			return new java.net.InetSocketAddress(socketPort);
+```
 
 ### chtyim-twill-356031025-20180320-212226
 
