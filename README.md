@@ -51,15 +51,15 @@ In this repository there are 1.189 branches (excluding `master` branch), each of
  }
 ```
 
-The test case terminates with an error only running it with Maven, but it passes when it is executed with Eclipse.
+**Overview**: The problem is related to the invocation of Spring application in MainController test class, that calls directly the method `Application.main()`. 
 
-**Overview**:
+**Reason why the patch has been generated**: jKali is able to generate the patch because its action (deletion of the body in the method `Application.main()`) is semantically equivalent to the human fix. Indeed, the developer removed the call to the method Application.main from the test case to fix the error. After found online some possible methods to test the Spring Boot Application.main(), the program 
+with the Kali patch still passes the test cases. Thus, the reason why jKali managed to create 
+a patch is not related to a weak test suite. Moreover, the main method is not required for Spring Boot applications, but it can be used to simplify the exection of the application from within an IDE (https://stackoverflow.com/a/29791224/4255576).
 
-**Reason why the patch has been generated**:
+**Useful information for the developer**: The developer can check if there is something wrong with the method main(). Since the method is correct, she can focus on the test case.
 
-**Useful information for the developer**:
-
-**Human fix**:
+**Human fix**: 
 
 ```diff
 From 48d727bc10387132621bc51aa0aff14567a2c962 Mon Sep 17 00:00:00 2001
