@@ -174,16 +174,22 @@ This is a previous build (number 215) compared to the build 348327780 (number 22
 
 ### AudibleAppliances-AudibleAppliances-348337755-20180302-184636
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-AudibleAppliances-AudibleAppliances-348337755-20180302-184636-firstCommit)
 
-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/348337755](https://api.travis-ci.org/v3/build/348337755)
-**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/348337880](https://api.travis-ci.org/v3/build/348337880)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/348337755](https://api.travis-ci.org/v3/build/348337755)
+
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/348337880](https://api.travis-ci.org/v3/build/348337880)
 
 **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [ConfigDataTest.java]()| [ConfigData.java]()|
+| java.lang.NullPointerException | [ConfigDataTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/e69e9e128af50a388af59747365907af2a1c8947/src/test/java/uk/ac/cam/groupprojects/bravo/config/ConfigDataTest.java#L24)| [ConfigData.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/e69e9e128af50a388af59747365907af2a1c8947/src/main/java/uk/ac/cam/groupprojects/bravo/config/ConfigData.java#L56)|
+
+The failing build is the number 223, so it is after the other two previous cases (numbers 215 and 220).
+The passing build is related to an operation of merge, but I didn't find any difference.
+Actually, I had to put the correct JSON input test file to make the build passing. 
+But in theory, the test file has already changed in the build 218, so it is strange.
 
 **Kali patch**:
 
@@ -208,7 +214,6 @@ This is a previous build (number 215) compared to the build 348327780 (number 22
  			com.google.gson.JsonPrimitive voice = config.getAsJsonPrimitive("voice");
  			mVoice = voice.getAsString();
  			com.google.gson.JsonObject spoken_fields = config.getAsJsonObject("spoken_fields");
-
 ```
 
 ### DanielHWe-sonar-fxcop-385681821-20180530-150823
