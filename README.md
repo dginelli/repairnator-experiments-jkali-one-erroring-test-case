@@ -543,10 +543,8 @@ index fc36c38..6fdb097 100644
  				this.sheet = workbook.getSheetAt(0);
  				this.offset = offset;
  				this.fileName = fileName;
--				this.columns = getColumnCount(sheet.getRow(offset));
--				this.rows = getItemCount(sheet, offset);
-+				this.columns = getColumnCount(this.sheet.getRow(offset));
-+				this.rows = getItemCount(this.sheet, offset);
+				 this.columns = getColumnCount(sheet.getRow(offset));
+				 this.rows = getItemCount(sheet, offset);
  			} catch (java.lang.Exception e) {
  				if (e instanceof com.codingchili.Model.ParserException) {
  					throw ((com.codingchili.Model.ParserException) (e));
