@@ -365,6 +365,9 @@ index b1d5143..489610d 100644
 |--------------|-------------------|----------------------------|
 |  java.lang.ClassCastException| [ToDoTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/cdb1e93489f4dc2d22a711c21602ff63ad3f0350/src/test/java/ToDoTest.java#L102)| [ToDo.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/cdb1e93489f4dc2d22a711c21602ff63ad3f0350/src/main/java/de/swtproject/doit/core/ToDo.java#L276)|
 
+The failing build is after the one with id 388971125, that has been analyzed above.
+In this case, the build is related to a commit in a pull request, but the problem is the same.
+
 **Kali patch**:
 
 ```diff
@@ -399,7 +402,7 @@ index b1d5143..489610d 100644
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.ClassCastException | [ToDoTest.java]()| [ToDo.java]()|
+| java.lang.ClassCastException | [ToDoTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/dab63711bc9b8a1abf03087fc366c2f9026dd5ba/src/test/java/ToDoTest.java#L102)| [ToDo.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/dab63711bc9b8a1abf03087fc366c2f9026dd5ba/src/main/java/de/swtproject/doit/core/ToDo.java#L276)|
 
 **Kali patch**:
 
