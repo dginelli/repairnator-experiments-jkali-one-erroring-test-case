@@ -775,7 +775,7 @@ index 160e012..cb165a1 100644
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [AvantageRepositoryTest.java]()| [Avantage.java]()|
+| java.lang.NullPointerException | [AvantageRepositoryTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/dc9b199592973111c3d3c668a13e6c9520efad5b/src/test/java/dev/paie/repository/AvantageRepositoryTest.java#L36)| [Avantage.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/dc9b199592973111c3d3c668a13e6c9520efad5b/src/main/java/dev/paie/entite/Avantage.java#L57)|
 
 **Kali patch**:
 
@@ -791,6 +791,12 @@ index 160e012..cb165a1 100644
  
  	public boolean equals(dev.paie.entite.Avantage av) {
 ```
+
+- **Overview**: The problem is related to a `NullPointerException` that is thrown by the program during the execution of a test case. This `NullPointerExcption` is generated because Hibernate save a new record with a different ID from what the developer expects in the test case.
+
+- **Reason why the patch has been generated**: jKali managed to create a patch because it removes the instruction to assign the ID. Since the test case doesn't check if the ID of the new record is not null, jKali is able to create the patch. Adding for example this assertion `assertNotNull(avantage.getId());`, it allows to avoid the creation of the Kali patch.
+
+- **Useful information for the developer**: The developer can understand that there is a problem with the variable `id` used to assign the primary key to the new records. Indeed, to fix the error, the developer removed the annotation `@GeneratedValue(strategy = GenerationType.IDENTITY)` associated with the variable `id`. `GenerationType.IDENTITY` is associated with `auto_increment` of MySQL (https://stackoverflow.com/a/20605392/4255576).
 
 **Human fix**:
 
