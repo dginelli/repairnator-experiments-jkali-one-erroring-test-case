@@ -225,9 +225,9 @@ But in theory, the test file has already changed in the build 218, so it is stra
 
 **Information about the failure**:
 
-| Error type   | Erroring test case | Changed file by AstorJKali |
+| Error type   | Detail | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.IllegalArgumentException | [FxCopSensorTest.java]()| [FxCopSensor.java]()|
+| java.lang.IllegalArgumentException | Cannot find the FxCop report | [FxCopSensorTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/e9f68e4603f05bd9d6429bf63a65951a0ed4085e/src/test/java/org/sonar/plugins/fxcop/FxCopSensorTest.java#L192)| [FxCopSensor.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/e9f68e4603f05bd9d6429bf63a65951a0ed4085e/src/main/java/org/sonar/plugins/fxcop/FxCopSensor.java#L82)|
 
 **Kali patch**:
 
@@ -244,6 +244,12 @@ But in theory, the test file has already changed in the build 218, so it is stra
  			return;
  		}
 ```
+
+- **Overview**: The problem is related to the fact that the program throws an `IllegalArgumentException` because a file is missing. However, this is the intended behavior, but the test case have not the assert to verify that the program throws the exception.
+
+- **Reason why the patch has been generated**: The Kali patch removed the instruction that makes the program throw the exception. jKali managed to create this patch because of an error in the test case. Indeed, looking at the [commit history of the project](https://github.com/DanielHWe/sonar-fxcop/compare/b6e30c4a50b9...8bb8cccd253f), the developer changed the test case, to fix the error.
+
+- **Useful information for the developer**: Since the expected behavior is the throw of the exception, and jKali removed the instruction that throws the exception, th developer can understand that the error in is not in the program, but it the test case itself.
 
 **Human fix**:
 
