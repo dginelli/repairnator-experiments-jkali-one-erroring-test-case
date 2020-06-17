@@ -218,15 +218,16 @@ But in theory, the test file has already changed in the build 218, so it is stra
 
 ### DanielHWe-sonar-fxcop-385681821-20180530-150823
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-DanielHWe-sonar-fxcop-385681821-20180530-150823-firstCommit)
 
-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/385681821](https://api.travis-ci.org/v3/build/385681821)
-**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/385688380](https://api.travis-ci.org/v3/build/385688380)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/385681821](https://api.travis-ci.org/v3/build/385681821)
 
-**Information about the failure**:
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/385688380](https://api.travis-ci.org/v3/build/385688380)
+
+- **Information about the failure**:
 
 | Error type   | Detail | Erroring test case | Changed file by AstorJKali |
-|--------------|-------------------|----------------------------|
+|--------------|-------------------|----------------------------|---------|
 | java.lang.IllegalArgumentException | Cannot find the FxCop report | [FxCopSensorTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/e9f68e4603f05bd9d6429bf63a65951a0ed4085e/src/test/java/org/sonar/plugins/fxcop/FxCopSensorTest.java#L192)| [FxCopSensor.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/e9f68e4603f05bd9d6429bf63a65951a0ed4085e/src/main/java/org/sonar/plugins/fxcop/FxCopSensor.java#L82)|
 
 **Kali patch**:
