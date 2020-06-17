@@ -647,9 +647,9 @@ index f632e03..f2654b0 100644
 
 - **Overview**: The problem is related to a NullPointerException that is thrown by the program during the execution of a test case.
 
--**Reason why the patch has been generated**: jKali managed to create a patch because it changes the if condition in which the exception is thrown, and since the test case doesn't check if the property `dns` of the object SentryAppenderFactory is not null, the patched program passes all test cases.
+- **Reason why the patch has been generated**: jKali managed to create a patch because it changes the if condition in which the exception is thrown, and since the test case doesn't check if the property `dns` of the object SentryAppenderFactory is not null, the patched program passes all test cases.
 
--**Useful information for the developer**: The developer can focus on the property `dns` of the object SentryAppenderFactory and check if it is initialized correclty or not. Since it is correct, the developer can then check if there is some errors in the test case.
+- **Useful information for the developer**: The developer can focus on the property `dns` of the object SentryAppenderFactory and check if it is initialized correclty or not. Since it is correct, the developer can then check if there is some errors in the test case.
 
 - **Human fix**
 
@@ -696,7 +696,7 @@ index 8dee656..7b33490 100644
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| javax.persistence.PersistenceException | [CotisationServiceJpaTest.java]()| [Cotisation.java]()|
+| javax.persistence.PersistenceException | [CotisationServiceJpaTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/2ae47304966586bd5b33c3d4b6fb4e06f95c4058/src/test/java/dev/paie/service/CotisationServiceJpaTest.java#L33)| [Cotisation.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/2ae47304966586bd5b33c3d4b6fb4e06f95c4058/src/main/java/dev/paie/entite/Cotisation.java#L31)|
 
 **Kali patch**:
 
@@ -713,7 +713,15 @@ index 8dee656..7b33490 100644
  		this.tauxSalarial = tauxSalarial;
 ```
 
+- **Overview**: The problem is related to a `PersistenceException` that is thrown while the program executes the test cases.
+
+- **Reason why the patch has been generated**: The Kali patch is equal to the human fix, so it's correct that it has been generated.
+
+- **Useful information for the developer**: The developer can apply the same fix.
+
 **Human fix**:
+
+The developer changed also a test case, but the fix of the error is only the deletion of the assignment to the variable `id`. Since the assignment is no longer necessary, the developers removes also the parameter from the constructor of the class `Cotisation`, and she adapts the test case.
 
 ```diff
 From dc7cbf5a7f1343b49d849dae078258315a92904a Mon Sep 17 00:00:00 2001
