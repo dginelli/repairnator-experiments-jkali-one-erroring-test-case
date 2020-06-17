@@ -615,17 +615,17 @@ index f632e03..f2654b0 100644
 
 ## dhatim-dropwizard-sentry-386721415-20180601-172805
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-dhatim-dropwizard-sentry-386721415-20180601-172805-firstCommit)
 
--**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/386721415](https://api.travis-ci.org/v3/build/386721415)
--**Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/386728336](https://api.travis-ci.org/v3/build/386728336)
--**Pull Request**: [https://github.com/dhatim/dropwizard-sentry/pull/4](https://github.com/dhatim/dropwizard-sentry/pull/4)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/386721415](https://api.travis-ci.org/v3/build/386721415)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/386728336](https://api.travis-ci.org/v3/build/386728336)
+- **Pull Request**: [https://github.com/dhatim/dropwizard-sentry/pull/4](https://github.com/dhatim/dropwizard-sentry/pull/4)
 
-**Information about the failure**:
+- **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [SentryAppenderFactoryTest.java]()| [SentryAppenderFactory.java]()|
+| java.lang.NullPointerException | [SentryAppenderFactoryTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/f84870cfada527e1516718723c3698bb6942fb89/src/test/java/org/dhatim/dropwizard/sentry/logging/SentryAppenderFactoryTest.java#L49)| [SentryAppenderFactory.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/f84870cfada527e1516718723c3698bb6942fb89/src/main/java/org/dhatim/dropwizard/sentry/logging/SentryAppenderFactory.java#L151)|
 
 **Kali patch**:
 
@@ -645,7 +645,13 @@ index f632e03..f2654b0 100644
  		final io.sentry.logback.SentryAppender appender = new io.sentry.logback.SentryAppender();
 ```
 
-**Human fix**
+- **Overview**: The problem is related to a NullPointerException that is thrown by the program during the execution of a test case.
+
+-**Reason why the patch has been generated**: jKali managed to create a patch because it changes the if condition in which the exception is thrown, and since the test case doesn't check if the property `dns` of the object SentryAppenderFactory is not null, the patched program passes all test cases.
+
+-**Useful information for the developer**: The developer can focus on the property `dns` of the object SentryAppenderFactory and check if it is initialized correclty or not. Since it is correct, the developer can then check if there is some errors in the test case.
+
+- **Human fix**
 
 ```diff
 From 7e2b50b3acc662f84b2a55aa46cfbaaecb8f840f Mon Sep 17 00:00:00 2001
