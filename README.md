@@ -877,7 +877,7 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.OutOfMemoryError | [DependencyQueueTest.java]()| [DependencyQueue.java]()|
+| java.lang.OutOfMemoryError | [DependencyQueueTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/76458858a5df01d5e3992859a423f10e264d23f5/src/test/java/org/imdea/vcd/queue/DependencyQueueTest.java#L94)| [DependencyQueue.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/76458858a5df01d5e3992859a423f10e264d23f5/src/main/java/org/imdea/vcd/queue/DependencyQueue.java#L92)|
 
 **Kali patch**:
 
@@ -935,9 +935,9 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
 
 **Information about the failure**:
 
-| Error type   | Erroring test case | Changed file by AstorJKali |
-|--------------|-------------------|----------------------------|
-| java.lang.Exception | [ActorStopTest.java]()| [ConcurrentQueueMailbox.java]()|
+| Error type   | Detail | Erroring test case | Changed file by AstorJKali |
+|--------------|--------|--------------------|----------------------------|
+| java.lang.Exception | Test timed out after 1000 milliseconds | [ActorStopTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/20293c0ce2480e01a895012d696e254d0efa764c/src/test/java/io/vlingo/actors/ActorStopTest.java#L21)| [ConcurrentQueueMailbox.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/20293c0ce2480e01a895012d696e254d0efa764c/src/main/java/io/vlingo/actors/plugin/mailbox/concurrentqueue/ConcurrentQueueMailbox.java#L25)|
 
 **Kali patch**:
 
