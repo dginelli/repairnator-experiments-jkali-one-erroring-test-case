@@ -322,7 +322,7 @@ index b1d5143..489610d 100644
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.NullPointerException | [OutputTest.java]()| [TerminalOutput.java]()|
+| java.lang.NullPointerException | [OutputTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/75c3f75c62b1415c6deb5bb32636bf9d054922a6/src/test/java/mars/OutputTest.java#L35)| [TerminalOutput.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/75c3f75c62b1415c6deb5bb32636bf9d054922a6/src/main/java/mars/out/TerminalOutput.java#L42)|
 
 **Kali patch**:
 
@@ -335,26 +335,7 @@ index b1d5143..489610d 100644
  		java.lang.System.out.println("------------");
 -		if (coordinateType.equals("L") || coordinateType.equals("l")) {
 +		if (true) {
- 			mars.map.GeoTIFF convert = new mars.map.GeoTIFF();
--			for (int i = 1; i <= resultList.size(); i++) {
--				int x = resultList.get(i - 1).getX();
--				int y = resultList.get(i - 1).getY();
-+			for (int i = 1; i <= this.resultList.size(); i++) {
-+				int x = this.resultList.get(i - 1).getX();
-+				int y = this.resultList.get(i - 1).getY();
- 				double[] outputCoordinate = convert.coordinateConvert(new mars.coordinate.Coordinate(x, y));
- 				java.lang.System.out.println(((((i + ". (") + outputCoordinate[0]) + ", ") + outputCoordinate[1]) + ")");
- 			}
- 		} else {
--			for (int i = 1; i <= resultList.size(); i++) {
--				int x = resultList.get(i - 1).getX();
--				int y = resultList.get(i - 1).getY();
-+			for (int i = 1; i <= this.resultList.size(); i++) {
-+				int x = this.resultList.get(i - 1).getX();
-+				int y = this.resultList.get(i - 1).getY();
- 				java.lang.System.out.println(((((i + ". (") + x) + ", ") + y) + ")");
- 			}
- 		}
+ 			mars.map.GeoTIFF convert = new mars.map.GeoTIFF();				
 ```
 
 **Human fix**: [https://github.com/RossBlassingame/JPL-CUSeniorProjects/commit/b1b88cfacb0a4c3fae653ad2bb8098b27f9b7a0e](https://github.com/RossBlassingame/JPL-CUSeniorProjects/commit/b1b88cfacb0a4c3fae653ad2bb8098b27f9b7a0e)
