@@ -595,7 +595,7 @@ index f632e03..f2654b0 100644
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.RuntimeException | [MetaDomainTest.java]()| [NetUtil.java]()|
+| java.lang.RuntimeException | [MetaDomainTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/77892bc487b9f56c1b4129aaa42a2a631c9467a2/apollo-core/src/test/java/com/ctrip/framework/apollo/core/MetaDomainTest.java#L12)| [NetUtil.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/77892bc487b9f56c1b4129aaa42a2a631c9467a2/apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/NetUtil.java#L41)|
 
 **Kali patch**:
 
@@ -999,6 +999,28 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/356031025](https://api.travis-ci.org/v3/build/356031025) (Check why based on the endpoint, the status is different: failed vs errored)
 - **Passing Travis CI Build**: Not found
 - **List of Failing Builds**: [https://api.travis-ci.org/v3/repo/twill/9575800/builds?offset=279](https://api.travis-ci.org/v3/repo/twill/9575800/builds?offset=279)
+
+**Information about the failure**:
+
+| Error type   | Details | Erroring test case | Changed file by AstorJKali |
+|--------------|----------|-------------------|--------------------------------------|
+| java.lang.Exception | Test timed out after 120000 milliseconds | [ZKClientTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/6f69cbfedb6897b65bc5a1a7a8fdd54c516215bc/twill-zookeeper/src/test/java/org/apache/twill/zookeeper/ZKClientTest.java#L347) | [InMemoryZKServer.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/6f69cbfedb6897b65bc5a1a7a8fdd54c516215bc/twill-zookeeper/src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java#L105)
+
+- **Kali patch**
+
+```diff
+--- /src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java
++++ /src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java
+@@ -67,7 +67,7 @@
+ 
+ 	private java.net.InetSocketAddress getAddress(int port) {
+ 		int socketPort = (port < 0) ? 0 : port;
+-		if (java.lang.Boolean.parseBoolean(java.lang.System.getProperties().getProperty("twill.zk.server.localhost", "true"))) {
++		if (false) {
+ 			return new java.net.InetSocketAddress(java.net.InetAddress.getLoopbackAddress(), socketPort);
+ 		} else {
+ 			return new java.net.InetSocketAddress(socketPort);
+```
 
 ### dropwizard-dropwizard-279515036-20170925-155015_bugonly
 
