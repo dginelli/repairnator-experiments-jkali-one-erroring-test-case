@@ -961,6 +961,22 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/421420531](https://api.travis-ci.org/v3/build/421420531) - Status is errored
 - **Passing Travis CI Build**: Not found
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/org/apache/rocketmq/client/log/ClientLogger.java
++++ /src/main/java/org/apache/rocketmq/client/log/ClientLogger.java
+@@ -76,7 +76,7 @@
+ 	}
+ 
+ 	public static org.slf4j.Logger getLog() {
+-		if (org.apache.rocketmq.client.log.ClientLogger.log == null) {
++		if (true) {
+ 			org.apache.rocketmq.client.log.ClientLogger.log = org.apache.rocketmq.client.log.ClientLogger.createLogger(org.apache.rocketmq.common.constant.LoggerName.CLIENT_LOGGER_NAME);
+ 			return org.apache.rocketmq.client.log.ClientLogger.log;
+ 		} else {
+```
+
 ### apache-twill-356030973-20180320-212647
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-twill-356030973-20180320-212647-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-apache-twill-356030973-20180320-212647-firstCommit)
