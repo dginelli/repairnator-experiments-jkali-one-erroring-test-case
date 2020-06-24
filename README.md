@@ -889,7 +889,7 @@ There are other failing builds before the passed one (373018849, 373024770, 3730
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.OutOfMemoryError | [DependencyQueueTest.java]()| [DependencyQueue.java]()|
+| java.lang.OutOfMemoryError | [DependencyQueueTest.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/795089c7761bad09fee37d039052a13e6abf65e3/src/test/java/org/imdea/vcd/queue/DependencyQueueTest.java#L26)| [DependencyQueue.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/795089c7761bad09fee37d039052a13e6abf65e3/src/main/java/org/imdea/vcd/queue/DependencyQueue.java#L91)|
 
 **Kali patch**:
 
