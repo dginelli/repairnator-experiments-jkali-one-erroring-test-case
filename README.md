@@ -287,15 +287,15 @@ index b1d5143..489610d 100644
 
 **Branch associated with the failure**: [repairnator-repairnator-experiments-Raaycc-inglesapp-422238225-20180829-220230-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-erroring-test-case/tree/repairnator-repairnator-experiments-Raaycc-inglesapp-422238225-20180829-220230-firstCommit)
 
-**Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/422238225](https://api.travis-ci.org/v3/build/422238225)
-**Passing Travis CI Buildé**: Not found
-**List of Builds**: [https://api.travis-ci.org/v3/repo/inglesapp/19094602/builds?offset=17](https://api.travis-ci.org/v3/repo/inglesapp/19094602/builds?offset=17)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/422238225](https://api.travis-ci.org/v3/build/422238225)
+- **Passing Travis CI Build**: Not found
+- **List of Builds**: [https://api.travis-ci.org/v3/repo/inglesapp/19094602/builds?offset=17](https://api.travis-ci.org/v3/repo/inglesapp/19094602/builds?offset=17)
 
 **Information about the failure**:
 
 | Error type   | Erroring test case | Changed file by AstorJKali |
-|--------------|-------------------|----------------------------|
-| java.lang.IllegalStateException | [ApplicationTests.java]()| [Application.java]()|
+|--------------|-------------------|-----------------------------|
+| java.lang.IllegalStateException  | [ApplicationTests.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/06081b9d204c71263602d43ee97afabe3b6ce0c8/src/test/java/br/edu/fapce/nexti/api/ApplicationTests.java#L13)| [Application.java](https://github.com/repairnator/repairnator-experiments-one-erroring-test-case/blob/06081b9d204c71263602d43ee97afabe3b6ce0c8/src/main/java/br/edu/fapce/nexti/Application.java#L32)|
 
 **Kali patch**:
 
